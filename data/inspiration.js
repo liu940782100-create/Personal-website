@@ -1,6 +1,174 @@
 /* 本文件由 tools/fetch_inspiration.mjs 维护（手动触发更新）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
   {
+    "id": "a2026101918",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "锦浪50-125kW工商业混合储能逆变器全球累计出货突破3GW",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516723.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "锦浪50-125kW工商业混合储能逆变器全球累计出货突破3GW",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026101919",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "锂电池自燃引发火灾，珠海冠宇败诉被判赔6453万元！",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516660.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "锂电池自燃引发火灾，珠海冠宇败诉被判赔6453万元！",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026101920",
+    "platform": "新华网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国际能源署：欧盟2023年仍将面临天然气短缺",
+    "author": "新华网",
+    "link": "http://www.news.cn/fortune/2022-12/13/c_1129205275.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "国际能源署执行干事法提赫·比罗尔12日表示，欧盟2023年可能面临约270亿立方米的天然气短缺，约占欧盟天然气基准总需求的6.8%。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026101921",
+    "platform": "finance.sina.com.cn",
+    "domain": "储能",
+    "track": "储能",
+    "title": "海外订单暴涨366%！中国储能电网加速出海",
+    "author": "全网媒体",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kX05HVldQZEFIQk9vUTdWV3o5dlJjeU1EcE1Kd2tyX3g0QVgxMWVPR0xxdGozQ0QwQUdpSXFaWFA0R1ZpSFQxcF8yNnVjTjM3eHMyMnQ0RWluaXMzNWZWLV93OFRBWnFuOWd6Nkd1VQ?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE1kX05HVldQZEFIQk9…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026101922",
+    "platform": "新浪财经",
+    "domain": "储能",
+    "track": "储能",
+    "title": "过半标准深企参与研制！《深圳市电化学储能标准体系白皮书2026》发布",
+    "author": "全网媒体",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONzIyNEZpRHpiZmhjbkVNeDJwVWpza3o4TmZnTVZxQXp4ajdMcTJrYmUzbnJXcmU5aGFSdWQ2cFBzRm5IcDkwYXF0RXBCUmx5NmJpbnljdWhOalV5dEtZcWZIeE01a281anpmTUtBN1pVczNSOEtXNjdMaTg3NVZiYm5NUjg0clk5U3ZiZlZmaGp1cDR6dG15aldmQTVlMldod0FVWU4wTnFGVzFnSTBKUHJMbzFVUGViRHlNbmk5cTUwU1RIZnBtRDhPY25QR0ZpU0N3NS11ZmlJUQ?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxONzIyNEZpRHpiZmh…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026101923",
+    "platform": "新浪财经",
+    "domain": "储能",
+    "track": "储能",
+    "title": "储能电池ETF易方达（159566）开盘跌0.53%，重仓股阳光电源跌0.13%，亿纬锂能跌1.15%",
+    "author": "全网媒体",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNV2c5Zzh6dkphTE40Sm1aVHZ2RW5lM0tjSTZfQmlSLXBZUG1UVEpPeXlCcjZVMlNnNlRsM25Qb0xzOGhWLXc0bHlBbEwyU0wxdmZZTzlYblVvcUxyeXQ5N2Q5bWYzbEtETnVaWi1DSV9DeFhJQmlwUUdXZXZsRmtyWXlfZGpQS2hPcXpUbkFlREs2SzQ2Umh0MA?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxNV2c5Zzh6dkphTE4…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026101924",
+    "platform": "人民网－湖北频道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "何以中国·当惊世界殊｜水电锂电都“来电” 宜昌做强储能赛道",
+    "author": "全网媒体",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NLXNOMHVIMHlNQmxnTkhrMzFfR0YxdDlmRm9NeUpobjJYZFhJcDZlaHcwT29OTVdGb01IRmk5OF95eDJTS2tJWFZjVEtxeHByVHlvdkVYVElfU2lqUF9EWEZVUE5vSmNrWHc?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE9NLXNOMHVIMHlNQmx…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026101925",
+    "platform": "虎嗅网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "陈海生谈中国储能发展：新型储能规模跃升，未来能源核心在储能",
+    "author": "全网媒体",
+    "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBXWktKMEREblNXVDBCNHVPWllhQ0pwZGNNcHNzZUMxbmJSbnMwaUVhQmg1WUpNSzl6dWc5V0ZDaklYSUdCcmE4ZlJkeTZReWlQTDFEUg?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTFBXWktKMEREblNXVDB…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
     "id": "a2026101910",
     "platform": "北极星储能网",
     "domain": "储能",
@@ -433,4 +601,4 @@ window.DATA_INSPIRATION = [
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-19","added":8,"total":19,"track":"储能"};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-19","added":8,"total":27,"track":"储能"};
