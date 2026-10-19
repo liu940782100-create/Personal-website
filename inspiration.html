@@ -232,7 +232,13 @@
       var transfer = document.getElementById('i-transfer').value.split('\n')
         .map(function (s) { return s.trim(); }).filter(Boolean);
       var link = document.getElementById('i-link').value.trim();
-      if (link && !/^https?:\/\//i.test(link)) link = 'https://' + link;
+      if (link) {
+        /* 分享口令/整段文字里自动抽出第一个有效链接（抖音口令、公众号消息直接粘贴即可） */
+        var mUrl = link.match(/https?:\/\/[^\s'"<>，。；、）】《》]+/i);
+        if (mUrl) link = mUrl[0].replace(/[),.;!?'"]+$/, '');
+        else if (!/\s/.test(link) && /^[^\s]+\.[^\s]+$/.test(link)) link = 'https://' + link;
+        else link = '';
+      }
       var item = {
         id: 'local-' + Date.now().toString(36),
         title: title,
