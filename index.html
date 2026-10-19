@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raphael Liu 的第二大脑：灵感库、项目库、个人知识库与 Skills 方法论。AI 辅助 · 本地存储 · 持续迭代。">
+  <meta name="theme-color" content="#f9f7f1">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Raphael Liu · 首页">
+  <meta property="og:description" content="Raphael Liu 的第二大脑：灵感库、项目库、个人知识库与 Skills 方法论。">
+  <title>Raphael Liu · 首页</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="data/inspiration.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="data/knowledge.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="assets/app.js"></script>
+</head>
+<body data-page="index">
+  <div id="nav"></div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Hello, Raphael Liu!</h1>
+      <p class="subtitle" data-i18n="index.subtitle">灵感在这里沉淀，项目在这里推进，知识在这里生长</p>
+      <span class="tagline" data-i18n="index.tagline">AI 辅助 · 本地存储 · 持续迭代</span>
+    </section>
+
+    <section class="module-grid" id="modules"></section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    document.getElementById('nav').innerHTML = renderNav('index.html');
+    document.getElementById('footer').innerHTML = renderFooter();
+
+    // 模块卡计数 = 数据文件条目 + 各页 localStorage 本地新增
+    function lsCount(key) {
+      try { return JSON.parse(localStorage.getItem(key) || '[]').length; } catch (e) { return 0; }
+    }
+
+    function renderModules() {
+      var modules = [
+        {
+          href: 'inspiration.html', theme: 't-inspiration', icon: '灵',
+          title: t('mod.inspiration.title'), count: getData('inspiration').length + lsCount('rl_insp_local_v1'), unit: t('mod.inspiration.unit'),
+          desc: t('mod.inspiration.desc'), empty: t('mod.empty.inspiration')
+        },
+        {
+          href: 'projects.html', theme: 't-projects', icon: '项',
+          title: t('mod.projects.title'), count: getData('projects').length + lsCount('rl_projects_local_v1'), unit: t('mod.projects.unit'),
+          desc: t('mod.projects.desc'), empty: t('mod.empty.projects')
+        },
+        {
+          href: 'knowledge.html', theme: 't-knowledge', icon: '知',
+          title: t('mod.knowledge.title'), count: getData('knowledge').length + lsCount('qianwen_kb_cards_v1'), unit: t('mod.knowledge.unit'),
+          desc: t('mod.knowledge.desc'), empty: t('mod.empty.knowledge')
+        },
+        {
+          href: 'skills.html', theme: 't-skills', icon: '书',
+          title: t('mod.skills.title'), count: getData('skills').length + lsCount('rl_skills_local_v1'), unit: t('mod.skills.unit'),
+          desc: t('mod.skills.desc'), empty: t('mod.empty.skills')
+        }
+      ];
+
+      document.getElementById('modules').innerHTML = modules.map(function (m) {
+        return '<a class="module-card ' + m.theme + '" href="' + m.href + '">' +
+          '<div class="mc-head">' +
+            '<div class="mc-icon">' + m.icon + '</div>' +
+            '<div><h2>' + m.title + '</h2>' +
+            '<div class="mc-count">' + (m.count > 0
+              ? m.count + ' ' + m.unit
+              : '<span class="mc-empty">' + m.empty + '</span>') + '</div></div>' +
+          '</div>' +
+          '<p class="mc-desc">' + m.desc + '</p>' +
+          '<div class="mc-foot">' + t('mod.foot') + '</div>' +
+        '</a>';
+      }).join('');
+    }
+    renderModules();
+    document.addEventListener('langchange', renderModules);
+  </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="蒸馏书籍中的方法论，变成随取随用的行动指南。">
+  <meta name="theme-color" content="#f9f7f1">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Skills 方法论 · Raphael Liu">
+  <meta property="og:description" content="蒸馏书籍中的方法论，变成随取随用的行动指南。">
+  <title>Skills 方法论 · Raphael Liu</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="data/skills.js"></script>
+  <script src="data/knowledge.js"></script>
+  <script src="assets/app.js"></script>
+</head>
+<body data-page="skills">
+  <div id="nav"></div>
+
+  <main class="container">
+    <section class="page-head">
+      <h1 data-i18n="sk.head">Skills 方法论</h1>
+      <p data-i18n="sk.sub">蒸馏书籍中的方法论，变成随取随用的行动指南</p>
+    </section>
+
+    <div class="toolbar">
+      <select id="filterBook"><option value="" data-i18n="sk.allBooks">全部书籍</option></select>
+      <input type="text" id="searchKw" class="grow" placeholder="搜索：方法论 / 核心思想 / 步骤 / 场景…" data-i18n-ph="sk.search.ph">
+      <span class="count" id="countInfo"></span>
+      <button type="button" class="btn" id="skToggleBtn" data-i18n="sk.form.show">＋ 记一条方法论</button>
+      <button type="button" class="btn" id="skExportBtn" data-i18n="sk.export">导出本地方法论</button>
+    </div>
+
+    <section class="quick-form" id="skFormPanel" hidden>
+      <h3 data-i18n="sk.form.title">手动记一条方法论</h3>
+      <p class="qf-hint" data-i18n="sk.form.hint"></p>
+      <div class="qf-grid">
+        <label><span data-i18n="sk.label.book">书名（可空）</span><input id="s-book" type="text"></label>
+        <label><span data-i18n="sk.label.method">方法论名 *</span><input id="s-method" type="text"></label>
+      </div>
+      <label><span data-i18n="sk.label.core">核心思想 *</span><textarea id="s-core" rows="2"></textarea></label>
+      <label><span data-i18n="sk.label.steps">操作步骤（每行一条，可空）</span><textarea id="s-steps" rows="3"></textarea></label>
+      <div class="qf-grid">
+        <label><span data-i18n="sk.label.applicable">适用场景（每行一条，可空）</span><textarea id="s-applicable" rows="2"></textarea></label>
+        <label><span data-i18n="sk.label.misuse">误用场景（每行一条，可空）</span><textarea id="s-misuse" rows="2"></textarea></label>
+      </div>
+      <div class="qf-actions">
+        <button type="button" class="btn btn-primary" id="skSaveBtn" data-i18n="sk.save">保存方法论</button>
+      </div>
+    </section>
+
+    <section id="skillList" class="card-list"></section>
+  </main>
+
+  <div id="footer"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    document.getElementById('nav').innerHTML = renderNav('skills.html');
+    document.getElementById('footer').innerHTML = renderFooter();
+
+    /* ---------- 本地新增与导出（与知识库同模式） ---------- */
+    var LS_SKILLS = 'rl_skills_local_v1';
+    function today() { return new Date().toISOString().slice(0, 10); }
+    function downloadText(filename, text) {
+      var blob = new Blob([text], { type: 'application/json;charset=utf-8' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+    function toast(msg) {
+      var el = document.getElementById('toast');
+      el.textContent = msg;
+      el.classList.add('show');
+      clearTimeout(el._timer);
+      el._timer = setTimeout(function () { el.classList.remove('show'); }, 2600);
+    }
+    function loadLocalSkills() {
+      try { return JSON.parse(localStorage.getItem(LS_SKILLS) || '[]'); } catch (e) { return []; }
+    }
+    function saveLocalSkills(arr) { localStorage.setItem(LS_SKILLS, JSON.stringify(arr)); }
+    function allSkills() { return getData('skills').concat(loadLocalSkills()); }
+    function linesOf(id) {
+      return document.getElementById(id).value.split('\n')
+        .map(function (s) { return s.trim(); }).filter(Boolean);
+    }
+
+    var SEARCH_FIELDS = ['methodName', 'bookName', 'coreIdea', 'applicableScenarios', 'misuseScenarios', 'steps'];
+
+    function knowledgeTitle(id) {
+      var found = getData('knowledge').filter(function (k) { return k.id === id; })[0];
+      return found ? found.title : id + t('sk.notFound');
+    }
+
+    function renderCard(s) {
+      var linked = Array.isArray(s.linkedKnowledgeIds) ? s.linkedKnowledgeIds : [];
+      return '<article class="s-card">' +
+        '<h4>' + esc(s.methodName) +
+          (s.id && String(s.id).indexOf('local-') === 0 ? ' <span class="local-badge">' + t('sk.localBadge') + '</span>' : '') +
+        '</h4>' +
+        '<div class="s-core">' + esc(s.coreIdea) + '</div>' +
+        (Array.isArray(s.steps) && s.steps.length
+          ? '<div class="s-sec"><div class="s-label">' + t('sk.steps') + '</div>' +
+            '<ol class="s-steps">' + s.steps.map(function (st) { return '<li>' + esc(st) + '</li>'; }).join('') + '</ol></div>'
+          : '') +
+        (Array.isArray(s.applicableScenarios) && s.applicableScenarios.length
+          ? '<div class="s-sec"><div class="s-label">' + t('sk.scenarios') + '</div><div class="s-tags">' +
+            s.applicableScenarios.map(function (t) { return '<span class="s-tag">' + esc(t) + '</span>'; }).join('') + '</div></div>'
+          : '') +
+        (Array.isArray(s.misuseScenarios) && s.misuseScenarios.length
+          ? '<div class="s-sec"><div class="s-label">' + t('sk.misuse') + '</div><div class="s-tags">' +
+            s.misuseScenarios.map(function (t) { return '<span class="s-tag warn">' + esc(t) + '</span>'; }).join('') + '</div></div>'
+          : '') +
+        (linked.length
+          ? '<div class="s-sec"><div class="s-label">' + t('sk.linked') + '</div><div class="s-tags">' +
+            linked.map(function (id) { return '<span class="s-tag link" title="' + esc(id) + '">→ ' + esc(knowledgeTitle(id)) + '</span>'; }).join('') + '</div></div>'
+          : '') +
+      '</article>';
+    }
+
+    function refreshBookOptions() {
+      var books = [];
+      allSkills().forEach(function (s) {
+        var b = (s.bookName || t('sk.noBook')).trim() || t('sk.noBook');
+        if (books.indexOf(b) < 0) books.push(b);
+      });
+      var sel = document.getElementById('filterBook');
+      var cur = sel.value;
+      sel.innerHTML = '<option value="">' + t('sk.allBooks') + '</option>' +
+        books.map(function (b) { return '<option value="' + esc(b) + '">' + esc(b) + '</option>'; }).join('');
+      sel.value = cur;
+    }
+
+    function renderList() {
+      var fb = document.getElementById('filterBook').value;
+      var kw = document.getElementById('searchKw').value.trim();
+
+      var list = allSkills().filter(function (s) {
+        var b = (s.bookName || t('sk.noBook')).trim() || t('sk.noBook');
+        if (fb && b !== fb) return false;
+        return matchKeyword(s, kw, SEARCH_FIELDS);
+      });
+
+      document.getElementById('countInfo').textContent =
+        list.length + ' / ' + allSkills().length + t('sk.count.unit');
+
+      var box = document.getElementById('skillList');
+      if (!list.length) {
+        box.innerHTML = '<div class="empty"><div class="big">' + t('common.empty') + '</div>' + t('sk.empty') + '</div>';
+        return;
+      }
+
+      // 按书名分组
+      var groups = {};
+      list.forEach(function (s) {
+        var b = (s.bookName || t('sk.noBook')).trim() || t('sk.noBook');
+        if (!groups[b]) groups[b] = [];
+        groups[b].push(s);
+      });
+
+      box.innerHTML = Object.keys(groups).map(function (b) {
+        return '<section class="book-group">' +
+          '<h3>' + esc(b) + ' <span class="book-count">' + groups[b].length + t('sk.count.unit') + '</span></h3>' +
+          '<div class="skill-grid">' + groups[b].map(renderCard).join('') + '</div>' +
+        '</section>';
+      }).join('');
+    }
+
+    document.getElementById('filterBook').addEventListener('change', renderList);
+    document.getElementById('searchKw').addEventListener('input', renderList);
+
+    /* 表单开合 / 保存 / 导出 */
+    var formPanel = document.getElementById('skFormPanel');
+    document.getElementById('skToggleBtn').addEventListener('click', function () {
+      var show = formPanel.hidden;
+      formPanel.hidden = !show;
+      this.textContent = show ? t('sk.form.hide') : t('sk.form.show');
+      if (show) document.getElementById('s-method').focus();
+    });
+    document.getElementById('skSaveBtn').addEventListener('click', function () {
+      var method = document.getElementById('s-method').value.trim();
+      var core = document.getElementById('s-core').value.trim();
+      ['s-method', 's-core'].forEach(function (id) {
+        document.getElementById(id).classList.remove('f-err');
+      });
+      var bad = [];
+      if (!method) bad.push('s-method');
+      if (!core) bad.push('s-core');
+      if (bad.length) {
+        bad.forEach(function (id) { document.getElementById(id).classList.add('f-err'); });
+        document.getElementById(bad[0]).scrollIntoView({ behavior: 'smooth', block: 'center' });
+        document.getElementById(bad[0]).focus({ preventScroll: true });
+        toast(t('sk.err'));
+        return;
+      }
+      var item = {
+        id: 'local-' + Date.now().toString(36),
+        bookName: document.getElementById('s-book').value.trim(),
+        methodName: method,
+        coreIdea: core,
+        steps: linesOf('s-steps'),
+        applicableScenarios: linesOf('s-applicable'),
+        misuseScenarios: linesOf('s-misuse')
+      };
+      var locals = loadLocalSkills();
+      locals.unshift(item);
+      saveLocalSkills(locals);
+      ['s-book', 's-method', 's-core', 's-steps', 's-applicable', 's-misuse'].forEach(function (id) {
+        document.getElementById(id).value = '';
+      });
+      refreshBookOptions();
+      renderList();
+      toast(t('sk.toast.saved'));
+    });
+    /* 出错字段一开始输入就摘掉红圈 */
+    document.getElementById('skFormPanel').addEventListener('input', function (e) {
+      if (e.target.classList) e.target.classList.remove('f-err');
+    });
+    document.getElementById('skExportBtn').addEventListener('click', function () {
+      var locals = loadLocalSkills();
+      if (!locals.length) { toast(t('sk.toast.noLocal')); return; }
+      downloadText('skills-local.json', JSON.stringify(locals, null, 2));
+      toast(t('sk.toast.exported'));
+    });
+
+    refreshBookOptions();
+    renderList();
+
+    /* 切语言后无刷新重渲染动态内容；表单开合钮文案随面板状态修正 */
+    document.addEventListener('langchange', function () {
+      refreshBookOptions();
+      renderList();
+      var btn = document.getElementById('skToggleBtn');
+      btn.textContent = formPanel.hidden ? t('sk.form.show') : t('sk.form.hide');
+    });
+  </script>
+</body>
+</html>

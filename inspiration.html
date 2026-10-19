@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="汇集各平台高互动内容，拆解博主的叙事手法，沉淀可迁移的创作技巧。">
+  <meta name="theme-color" content="#f9f7f1">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="灵感库 · Raphael Liu">
+  <meta property="og:description" content="汇集各平台高互动内容，拆解博主的叙事手法，沉淀可迁移的创作技巧。">
+  <title>灵感库 · Raphael Liu</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="data/inspiration.js"></script>
+  <script src="assets/app.js"></script>
+</head>
+<body data-page="inspiration">
+  <div id="nav"></div>
+
+  <main class="container">
+    <section class="page-head">
+      <h1 data-i18n="insp.head">灵感库</h1>
+      <p data-i18n="insp.sub">汇集各平台高互动内容，拆解博主的叙事手法，沉淀可迁移的创作技巧</p>
+    </section>
+
+    <div class="toolbar">
+      <select id="filterPlatform">
+        <option value="" data-i18n="insp.allPlatform">全部平台</option>
+        <option value="官方媒体" data-i18n="insp.platform.official">官方媒体</option>
+        <option value="抖音" data-i18n="insp.platform.douyin">抖音</option>
+        <option value="微信公众号" data-i18n="insp.platform.weixin">微信公众号</option>
+        <option value="知乎" data-i18n="insp.platform.zhihu">知乎</option>
+      </select>
+      <select id="filterDomain"><option value="" data-i18n="insp.allDomain">全部领域</option></select>
+      <select id="sortBy">
+        <option value="likes-desc" data-i18n="insp.sort.likes">高互动优先（点赞↓）</option>
+        <option value="collected-desc" data-i18n="insp.sort.latest">最新采集优先</option>
+      </select>
+      <input type="text" id="searchKw" class="grow" placeholder="搜索：标题 / 博主 / 内容总结 / 叙事技巧…" data-i18n-ph="insp.search.ph">
+      <span class="count" id="countInfo"></span>
+      <button type="button" class="btn" id="inspToggleBtn" data-i18n="insp.form.show">＋ 记一条灵感</button>
+      <button type="button" class="btn" id="inspExportBtn" data-i18n="insp.export">导出本地灵感</button>
+    </div>
+
+    <section class="quick-form" id="inspFormPanel" hidden>
+      <h3 data-i18n="insp.form.title">手动记一条灵感</h3>
+      <p class="qf-hint" data-i18n="insp.form.hint"></p>
+      <div class="qf-grid">
+        <label><span data-i18n="insp.label.title">标题 *</span><input id="i-title" type="text"></label>
+        <label><span data-i18n="insp.label.author">博主（可空）</span><input id="i-author" type="text"></label>
+        <label><span data-i18n="insp.label.platform">平台</span>
+          <select id="i-platform">
+            <option value="抖音">抖音</option>
+            <option value="微信公众号">微信公众号</option>
+            <option value="知乎">知乎</option>
+            <option value="官方媒体">官方媒体</option>
+            <option value="">其他平台</option>
+          </select>
+        </label>
+        <label><span data-i18n="insp.label.domain">领域（可空）</span><input id="i-domain" type="text"></label>
+      </div>
+      <label><span data-i18n="insp.label.summary">内容总结 *</span><textarea id="i-summary" rows="3"></textarea></label>
+      <label><span data-i18n="insp.label.transfer">可迁移技巧（每行一条，可空）</span><textarea id="i-transfer" rows="2"></textarea></label>
+      <div class="qf-actions">
+        <button type="button" class="btn btn-primary" id="inspSaveBtn" data-i18n="insp.save">保存灵感</button>
+      </div>
+    </section>
+
+    <section class="insp-grid" id="inspGrid"></section>
+  </main>
+
+  <div id="footer"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    document.getElementById('nav').innerHTML = renderNav('inspiration.html');
+    document.getElementById('footer').innerHTML = renderFooter();
+
+    /* ---------- 本地新增与导出（与知识库同模式） ---------- */
+    var LS_INSP = 'rl_insp_local_v1';
+    function today() { return new Date().toISOString().slice(0, 10); }
+    function downloadText(filename, text) {
+      var blob = new Blob([text], { type: 'application/json;charset=utf-8' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+    function toast(msg) {
+      var el = document.getElementById('toast');
+      el.textContent = msg;
+      el.classList.add('show');
+      clearTimeout(el._timer);
+      el._timer = setTimeout(function () { el.classList.remove('show'); }, 2600);
+    }
+    function loadLocalInsp() {
+      try { return JSON.parse(localStorage.getItem(LS_INSP) || '[]'); } catch (e) { return []; }
+    }
+    function saveLocalInsp(arr) { localStorage.setItem(LS_INSP, JSON.stringify(arr)); }
+    function allItems() { return getData('inspiration').concat(loadLocalInsp()); }
+
+    var PLATFORM_CLASS = {
+      '官方媒体': 'p-official', '抖音': 'p-douyin',
+      '微信公众号': 'p-weixin', '知乎': 'p-zhihu'
+    };
+    var SEARCH_FIELDS = ['title', 'author', 'contentSummary', 'domain',
+      'narrativeAnalysis.hook', 'narrativeAnalysis.structure',
+      'narrativeAnalysis.emotionCurve', 'narrativeAnalysis.transferable'];
+
+    function likesOf(item) { return (item.metrics && item.metrics.likes) || 0; }
+    function commentsOf(item) { return (item.metrics && item.metrics.comments) || 0; }
+
+    function renderCard(item) {
+      var a = item.narrativeAnalysis || {};
+      var transferable = Array.isArray(a.transferable) ? a.transferable : [];
+      return '<article class="i-card" data-id="' + esc(item.id) + '">' +
+        '<div class="i-top">' +
+          (item.id && String(item.id).indexOf('local-') === 0 ? '<span class="local-badge">' + t('insp.localBadge') + '</span>' : '') +
+          '<span class="platform-badge ' + (PLATFORM_CLASS[item.platform] || '') + '">' + esc(item.platform || t('insp.otherPlatform')) + '</span>' +
+          '<span class="i-domain">' + esc(item.domain || t('insp.noDomain')) + '</span>' +
+        '</div>' +
+        '<h4>' + (item.link
+          ? '<a href="' + esc(item.link) + '" target="_blank" rel="noopener">' + esc(item.title) + '</a>'
+          : esc(item.title)) + '</h4>' +
+        '<div class="i-author">' + t('insp.author') + esc(item.author || t('insp.unknown')) + '</div>' +
+        '<div class="i-metrics">' +
+          '<span>' + t('insp.likes') + ' ' + fmtNum(likesOf(item)) + '</span>' +
+          '<span>' + t('insp.comments') + ' ' + fmtNum(commentsOf(item)) + '</span>' +
+          (item.metrics && item.metrics.collected ? '<span>' + t('insp.collected') + esc(item.metrics.collected) + '</span>' : '') +
+        '</div>' +
+        '<div class="i-summary">' + esc(item.contentSummary || t('insp.noSummary')) + '</div>' +
+        '<button class="i-toggle" onclick="toggleCard(this)">' + t('insp.expand') + '</button>' +
+        '<div class="i-analysis">' +
+          '<div class="k-item"><div class="k-label">' + t('insp.label.hook') + '</div><div class="k-text">' + esc(a.hook || t('insp.pending')) + '</div></div>' +
+          '<div class="k-item"><div class="k-label">' + t('insp.label.structure') + '</div><div class="k-text">' + esc(a.structure || t('insp.pending')) + '</div></div>' +
+          '<div class="k-item"><div class="k-label">' + t('insp.label.emotion') + '</div><div class="k-text">' + esc(a.emotionCurve || t('insp.pending')) + '</div></div>' +
+          '<div class="k-item"><div class="k-label">' + t('insp.label.transfer') + '</div><div class="k-text">' +
+            (transferable.length ? transferable.map(function (tt) { return '· ' + esc(tt); }).join('<br>') : t('insp.pending')) +
+          '</div></div>' +
+        '</div>' +
+      '</article>';
+    }
+
+    function toggleCard(btn) {
+      var card = btn.closest('.i-card');
+      card.classList.toggle('open');
+      btn.textContent = card.classList.contains('open')
+        ? t('insp.collapse') : t('insp.expand');
+    }
+
+    function refreshDomainOptions() {
+      var domains = [];
+      getData('inspiration').concat(loadLocalInsp()).forEach(function (it) {
+        var d = (it.domain || '').trim();
+        if (d && domains.indexOf(d) < 0) domains.push(d);
+      });
+      var sel = document.getElementById('filterDomain');
+      var cur = sel.value;
+      sel.innerHTML = '<option value="">' + t('insp.allDomain') + '</option>' +
+        domains.map(function (d) { return '<option value="' + esc(d) + '">' + esc(d) + '</option>'; }).join('');
+      sel.value = cur;
+    }
+
+    function renderGrid() {
+      var fp = document.getElementById('filterPlatform').value;
+      var fd = document.getElementById('filterDomain').value;
+      var sortBy = document.getElementById('sortBy').value;
+      var kw = document.getElementById('searchKw').value.trim();
+
+      var list = allItems().filter(function (it) {
+        if (fp && it.platform !== fp) return false;
+        if (fd && (it.domain || '') !== fd) return false;
+        return matchKeyword(it, kw, SEARCH_FIELDS);
+      });
+
+      list.sort(function (a, b) {
+        if (sortBy === 'likes-desc') return likesOf(b) - likesOf(a);
+        return String((b.metrics && b.metrics.collected) || '').localeCompare(
+               String((a.metrics && a.metrics.collected) || ''));
+      });
+
+      document.getElementById('countInfo').textContent =
+        list.length + ' / ' + allItems().length + t('insp.count.unit');
+
+      var grid = document.getElementById('inspGrid');
+      if (!list.length) {
+        grid.innerHTML = '<div class="empty" style="grid-column:1/-1"><div class="big">' + t('common.empty') + '</div>' +
+          t('insp.empty') + '</div>';
+        return;
+      }
+      grid.innerHTML = list.map(renderCard).join('');
+    }
+
+    ['filterPlatform', 'filterDomain', 'sortBy'].forEach(function (id) {
+      document.getElementById(id).addEventListener('change', renderGrid);
+    });
+    document.getElementById('searchKw').addEventListener('input', renderGrid);
+
+    /* 表单开合 / 保存 / 导出 */
+    var formPanel = document.getElementById('inspFormPanel');
+    document.getElementById('inspToggleBtn').addEventListener('click', function () {
+      var show = formPanel.hidden;
+      formPanel.hidden = !show;
+      this.textContent = show ? t('insp.form.hide') : t('insp.form.show');
+      if (show) document.getElementById('i-title').focus();
+    });
+    document.getElementById('inspSaveBtn').addEventListener('click', function () {
+      var title = document.getElementById('i-title').value.trim();
+      var summary = document.getElementById('i-summary').value.trim();
+      ['i-title', 'i-summary'].forEach(function (id) {
+        document.getElementById(id).classList.remove('f-err');
+      });
+      var bad = [];
+      if (!title) bad.push('i-title');
+      if (!summary) bad.push('i-summary');
+      if (bad.length) {
+        bad.forEach(function (id) { document.getElementById(id).classList.add('f-err'); });
+        document.getElementById(bad[0]).scrollIntoView({ behavior: 'smooth', block: 'center' });
+        document.getElementById(bad[0]).focus({ preventScroll: true });
+        toast(t('insp.err'));
+        return;
+      }
+      var transfer = document.getElementById('i-transfer').value.split('\n')
+        .map(function (s) { return s.trim(); }).filter(Boolean);
+      var item = {
+        id: 'local-' + Date.now().toString(36),
+        title: title,
+        author: document.getElementById('i-author').value.trim(),
+        platform: document.getElementById('i-platform').value || t('insp.otherPlatform'),
+        domain: document.getElementById('i-domain').value.trim(),
+        contentSummary: summary,
+        narrativeAnalysis: { transferable: transfer },
+        metrics: { likes: 0, comments: 0, collected: today() }
+      };
+      var locals = loadLocalInsp();
+      locals.unshift(item);
+      saveLocalInsp(locals);
+      ['i-title', 'i-author', 'i-domain', 'i-summary', 'i-transfer'].forEach(function (id) {
+        document.getElementById(id).value = '';
+      });
+      refreshDomainOptions();
+      renderGrid();
+      toast(t('insp.toast.saved'));
+    });
+    /* 出错字段一开始输入就摘掉红圈 */
+    document.getElementById('inspFormPanel').addEventListener('input', function (e) {
+      if (e.target.classList) e.target.classList.remove('f-err');
+    });
+    document.getElementById('inspExportBtn').addEventListener('click', function () {
+      var locals = loadLocalInsp();
+      if (!locals.length) { toast(t('insp.toast.noLocal')); return; }
+      downloadText('inspiration-local.json', JSON.stringify(locals, null, 2));
+      toast(t('insp.toast.exported'));
+    });
+
+    refreshDomainOptions();
+    renderGrid();
+
+    /* 切语言后无刷新重渲染动态内容；表单开合钮文案随面板状态修正 */
+    document.addEventListener('langchange', function () {
+      refreshDomainOptions();
+      renderGrid();
+      var btn = document.getElementById('inspToggleBtn');
+      btn.textContent = formPanel.hidden ? t('insp.form.show') : t('insp.form.hide');
+    });
+  </script>
+</body>
+</html>

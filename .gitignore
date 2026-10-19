@@ -1,0 +1,9 @@
+# 站点工作文件：导出待写回的 JSON 与预览图不进公共仓库
+*-local.json
+项目库本地数据-*.json
+_preview*.jpg
+_preview*.png
+
+# 系统杂项
+Thumbs.db
+desktop.ini

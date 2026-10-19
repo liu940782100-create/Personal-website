@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="用 Agent 工作流推进项目：目标澄清、调研、方案、风险、执行，门径与产出物随状态同步。">
+  <meta name="theme-color" content="#f9f7f1">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="项目库 · Raphael Liu">
+  <meta property="og:description" content="用 Agent 工作流推进项目：目标澄清、调研、方案、风险、执行，门径与产出物随状态同步。">
+  <title>项目库 · Raphael Liu</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="data/projects.js"></script>
+  <script src="assets/app.js"></script>
+</head>
+<body data-page="projects">
+  <div id="nav"></div>
+
+  <main class="container">
+    <section class="page-head">
+      <h1 data-i18n="proj.head">项目库</h1>
+      <p data-i18n="proj.sub">四个阶段推进项目，门径与产出物随项目状态同步调整</p>
+    </section>
+
+    <div class="toolbar">
+      <select id="filterStage"></select>
+      <select id="filterType"></select>
+      <select id="filterLevel"></select>
+      <input type="text" id="searchKw" class="grow" placeholder="搜索：项目名 / 目标…" data-i18n-ph="proj.search.ph">
+      <span class="count" id="countInfo"></span>
+      <button type="button" class="btn" id="exportLocalBtn"></button>
+      <button type="button" class="btn" id="importLocalBtn"></button>
+      <input type="file" id="importFile" accept=".json,application/json" style="display:none">
+      <button type="button" class="btn btn-primary" id="newProjectBtn"></button>
+    </div>
+
+    <section class="kanban" id="kanban"></section>
+
+    <!-- 归档区（可折叠） -->
+    <section class="ref-panel" id="archivePanel" hidden>
+      <button type="button" class="ref-toggle" id="archiveToggle">
+        <span class="ref-toggle-mark">◇</span>
+        <span id="archiveToggleLabel"></span>
+        <span class="ref-hint" id="archiveCount"></span>
+      </button>
+      <div class="ref-body" id="archiveBody" hidden>
+        <div id="archivedList"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- 立项向导弹窗 -->
+  <div class="modal-mask" id="wizardMask">
+    <div class="modal wizard" id="wizardBody" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <!-- 项目详情弹窗 -->
+  <div class="modal-mask" id="modalMask">
+    <div class="modal" id="modalBody" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <script>
+    document.getElementById('nav').innerHTML = renderNav('projects.html');
+    document.getElementById('footer').innerHTML = renderFooter();
+
+    /* =========================================================
+     * 流程裁剪常量（《项目库流程裁剪指南》：IPD + Stage-Gate）
+     * ========================================================= */
+    var STAGES = ['构想', '设计', '执行', '复盘'];
+    var STAGE_ICONS = { '构想': '谋', '设计': '绘', '执行': '做', '复盘': '盘' };
+
+    function L(x) { return (x && (getLang() === 'en' ? x.en : x.zh)) || ''; }
+
+    var TYPES = {
+      hw: {
+        name: { zh: '硬件产品开发', en: 'Hardware' },
+        worst: { zh: '开模返工、认证不通过', en: 'Tooling rework, certification failure' },
+        gates: { zh: '完整门径（可展开为六阶段六门径）', en: 'Full gates (up to 6 stages / 6 gates)' },
+        method: { zh: 'IPD + Stage-Gate、DFM、并行工程', en: 'IPD + Stage-Gate, DFM, concurrent engineering' }
+      },
+      sw: {
+        name: { zh: '软件 / 互联网产品', en: 'Software / Internet' },
+        worst: { zh: '伪需求、方向错误', en: 'False demand, wrong direction' },
+        gates: { zh: '立项 + 方案评审，执行期以迭代评审替代', en: 'Kickoff + design review; sprint reviews replace gates' },
+        method: { zh: '精益创业 MVP、Scrum、设计思维', en: 'Lean MVP, Scrum, design thinking' }
+      },
+      it: {
+        name: { zh: 'IT 系统 / 数字化', en: 'IT systems' },
+        worst: { zh: '需求反复、上线切换失败', en: 'Scope churn, cutover failure' },
+        gates: { zh: '需求冻结 + 上线放行双门径', en: 'Requirements freeze + go-live release' },
+        method: { zh: '瀑布 + 里程碑、UAT 验收', en: 'Waterfall + milestones, UAT' }
+      },
+      mkt: {
+        name: { zh: '营销活动 / 市场', en: 'Marketing' },
+        worst: { zh: '效果落空、品牌风险', en: 'No effect, brand risk' },
+        gates: { zh: '策划审批 + 上线前终审', en: 'Plan approval + pre-launch final review' },
+        method: { zh: '数据指标先行、A/B 测试', en: 'Metrics first, A/B testing' }
+      },
+      proc: {
+        name: { zh: '流程改进 / 运营', en: 'Process improvement' },
+        worst: { zh: '一刀切全面铺开失败', en: 'Big-bang rollout failure' },
+        gates: { zh: '改进方案审批 + 试点评估', en: 'Solution approval + pilot evaluation' },
+        method: { zh: 'PDCA、精益改善', en: 'PDCA, kaizen' }
+      },
+      rd: {
+        name: { zh: '研究探索 / 预研', en: 'Research' },
+        worst: { zh: '投入无底洞', en: 'Unbounded spend' },
+        gates: { zh: 'Go / No-Go 投资决策点', en: 'Go / No-Go decision points' },
+        method: { zh: '时间盒 Timebox、技术就绪度 TRL', en: 'Timebox, TRL' }
+      }
+    };
+
+    var LEVELS = {
+      S: {
+        name: { zh: 'S 探索', en: 'S Probe' },
+        rule: { zh: '投入小（少于 4 人周）；失败可快速放弃；目标是验证假设', en: 'Small effort (< 4 person-weeks); cheap to abandon; hypothesis-driven' },
+        flow: { zh: '轻量：自查清单 + 事后复盘归档', en: 'Light: checklist + post-review' }
+      },
+      M: {
+        name: { zh: 'M 常规', en: 'M Regular' },
+        rule: { zh: '有明确交付物与客户；投入中等；返工有一定成本', en: 'Clear deliverable and customer; medium effort; rework costs' },
+        flow: { zh: '标准：双门径（立项 + 验收）+ 中期检查点', en: 'Standard: 2 gates + mid-check' }
+      },
+      L: {
+        name: { zh: 'L 战略', en: 'L Strategic' },
+        rule: { zh: '高投入、长周期（超半年）；重资产、强制认证或对外承诺', en: 'High investment, long cycle; heavy assets, certification or commitments' },
+        flow: { zh: '完整：全门径评审 + 基线管理 + 变更控制', en: 'Full: all gates + baseline + change control' }
+      }
+    };
+
+    var SCALES = {
+      micro: { zh: '微型 1~3 人', en: 'Micro 1-3' },
+      mid: { zh: '中型 4~15 人', en: 'Mid 4-15' },
+      big: { zh: '大型 16~50 人', en: 'Large 16-50' },
+      xorg: { zh: '跨组织 50 人以上', en: 'Cross-org 50+' }
+    };
+
+    var MATRIX = {
+      hw: {
+        micro: { zh: '单板 / 结构件级：合并仿真与设计阶段，保留开模与量产两道门径', en: 'Board-level: merge sim & design; keep tooling and mass-production gates' },
+        mid: { zh: '完整四阶段，DFM 前置 + 双供管理，双门径 + 中期检查', en: 'Full 4 stages; DFM early + dual-sourcing; 2 gates + mid-check' },
+        big: { zh: '展开六阶段六门径，独立评审组 + 基线管理 + 认证并行', en: '6 stages / 6 gates; independent review + baseline + parallel certification' }
+      },
+      sw: {
+        micro: { zh: 'MVP 验证循环，发布前自查清单终审', en: 'MVP loop; pre-launch checklist' },
+        mid: { zh: '双周迭代 + 发布评审，构想阶段保留完整', en: '2-week sprints + release review; full ideation' },
+        big: { zh: '规模化敏捷（SAFe），季度规划对齐 + 发布火车', en: 'SAFe; quarterly planning + release train' }
+      },
+      it: {
+        micro: { zh: '小型工具：需求确认邮件即冻结，上线即验收', en: 'Small tools: freeze by email; go-live is acceptance' },
+        mid: { zh: '需求冻结 + 上线放行双门径，UAT 验收', en: 'Freeze + go-live gates; UAT' },
+        big: { zh: '完整门径 + 数据迁移演练 + 回退预案 + 并行运行期', en: 'Full gates + migration drill + rollback + parallel run' }
+      },
+      mkt: {
+        micro: { zh: '策划一页纸 + 上线终审，战报一周内出', en: 'One-pager + final review; report within a week' },
+        mid: { zh: '策划审批 + 上线终审，分渠道小流量试投', en: 'Plan approval + final review; small-batch channel tests' },
+        big: { zh: '分层门径：总部定策略，区域执行前终审，统一战报模板', en: 'Layered gates: HQ strategy, regional final review, unified report' }
+      },
+      proc: {
+        micro: { zh: '个人 PDCA 循环，改动记录在案', en: 'Personal PDCA; log all changes' },
+        mid: { zh: '改进方案审批 + 试点评估 + SOP 固化', en: 'Approval + pilot + SOP consolidation' },
+        big: { zh: '跨部门流程改造：试点先行 + 分批推广 + 变革管理', en: 'Cross-dept: pilot first + phased rollout + change mgmt' }
+      },
+      rd: {
+        micro: { zh: '时间盒 + 到点汇报，结论归档即可', en: 'Timebox + report at the bell; archive conclusions' },
+        mid: { zh: 'Go / No-Go 决策点 + 阶段性技术评审', en: 'Go / No-Go points + technical reviews' },
+        big: { zh: 'TRL 分级管理 + 阶段性投资评审 + 知识产权管理', en: 'TRL management + staged funding + IP management' }
+      }
+    };
+
+    /* 每类项目的标准阶段模板：[步骤, Agent 分工, 预期产出] */
+    var STEP_TPL = {
+      hw: [
+        ['概念与需求', 'AI 市场调研', '市场需求文档'],
+        ['系统架构与仿真', 'AI 仿真对标', '架构与热仿报告'],
+        ['详细设计与工程验证', 'AI DFM 审查', '工程验证报告'],
+        ['样机试制与测试', 'AI 测试用例', '样机实测数据'],
+        ['小批量试产', 'AI 供应链扫描', '试产良率报告'],
+        ['市场发布', 'AI 发布物料', '发布物料包']
+      ],
+      sw: [
+        ['需求澄清', 'AI 提问澄清', '目标定义'],
+        ['MVP 验证', 'AI 原型建议', 'MVP 结论'],
+        ['方案设计', 'AI 出候选方案', '架构方案'],
+        ['迭代开发', 'AI 结对编程', '迭代版本'],
+        ['发布评审', 'AI 风险清单', '发布检查单'],
+        ['数据复盘', 'AI 数据分析', '数据复盘报告']
+      ],
+      it: [
+        ['需求调研', 'AI 访谈提纲', '需求清单'],
+        ['需求冻结', 'AI 需求核对', '冻结签字版'],
+        ['方案设计', 'AI 架构方案', '技术方案'],
+        ['开发实施', 'AI 编码支持', '系统版本'],
+        ['数据迁移演练', 'AI 演练脚本', '演练记录'],
+        ['上线放行', 'AI 上线检查', '放行报告'],
+        ['UAT 验收', 'AI 用例生成', '验收报告']
+      ],
+      mkt: [
+        ['策划（一页纸）', 'AI 出策划案', '目标预算渠道指标'],
+        ['小流量试投', 'AI 盯数据看板', 'A/B 测试结论'],
+        ['放量执行', 'AI 周对齐', '执行记录'],
+        ['战报复盘', 'AI 生成战报', '战报']
+      ],
+      proc: [
+        ['现状分析', 'AI 流程诊断', '痛点清单'],
+        ['改进方案', 'AI 方案对比', '改进方案'],
+        ['试点实施', 'AI 试点陪跑', '试点数据'],
+        ['评估推广', 'AI 效果评估', '对照数据'],
+        ['SOP 固化', 'AI 起草 SOP', '新 SOP']
+      ],
+      rd: [
+        ['假设定义', 'AI 假设梳理', '验证目标'],
+        ['时间盒探索', 'AI 文献调研', '探索记录'],
+        ['阶段评审', 'AI 评审对照', 'Go/No-Go 结论'],
+        ['结论归档', 'AI 知识沉淀', '技术结论']
+      ]
+    };
+
+    /* 每类项目的基础门径集 */
+    var GATE_TPL = {
+      hw: [['G1 概念门', '市场需求与商业论证'], ['G2 架构门', '系统架构与仿真结论'], ['G3 设计门', '详细设计 + DFM 审查'],
+           ['G4 样机门', '样机实测与认证并行证据'], ['G5 试产门', '试产良率与二供预案'], ['G6 发布门', '市场发布放行']],
+      sw: [['立项评审', '目标与需求成立'], ['方案评审', '架构与接口定义'], ['发布评审', '上线前风险终审']],
+      it: [['需求冻结评审', '业务方签字确认'], ['上线放行评审', '迁移演练与回退预案证据']],
+      mkt: [['策划审批', '目标预算渠道指标对齐'], ['上线前终审', '对外内容与品牌风险终审']],
+      proc: [['改进方案审批', '方案与试点范围'], ['试点评估', '试点数据对照']],
+      rd: [['Go/No-Go 决策点', '假设成立与否，加注或止损']]
+    };
+
+    var STR = {
+      sub: { zh: '四个阶段推进项目，门径与产出物随项目状态同步调整', en: 'Move projects through four stages; gates and deliverables adjust with project status' },
+      allStage: { zh: '全部阶段', en: 'All stages' },
+      allType: { zh: '全部类型', en: 'All types' },
+      allLevel: { zh: '全部等级', en: 'All levels' },
+      stageLabel: { zh: '阶段', en: 'Stage' },
+      typeLabel: { zh: '类型', en: 'Type' },
+      levelLabel: { zh: '等级', en: 'Level' },
+      scaleLabel: { zh: '规模', en: 'Team' },
+      gates: { zh: '门径', en: 'Gates' },
+      gatePass: { zh: '通过', en: 'PASS' },
+      gatePending: { zh: '待审', en: 'HOLD' },
+      gateFuture: { zh: '未到', en: 'N/A' },
+      accept: { zh: '验收标准（通用底线）', en: 'Acceptance criteria (baseline)' },
+      kill: { zh: '放弃条件（通用底线）', en: 'Kill criteria (baseline)' },
+      noCriteria: { zh: '未写清。通用底线：两项必填，否则无法验收、无法止损', en: 'Missing. Baseline rule: both required, or the project can neither be accepted nor killed' },
+      recProcess: { zh: '推荐流程形态', en: 'Recommended process' },
+      reviewAssets: { zh: '复盘三资产', en: 'Review assets' },
+      reviewCases: { zh: '案例条目', en: 'Case entry' },
+      reviewTpl: { zh: '模板更新', en: 'Template update' },
+      reviewRisk: { zh: '风险库补充', en: 'Risk library' },
+      deliver: { zh: '产出物清单', en: 'Deliverables' },
+      output: { zh: '产出：', en: 'Output: ' },
+      wfPrefix: { zh: '工作流 ', en: 'Workflow ' },
+      gatesPassed: { zh: ' · 门径 ', en: ' · gates ' },
+      noWf: { zh: '该项目还没有工作流步骤，把项目发给 AI，即可按类型 × 规模生成裁剪后的流程。', en: 'No workflow yet. Send the project to the AI to generate a tailored process by type x scale.' },
+      emptyCol: { zh: '暂无项目', en: 'No projects' },
+      countUnit: { zh: ' 个项目', en: ' projects' },
+      updated: { zh: '更新于 ', en: 'Updated ' },
+      noGoal: { zh: '（未填目标）', en: '(No goal set)' },
+      archivedBadge: { zh: '已归档', en: 'Archived' },
+      localBadge: { zh: '本地', en: 'Local' },
+      /* 立项向导 */
+      newProject: { zh: '＋ 新建项目', en: '＋ New project' },
+      wzTitle: { zh: '新建项目 · 立项向导', en: 'New project wizard' },
+      wzIntro: { zh: '点选类型、等级、规模与起始阶段，右侧实时生成裁剪后的流程模板；底线两问必填。', en: 'Pick type, level, scale and starting stage; the tailored process appears on the right. Both baseline questions are required.' },
+      wzName: { zh: '项目名', en: 'Name' },
+      wzGoal: { zh: '目标', en: 'Goal' },
+      wzAccept: { zh: '验收标准', en: 'Acceptance criteria' },
+      wzKill: { zh: '放弃条件', en: 'Kill criteria' },
+      wzType: { zh: '项目类型', en: 'Type' },
+      wzLevel: { zh: '项目等级', en: 'Level' },
+      wzScale: { zh: '团队规模', en: 'Team size' },
+      wzPreview: { zh: '流程模板预览', en: 'Process preview' },
+      wzPickFirst: { zh: '先点选左侧三项，这里会生成对应流程', en: 'Pick the three options first; the process appears here' },
+      wzCreate: { zh: '创建项目', en: 'Create' },
+      wzErrName: { zh: '项目名还没填', en: 'Name is required' },
+      wzErrPick: { zh: '类型 / 等级 / 规模还有未选的', en: 'Type / level / scale incomplete' },
+      wzErrCrit: { zh: '通用底线：验收标准与放弃条件必填，否则无法验收、无法止损', en: 'Baseline: acceptance and kill criteria are both required' },
+      wzCreated: { zh: '项目已创建', en: 'Project created' },
+      wzMidCheck: { zh: '中期检查', en: 'Mid-check' },
+      wzSelfCheck: { zh: '自查清单，负责人留痕即可', en: 'Checklist; owner sign-off is enough' },
+      wzStandup: { zh: '门径形式：15 分钟站立审批', en: 'Gate form: 15-minute stand-up' },
+      wzIndep: { zh: '独立评审组，PASS / 有条件放行 / HOLD', en: 'Independent review board: PASS / conditional / HOLD' },
+      wzBaseline: { zh: '基线管理 + 变更控制', en: 'Baseline + change control' },
+      /* 资料上传 */
+      filesTitle: { zh: '项目资料', en: 'Project files' },
+      filesHint: { zh: '文本类（≤512KB）自动读入供 AI 分析；其他类型仅登记元信息。大文件建议存路径。', en: 'Text files (≤512KB) are read in for AI analysis; others are logged by metadata only.' },
+      uploadBtn: { zh: '上传资料', en: 'Upload' },
+      noFiles: { zh: '还没有资料。当前阶段的产出文件传上来，AI 分析才有依据。', en: 'No files yet. Upload stage outputs so the AI has something to analyze.' },
+      fileTooBig: { zh: '单个文件超过 512KB，仅登记元信息', en: 'File over 512KB; metadata logged only' },
+      fileSaved: { zh: '资料已登记', en: 'File registered' },
+      del: { zh: '删', en: 'Del' },
+      /* AI 分析 */
+      aiTitle: { zh: 'AI 分析', en: 'AI analysis' },
+      aiRun: { zh: '跑一次分析', en: 'Run analysis' },
+      aiEmpty: { zh: '还没跑过分析。分析会对照门径、底线两问和已上传资料给结论。', en: 'No analysis yet. It checks gates, baseline criteria and uploaded files.' },
+      aiAt: { zh: '分析于 ', en: 'Analyzed ' },
+      /* 归档 */
+      archTitle: { zh: '归档区', en: 'Archive' },
+      archHint: { zh: '已完成项目，资料与复盘已固化', en: 'Completed projects, frozen' },
+      archBtn: { zh: '归档项目', en: 'Archive' },
+      archNeedReview: { zh: '只有复盘阶段的项目才能归档', en: 'Only projects in Review stage can be archived' },
+      archNeedAssets: { zh: '归档前请写全复盘三资产', en: 'Fill in the three review assets before archiving' },
+      archConfirm: { zh: '确认归档？归档后项目移入归档区，仍可查看和导出报告。', en: 'Archive now? The project moves to the archive, still viewable and exportable.' },
+      archDone: { zh: '已归档', en: 'Archived' },
+      archExport: { zh: '导出归档报告', en: 'Export archive report' },
+      archExample: { zh: '示例项目（来自数据文件）不支持归档，可在向导中新建同类项目', en: 'Sample projects (from data files) cannot be archived; create your own via the wizard' },
+      /* AI 分析输出模板 */
+      aiT1: { zh: '【底线两问】', en: '[Baseline questions]' },
+      aiT2: { zh: '【门径状态】', en: '[Gate status]' },
+      aiT3: { zh: '【资料完备度】', en: '[File coverage]' },
+      aiT4: { zh: '【复盘资产】', en: '[Review assets]' },
+      aiT5: { zh: '【结论与下一步】', en: '[Verdict and next step]' },
+      aiCritOk: { zh: '验收标准与放弃条件都已写清，底线合格。', en: 'Both criteria are in place. Baseline met.' },
+      aiCritNo: { zh: '底线两问未写全：', en: 'Baseline incomplete: ' },
+      aiGateClean: { zh: '已到门径全部通过，无积压。', en: 'All reached gates passed, nothing pending.' },
+      aiGatePending: { zh: '有 {n} 道门径待审：{g}。放行前需要对应证据，不许跳过。', en: '{n} gate(s) pending: {g}. Evidence required before release; no skipping.' },
+      aiGateNone: { zh: '本项目未配门径（数据文件中的项目），建议按向导重新立项。', en: 'No gates configured (data-file project); consider re-kickoff via the wizard.' },
+      aiFileNone: { zh: '尚未上传任何资料，分析缺少事实依据。', en: 'No files uploaded; analysis lacks factual grounding.' },
+      aiFileOk: { zh: '当前阶段（{s}）应产出「{o}」，已在资料中找到相关内容：{f}。', en: 'Stage ({s}) expects "{o}"; found in: {f}.' },
+      aiFileMiss: { zh: '当前阶段（{s}）应产出「{o}」，但资料里没找到对应内容，建议补齐再过门径。', en: 'Stage ({s}) expects "{o}" but no matching file content; fill the gap before the next gate.' },
+      aiRevOk: { zh: '复盘三资产已齐，可以归档。', en: 'Review assets complete; ready to archive.' },
+      aiRevNo: { zh: '处于复盘阶段但三资产未写全：{m}。归档前补齐。', en: 'In review stage but assets missing: {m}. Fill them before archiving.' },
+      aiRevEarly: { zh: '尚未到复盘阶段，三资产留到复盘时填写。', en: 'Not in review stage yet; assets come later.' },
+      aiGoOn: { zh: '整体健康，继续当前阶段。', en: 'Overall healthy; keep going.' },
+      aiFixCrit: { zh: '先补底线两问，再谈推进。', en: 'Fix the baseline questions first.' },
+      aiFixGate: { zh: '优先补齐待审门径的放行证据。', en: 'Prioritize evidence for pending gates.' },
+      aiFixFile: { zh: '补齐当前阶段产出资料，再申请门径放行。', en: 'Upload stage outputs before requesting gate release.' },
+      aiStageMap: { zh: '当前处于{st}阶段，进度 {d}/{t} 步。', en: 'Now in {st}, {d}/{t} steps done.' },
+      gateNote: { zh: '不可逆动作（开模 / 上线 / 对外发布）前，先过对应门径。', en: 'Before any irreversible action (tooling / go-live / publishing), pass its gate first.' },
+      stageMoved: { zh: '阶段已调整为「{s}」', en: 'Stage set to "{s}"' },
+      wzStage: { zh: '起始阶段', en: 'Starting stage' },
+      gateHint: { zh: '点选门径行可切换状态：通过 → 待审 → 未到', en: 'Click a gate to cycle its status: PASS → HOLD → N/A' },
+      gateMoved: { zh: '门径状态已更新', en: 'Gate status updated' },
+      dvlName: { zh: '产出物名称', en: 'Deliverable name' },
+      dvlDue: { zh: '时间节点', en: 'Due' },
+      dvlAdd: { zh: '＋ 添加产出物', en: '＋ Add deliverable' },
+      dvlSave: { zh: '保存产出物', en: 'Save deliverables' },
+      dvlSaved: { zh: '产出物清单已保存', en: 'Deliverables saved' },
+      linkOpen: { zh: '打开项目目录', en: 'Open project folder' },
+      linkCopy: { zh: '复制路径', en: 'Copy path' },
+      linkCopied: { zh: '路径已复制', en: 'Path copied' },
+      linkHint: { zh: 'http 预览下浏览器可能拦截本地链接，被拦截时复制路径到资源管理器打开', en: 'Browsers may block file links over http; copy the path into Explorer instead' },
+      wfHint: { zh: '点击步骤可推进状态：待开始 → 进行中 → 完成（循环）', en: 'Click a step to advance: todo → doing → done (cycle)' },
+      stepMoved: { zh: '步骤状态已更新', en: 'Step status updated' },
+      gateAlert: { zh: ' 道门径待审', en: ' gate(s) pending' },
+      expLocal: { zh: '导出数据', en: 'Export data' },
+      impLocal: { zh: '导入数据', en: 'Import data' },
+      expLocalOk: { zh: '本地数据已导出（含 {n} 个项目）', en: 'Exported {n} local project(s)' },
+      expLocalEmpty: { zh: '还没有本地项目，暂无可导出的数据', en: 'No local projects to export yet' },
+      impLocalOk: { zh: '导入完成（{n} 个项目）', en: 'Imported {n} local project(s)' },
+      impLocalBad: { zh: '导入失败：需要本页「导出数据」生成的 JSON 文件', en: 'Import failed: expected the JSON file from Export data' },
+      impConfirm: { zh: '文件中 {n} 个项目与现有项目同 ID，导入会覆盖它们，其余保留。继续？', en: '{n} project(s) share existing IDs and will be overwritten; the rest are kept. Continue?' }
+    };
+
+    /* =========================================================
+     * 本地存储（本地项目 / 资料 / 分析记录）
+     * ========================================================= */
+    var LS_PROJ = 'rl_projects_local_v1';
+    var LS_FILES = 'rl_proj_files_v1';
+    var LS_AI = 'rl_proj_analysis_v1';
+
+    function lsGet(key, fb) {
+      try { return JSON.parse(localStorage.getItem(key)) || fb; } catch (e) { return fb; }
+    }
+    function lsSet(key, val) {
+      try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {
+        alert(getLang() === 'en' ? 'localStorage quota exceeded' : '浏览器存储已满，请删除部分资料后重试');
+      }
+    }
+    function loadLocal() { return lsGet(LS_PROJ, []); }
+    function saveLocal(a) { lsSet(LS_PROJ, a); }
+    function allProjects() { return getData('projects').concat(loadLocal()); }
+    function isLocal(p) { return /^local-/.test(p.id); }
+    function filesOf(id) { return lsGet(LS_FILES, {})[id] || []; }
+    function analysisOf(id) { return lsGet(LS_AI, {})[id] || []; }
+
+    function fileHref(path) {
+      var s = String(path).replace(/\\/g, '/');
+      return /^https?:\/\//i.test(s) ? s : encodeURI('file:///' + s);
+    }
+
+    function toast(msg) {
+      var t = document.getElementById('toast');
+      if (!t) return;
+      t.textContent = msg;
+      t.classList.add('show');
+      clearTimeout(t._timer);
+      t._timer = setTimeout(function () { t.classList.remove('show'); }, 2600);
+    }
+
+    function today() { return new Date().toISOString().slice(0, 10); }
+    function nowStr() {
+      var d = new Date();
+      return today() + ' ' + pad2(d.getHours()) + ':' + pad2(d.getMinutes());
+    }
+
+    /* =========================================================
+     * 流程模板生成（裁剪规则的核心落地）
+     * ========================================================= */
+    function generateProcess(type, level, scale) {
+      var steps = (STEP_TPL[type] || []).map(function (s) {
+        return { step: s[0], agent: s[1], output: s[2], status: '待开始' };
+      });
+      var gates = (GATE_TPL[type] || []).map(function (g) {
+        return { name: g[0], status: '未到', note: g[1] };
+      });
+      var notes = [];
+
+      /* 类型 × 规模特例：硬件微型合并仿真与设计 */
+      if (type === 'hw' && scale === 'micro') {
+        steps = [
+          { step: '概念与需求', agent: 'AI 市场调研', output: '市场需求文档', status: '待开始' },
+          { step: '架构与详细设计（合并）', agent: 'AI 仿真对标 + DFM 审查', output: '架构与工程验证报告', status: '待开始' },
+          { step: '样机试制与测试', agent: 'AI 测试用例', output: '样机实测数据', status: '待开始' },
+          { step: '小批量试产', agent: 'AI 供应链扫描', output: '试产良率报告', status: '待开始' },
+          { step: '市场发布', agent: 'AI 发布物料', output: '发布物料包', status: '待开始' }
+        ];
+        gates = [
+          { name: '设计冻结门（开模前）', status: '未到', note: '开模不可逆，放行检查不可裁' },
+          { name: '量产放行门', status: '未到', note: '试产良率 + 二供预案' }
+        ];
+        notes.push(MATRIX.hw.micro);
+      }
+
+      /* 等级裁剪门径 */
+      if (level === 'S' && gates.length > 1 && type !== 'hw') {
+        gates = [gates[gates.length - 1]];
+        gates[0].note += ' ｜ ' + L(STR.wzSelfCheck);
+      } else if (level === 'S' && type === 'hw' && gates.length > 2) {
+        /* 硬件 S 级保留不可逆门径，去掉中间评审 */
+        gates = [gates[0], gates[gates.length - 1]];
+      }
+      if ((level === 'L' || (level === 'M' && (scale === 'mid' || scale === 'big' || scale === 'xorg'))) && type !== 'rd') {
+        gates.push({ name: L(STR.wzMidCheck), status: '未到', note: getLang() === 'en' ? 'Progress deviation > 20% triggers adjustment' : '进度偏差超 20% 即触发调整' });
+      }
+
+      /* 规模决定门径形式 */
+      if (scale === 'micro') notes.push(STR.wzStandup);
+      if (scale === 'big' || scale === 'xorg') {
+        notes.push(STR.wzIndep);
+        if (level === 'L') notes.push(STR.wzBaseline);
+      }
+      if (type && MATRIX[type] && scale) {
+        notes.push(MATRIX[type][scale === 'xorg' ? 'big' : scale]);
+      }
+      if (level === 'L' && type === 'hw') notes.push({ zh: '六阶段六门径全保留，认证并行推进', en: 'All 6 stages / 6 gates; certification runs in parallel' });
+
+      return { steps: steps, gates: gates, notes: notes.map(function (n) { return L(n); }) };
+    }
+
+    /* =========================================================
+     * 筛选器与工具栏
+     * ========================================================= */
+    function buildFilters() {
+      var keep = ['filterStage', 'filterType', 'filterLevel'].map(function (id) {
+        return document.getElementById(id).value;
+      });
+      document.getElementById('filterStage').innerHTML =
+        '<option value="">' + esc(L(STR.allStage)) + '</option>' +
+        STAGES.map(function (s) { return '<option value="' + s + '">' + esc(stageLabel(s)) + '</option>'; }).join('');
+      document.getElementById('filterType').innerHTML =
+        '<option value="">' + esc(L(STR.allType)) + '</option>' +
+        Object.keys(TYPES).map(function (k) { return '<option value="' + k + '">' + esc(L(TYPES[k].name)) + '</option>'; }).join('');
+      document.getElementById('filterLevel').innerHTML =
+        '<option value="">' + esc(L(STR.allLevel)) + '</option>' +
+        ['S', 'M', 'L'].map(function (k) { return '<option value="' + k + '">' + esc(L(LEVELS[k].name)) + '</option>'; }).join('');
+      document.getElementById('exportLocalBtn').textContent = L(STR.expLocal);
+      document.getElementById('importLocalBtn').textContent = L(STR.impLocal);
+      document.getElementById('newProjectBtn').textContent = L(STR.newProject);
+      ['filterStage', 'filterType', 'filterLevel'].forEach(function (id, i) {
+        document.getElementById(id).value = keep[i];
+      });
+    }
+
+    function stageLabel(s) {
+      var m = { '构想': t('proj.stage.idea'), '设计': t('proj.stage.design'),
+                '执行': t('proj.stage.execute'), '复盘': t('proj.stage.review') };
+      return m[s] || s || '-';
+    }
+    function statusLabel(s) {
+      var m = { '完成': t('proj.status.done'), '进行中': t('proj.status.doing'),
+                '待开始': t('proj.status.todo') };
+      return m[s] || s || t('proj.status.todo');
+    }
+    function gatesPassed(p) { return (p.gates || []).filter(function (g) { return g.status === '通过'; }).length; }
+    function gatesTotal(p) { return (p.gates || []).length; }
+    function stepsDone(p) { return (p.workflow || []).filter(function (s) { return s.status === '完成'; }).length; }
+    function stepsTotal(p) { return (p.workflow || []).length; }
+
+    /* =========================================================
+     * 看板 + 归档区
+     * ========================================================= */
+    function renderPCard(p, archived) {
+      var total = stepsTotal(p), done = stepsDone(p);
+      var gTotal = gatesTotal(p), gDone = gatesPassed(p);
+      var pendingGates = (p.gates || []).filter(function (g) { return g.status === '待审'; }).length;
+      var pct = total ? Math.round(done / total * 100) : 0;
+      var local = isLocal(p) && !archived;
+      return '<div class="p-card' + (archived ? ' p-archived' : '') + (pendingGates ? ' p-gate-alert' : '') + '"' +
+        ' role="button" tabindex="0"' +
+        (pendingGates ? ' title="' + esc(pendingGates + L(STR.gateAlert)) + '"' : '') +
+        ' onclick="openDetail(\'' + esc(p.id) + '\')" onkeydown="pCardKey(event,\'' + esc(p.id) + '\')">' +
+        '<h4>' + esc(p.name) +
+          (archived ? '<span class="arch-badge">' + esc(L(STR.archivedBadge)) + '</span>' : '') +
+        '</h4>' +
+        '<div class="p-tags">' +
+          '<span class="level-badge lvl-' + esc(p.level || 'M') + '">' + esc(L((LEVELS[p.level] || LEVELS.M).name)) + '</span>' +
+          (p.type && TYPES[p.type] ? '<span class="type-badge">' + esc(L(TYPES[p.type].name)) + '</span>' : '') +
+          (p.scale && SCALES[p.scale] ? '<span class="scale-badge">' + esc(L(SCALES[p.scale])) + '</span>' : '') +
+        '</div>' +
+        '<div class="p-goal">' + esc(p.goal || L(STR.noGoal)) + '</div>' +
+        (p.link
+          ? '<div class="p-link-row"><a href="' + esc(fileHref(p.link)) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">▤ ' + esc(L(STR.linkOpen)) + '</a></div>'
+          : '') +
+        (local
+          ? '<div class="p-stage-pick" onclick="event.stopPropagation()">' +
+            STAGES.map(function (s) {
+              return '<button type="button" class="st-chip' + (p.stage === s ? ' on' : '') + '" onclick="setProjectStage(\'' + esc(p.id) + '\',\'' + s + '\')">' + esc(stageLabel(s)) + '</button>';
+            }).join('') + '</div>'
+          : '') +
+        (total
+          ? '<div class="p-progress"><i style="width:' + pct + '%"></i></div>' +
+            '<div class="p-progress-text">' + esc(L(STR.wfPrefix)) + done + '/' + total +
+              (gTotal ? esc(L(STR.gatesPassed)) + gDone + '/' + gTotal : '') +
+              ' · ' + esc(L(STR.updated)) + esc(p.updatedAt || '-') + '</div>'
+          : '<div class="p-progress-text">' + esc(L(STR.updated)) + esc(p.updatedAt || '-') + '</div>') +
+      '</div>';
+    }
+
+    function renderBoard() {
+      var fs = document.getElementById('filterStage').value;
+      var ft = document.getElementById('filterType').value;
+      var fl = document.getElementById('filterLevel').value;
+      var kw = document.getElementById('searchKw').value.trim().toLowerCase();
+
+      var all = allProjects();
+      var list = all.filter(function (p) {
+        if (p.archived) return false;
+        if (fs && p.stage !== fs) return false;
+        if (ft && p.type !== ft) return false;
+        if (fl && p.level !== fl) return false;
+        if (kw) {
+          var text = ((p.name || '') + ' ' + (p.goal || '')).toLowerCase();
+          if (text.indexOf(kw) < 0) return false;
+        }
+        return true;
+      });
+
+      document.getElementById('countInfo').textContent =
+        list.length + ' / ' + all.length + L(STR.countUnit);
+
+      var showStages = fs ? [fs] : STAGES;
+      document.getElementById('kanban').innerHTML = showStages.map(function (stage) {
+        var col = list.filter(function (p) { return p.stage === stage; });
+        return '<div class="kanban-col">' +
+          '<h3>' + ((STAGE_ICONS[stage] || '') ? '<span class="stage-mark">' + STAGE_ICONS[stage] + '</span>' : '') + stageLabel(stage) +
+            '<span class="col-count">' + col.length + '</span></h3>' +
+          (col.length
+            ? col.map(function (p) { return renderPCard(p, false); }).join('')
+            : '<div class="empty" style="padding:24px 0;font-size:12.5px">' + esc(L(STR.emptyCol)) + '</div>') +
+        '</div>';
+      }).join('');
+
+      renderArchived(list, all);
+    }
+
+    function renderArchived(activeList, all) {
+      var archived = all.filter(function (p) { return p.archived; });
+      var panel = document.getElementById('archivePanel');
+      if (!archived.length) { panel.hidden = true; return; }
+      panel.hidden = false;
+      document.getElementById('archiveToggleLabel').textContent = L(STR.archTitle);
+      document.getElementById('archiveCount').textContent = archived.length + L(STR.countUnit);
+      document.getElementById('archivedList').innerHTML = archived.map(function (p) {
+        return renderPCard(p, true);
+      }).join('');
+    }
+
+    (function bindArchiveToggle() {
+      var toggle = document.getElementById('archiveToggle');
+      var body = document.getElementById('archiveBody');
+      toggle.addEventListener('click', function () {
+        var open = body.hasAttribute('hidden');
+        if (open) { body.removeAttribute('hidden'); toggle.classList.add('open'); }
+        else { body.setAttribute('hidden', ''); toggle.classList.remove('open'); }
+        toggle.querySelector('.ref-toggle-mark').textContent = open ? '◆' : '◇';
+      });
+    })();
+
+    /* =========================================================
+     * 立项向导
+     * ========================================================= */
+    var wz = { type: '', level: '', scale: '', stage: '构想' };
+
+    function openWizard() {
+      wz = { type: '', level: '', scale: '', stage: '构想' };
+      document.getElementById('wizardBody').innerHTML =
+        '<button class="m-close" onclick="closeWizard()">×</button>' +
+        '<h3>' + esc(L(STR.wzTitle)) + '</h3>' +
+        '<p class="wz-intro">' + esc(L(STR.wzIntro)) + '</p>' +
+        '<div class="wz-grid">' +
+          '<div class="wz-left">' +
+            '<div class="wz-field"><label>' + esc(L(STR.wzName)) + ' *</label><input type="text" id="wzName"></div>' +
+            '<div class="wz-field"><label>' + esc(L(STR.wzGoal)) + '</label><input type="text" id="wzGoal"></div>' +
+            '<div class="wz-field"><label>' + esc(L(STR.wzAccept)) + ' *</label><textarea id="wzAccept"></textarea></div>' +
+            '<div class="wz-field"><label>' + esc(L(STR.wzKill)) + ' *</label><textarea id="wzKill"></textarea></div>' +
+            '<div class="wz-field"><label>' + esc(L(STR.wzType)) + ' *</label><div class="wz-chips" id="wzTypes">' +
+              Object.keys(TYPES).map(function (k) {
+                return '<button type="button" class="wz-chip" data-k="type" data-v="' + k + '">' + esc(L(TYPES[k].name)) + '</button>';
+              }).join('') + '</div></div>' +
+            '<div class="wz-field"><label>' + esc(L(STR.wzLevel)) + ' *</label><div class="wz-chips">' +
+              ['S', 'M', 'L'].map(function (k) {
+                return '<button type="button" class="wz-chip lvl-chip-' + k + '" data-k="level" data-v="' + k + '">' + esc(L(LEVELS[k].name)) + '</button>';
+              }).join('') + '</div></div>' +
+            '<div class="wz-field"><label>' + esc(L(STR.wzScale)) + ' *</label><div class="wz-chips">' +
+              Object.keys(SCALES).map(function (k) {
+                return '<button type="button" class="wz-chip" data-k="scale" data-v="' + k + '">' + esc(SCALES[k]) + '</button>';
+              }).join('') + '</div></div>' +
+            '<div class="wz-field"><label>' + esc(L(STR.wzStage)) + '</label><div class="wz-chips">' +
+              STAGES.map(function (s) {
+                return '<button type="button" class="wz-chip' + (s === wz.stage ? ' on' : '') + '" data-k="stage" data-v="' + s + '">' + esc(stageLabel(s)) + '</button>';
+              }).join('') + '</div></div>' +
+            '<div class="form-error" id="wzError"></div>' +
+            '<div class="form-actions"><button type="button" class="btn btn-primary" id="wzCreateBtn">' + esc(L(STR.wzCreate)) + '</button></div>' +
+          '</div>' +
+          '<div class="wz-right">' +
+            '<div class="s-label">' + esc(L(STR.wzPreview)) + '</div>' +
+            '<div id="wzPreview" class="wz-preview">' + esc(L(STR.wzPickFirst)) + '</div>' +
+          '</div>' +
+        '</div>';
+
+      document.querySelectorAll('#wizardBody .wz-chip').forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          document.querySelectorAll('#wizardBody .wz-chip[data-k="' + chip.dataset.k + '"]').forEach(function (c) { c.classList.remove('on'); });
+          chip.classList.add('on');
+          wz[chip.dataset.k] = chip.dataset.v;
+          renderWzPreview();
+        });
+      });
+      document.getElementById('wzCreateBtn').addEventListener('click', createProject);
+      openModal(document.getElementById('wizardMask'));
+    }
+    function closeWizard() { closeModal(document.getElementById('wizardMask')); }
+    document.getElementById('wizardMask').addEventListener('click', function (e) {
+      if (e.target === this) closeWizard();
+    });
+
+    function renderWzPreview() {
+      var box = document.getElementById('wzPreview');
+      if (!wz.type || !wz.level || !wz.scale) { box.innerHTML = esc(L(STR.wzPickFirst)); return; }
+      var proc = generateProcess(wz.type, wz.level, wz.scale);
+      box.innerHTML =
+        '<div class="wz-notes">' + proc.notes.map(function (n) { return '<div class="wz-note">◇ ' + esc(n) + '</div>'; }).join('') + '</div>' +
+        '<div class="wz-sec">' + esc(L(STR.wzLevel)) + '：' + esc(L(LEVELS[wz.level].name)) +
+          ' ｜ ' + esc(L(LEVELS[wz.level].flow)) + '</div>' +
+        '<div class="wz-sec wz-steps-list">' +
+          proc.steps.map(function (s, i) {
+            return '<div class="wz-step-row"><span class="wz-idx">' + (i + 1) + '</span>' +
+              '<div><span class="gate-name">' + esc(s.step) + '</span>' +
+              '<span class="wz-agent"> · ' + esc(s.agent) + ' → ' + esc(s.output) + '</span></div></div>';
+          }).join('') + '</div>' +
+        '<div class="wz-sec"><span class="s-label" style="display:block">' + esc(L(STR.gates)) + '</span>' +
+          proc.gates.map(function (g) {
+            return '<div class="wz-step-row"><span class="wz-idx">◐</span>' +
+              '<div><span class="gate-name">' + esc(g.name) + '</span>' +
+              '<span class="wz-agent"> · ' + esc(g.note) + '</span></div></div>';
+          }).join('') + '</div>';
+    }
+
+    function createProject() {
+      var name = document.getElementById('wzName').value.trim();
+      var goal = document.getElementById('wzGoal').value.trim();
+      var accept = document.getElementById('wzAccept').value.trim();
+      var kill = document.getElementById('wzKill').value.trim();
+      var err = document.getElementById('wzError');
+      err.style.display = 'none';
+
+      if (!name) { err.style.display = 'block'; err.textContent = L(STR.wzErrName); return; }
+      if (!wz.type || !wz.level || !wz.scale) { err.style.display = 'block'; err.textContent = L(STR.wzErrPick); return; }
+      if (!accept || !kill) { err.style.display = 'block'; err.textContent = L(STR.wzErrCrit); return; }
+
+      var proc = generateProcess(wz.type, wz.level, wz.scale);
+      var p = {
+        id: 'local-' + Date.now().toString(36),
+        name: name, goal: goal, stage: wz.stage || '构想',
+        type: wz.type, level: wz.level, scale: wz.scale,
+        accept: accept, kill: kill,
+        workflow: proc.steps, gates: proc.gates,
+        deliverables: [], review: {},
+        archived: false, updatedAt: today()
+      };
+      var locals = loadLocal();
+      locals.unshift(p);
+      saveLocal(locals);
+      closeWizard();
+      renderBoard();
+      toast(L(STR.wzCreated));
+    }
+
+    /* =========================================================
+     * 资料上传
+     * ========================================================= */
+    var TEXT_EXT = ['txt', 'md', 'json', 'csv', 'js', 'html', 'css', 'xml', 'log', 'markdown'];
+    var MAX_TEXT = 512 * 1024;
+
+    function registerFiles(pid, fileList) {
+      var store = lsGet(LS_FILES, {});
+      if (!store[pid]) store[pid] = [];
+      var pending = Array.prototype.slice.call(fileList);
+      (function next() {
+        if (!pending.length) {
+          lsSet(LS_FILES, store);
+          toast(L(STR.fileSaved));
+          refreshDetail(pid);
+          return;
+        }
+        var f = pending.shift();
+        var ext = (f.name.split('.').pop() || '').toLowerCase();
+        var rec = { name: f.name, size: f.size, addedAt: today(), text: '', metaOnly: false };
+        if (TEXT_EXT.indexOf(ext) >= 0 && f.size <= MAX_TEXT) {
+          var reader = new FileReader();
+          reader.onload = function () { rec.text = String(reader.result || '').slice(0, 120000); store[pid].push(rec); next(); };
+          reader.onerror = function () { rec.metaOnly = true; store[pid].push(rec); next(); };
+          reader.readAsText(f);
+        } else {
+          rec.metaOnly = true;
+          store[pid].push(rec);
+          next();
+        }
+      })();
+    }
+
+    function deleteFile(pid, idx) {
+      var store = lsGet(LS_FILES, {});
+      if (store[pid]) store[pid].splice(idx, 1);
+      lsSet(LS_FILES, store);
+      refreshDetail(pid);
+    }
+
+    /* =========================================================
+     * AI 分析（规则引擎：对照门径 / 底线两问 / 资料 / 三资产）
+     * ========================================================= */
+    function keywordsOf(s) {
+      return String(s || '').split(/[\s\/、,，;；()（）]+/).filter(function (w) { return w.length >= 2; });
+    }
+
+    function runAnalysis(pid) {
+      var p = findProject(pid);
+      if (!p) return;
+      var files = filesOf(pid);
+      var zh = getLang() !== 'en';
+      var lines = [];
+
+      /* 1. 底线两问 */
+      var critBlock = [L(STR.aiT1)];
+      var critMissing = [];
+      if (!p.accept) critMissing.push(zh ? '验收标准' : 'acceptance');
+      if (!p.kill) critMissing.push(zh ? '放弃条件' : 'kill criteria');
+      critBlock.push(critMissing.length
+        ? L(STR.aiCritNo) + critMissing.join('、') + '。' + L(STR.aiFixCrit)
+        : L(STR.aiCritOk));
+
+      /* 2. 门径状态 */
+      var gateBlock = [L(STR.aiT2)];
+      var gates = p.gates || [];
+      if (!gates.length) {
+        gateBlock.push(L(STR.aiGateNone));
+      } else {
+        var pending = gates.filter(function (g) { return g.status === '待审'; });
+        if (pending.length) {
+          gateBlock.push(L(STR.aiGatePending)
+            .replace('{n}', pending.length)
+            .replace('{g}', pending.map(function (g) { return g.name; }).join('、')));
+        } else {
+          gateBlock.push(L(STR.aiGateClean));
+        }
+      }
+
+      /* 3. 资料完备度：当前阶段应产出 vs 已上传资料 */
+      var fileBlock = [L(STR.aiT3)];
+      var wf = p.workflow || [];
+      var stageIdx = STAGES.indexOf(p.stage);
+      var span = { 0: [0, 2], 1: [1, 4], 2: [2, Math.max(2, wf.length - 1)], 3: [Math.max(0, wf.length - 1), wf.length] }[stageIdx] || [0, wf.length];
+      var expected = wf.slice(span[0], span[1]).filter(function (s) { return s.status !== '完成'; });
+      if (!expected.length) expected = wf.slice(span[0], span[1]);
+      var allText = files.map(function (f) { return (f.name + ' ' + (f.text || '')).toLowerCase(); }).join('\n');
+      if (!files.length) {
+        fileBlock.push(L(STR.aiFileNone));
+      } else if (expected.length) {
+        var hit = null, miss = null;
+        for (var i = 0; i < expected.length; i++) {
+          var kws = keywordsOf(expected[i].output);
+          var ok = kws.some(function (k) { return allText.indexOf(k.toLowerCase()) >= 0; });
+          if (ok && !hit) hit = expected[i];
+          if (!ok && !miss) miss = expected[i];
+        }
+        if (hit) {
+          var hitFile = files.filter(function (f) {
+            return keywordsOf(hit.output).some(function (k) { return (f.name + ' ' + (f.text || '')).toLowerCase().indexOf(k.toLowerCase()) >= 0; });
+          })[0];
+          fileBlock.push(L(STR.aiFileOk)
+            .replace('{s}', stageLabel(p.stage))
+            .replace('{o}', hit.output)
+            .replace('{f}', hitFile ? hitFile.name : '-'));
+        }
+        if (!hit && miss) {
+          fileBlock.push(L(STR.aiFileMiss).replace('{s}', stageLabel(p.stage)).replace('{o}', miss.output));
+        }
+        if (!hit && !miss) {
+          fileBlock.push(L(STR.aiFileOk).replace('{s}', stageLabel(p.stage)).replace('{o}', expected[0].output).replace('{f}', files[0].name));
+        }
+      } else {
+        fileBlock.push(files.length + ' 份资料在案。');
+      }
+
+      /* 4. 复盘三资产 */
+      var revBlock = [L(STR.aiT4)];
+      if (p.stage !== '复盘') {
+        revBlock.push(L(STR.aiRevEarly));
+      } else {
+        var rev = p.review || {};
+        var missing = [];
+        if (!rev.cases) missing.push(zh ? '案例条目' : 'case');
+        if (!rev.template) missing.push(zh ? '模板更新' : 'template');
+        if (!rev.risks) missing.push(zh ? '风险库补充' : 'risk library');
+        revBlock.push(missing.length ? L(STR.aiRevNo).replace('{m}', missing.join('、')) : L(STR.aiRevOk));
+      }
+
+      /* 5. 结论 */
+      var done = stepsDone(p), total = stepsTotal(p);
+      var verdict = [L(STR.aiT5)];
+      verdict.push(L(STR.aiStageMap).replace('{st}', stageLabel(p.stage)).replace('{d}', done).replace('{t}', total));
+      if (critMissing.length) verdict.push(L(STR.aiFixCrit));
+      else if (pending && gates.length && gates.filter(function (g) { return g.status === '待审'; }).length) verdict.push(L(STR.aiFixGate));
+      else if (!files.length) verdict.push(L(STR.aiFixFile));
+      else verdict.push(L(STR.aiGoOn));
+
+      var text = [critBlock, gateBlock, fileBlock, revBlock, verdict]
+        .map(function (b) { return b.join('\n'); }).join('\n\n');
+
+      var store = lsGet(LS_AI, {});
+      if (!store[pid]) store[pid] = [];
+      store[pid].unshift({ at: nowStr(), text: text });
+      store[pid] = store[pid].slice(0, 20);
+      lsSet(LS_AI, store);
+      refreshDetail(pid);
+    }
+
+    /* =========================================================
+     * 详情弹窗
+     * ========================================================= */
+    var STATUS_MARK = { '完成': '✓', '进行中': '●', '待开始': '○' };
+    var GATE_MARK = { '通过': '✓', '待审': '◐', '未到': '○' };
+    var detailId = null;
+
+    function findProject(id) {
+      return allProjects().filter(function (x) { return x.id === id; })[0];
+    }
+
+    function openDetail(id) {
+      detailId = id;
+      renderDetail();
+      openModal(document.getElementById('modalMask'));
+    }
+    function closeDetail() {
+      closeModal(document.getElementById('modalMask'));
+      detailId = null;
+    }
+    function refreshDetail(id) {
+      if (detailId && (id === undefined || id === detailId)) renderDetail();
+    }
+    document.getElementById('modalMask').addEventListener('click', function (e) {
+      if (e.target === this) closeDetail();
+    });
+
+    function gateStatusLabel(s) {
+      var m = { '通过': STR.gatePass, '待审': STR.gatePending, '未到': STR.gateFuture };
+      return L(m[s] || STR.gateFuture);
+    }
+
+    function renderDetail() {
+      var p = findProject(detailId);
+      if (!p) return;
+      var wf = Array.isArray(p.workflow) ? p.workflow : [];
+      var deliverables = Array.isArray(p.deliverables) ? p.deliverables : [];
+      deliverables = deliverables.map(function (d) { return (typeof d === 'string') ? { name: d, progress: 0, due: '' } : d; });
+      var gates = Array.isArray(p.gates) ? p.gates : [];
+      var rev = p.review || {};
+      var files = filesOf(p.id);
+      var analyses = analysisOf(p.id);
+      var local = isLocal(p);
+
+      var metaChips =
+        (p.type && TYPES[p.type] ? '<span class="type-badge">' + esc(L(STR.typeLabel)) + '：' + esc(L(TYPES[p.type].name)) + '</span>' : '') +
+        '<span class="level-badge lvl-' + esc(p.level || 'M') + '">' + esc(L(STR.levelLabel)) + ' ' + esc(L((LEVELS[p.level] || LEVELS.M).name)) + '</span>' +
+        (p.scale && SCALES[p.scale] ? '<span class="scale-badge">' + esc(L(STR.scaleLabel)) + '：' + esc(L(SCALES[p.scale])) + '</span>' : '') +
+        '<span class="scale-badge">' + esc(L(STR.stageLabel)) + '：' + esc(stageLabel(p.stage)) + '</span>' +
+        (p.archived ? '<span class="arch-badge">' + esc(L(STR.archivedBadge)) + '</span>' : '') +
+        (local ? '<span class="scale-badge">' + esc(L(STR.localBadge)) + '</span>' : '');
+
+      var rec = '';
+      if (p.type && p.scale && MATRIX[p.type]) {
+        var cell = MATRIX[p.type][p.scale] || MATRIX[p.type]['mid'];
+        if (cell) rec = '<div class="rec-process"><span class="s-label">' + esc(L(STR.recProcess)) + '</span>' +
+          esc(L(TYPES[p.type].name)) + ' × ' + esc(L(SCALES[p.scale])) + '：' + esc(L(cell)) + '</div>';
+      }
+
+      var criteria =
+        '<div class="criteria">' +
+          '<div class="criteria-item pos"><div class="k-label">' + esc(L(STR.accept)) + '</div>' +
+            '<div class="k-text">' + (p.accept ? esc(p.accept) : esc(L(STR.noCriteria))) + '</div></div>' +
+          '<div class="criteria-item neg"><div class="k-label">' + esc(L(STR.kill)) + '</div>' +
+            '<div class="k-text">' + (p.kill ? esc(p.kill) : esc(L(STR.noCriteria))) + '</div></div>' +
+          '<p class="gate-note">' + esc(L(STR.gateNote)) + '</p>' +
+        '</div>';
+
+      var wfEditable = local && !p.archived;
+      var wfHtml = wf.length
+        ? '<div style="margin-top:18px">' + wf.map(function (s, i) {
+            var cls = s.status === '完成' ? 'done' : (s.status === '进行中' ? 'doing' : '');
+            return '<div class="wf-step ' + cls + (wfEditable ? ' wf-editable' : '') + '"' +
+              (wfEditable
+                ? ' role="button" tabindex="0" title="' + esc(L(STR.wfHint)) + '"' +
+                  ' onclick="cycleStepStatus(\'' + esc(p.id) + '\',' + i + ')"' +
+                  ' onkeydown="stepKey(event,\'' + esc(p.id) + '\',' + i + ')"'
+                : '') + '>' +
+              '<div class="wf-dot">' + (STATUS_MARK[s.status] || '○') + '</div>' +
+              '<div><div class="wf-title">' + esc(s.step || t('proj.step')) + '</div>' +
+                '<div class="wf-meta">' + esc(s.agent || '') + ' · ' + esc(statusLabel(s.status)) + '</div>' +
+                (s.output ? '<div class="wf-output">' + esc(L(STR.output)) + esc(s.output) + '</div>' : '') +
+              '</div></div>';
+          }).join('') + '</div>' + (wfEditable ? '<p class="files-hint">' + esc(L(STR.wfHint)) + '</p>' : '')
+        : '<p style="margin-top:18px;color:var(--text-faint)">' + esc(L(STR.noWf)) + '</p>';
+
+      var gatesHtml = gates.length
+        ? '<div class="gate-list"><div class="s-label">' + esc(L(STR.gates)) + '</div>' +
+          gates.map(function (g, i) {
+            var cls = g.status === '通过' ? 'pass' : (g.status === '待审' ? 'pending' : 'future');
+            return '<div class="gate-item ' + cls + (local ? ' gate-editable' : '') + '"' +
+              (local ? ' role="button" tabindex="0" aria-label="' + esc(g.name) + '"' +
+                ' onclick="cycleGateStatus(\'' + esc(p.id) + '\',' + i + ')"' +
+                ' onkeydown="gateKey(event,\'' + esc(p.id) + '\',' + i + ')"' +
+                ' title="' + esc(L(STR.gateHint)) + '"' : '') + '>' +
+              '<span class="gate-mark">' + (GATE_MARK[g.status] || '○') + '</span>' +
+              '<div><span class="gate-name">' + esc(g.name) + '</span>' +
+              '<span class="gate-status">' + esc(gateStatusLabel(g.status)) + '</span>' +
+              (g.note ? '<div class="gate-note-text">' + esc(g.note) + '</div>' : '') +
+              '</div></div>';
+          }).join('') + '</div>' +
+          (local ? '<p class="files-hint">' + esc(L(STR.gateHint)) + '</p>' : '')
+        : '';
+
+      /* 资料区 */
+      var filesHtml =
+        '<div class="m-files"><div class="s-label">' + esc(L(STR.filesTitle)) + '</div>' +
+        '<p class="files-hint">' + esc(L(STR.filesHint)) + '</p>' +
+        (files.length
+          ? '<div class="file-list">' + files.map(function (f, i) {
+              return '<div class="file-item">' +
+                '<span class="file-name">▦ ' + esc(f.name) + '</span>' +
+                '<span class="file-meta">' + (f.metaOnly ? 'meta' : 'text') + ' · ' + Math.max(1, Math.round(f.size / 1024)) + 'KB · ' + esc(f.addedAt) + '</span>' +
+                (local ? '<button type="button" class="btn btn-mini btn-danger-ghost" onclick="deleteFile(\'' + esc(p.id) + '\',' + i + ')">×</button>' : '') +
+              '</div>';
+            }).join('') + '</div>'
+          : '<p class="files-empty">' + esc(L(STR.noFiles)) + '</p>') +
+        (local
+          ? '<div class="rv-input" style="margin-top:10px">' +
+            '<label class="btn upload-label">' + esc(L(STR.uploadBtn)) +
+            '<input type="file" id="fileInput" multiple style="display:none"></label>' +
+          '</div>'
+          : '<p class="files-hint">' + esc(L(STR.archExample)) + '</p>') +
+        '</div>';
+
+      /* AI 分析区 */
+      var aiHtml =
+        '<div class="m-ai"><div class="s-label">' + esc(L(STR.aiTitle)) + '</div>' +
+        (analyses.length
+          ? '<div class="ai-list">' + analyses.map(function (a) {
+              return '<div class="ai-item"><div class="ai-time">' + esc(L(STR.aiAt)) + esc(a.at) + '</div>' +
+                '<pre class="ai-text">' + esc(a.text) + '</pre></div>';
+            }).join('') + '</div>'
+          : '<p class="files-empty">' + esc(L(STR.aiEmpty)) + '</p>') +
+        (local
+          ? '<div class="form-actions" style="margin-top:10px"><button type="button" class="btn btn-primary" onclick="runAnalysis(\'' + esc(p.id) + '\')">' + esc(L(STR.aiRun)) + '</button></div>'
+          : '') +
+        '</div>';
+
+      /* 三资产编辑 + 归档区（仅本地项目、复盘阶段） */
+      var archiveHtml = '';
+      if (local) {
+        var canArchive = p.stage === '复盘';
+        archiveHtml =
+          '<div class="m-archive"><div class="s-label">' + esc(L(STR.reviewAssets)) + '</div>' +
+          '<div class="wz-field"><label>' + esc(L(STR.reviewCases)) + '</label><textarea id="rvCases">' + esc(rev.cases || '') + '</textarea></div>' +
+          '<div class="wz-field"><label>' + esc(L(STR.reviewTpl)) + '</label><textarea id="rvTpl">' + esc(rev.template || '') + '</textarea></div>' +
+          '<div class="wz-field"><label>' + esc(L(STR.reviewRisk)) + '</label><textarea id="rvRisk">' + esc(rev.risks || '') + '</textarea></div>' +
+          '<div class="form-actions">' +
+            '<button type="button" class="btn" id="saveRevBtn">' + esc(L(STR.reviewAssets)) + '</button>' +
+            (p.archived
+              ? '<button type="button" class="btn" id="exportBtn">' + esc(L(STR.archExport)) + '</button>'
+              : '<button type="button" class="btn btn-primary" id="archiveBtn"' + (canArchive ? '' : ' disabled title="' + esc(L(STR.archNeedReview)) + '"') + '>' + esc(L(STR.archBtn)) + '</button>') +
+          '</div>' +
+          (p.archived ? '' : '<p class="files-hint">' + esc(canArchive ? L(STR.archConfirm) : L(STR.archNeedReview)) + '</p>') +
+          '</div>';
+      } else if (p.archived) {
+        archiveHtml = '';
+      }
+
+      /* 产出物：本地项目可编辑（名称 / 进度 / 时间节点），示例项目只读 */
+      var deliverHtml = '';
+      if (local || deliverables.length) {
+        deliverHtml = '<div class="m-deliver"><div class="s-label">' + esc(L(STR.deliver)) + '</div>';
+        if (local) {
+          deliverHtml += '<div id="dvlRows">' + deliverables.map(function (d) { return dvlRowHtml(d); }).join('') + '</div>' +
+            '<div class="form-actions dvl-actions">' +
+              '<button type="button" class="btn" id="dvlAddBtn">' + esc(L(STR.dvlAdd)) + '</button>' +
+              '<button type="button" class="btn btn-primary" id="dvlSaveBtn">' + esc(L(STR.dvlSave)) + '</button>' +
+            '</div>';
+        } else {
+          deliverHtml += '<ul>' + deliverables.map(function (d) {
+            return '<li>' + esc(d.name || '') +
+              (d.due ? ' <span class="dvl-due-show">· ' + esc(L(STR.dvlDue)) + ' ' + esc(d.due) + '</span>' : '') +
+              '<div class="p-progress"><i style="width:' + (d.progress || 0) + '%"></i></div></li>';
+          }).join('') + '</ul>';
+        }
+        deliverHtml += '</div>';
+      }
+
+      document.getElementById('modalBody').innerHTML =
+        '<button class="m-close" onclick="closeDetail()">×</button>' +
+        '<h3>' + esc(p.name) + '</h3>' +
+        '<div class="m-sub">' + esc(p.goal || '') + '</div>' +
+        (p.link
+          ? '<div class="p-link-box">' +
+            '<a href="' + esc(fileHref(p.link)) + '" target="_blank" rel="noopener">▤ ' + esc(L(STR.linkOpen)) + '</a>' +
+            '<button type="button" class="btn btn-mini" onclick="copyProjLink(this)">' + esc(L(STR.linkCopy)) + '</button>' +
+            '<code class="link-path">' + esc(p.link) + '</code>' +
+            '<span class="link-hint">' + esc(L(STR.linkHint)) + '</span>' +
+          '</div>'
+          : '') +
+        '<div class="p-tags m-meta">' + metaChips + '</div>' +
+        rec + criteria + wfHtml + gatesHtml +
+        deliverHtml +
+        filesHtml + aiHtml + archiveHtml;
+
+      /* 绑定本弹窗内的交互 */
+      var fi = document.getElementById('fileInput');
+      if (fi) fi.addEventListener('change', function () {
+        if (this.files.length) registerFiles(p.id, this.files);
+      });
+      var dvlAdd = document.getElementById('dvlAddBtn');
+      if (dvlAdd) dvlAdd.addEventListener('click', function () { addDvlRow(); });
+      var dvlSave = document.getElementById('dvlSaveBtn');
+      if (dvlSave) dvlSave.addEventListener('click', function () { saveDeliverables(p.id); });
+      document.querySelectorAll('#dvlRows .dvl-prog').forEach(function (r) {
+        r.addEventListener('input', function () {
+          var num = this.parentNode.querySelector('.dvl-prog-num');
+          if (num) num.textContent = this.value + '%';
+        });
+      });
+      var saveRev = document.getElementById('saveRevBtn');
+      if (saveRev) saveRev.addEventListener('click', function () { saveReviewAssets(p.id); });
+      var archBtn = document.getElementById('archiveBtn');
+      if (archBtn && !archBtn.disabled) archBtn.addEventListener('click', function () { archiveProject(p.id); });
+      var expBtn = document.getElementById('exportBtn');
+      if (expBtn) expBtn.addEventListener('click', function () { exportArchive(p.id); });
+    }
+
+    function saveReviewAssets(pid) {
+      var locals = loadLocal();
+      var p = locals.filter(function (x) { return x.id === pid; })[0];
+      if (!p) return;
+      p.review = {
+        cases: document.getElementById('rvCases').value.trim(),
+        template: document.getElementById('rvTpl').value.trim(),
+        risks: document.getElementById('rvRisk').value.trim()
+      };
+      p.updatedAt = today();
+      saveLocal(locals);
+      toast(L(STR.reviewAssets) + ' ✓');
+      renderBoard();
+    }
+
+    /* =========================================================
+     * 阶段 / 门径 / 产出物交互（本地项目）
+     * ========================================================= */
+    function setProjectStage(pid, stage) {
+      if (STAGES.indexOf(stage) < 0) return;
+      var locals = loadLocal();
+      var p = locals.filter(function (x) { return x.id === pid; })[0];
+      if (!p || p.stage === stage) return;
+      p.stage = stage;
+      p.updatedAt = today();
+      saveLocal(locals);
+      renderBoard();
+      refreshDetail(pid);
+      toast(L(STR.stageMoved).replace('{s}', stageLabel(stage)));
+    }
+
+    var GATE_CYCLE = { '通过': '待审', '待审': '未到', '未到': '通过' };
+    function cycleGateStatus(pid, idx) {
+      var locals = loadLocal();
+      var p = locals.filter(function (x) { return x.id === pid; })[0];
+      if (!p || !Array.isArray(p.gates) || !p.gates[idx]) return;
+      p.gates[idx].status = GATE_CYCLE[p.gates[idx].status] || '未到';
+      p.updatedAt = today();
+      saveLocal(locals);
+      renderBoard();
+      renderDetail();
+      toast(L(STR.gateMoved));
+    }
+
+    var STEP_CYCLE = { '待开始': '进行中', '进行中': '完成', '完成': '待开始' };
+    function cycleStepStatus(pid, idx) {
+      var locals = loadLocal();
+      var p = locals.filter(function (x) { return x.id === pid; })[0];
+      if (!p || !Array.isArray(p.workflow) || !p.workflow[idx]) return;
+      p.workflow[idx].status = STEP_CYCLE[p.workflow[idx].status] || '待开始';
+      p.updatedAt = today();
+      saveLocal(locals);
+      renderBoard();
+      renderDetail();
+      toast(L(STR.stepMoved));
+    }
+
+    function pCardKey(e, pid) {
+      if (e.target !== e.currentTarget) return;
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openDetail(pid); }
+    }
+    function stepKey(e, pid, idx) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); cycleStepStatus(pid, idx); }
+    }
+    function gateKey(e, pid, idx) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); cycleGateStatus(pid, idx); }
+    }
+
+    function copyProjLink(btn) {
+      var code = btn.parentNode.querySelector('.link-path');
+      if (!code) return;
+      var txt = code.textContent;
+      function done() { toast(L(STR.linkCopied)); }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = txt;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, fallback);
+      else fallback();
+    }
+
+    function dvlRowHtml(d) {
+      if (typeof d === 'string') d = { name: d };
+      d = d || {};
+      var prog = (typeof d.progress === 'number' && d.progress >= 0) ? Math.min(100, Math.round(d.progress)) : 0;
+      return '<div class="dvl-row">' +
+        '<input type="text" class="dvl-name" value="' + esc(d.name || '') + '" placeholder="' + esc(L(STR.dvlName)) + '">' +
+        '<input type="range" class="dvl-prog" min="0" max="100" step="5" value="' + prog + '">' +
+        '<span class="dvl-prog-num">' + prog + '%</span>' +
+        '<input type="date" class="dvl-due" value="' + esc(d.due || '') + '">' +
+        '<button type="button" class="btn btn-mini btn-danger-ghost" onclick="removeDvlRow(this)">×</button>' +
+      '</div>';
+    }
+
+    function addDvlRow() {
+      var box = document.getElementById('dvlRows');
+      if (!box) return;
+      box.insertAdjacentHTML('beforeend', dvlRowHtml({}));
+      var row = box.lastElementChild;
+      row.querySelector('.dvl-name').focus();
+      row.querySelector('.dvl-prog').addEventListener('input', function () {
+        var num = this.parentNode.querySelector('.dvl-prog-num');
+        if (num) num.textContent = this.value + '%';
+      });
+    }
+
+    function removeDvlRow(btn) {
+      var row = btn.parentNode;
+      if (row && row.parentNode) row.parentNode.removeChild(row);
+    }
+
+    function saveDeliverables(pid) {
+      var locals = loadLocal();
+      var p = locals.filter(function (x) { return x.id === pid; })[0];
+      if (!p) return;
+      var list = [];
+      document.querySelectorAll('#dvlRows .dvl-row').forEach(function (r) {
+        var name = r.querySelector('.dvl-name').value.trim();
+        if (!name) return;
+        list.push({
+          name: name,
+          progress: Math.max(0, Math.min(100, parseInt(r.querySelector('.dvl-prog').value, 10) || 0)),
+          due: r.querySelector('.dvl-due').value || ''
+        });
+      });
+      p.deliverables = list;
+      p.updatedAt = today();
+      saveLocal(locals);
+      renderBoard();
+      renderDetail();
+      toast(L(STR.dvlSaved));
+    }
+
+    /* =========================================================
+     * 归档与导出
+     * ========================================================= */
+    function archiveProject(pid) {
+      var locals = loadLocal();
+      var p = locals.filter(function (x) { return x.id === pid; })[0];
+      if (!p) return;
+      var rev = p.review || {};
+      if (!rev.cases || !rev.template || !rev.risks) {
+        toast(L(STR.archNeedAssets));
+        return;
+      }
+      if (!confirm(L(STR.archConfirm))) return;
+      p.archived = true;
+      p.updatedAt = today();
+      saveLocal(locals);
+      renderBoard();
+      renderDetail();
+      toast(L(STR.archDone));
+    }
+
+    function exportArchive(pid) {
+      var p = findProject(pid);
+      if (!p) return;
+      var files = filesOf(pid);
+      var analyses = analysisOf(pid);
+      var rev = p.review || {};
+      var zh = getLang() !== 'en';
+      var lines = [];
+      lines.push('# ' + p.name);
+      lines.push('');
+      lines.push('- ' + (zh ? '类型 / 等级 / 规模' : 'Type / Level / Scale') + ': ' +
+        L(TYPES[p.type] ? TYPES[p.type].name : { zh: '-', en: '-' }) + ' / ' +
+        L((LEVELS[p.level] || LEVELS.M).name) + ' / ' + (SCALES[p.scale] ? L(SCALES[p.scale]) : '-'));
+      lines.push('- ' + (zh ? '阶段' : 'Stage') + ': ' + p.stage + ' · ' + (zh ? '更新' : 'Updated') + ': ' + p.updatedAt);
+      lines.push('- ' + (zh ? '目标' : 'Goal') + ': ' + (p.goal || '-'));
+      lines.push('- ' + (zh ? '验收标准' : 'Acceptance') + ': ' + (p.accept || '-'));
+      lines.push('- ' + (zh ? '放弃条件' : 'Kill criteria') + ': ' + (p.kill || '-'));
+      lines.push('');
+      lines.push('## ' + (zh ? '工作流' : 'Workflow'));
+      (p.workflow || []).forEach(function (s) {
+        lines.push('- [' + s.status + '] ' + s.step + ' · ' + (s.agent || '') + (s.output ? ' → ' + s.output : ''));
+      });
+      lines.push('');
+      lines.push('## ' + (zh ? '门径' : 'Gates'));
+      (p.gates || []).forEach(function (g) {
+        lines.push('- [' + g.status + '] ' + g.name + (g.note ? ' · ' + g.note : ''));
+      });
+      lines.push('');
+      lines.push('## ' + (zh ? '产出物清单' : 'Deliverables'));
+      (p.deliverables || []).forEach(function (d) {
+        if (typeof d === 'string') { lines.push('- ' + d); return; }
+        lines.push('- ' + (d.name || '-') + ' · ' + (d.progress || 0) + '%' + (d.due ? ' · ' + d.due : ''));
+      });
+      lines.push('');
+      lines.push('## ' + (zh ? '资料清单' : 'Files'));
+      if (files.length) files.forEach(function (f) {
+        lines.push('- ' + f.name + ' · ' + (f.metaOnly ? 'meta' : 'text') + ' · ' + Math.round(f.size / 1024) + 'KB · ' + f.addedAt);
+      }); else lines.push('- ' + (zh ? '（无）' : '(none)'));
+      lines.push('');
+      lines.push('## ' + (zh ? 'AI 分析记录' : 'AI analysis'));
+      if (analyses.length) analyses.forEach(function (a) {
+        lines.push('### ' + a.at);
+        lines.push(a.text);
+        lines.push('');
+      }); else lines.push('- ' + (zh ? '（无）' : '(none)'));
+      lines.push('## ' + (zh ? '复盘三资产' : 'Review assets'));
+      lines.push('- ' + (zh ? '案例条目' : 'Case') + ': ' + (rev.cases || '-'));
+      lines.push('- ' + (zh ? '模板更新' : 'Template') + ': ' + (rev.template || '-'));
+      lines.push('- ' + (zh ? '风险库补充' : 'Risk') + ': ' + (rev.risks || '-'));
+      lines.push('');
+      lines.push('---');
+      lines.push((zh ? '归档时间' : 'Archived at') + ': ' + nowStr() + ' · raphaelliu.cn ' + (zh ? '项目库' : 'Projects'));
+
+      downloadText(p.name + '-归档报告.md', lines.join('\n'));
+    }
+
+    /* =========================================================
+     * 本地数据导出 / 导入（项目 + 资料 + 分析记录）
+     * ========================================================= */
+    function exportLocalData() {
+      var locals = loadLocal();
+      if (!locals.length) { toast(L(STR.expLocalEmpty)); return; }
+      var payload = {
+        app: 'raphaelliu-projects',
+        version: 1,
+        exportedAt: nowStr(),
+        projects: lsGet(LS_PROJ, []),
+        files: lsGet(LS_FILES, {}),
+        analysis: lsGet(LS_AI, {})
+      };
+      downloadText('项目库本地数据-' + today() + '.json', JSON.stringify(payload, null, 2));
+      toast(L(STR.expLocalOk).replace('{n}', locals.length));
+    }
+
+    function importLocalData(file) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var data = null;
+        try { data = JSON.parse(String(reader.result || '')); } catch (e) {}
+        if (!data || !Array.isArray(data.projects)) { toast(L(STR.impLocalBad)); return; }
+        var incoming = data.projects.filter(function (p) { return p && /^local-/.test(String(p.id || '')); });
+        if (!incoming.length) { toast(L(STR.impLocalBad)); return; }
+        var current = lsGet(LS_PROJ, []);
+        var dup = incoming.filter(function (q) {
+          return current.some(function (p) { return p.id === q.id; });
+        }).length;
+        if (dup && !window.confirm(L(STR.impConfirm).replace('{n}', dup))) return;
+        var merged = current.filter(function (p) {
+          return !incoming.some(function (q) { return q.id === p.id; });
+        });
+        lsSet(LS_PROJ, incoming.concat(merged));
+        if (data.files && typeof data.files === 'object') {
+          var fs2 = lsGet(LS_FILES, {});
+          Object.keys(data.files).forEach(function (k) { fs2[k] = data.files[k]; });
+          lsSet(LS_FILES, fs2);
+        }
+        if (data.analysis && typeof data.analysis === 'object') {
+          var ai = lsGet(LS_AI, {});
+          Object.keys(data.analysis).forEach(function (k) { ai[k] = data.analysis[k]; });
+          lsSet(LS_AI, ai);
+        }
+        renderBoard();
+        toast(L(STR.impLocalOk).replace('{n}', incoming.length));
+      };
+      reader.readAsText(file);
+    }
+
+    function downloadText(filename, text) {
+      var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    /* =========================================================
+     * 事件绑定与启动
+     * ========================================================= */
+    ['filterStage', 'filterType', 'filterLevel'].forEach(function (id) {
+      document.getElementById(id).addEventListener('change', renderBoard);
+    });
+    document.getElementById('searchKw').addEventListener('input', renderBoard);
+    document.getElementById('newProjectBtn').addEventListener('click', openWizard);
+    document.getElementById('exportLocalBtn').addEventListener('click', exportLocalData);
+    document.getElementById('importLocalBtn').addEventListener('click', function () {
+      document.getElementById('importFile').click();
+    });
+    document.getElementById('importFile').addEventListener('change', function () {
+      if (this.files.length) importLocalData(this.files[0]);
+      this.value = '';
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { closeDetail(); closeWizard(); }
+    });
+
+    /* 暴露给内联 onclick 使用 */
+    window.openDetail = openDetail;
+    window.closeDetail = closeDetail;
+    window.closeWizard = closeWizard;
+    window.deleteFile = deleteFile;
+    window.runAnalysis = runAnalysis;
+    window.setProjectStage = setProjectStage;
+    window.cycleGateStatus = cycleGateStatus;
+    window.removeDvlRow = removeDvlRow;
+    window.pCardKey = pCardKey;
+    window.stepKey = stepKey;
+    window.gateKey = gateKey;
+    window.cycleStepStatus = cycleStepStatus;
+    window.copyProjLink = copyProjLink;
+
+    buildFilters();
+    renderBoard();
+
+    /* 切语言后无刷新重渲染看板与筛选；已打开的弹窗保持现状（重开即新语言） */
+    document.addEventListener('langchange', function () {
+      buildFilters();
+      renderBoard();
+    });
+  </script>
+</body>
+</html>

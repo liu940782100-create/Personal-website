@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="记录真正理解的实操知识：条件、做法、后果，让 AI 照出思维盲区。">
+  <meta name="theme-color" content="#f9f7f1">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="个人知识库 · Raphael Liu">
+  <meta property="og:description" content="记录真正理解的实操知识：条件、做法、后果，让 AI 照出思维盲区。">
+  <title>个人知识库 · Raphael Liu</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="data/knowledge.js"></script>
+  <script src="assets/app.js"></script>
+</head>
+<body data-page="knowledge">
+  <div id="nav"></div>
+
+  <main class="container">
+    <section class="page-head">
+      <h1 data-i18n="kn.head">个人知识库</h1>
+      <p data-i18n="kn.sub">记录真正理解的实操知识：写清条件与后果，让 AI 照出思维盲区</p>
+    </section>
+
+    <!-- 录入表单 -->
+    <section class="panel">
+      <h3 data-i18n="kn.form.title">新增知识卡片</h3>
+      <div class="panel-sub" data-i18n="kn.form.sub">带 <span style="color:#e5534b">*</span> 为必填项，缺一不能提交。新录入的卡片先保存在本地（浏览器），可通过下方"导出"交给 AI 写回数据文件。</div>
+      <form id="kForm">
+        <div class="form-grid">
+          <div class="field">
+            <label data-i18n="kn.label.title">知识标题 <span class="req">*</span></label>
+            <input type="text" id="f-title" placeholder="一句话概括这条知识" data-i18n-ph="kn.ph.title">
+          </div>
+          <div class="field">
+            <label data-i18n="kn.label.domain">领域</label>
+            <input type="text" id="f-domain" placeholder="如：沟通 / 投资 / 健康（可留空）" data-i18n-ph="kn.ph.domain">
+          </div>
+          <div class="field full">
+            <label data-i18n="kn.label.condition">适用条件 <span class="req">*</span>（在什么情况下成立）</label>
+            <textarea id="f-condition" placeholder="例：当对方情绪激动、且议题不涉及原则问题时" data-i18n-ph="kn.ph.condition"></textarea>
+          </div>
+          <div class="field full">
+            <label data-i18n="kn.label.action">具体做法 <span class="req">*</span></label>
+            <textarea id="f-action" placeholder="例：先复述对方观点，确认理解后再表达自己" data-i18n-ph="kn.ph.action"></textarea>
+          </div>
+          <div class="field full">
+            <label data-i18n="kn.label.consequence">这样做的后果 <span class="req">*</span>（收益 / 会发生什么）</label>
+            <textarea id="f-consequence" placeholder="例：对方感到被尊重，沟通效率显著提升" data-i18n-ph="kn.ph.consequence"></textarea>
+          </div>
+          <div class="field full">
+            <label data-i18n="kn.label.counterfactual">不这么做的后果 <span class="req">*</span></label>
+            <textarea id="f-counterfactual" placeholder="例：直接反驳会激起防御心理，议题被搁置" data-i18n-ph="kn.ph.counterfactual"></textarea>
+          </div>
+          <div class="field full">
+            <label data-i18n="kn.label.evidence">我的实践证据 <span class="req">*</span>（亲身经历记录）</label>
+            <textarea id="f-evidence" placeholder="例：上周项目评审会上用过一次，对方当场软化立场" data-i18n-ph="kn.ph.evidence"></textarea>
+          </div>
+          <div class="field">
+            <label data-i18n="kn.label.confidence">置信度</label>
+            <select id="f-confidence">
+              <option value="待验证" selected data-i18n="kn.conf.pending">待验证</option>
+              <option value="已验证" data-i18n="kn.conf.verified">已验证</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-error" id="formError"></div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" data-i18n="kn.save">保存卡片</button>
+          <span class="form-tip" data-i18n="kn.form.tip">必填：标题 / 条件 / 做法 / 后果 / 不做的后果 / 实践证据</span>
+        </div>
+      </form>
+    </section>
+
+    <!-- 工具条 -->
+    <div class="toolbar">
+      <select id="filterDomain"><option value="" data-i18n="kn.allDomain">全部领域</option></select>
+      <select id="filterConfidence">
+        <option value="" data-i18n="kn.allConf">全部置信度</option>
+        <option value="已验证" data-i18n="kn.conf.verified">已验证</option>
+        <option value="待验证" data-i18n="kn.conf.pending">待验证</option>
+      </select>
+      <input type="text" id="searchKw" class="grow" placeholder="搜索：标题 / 条件 / 做法 / 后果 / 证据…" data-i18n-ph="kn.search.ph">
+      <button class="btn" id="btnExportData" data-i18n="kn.exportData">导出全部数据</button>
+      <button class="btn" id="btnExportReview" data-i18n="kn.exportReview">导出思维记录</button>
+      <span class="count" id="countInfo"></span>
+    </div>
+
+    <!-- 卡片列表 -->
+    <section class="card-list" id="cardList"></section>
+  </main>
+
+  <div id="footer"></div>
+  <div class="toast" id="toast"></div>
+
+  <script>
+    document.getElementById('nav').innerHTML = renderNav('knowledge.html');
+    document.getElementById('footer').innerHTML = renderFooter();
+
+    /* ---------- 本地存储 ---------- */
+    var LS_CARDS = 'qianwen_kb_cards_v1';
+    var LS_REVIEWS = 'qianwen_kb_reviews_v1';
+
+    function loadLocalCards() {
+      try { return JSON.parse(localStorage.getItem(LS_CARDS)) || []; } catch (e) { return []; }
+    }
+    function saveLocalCards(arr) { localStorage.setItem(LS_CARDS, JSON.stringify(arr)); }
+    function loadReviews() {
+      try { return JSON.parse(localStorage.getItem(LS_REVIEWS)) || {}; } catch (e) { return {}; }
+    }
+    function saveReviews(obj) { localStorage.setItem(LS_REVIEWS, JSON.stringify(obj)); }
+
+    function today() { return new Date().toISOString().slice(0, 10); }
+
+    /* ---------- 合并数据：数据文件 + 本地新录入 ---------- */
+    function allCards() {
+      return getData('knowledge').concat(loadLocalCards());
+    }
+
+    /* ---------- 渲染领域筛选 ---------- */
+    function refreshDomainOptions() {
+      var domains = [];
+      allCards().forEach(function (c) {
+        var d = (c.domain || t('kn.uncategorized')).trim() || t('kn.uncategorized');
+        if (domains.indexOf(d) < 0) domains.push(d);
+      });
+      var sel = document.getElementById('filterDomain');
+      var cur = sel.value;
+      sel.innerHTML = '<option value="">' + t('kn.allDomain') + '</option>' +
+        domains.map(function (d) { return '<option value="' + esc(d) + '">' + esc(d) + '</option>'; }).join('');
+      sel.value = cur;
+    }
+
+    /* ---------- 卡片渲染 ---------- */
+    var SEARCH_FIELDS = ['title', 'domain', 'condition', 'action', 'consequence', 'counterfactual', 'evidence'];
+
+    function renderCards() {
+      var fd = document.getElementById('filterDomain').value;
+      var fc = document.getElementById('filterConfidence').value;
+      var kw = document.getElementById('searchKw').value.trim();
+
+      var list = allCards().filter(function (c) {
+        var d = (c.domain || t('kn.uncategorized')).trim() || t('kn.uncategorized');
+        if (fd && d !== fd) return false;
+        if (fc && c.confidence !== fc) return false;
+        return matchKeyword(c, kw, SEARCH_FIELDS);
+      });
+
+      document.getElementById('countInfo').textContent = list.length + ' / ' + allCards().length + t('kn.count.unit');
+
+      var box = document.getElementById('cardList');
+      if (!list.length) {
+        box.innerHTML = '<div class="empty"><div class="big">' + t('common.empty') + '</div>' + t('kn.empty') + '</div>';
+        return;
+      }
+      box.innerHTML = list.map(renderCard).join('');
+    }
+
+    function renderCard(c) {
+      var isLocal = /^local-/.test(c.id);
+      var domain = (c.domain || t('kn.uncategorized')).trim() || t('kn.uncategorized');
+      var confBadge = c.confidence === '已验证'
+        ? '<span class="badge badge-green">' + t('kn.conf.verified') + '</span>'
+        : '<span class="badge badge-amber">' + t('kn.conf.pending') + '</span>';
+
+      return '<article class="k-card" data-id="' + esc(c.id) + '">' +
+        '<div class="k-head"><div>' +
+          '<div class="k-title">' + esc(c.title) + '</div>' +
+          '<div class="k-meta">' +
+            '<span class="badge badge-domain">' + esc(domain) + '</span>' + confBadge +
+            (isLocal ? '<span class="badge badge-local">' + t('kn.localBadge') + '</span>' : '') +
+            '<span>' + t('kn.updated') + esc(c.updatedAt || '-') + '</span>' +
+          '</div>' +
+        '</div>' +
+        (isLocal ? '<button class="btn btn-mini btn-danger-ghost" onclick="deleteLocalCard(\'' + esc(c.id) + '\')">' + t('kn.delete') + '</button>' : '') +
+        '</div>' +
+        '<div class="k-body">' +
+          '<div class="k-item"><div class="k-label">' + t('kn.item.condition') + '</div><div class="k-text">' + esc(c.condition) + '</div></div>' +
+          '<div class="k-item"><div class="k-label">' + t('kn.item.action') + '</div><div class="k-text">' + esc(c.action) + '</div></div>' +
+          '<div class="k-item pos"><div class="k-label">' + t('kn.item.consequence') + '</div><div class="k-text">' + esc(c.consequence) + '</div></div>' +
+          '<div class="k-item neg"><div class="k-label">' + t('kn.item.counterfactual') + '</div><div class="k-text">' + esc(c.counterfactual) + '</div></div>' +
+          '<div class="k-item full"><div class="k-label">' + t('kn.item.evidence') + '</div><div class="k-text">' + esc(c.evidence) + '</div></div>' +
+        '</div>' +
+        renderReview(c) +
+      '</article>';
+    }
+
+    /* ---------- 思维记录（待点评） ---------- */
+    function renderReview(c) {
+      var reviews = loadReviews()[c.id] || [];
+      return '<div class="k-review">' +
+        '<div class="rv-title">' + t('kn.review.title') + '</div>' +
+        (reviews.length
+          ? '<div class="rv-list">' + reviews.map(function (r, i) {
+              return '<div class="rv-item"><span class="rv-text">' + esc(r.text) +
+                '<span class="rv-time">　' + esc(r.time) + '</span></span>' +
+                '<button class="btn btn-mini btn-danger-ghost" onclick="deleteReview(\'' + esc(c.id) + '\',' + i + ')">×</button></div>';
+            }).join('') + '</div>'
+          : '') +
+        '<div class="rv-input">' +
+          '<textarea placeholder="' + t('kn.review.ph') + '" id="rv-' + esc(c.id) + '"></textarea>' +
+          '<button class="btn" onclick="addReview(\'' + esc(c.id) + '\')">' + t('kn.review.save') + '</button>' +
+        '</div>' +
+      '</div>';
+    }
+
+    function addReview(id) {
+      var ta = document.getElementById('rv-' + id);
+      var text = ta.value.trim();
+      if (!text) return;
+      var all = loadReviews();
+      if (!all[id]) all[id] = [];
+      all[id].push({ text: text, time: today() });
+      saveReviews(all);
+      renderCards();
+      toast(t('kn.toast.reviewSaved'));
+    }
+
+    function deleteReview(id, idx) {
+      var all = loadReviews();
+      if (all[id]) all[id].splice(idx, 1);
+      saveReviews(all);
+      renderCards();
+    }
+
+    /* ---------- 表单提交 ---------- */
+    var REQUIRED = [
+      ['f-title', t('kn.req.title')], ['f-condition', t('kn.req.condition')], ['f-action', t('kn.req.action')],
+      ['f-consequence', t('kn.req.consequence')], ['f-counterfactual', t('kn.req.counterfactual')],
+      ['f-evidence', t('kn.req.evidence')]
+    ];
+
+    document.getElementById('kForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var missing = [], firstErr = null;
+      REQUIRED.forEach(function (r) {
+        var el = document.getElementById(r[0]);
+        el.classList.remove('f-err');
+        if (!el.value.trim()) { missing.push(r[1]); el.classList.add('f-err'); if (!firstErr) firstErr = el; }
+      });
+      var err = document.getElementById('formError');
+      if (missing.length) {
+        err.style.display = 'block';
+        err.textContent = t('kn.errPrefix') + missing.join(getLang() === 'en' ? ', ' : '、');
+        /* 滚动定位到第一个出错项并聚焦，不必来回找 */
+        if (firstErr) {
+          firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          firstErr.focus({ preventScroll: true });
+        }
+        return;
+      }
+      err.style.display = 'none';
+      REQUIRED.forEach(function (r) { document.getElementById(r[0]).classList.remove('f-err'); });
+
+      var card = {
+        id: 'local-' + Date.now().toString(36),
+        title: document.getElementById('f-title').value.trim(),
+        domain: document.getElementById('f-domain').value.trim(),
+        condition: document.getElementById('f-condition').value.trim(),
+        action: document.getElementById('f-action').value.trim(),
+        consequence: document.getElementById('f-consequence').value.trim(),
+        counterfactual: document.getElementById('f-counterfactual').value.trim(),
+        evidence: document.getElementById('f-evidence').value.trim(),
+        confidence: document.getElementById('f-confidence').value,
+        updatedAt: today()
+      };
+      var locals = loadLocalCards();
+      locals.unshift(card);
+      saveLocalCards(locals);
+      this.reset();
+      refreshDomainOptions();
+      renderCards();
+      toast(t('kn.toast.saved'));
+    });
+
+    /* 删除改为"先删后可撤销"：去掉阻塞式 confirm，删除后 toast 内给 6 秒撤销入口 */
+    function deleteLocalCard(id) {
+      var locals = loadLocalCards();
+      var idx = locals.findIndex(function (c) { return c.id === id; });
+      if (idx < 0) return;
+      var removed = locals.splice(idx, 1)[0];
+      saveLocalCards(locals);
+      refreshDomainOptions();
+      renderCards();
+      toast(t('kn.toast.deleted'), {
+        label: t('kn.toast.undo'),
+        fn: function () {
+          var cur = loadLocalCards();
+          cur.splice(Math.min(idx, cur.length), 0, removed);
+          saveLocalCards(cur);
+          refreshDomainOptions();
+          renderCards();
+          toast(t('kn.toast.undone'));
+        }
+      });
+    }
+
+    /* ---------- 导出 ---------- */
+    function downloadText(filename, text) {
+      var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    document.getElementById('btnExportData').addEventListener('click', function () {
+      var text = 'window.DATA_KNOWLEDGE = ' + JSON.stringify(allCards(), null, 2) + ';\n';
+      downloadText('knowledge-data.txt', text);
+      toast(t('kn.toast.exported'));
+    });
+
+    document.getElementById('btnExportReview').addEventListener('click', function () {
+      var all = loadReviews();
+      var cards = allCards();
+      var lines = [];
+      cards.forEach(function (c) {
+        var rs = all[c.id];
+        if (!rs || !rs.length) return;
+        lines.push('## ' + c.title);
+        rs.forEach(function (r) { lines.push('- [' + r.time + '] ' + r.text); });
+        lines.push('');
+      });
+      if (!lines.length) { toast(t('kn.toast.noReview')); return; }
+      downloadText('knowledge-reviews.txt',
+        t('kn.export.header') + new Date().toLocaleString() + '\n\n' + lines.join('\n'));
+      toast(t('kn.toast.reviewExported'));
+    });
+
+    /* ---------- 工具 ---------- */
+    /* msg 之外可带动作按钮：toast('已删除', { label: '撤销', fn: ... }) */
+    function toast(msg, opts) {
+      var el = document.getElementById('toast');
+      el.innerHTML = '';
+      var span = document.createElement('span');
+      span.textContent = msg;
+      el.appendChild(span);
+      if (opts) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'toast-undo';
+        b.textContent = opts.label;
+        b.addEventListener('click', function () { el.classList.remove('show'); opts.fn(); });
+        el.appendChild(b);
+      }
+      el.classList.add('show');
+      clearTimeout(el._timer);
+      el._timer = setTimeout(function () { el.classList.remove('show'); }, opts ? 6000 : 2600);
+    }
+
+    /* ---------- 事件绑定与初始化 ---------- */
+    ['filterDomain', 'filterConfidence'].forEach(function (id) {
+      document.getElementById(id).addEventListener('change', renderCards);
+    });
+    document.getElementById('searchKw').addEventListener('input', renderCards);
+    /* 出错字段一旦开始输入就摘掉红笔圈 */
+    document.getElementById('kForm').addEventListener('input', function (e) {
+      if (e.target.classList) e.target.classList.remove('f-err');
+    });
+
+    refreshDomainOptions();
+    renderCards();
+
+    /* 切语言后无刷新重渲染动态内容 */
+    document.addEventListener('langchange', function () {
+      refreshDomainOptions();
+      renderCards();
+    });
+  </script>
+</body>
+</html>
