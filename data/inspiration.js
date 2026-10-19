@@ -1,6 +1,30 @@
 /* 本文件由 tools/fetch_inspiration.mjs 自动维护（每日 20:00 更新）；a* 开头为自动采集条目，i* 开头为人工示例 */
 window.DATA_INSPIRATION = [
   {
+    "id": "a2026101909",
+    "platform": "抖音",
+    "domain": "储能能源",
+    "title": "实测！家庭储能柜接入电网的全过程，峰谷套利这样算",
+    "author": "储能老王",
+    "link": "",
+    "metrics": {
+      "likes": 23000,
+      "comments": 512,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "博主全程实拍户用储能柜安装并网：从供电局申报、装表到并网调试，用自家账本算清峰谷套利回本周期",
+    "narrativeAnalysis": {
+      "hook": "别再白交电费了！",
+      "structure": "实操记录→峰谷价差分析→收益公式拆解→避坑清单",
+      "emotionCurve": "成本焦虑→掌控感提升→务实希望",
+      "transferable": [
+        "用真实数字替代抽象概念",
+        "分步截图强化可信度",
+        "把政策术语转成算账语言"
+      ]
+    }
+  },
+  {
     "id": "a2026101901",
     "platform": "官方媒体",
     "domain": "AI科技",
@@ -209,4 +233,4 @@ window.DATA_INSPIRATION = [
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-19","added":0,"total":10};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-19","added":1,"total":11};
