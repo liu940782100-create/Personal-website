@@ -123,7 +123,7 @@ var I18N = {
     /* 灵感库 · 本地新增 */
     'insp.form.show': '＋ 记一条灵感', 'insp.form.hide': '收起表单',
     'insp.form.title': '手动记一条灵感',
-    'insp.form.hint': '新灵感先存本地（浏览器）。点「导出本地灵感」把内容发给 AI 做叙事拆解并写回 data/inspiration.js。',
+    'insp.form.hint': '刷到的抖音/公众号好内容在这里手动记录，导出 JSON 放进仓库 inbox/ 文件夹，下一轮采集会自动拆解并入正式数据。',
     'insp.label.platform': '平台',
     'insp.label.title': '标题 *', 'insp.label.author': '博主（可空）',
     'insp.label.domain': '领域（可空）', 'insp.label.summary': '内容总结 *',
@@ -132,6 +132,9 @@ var I18N = {
     'insp.toast.saved': '灵感已存到本地', 'insp.export': '导出本地灵感',
     'insp.toast.exported': '已导出，发给 AI 做拆解并写回数据文件',
     'insp.toast.noLocal': '还没有本地灵感', 'insp.localBadge': '本地',
+    'insp.refresh': '手动更新',
+    'insp.toast.refresh': '已打开 Actions 页，点 Run workflow 即可触发采集',
+    'insp.meta': '数据更新于 {date} · 本轮新增 {n} 条 · 每日 20:00 自动采集',
     /* Skills · 本地新增 */
     'sk.form.show': '＋ 记一条方法论', 'sk.form.hide': '收起表单',
     'sk.form.title': '手动记一条方法论',
@@ -269,7 +272,7 @@ var I18N = {
     /* Inspiration · local entries */
     'insp.form.show': '＋ Log an inspiration', 'insp.form.hide': 'Hide form',
     'insp.form.title': 'Log an inspiration manually',
-    'insp.form.hint': 'Saved in this browser first. Use "Export local" and send the file to the AI for narrative analysis and writing back to data/inspiration.js.',
+    'insp.form.hint': 'Log great Douyin/WeChat content here. Export the JSON into the repo inbox/ folder — the next pipeline run will analyse and merge it.',
     'insp.label.platform': 'Platform',
     'insp.label.title': 'Title *', 'insp.label.author': 'Creator (optional)',
     'insp.label.domain': 'Domain (optional)', 'insp.label.summary': 'Summary *',
@@ -278,6 +281,9 @@ var I18N = {
     'insp.toast.saved': 'Inspiration saved locally', 'insp.export': 'Export local',
     'insp.toast.exported': 'Exported — send it to the AI to analyse and write back',
     'insp.toast.noLocal': 'No local inspirations yet', 'insp.localBadge': 'Local',
+    'insp.refresh': 'Manual update',
+    'insp.toast.refresh': 'Actions page opened — press Run workflow to fetch now',
+    'insp.meta': 'Data updated {date} · +{n} this round · auto-fetched daily at 20:00',
     /* Skills · local entries */
     'sk.form.show': '＋ Log a method', 'sk.form.hide': 'Hide form',
     'sk.form.title': 'Log a method manually',

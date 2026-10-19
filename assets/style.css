@@ -581,6 +581,14 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 #kForm .f-err, .quick-form .f-err { outline: 2px dashed var(--danger); outline-offset: 2px; }
 
 /* ---------- 手动录入折叠表单（灵感库 / Skills 共用） ---------- */
+/* 采集管道更新时间（灵感库页头） */
+.insp-meta {
+  font-family: var(--font-hand);
+  font-size: 13px;
+  color: var(--warn);
+  margin-top: 6px;
+}
+
 .quick-form {
   margin: 0 0 26px;
   padding: 20px 22px;

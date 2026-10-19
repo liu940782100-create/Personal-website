@@ -23,6 +23,7 @@
     <section class="page-head">
       <h1 data-i18n="insp.head">灵感库</h1>
       <p data-i18n="insp.sub">汇集各平台高互动内容，拆解博主的叙事手法，沉淀可迁移的创作技巧</p>
+      <p class="insp-meta" id="inspMeta" hidden></p>
     </section>
 
     <div class="toolbar">
@@ -42,6 +43,7 @@
       <span class="count" id="countInfo"></span>
       <button type="button" class="btn" id="inspToggleBtn" data-i18n="insp.form.show">＋ 记一条灵感</button>
       <button type="button" class="btn" id="inspExportBtn" data-i18n="insp.export">导出本地灵感</button>
+      <button type="button" class="btn" id="inspRefreshBtn" data-i18n="insp.refresh" title="跳转到 GitHub Actions 手动触发一轮采集更新">手动更新</button>
     </div>
 
     <section class="quick-form" id="inspFormPanel" hidden>
@@ -255,6 +257,22 @@
       downloadText('inspiration-local.json', JSON.stringify(locals, null, 2));
       toast(t('insp.toast.exported'));
     });
+    /* 手动更新：跳转 Actions 页一键 Run workflow（静态站无后端，采集由仓库的 GitHub Actions 定时跑） */
+    document.getElementById('inspRefreshBtn').addEventListener('click', function () {
+      window.open('https://github.com/liu940782100-create/Personal-website/actions/workflows/update-inspiration.yml', '_blank');
+      toast(t('insp.toast.refresh'));
+    });
+    /* 数据更新时间（由采集管道写入 DATA_INSPIRATION_META） */
+    function renderInspMeta() {
+      var meta = window.DATA_INSPIRATION_META;
+      if (!meta) return;
+      var el = document.getElementById('inspMeta');
+      el.hidden = false;
+      el.textContent = t('insp.meta')
+        .replace('{date}', meta.updatedAt || '-')
+        .replace('{n}', meta.added != null ? meta.added : '-');
+    }
+    renderInspMeta();
 
     refreshDomainOptions();
     renderGrid();
@@ -263,6 +281,7 @@
     document.addEventListener('langchange', function () {
       refreshDomainOptions();
       renderGrid();
+      renderInspMeta();
       var btn = document.getElementById('inspToggleBtn');
       btn.textContent = formPanel.hidden ? t('insp.form.show') : t('insp.form.hide');
     });
