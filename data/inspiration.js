@@ -209,4 +209,4 @@ window.DATA_INSPIRATION = [
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-19","added":8,"total":10};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-19","added":0,"total":10};
