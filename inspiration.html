@@ -36,14 +36,14 @@
       </select>
       <select id="filterDomain"><option value="" data-i18n="insp.allDomain">全部领域</option></select>
       <select id="sortBy">
+        <option value="collected-desc" selected data-i18n="insp.sort.latest">最新采集优先</option>
         <option value="likes-desc" data-i18n="insp.sort.likes">高互动优先（点赞↓）</option>
-        <option value="collected-desc" data-i18n="insp.sort.latest">最新采集优先</option>
       </select>
       <input type="text" id="searchKw" class="grow" placeholder="搜索：标题 / 博主 / 内容总结 / 叙事技巧…" data-i18n-ph="insp.search.ph">
       <span class="count" id="countInfo"></span>
       <button type="button" class="btn" id="inspToggleBtn" data-i18n="insp.form.show">＋ 记一条灵感</button>
       <button type="button" class="btn" id="inspExportBtn" data-i18n="insp.export">导出本地灵感</button>
-      <button type="button" class="btn" id="inspRefreshBtn" data-i18n="insp.refresh" title="跳转到 GitHub Actions 手动触发一轮采集更新">手动更新</button>
+      <button type="button" class="btn btn-primary" id="inspRefreshBtn" data-i18n="insp.refresh" title="页内直接触发云端采集更新">更新</button>
     </div>
 
     <section class="quick-form" id="inspFormPanel" hidden>
@@ -54,10 +54,11 @@
         <label><span data-i18n="insp.label.author">博主（可空）</span><input id="i-author" type="text"></label>
         <label><span data-i18n="insp.label.platform">平台</span>
           <select id="i-platform">
-            <option value="抖音">抖音</option>
             <option value="微信公众号">微信公众号</option>
-            <option value="知乎">知乎</option>
-            <option value="官方媒体">官方媒体</option>
+            <option value="抖音">抖音</option>
+            <option value="推特">推特</option>
+            <option value="油管">油管</option>
+            <option value="国家媒体">国家媒体</option>
             <option value="">其他平台</option>
           </select>
         </label>
@@ -68,6 +69,18 @@
       <label><span data-i18n="insp.label.transfer">可迁移技巧（每行一条，可空）</span><textarea id="i-transfer" rows="2"></textarea></label>
       <div class="qf-actions">
         <button type="button" class="btn btn-primary" id="inspSaveBtn" data-i18n="insp.save">保存灵感</button>
+      </div>
+    </section>
+
+    <section class="quick-form" id="inspTokenPanel" hidden>
+      <h3 data-i18n="insp.token.title">设置 GitHub 令牌</h3>
+      <p class="qf-hint" data-i18n="insp.token.hint"></p>
+      <div class="qf-grid">
+        <label><span data-i18n="insp.token.label">令牌</span><input id="gh-token" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+      </div>
+      <div class="qf-actions">
+        <button type="button" class="btn btn-primary" id="ghTokenSave" data-i18n="insp.token.save">保存令牌</button>
+        <button type="button" class="btn" id="ghTokenClear" data-i18n="insp.token.clear">清除令牌</button>
       </div>
     </section>
 
@@ -106,8 +119,10 @@
     function allItems() { return getData('inspiration').concat(loadLocalInsp()); }
 
     var PLATFORM_CLASS = {
-      '官方媒体': 'p-official', '抖音': 'p-douyin',
-      '微信公众号': 'p-weixin', '知乎': 'p-zhihu'
+      '国家媒体': 'p-official', '官方媒体': 'p-official',
+      '人民网': 'p-official', '新华网': 'p-official', '新华社': 'p-official', '央视新闻': 'p-official',
+      '抖音': 'p-douyin', '微信公众号': 'p-weixin', '知乎': 'p-zhihu',
+      '油管': 'p-youtube', '推特': 'p-twitter'
     };
     var SEARCH_FIELDS = ['title', 'author', 'contentSummary', 'domain',
       'narrativeAnalysis.hook', 'narrativeAnalysis.structure',
@@ -167,6 +182,21 @@
       var cur = sel.value;
       sel.innerHTML = '<option value="">' + t('insp.allDomain') + '</option>' +
         domains.map(function (d) { return '<option value="' + esc(d) + '">' + esc(d) + '</option>'; }).join('');
+      sel.value = cur;
+    }
+
+    /* 平台选项按实际数据动态生成（采集源含人民网/北极星储能网等，会随更新变化） */
+    function refreshPlatformOptions() {
+      var plats = [];
+      allItems().forEach(function (it) {
+        var p = (it.platform || '').trim();
+        if (p && plats.indexOf(p) < 0) plats.push(p);
+      });
+      plats.sort();
+      var sel = document.getElementById('filterPlatform');
+      var cur = sel.value;
+      sel.innerHTML = '<option value="">' + t('insp.allPlatform') + '</option>' +
+        plats.map(function (p) { return '<option value="' + esc(p) + '">' + esc(p) + '</option>'; }).join('');
       sel.value = cur;
     }
 
@@ -257,6 +287,7 @@
         document.getElementById(id).value = '';
       });
       refreshDomainOptions();
+      refreshPlatformOptions();
       renderGrid();
       toast(t('insp.toast.saved'));
     });
@@ -270,10 +301,120 @@
       downloadText('inspiration-local.json', JSON.stringify(locals, null, 2));
       toast(t('insp.toast.exported'));
     });
-    /* 手动更新：跳转 Actions 页一键 Run workflow（静态站无后端，采集由仓库的 GitHub Actions 定时跑） */
-    document.getElementById('inspRefreshBtn').addEventListener('click', function () {
-      window.open('https://github.com/liu940782100-create/Personal-website/actions/workflows/update-inspiration.yml', '_blank');
-      toast(t('insp.toast.refresh'));
+    /* ---------- 页内更新：GitHub API 触发云端采集（静态站无后端，采集在 Actions 跑） ----------
+     * 令牌只存本机浏览器 localStorage，不写入公开代码库；采集完成后页面自动载入新数据。 */
+    var GH = { owner: 'liu940782100-create', repo: 'Personal-website', workflow: 'update-inspiration.yml', ref: 'main', tokenKey: 'rl_gh_token_v1' };
+    var updateBtn = document.getElementById('inspRefreshBtn');
+    var tokenPanel = document.getElementById('inspTokenPanel');
+
+    function ghToken() { try { return localStorage.getItem(GH.tokenKey) || ''; } catch (e) { return ''; } }
+    function ghApi(p, opts) {
+      opts = opts || {};
+      var h = {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': 'Bearer ' + ghToken(),
+        'X-GitHub-Api-Version': '2022-11-28'
+      };
+      if (opts.headers) { for (var k in opts.headers) h[k] = opts.headers[k]; }
+      return fetch('https://api.github.com/repos/' + GH.owner + '/' + GH.repo + p, {
+        method: opts.method || 'GET', headers: h, body: opts.body
+      }).then(function (r) {
+        return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, status: r.status, body: j }; });
+      });
+    }
+    function setUpdateBtn(text, disabled) { updateBtn.textContent = text; updateBtn.disabled = !!disabled; }
+    function loadInspData() {
+      return new Promise(function (res) {
+        var s = document.createElement('script');
+        s.src = 'data/inspiration.js?r=' + Date.now();
+        s.onload = function () { res(true); };
+        s.onerror = function () { res(false); };
+        document.head.appendChild(s);
+      });
+    }
+    function metaUpdatedAt() { return (window.DATA_INSPIRATION_META && window.DATA_INSPIRATION_META.updatedAt) || ''; }
+
+    /* 采集完成 → 等 Pages 重新部署 → 自动载入新数据 */
+    function waitForDeploy(prevAt, tries) {
+      tries = tries || 0;
+      fetch('data/inspiration.js?r=' + Date.now(), { cache: 'no-store' })
+        .then(function (r) { return r.text(); })
+        .then(function (txt) {
+          var m = txt.match(/DATA_INSPIRATION_META\s*=\s*(\{[\s\S]*?\});/);
+          var meta = m ? JSON.parse(m[1]) : null;
+          if (meta && meta.updatedAt !== prevAt) {
+            loadInspData().then(function () {
+              refreshPlatformOptions(); refreshDomainOptions(); renderGrid(); renderInspMeta();
+              setUpdateBtn(t('insp.refresh'), false);
+              toast(t('insp.toast.done').replace('{n}', meta.added != null ? meta.added : 0));
+            });
+            return;
+          }
+          if (tries >= 12) { setUpdateBtn(t('insp.refresh'), false); toast(t('insp.toast.noNew')); return; }
+          setTimeout(function () { waitForDeploy(prevAt, tries + 1); }, 15000);
+        })
+        .catch(function () {
+          if (tries < 12) setTimeout(function () { waitForDeploy(prevAt, tries + 1); }, 15000);
+          else setUpdateBtn(t('insp.refresh'), false);
+        });
+    }
+
+    function pollRun(startedAt, prevAt, tries) {
+      if (tries > 30) { setUpdateBtn(t('insp.refresh'), false); toast(t('insp.toast.noNew')); return; }
+      ghApi('/actions/runs?per_page=5').then(function (res) {
+        var runs = (res.body && res.body.workflow_runs) || [];
+        var mine = null;
+        for (var i = 0; i < runs.length; i++) {
+          if (runs[i].name === 'Update Inspiration' && new Date(runs[i].created_at).getTime() >= startedAt - 60000) { mine = runs[i]; break; }
+        }
+        if (!mine) { setTimeout(function () { pollRun(startedAt, prevAt, tries + 1); }, 8000); return; }
+        if (mine.status === 'completed') {
+          if (mine.conclusion === 'success') { waitForDeploy(prevAt, 0); }
+          else { setUpdateBtn(t('insp.refresh'), false); toast(t('insp.toast.runFailed')); }
+          return;
+        }
+        setUpdateBtn(t('insp.updating'), true);
+        setTimeout(function () { pollRun(startedAt, prevAt, tries + 1); }, 8000);
+      }).catch(function () { setTimeout(function () { pollRun(startedAt, prevAt, tries + 1); }, 8000); });
+    }
+
+    function runUpdate() {
+      if (!ghToken()) { tokenPanel.hidden = false; toast(t('insp.toast.noToken')); return; }
+      setUpdateBtn(t('insp.updating'), true);
+      toast(t('insp.toast.updating'));
+      var prevAt = metaUpdatedAt();
+      var startedAt = Date.now();
+      ghApi('/actions/workflows/' + GH.workflow + '/dispatches', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ref: GH.ref })
+      }).then(function (res) {
+        if (!res.ok) {
+          throw new Error(res.status === 401 || res.status === 403
+            ? t('insp.toast.badToken')
+            : ((res.body && res.body.message) || String(res.status)));
+        }
+        pollRun(startedAt, prevAt, 0);
+      }).catch(function (e) {
+        setUpdateBtn(t('insp.refresh'), false);
+        toast(t('insp.toast.triggerFail').replace('{msg}', String(e.message || e)));
+      });
+    }
+    updateBtn.addEventListener('click', runUpdate);
+
+    /* 令牌面板：保存 / 清除（只存本机浏览器） */
+    document.getElementById('ghTokenSave').addEventListener('click', function () {
+      var v = document.getElementById('gh-token').value.trim();
+      if (!v) { toast(t('insp.toast.noToken')); return; }
+      try { localStorage.setItem(GH.tokenKey, v); } catch (e) {}
+      document.getElementById('gh-token').value = '';
+      tokenPanel.hidden = true;
+      toast(t('insp.token.saved'));
+    });
+    document.getElementById('ghTokenClear').addEventListener('click', function () {
+      try { localStorage.removeItem(GH.tokenKey); } catch (e) {}
+      tokenPanel.hidden = true;
+      toast(t('insp.token.cleared'));
     });
     /* 数据更新时间（由采集管道写入 DATA_INSPIRATION_META） */
     function renderInspMeta() {
@@ -288,11 +429,13 @@
     renderInspMeta();
 
     refreshDomainOptions();
+    refreshPlatformOptions();
     renderGrid();
 
     /* 切语言后无刷新重渲染动态内容；表单开合钮文案随面板状态修正 */
     document.addEventListener('langchange', function () {
       refreshDomainOptions();
+      refreshPlatformOptions();
       renderGrid();
       renderInspMeta();
       var btn = document.getElementById('inspToggleBtn');

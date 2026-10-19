@@ -1,11 +1,9 @@
 name: Update Inspiration
 
-# 灵感库自动更新：北京时间每天 20:00（UTC 12:00，Actions 实际触发有 5~30 分钟延迟）
-# 手动触发：本页右上角 "Run workflow" 按钮
+# 灵感库更新：仅手动触发（已取消每日定时）
+# 触发方式：灵感库页「更新」按钮（页内直接触发），或本仓库 Actions 页 Run workflow
 
 on:
-  schedule:
-    - cron: '0 12 * * *'
   workflow_dispatch:
 
 permissions:

@@ -732,6 +732,8 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .platform-badge.p-weixin { color: var(--c-knowledge); border-color: rgba(74, 124, 89, .45); }
 .platform-badge.p-zhihu { color: var(--c-projects); border-color: rgba(62, 107, 143, .45); }
 .platform-badge.p-official { color: var(--c-inspiration); border-color: rgba(185, 138, 46, .45); }
+.platform-badge.p-youtube { color: var(--danger); border-color: rgba(178, 58, 52, .45); }
+.platform-badge.p-twitter { color: var(--c-projects); border-color: rgba(62, 107, 143, .45); }
 .i-domain { font-family: var(--font-hand); font-size: 15px; color: var(--text-faint); }
 .i-card h4 {
   margin-top: 12px; font-size: 16px; font-weight: 400;

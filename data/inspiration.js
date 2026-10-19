@@ -1,5 +1,205 @@
-/* 本文件由 tools/fetch_inspiration.mjs 自动维护（每日 20:00 更新）；a* 开头为自动采集条目，i* 开头为人工示例 */
+/* 本文件由 tools/fetch_inspiration.mjs 维护（手动触发更新）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
+  {
+    "id": "a2026101910",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国家发改委发布《电力现货市场基本规则（公开征求意见稿）》",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516759.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "国家发改委发布电力现货市场新规征求意见稿，推动储能参与市场化交易机制建设。",
+    "narrativeAnalysis": {
+      "hook": "重磅新规来了！",
+      "structure": "政策发布→规则要点→储能机遇",
+      "emotionCurve": "权威震慑→规则期待→市场信心",
+      "transferable": [
+        "用‘征求意见稿’制造时效紧迫感",
+        "绑定‘储能’与‘市场化交易’强关联",
+        "政策类标题突出‘国家部委+动作’"
+      ]
+    }
+  },
+  {
+    "id": "a2026101911",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国家能源局通报！群众举报某储能电站存质量隐患！",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516719.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "国家能源局通报某储能电站存在质量隐患，启动群众举报核查机制。",
+    "narrativeAnalysis": {
+      "hook": "突发！官方点名隐患！",
+      "structure": "事件曝光→监管响应→风险警示",
+      "emotionCurve": "安全焦虑→监管信任→整改警醒",
+      "transferable": [
+        "‘通报+点名’强化公信力背书",
+        "用‘群众举报’增强真实感和参与感",
+        "隐患类内容聚焦‘谁查、怎么查’"
+      ]
+    }
+  },
+  {
+    "id": "a2026101912",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "远景/特变/海西国投等入围！青海8GWh独立储能中标候选人公示",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516650.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "远景、特变、海西国投等入围青海8GWh独立储能项目中标候选人，规模创区域新高。",
+    "narrativeAnalysis": {
+      "hook": "8GWh大单花落谁家？",
+      "structure": "结果公示→头部玩家→地域意义",
+      "emotionCurve": "竞争悬念→实力认可→西部崛起",
+      "transferable": [
+        "用具体GWh数字锚定项目体量",
+        "列3家典型企业兼顾知名度与代表性",
+        "强调‘独立储能’突出模式创新性"
+      ]
+    }
+  },
+  {
+    "id": "a2026101913",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "调入1GW/4GWh！宁夏银川2026网侧储能清单调整",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516709.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "宁夏银川将2026年网侧储能规划调增至1GW/4GWh，明确纳入新型电力系统建设清单。",
+    "narrativeAnalysis": {
+      "hook": "直接翻倍！银川加码储能",
+      "structure": "目标调整→容量拆解→顶层定位",
+      "emotionCurve": "预期突破→容量震撼→规划可信",
+      "transferable": [
+        "‘调入’比‘新增’更具动态张力",
+        "GW/GWh双单位强化技术专业感",
+        "绑定‘2026’凸显长期确定性"
+      ]
+    }
+  },
+  {
+    "id": "a2026101914",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "压减成本、以次充好，山东电池企业被列入“反内卷”失信名单！",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516671.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "山东一电池企业因压成本、以次充好被列入行业‘反内卷’失信名单，首例惩戒案例。",
+    "narrativeAnalysis": {
+      "hook": "首个‘反内卷’黑名单！",
+      "structure": "事件定性→行为列举→行业定调",
+      "emotionCurve": "乱象愤怒→惩戒快意→秩序希望",
+      "transferable": [
+        "造新词‘反内卷失信’强化记忆点",
+        "用‘首个’突出里程碑意义",
+        "负面案例聚焦‘惩什么、为何惩’"
+      ]
+    }
+  },
+  {
+    "id": "a2026101915",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "武汉天源/葛洲坝入围宁夏1GW/4GWh储能设备中标候选人！",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516665.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "武汉天源、葛洲坝入围宁夏1GW/4GWh储能设备中标候选，央企+民企联合体成主流。",
+    "narrativeAnalysis": {
+      "hook": "央企+民企联手杀入！",
+      "structure": "结果呈现→阵营分析→模式启示",
+      "emotionCurve": "格局刷新→合作认同→生态信心",
+      "transferable": [
+        "用‘联手’替代‘联合’增强画面感",
+        "突出‘设备中标’区别于EPC更精准",
+        "‘入围’比‘中标’留余地更显专业"
+      ]
+    }
+  },
+  {
+    "id": "a2026101916",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "从三本账到光储融合场景，一套新品方案给出工商储下半场答案",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516657.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "某企业发布工商储新品方案，整合三本账模型与光储融合场景，瞄准下半场增长。",
+    "narrativeAnalysis": {
+      "hook": "三本账，算清工商储！",
+      "structure": "痛点切入→方案解构→场景落地",
+      "emotionCurve": "成本焦虑→逻辑清晰→路径可行",
+      "transferable": [
+        "用‘三本账’具象化抽象模型",
+        "‘下半场’暗示行业阶段演进",
+        "‘光储融合’绑定趋势关键词"
+      ]
+    }
+  },
+  {
+    "id": "a2026101917",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "194个充电位、配建光伏储能！江苏8个重卡乘用车超充站招标！",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261019/1516669.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-19"
+    },
+    "contentSummary": "江苏招标8个重卡+乘用车超充站，全部配建光伏+储能，含194个充电位。",
+    "narrativeAnalysis": {
+      "hook": "超充站标配光储了？",
+      "structure": "项目亮相→配置亮点→跨界意义",
+      "emotionCurve": "认知颠覆→配置惊艳→基建升级",
+      "transferable": [
+        "用问句钩子激发好奇与验证欲",
+        "‘全部配建’强调强制性与示范性",
+        "并列‘重卡+乘用车’覆盖双赛道"
+      ]
+    }
+  },
   {
     "id": "a2026101909",
     "platform": "抖音",
@@ -233,4 +433,4 @@ window.DATA_INSPIRATION = [
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-19","added":0,"total":11};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-19","added":8,"total":19,"track":"储能"};

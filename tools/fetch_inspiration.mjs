@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 /**
- * 灵感库自动更新管道
- * 流程：抓开放源热门内容 → 关键词过滤（AI科技/储能）→ LLM 总结+叙事拆解（无 key 自动降级）
- *      → 合并"手动补强收件箱" → 去重写回 data/inspiration.js
+ * 灵感库采集管道（手动触发，不再定时）
+ * 流程：抓「储能」赛道真实内容源 → 关键词过滤 → LLM 精简总结 + 叙事拆解
+ *      → 合并手动补强收件箱（微信公众号/抖音/推特/油管等无公开接口平台）
+ *      → 去重写回 data/inspiration.js
+ *
+ * 重要：条目的原文链接一律取自抓取结果本身；AI 只负责文字分析，绝不采用 AI 生成的链接（实测会编造 404 链接）。
  *
  * 环境变量：
- *   LLM_API_KEY / LLM_BASE_URL / LLM_MODEL   缺失时自动降级为规则式摘要
- *   INSPIRATION_MAX_ITEMS                     数据文件最大条目数（默认 300）
+ *   LLM_API_KEY / LLM_BASE_URL / LLM_MODEL     缺失时降级为规则式摘要
+ *   INSPIRATION_MAX_NEW                        单轮最多新增条数（默认 8）
+ *   INSPIRATION_MAX_ITEMS                      数据文件最大条目数（默认 300）
  * 运行：node tools/fetch_inspiration.mjs
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync, unlinkSync } from 'node:fs';
@@ -18,24 +22,30 @@ const DATA_FILE = path.join(ROOT, 'data', 'inspiration.js');
 const INBOX_DIR = path.join(ROOT, 'inbox');
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0 Safari/537.36';
 
-const KEYWORDS = ['AI', 'ai', '人工智能', '大模型', 'LLM', 'GPT', '智能体', 'Agent', '算力', '芯片', '半导体',
-  '机器人', '自动驾驶', 'Prompt', '提示词', '储能', '电池', '锂电', '光伏', '充电', '电网', '新能源',
-  '电力', '氢能', '固态电池', '钠电', '构网型', '虚拟电厂', '能源'];
+/** 当前赛道：本轮只做储能，后续扩赛道时改为按赛道循环即可 */
+const TRACK = '储能';
+
+const KEYWORDS = ['储能', '电池', '锂电', '钠电', '固态电池', '电解液', '正极', '负极', '隔膜', 'PCS', 'BMS',
+  '构网型', '虚拟电厂', '光伏', '风电', '氢能', '电网', '电力', '新能源', '充电', '碳达峰', '碳中和',
+  '能源', '容量电价', '峰谷价差', '独立储能', '共享储能', '工商储', '大储', '户储', '微电网'];
 
 const today = () => new Date().toISOString().slice(0, 10);
 
-async function get(url, timeoutMs = 10000) {
+async function get(url, timeoutMs = 15000) {
   const ac = new AbortController();
   const timer = setTimeout(() => ac.abort(), timeoutMs);
   try {
-    const r = await fetch(url, { headers: { 'User-Agent': UA, 'Accept': '*/*' }, signal: ac.signal });
+    const r = await fetch(url, {
+      headers: { 'User-Agent': UA, 'Accept': '*/*', 'Accept-Language': 'zh-CN,zh;q=0.9' },
+      signal: ac.signal
+    });
     if (!r.ok) throw new Error('HTTP ' + r.status);
     return await r.text();
   } finally { clearTimeout(timer); }
 }
 
-/** 极简 RSS/Atom 解析：<item><title>/<link>/<description> 或 <entry><title>/<link href>/<summary> */
-function parseRss(xml, limit = 25) {
+/** 极简 RSS/Atom 解析 */
+function parseRss(xml, limit = 30) {
   const items = [];
   const blocks = xml.match(/<(item|entry)[\s\S]*?<\/\1>/g) || [];
   for (const b of blocks.slice(0, limit)) {
@@ -47,40 +57,77 @@ function parseRss(xml, limit = 25) {
     items.push({
       title: title.replace(/<[^>]+>/g, '').trim(),
       url: link.trim(),
-      desc: desc.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().slice(0, 300)
+      desc: desc.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().slice(0, 300),
+      date: ''
     });
   }
   return items;
 }
 
-/* ---------- 源适配器：每个返回 [{title, url, desc, hot}] ---------- */
+/** 从列表页 HTML 里按正则抽文章链接，返回 {title,url,desc,date} */
+function parseHtmlLinks(html, re, base, max = 25) {
+  const out = [];
+  const seen = new Set();
+  const r = new RegExp(re.source, 'g');
+  let m;
+  while ((m = r.exec(html)) && out.length < max) {
+    let url = m[1] || '';
+    const title = String(m[2] || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    if (!url || !title || title.length < 4) continue;
+    if (!/^https?:\/\//i.test(url)) {
+      try { url = new URL(url, base).href; } catch (e) { continue; }
+    }
+    if (seen.has(url)) continue;
+    seen.add(url);
+    /* 从 URL 里的 YYYYMMDD 推断发布日期 */
+    const d = (url.match(/\/(\d{4})(\d{2})(\d{2})\//) || []).slice(1).join('-');
+    out.push({ title, url, desc: '', date: d });
+  }
+  return out;
+}
+
+/* ---------- 源适配器：每个返回 [{title, url, desc, date, platform}] ----------
+ * 只保留能拿到「真实原始链接」的源；RSSHub 公共实例与 AI 联网搜索均实测不可用（403 / 链接 404）。
+ */
 const SOURCES = [
   {
-    /* imsyy/DailyHotApi 公共实例的知乎热榜镜像；本机网络不通时在 Actions 海外环境通常可用，失败自动跳过 */
-    name: '知乎热榜', platform: '知乎',
+    /* 储能行业首选源：列表页可直接解析出原始文章链接 */
+    name: '北极星储能网', platform: '北极星储能网', priority: 3,
+    fetch: async () => parseHtmlLinks(
+      await get('https://chuneng.bjx.com.cn/', 25000),
+      /href="((?:https?:\/\/news\.bjx\.com\.cn)?\/html\/\d{8}\/\d+\.shtml)"[^>]*>([\s\S]{4,90}?)<\/a>/,
+      'https://chuneng.bjx.com.cn/'
+    )
+  },
+  {
+    /* 国家媒体：人民网财经电讯，按储能关键词过滤 */
+    name: '人民网', platform: '人民网', priority: 2.5,
+    fetch: async () => parseRss(await get('http://www.people.com.cn/rss/finance.xml', 25000), 40)
+  },
+  {
+    /* 国家媒体：新华网财经（RSS 缺失时自动跳过） */
+    name: '新华网', platform: '新华网', priority: 2.5,
+    fetch: async () => parseRss(await get('http://www.news.cn/fortune/news_fortune.xml', 20000), 30)
+  },
+  {
+    name: 'IT之家', platform: 'IT之家', priority: 2,
+    fetch: async () => parseRss(await get('https://www.ithome.com/rss/', 20000), 30)
+  },
+  {
+    /* 综合媒体聚合：覆盖各家媒体（含国家媒体与行业媒体），标题后缀带来源媒体名；链接为 Google 跳转链接，点开即达原文 */
+    name: '全网媒体', platform: '综合媒体', priority: 1,
     fetch: async () => {
-      const d = JSON.parse(await get('https://api-hot.imsyy.top/zhihu'));
-      return (d.data || []).map(x => ({
-        title: String(x.title || '').trim(), url: x.url || '', desc: x.desc || '',
-        hot: Number(String(x.hot || '').replace(/[^\d]/g, '')) || 0
-      }));
+      const xml = await get('https://news.google.com/rss/search?q=%E5%82%A8%E8%83%BD&hl=zh-CN&gl=CN&ceid=CN:zh-Hans', 25000);
+      return parseRss(xml, 30).map(x => {
+        const mm = x.title.match(/^(.*?)\s+-\s+([^-]+)$/);
+        return {
+          ...x,
+          title: mm ? mm[1].trim() : x.title,
+          outlet: mm ? mm[2].trim() : '',
+          platform: mm ? mm[2].trim() : '综合媒体'
+        };
+      });
     }
-  },
-  {
-    name: 'IT之家', platform: '官方媒体',
-    fetch: async () => (await parseRss(await get('https://www.ithome.com/rss/'))).map(x => ({ ...x, hot: 0 }))
-  },
-  {
-    name: 'cnBeta', platform: '官方媒体',
-    fetch: async () => (await parseRss(await get('https://rss.cnbeta.com/rss'))).map(x => ({ ...x, hot: 0 }))
-  },
-  {
-    name: '量子位', platform: '官方媒体',
-    fetch: async () => (await parseRss(await get('https://www.qbitai.com/feed'))).map(x => ({ ...x, hot: 0 }))
-  },
-  {
-    name: '少数派', platform: '官方媒体',
-    fetch: async () => (await parseRss(await get('https://sspai.com/feed'))).map(x => ({ ...x, hot: 0 }))
   }
 ];
 
@@ -90,7 +137,7 @@ function llmConfig() {
   return key && base && model ? { key, base: base.replace(/\/$/, ''), model } : null;
 }
 
-async function llmChat(cfg, messages, timeoutMs = 60000) {
+async function llmChat(cfg, messages, timeoutMs = 90000) {
   const ac = new AbortController();
   const timer = setTimeout(() => ac.abort(), timeoutMs);
   try {
@@ -106,17 +153,16 @@ async function llmChat(cfg, messages, timeoutMs = 60000) {
   } finally { clearTimeout(timer); }
 }
 
-/** 拆解一批内容，返回逐条结果；失败的单条返回 null */
+/** 拆解一批内容：AI 只输出文字分析，不输出链接（链接由调用方从抓取结果绑定） */
 async function analyseBatch(cfg, items) {
   const prompt = [
-    '你是内容运营专家。下面是科技/储能领域的热门内容条目（JSON 数组，含 title/desc）。',
-    '对每一条输出 JSON 对象（最后输出一个 JSON 数组，不要多余文字），字段：',
-    '- summary: 60字内精简总结内容核心',
-    '- hook: 博主/标题用的开头钩子手法（20字内）',
-    '- structure: 叙事结构（如：现象→反常识观点×3→行动清单）',
-    '- emotion: 情绪曲线（如：焦虑共鸣→认知颠覆→行动希望）',
+    '你是内容运营专家。下面是「储能」赛道的内容条目（JSON 数组，含 title/desc）。',
+    '对每一条输出一个 JSON 对象，最后只输出一个 JSON 数组，不要多余文字。字段：',
+    '- summary: 80字内精简总结这条内容的核心信息（说清发生了什么、关键数字）',
+    '- hook: 标题/内容用的开头钩子手法（20字内）',
+    '- structure: 叙事结构（如：结论先行→数据佐证→行业影响）',
+    '- emotion: 情绪曲线（如：政策焦虑→算账清晰→行动希望）',
     '- transferable: 3条可迁移的创作技巧，每条15字内',
-    '- domain: 从 [AI科技, 储能能源, 科技×能源] 中选一个',
     '条目：' + JSON.stringify(items.map(x => ({ title: x.title, desc: x.desc })))
   ].join('\n');
   const text = await llmChat(cfg, [
@@ -129,14 +175,14 @@ async function analyseBatch(cfg, items) {
 }
 
 function fallbackAnalysis(item) {
+  const txt = (item.desc || item.title || '').replace(/\s+/g, ' ').trim();
   return {
-    summary: (item.desc || item.title).slice(0, 80) + (item.desc && item.desc.length > 80 ? '…' : ''),
-    hook: '（待拆解）', structure: '（待拆解）', emotion: '（待拆解）',
-    transferable: [], domain: /储能|电池|光伏|电网|电力|氢能|钠电|构网|虚拟电厂|新能源|充电|锂电|能源/.test(item.title) ? '储能能源' : 'AI科技'
+    summary: txt.slice(0, 80) + (txt.length > 80 ? '…' : ''),
+    hook: '（待拆解）', structure: '（待拆解）', emotion: '（待拆解）', transferable: []
   };
 }
 
-/** 生成当日唯一 id：a{YYYYMMDD}{两位序号}，跨轮次续号（查 existing + 本轮已加） */
+/** 生成当日唯一 id：a{YYYYMMDD}{两位序号}，跨轮次续号 */
 function nextId(existing, added) {
   const prefix = 'a' + today().replace(/-/g, '');
   const used = new Set([...existing, ...added].map(x => String(x.id || '')).filter(id => id.startsWith(prefix)));
@@ -145,7 +191,7 @@ function nextId(existing, added) {
   return prefix + String(n).padStart(2, '0');
 }
 
-/* ---------- 收件箱：手动补强平台内容（页面上导出的 JSON 丢进 inbox/ 目录）---------- */
+/* ---------- 收件箱：手动补强（页面上导出 JSON 丢进 inbox/）---------- */
 function readInbox() {
   const out = [];
   if (!existsSync(INBOX_DIR)) return out;
@@ -166,23 +212,29 @@ async function main() {
   const knownTitles = new Set(existing.map(x => String(x.title || '').trim()));
   const added = [];
 
-  /* 1. 抓源 + 过滤 */
+  /* 1. 抓源 + 赛道过滤 */
   const pool = [];
   for (const src of SOURCES) {
     try {
       const items = await src.fetch();
-      const hit = items.filter(x => x.title && KEYWORDS.some(k => x.title.includes(k)));
-      console.log(`[${src.name}] 抓到 ${items.length} 条，命中关键词 ${hit.length} 条`);
-      hit.slice(0, 8).forEach(x => pool.push({ ...x, platform: src.platform, source: src.name }));
+      const hit = items.filter(x => x.title && x.url && KEYWORDS.some(k => x.title.includes(k)));
+      console.log(`[${src.name}] 抓到 ${items.length} 条，命中${TRACK}关键词 ${hit.length} 条`);
+      hit.slice(0, 10).forEach(x => pool.push({
+        ...x, platform: x.platform || src.platform, source: src.name, priority: src.priority
+      }));
     } catch (e) { console.warn(`[${src.name}] 抓取失败：${e.message}`); }
   }
 
-  /* 2. 去重（对现有 + 池内）*/
+  /* 2. 去重 + 排序（媒体权威度优先，其次日期新） */
   const seen = new Set(knownTitles);
-  const fresh = pool.filter(x => { const t = x.title.trim(); if (seen.has(t)) return false; seen.add(t); return true; });
-  fresh.sort((a, b) => b.hot - a.hot);
-  const picked = fresh.slice(0, 12);
-  console.log(`新增候选 ${picked.length} 条（池 ${fresh.length}，上限 12）`);
+  const fresh = pool.filter(x => {
+    const t = x.title.trim();
+    if (!t || seen.has(t)) return false;
+    seen.add(t); return true;
+  });
+  fresh.sort((a, b) => (b.priority - a.priority) || String(b.date || '').localeCompare(String(a.date || '')));
+  const picked = fresh.slice(0, Number(process.env.INSPIRATION_MAX_NEW) || 8);
+  console.log(`新增候选 ${picked.length} 条（候选池 ${fresh.length}，单轮上限 ${Number(process.env.INSPIRATION_MAX_NEW) || 8}，赛道：${TRACK}）`);
 
   /* 3. LLM 拆解或降级 */
   const cfg = llmConfig();
@@ -192,24 +244,25 @@ async function main() {
       analyses = await analyseBatch(cfg, picked);
       console.log(`LLM 拆解完成：${analyses.length} 条`);
     } catch (e) { console.warn('LLM 拆解失败，降级规则式：', e.message); }
-  } else if (!cfg) console.log('未配置 LLM_API_KEY/LLM_BASE_URL/LLM_MODEL，使用规则式降级');
+  } else if (!cfg) console.log('未配置 LLM 密钥，使用规则式降级');
 
   picked.forEach((x, i) => {
     const a = (analyses && analyses[i]) || fallbackAnalysis(x);
     added.push({
       id: nextId(existing, added),
-      platform: x.platform, domain: a.domain || 'AI科技',
+      platform: x.platform, domain: TRACK, track: TRACK,
       title: x.title, author: x.source, link: x.url,
-      metrics: { likes: x.hot || 0, comments: 0, collected: today() },
+      metrics: { likes: 0, comments: 0, collected: today() },
       contentSummary: a.summary || fallbackAnalysis(x).summary,
       narrativeAnalysis: {
         hook: a.hook || '（待拆解）', structure: a.structure || '（待拆解）',
-        emotionCurve: a.emotion || '（待拆解）', transferable: Array.isArray(a.transferable) ? a.transferable : []
+        emotionCurve: a.emotion || '（待拆解）',
+        transferable: Array.isArray(a.transferable) ? a.transferable : []
       }
     });
   });
 
-  /* 4. 手动补强收件箱：页面上导出的 local 条目由 AI 拆解后并入正式数据 */
+  /* 4. 收件箱：微信/抖音/推特/油管等手动录入条目，AI 拆解后并入 */
   const inbox = readInbox().filter(x => /^local-/.test(String(x.id || '')));
   for (const item of inbox) {
     if (knownTitles.has(String(item.title || '').trim())) continue;
@@ -220,7 +273,7 @@ async function main() {
     const fb = a || fallbackAnalysis(item);
     added.push({
       id: nextId(existing, added),
-      platform: item.platform || '其他平台', domain: item.domain || a?.domain || 'AI科技',
+      platform: item.platform || '其他平台', domain: item.track || item.domain || TRACK, track: item.track || item.domain || TRACK,
       title: item.title, author: item.author || '', link: item.link || '',
       metrics: { likes: item.metrics?.likes || 0, comments: item.metrics?.comments || 0, collected: today() },
       contentSummary: item.contentSummary || fb.summary,
@@ -237,20 +290,19 @@ async function main() {
     console.log(`收件箱 ${inbox.length} 条已消化，源文件已删除`);
   }
 
-  /* 5. 合并写回：新条目插头部，超出上限裁掉最旧（保留人工示例 i* 条目） */
+  /* 5. 合并写回 */
   const merged = [...added, ...existing];
   const MAX = Number(process.env.INSPIRATION_MAX_ITEMS) || 300;
-  const keep = merged.filter(x => /^i/.test(String(x.id || '')) || /^a/.test(String(x.id || '')) || /^local-/.test(String(x.id || '')));
+  const keep = merged.filter(x => /^(i|a|local-)/.test(String(x.id || '')));
   const trimmed = keep.length > MAX
-    ? keep.filter(x => /^i/.test(String(x.id))) // 人工示例永远保留
+    ? keep.filter(x => /^i/.test(String(x.id)))
       .concat(keep.filter(x => !/^i/.test(String(x.id))).slice(0, MAX))
     : keep;
 
-  const banner = `/* 本文件由 tools/fetch_inspiration.mjs 自动维护（每日 20:00 更新）；a* 开头为自动采集条目，i* 开头为人工示例 */\n`;
-  const meta = `\nwindow.DATA_INSPIRATION_META = ${JSON.stringify({ updatedAt: today(), added: added.length, total: trimmed.length })};\n`;
+  const banner = `/* 本文件由 tools/fetch_inspiration.mjs 维护（手动触发更新）；a* 为采集条目，i* 为人工示例 */\n`;
+  const meta = `\nwindow.DATA_INSPIRATION_META = ${JSON.stringify({ updatedAt: today(), added: added.length, total: trimmed.length, track: TRACK })};\n`;
   writeFileSync(DATA_FILE, banner + 'window.DATA_INSPIRATION = ' + JSON.stringify(trimmed, null, 2) + ';' + meta, 'utf8');
   console.log(`写回完成：新增 ${added.length}，总计 ${trimmed.length} 条 → data/inspiration.js`);
-  if (!added.length) process.exitCode = 0;
 }
 
 main().catch(e => { console.error('管道失败：', e); process.exit(1); });
