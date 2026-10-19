@@ -62,6 +62,7 @@
           </select>
         </label>
         <label><span data-i18n="insp.label.domain">领域（可空）</span><input id="i-domain" type="text"></label>
+        <label><span data-i18n="insp.label.link">原文链接（可空）</span><input id="i-link" type="url" placeholder="https://v.douyin.com/…"></label>
       </div>
       <label><span data-i18n="insp.label.summary">内容总结 *</span><textarea id="i-summary" rows="3"></textarea></label>
       <label><span data-i18n="insp.label.transfer">可迁移技巧（每行一条，可空）</span><textarea id="i-transfer" rows="2"></textarea></label>
@@ -127,6 +128,9 @@
         '<h4>' + (item.link
           ? '<a href="' + esc(item.link) + '" target="_blank" rel="noopener">' + esc(item.title) + '</a>'
           : esc(item.title)) + '</h4>' +
+        (item.link
+          ? '<div class="i-linkrow"><a class="i-link-chip" href="' + esc(item.link) + '" target="_blank" rel="noopener">' + t('insp.viewOriginal') + '</a></div>'
+          : '') +
         '<div class="i-author">' + t('insp.author') + esc(item.author || t('insp.unknown')) + '</div>' +
         '<div class="i-metrics">' +
           '<span>' + t('insp.likes') + ' ' + fmtNum(likesOf(item)) + '</span>' +
@@ -227,12 +231,15 @@
       }
       var transfer = document.getElementById('i-transfer').value.split('\n')
         .map(function (s) { return s.trim(); }).filter(Boolean);
+      var link = document.getElementById('i-link').value.trim();
+      if (link && !/^https?:\/\//i.test(link)) link = 'https://' + link;
       var item = {
         id: 'local-' + Date.now().toString(36),
         title: title,
         author: document.getElementById('i-author').value.trim(),
         platform: document.getElementById('i-platform').value || t('insp.otherPlatform'),
         domain: document.getElementById('i-domain').value.trim(),
+        link: link,
         contentSummary: summary,
         narrativeAnalysis: { transferable: transfer },
         metrics: { likes: 0, comments: 0, collected: today() }
@@ -240,7 +247,7 @@
       var locals = loadLocalInsp();
       locals.unshift(item);
       saveLocalInsp(locals);
-      ['i-title', 'i-author', 'i-domain', 'i-summary', 'i-transfer'].forEach(function (id) {
+      ['i-title', 'i-author', 'i-domain', 'i-link', 'i-summary', 'i-transfer'].forEach(function (id) {
         document.getElementById(id).value = '';
       });
       refreshDomainOptions();
