@@ -127,17 +127,17 @@ async function biliBootstrap() {
 }
 
 async function biliApi(path, params) {
-  /* 排队执行：所有 B站调用串行，调用间随机休眠 1.2–2.4 秒 */
+  /* 排队执行：所有 B站调用串行，调用间随机休眠 2–3.5 秒；最多 4 次尝试（退避 3/6/9 秒） */
   const run = async () => {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
       if (i > 0) {
         biliCookie = ''; /* 强制重新拿 buvid */
         biliWbiKey = '';
-        await new Promise(r => setTimeout(r, 2500 * i));
+        await new Promise(r => setTimeout(r, 3000 * i));
       }
       try { return await biliApiOnce(path, params); }
       catch (e) {
-        if (i === 2) throw e;
+        if (i === 3) throw e;
         console.warn(`[B站] 请求失败（第 ${i + 1} 次），重试：${e.message.slice(0, 80)}`);
       }
     }
@@ -147,7 +147,7 @@ async function biliApi(path, params) {
   return p;
 }
 
-function biliDelay() { return new Promise(r => setTimeout(r, 1200 + Math.floor(Math.random() * 1200))); }
+function biliDelay() { return new Promise(r => setTimeout(r, 2000 + Math.floor(Math.random() * 1500))); }
 
 async function biliApiOnce(path, params) {
   await biliBootstrap();
@@ -625,9 +625,16 @@ async function main() {
       if (!p) return true;
       const t = new Date(p + 'T00:00:00Z').getTime();
       return isNaN(t) || (Date.now() - t) / 86400000 <= FRESH_DAYS;
-    })
-    .sort((a, b) => String(b.published || (b.metrics && b.metrics.collected) || '').localeCompare(
-                    String(a.published || (a.metrics && a.metrics.collected) || '')));
+    });
+  /* 以视频为主：赛道内 B站视频条目先占名额，其余网站资讯按发布时间降序补足
+     （否则当日网站文章会凭 published 更近把视频全部挤出配额） */
+  const isVideo = x => String(x.platform || '') === 'B站' || /bilibili\.com/.test(String(x.link || ''));
+  const pubKey = x => String(x.published || (x.metrics && x.metrics.collected) || '');
+  auto.sort((a, b) => {
+    const va = isVideo(a) ? 0 : 1, vb = isVideo(b) ? 0 : 1;
+    if (va !== vb) return va - vb;
+    return pubKey(b).localeCompare(pubKey(a));
+  });
   const quota = {};
   const picked = [];
   for (const x of auto) {
