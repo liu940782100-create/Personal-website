@@ -1,6 +1,698 @@
-/* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */
 /* 本文件由 tools/fetch_inspiration.mjs 维护（手动触发更新）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
+  {
+    "id": "a2026102071",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "999 → 551 元：小米 Sound Pro 智能音箱再降价，40W 低音 + 哈曼联合调校",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/015/589.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;p data-vmark=\"396e\"&gt;小米 Sound Pro 智能音箱发售于 2022 年 12 月，官方上市价 999 元。&lt;/p&g…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102072",
+    "platform": "雷锋网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "亚太唯一！阿里云连续4年获评 Gartner 容器管理领导者象限",
+    "author": "雷锋网",
+    "link": "https://www.leiphone.com/category/industrynews/z75kiSSlXYqfCza6.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "近日，国际权威咨询公司Gartner正式发布2026年度《容器管理魔力象限》报告，阿里云连续4年入选该报告，稳居“领导者”象限，是亚太地区唯一获此殊荣的科技公司…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102073",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "电子科技大学出版社携手阿里云发布中小学AI通识教育平台 - 新华网客户端",
+    "author": "新华网客户端",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV1hUTWJyX1RZbkJudmdjNXQ3Zko1WG03SFdlUVNlNmhjcUFwNlZkUzB1LVNjSWVsTzNoUkRWcUJGVG5veFE5Ul9IX0FEUXNPTU1pbWFVY21qX2hpU3ZLVkIyRHNWWXVOZnVaZFhTS0s0ZG5hQ3dmelQxeHZZZlU1ZlBZTlA2MU0zMWIzUWNBdWJxSnBoOHJGbGVB?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxQV1hUTWJyX1RZbkJ…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102074",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "苹果 AirPods 5 全国国补开启：京东自营 999 → 755 元，支持主动降噪",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/015/585.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;p data-vmark=\"43f3\"&gt;今晚 21 点起，京东自营 &lt;strong&gt;AirPods 5&lt;/strong&gt; …",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102075",
+    "platform": "雷锋网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "580天暗战，爱奇艺的AI闯关路",
+    "author": "雷锋网",
+    "link": "https://www.leiphone.com/category/industrynews/jJI2TPXI1eYWxECq.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "今年4月，在北京的一场影视行业论坛上，爱奇艺基础架构与智能分发事业群总裁刘文峰正通过大屏幕演示手机端的一个新功能“跳看”：前一秒还是画师在寺庙中留下一幅未完成点…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102076",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "DeepSeek“帕累托改进图”刷屏AI圈 - 21财经",
+    "author": "21财经",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcTlNSkx5NVdLYjJFQ1Y3c1p1ZG9kb1d2cmJmVHRvZ2tTX3pfVFd2bzhuWjE3UTdZT2hqd0pxV0h6d2p3VlBCR1NhYVpHZzFCWnlqelJKLWpNeUtLd09wTF90YlJjS0VhX2M4Z1kyeXNVendwNGxIb1hJdmF6c0U3dTZBRXlGLWgzdWRlZXpIcw?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxPcTlNSkx5NVdLYjJ…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102077",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "消息称华为乾崑准备推出新智驾方案：比 ADS Pro 更便宜，但又高于 SE 版本",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/015/583.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;p data-vmark=\"373d\"&gt;IT之家 10 月 20 日消息，据博主 @新出行贺磊 分享，&lt;strong&gt;华为乾崑最近的智…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102078",
+    "platform": "雷锋网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "奥斯卡大师加持，「电影精神」怎么造就AI剧场？",
+    "author": "雷锋网",
+    "link": "https://www.leiphone.com/category/industrynews/6Vycsmo3EhndKZSe.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "“我73岁转型，我要去拥抱新的技术、去驾驭它，做到真正想做的东西，这就是我的决心。”——鲍德熹十一月的北京已略带寒意，我们在爱奇艺青春中心见到了一代传奇影人鲍德…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102079",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "【硬核】俄乌打了四年多，到底谁在买单？",
+    "author": "小Lin说",
+    "link": "https://www.bilibili.com/video/BV1SUhe6xEM2",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "俄乌打了四年多，相关报道热度下降，但战场仍处于高强度拉锯消耗，双方军费、兵力投入还在持续加码。 抛开前线战况，这场战争究竟给俄、乌两国经济造成了多大冲击？两边的…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102080",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "巴黎欧洲金融市场协会总干事称法中合作六大领域前景广阔",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718167.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社北京10月20日电 (记者 王梦瑶)巴黎欧洲金融市场协会总干事奥利维耶·维尼亚20日在2026金融街论坛年会期间表示，在能源转型和电池产业、民用核能等六大…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102081",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "海南自贸港高校探索教育开放新路径：既可“留学海南”更能“随企出海”",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/edu/2026/10-20/10718169.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社海口10月20日电 (记者 王晓斌)2026中国教育品牌出海高峰论坛20日在海口召开。既让“留学海南”成为现实选择，又可以通过定制化的人才培养让教育“随企…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102082",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "中国央行将连续9个工作日开展隔夜逆回购操作",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717876.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中国央行将连续9个工作日开展隔夜逆回购操作",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102083",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "特朗普关税被判违法，这一整年白忙了? 现在关税什么情况?",
+    "author": "小Lin说",
+    "link": "https://www.bilibili.com/video/BV1zTYs6nEkk",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "特朗普关税被判违法，这一整年白忙了? 现在关税什么情况?",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102084",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "今年前三季度江西电动汽车出口量创历史同期新高",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718166.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社南昌10月20日电 (记者 吴鹏泉)南昌海关20日公布，今年前三季度，江西电动汽车出口量创历史同期新高，达11.9万辆，出口值同比(下同)增长2.2倍。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102085",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "三季度北京办公楼租赁市场活跃度呈小幅回升态势",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717875.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "三季度北京办公楼租赁市场活跃度呈小幅回升态势",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102086",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "沙特2030愿景，现在怎么样了？",
+    "author": "小Lin说",
+    "link": "https://www.bilibili.com/video/BV1HGta6aEf8",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "伊朗战乱已经好几个月了，边上一圈中东产油国可以说都受到了巨大的冲击。但这里面有一个国家最能扛，你知道是谁么? 就是 - 沙特。 我今天想从底层经济结构的角度，带…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102087",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "丁薛祥在河北雄安新区出席国家数据集团有限公司成立大会并调研",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083803.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "国家数据集团有限公司成立大会20日在河北雄安新区举行。中共中央政治局常委、国务院副总理丁薛祥出席并为公司成立揭牌。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102088",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "纪念孙中山诞辰160周年 黄埔论坛在广西桂林召开",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10718160.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社广西桂林10月20日电 (陈建新 韦佳秀)由黄埔军校同学会和广西海外联谊会主办的第十九届黄埔论坛20日在广西桂林举办，主题为“继承中山思想 弘扬黄埔精神 …",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102089",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "16部门联合部署2026年全国“优化消费环境月”活动",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717803.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "16部门联合部署2026年全国“优化消费环境月”活动",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102090",
+    "platform": "人民网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "丁薛祥在雄安新区出席国家数据集团成立大会并调研",
+    "author": "人民网·首页",
+    "link": "http://politics.people.com.cn/n1/2026/1020/c1024-40818420.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "新华社雄安10月20日电（记者齐中熙）国家数据集团有限公司成立大会20日在河北雄安新区举行。中共中央政治局常委、国务院副总理丁薛祥出席并为公司成立揭牌。丁薛祥表…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102091",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "何立峰会见金融监管总局国际咨询委员会委员时指出 中国将继续扩大金融高水平开放 加快建设金融强国",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083776.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中共中央政治局委员、国务院副总理何立峰19日晚在钓鱼台国宾馆会见金融监管总局国际咨询委员会委员时表示，中国正全面落实“十五五”规划纲要，将继续坚定不移扩大金融领…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102092",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "2026晋港澳青创峰会收官 青年代表走访山西",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/dwq/2026/10-20/10717822.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "2026晋港澳青创峰会收官 青年代表走访山西",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102093",
+    "platform": "人民网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "养老、消费、购房,与你我相关的惠民政策加速落地",
+    "author": "人民网·首页",
+    "link": "http://finance.people.com.cn/n1/2026/1020/c1004-40818362.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "10月20日，国家发展改革委召开10月份新闻发布会。人民网记者许维娜摄人民网北京10月20日电（记者许维娜）20日，国家发展改革委召开10月份新闻发布会。记者在…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102094",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "中共中央 国务院关于发展新质生产力的意见",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7082819.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "发展新质生产力是推动高质量发展的内在要求和重要着力点。为加快发展新质生产力，现提出如下意见。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102095",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "马来西亚内阁批准东海岸铁路向马泰边境延伸",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/ydyl/2026/10-20/10718168.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社吉隆坡10月20日电 (记者 刘育英)马来西亚交通部长陆兆福20日在2026年亚洲交通博览会上表示，马内阁已批准将东海岸铁路从哥打巴鲁延长约32公里至马来…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102096",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "华为数字能源王超建议：加大统一平台化力度，减少内卷式开发 - 搜狐",
+    "author": "搜狐",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB4QXlYVmdSZHZBRlhFVjRIc3Q4bjF1SEJYbFg0eHN3ZERXcDZ0enFxaVo5TnlqVHNSbWkyb2plazdONDhDYzFxVVpKSVNwZll6NUdrcjVR?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTFB4QXlYVmdSZHZBRlh…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102097",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "阳光电源最新公告：拟出资1.74亿元参与设立储能产业基金 - 搜狐",
+    "author": "搜狐",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZmRvZzBNLUx2Z0NwVFU4bE1xSzlDeW1OaURlaEo4bWhCZko3ZS1IUUxSeWtIeFV2bmR5UVVfY29QOHdsRVJIMno0RV9HdXRhbUtGcm5rY3l2MmFVV0NSQ1pmSFJ3cE5oTk50V1JLVVFPdmhOazBxcUF1LU1oamd6am1HZDlnZ3RS?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZmRvZzBNLUx2Z0N…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102098",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代发布“电电增程”换电新方案 首批签约13000台 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBHMUpvWFFUTmhhYTU4Yi1KLWI4dFZGSmVDV0NmLWhWNTJVQ2ozcW5ZRGJaZEEzWjZRVmxOdkh4eWp4NGU4VGhjeHcwM1Y3ekJOOTlWWEZpZkpzMHlGbmktRmRrNUY5WVYtLWtZVnM1V1lmRzRSd2NpLQ?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFBHMUpvWFFUTmhhYTU…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102099",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国轩高科推CTB重卡：整车减重400公斤，电量400-700kWh - 网通社",
+    "author": "网通社",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Qb1hnbFNnSlVtQk5NcmJCNW81M1l0bUNBdS1aeDY5cWRnUVp3S1dUbkRDc2YxUG1JRUtqdlBIZThONmd6ZXN0RjZvMU51UnFtU3lhWXJlUXRRbWM?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Qb1hnbFNnSlVtQk5…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a20261020100",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "钠引新程 固启未来｜亿纬锂能全固态、钠电新品正式发布 - 搜狐",
+    "author": "搜狐",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQVhtYWVFRXlHZkIwU0hPLU5xeDduNHdON3A4X2ZUX2FqWFoxaTh3MlV3ZEMzckJLaThNa0tMdWo5V0hLQlNfOTE0SlNuNXBsVTlqMzV1VkVFRXEyS1hSVXA4d0xBQURFVGpJWUswTUtDdGoweFAyOFJ0SFQ1MkRSWmU1aFJnT3BkLUVjbQ?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNQVhtYWVFRXlHZkI…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a20261020101",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "喜讯！海辰储能拟获福建省专利奖一等奖！ - 碳索储能网",
+    "author": "碳索储能网",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE40TDFnYkRGMVBmS1dVSXRRWi1ZQ3hZVkhMczFocG9SR0R5Z2U0aW9leERtcFVqZ19uVkhvX0dXT2JNQ2s5LXAwODlHWGZZbW03X213ZGMzMENlcEJ4dkd5TA?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTE40TDFnYkRGMVBmS1d…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a20261020102",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国家能源局公开征求《全国统一电力市场信用评价指引（征求意见稿）》意见",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261020/1516835.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "国家能源局公开征求《全国统一电力市场信用评价指引（征求意见稿）》意见",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a20261020103",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "聚焦构网+AI，华为数字能源携多场景解决方案亮相IDEE2026 - 凤凰网",
+    "author": "凤凰网",
+    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9RQ3N1bDhUeGpoLTJlSVAyc3EwdU1XQlJkTmxxVzFzWmJucUlrcXpVWnZvTzFlU0JkOXhIQjNVVUdWSkhuR2g3dDVvb1k?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiTEFVX3lxTE9RQ3N1bDhUeGpoLTJ…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
   {
     "id": "a2026102036",
     "platform": "IT之家",
@@ -3136,4 +3828,4 @@ window.DATA_INSPIRATION = [
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-20","added":35,"total":127,"tracks":{"科技":32,"财经":24,"政治":24,"军事":19,"储能":28}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-20","added":33,"total":160,"tracks":{"科技":8,"财经":8,"政治":8,"军事":1,"储能":8}};
