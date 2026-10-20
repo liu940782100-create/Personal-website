@@ -1040,4 +1040,4 @@ window.DATA_INSPIRATION = [
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-20","added":35,"total":40,"tracks":{"科技":8,"财经":8,"政治":8,"军事":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-20","added":34,"total":40,"tracks":{"科技":8,"财经":8,"政治":8,"军事":8,"储能":8}};
