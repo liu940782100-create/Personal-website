@@ -1,6 +1,786 @@
 /* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
   {
+    "id": "a2026102004",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "理想汽车软件与人工智能发布会：具身智能汽车的4大能力，一次说清+FAQ - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3TXhJYmc5Z1E1clhGSms4RUo4THItbzlRVzlMQWlENTZsMDBNV1Z2ZGNZTy16ZTN5cW9Vdm9VTFd2SXYxWUZvTUtteTNpYzY0TWE2cFFDOVJ4MkJiaXY3M1MtaU9NZVNwcFNTelF2RFdGYVhyTERKcm5BWHdRSmM?oc=5",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "理想汽车软件与人工智能发布会集中讲解具身智能汽车四大能力，并以FAQ补充说明。",
+    "narrativeAnalysis": {
+      "hook": "4大能力一次说清",
+      "structure": "主题总述→能力拆解→问答补充",
+      "emotionCurve": "好奇观望→概念清晰→理解信任",
+      "transferable": [
+        "用数字概括降低理解门槛",
+        "FAQ回应潜在疑问",
+        "把技术能力转译为用户场景"
+      ]
+    }
+  },
+  {
+    "id": "a2026102005",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "1 亿目标近在咫尺：曝华为鸿蒙 HarmonyOS 系统装机量突破 9500 万台",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/015/614.htm",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "第三方数据显示，华为鸿蒙HarmonyOS装机量突破9500万台，约9528.8万台，逼近1亿目标。",
+    "narrativeAnalysis": {
+      "hook": "鸿蒙离1亿只差一步",
+      "structure": "结论先行→数据佐证→趋势判断",
+      "emotionCurve": "关注期待→数据确认→信心增强",
+      "transferable": [
+        "用目标缺口制造紧迫感",
+        "精确数字增强可信度",
+        "从装机量延伸到生态前景"
+      ]
+    }
+  },
+  {
+    "id": "a2026102007",
+    "platform": "雷锋网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "喊出300万张订单，英伟达RTX PRO 5500为何遭到提前疯抢？",
+    "author": "雷锋网",
+    "link": "https://www.leiphone.com/category/chips/STx9ZzfDNh5W80Bm.html",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "英伟达RTX PRO 5500未批量交付即遭疯抢，市场喊出300万张订单；采购消息带动天阳科技股价涨12.38%。",
+    "narrativeAnalysis": {
+      "hook": "没上市先被抢疯了",
+      "structure": "现象抛出→时间线还原→案例佐证→风险补充",
+      "emotionCurve": "惊讶好奇→热度确认→理性警惕",
+      "transferable": [
+        "用反常现象设置悬念",
+        "按时间线还原抢购过程",
+        "用股价变化放大市场热度"
+      ]
+    }
+  },
+  {
+    "id": "a2026102008",
+    "platform": "中新网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "全国医保影像AI识图大赛决赛将在广西南宁举行",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/sh/2026/10-20/10718201.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "国家医保局与广西政府联合主办的全国医保影像AI识图大赛决赛，将于10月22日至23日在南宁线下举行。",
+    "narrativeAnalysis": {
+      "hook": "医保AI决赛即将开打",
+      "structure": "事件预告→主办方背书→时间地点明确",
+      "emotionCurve": "行业关注→权威增强→参与期待",
+      "transferable": [
+        "突出主办方提升权威性",
+        "用倒计时强化事件临近",
+        "把赛事与产业应用关联"
+      ]
+    }
+  },
+  {
+    "id": "a2026102010",
+    "platform": "中新网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI换脸拟声 仿冒名人带货如何“解”",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/sh/2026/10-20/10717836.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "围绕AI换脸、拟声仿冒名人带货现象，讨论其治理与破解路径。",
+    "narrativeAnalysis": {
+      "hook": "假名人带货怎么破",
+      "structure": "问题提出→风险呈现→治理追问",
+      "emotionCurve": "担忧警惕→追问办法→寻求规范",
+      "transferable": [
+        "用常见乱象切入痛点",
+        "把技术风险转成消费场景",
+        "以问句引导治理讨论"
+      ]
+    }
+  },
+  {
+    "id": "a2026102011",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "电子科技大学出版社携手阿里云发布中小学AI通识教育平台 - 新华网客户端",
+    "author": "新华网客户端",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV1hUTWJyX1RZbkJudmdjNXQ3Zko1WG03SFdlUVNlNmhjcUFwNlZkUzB1LVNjSWVsTzNoUkRWcUJGVG5veFE5Ul9IX0FEUXNPTU1pbWFVY21qX2hpU3ZLVkIyRHNWWXVOZnVaZFhTS0s0ZG5hQ3dmelQxeHZZZlU1ZlBZTlA2MU0zMWIzUWNBdWJxSnBoOHJGbGVB?oc=5",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "电子科技大学出版社与阿里云合作发布面向中小学的AI通识教育平台。",
+    "narrativeAnalysis": {
+      "hook": "中小学AI课有了平台",
+      "structure": "合作发布→产品定位→教育场景",
+      "emotionCurve": "新鲜关注→资源落地→家长期待",
+      "transferable": [
+        "借权威机构增强可信度",
+        "明确用户群体降低距离感",
+        "把AI教育落到平台载体"
+      ]
+    }
+  },
+  {
+    "id": "a2026102012",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "华为详解 Wi-Fi 7+ 端到端芯片解决方案，支持动态窄频宽、真双频并发、无缝漫游等技术",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/015/613.htm",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "华为官网更新详解Wi-Fi 7+端到端芯片解决方案，支持动态窄频宽、真双频并发、无缝漫游等技术。",
+    "narrativeAnalysis": {
+      "hook": "Wi-Fi 7+到底强在哪",
+      "structure": "官方更新→技术清单→方案价值",
+      "emotionCurve": "技术好奇→参数清晰→应用期待",
+      "transferable": [
+        "用官方更新建立可信度",
+        "列技术点降低理解成本",
+        "从参数延伸到体验价值"
+      ]
+    }
+  },
+  {
+    "id": "a2026102014",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "报告称高碳行业转型、气候适应与生态保护蕴藏巨大投资就业潜力",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718198.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "2026外滩年会发布《外滩绿色金融报告》，称高碳转型、气候适应与生态保护具投资就业潜力。",
+    "narrativeAnalysis": {
+      "hook": "权威报告加机会悬念",
+      "structure": "会议发布→报告主题→潜力判断",
+      "emotionCurve": "政策关注→机会期待→行动想象",
+      "transferable": [
+        "权威会议背书",
+        "抽象概念转机会",
+        "问题引导读报告"
+      ]
+    }
+  },
+  {
+    "id": "a2026102015",
+    "platform": "央视新闻",
+    "domain": "财经",
+    "track": "财经",
+    "title": "感知中国活力｜中国经济三季报",
+    "author": "央视新闻",
+    "link": "https://news.cctv.com/2026/10/20/ARTI428ImHzd8TodAPwUssAA261019.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中国经济三季报显示，前三季度运行总体平稳，动能向新、结构向优、质效向好，推动高质量发展。",
+    "narrativeAnalysis": {
+      "hook": "季度盘点加活力提问",
+      "structure": "总体平稳→三个向好→高质量发展",
+      "emotionCurve": "宏观关切→信心建立→发展期待",
+      "transferable": [
+        "季度报告切口",
+        "排比提炼亮点",
+        "数据感转活力"
+      ]
+    }
+  },
+  {
+    "id": "a2026102016",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "中国LPR连续17个月不变 贷款“定价锚”却要变了",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717790.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中国LPR连续17个月不变，但贷款定价锚或将变化，引发市场对贷款定价机制调整的关注。",
+    "narrativeAnalysis": {
+      "hook": "数字反差加悬念转折",
+      "structure": "连续不变→定价锚将变→市场关注",
+      "emotionCurve": "利率观望→机制疑问→预期调整",
+      "transferable": [
+        "连续数字造反差",
+        "比喻降低理解门槛",
+        "转折词制造悬念"
+      ]
+    }
+  },
+  {
+    "id": "a2026102017",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "金融支持建设北京（京津冀）国际科技创新中心实施方案在京发布",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718180.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "2026金融街论坛发布金融支持北京（京津冀）国际科创中心建设实施方案，聚焦核心功能与京津冀协同，构建科技金融支撑体系。",
+    "narrativeAnalysis": {
+      "hook": "政策发布加区域热点",
+      "structure": "论坛发布→方案聚焦→金融体系支撑",
+      "emotionCurve": "区域期待→政策落地→产业信心",
+      "transferable": [
+        "绑定区域战略",
+        "方案名立权威",
+        "金融连产业协同"
+      ]
+    }
+  },
+  {
+    "id": "a2026102018",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "宁夏构建社保基金监管新格局 织密基金安全防护网",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/sh/2026/10-20/10718190.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "宁夏构建社保基金监管新格局，通过闭环监管、跨域协同和四防联动，业务触规率降至0.25%，管控居全国前列。",
+    "narrativeAnalysis": {
+      "hook": "安全比喻加数据证明",
+      "structure": "政策要求→四防联动→触规率下降",
+      "emotionCurve": "基金担忧→制度安心→治理信心",
+      "transferable": [
+        "安全网比喻监管",
+        "机制拆解增可信",
+        "数据证明成效"
+      ]
+    }
+  },
+  {
+    "id": "a2026102019",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "海南自贸港打造国际商事纠纷解决“优选地”",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/fz/2026/10-20/10717645.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "海南自贸港以打造国际商事纠纷解决优选地为目标，推进相关服务与规则建设。",
+    "narrativeAnalysis": {
+      "hook": "标签定位加场景提问",
+      "structure": "目标定位→纠纷解决建设→营商吸引",
+      "emotionCurve": "开放好奇→规则信任→投资期待",
+      "transferable": [
+        "优选地树标签",
+        "纠纷连营商环境",
+        "借自贸港提热度"
+      ]
+    }
+  },
+  {
+    "id": "a2026102020",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "国际市场仍为中国航空货运9月份重要增长点",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718158.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "9月中国航空货运回暖，上市机场与航司货邮数据同步增长，国际需求景气成为核心支撑。",
+    "narrativeAnalysis": {
+      "hook": "月度数据加归因悬念",
+      "structure": "九月回暖→机场航司数据→国际需求支撑",
+      "emotionCurve": "行业观望→数据确认→外需信心",
+      "transferable": [
+        "月度节点抓注意",
+        "双数据互证",
+        "增长归因外需"
+      ]
+    }
+  },
+  {
+    "id": "a2026102021",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "韩国华城电池厂火灾涉事企业代表终审获刑4年",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-20/10717848.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "韩国华城电池厂火灾涉事企业代表终审获刑4年，案件进入终局裁判，凸显事故责任追究。",
+    "narrativeAnalysis": {
+      "hook": "终审结果加责任追问",
+      "structure": "火灾事故→企业代表获刑→责任警示",
+      "emotionCurve": "事故震惊→追责关注→安全警示",
+      "transferable": [
+        "终审结果定调",
+        "事故刑罚连因果",
+        "延伸安全责任"
+      ]
+    }
+  },
+  {
+    "id": "a2026102023",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "习近平致信祝贺中央社会主义学院建院70周年",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083782.htm",
+    "published": "",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "习近平在中央社会主义学院建院70周年之际致信祝贺。",
+    "narrativeAnalysis": {
+      "hook": "70周年高层致信",
+      "structure": "节点引入→高层表态→意义延伸",
+      "emotionCurve": "庄重祝贺→认同凝聚→展望前行",
+      "transferable": [
+        "抓住周年节点",
+        "突出最高规格",
+        "由祝贺引申价值"
+      ]
+    }
+  },
+  {
+    "id": "a2026102024",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "刘海星分别会见意大利、阿联酋客人",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10718211.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "10月20日，刘海星在京分别会见意大利五星运动代表团和阿联酋第一梯队领导人才代表团，就双边交流合作与国家关系发展交换意见。",
+    "narrativeAnalysis": {
+      "hook": "意阿两团同日会见",
+      "structure": "时间地点→会见对象→交流议题",
+      "emotionCurve": "平稳关注→开放务实→合作期待",
+      "transferable": [
+        "并列对象提看点",
+        "日期增强现场感",
+        "聚焦双边合作"
+      ]
+    }
+  },
+  {
+    "id": "a2026102025",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "习近平在一幅油画前驻足凝视",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10717697.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "2021年4月，习近平在广西桂林红军长征湘江战役纪念馆参观时，在一幅油画前驻足凝视。",
+    "narrativeAnalysis": {
+      "hook": "油画前的凝视",
+      "structure": "场景切入→人物动作→历史联想",
+      "emotionCurve": "肃穆沉静→缅怀致敬→精神共鸣",
+      "transferable": [
+        "细节动作造画面",
+        "时空信息增真实",
+        "由物及史升华"
+      ]
+    }
+  },
+  {
+    "id": "a2026102027",
+    "platform": "人民网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "习近平结束对美国的国事访问回到北京",
+    "author": "人民网·首页",
+    "link": "http://politics.people.com.cn/n1/2026/0926/c1024-40806006.html",
+    "published": "",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "9月26日下午，国家主席习近平圆满结束对美国国事访问回到北京，彭丽媛、蔡奇、王毅等被提及。",
+    "narrativeAnalysis": {
+      "hook": "访美圆满收官",
+      "structure": "行程结束→核心信息→随行阵容",
+      "emotionCurve": "关注行程→稳定圆满→外交信心",
+      "transferable": [
+        "时间节点收束",
+        "关键人物增规格",
+        "圆满定调稳预期"
+      ]
+    }
+  },
+  {
+    "id": "a2026102034",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "习近平在内蒙古乌兰察布考察时强调 统筹高质量发展和高水平保护 坚定不移走生态优先绿色发展之路",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083416.htm",
+    "published": "",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "16日上午，习近平在王伟中、包钢陪同下赴内蒙古乌兰察布考察调研，强调统筹高质量发展和高水平保护，走生态优先、绿色发展之路。",
+    "narrativeAnalysis": {
+      "hook": "乌兰察布绿色信号",
+      "structure": "考察行程→领导陪同→核心强调",
+      "emotionCurve": "实地关切→方向明确→发展信心",
+      "transferable": [
+        "地点加主题抓眼",
+        "陪同人员显规格",
+        "金句提炼方向"
+      ]
+    }
+  },
+  {
+    "id": "a2026102035",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "2026中国品牌国际化论坛在海口开幕 探讨中国品牌出海路径",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718202.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "10月20日，2026中国品牌国际化论坛在海口开幕，超2000名中外嘉宾共商中国品牌从产品出海迈向品牌出海。",
+    "narrativeAnalysis": {
+      "hook": "2000嘉宾谈出海",
+      "structure": "论坛开幕→规模主题→议题价值",
+      "emotionCurve": "行业热闹→路径清晰→出海信心",
+      "transferable": [
+        "数字凸显规模",
+        "主题词提趋势",
+        "产品到品牌升级"
+      ]
+    }
+  },
+  {
+    "id": "a2026102036",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "王毅：中国和欧盟完全可以通过对话协商妥处分歧",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10717638.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "王毅表示，中国和欧盟完全可以通过对话协商妥处分歧。",
+    "narrativeAnalysis": {
+      "hook": "王毅谈中欧分歧",
+      "structure": "人物表态→核心观点→关系预期",
+      "emotionCurve": "分歧关切→理性沟通→稳定期待",
+      "transferable": [
+        "直接引语增权威",
+        "分歧转解决路径",
+        "强化信心表达"
+      ]
+    }
+  },
+  {
+    "id": "a2026102037",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "新一代“长征”潜艇官兵接续奋斗，锻造共和国“水下盾牌”",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16494723.html",
+    "published": "",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "聚焦新一代“长征”潜艇官兵接续奋斗，展现其锻造共和国“水下盾牌”的使命担当。",
+    "narrativeAnalysis": {
+      "hook": "悬念设问+荣誉意象",
+      "structure": "主题定位→奋斗叙事→意义升华",
+      "emotionCurve": "崇敬期待→热血振奋→自豪安心",
+      "transferable": [
+        "用国家意象增强使命感",
+        "以接续奋斗制造时间纵深",
+        "把装备拟人化提升亲近感"
+      ]
+    }
+  },
+  {
+    "id": "a2026102045",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "阳光电源拟出资1.74亿元参与设立基金，布局储能电站等资产，运作期限为8年 - 天天基金",
+    "author": "天天基金",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CTm5JZGl5cWFjcC15WVRRRk1odGhmTndSWTljcHZIeVE5S3BNNm9iaGkyTnNIY19GYUdLdzk5V1NWLWZ1WlJIZklsNFJRQk5aT0dzN3NhMEk3NjBNTmdjU1Vn?oc=5",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "阳光电源拟出资1.74亿元参与设立基金，布局储能电站等资产，运作期限8年。",
+    "narrativeAnalysis": {
+      "hook": "金额数字+资产投向",
+      "structure": "事件披露→资金规模→投向与期限",
+      "emotionCurve": "资本关注→布局明确→长期信心",
+      "transferable": [
+        "用金额制造冲击",
+        "点明投向资产",
+        "强调长期期限"
+      ]
+    }
+  },
+  {
+    "id": "a2026102061",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "怪不得车企不忍宁德时代了！前三季度疯赚645亿 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOaHp5MU5LeHQ2amMxWHdpRGd0M1VBLWJUUFhtVFpZdi03ZTM2bldNZS0xRDVtazliazNlcW9uNm9TSkhGaWx6bzNKSll6VTlyZ2ZZTGRqOTcyblNzbzJGOVdmYWpyN0tSNENyMnFRT2JDdFQwQi1TS3BCVzU4eWVMUF94ZGhIcl9YbmdDWWhyQXpvV2p3S2FEZmkwZnphamZPZGpGeFBxbkFlN0NDTHZqQlhodDkyZFJNdVBIMi01N1BqWVJLX0haUC1WV1pNQ3VSUUVDMG5sX3RudWFqRnc?oc=5",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "标题称宁德时代前三季度疯赚645亿元，并指向车企不满。",
+    "narrativeAnalysis": {
+      "hook": "冲突情绪+巨额数字",
+      "structure": "冲突前置→数字刺激→情绪发酵",
+      "emotionCurve": "震惊→对立→追问",
+      "transferable": [
+        "用强冲突标题",
+        "数字放大反差",
+        "借车企电池矛盾"
+      ]
+    }
+  },
+  {
+    "id": "a2026102062",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国轩高科(002074):2026年第三次临时股东会会议决议 - 中财网",
+    "author": "中财网",
+    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBIWGJHZjlIc0lvQXJJMkc2c1NubGpjZWVZT1Nwd01LNGQySnVfNkRITWNwT3VEUnlOcUNtYjJVa0lRXzFOc1BmMmszbFQ1TXJi?oc=5",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "国轩高科发布2026年第三次临时股东会会议决议公告。",
+    "narrativeAnalysis": {
+      "hook": "公告事实+悬念解读",
+      "structure": "公告事实→会议届次→决议事项",
+      "emotionCurve": "中性关注→信息缺口→等待解读",
+      "transferable": [
+        "用股票代码增信",
+        "标注会议届次",
+        "提示决议看点"
+      ]
+    }
+  },
+  {
+    "id": "a2026102070",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "刘金成：宝马为什么坚定选亿纬锂能大圆柱？ - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQR2s0LVlBbFBtWGd4RWdzaDdTeGpueGU3MkpScS1kbmlpN2NRRVVncnY4bTB3dExfWmRHMjFTbklJMVZpWlFHbk8tOXRhS3QydXVyNHgyd2pLd1J4c29yWTZxeGM2bnBSLWIwZmN0alhTUEN6MVdhSnQwOHZnXzFOMw?oc=5",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "刘金成解读宝马为何坚定选择亿纬锂能大圆柱电池。",
+    "narrativeAnalysis": {
+      "hook": "设问句式+客户背书",
+      "structure": "设问开头→主体背书→原因拆解",
+      "emotionCurve": "好奇→权威解答→价值认同",
+      "transferable": [
+        "客户名提升分量",
+        "大圆柱作抓手",
+        "设问引导阅读"
+      ]
+    }
+  },
+  {
+    "id": "a2026102071",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "海辰储能的“进阶”之道 - 搜狐",
+    "author": "搜狐",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQUZpNm1FdWl3dEJuM0xfVmZqbnpndFJWV0hnRS1zeTFlNWZIWFFka0MtemwzZk10UWNPRHNfLTNLeHpObG1SYUlFblhVemNreDBjLS14aU54TlF4d2RJVmFDbmhkNXl0eDhCSGo2V1hTeWtZazNyZi16VnByRnFtNmZzdXRqRDg4NGJVYQ?oc=5",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "文章聚焦海辰储能的进阶之道，探讨其发展升级路径。",
+    "narrativeAnalysis": {
+      "hook": "企业案例+成长悬念",
+      "structure": "企业案例→进阶命题→路径解读",
+      "emotionCurve": "好奇→寻找方法→期待成长",
+      "transferable": [
+        "企业名作案例",
+        "用进阶概括成长",
+        "设置路径悬念"
+      ]
+    }
+  },
+  {
+    "id": "a2026102072",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国家能源局公开征求《全国统一电力市场信用评价指引（征求意见稿）》意见",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261020/1516835.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "国家能源局公开征求《全国统一电力市场信用评价指引（征求意见稿）》意见。",
+    "narrativeAnalysis": {
+      "hook": "政策文件+征求意见",
+      "structure": "监管动作→文件名称→征求意见",
+      "emotionCurve": "政策敏感→合规预期→参与关注",
+      "transferable": [
+        "突出监管主体",
+        "引用文件全名",
+        "强调征求意见"
+      ]
+    }
+  },
+  {
+    "id": "a2026102073",
+    "platform": "中新网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "南方电网公司专家委员会原专职委员薛武接受审查调查",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10717805.shtml",
+    "published": "2026-10-20",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "南方电网公司专家委员会原专职委员薛武接受审查调查。",
+    "narrativeAnalysis": {
+      "hook": "人物身份+审查调查",
+      "structure": "人物身份→审查调查→警示意义",
+      "emotionCurve": "意外→警觉→反思",
+      "transferable": [
+        "身份标签抓眼",
+        "简洁通报事实",
+        "引申合规警示"
+      ]
+    }
+  },
+  {
     "id": "a2026102002",
     "platform": "IT之家",
     "domain": "科技",
@@ -27,344 +807,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102009",
-    "platform": "雷锋网",
-    "domain": "科技",
-    "track": "科技",
-    "title": "双11 iPhone Duo货源大战：苹果为什么把更多货交给天猫？",
-    "author": "雷锋网",
-    "link": "https://www.leiphone.com/category/industrynews/1kN394wi9h0iFG43.html",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "iPhone Duo预售秒罄且官网发货延至2027年，仅苹果官网与天猫旗舰店有货，后者连续6次补货成主战场。",
-    "narrativeAnalysis": {
-      "hook": "折叠屏iPhone货源揭秘",
-      "structure": "现象描述→数据对比→原因分析",
-      "emotionCurve": "抢购狂热→惊讶错愕→理性归因",
-      "transferable": [
-        "利用稀缺性制造话题热度",
-        "具体时间点与次数增加真实感",
-        "平台对比凸显渠道竞争优势"
-      ]
-    }
-  },
-  {
-    "id": "a2026102013",
-    "platform": "中新网",
-    "domain": "科技",
-    "track": "科技",
-    "title": "加快发展新一代智能制造 工信部明确四方面重点举措",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717863.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "工信部发布新一代智能制造发展指导意见，明确四个方面重点举措，旨在加速制造业智能化转型进程。",
-    "narrativeAnalysis": {
-      "hook": "国家出手定义智造未来",
-      "structure": "政策背景→核心举措→战略意义",
-      "emotionCurve": "宏观关注→清晰指引→信心提振",
-      "transferable": [
-        "提炼政策关键词便于传播",
-        "关联行业趋势提升相关性",
-        "简洁罗列要点降低阅读负担"
-      ]
-    }
-  },
-  {
-    "id": "a2026102026",
-    "platform": "IT之家",
-    "domain": "科技",
-    "track": "科技",
-    "title": "Adobe Lightroom 移动版新增“睁眼”AI 修图，一键修复闭眼照片",
-    "author": "IT之家",
-    "link": "https://www.ithome.com/1/015/601.htm",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "Adobe Lightroom移动端上线“睁眼”AI功能，用户只需一键点击即可自动修复照片中的闭眼问题。",
-    "narrativeAnalysis": {
-      "hook": "废片救星：一键睁眼术",
-      "structure": "痛点场景→解决方案→操作演示",
-      "emotionCurve": "遗憾惋惜→惊喜发现→轻松愉悦",
-      "transferable": [
-        "直击摄影常见痛点引发共鸣",
-        "强调‘一键’体现低使用门槛",
-        "前后效果对比增强视觉冲击"
-      ]
-    }
-  },
-  {
-    "id": "a2026102028",
-    "platform": "雷锋网",
-    "domain": "科技",
-    "track": "科技",
-    "title": "亚太唯一！阿里云连续4年获评 Gartner 容器管理领导者象限",
-    "author": "雷锋网",
-    "link": "https://www.leiphone.com/category/industrynews/z75kiSSlXYqfCza6.html",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "阿里云连续4年入选Gartner容器管理魔力象限领导者，为亚太唯一，凭借AI集成及生产环境优势领跑。",
-    "narrativeAnalysis": {
-      "hook": "亚太唯一！阿里再获殊荣",
-      "structure": "权威认证→独特地位→核心优势",
-      "emotionCurve": "民族自豪→信赖认可→技术崇拜",
-      "transferable": [
-        "引用第三方权威报告增信",
-        "突出‘唯一’标签制造稀缺感",
-        "列举具体优势支撑结论可信"
-      ]
-    }
-  },
-  {
-    "id": "a2026102029",
-    "platform": "IT之家",
-    "domain": "科技",
-    "track": "科技",
-    "title": "微软为 Windows Server 2025 引入快速计算机恢复功能，可通过 Windows Update 查找修复方案",
-    "author": "IT之家",
-    "link": "https://www.ithome.com/1/015/600.htm",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "微软Windows Server 2025新增快速计算机恢复(QMR)功能，服务器启动故障时可经WinRE从更新中找修复方案。",
-    "narrativeAnalysis": {
-      "hook": "服务器崩溃？微软出新招",
-      "structure": "新功能发布→工作原理→适用场景",
-      "emotionCurve": "运维焦虑→释然安心→效率提升",
-      "transferable": [
-        "针对B端痛点提供即时解法",
-        "简化复杂技术原理便于理解",
-        "强调自动化流程减少人工干预"
-      ]
-    }
-  },
-  {
-    "id": "a2026102038",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "巴黎欧洲金融市场协会总干事称法中合作六大领域前景广阔",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718167.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "巴黎欧洲金融市场协会总干事指出，法中在能源转型、电池及民用核能等六大领域合作基础深厚，未来拓展空间广阔。",
-    "narrativeAnalysis": {
-      "hook": "法中金融大佬点名这6大风口",
-      "structure": "权威背书→列举领域→展望前景",
-      "emotionCurve": "国际关注→信心提振→期待共赢",
-      "transferable": [
-        "借势国际组织发声增强可信度",
-        "具体化抽象概念为细分赛道",
-        "用‘存量+增量’逻辑论证潜力"
-      ]
-    }
-  },
-  {
-    "id": "a2026102039",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "国产“听觉脑干植入体”获批上市 更多先天性耳聋患儿迎来“有声”希望",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/jk/2026/10-20/10718188.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "中国自主研发的有源III类植入器械“听觉脑干植入体”获国家药监局批准上市，将为先天性耳聋患儿带来听力恢复新希望。",
-    "narrativeAnalysis": {
-      "hook": "国产首例！聋儿听见世界",
-      "structure": "重大突破→技术定性→社会价值",
-      "emotionCurve": "科技自豪→生命关怀→希望点亮",
-      "transferable": [
-        "强调‘自主研发布局’激发共鸣",
-        "关联弱势群体提升人文温度",
-        "使用专业术语确立技术壁垒"
-      ]
-    }
-  },
-  {
-    "id": "a2026102040",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "中国9月银行结售汇规模环比增长17% 涉外交易保持活跃",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717977.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "9月中国银行结售汇规模环比大幅增长17%，显示涉外经济交易保持活跃态势，反映外贸与跨境资金流动韧性较强。",
-    "narrativeAnalysis": {
-      "hook": "暴涨17%！外汇市场暗流涌动",
-      "structure": "核心数据→趋势判断→宏观意义",
-      "emotionCurve": "数据惊喜→理性分析→稳定预期",
-      "transferable": [
-        "单点数据放大解读市场情绪",
-        "用‘环比’凸显短期爆发力",
-        "将微观交易映射至宏观活力"
-      ]
-    }
-  },
-  {
-    "id": "a2026102041",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "今年前三季度江西电动汽车出口量创历史同期新高",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718166.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "前三季度江西电动汽车出口量达11.9万辆，创历史同期新高；出口值同比增长2.2倍，彰显地方新能源产业强劲出海势头。",
-    "narrativeAnalysis": {
-      "hook": "狂增2.2倍！江西电车杀疯了",
-      "structure": "区域亮点→双重数据→行业印证",
-      "emotionCurve": "地域骄傲→增长震撼→产业自信",
-      "transferable": [
-        "选取非一线城市制造反差感",
-        "并列展示销量与金额双维度",
-        "用倍数级增长强化视觉冲击"
-      ]
-    }
-  },
-  {
-    "id": "a2026102042",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "中国央行将连续9个工作日开展隔夜逆回购操作",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717876.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "中国人民银行计划连续9个工作日开展隔夜逆回购操作，旨在通过公开市场工具灵活调节流动性，维持货币环境平稳适度。",
-    "narrativeAnalysis": {
-      "hook": "央行连动9天！释放什么信号？",
-      "structure": "政策动作→操作细节→意图解析",
-      "emotionCurve": "密切关注→疑惑探究→安心维稳",
-      "transferable": [
-        "聚焦高频次操作捕捉微变化",
-        "翻译晦涩术语为通俗影响",
-        "结合时间节点暗示政策周期"
-      ]
-    }
-  },
-  {
-    "id": "a2026102043",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "商务部就美以窃取商业秘密为由制裁中国企业答记者问",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718165.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "商务部新闻发言人就美国以窃取商业秘密为由制裁中国企业一事正式回应，表明中方立场，维护企业合法权益。",
-    "narrativeAnalysis": {
-      "hook": "美方又搞事？商务部硬核回击",
-      "structure": "冲突背景→官方表态→权益捍卫",
-      "emotionCurve": "愤怒不公→坚定反击→底气十足",
-      "transferable": [
-        "提炼对抗性词汇制造张力",
-        "突出‘正当防卫’的道义高地",
-        "引用官方信源确保政治正确"
-      ]
-    }
-  },
-  {
-    "id": "a2026102046",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "三季度北京办公楼租赁市场活跃度呈小幅回升态势",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717875.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "三季度北京办公楼租赁市场活跃度呈现小幅回升态势，反映出商业地产需求边际改善，市场信心正在逐步修复中。",
-    "narrativeAnalysis": {
-      "hook": "写字楼回暖了？真相有点冷",
-      "structure": "现象描述→程度限定→深层含义",
-      "emotionCurve": "谨慎乐观→现实审视→长期观察",
-      "transferable": [
-        "慎用绝对词，保留解释空间",
-        "以小见大折射宏观经济冷暖",
-        "对比去年同期凸显微弱复苏"
-      ]
-    }
-  },
-  {
-    "id": "a2026102047",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "今年前三季度京津冀进出口达4万亿元 创历史同期新高",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718164.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "前三季度京津冀进出口总值达4万亿元，同比增长14%，创历史同期新高，体现区域经济一体化带来的贸易强劲动能。",
-    "narrativeAnalysis": {
-      "hook": "4万亿！京津冀联手炸场",
-      "structure": "总量突破→增速亮眼→归因协同",
-      "emotionCurve": "规模震撼→增长喜悦→协同认同",
-      "transferable": [
-        "聚合区域数据打造超级IP",
-        "用‘历史新高’锚定成就高度",
-        "将地理概念转化为经济共同体"
-      ]
-    }
-  },
-  {
     "id": "a2026102048",
     "platform": "中国政府网",
     "domain": "政治",
@@ -387,188 +829,6 @@ window.DATA_INSPIRATION = [
         "拔高立意至全球视野",
         "用‘火车头’比喻强化认知",
         "强调机制的权威性与影响力"
-      ]
-    }
-  },
-  {
-    "id": "a2026102049",
-    "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "沪港机场国际航空人才培训中心在沪揭牌 2026北外滩国际航空论坛同日举行",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/sh/2026/10-20/10718192.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "沪港机场国际航空人才培训中心在沪揭牌，构建四大维度培养体系，同日举行北外滩论坛。",
-    "narrativeAnalysis": {
-      "hook": "沪港联手打造航空新引擎",
-      "structure": "事件快讯→核心亮点拆解→具体举措",
-      "emotionCurve": "关注热点→专业认可→行业信心",
-      "transferable": [
-        "提炼‘四大维度’结构化表达",
-        "突出‘双城联动’地缘优势",
-        "列举新兴赛道增强前瞻性"
-      ]
-    }
-  },
-  {
-    "id": "a2026102050",
-    "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "贵州省公安厅党委委员、副厅长吴智贤接受审查调查",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10717682.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "贵州省公安厅党委委员、副厅长吴智贤因涉嫌严重违纪违法，目前正接受纪律审查和监察调查。",
-    "narrativeAnalysis": {
-      "hook": "又一高官落马！贵州通报",
-      "structure": "直接陈述事实→主体身份明确→当前状态",
-      "emotionCurve": "震惊意外→严肃警示→正义伸张",
-      "transferable": [
-        "标题直击人物与职位",
-        "正文极简只述官方通报",
-        "利用反差制造新闻张力"
-      ]
-    }
-  },
-  {
-    "id": "a2026102051",
-    "platform": "人民网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "习近平和彭丽媛同美国总统特朗普夫妇茶叙",
-    "author": "人民网·首页",
-    "link": "http://politics.people.com.cn/n1/2026/0926/c1024-40805713.html",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "9月25日，习近平夫妇同特朗普夫妇在白宫举行茶叙，展现中美高层外交互动细节。",
-    "narrativeAnalysis": {
-      "hook": "白宫茶叙背后的外交信号",
-      "structure": "时间地点人物→活动形式→隐含意义",
-      "emotionCurve": "好奇探究→平和从容→微妙观察",
-      "transferable": [
-        "聚焦非正式场合的外交",
-        "通过细节解读大国关系",
-        "使用中性词汇保持客观"
-      ]
-    }
-  },
-  {
-    "id": "a2026102052",
-    "platform": "中国政府网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "李强出席上海合作组织成员国政府首脑（总理）理事会第二十五次会议",
-    "author": "中国政府网",
-    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083813.htm",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "10月20日，李强总理出席上合组织成员国政府首脑理事会第二十五次会议，多国领导人参会。",
-    "narrativeAnalysis": {
-      "hook": "上合会议释放哪些关键信息？",
-      "structure": "会议概况→参与方阵容→主持情况",
-      "emotionCurve": "庄重正式→团结协作→务实推进",
-      "transferable": [
-        "罗列参会方体现规模感",
-        "点明届次显示延续性",
-        "强调东道主角色促平衡"
-      ]
-    }
-  },
-  {
-    "id": "a2026102053",
-    "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "人民法院服务共建“一带一路”绿色发展典型案例发布",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/fz/2026/10-20/10717628.shtml",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "人民法院发布服务共建“一带一路”绿色发展典型案例，旨在以司法手段保障绿色国际合作。",
-    "narrativeAnalysis": {
-      "hook": "法治护航“一带一路”绿色行",
-      "structure": "发布动作→主题关联→预期目标",
-      "emotionCurve": "权威背书→责任担当→长远规划",
-      "transferable": [
-        "结合热门概念提升热度",
-        "突出‘典型’案例示范效应",
-        "将法律与服务场景挂钩"
-      ]
-    }
-  },
-  {
-    "id": "a2026102054",
-    "platform": "人民网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "习近平和彭丽媛出席特朗普总统夫妇举行的欢迎国宴",
-    "author": "人民网·首页",
-    "link": "http://politics.people.com.cn/n1/2026/0926/c1024-40805714.html",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "9月24日晚，特朗普夫妇在白宫为习近平夫妇举行欢迎国宴，中方发表致辞，现场气氛隆重。",
-    "narrativeAnalysis": {
-      "hook": "国宴致辞里的中国声音",
-      "structure": "仪式流程→关键发言→媒体视角",
-      "emotionCurve": "礼宾尊崇→友好交流→文化自信",
-      "transferable": [
-        "区分茶叙与国宴不同规格",
-        "引用致辞内容升华主题",
-        "通过摄影师署名增加真实感"
-      ]
-    }
-  },
-  {
-    "id": "a2026102055",
-    "platform": "中国政府网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "李强会见塔吉克斯坦总统拉赫蒙",
-    "author": "中国政府网",
-    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083677.htm",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "10月19日，李强总理在杜尚别会见塔吉克斯坦总统拉赫蒙，深化双边政治互信与合作。",
-    "narrativeAnalysis": {
-      "hook": "中塔元首会晤谈了什么？",
-      "structure": "会面基本信息→双方主体→潜在议题",
-      "emotionCurve": "亲切友好→平等尊重→合作共赢",
-      "transferable": [
-        "精准标注时间与地点",
-        "突出双边关系的特殊性",
-        "简练概括高层互动性质"
       ]
     }
   },
@@ -677,240 +937,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102063",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "推动钠电池台区储能应用！滕生新能源与众钠能源达成战略合作",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261020/1516931.shtml",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "滕生新能源与众钠能源达成战略合作，共同推动钠电池在台区储能场景的应用落地。",
-    "narrativeAnalysis": {
-      "hook": "钠电破局：台区新机遇",
-      "structure": "合作官宣→具体领域→应用前景",
-      "emotionCurve": "好奇探索→技术认同→商业憧憬",
-      "transferable": [
-        "聚焦细分场景降低认知门槛",
-        "强调强强联合增加信任感",
-        "突出新技术替代旧痛点"
-      ]
-    }
-  },
-  {
-    "id": "a2026102064",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "远信储能通过港交所上市聆讯！",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261020/1516946.shtml",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "远信储能成功通过港交所上市聆讯，标志着其在资本市场迈出关键一步，即将登陆港股。",
-    "narrativeAnalysis": {
-      "hook": "资本风向：储能股来了",
-      "structure": "事件结果→市场意义→后续展望",
-      "emotionCurve": "惊喜发现→价值重估→投资冲动",
-      "transferable": [
-        "用金融动作映射行业热度",
-        "制造稀缺性引发关注",
-        "简化流程节点便于传播"
-      ]
-    }
-  },
-  {
-    "id": "a2026102065",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "300MW/900MWh构网储能！非洲凯鹏矿业新能源电力系统Ⅱ期投运",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261020/1516850.shtml",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "非洲凯鹏矿业新能源电力系统Ⅱ期投运，部署300MW/900MWh构网型储能，助力海外绿色矿山建设。",
-    "narrativeAnalysis": {
-      "hook": "出海标杆：非洲大单",
-      "structure": "项目规模→应用场景→国际影响",
-      "emotionCurve": "震撼数据→民族自豪→全球视野",
-      "transferable": [
-        "超大数字冲击视觉感官",
-        "绑定热门概念如出海",
-        "具象化场景增强代入感"
-      ]
-    }
-  },
-  {
-    "id": "a2026102066",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "中标独立储能试点，790Ah标配加速！",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261020/1516844.shtml",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "某企业中标独立储能试点项目，带动790Ah大容量电芯成为标配，加速行业标准升级与技术迭代。",
-    "narrativeAnalysis": {
-      "hook": "标准突变：790Ah上位",
-      "structure": "中标事实→规格变化→趋势判断",
-      "emotionCurve": "敏锐洞察→竞争焦虑→跟进动力",
-      "transferable": [
-        "捕捉微小参数反映大趋势",
-        "使用“标配”一词定义主流",
-        "以点带面揭示行业洗牌"
-      ]
-    }
-  },
-  {
-    "id": "a2026102067",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "锂电池自燃引发火灾，珠海冠宇败诉被判赔6453万元！",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261019/1516660.shtml",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "珠海冠宇因锂电池自燃引发火灾被判赔偿6453万元，暴露安全隐患，警示行业重视电池热失控风险。",
-    "narrativeAnalysis": {
-      "hook": "天价罚单：安全红线",
-      "structure": "事故后果→法律判决→行业警示",
-      "emotionCurve": "震惊恐惧→理性反思→敬畏之心",
-      "transferable": [
-        "负面案例反向教育用户",
-        "巨额数字放大痛感",
-        "从个案上升到普遍风险"
-      ]
-    }
-  },
-  {
-    "id": "a2026102068",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "98.67%份额归TOP15！9月国内动力电池装车量达到年内新高",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261019/1516763.shtml",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "9月国内动力电池装车量创年内新高，TOP15厂商占据98.67%份额，显示头部效应加剧，市场集中度极高。",
-    "narrativeAnalysis": {
-      "hook": "寡头格局：谁在吃肉？",
-      "structure": "总量增长→份额分布→竞争态势",
-      "emotionCurve": "数据兴奋→危机意识→生存思考",
-      "transferable": [
-        "对比增速与集中度反差",
-        "用百分比量化垄断程度",
-        "暗示中小玩家生存困境"
-      ]
-    }
-  },
-  {
-    "id": "a2026102069",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "明确电芯厂商、验收测试等要求！40GWh买家联合发布储能采购合同",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261015/1516282.shtml",
-    "published": "",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "40GWh买家联合体发布储能采购合同规范，明确电芯厂商资质及验收测试要求，旨在统一标准保障质量。",
-    "narrativeAnalysis": {
-      "hook": "买方革命：规则重写",
-      "structure": "主体行动→具体要求→深层意图",
-      "emotionCurve": "疑惑不解→恍然大悟→秩序安定",
-      "transferable": [
-        "引入强势方视角改变叙事",
-        "罗列细节体现专业深度",
-        "解读规则背后的博弈逻辑"
-      ]
-    }
-  },
-  {
-    "id": "a2026102001",
-    "platform": "IT之家",
-    "domain": "科技",
-    "track": "科技",
-    "title": "Mac 版 Perplexity Computer 新增端侧模式，要求 36GB 统一内存",
-    "author": "IT之家",
-    "link": "https://www.ithome.com/1/015/609.htm",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "Mac版Perplexity Computer新增端侧模式，支持离线运行，但要求设备具备36GB统一内存。",
-    "narrativeAnalysis": {
-      "hook": "36GB内存才能跑的AI？",
-      "structure": "功能更新→硬件门槛→用户影响",
-      "emotionCurve": "惊喜期待→配置焦虑→理性权衡",
-      "transferable": [
-        "突出具体参数制造门槛感",
-        "强调离线场景解决隐私痛点",
-        "关联高端硬件提升产品调性"
-      ]
-    }
-  },
-  {
-    "id": "a2026102003",
-    "platform": "雷锋网",
-    "domain": "科技",
-    "track": "科技",
-    "title": "停止加薪！大众计划冻结全球大量员工薪酬至2030年；突发！美国发布DeepSeek禁令；马斯克：明年向全美儿童赠送SpaceX股票",
-    "author": "雷锋网",
-    "link": "https://www.leiphone.com/category/zaobao/Y7039p8HsmmeQClm.html",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "大众拟冻结全球员工薪酬至2030年；美国发布DeepSeek禁令；马斯克称明年向全美儿童送SpaceX股票。",
-    "narrativeAnalysis": {
-      "hook": "打工人寒冬与富豪狂欢",
-      "structure": "负面新闻→政策风险→荒诞对比",
-      "emotionCurve": "生存焦虑→地缘紧张→讽刺无奈",
-      "transferable": [
-        " juxtapose贫富差距引发共鸣",
-        "提炼关键词强化记忆点",
-        "用时间跨度凸显长期影响"
-      ]
-    }
-  },
-  {
     "id": "a2026102030",
     "platform": "中国军网",
     "domain": "军事",
@@ -1013,31 +1039,6 @@ window.DATA_INSPIRATION = [
         "关联实战能力提升的价值"
       ]
     }
-  },
-  {
-    "id": "a2026102060",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "以军袭击导致加沙地带4人死亡",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-20/10718157.shtml",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "10月20日，以军在加沙地带实施空袭和枪击，致至少4名巴勒斯坦人死亡。",
-    "narrativeAnalysis": {
-      "hook": "突发！加沙再传死讯",
-      "structure": "时间地点→伤亡结果→责任方",
-      "emotionCurve": "紧张压抑→悲痛沉重",
-      "transferable": [
-        "用具体日期增强新闻时效感",
-        "直接点明伤亡人数冲击视觉",
-        "明确施暴主体引发立场共鸣"
-      ]
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-20","added":34,"total":40,"tracks":{"科技":8,"财经":8,"政治":8,"军事":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-20","added":30,"total":40,"tracks":{"科技":8,"财经":8,"政治":8,"军事":8,"储能":8}};
