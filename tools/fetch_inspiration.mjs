@@ -19,8 +19,7 @@
  *
  * 环境变量：
  *   LLM_API_KEY / LLM_BASE_URL / LLM_MODEL     缺失时降级为规则式摘要
- *   INSPIRATION_PER_TRACK                      每赛道最多新增条数（默认 8）
- *   INSPIRATION_MAX_ITEMS                      数据文件最大条目数（默认 600）
+ *   INSPIRATION_PER_TRACK                      每赛道最多新增条数，也是数据文件每赛道保留上限（默认 8）
  * 运行：node tools/fetch_inspiration.mjs
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync, unlinkSync } from 'node:fs';
@@ -583,23 +582,33 @@ async function main() {
     console.log(`\n收件箱 ${inbox.length} 条已消化，源文件已删除`);
   }
 
-  /* 6. 合并写回 */
+  /* 6. 合并写回：每赛道只保留最新 PER_TRACK 条（新增在前优先保留，占位拆解条目剔除） */
   const merged = [...added, ...existing];
-  const MAX = Number(process.env.INSPIRATION_MAX_ITEMS) || 600;
   const keep = merged.filter(x => /^(i|a|local-)/.test(String(x.id || '')));
-  const trimmed = keep.length > MAX
-    ? keep.filter(x => /^i/.test(String(x.id)))
-      .concat(keep.filter(x => !/^i/.test(String(x.id))).slice(0, MAX))
-    : keep;
+  const manual = keep.filter(x => /^i/.test(String(x.id)));
+  const auto = keep.filter(x => !/^i/.test(String(x.id)))
+    .filter(x => !(x.narrativeAnalysis && x.narrativeAnalysis.hook === '（待拆解）'))
+    .sort((a, b) => String((b.metrics && b.metrics.collected) || '').localeCompare(String((a.metrics && a.metrics.collected) || '')));
+  const quota = {};
+  const picked = [];
+  for (const x of auto) {
+    const t = x.track || x.domain || '其他';
+    if ((quota[t] || 0) >= PER_TRACK) continue;
+    quota[t] = (quota[t] || 0) + 1;
+    picked.push(x);
+  }
+  const trimmed = manual.concat(picked);
+  const finalStat = {};
+  for (const x of picked) { const t = x.track || x.domain || '其他'; finalStat[t] = (finalStat[t] || 0) + 1; }
 
-  const banner = `/* 本文件由 tools/fetch_inspiration.mjs 维护（手动触发更新）；a* 为采集条目，i* 为人工示例 */\n`;
+  const banner = `/* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */\n`;
   const meta = `\nwindow.DATA_INSPIRATION_META = ${JSON.stringify({
     updatedAt: today(), added: added.length, total: trimmed.length,
-    tracks: trackStat
+    tracks: finalStat
   })};\n`;
   writeFileSync(DATA_FILE, banner + 'window.DATA_INSPIRATION = ' + JSON.stringify(trimmed, null, 2) + ';' + meta, 'utf8');
-  console.log(`\n写回完成：新增 ${added.length}，总计 ${trimmed.length} 条 → data/inspiration.js`);
-  console.log('赛道分布：' + JSON.stringify(trackStat));
+  console.log(`\n写回完成：新增 ${added.length}，总计 ${trimmed.length} 条（每赛道上限 ${PER_TRACK}）→ data/inspiration.js`);
+  console.log('赛道分布：' + JSON.stringify(finalStat));
 }
 
 main().catch(e => { console.error('管道失败：', e); process.exit(1); });
