@@ -114,6 +114,8 @@ const BILI_MIXIN = [46, 47, 18, 2, 53, 8, 23, 32, 15, 50, 10, 31, 58, 3, 45, 35,
   29, 28, 14, 39, 12, 38, 41, 13, 37, 48, 7, 16, 24, 55, 40, 61, 26, 17, 0, 1, 60, 51, 30, 4, 22, 25, 54,
   21, 56, 59, 6, 63, 57, 62, 11, 36, 20, 34, 44, 52];
 let biliCookie = '';
+let biliWbiKey = '';   /* 进程内缓存 wbi 混淆 key，避免每次调用都打一遍 nav 接口 */
+let biliChain = Promise.resolve(); /* 全局串行链：B站接口严格串行 + 随机间隔，降低风控触发概率 */
 
 async function biliBootstrap() {
   if (biliCookie) return;
@@ -125,34 +127,44 @@ async function biliBootstrap() {
 }
 
 async function biliApi(path, params) {
-  // B站风控偶发返回 HTML 而非 JSON：重置 cookie 后重试（最多 3 次）
-  for (let i = 0; i < 3; i++) {
-    if (i > 0) {
-      biliCookie = ''; // 强制重新拿 buvid
-      await new Promise(r => setTimeout(r, 1500 * i));
+  /* 排队执行：所有 B站调用串行，调用间随机休眠 1.2–2.4 秒 */
+  const run = async () => {
+    for (let i = 0; i < 3; i++) {
+      if (i > 0) {
+        biliCookie = ''; /* 强制重新拿 buvid */
+        biliWbiKey = '';
+        await new Promise(r => setTimeout(r, 2500 * i));
+      }
+      try { return await biliApiOnce(path, params); }
+      catch (e) {
+        if (i === 2) throw e;
+        console.warn(`[B站] 请求失败（第 ${i + 1} 次），重试：${e.message.slice(0, 80)}`);
+      }
     }
-    try { return await biliApiOnce(path, params); }
-    catch (e) {
-      if (i === 2) throw e;
-      console.warn(`[B站] 请求失败（第 ${i + 1} 次），重试：${e.message.slice(0, 80)}`);
-    }
-  }
+  };
+  const p = biliChain.then(run, run);
+  biliChain = p.then(biliDelay, biliDelay);
+  return p;
 }
+
+function biliDelay() { return new Promise(r => setTimeout(r, 1200 + Math.floor(Math.random() * 1200))); }
 
 async function biliApiOnce(path, params) {
   await biliBootstrap();
-  const nav = await fetch('https://api.bilibili.com/x/web-interface/nav', { headers: { 'User-Agent': BILI_UA, Cookie: biliCookie } });
-  const nj = await nav.json();
-  const img = (nj.data?.wbi_img?.img_url || '').split('/').pop().split('.')[0];
-  const sub = (nj.data?.wbi_img?.sub_url || '').split('/').pop().split('.')[0];
-  if (!img || !sub) throw new Error('bilibili nav 无 wbi key');
-  const key = BILI_MIXIN.map(i => (img + sub)[i]).join('').slice(0, 32);
+  if (!biliWbiKey) {
+    const nav = await fetch('https://api.bilibili.com/x/web-interface/nav', { headers: { 'User-Agent': BILI_UA, Cookie: biliCookie } });
+    const nj = await nav.json();
+    const img = (nj.data?.wbi_img?.img_url || '').split('/').pop().split('.')[0];
+    const sub = (nj.data?.wbi_img?.sub_url || '').split('/').pop().split('.')[0];
+    if (!img || !sub) throw new Error('bilibili nav 无 wbi key');
+    biliWbiKey = BILI_MIXIN.map(i => (img + sub)[i]).join('').slice(0, 32);
+  }
   const p = { ...params, wts: Math.floor(Date.now() / 1000) };
   const qs = Object.keys(p).sort()
     .map(k => `${k}=${encodeURIComponent(String(p[k])).replace(/[!'()*]/g, c => '%' + c.charCodeAt(0).toString(16).toUpperCase().padStart(2, '0'))}`)
     .join('&');
   const r = await fetch('https://api.bilibili.com' + path + '?' + qs + '&w_rid=' +
-    crypto.createHash('md5').update(qs + key).digest('hex'),
+    crypto.createHash('md5').update(qs + biliWbiKey).digest('hex'),
     { headers: { 'User-Agent': BILI_UA, Cookie: biliCookie, Referer: 'https://www.bilibili.com/' } });
   const j = await r.json();
   if (j.code !== 0) throw new Error('bilibili api ' + j.code + ' ' + (j.message || ''));
@@ -628,9 +640,11 @@ async function main() {
   const finalStat = {};
   for (const x of picked) { const t = x.track || x.domain || '其他'; finalStat[t] = (finalStat[t] || 0) + 1; }
 
+  const addedIds = new Set(added.map(x => x.id));
+  const keptAdded = trimmed.filter(x => addedIds.has(x.id)).length; /* 实际保留的新增（占位条目剔除后） */
   const banner = `/* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */\n`;
   const meta = `\nwindow.DATA_INSPIRATION_META = ${JSON.stringify({
-    updatedAt: today(), added: added.length, total: trimmed.length,
+    updatedAt: today(), added: keptAdded, total: trimmed.length,
     tracks: finalStat
   })};\n`;
   writeFileSync(DATA_FILE, banner + 'window.DATA_INSPIRATION = ' + JSON.stringify(trimmed, null, 2) + ';' + meta, 'utf8');
