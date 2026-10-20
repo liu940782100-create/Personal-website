@@ -1,6 +1,741 @@
 /* 本文件由 tools/fetch_inspiration.mjs 维护（手动触发更新）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
   {
+    "id": "a2026102036",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "新增全国多地支持国补：苹果 AirPods 5 仅 755 元，AirPods Pro 3 低至 1121 元",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/015/585.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;p data-vmark=\"43f3\"&gt;今晚 21 点起，京东自营 AirPods 实测&lt;strong&gt;全国多地 *&lt;/stro…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102037",
+    "platform": "量子位",
+    "domain": "科技",
+    "track": "科技",
+    "title": "赛场交卷 未来已来——首届全球具身智能应用创新挑战赛暨2026中国机器人大赛闭幕",
+    "author": "量子位",
+    "link": "https://www.qbitai.com/2026/10/504199.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "10月18日下午，首届全球具身智能应用创新挑战赛暨2026中国机器人大赛落下帷幕。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102038",
+    "platform": "雷锋网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "双11 iPhone Duo货源大战：苹果为什么把更多货交给天猫？",
+    "author": "雷锋网",
+    "link": "https://www.leiphone.com/category/industrynews/1kN394wi9h0iFG43.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "10月20日晚8点，天猫双11将正式开卖。iPhone Duo首发的货源之战，也成了今年双11各大电商平台实力较量的一个缩影。10月16日晚8点，苹果首款折叠屏…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102039",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "理想汽车软件与人工智能发布会：具身智能汽车的4大能力，一次说清+FAQ - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3TXhJYmc5Z1E1clhGSms4RUo4THItbzlRVzlMQWlENTZsMDBNV1Z2ZGNZTy16ZTN5cW9Vdm9VTFd2SXYxWUZvTUtteTNpYzY0TWE2cFFDOVJ4MkJiaXY3M1MtaU9NZVNwcFNTelF2RFdGYVhyTERKcm5BWHdRSmM?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFA3TXhJYmc5Z1E1clh…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102040",
+    "platform": "B站",
+    "domain": "科技",
+    "track": "科技",
+    "title": "如果3.5亿个智能体同时干活，现在的芯片够用吗？",
+    "author": "老石谈芯",
+    "link": "https://www.bilibili.com/video/BV1umJX6SEPS",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "你还在养龙虾吗？如果不是，恭喜你，你不是一个人。 但其实AI智能体正在爆发式发展，只是可能现在的服务器和芯片还没做好对应的准备……",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102041",
+    "platform": "中新网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "加快发展新一代智能制造 工信部明确四方面重点举措",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717863.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "加快发展新一代智能制造 工信部明确四方面重点举措",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102042",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "苹果海外开放 iPhone 18 Pro 原厂零件自助维修购买渠道：摄像头 249 美元，退回旧件可抵扣 59.76 美元",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/015/584.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;p data-vmark=\"a0f9\"&gt;IT之家 10 月 20 日消息，9to5mac 今日发现，苹果自助维修商店新上架了 iPhone 18 …",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102043",
+    "platform": "量子位",
+    "domain": "科技",
+    "track": "科技",
+    "title": "谷歌开源RSI新成果！华人浓度爆表",
+    "author": "量子位",
+    "link": "https://www.qbitai.com/2026/10/504184.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "Harness层的RSI",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102044",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "史上最大现金收购案 富二代如何正确拼爹",
+    "author": "小Lin说",
+    "link": "https://www.bilibili.com/video/BV1FCps68EGf",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "史上最大现金收购案 富二代如何正确拼爹",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102045",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "大A冲破3500点，牛市味道越浓，就越要谨慎！别让贪心盖过理智！",
+    "author": "晶晶博士CASS",
+    "link": "https://www.bilibili.com/video/BV15cuBzzE9b",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "A 股上证指数冲上 3500 点，牛市呼声越来越高，市场情绪跟着热起来。但越是这种时候，越容易藏着 “甜蜜陷阱”，贪心追涨不如稳住阵脚，看清趋势再出手。听听晶晶…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102046",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "湖南永州开放34个AI应用场景 打造绿能智算产业高地",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718121.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新网永州10月20日电 (记者 唐小晴)湖南永州市20日对外发布首批34个“人工智能+”开放应用场景，涵盖智慧教育、文旅文创、智慧农业、交通治理、社会治理、智…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102047",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "国际市场仍为中国航空货运9月份重要增长点",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718158.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社北京10月20日电 (记者 阮煜琳)记者20日从中国物流与采购联合会航空物流分会获悉，从统计数据来看，9月，上市机场与航司货邮数据同步回暖，国际需求景气是…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102048",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "中国9月银行结售汇规模环比增长17% 涉外交易保持活跃",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717977.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中国9月银行结售汇规模环比增长17% 涉外交易保持活跃",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102049",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "国产医疗设备，怎么样了？",
+    "author": "小Lin说",
+    "link": "https://www.bilibili.com/video/BV1ssac6oEL3",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "国产医疗设备，怎么样了？",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102050",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "什么是金本位？揭秘金本位的三大优势，告别超发货币！",
+    "author": "晶晶博士CASS",
+    "link": "https://www.bilibili.com/video/BV179MQz2EFs",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "金价又又又涨了，央行纷纷囤金，背后藏着什么大计划？金本位能否拯救世界？三大优势让你一目了然！",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102051",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "今年前三季度江西外贸进出口增长19.4% 为近四年同期最快增速",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718119.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新网南昌10月20日电 (记者 吴鹏泉)南昌海关20日公布，今年前三季度，江西外贸进出口4213亿元，同比(下同)增长19.4%，为近四年同期最快增速。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102052",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "李强出席上海合作组织成员国政府首脑（总理）理事会第二十五次会议",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083813.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "10月20日，国务院总理李强在杜尚别出席上海合作组织成员国政府首脑（总理）理事会第二十五次会议。上合组织成员国领导人和代表、东道国客人及有关国际组织负责人与会，…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102053",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "第二十二届桂台经贸文化合作论坛在南宁举行",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10718153.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社南宁10月20日电 (记者 蒋雪林 黄艳梅)以“数智赋能新时代 桂台融合创未来”为主题的第二十二届桂台经贸文化合作论坛20日在南宁举行。两岸企业家峰会大陆…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102054",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "贵州省公安厅党委委员、副厅长吴智贤接受审查调查",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10717682.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "贵州省公安厅党委委员、副厅长吴智贤接受审查调查",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102055",
+    "platform": "人民网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "习近平和彭丽媛出席特朗普总统夫妇举行的欢迎国宴",
+    "author": "人民网·首页",
+    "link": "http://politics.people.com.cn/n1/2026/0926/c1024-40805714.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "当地时间九月二十四日晚，美国总统特朗普和夫人梅拉尼娅为中国国家主席习近平和夫人彭丽媛在白宫举行欢迎国宴。这是习近平致辞。 新华社记者谢环驰摄 本报华盛顿9月24…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102056",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "李强会见塔吉克斯坦总统拉赫蒙",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083677.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "10月19日上午，国务院总理李强在杜尚别会见塔吉克斯坦总统拉赫蒙。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102057",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "人民法院服务共建“一带一路”绿色发展典型案例发布",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/fz/2026/10-20/10717628.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "人民法院服务共建“一带一路”绿色发展典型案例发布",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102058",
+    "platform": "人民网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "李强出席上合组织成员国政府首脑(总理)理事会会议",
+    "author": "人民网·首页",
+    "link": "http://politics.people.com.cn/n1/2026/1020/c1024-40818421.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "新华社杜尚别10月20日电（记者安晓萌邰背平）10月20日，国务院总理李强在杜尚别出席上海合作组织成员国政府首脑（总理）理事会第二十五次会议。上合组织成员国领导…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102059",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "同塔吉克斯坦总理拉苏尔佐达会谈",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083594.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "10月18日下午，国务院总理李强在杜尚别同塔吉克斯坦总理拉苏尔佐达举行会谈。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102060",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "以军袭击导致加沙地带4人死亡",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-20/10718157.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社北京10月20日电 综合消息：巴勒斯坦卫生部门称，当地时间20日，以军空袭和枪击在加沙地带造成至少4名巴勒斯坦人死亡。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102061",
+    "platform": "凤凰军事",
+    "domain": "军事",
+    "track": "军事",
+    "title": "日美将举行大规模联合军演，投入兵力接近6万人",
+    "author": "凤凰军事",
+    "link": "http://mil.ifeng.com/c/8xLGtqVJ3D4",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "日本防卫省称，此次演习是涵盖陆海空各部队的综合性训练，日本自卫队和美军将分别投入约4.5万人和1.2万人。",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102062",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "首架投入阿联酋低空示范区的陆地航母飞行器在穗下线",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718152.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社广州10月20日电 (记者 王坚)首架投入阿联酋先进低空飞行监管示范区的陆地航母飞行器(X3-F)(下称“试验用机”)20日在广州小鹏汇天飞行汽车量产工厂…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102063",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "华为数字能源王超建议：加大统一平台化力度，减少内卷式开发 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9YNWRLSkJ1Y3ZXalRZXy1oTTFTbFdCaXdJX3E2QV9nYjNYU0kyYVVScThkbWFqVmM1UjBlLUlmRnFsS1ZOVjQ0dzZTdDBvRFFObzlWaHNoU054OEJYM3ZTTFlsbk92X3A0SUJVWlpfQ0kxczNtNmNRaXNMaFg?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE9YNWRLSkJ1Y3ZXalR…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102064",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "阳光电源加入英伟达生态，固态变压器迈出关键两步 - 电子工程专辑",
+    "author": "电子工程专辑",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5Qb2RwM1Z1YjFaR0wxUy1PZU1oWGpoSDhfdkRJaEI5YUM3WW5BREtaTjExaWtIR2dEVUJkdG5sOURZWWdBMVMxeUE1V2U5Q29xRHJv?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE5Qb2RwM1Z1YjFaR0w…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102065",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代天行Ⅱ重卡全场景方案发布，充换电同步布局 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVzhmNmxFZEgyYVRKZkF5dVotbXR1UHdJQ2s2MWg3ZjRiRlNNSTAyN0JsUFc4cFNsZjZfOVQtNkw1dXhhR3VqRDV0dUVkYjQ5cHVxNlgyblRTdFBWYnRKRThCRFlLSXN5YktKSXRvbWFVazlUUXM3YjJDZ29YaFdOb0hyWFJ2S3YyRGVTTFhfN05CNzM4LVhfX0h6TTRyRk9HNUZwbWd3M1VFMjI5UXJQSHg0NmcxbnFHYWZnenZiTFlXbkNPeVJQX2lMUTE3cWZiUnJuMi1PNTZCTWxRaEE?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVzhmNmxFZEgyYVR…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102066",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "整车减重400公斤！国轩高科推出新一代 CTB 后背集成式重卡产品 - 盖世汽车社区",
+    "author": "盖世汽车社区",
+    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ReHN1S2tmV0c2UEhKZi15Q0tPR0dZeEpnbGdhSElRbFE0Q21oX0tiLUtKNC1wbkpYcnZmOV9HekRwS2c1WlgwWkdUVVo1VVFE?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ReHN1S2tmV0c2UEh…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102067",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "刘金成：宝马为什么坚定选亿纬锂能大圆柱？ - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQR2s0LVlBbFBtWGd4RWdzaDdTeGpueGU3MkpScS1kbmlpN2NRRVVncnY4bTB3dExfWmRHMjFTbklJMVZpWlFHbk8tOXRhS3QydXVyNHgyd2pLd1J4c29yWTZxeGM2bnBSLWIwZmN0alhTUEN6MVdhSnQwOHZnXzFOMw?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQR2s0LVlBbFBtWGd…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102068",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "海辰储能的“进阶”之道 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KX2Fnd3dWaTc5eUNLbzhZQ0pHU2tsaWdSUVBwUVJSMU1KTWFSQkhFYWRheFh3SFU3R09ZdmNNTTNDcFVMMW5kMHhGSmVuVjFWM2NaTDBHY3lxbUExRDhMRElkMHNYMGsxelJUZnFSaVhaYWxCSkE?oc=5",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "&lt;a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE1KX2Fnd3dWaTc5eUN…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102069",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国家发改委10月新闻发布会：“十五五”期间，选择新型储能等6个新兴产业将其打造为新兴支柱产业",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261020/1516934.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "国家发改委10月新闻发布会：“十五五”期间，选择新型储能等6个新兴产业将其打造为新兴支柱产业",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102070",
+    "platform": "中新网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "北京力争到2030年新能源货车比例达30%",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718159.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中新社北京10月20日电 (记者 吕少威)根据20日发布的《北京市“十五五”时期现代物流发展规划》(下称规划)，北京力争到2030年新能源货车(不含皮卡)比例达…",
+    "narrativeAnalysis": {
+      "hook": "（待拆解）",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
     "id": "a2026101918",
     "platform": "IT之家",
     "domain": "科技",
@@ -2308,4 +3043,4 @@ window.DATA_INSPIRATION = [
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-20","added":35,"total":94,"tracks":{"科技":24,"政治":16,"军事":16,"储能":20,"财经":16}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-20","added":35,"total":129,"tracks":{"科技":8,"财经":8,"政治":8,"军事":3,"储能":8}};
