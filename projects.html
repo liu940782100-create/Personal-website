@@ -508,6 +508,7 @@
         (pendingGates ? ' title="' + esc(pendingGates + L(STR.gateAlert)) + '"' : '') +
         ' onclick="openDetail(\'' + esc(p.id) + '\')" onkeydown="pCardKey(event,\'' + esc(p.id) + '\')">' +
         '<h4>' + esc(p.name) +
+          (p.inspSource ? '<span class="insp-badge">♡ ' + esc(L({ zh: '灵感备档', en: 'From Inspiration' })) + '</span>' : '') +
           (archived ? '<span class="arch-badge">' + esc(L(STR.archivedBadge)) + '</span>' : '') +
         '</h4>' +
         '<div class="p-tags">' +

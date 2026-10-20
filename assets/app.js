@@ -148,6 +148,8 @@ var I18N = {
     'insp.toast.badToken': '令牌无效或无权限，请重新设置',
     'insp.toast.runFailed': '采集任务执行失败，请稍后重试',
     'insp.meta': '数据更新于 {date} · 本轮新增 {n} 条 · 手动触发更新',
+    'insp.like': '备档', 'insp.liked': '已备档',
+    'insp.toast.liked': '已点赞，已转入项目库备档', 'insp.toast.unliked': '已取消备档',
     /* Skills · 本地新增 */
     'sk.form.show': '＋ 记一条方法论', 'sk.form.hide': '收起表单',
     'sk.form.title': '手动记一条方法论',
@@ -310,6 +312,8 @@ var I18N = {
     'insp.toast.badToken': 'Invalid token or missing permission — set it again',
     'insp.toast.runFailed': 'The fetch run failed — try again later',
     'insp.meta': 'Updated {date} · +{n} this round · manual updates',
+    'insp.like': 'Archive', 'insp.liked': 'Archived',
+    'insp.toast.liked': 'Liked and saved to Projects', 'insp.toast.unliked': 'Removed from Projects',
     /* Skills · local entries */
     'sk.form.show': '＋ Log a method', 'sk.form.hide': 'Hide form',
     'sk.form.title': 'Log a method manually',

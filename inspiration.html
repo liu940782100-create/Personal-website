@@ -105,6 +105,56 @@
       clearTimeout(el._timer);
       el._timer = setTimeout(function () { el.classList.remove('show'); }, 2600);
     }
+    /* 点赞备档：快照存本浏览器，同步在项目库生成本地「灵感备档」项目 */
+    var LS_LIKED = 'rl_insp_liked_v1';
+    var LS_PROJ_LOCAL = 'rl_projects_local_v1';
+    function loadLiked() {
+      try { return JSON.parse(localStorage.getItem(LS_LIKED) || '[]'); } catch (e) { return []; }
+    }
+    function isLiked(id) { return loadLiked().some(function (x) { return x.id === id; }); }
+    function toggleLike(id) {
+      var liked = loadLiked();
+      var idx = -1;
+      for (var i = 0; i < liked.length; i++) if (liked[i].id === id) { idx = i; break; }
+      var locals;
+      try { locals = JSON.parse(localStorage.getItem(LS_PROJ_LOCAL) || '[]'); } catch (e) { locals = []; }
+      if (!Array.isArray(locals)) locals = [];
+      var projId = 'local-insp-' + id;
+      var pi = -1;
+      for (var j = 0; j < locals.length; j++) if (locals[j].id === projId) { pi = j; break; }
+      if (idx >= 0) { /* 取消备档：灵感快照与项目库条目一并移除 */
+        liked.splice(idx, 1);
+        if (pi >= 0) locals.splice(pi, 1);
+        toast(t('insp.toast.unliked'));
+      } else {
+        var it = null;
+        var items = allItems();
+        for (var k = 0; k < items.length; k++) if (items[k].id === id) { it = items[k]; break; }
+        if (!it) return;
+        liked.push(JSON.parse(JSON.stringify(it)));
+        var tr = (it.narrativeAnalysis && it.narrativeAnalysis.transferable) || [];
+        var steps = tr.length ? tr.map(function (tt, i) {
+          return { step: '创作应用 ' + (i + 1) + '：' + tt, agent: '个人创作', output: '', status: '待开始' };
+        }) : [{ step: '选题构思', agent: '个人创作', output: '', status: '待开始' }];
+        locals.unshift({
+          id: projId,
+          name: ('灵感备档 · ' + (it.title || '')).slice(0, 42),
+          stage: '构想', type: 'mkt', level: 'S', scale: 'micro',
+          goal: it.contentSummary || it.title || '',
+          accept: '将该灵感的可迁移技巧用进个人创作',
+          kill: '', gates: [],
+          workflow: steps,
+          deliverables: it.link ? [it.link] : [],
+          inspSource: { platform: it.platform || '', author: it.author || '', link: it.link || '', title: it.title || '', track: it.domain || it.track || '' },
+          updatedAt: new Date().toISOString().slice(0, 10)
+        });
+        toast(t('insp.toast.liked'));
+      }
+      localStorage.setItem(LS_LIKED, JSON.stringify(liked));
+      localStorage.setItem(LS_PROJ_LOCAL, JSON.stringify(locals));
+      renderGrid();
+    }
+
     function loadLocalInsp() {
       try { return JSON.parse(localStorage.getItem(LS_INSP) || '[]'); } catch (e) { return []; }
     }
@@ -151,6 +201,8 @@
           '<span>' + t('insp.likes') + ' ' + fmtNum(likesOf(item)) + '</span>' +
           '<span>' + t('insp.comments') + ' ' + fmtNum(commentsOf(item)) + '</span>' +
           (item.metrics && item.metrics.collected ? '<span>' + t('insp.collected') + esc(item.metrics.collected) + '</span>' : '') +
+          '<button type="button" class="like-btn' + (isLiked(item.id) ? ' on' : '') + '" onclick="toggleLike(\'' + esc(item.id) + '\')">' +
+            (isLiked(item.id) ? '♥ ' + t('insp.liked') : '♡ ' + t('insp.like')) + '</button>' +
         '</div>' +
         '<div class="i-summary">' + esc(item.contentSummary || t('insp.noSummary')) + '</div>' +
         '<button class="i-toggle" onclick="toggleCard(this)">' + t('insp.expand') + '</button>' +
