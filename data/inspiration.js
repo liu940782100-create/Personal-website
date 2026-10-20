@@ -203,8 +203,8 @@ window.DATA_INSPIRATION = [
   {
     "id": "a2026101926",
     "platform": "中新网",
-    "domain": "金融",
-    "track": "金融",
+    "domain": "财经",
+    "track": "财经",
     "title": "全国统一大市场下的郑州经开区以何招商？",
     "author": "中新网·财经",
     "link": "https://www.chinanews.com.cn/cj/2026/10-19/10717526.shtml",
@@ -228,8 +228,8 @@ window.DATA_INSPIRATION = [
   {
     "id": "a2026101927",
     "platform": "中新网",
-    "domain": "金融",
-    "track": "金融",
+    "domain": "财经",
+    "track": "财经",
     "title": "加力挖潜 中国拓展消费新空间",
     "author": "中新网·首页",
     "link": "https://www.chinanews.com.cn/cj/2026/10-19/10717437.shtml",
@@ -253,8 +253,8 @@ window.DATA_INSPIRATION = [
   {
     "id": "a2026101928",
     "platform": "中新网",
-    "domain": "金融",
-    "track": "金融",
+    "domain": "财经",
+    "track": "财经",
     "title": "天津“跨国企业天津行”将启 “四折好戏”促外资对接",
     "author": "中新网·财经",
     "link": "https://www.chinanews.com.cn/cj/2026/10-19/10717523.shtml",
@@ -278,8 +278,8 @@ window.DATA_INSPIRATION = [
   {
     "id": "a2026101929",
     "platform": "中新网",
-    "domain": "金融",
-    "track": "金融",
+    "domain": "财经",
+    "track": "财经",
     "title": "数据波动背后中国投资结构更优",
     "author": "中新网·首页",
     "link": "https://www.chinanews.com.cn/cj/2026/10-19/10717455.shtml",
@@ -303,8 +303,8 @@ window.DATA_INSPIRATION = [
   {
     "id": "a2026101930",
     "platform": "中新网",
-    "domain": "金融",
-    "track": "金融",
+    "domain": "财经",
+    "track": "财经",
     "title": "西藏芒康举办葡萄酒产业高质量发展座谈暨产销对接会",
     "author": "中新网·财经",
     "link": "https://www.chinanews.com.cn/cj/2026/10-19/10717522.shtml",
@@ -328,8 +328,8 @@ window.DATA_INSPIRATION = [
   {
     "id": "a2026101931",
     "platform": "中新网",
-    "domain": "金融",
-    "track": "金融",
+    "domain": "财经",
+    "track": "财经",
     "title": "中国规范证券转让 严打违规减持",
     "author": "中新网·首页",
     "link": "https://www.chinanews.com.cn/cj/2026/10-19/10717438.shtml",
@@ -353,8 +353,8 @@ window.DATA_INSPIRATION = [
   {
     "id": "a2026101932",
     "platform": "中新网",
-    "domain": "金融",
-    "track": "金融",
+    "domain": "财经",
+    "track": "财经",
     "title": "“世界瓷都”福建德化力推陶瓷历史经典产业高质量发展",
     "author": "中新网·财经",
     "link": "https://www.chinanews.com.cn/cj/2026/10-19/10717520.shtml",
@@ -378,8 +378,8 @@ window.DATA_INSPIRATION = [
   {
     "id": "a2026101933",
     "platform": "中新网",
-    "domain": "金融",
-    "track": "金融",
+    "domain": "财经",
+    "track": "财经",
     "title": "吴璟：房地产趋稳的积极因素正不断积累",
     "author": "中新网·首页",
     "link": "https://www.chinanews.com.cn/cj/2026/10-19/10717199.shtml",
@@ -1431,6 +1431,881 @@ window.DATA_INSPIRATION = [
         "结尾悬念与下一条内容形成系列感"
       ]
     }
+  },
+  {
+    "id": "a2026102001",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "京东自营破五千：iPhone Air 12+256G 国补后 8799 → 4989 元",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/015/580.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "京东自营iPhone Air叠加国补后价格从8799元降至4989元，降幅近半，支持以旧换新，引发关注。",
+    "narrativeAnalysis": {
+      "hook": "半价神机？iPhone Air跌至4989",
+      "structure": "价格对比→优惠详情→行动指引",
+      "emotionCurve": "惊讶→兴奋→紧迫",
+      "transferable": [
+        "突出原价与现价巨大反差",
+        "明确补贴来源增加可信度",
+        "附加条件提升转化吸引力"
+      ]
+    }
+  },
+  {
+    "id": "a2026102002",
+    "platform": "量子位",
+    "domain": "科技",
+    "track": "科技",
+    "title": "从百比特芯片到整机交付，这家量子计算公司正将量子算力推向可调用服务",
+    "author": "量子位",
+    "link": "https://www.qbitai.com/2026/10/504277.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "某量子计算公司实现从百比特芯片到整机交付突破，并搭建千比特规模云平台，推动算力服务化。",
+    "narrativeAnalysis": {
+      "hook": "量子算力不再高冷，直接上云",
+      "structure": "技术突破→商业落地→未来展望",
+      "emotionCurve": "好奇→震撼→期待",
+      "transferable": [
+        "用具体数字量化技术进展",
+        "强调从实验室到应用的跨越",
+        "关联云服务降低理解门槛"
+      ]
+    }
+  },
+  {
+    "id": "a2026102003",
+    "platform": "雷锋网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "停止加薪！大众计划冻结全球大量员工薪酬至2030年；突发！美国发布DeepSeek禁令；马斯克：明年向全美儿童赠送SpaceX股票",
+    "author": "雷锋网",
+    "link": "https://www.leiphone.com/category/zaobao/Y7039p8HsmmeQClm.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "大众冻结全球员工薪酬至2030年；美国发布DeepSeek禁令；马斯克拟向全美儿童送SpaceX股票等科技要闻汇总。",
+    "narrativeAnalysis": {
+      "hook": "科技圈地震：裁员、禁令与发钱",
+      "structure": "重磅头条→多领域快讯→深度解析",
+      "emotionCurve": "焦虑→震惊→荒诞",
+      "transferable": [
+        "选取最具冲突感的标题词",
+        "分类聚合避免信息过载",
+        "用简短评论提炼核心观点"
+      ]
+    }
+  },
+  {
+    "id": "a2026102004",
+    "platform": "中新网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "从匠心手作到智能好物 132件好物角逐2026浙江特色伴手礼",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718133.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "132件产品角逐2026浙江特色伴手礼，涵盖宠物翻译器、青瓷化妆品及非遗手作，体现传统与智能融合。",
+    "narrativeAnalysis": {
+      "hook": "会说话的宠物器入选省礼单",
+      "structure": "亮点列举→活动背景→评选意义",
+      "emotionCurve": "趣味→认同→自豪",
+      "transferable": [
+        "前置最具猎奇性的单品",
+        "结合地域文化增强归属感",
+        "新旧元素对比凸显创新"
+      ]
+    }
+  },
+  {
+    "id": "a2026102005",
+    "platform": "中新网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI换脸拟声 仿冒名人带货如何“解”",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/sh/2026/10-20/10717836.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "针对AI换脸拟声仿冒名人带货现象，探讨治理难题与解决方案，呼吁加强监管与技术反制。",
+    "narrativeAnalysis": {
+      "hook": "你的偶像在卖货？可能是假的",
+      "structure": "现象揭露→危害分析→解决路径",
+      "emotionCurve": "担忧→愤怒→理性",
+      "transferable": [
+        "利用身份错位制造悬念",
+        "直击用户信任痛点",
+        "提供可操作的防范建议"
+      ]
+    }
+  },
+  {
+    "id": "a2026102006",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "第三方开发者发布英伟达显卡免刷写 VBIOS 工具：RTX 30/40/50 系显卡无需刷写固件即可修改参数，重装驱动即可还原",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/015/577.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "开发者Panchovix发布NVIDIA RTX 30-50系显卡VBIOS工具，通过注册表覆盖修改参数，无需刷写固件，降低变砖风险。",
+    "narrativeAnalysis": {
+      "hook": "不用刷机也能改显卡参数？",
+      "structure": "痛点引入→方案介绍→优势总结",
+      "emotionCurve": "怀疑→惊喜→安心",
+      "transferable": [
+        "强调零风险操作的安全性",
+        "简化复杂技术术语表达",
+        "突出兼容性与便捷性"
+      ]
+    }
+  },
+  {
+    "id": "a2026102007",
+    "platform": "量子位",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI 开始挑战最复杂的系统：生命",
+    "author": "量子位",
+    "link": "https://www.qbitai.com/2026/10/504242.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "哲源科技发布WHIRLPO计算医学平台，标志着AI开始介入生命这一最复杂系统的研究与应用。",
+    "narrativeAnalysis": {
+      "hook": "AI终于敢碰生命的禁区了",
+      "structure": "宏大叙事→具体事件→行业启示",
+      "emotionCurve": "敬畏→好奇→深思",
+      "transferable": [
+        "拔高立意连接终极命题",
+        "快速落点到具体产品名",
+        "留白引发读者想象空间"
+      ]
+    }
+  },
+  {
+    "id": "a2026102008",
+    "platform": "雷锋网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "喊出300万张订单，英伟达RTX PRO 5500为何遭到提前疯抢？",
+    "author": "雷锋网",
+    "link": "https://www.leiphone.com/category/chips/STx9ZzfDNh5W80Bm.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "英伟达RTX PRO 5500未量产即遭疯抢，订单喊出300万张，天阳科技签约致股价涨12%，反映AI算力紧缺现状。",
+    "narrativeAnalysis": {
+      "hook": "还没发货就抢光？算力饥渴症",
+      "structure": "异常现象→数据佐证→背后逻辑",
+      "emotionCurve": "疑惑→震惊→洞察",
+      "transferable": [
+        "用抢购行为映射市场热度",
+        "引用股市反应强化真实性",
+        "揭示供需失衡的行业真相"
+      ]
+    }
+  },
+  {
+    "id": "a2026102009",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "四川乐山夯爆了！竟然是大国博弈下的“算力粮仓”和“快乐大后方”！",
+    "author": "晶晶博士CASS",
+    "link": "https://www.bilibili.com/video/BV12pXNB4Emv",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "四川乐山被赋予“算力粮仓”与“快乐大后方”双重标签，暗示其在国家宏观战略及区域发展中具备独特资源禀赋与定位。",
+    "narrativeAnalysis": {
+      "hook": "揭秘乐山的隐藏身份",
+      "structure": "反差引入→概念定义→价值升华",
+      "emotionCurve": "好奇探索→认知刷新→自豪认同",
+      "transferable": [
+        "用宏大叙事包装地方特色",
+        "制造地域刻板印象的反差感",
+        "提炼具象化比喻增强记忆"
+      ]
+    }
+  },
+  {
+    "id": "a2026102010",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "2026年粤商赋能县域经济高质量发展陆丰行活动举行",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718137.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "2026年粤商赴陆丰开展赋能县域经济活动，通过调研、推介及签约，旨在挖掘粤东产业合作新机遇，推动高质量发展。",
+    "narrativeAnalysis": {
+      "hook": "粤商为何扎堆陆丰？",
+      "structure": "事件陈述→参与主体→核心目的",
+      "emotionCurve": "客观中立→商业敏锐→期待共赢",
+      "transferable": [
+        "聚焦特定区域的资本动向",
+        "强调政企互动的实际成果",
+        "使用专业术语提升权威感"
+      ]
+    }
+  },
+  {
+    "id": "a2026102011",
+    "platform": "央视新闻",
+    "domain": "财经",
+    "track": "财经",
+    "title": "感知中国活力｜中国经济三季报",
+    "author": "央视新闻",
+    "link": "https://news.cctv.com/2026/10/20/ARTI428ImHzd8TodAPwUssAA261019.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中国经济三季报显示运行总体平稳，呈现动能向新、结构向优、质效向好态势，有力支撑了经济的高质量发展进程。",
+    "narrativeAnalysis": {
+      "hook": "三季度经济真相曝光",
+      "structure": "总体定调→分项亮点→最终结论",
+      "emotionCurve": "疑虑消除→信心建立→理性乐观",
+      "transferable": [
+        "用排比句强化正面趋势",
+        "将抽象指标转化为具体感受",
+        "先给结论再展开细节论证"
+      ]
+    }
+  },
+  {
+    "id": "a2026102012",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "中国LPR连续17个月不变 贷款“定价锚”却要变了",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10717790.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "中国LPR连续17个月维持不变，但作为贷款定价锚的机制即将面临调整，预示未来信贷成本或融资环境可能发生变化。",
+    "narrativeAnalysis": {
+      "hook": "LPR不动背后的变局",
+      "structure": "现状描述→转折预警→深层解读",
+      "emotionCurve": "惯性依赖→突发警觉→深度思考",
+      "transferable": [
+        "利用数据静止制造悬念",
+        "揭示表象下的潜在变动",
+        "关联用户切身利益痛点"
+      ]
+    }
+  },
+  {
+    "id": "a2026102013",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "马斯克可以成立“美国党”，你也可以～手把手教给你在美国如何建党",
+    "author": "晶晶博士CASS",
+    "link": "https://www.bilibili.com/video/BV1M6uEz3EYq",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "借马斯克成立“美国党”热点，科普在美国组建政党的三步流程，以戏谑口吻探讨政治参与的可行性与门槛。",
+    "narrativeAnalysis": {
+      "hook": "你也想当美国总统？",
+      "structure": "热点切入→趣味类比→实操指南",
+      "emotionCurve": "吃瓜围观→跃跃欲试→冷静审视",
+      "transferable": [
+        "蹭名人热点降低理解门槛",
+        "将严肃话题娱乐化处理",
+        "提供看似简单的行动路径"
+      ]
+    }
+  },
+  {
+    "id": "a2026102014",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "商务部就美国土安全部发布针对中国企业的联邦采购排除和移除命令通知答记者问",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718136.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "商务部就美国土安全部发布针对中国企业的联邦采购排除令作出回应，表明中方对美方限制措施的关注与立场。",
+    "narrativeAnalysis": {
+      "hook": "美方又对中国出手了",
+      "structure": "官方通报→背景简述→隐含态度",
+      "emotionCurve": "紧张对峙→严肃关注→坚定应对",
+      "transferable": [
+        "突出大国博弈的对抗性",
+        "引用官方信源增加可信度",
+        "简练概括复杂外交辞令"
+      ]
+    }
+  },
+  {
+    "id": "a2026102015",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "海南自贸港打造国际商事纠纷解决“优选地”",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/fz/2026/10-20/10717645.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "海南自贸港致力于构建国际商事纠纷解决的优选地，意在提升法治营商环境，吸引国际市场主体信赖与投资。",
+    "narrativeAnalysis": {
+      "hook": "打官司首选海南？",
+      "structure": "目标愿景→实施举措→预期效果",
+      "emotionCurve": "新奇质疑→信任建立→向往憧憬",
+      "transferable": [
+        "颠覆传统认知设立新地标",
+        "强调服务功能的国际化",
+        "用结果导向吸引B端客户"
+      ]
+    }
+  },
+  {
+    "id": "a2026102016",
+    "platform": "B站",
+    "domain": "财经",
+    "track": "财经",
+    "title": "金本位的致命伤——引发通缩，通缩比通胀更难搞",
+    "author": "晶晶博士CASS",
+    "link": "https://www.bilibili.com/video/BV18LuJzjEzv",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "解析金本位难以回归的核心原因：其天然倾向引发通缩，而通缩对现代经济的危害甚于通胀，故不适配当前增长需求。",
+    "narrativeAnalysis": {
+      "hook": "黄金虽好，别乱回头",
+      "structure": "现象观察→理论反驳→核心结论",
+      "emotionCurve": "盲目崇拜→理性祛魅→清醒认知",
+      "transferable": [
+        "打破大众对贵金属迷信",
+        "对比两种经济病症优劣",
+        "结合时事热点讲透原理"
+      ]
+    }
+  },
+  {
+    "id": "a2026102017",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "习近平致信祝贺中央社会主义学院建院70周年",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083782.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "习近平致信祝贺中央社会主义学院建院70周年，肯定其在统一战线人才培养及多党合作中的重要作用。",
+    "narrativeAnalysis": {
+      "hook": "高层贺信背后的统战深意",
+      "structure": "事件陈述→历史定位→政治意义",
+      "emotionCurve": "庄重致敬→凝聚共识",
+      "transferable": [
+        "借节点回顾机构历史价值",
+        "提炼高层表态的政治信号",
+        "关联当下统战工作重点方向"
+      ]
+    }
+  },
+  {
+    "id": "a2026102018",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "2026中欧企业家青岛论坛将举办 首次聚焦国企、民企、外企协同发展",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718113.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "2026中欧企业家青岛论坛定档10月26-27日，首次聚焦国企民企外企协同，规模约300人，旨在促进中外经贸深度合作。",
+    "narrativeAnalysis": {
+      "hook": "三大所有制企业首度同台",
+      "structure": "时间地点→核心亮点→参会规模",
+      "emotionCurve": "好奇期待→信心提振",
+      "transferable": [
+        "突出“首次”制造新闻稀缺感",
+        "用具体数字量化活动影响力",
+        "强调多方协同打破刻板印象"
+      ]
+    }
+  },
+  {
+    "id": "a2026102019",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "习近平在一幅油画前驻足凝视",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10717697.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "回忆2021年4月习近平在广西桂林红军长征湘江战役纪念馆，于一幅油画前驻足凝视的场景，体现对革命历史的铭记。",
+    "narrativeAnalysis": {
+      "hook": "一幅油画前的深情凝视",
+      "structure": "时空回溯→细节特写→精神升华",
+      "emotionCurve": "肃穆沉思→情感共鸣",
+      "transferable": [
+        "以微观动作折射宏观情怀",
+        "利用特定场景营造沉浸感",
+        "连接历史记忆与现实初心"
+      ]
+    }
+  },
+  {
+    "id": "a2026102020",
+    "platform": "人民网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "为中美关系提供新的战略指引——国际社会高度评价习近平主席美国之行",
+    "author": "人民网·首页",
+    "link": "http://world.people.com.cn/n1/2026/0926/c1002-40805721.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "国际社会高度评价习主席访美之行，认为其为中美关系提供新战略指引。这是时隔11年的再访，继5月北京会晤后再次交流。",
+    "narrativeAnalysis": {
+      "hook": "时隔11年，风向变了？",
+      "structure": "国际评价→事实背景→访问成果",
+      "emotionCurve": "关注审视→理性分析→积极展望",
+      "transferable": [
+        "引用第三方视角增强客观性",
+        "对比时间跨度凸显重要性",
+        "将外交行动转化为战略解读"
+      ]
+    }
+  },
+  {
+    "id": "a2026102021",
+    "platform": "中国政府网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "从亚太伙伴关系到亚太共同体——习近平主席引领推动亚太合作迈上新台阶",
+    "author": "中国政府网",
+    "link": "https://www.gov.cn/yaowen/liebiao/202610/content_7083570.htm",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "阐述亚太经合组织作为最高层级经济机制，如何从伙伴关系迈向共同体，引领全球开放发展，推动亚太合作迈上新台阶。",
+    "narrativeAnalysis": {
+      "hook": "亚太合作的下一个台阶",
+      "structure": "机制定义→演进历程→未来愿景",
+      "emotionCurve": "宏大叙事→自豪认同",
+      "transferable": [
+        "梳理概念演变厘清逻辑线",
+        "拔高站位诠释区域领导力",
+        "结合全球化趋势论证必要性"
+      ]
+    }
+  },
+  {
+    "id": "a2026102022",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "应用场景项目以点带面撬动改革全局",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-20/10718108.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "发改委印发首批136项标志性重大应用场景项目，落实二十届四中全会及国办意见，以点带面撬动改革全局，加速新技术落地。",
+    "narrativeAnalysis": {
+      "hook": "136个项目，改革先手棋",
+      "structure": "政策溯源→执行速度→具体举措",
+      "emotionCurve": "紧迫高效→务实笃行",
+      "transferable": [
+        "串联政策链条展示执行力",
+        "用具体数量具象化抽象概念",
+        "揭示“小切口”背后的“大变革”"
+      ]
+    }
+  },
+  {
+    "id": "a2026102023",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "王毅：中国和欧盟完全可以通过对话协商妥处分歧",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10717638.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "王毅外长表示，中国与欧盟完全可以通过对话协商妥处分歧，展现了中方在处理中欧关系中坚持沟通与合作的外交姿态。",
+    "narrativeAnalysis": {
+      "hook": "分歧面前，为何选择谈？",
+      "structure": "人物发声→核心观点→外交立场",
+      "emotionCurve": "冷静克制→建设性希望",
+      "transferable": [
+        "提炼金句强化外交软实力",
+        "针对热点矛盾给出解决路径",
+        "展现大国担当与从容气度"
+      ]
+    }
+  },
+  {
+    "id": "a2026102024",
+    "platform": "人民网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "习近平和彭丽媛同美国总统特朗普夫妇茶叙",
+    "author": "人民网·首页",
+    "link": "http://politics.people.com.cn/n1/2026/0926/c1024-40805713.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "9月25日，习近平夫妇同特朗普夫妇在白宫举行茶叙。这一非正式外交场合体现了元首间的友好互动与轻松氛围。",
+    "narrativeAnalysis": {
+      "hook": "白宫茶叙里的外交温度",
+      "structure": "时间地点→人物互动→氛围渲染",
+      "emotionCurve": "亲切自然→缓和紧张",
+      "transferable": [
+        "捕捉非正式场合的细节张力",
+        "用人物配偶参与软化严肃议题",
+        "通过生活化场景拉近心理距离"
+      ]
+    }
+  },
+  {
+    "id": "a2026102025",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "新一代“长征”潜艇官兵接续奋斗，锻造共和国“水下盾牌”",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16494723.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "新一代“长征”潜艇官兵接续奋斗，旨在锻造共和国坚不可摧的“水下盾牌”，体现国防力量传承与坚守。",
+    "narrativeAnalysis": {
+      "hook": "揭秘水下长城守护者",
+      "structure": "主体介绍→使命阐述→价值升华",
+      "emotionCurve": "崇敬感→责任感→自豪感",
+      "transferable": [
+        "用比喻强化装备形象",
+        "突出代际传承的情感",
+        "聚焦核心使命关键词"
+      ]
+    }
+  },
+  {
+    "id": "a2026102026",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "英国将派遣战斗机 协助沙特抵御胡塞武装袭击",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-20/10718145.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "英国政府宣布派遣皇家空军“台风”战斗机，协助沙特阿拉伯抵御也门胡塞武装袭击，介入中东局势。",
+    "narrativeAnalysis": {
+      "hook": "英军战机突入沙特",
+      "structure": "事件通报→具体行动→背景关联",
+      "emotionCurve": "突发紧张→关注动向→地缘担忧",
+      "transferable": [
+        "明确动作主体与对象",
+        "引用权威信源增强可信",
+        "点明武器型号提升专业"
+      ]
+    }
+  },
+  {
+    "id": "a2026102027",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "安理会全票通过防范数字技术侵害冲突中儿童的决议",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-20/10717560.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "联合国安理会全票通过决议，旨在防范数字技术在冲突中对儿童造成的侵害，确立国际保护共识。",
+    "narrativeAnalysis": {
+      "hook": "全球联手护童新策",
+      "structure": "结果先行→议题解析→意义延伸",
+      "emotionCurve": "欣慰希望→严肃关切→行动决心",
+      "transferable": [
+        "强调投票一致性显共识",
+        "锁定弱势群体引发共情",
+        "结合新技术话题蹭热点"
+      ]
+    }
+  },
+  {
+    "id": "a2026102028",
+    "platform": "凤凰军事",
+    "domain": "军事",
+    "track": "军事",
+    "title": "阿根廷将获德法33.55亿美元融资购买潜艇",
+    "author": "凤凰军事",
+    "link": "http://mil.ifeng.com/c/8xLoF4CkwYy",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "阿根廷确认获德法33.55亿美元融资购买潜艇，计划引进法国“鲉鱼”级及德国209型，首批交付需6年。",
+    "narrativeAnalysis": {
+      "hook": "巨额军购背后的博弈",
+      "structure": "金额震撼→细节拆解→时间预期",
+      "emotionCurve": "惊讶好奇→理性分析→长期观望",
+      "transferable": [
+        "大额数字制造视觉冲击",
+        "罗列具体型号增加干货",
+        "标注交付周期管理预期"
+      ]
+    }
+  },
+  {
+    "id": "a2026102029",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "南部战区海军新闻发言人发表谈话",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16494830.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "南部战区海军新闻发言人发表谈话，针对特定涉海事态表明中方立场，维护国家主权与安全利益。",
+    "narrativeAnalysis": {
+      "hook": "南海最新官方表态",
+      "structure": "身份亮出→立场声明→底线重申",
+      "emotionCurve": "警觉关注→坚定自信→威慑冷静",
+      "transferable": [
+        "突出官方权威性背书",
+        "使用强硬词汇定调性",
+        "紧扣时事热点引流量"
+      ]
+    }
+  },
+  {
+    "id": "a2026102030",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "也门胡塞武装袭击政府军基地 已致逾250人伤亡",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-20/10717983.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "也门胡塞武装袭击政府军基地，造成超过250人伤亡，显示当地冲突持续升级，人道主义危机加剧。",
+    "narrativeAnalysis": {
+      "hook": "血染沙场：250+伤亡",
+      "structure": "惨烈后果→肇事方指认→局势定性",
+      "emotionCurve": "震惊悲痛→愤怒谴责→无奈忧虑",
+      "transferable": [
+        "伤亡数字前置抓眼球",
+        "直接点名责任方施压",
+        "渲染现场残酷增张力"
+      ]
+    }
+  },
+  {
+    "id": "a2026102031",
+    "platform": "凤凰军事",
+    "domain": "军事",
+    "track": "军事",
+    "title": "胡塞：击落一架“阿帕奇”，沙特：摧毁多架无人机",
+    "author": "凤凰军事",
+    "link": "http://mil.ifeng.com/c/8xK3WMuwO5m",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "胡塞宣称击落一架“阿帕奇”直升机，沙特联军则回应称在多地拦截并摧毁4架无人机，双方战报各执一词。",
+    "narrativeAnalysis": {
+      "hook": "罗生门式战场交锋",
+      "structure": "对立陈述→各方说法→真相存疑",
+      "emotionCurve": "疑惑探究→对比反差→客观审视",
+      "transferable": [
+        "呈现矛盾信息造悬念",
+        "列举具体战果显真实",
+        "保持中立视角促思考"
+      ]
+    }
+  },
+  {
+    "id": "a2026102032",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "空军航空兵某旅：学思践悟 向战奋飞",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16494725.html",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "空军航空兵某旅开展学思践悟活动，聚焦实战化训练，展现部队向战奋飞的精神风貌与备战状态。",
+    "narrativeAnalysis": {
+      "hook": "鹰击长空备战实录",
+      "structure": "精神引领→行动落实→目标导向",
+      "emotionCurve": "昂扬向上→专注严谨→热血期待",
+      "transferable": [
+        "动词短语增强画面感",
+        "提炼口号式主题句",
+        "侧重日常训练细节描写"
+      ]
+    }
+  },
+  {
+    "id": "a2026102033",
+    "platform": "中新网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "茶韵静心融山海 福建宁德解锁山海茶旅居新体验",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/sh/2026/10-20/10718109.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "福建宁德福鼎推出白茶森林康养基地，利用荒野老茶树与高负氧离子环境，打造沉浸式茶旅融合新体验。",
+    "narrativeAnalysis": {
+      "hook": "在山海间呼吸茶香疗愈身心",
+      "structure": "场景描绘→感官细节→价值升华",
+      "emotionCurve": "自然向往→沉浸放松→文化认同",
+      "transferable": [
+        "用五感描写增强代入感",
+        "将产品融入具体生活场景",
+        "强调稀缺自然资源的价值"
+      ]
+    }
+  },
+  {
+    "id": "a2026102034",
+    "platform": "中新网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "南方电网公司专家委员会原专职委员薛武接受审查调查",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-20/10717805.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "南方电网公司专家委员会原专职委员薛武涉嫌严重违纪违法，目前正接受纪律审查和监察调查。",
+    "narrativeAnalysis": {
+      "hook": "电力巨头高管落马警示录",
+      "structure": "事实陈述→身份揭示→后果预告",
+      "emotionCurve": "震惊意外→严肃审视→反思警惕",
+      "transferable": [
+        "突出职位反差制造冲击",
+        "简洁通报保持新闻客观性",
+        "关联行业背景提升关注度"
+      ]
+    }
+  },
+  {
+    "id": "a2026102035",
+    "platform": "中新网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "韩国华城电池厂火灾涉事企业代表终审获刑4年",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-20/10717848.shtml",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-20"
+    },
+    "contentSummary": "韩国华城电池厂火灾事故涉事企业代表终审被判有期徒刑四年，司法追责尘埃落定。",
+    "narrativeAnalysis": {
+      "hook": "电池大火终判：4年刑期",
+      "structure": "结果前置→案件回顾→法律定性",
+      "emotionCurve": "沉重压抑→正义伸张→安全警醒",
+      "transferable": [
+        "以判决结果作为强钩子",
+        "结合安全事故引发共鸣",
+        "强调法律责任的严肃性"
+      ]
+    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-19","added":40,"total":59,"tracks":{"科技":8,"金融":8,"政治":8,"军事":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-20","added":35,"total":94,"tracks":{"科技":24,"政治":16,"军事":16,"储能":20,"财经":16}};

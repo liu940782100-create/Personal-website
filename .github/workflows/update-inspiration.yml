@@ -1,9 +1,12 @@
 name: Update Inspiration
 
-# 灵感库更新：仅手动触发（已取消每日定时）
-# 触发方式：灵感库页「更新」按钮（页内直接触发），或本仓库 Actions 页 Run workflow
+# 灵感库更新：每 6 小时定时 + 手动触发
+# 手动触发：灵感库页「更新」按钮（页内直接触发），或本仓库 Actions 页 Run workflow
 
 on:
+  schedule:
+    # UTC 1/7/13/19 点 = 北京时间 9/15/21/3 点
+    - cron: "0 1,7,13,19 * * *"
   workflow_dispatch:
 
 permissions:

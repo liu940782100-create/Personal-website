@@ -737,6 +737,8 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .platform-badge.p-mil { color: var(--danger); border-color: rgba(178, 58, 52, .45); }
 .platform-badge.p-youtube { color: var(--danger); border-color: rgba(178, 58, 52, .45); }
 .platform-badge.p-twitter { color: var(--c-projects); border-color: rgba(62, 107, 143, .45); }
+.platform-badge.p-bilibili { color: #d95f8c; border-color: rgba(217, 95, 140, .45); }
+.platform-badge.p-media { color: var(--text-faint); border-color: rgba(140, 130, 110, .45); }
 .i-domain { font-family: var(--font-hand); font-size: 15px; color: var(--text-faint); }
 .i-card h4 {
   margin-top: 12px; font-size: 16px; font-weight: 400;
@@ -968,6 +970,7 @@ html.dark {
 
 /* 深色下少量硬编码颜色的修正 */
 html.dark .platform-badge.p-douyin { color: #d78a99; border-color: rgba(215, 138, 153, .45); }
+html.dark .platform-badge.p-bilibili { color: #e58bb0; border-color: rgba(229, 139, 176, .45); }
 html.dark .i-toggle { border-color: rgba(209, 160, 76, .45); }
 html.dark .btn-danger-ghost { border-color: rgba(221, 115, 100, .4); }
 html.dark .modal-mask { background: rgba(0, 0, 0, .55); }

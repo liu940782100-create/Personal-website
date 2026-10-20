@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="汇集科技 / 金融 / 政治 / 军事 / 储能五赛道热点，拆解叙事手法，沉淀可迁移的创作技巧。">
+  <meta name="description" content="汇集科技 / 财经 / 政治 / 军事 / 储能五赛道热点，拆解叙事手法，沉淀可迁移的创作技巧。">
   <meta name="theme-color" content="#f9f7f1">
   <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
   <meta property="og:title" content="灵感库 · Raphael Liu">
-  <meta property="og:description" content="汇集科技 / 金融 / 政治 / 军事 / 储能五赛道热点，拆解叙事手法，沉淀可迁移的创作技巧。">
+  <meta property="og:description" content="汇集科技 / 财经 / 政治 / 军事 / 储能五赛道热点，拆解叙事手法，沉淀可迁移的创作技巧。">
   <title>灵感库 · Raphael Liu</title>
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -22,18 +22,11 @@
   <main class="container">
     <section class="page-head">
       <h1 data-i18n="insp.head">灵感库</h1>
-      <p data-i18n="insp.sub">汇集各平台高互动内容，拆解博主的叙事手法，沉淀可迁移的创作技巧</p>
+      <p data-i18n="insp.sub">汇集财经 / 科技 / 政治 / 军事 / 储能五赛道热点，拆解叙事手法，沉淀可迁移创作技巧</p>
       <p class="insp-meta" id="inspMeta" hidden></p>
     </section>
 
     <div class="toolbar">
-      <select id="filterPlatform">
-        <option value="" data-i18n="insp.allPlatform">全部平台</option>
-        <option value="官方媒体" data-i18n="insp.platform.official">官方媒体</option>
-        <option value="抖音" data-i18n="insp.platform.douyin">抖音</option>
-        <option value="微信公众号" data-i18n="insp.platform.weixin">微信公众号</option>
-        <option value="知乎" data-i18n="insp.platform.zhihu">知乎</option>
-      </select>
       <select id="filterDomain"><option value="" data-i18n="insp.allDomain">全部赛道</option></select>
       <select id="sortBy">
         <option value="collected-desc" selected data-i18n="insp.sort.latest">最新采集优先</option>
@@ -118,7 +111,7 @@
     function saveLocalInsp(arr) { localStorage.setItem(LS_INSP, JSON.stringify(arr)); }
     function allItems() { return getData('inspiration').concat(loadLocalInsp()); }
 
-    /* 平台徽章配色：官方媒体 / 科技 / 储能 / 军事 / 社交平台 各成一色 */
+    /* 平台徽章配色：官方媒体 / 科技 / 储能 / 军事 / 社交平台 各成一色；未列出的媒体用中性色 */
     var PLATFORM_CLASS = {
       '国家媒体': 'p-official', '官方媒体': 'p-official',
       '人民网': 'p-official', '新华网': 'p-official', '新华社': 'p-official',
@@ -126,6 +119,8 @@
       'IT之家': 'p-tech', '量子位': 'p-tech', '雷锋网': 'p-tech',
       '北极星储能网': 'p-energy',
       '央视军事': 'p-mil', '中国军网': 'p-mil', '凤凰军事': 'p-mil',
+      'B站': 'p-bilibili',
+      '媒体报道': 'p-media',
       '抖音': 'p-douyin', '微信公众号': 'p-weixin', '知乎': 'p-zhihu',
       '油管': 'p-youtube', '推特': 'p-twitter'
     };
@@ -190,29 +185,12 @@
       sel.value = cur;
     }
 
-    /* 平台选项按实际数据动态生成（采集源含人民网/北极星储能网等，会随更新变化） */
-    function refreshPlatformOptions() {
-      var plats = [];
-      allItems().forEach(function (it) {
-        var p = (it.platform || '').trim();
-        if (p && plats.indexOf(p) < 0) plats.push(p);
-      });
-      plats.sort();
-      var sel = document.getElementById('filterPlatform');
-      var cur = sel.value;
-      sel.innerHTML = '<option value="">' + t('insp.allPlatform') + '</option>' +
-        plats.map(function (p) { return '<option value="' + esc(p) + '">' + esc(p) + '</option>'; }).join('');
-      sel.value = cur;
-    }
-
     function renderGrid() {
-      var fp = document.getElementById('filterPlatform').value;
       var fd = document.getElementById('filterDomain').value;
       var sortBy = document.getElementById('sortBy').value;
       var kw = document.getElementById('searchKw').value.trim();
 
       var list = allItems().filter(function (it) {
-        if (fp && it.platform !== fp) return false;
         if (fd && (it.domain || '') !== fd) return false;
         return matchKeyword(it, kw, SEARCH_FIELDS);
       });
@@ -235,7 +213,7 @@
       grid.innerHTML = list.map(renderCard).join('');
     }
 
-    ['filterPlatform', 'filterDomain', 'sortBy'].forEach(function (id) {
+    ['filterDomain', 'sortBy'].forEach(function (id) {
       document.getElementById(id).addEventListener('change', renderGrid);
     });
     document.getElementById('searchKw').addEventListener('input', renderGrid);
@@ -292,7 +270,6 @@
         document.getElementById(id).value = '';
       });
       refreshDomainOptions();
-      refreshPlatformOptions();
       renderGrid();
       toast(t('insp.toast.saved'));
     });
@@ -349,7 +326,7 @@
           var meta = m ? JSON.parse(m[1]) : null;
           if (meta && meta.updatedAt !== prevAt) {
             loadInspData().then(function () {
-              refreshPlatformOptions(); refreshDomainOptions(); renderGrid(); renderInspMeta();
+              refreshDomainOptions(); renderGrid(); renderInspMeta();
               setUpdateBtn(t('insp.refresh'), false);
               toast(t('insp.toast.done').replace('{n}', meta.added != null ? meta.added : 0));
             });
@@ -434,13 +411,11 @@
     renderInspMeta();
 
     refreshDomainOptions();
-    refreshPlatformOptions();
     renderGrid();
 
     /* 切语言后无刷新重渲染动态内容；表单开合钮文案随面板状态修正 */
     document.addEventListener('langchange', function () {
       refreshDomainOptions();
-      refreshPlatformOptions();
       renderGrid();
       renderInspMeta();
       var btn = document.getElementById('inspToggleBtn');
