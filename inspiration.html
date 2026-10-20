@@ -26,10 +26,11 @@
       <p class="insp-meta" id="inspMeta" hidden></p>
     </section>
 
+    <nav class="track-row" id="trackRow" aria-label="赛道分类"></nav>
+
     <div class="toolbar">
-      <select id="filterDomain"><option value="" data-i18n="insp.allDomain">全部赛道</option></select>
       <select id="sortBy">
-        <option value="collected-desc" selected data-i18n="insp.sort.latest">最新采集优先</option>
+        <option value="published-desc" selected data-i18n="insp.sort.latest">最新发布优先</option>
         <option value="likes-desc" data-i18n="insp.sort.likes">高互动优先（点赞↓）</option>
       </select>
       <input type="text" id="searchKw" class="grow" placeholder="搜索：标题 / 博主 / 内容总结 / 叙事技巧…" data-i18n-ph="insp.search.ph">
@@ -200,7 +201,7 @@
         '<div class="i-metrics">' +
           '<span>' + t('insp.likes') + ' ' + fmtNum(likesOf(item)) + '</span>' +
           '<span>' + t('insp.comments') + ' ' + fmtNum(commentsOf(item)) + '</span>' +
-          (item.metrics && item.metrics.collected ? '<span>' + t('insp.collected') + esc(item.metrics.collected) + '</span>' : '') +
+          (item.published || (item.metrics && item.metrics.collected) ? '<span>' + t('insp.published') + esc(pubOf(item)) + '</span>' : '') +
           '<button type="button" class="like-btn' + (isLiked(item.id) ? ' on' : '') + '" onclick="toggleLike(\'' + esc(item.id) + '\')">' +
             (isLiked(item.id) ? '♥ ' + t('insp.liked') : '♡ ' + t('insp.like')) + '</button>' +
         '</div>' +
@@ -224,33 +225,36 @@
         ? t('insp.collapse') : t('insp.expand');
     }
 
-    function refreshDomainOptions() {
-      var domains = [];
-      getData('inspiration').concat(loadLocalInsp()).forEach(function (it) {
-        var d = (it.domain || '').trim();
-        if (d && domains.indexOf(d) < 0) domains.push(d);
+    /* 赛道分类抬头：独立一行 tab，动态生成自数据，点击即过滤 */
+    var currentTrack = '';
+    function trackOf(it) { return (it.track || it.domain || '').trim(); }
+    function renderTrackTabs() {
+      var tracks = [];
+      allItems().forEach(function (it) {
+        var d = trackOf(it);
+        if (d && tracks.indexOf(d) < 0) tracks.push(d);
       });
-      var sel = document.getElementById('filterDomain');
-      var cur = sel.value;
-      sel.innerHTML = '<option value="">' + t('insp.allDomain') + '</option>' +
-        domains.map(function (d) { return '<option value="' + esc(d) + '">' + esc(d) + '</option>'; }).join('');
-      sel.value = cur;
+      document.getElementById('trackRow').innerHTML =
+        '<button type="button" class="track-tab' + (currentTrack ? '' : ' on') + '" data-t="">' + t('insp.allDomain') + '</button>' +
+        tracks.map(function (d) {
+          return '<button type="button" class="track-tab' + (currentTrack === d ? ' on' : '') + '" data-t="' + esc(d) + '">' + esc(d) + '</button>';
+        }).join('');
     }
 
+    function pubOf(it) { return String(it.published || (it.metrics && it.metrics.collected) || ''); }
+
     function renderGrid() {
-      var fd = document.getElementById('filterDomain').value;
       var sortBy = document.getElementById('sortBy').value;
       var kw = document.getElementById('searchKw').value.trim();
 
       var list = allItems().filter(function (it) {
-        if (fd && (it.domain || '') !== fd) return false;
+        if (currentTrack && trackOf(it) !== currentTrack) return false;
         return matchKeyword(it, kw, SEARCH_FIELDS);
       });
 
       list.sort(function (a, b) {
         if (sortBy === 'likes-desc') return likesOf(b) - likesOf(a);
-        return String((b.metrics && b.metrics.collected) || '').localeCompare(
-               String((a.metrics && a.metrics.collected) || ''));
+        return pubOf(b).localeCompare(pubOf(a)); /* 最新发布优先 */
       });
 
       document.getElementById('countInfo').textContent =
@@ -265,10 +269,15 @@
       grid.innerHTML = list.map(renderCard).join('');
     }
 
-    ['filterDomain', 'sortBy'].forEach(function (id) {
-      document.getElementById(id).addEventListener('change', renderGrid);
-    });
+    document.getElementById('sortBy').addEventListener('change', renderGrid);
     document.getElementById('searchKw').addEventListener('input', renderGrid);
+    document.getElementById('trackRow').addEventListener('click', function (e) {
+      var btn = e.target.closest('.track-tab');
+      if (!btn) return;
+      currentTrack = btn.getAttribute('data-t') || '';
+      renderTrackTabs();
+      renderGrid();
+    });
 
     /* 表单开合 / 保存 / 导出 */
     var formPanel = document.getElementById('inspFormPanel');
@@ -321,7 +330,7 @@
       ['i-title', 'i-author', 'i-domain', 'i-link', 'i-summary', 'i-transfer'].forEach(function (id) {
         document.getElementById(id).value = '';
       });
-      refreshDomainOptions();
+      renderTrackTabs();
       renderGrid();
       toast(t('insp.toast.saved'));
     });
@@ -378,7 +387,7 @@
           var meta = m ? JSON.parse(m[1]) : null;
           if (meta && meta.updatedAt !== prevAt) {
             loadInspData().then(function () {
-              refreshDomainOptions(); renderGrid(); renderInspMeta();
+              renderTrackTabs(); renderGrid(); renderInspMeta();
               setUpdateBtn(t('insp.refresh'), false);
               toast(t('insp.toast.done').replace('{n}', meta.added != null ? meta.added : 0));
             });
@@ -462,12 +471,12 @@
     }
     renderInspMeta();
 
-    refreshDomainOptions();
+    renderTrackTabs();
     renderGrid();
 
     /* 切语言后无刷新重渲染动态内容；表单开合钮文案随面板状态修正 */
     document.addEventListener('langchange', function () {
-      refreshDomainOptions();
+      renderTrackTabs();
       renderGrid();
       renderInspMeta();
       var btn = document.getElementById('inspToggleBtn');

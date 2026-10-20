@@ -6,7 +6,7 @@
  * 流程：抓各赛道「真实原文链接」内容源 → 按赛道关键词过滤（博主/企业源 allPass 直通）→ 赛道内多源混排取 8 条
  *      → 补全正文摘要 → LLM 精简总结 + 叙事拆解
  *      → 合并手动补强收件箱（微信公众号 / 抖音 / 推特 / 油管等无公开接口平台）
- *      → 去重写回 data/inspiration.js
+ *      → 去重写回 data/inspiration.js（条目带 published 发布时间；超 60 天陈旧内容不入候选；视频源排各赛道最前）
  *
  * 重要：条目的原文链接一律取自抓取结果本身；AI 只负责文字分析，绝不采用 AI 生成的链接
  *      （实测 AI 生成的链接 404 率极高）。AI 联网搜索同样不可用（返回幻觉链接）。
@@ -95,6 +95,10 @@ function parseHtmlLinks(html, re, base, max = 30) {
       const u = url.match(/\/(\d{4})\/(\d{2})-(\d{2})\//);
       if (u) d = u[1] + '-' + u[2] + '-' + u[3];
     }
+    if (!d) { /* 北极星等源：路径段里的 8 位数字是 YYYYMMDD（校验月日范围防误伤 gov.cn content_ID） */
+      const e = url.match(/\/(20\d{6})\//);
+      if (e) { const s = e[1], mo = +s.slice(4, 6), da = +s.slice(6, 8); if (mo >= 1 && mo <= 12 && da >= 1 && da <= 31) d = s.slice(0, 4) + '-' + s.slice(4, 6) + '-' + s.slice(6, 8); }
+    }
     out.push({ title, url, desc: '', date: d });
   }
   return out;
@@ -177,12 +181,16 @@ async function biliUserVideos(mid, ps = 10) {
   }));
 }
 
-/** 财经 / 科技博主（uid 为实测核对过的 mid；留空则运行时按名解析） */
+/** 博主 / 央视官方号（uid 为实测核对过的 mid；留空则运行时按名解析）。
+ * allPass: true = 不过赛道关键词，账号本身即筛选条件；
+ * 央视新闻为综合号，保留关键词过滤（只收新闻联播 / 朝闻天下 / 晚间新闻等时政要闻条目）。 */
 const BILI_BLOGGERS = [
-  { name: '小Lin说', uid: '520819684', track: '财经' },
-  { name: '兔子念金', uid: '1335565146', track: '财经' },
-  { name: '晶晶博士CASS', uid: '180549227', track: '财经' },
-  { name: '老石谈芯', uid: '', track: '科技' }
+  { name: '小Lin说', uid: '520819684', allPass: true },
+  { name: '兔子念金', uid: '1335565146', allPass: true },
+  { name: '晶晶博士CASS', uid: '180549227', allPass: true },
+  { name: '老石谈芯', uid: '', allPass: true },
+  { name: '央视新闻', uid: '456664753' },
+  { name: '央视军事', uid: '46470268', allPass: true }
 ];
 
 /* ---------- 源注册表：全部为实测可拿到「真实原文链接」的源 ---------- */
@@ -281,14 +289,14 @@ const SRC = {
   }
 };
 
-/* 动态注册：B 站博主（视频直连官方接口；allPass = 不再过赛道关键词，博主本人就是筛选条件） */
+/* 动态注册：B 站博主 / 央视官方号（视频直连官方接口；allPass = 不过赛道关键词，账号本身即筛选条件） */
 for (const b of BILI_BLOGGERS) {
   SRC['bili_' + (b.uid || b.name)] = {
-    name: 'B站·' + b.name, platform: 'B站', priority: 3.6, allPass: true,
+    name: 'B站·' + b.name, platform: 'B站', priority: 3.6, allPass: !!b.allPass,
     fetch: async () => {
       const uid = b.uid || await biliResolveUid(b.name);
       if (!uid) return [];
-      return biliUserVideos(uid);
+      return biliUserVideos(uid, 15);
     }
   };
 }
@@ -328,7 +336,8 @@ const KEY_政治 = ['习近平', '李强', '赵乐际', '王沪宁', '丁薛祥'
   '外交部', '政策', '会议', '讲话', '考察', '访问', '会见', '调研', '主持', '部署', '审议', '表决', '党建',
   '中央', '国家主席', '总理', '外长', '王毅', '部长', '省委', '市委', '改革', '规划', '十五五', '五年规划',
   '政府工作报告', '反腐', '审查调查', '纪委', '监察', '巡视', '干部', '任命', '免职', '常委', '书记', '座谈',
-  '论坛', '峰会', '国际合作', '一带一路', '外交', '条约', '协定'];
+  '论坛', '峰会', '国际合作', '一带一路', '外交', '条约', '协定',
+  '新闻联播', '主播说联播', '朝闻天下', '早间新闻', '晚间新闻', '时政'];
 
 const KEY_军事 = ['军事', '国防', '军队', '部队', '军演', '演习', '导弹', '战机', '航母', '军舰', '海军',
   '空军', '陆军', '火箭军', '士兵', '军官', '战区', '武器', '装备', '无人机', '防空', '雷达', '坦克', '潜艇',
@@ -341,14 +350,22 @@ const KEY_储能 = ['储能', '电池', '锂电', '钠电', '固态电池', '电
   '零碳', '绿色转型', '能源转型', '新型电力系统', '新型储能', '充换电', '动力电池', '锂电池',
   '宁德时代', '宁德', '国轩高科', '国轩', '亿纬锂能', '亿纬', '海辰储能', '海辰', '阳光电源', '华为数字能源'];
 
-/** 赛道定义：sources 按 priority 从高到低排列，取数时多源轮转混排，保证来源多样 */
+/** 赛道定义：视频源排最前（多源轮转时视频优先占位，图文补足），保证「以视频为主」 */
 const TRACKS = [
-  { name: '科技', keywords: KEY_科技, sources: ['ithome', 'qbitai', 'cctvNews', 'leiphone', 'gnewsAi', 'bili_老石谈芯', 'chinanewsScroll', 'chinanewsHome'] },
+  { name: '科技', keywords: KEY_科技, sources: ['bili_老石谈芯', 'gnewsAi', 'ithome', 'qbitai', 'cctvNews', 'leiphone', 'chinanewsScroll', 'chinanewsHome'] },
   { name: '财经', keywords: KEY_财经, sources: ['bili_520819684', 'bili_1335565146', 'bili_180549227', 'chinanewsFinance', 'cctvNews', 'chinanewsScroll', 'chinanewsHome'] },
-  { name: '政治', keywords: KEY_政治, sources: ['govCn', 'cctvNews', 'chinanewsScroll', 'chinanewsHome', 'peopleHome'] },
-  { name: '军事', keywords: KEY_军事, sources: ['junwang81', 'cctvMil', 'cctvNews', 'cctvWorld', 'chinanewsScroll', 'chinanewsHome', 'ifengMil'] },
+  { name: '政治', keywords: KEY_政治, sources: ['bili_456664753', 'govCn', 'cctvNews', 'chinanewsScroll', 'chinanewsHome', 'peopleHome'] },
+  { name: '军事', keywords: KEY_军事, sources: ['bili_46470268', 'junwang81', 'cctvMil', 'cctvWorld', 'cctvNews', 'chinanewsScroll', 'chinanewsHome', 'ifengMil'] },
   { name: '储能', keywords: KEY_储能, sources: ['gnews_company0', 'gnews_company1', 'gnews_company2', 'gnews_company3', 'gnews_company4', 'gnews_company5', 'bjxStorage', 'chinanewsScroll', 'chinanewsHome'] }
 ];
+
+/* 时效过滤：有发布日期且超过 60 天的条目视为陈旧，不入候选（未取到日期的放行） */
+const FRESH_DAYS = 60;
+function isFresh(x) {
+  if (!x.date) return true;
+  const t = new Date(x.date + 'T00:00:00Z').getTime();
+  return isNaN(t) || (Date.now() - t) / 86400000 <= FRESH_DAYS;
+}
 
 /* ---------- LLM（OpenAI 兼容接口）---------- */
 function llmConfig() {
@@ -487,6 +504,7 @@ async function main() {
     const buckets = tr.sources
       .map(k => (poolOf[k] || [])
         .filter(x => x.title && x.url && (x.allPass || tr.keywords.some(w => x.title.includes(w))))
+        .filter(x => isFresh(x))
         .filter(x => !usedTitles.has(x.title.trim())))
       .map(arr => arr.sort((a, b) => String(b.date || '').localeCompare(String(a.date || ''))));
 
@@ -540,10 +558,12 @@ async function main() {
         id: nextId(usedIds),
         platform: x.platform, domain: tr.name, track: tr.name,
         title: x.title, author: String(x.src || x.source || '').replace(/^B站·/, ''), link: x.url,
+        published: String(x.date || ''),
         metrics: { likes: 0, comments: 0, collected: today() },
         contentSummary: a.summary || fallbackAnalysis(x).summary,
         narrativeAnalysis: {
-          hook: a.hook || '（待拆解）', structure: a.structure || '（待拆解）',
+          hook: a.hook || String(x.title || '').slice(0, 18), /* LLM漏hook时用标题兜底，避免条目被当占位丢弃 */
+          structure: a.structure || '（待拆解）',
           emotionCurve: a.emotion || '（待拆解）',
           transferable: Array.isArray(a.transferable) ? a.transferable : []
         }
@@ -588,7 +608,14 @@ async function main() {
   const manual = keep.filter(x => /^i/.test(String(x.id)));
   const auto = keep.filter(x => !/^i/.test(String(x.id)))
     .filter(x => !(x.narrativeAnalysis && x.narrativeAnalysis.hook === '（待拆解）'))
-    .sort((a, b) => String((b.metrics && b.metrics.collected) || '').localeCompare(String((a.metrics && a.metrics.collected) || '')));
+    .filter(x => { /* 旧条目同样按时效淘汰：有发布日期且超 60 天的直接出库 */
+      const p = String(x.published || '');
+      if (!p) return true;
+      const t = new Date(p + 'T00:00:00Z').getTime();
+      return isNaN(t) || (Date.now() - t) / 86400000 <= FRESH_DAYS;
+    })
+    .sort((a, b) => String(b.published || (b.metrics && b.metrics.collected) || '').localeCompare(
+                    String(a.published || (a.metrics && a.metrics.collected) || '')));
   const quota = {};
   const picked = [];
   for (const x of auto) {

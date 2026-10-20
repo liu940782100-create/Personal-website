@@ -423,8 +423,41 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .btn-danger-ghost { color: var(--danger); border-color: rgba(178, 58, 46, .4); }
 .btn-danger-ghost:hover { border-color: var(--danger); color: var(--danger); }
 
+/* 赛道分类抬头（灵感库）：独立一行手绘 tab，选中态红笔圈 */
+.track-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 0;
+}
+.track-tab {
+  position: relative;
+  font-family: var(--font-hand);
+  font-size: 17px;
+  color: var(--text-dim);
+  background: none;
+  border: 1.5px solid var(--border-light);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  padding: 4px 20px;
+  cursor: pointer;
+}
+.track-tab:nth-child(even) { border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px; transform: rotate(.3deg); }
+.track-tab:nth-child(odd) { transform: rotate(-.3deg); }
+.track-tab:hover { color: var(--text); border-color: var(--text-dim); }
+.track-tab.on { color: var(--text); border-color: transparent; }
+.track-tab.on::after {
+  content: "";
+  position: absolute;
+  inset: -4px -3px;
+  border: 1.8px solid var(--accent);
+  border-radius: 55% 45% 60% 40% / 60% 45% 55% 45%;
+  transform: rotate(-1.5deg);
+  opacity: .85;
+  pointer-events: none;
+}
+
 /* 工具条 */
-.toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 22px 0 20px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 14px 0 20px; }
 .toolbar select, .toolbar input { width: auto; font-size: 13.5px; padding: 8px 4px; font-family: var(--font-body); }
 .toolbar .grow { flex: 1; min-width: 180px; }
 .toolbar input.grow { width: 100%; }
