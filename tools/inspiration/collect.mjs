@@ -9,11 +9,12 @@ import { fetchBiliUser } from './parsers/bili.mjs';
 import { canonicalUrl } from './normalize.mjs';
 
 export function fetchSource(src) {
-  switch (src.type) {
-    case 'rss': return fetchRss(src);
-    case 'web_list': return fetchWebList(src);
-    case 'bilibili': return fetchBiliUser(src);
-    default: throw new Error('未知信源类型：' + src.type);
+  const s = { ...DEFAULTS, ...src };   /* 让 DEFAULTS 的 maxItems / timeoutMs 对缺省信源生效 */
+  switch (s.type) {
+    case 'rss': return fetchRss(s);
+    case 'web_list': return fetchWebList(s);
+    case 'bilibili': return fetchBiliUser(s);
+    default: throw new Error('未知信源类型：' + s.type);
   }
 }
 

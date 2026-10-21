@@ -70,26 +70,16 @@ export const SOURCES = {
     pattern: String.raw`href="(https?:\/\/(?:politics|world|finance|military|scitech|it)\.people\.com\.cn\/n\d+\/\d{4}\/\d{4}\/c\d+-\d+\.html)"[^>]*>([\s\S]{4,90}?)<\/a>`,
     maxItems: 30, priority: 2.2, timeoutMs: 25000
   },
-  cctv_news: {
-    name: '央视新闻', platform: '央视新闻', type: 'web_list',
-    url: 'https://news.cctv.com/', base: 'https://news.cctv.com/',
-    pattern: String.raw`href="(https?:\/\/news\.cctv\.com\/\d{4}\/\d{2}\/\d{2}\/ARTI[A-Za-z0-9]+\.shtml)"[^>]*>([\s\S]{4,80}?)<\/a>`,
-    maxItems: 30, priority: 3.0, timeoutMs: 25000
+  /* 央视新闻/军事文章页只内联 1–3 条（其余靠 JS 渲染），改用新闻联播栏目页：每日 18 条且带日期 */
+  cctv_xwlb: {
+    name: '央视·新闻联播', platform: '央视新闻', type: 'web_list', allPass: true,
+    url: 'https://tv.cctv.com/lm/xwlb/', base: 'https://tv.cctv.com/',
+    pattern: String.raw`href="(https?:\/\/tv\.cctv\.com\/\d{4}\/\d{2}\/\d{2}\/VIDE[A-Za-z0-9]+\.shtml)"[^>]*>([\s\S]{4,160}?)<\/a>`,
+    stripPrefix: String.raw`^(?:完整版)?(?:\[视频\]|【视频】)?`,
+    maxItems: 30, priority: 3.6, timeoutMs: 25000
   },
 
   /* ---------- 军事 ---------- */
-  cctv_mil: {
-    name: '央视军事', platform: '央视军事', type: 'web_list',
-    url: 'https://military.cctv.com/', base: 'https://military.cctv.com/',
-    pattern: String.raw`href="(https?:\/\/military\.cctv\.com\/\d{4}\/\d{2}\/\d{2}\/ARTI[A-Za-z0-9]+\.shtml)"[^>]*>([\s\S]{4,80}?)<\/a>`,
-    maxItems: 20, priority: 3.2, timeoutMs: 25000
-  },
-  cctv_world: {
-    name: '央视国际', platform: '央视新闻', type: 'web_list',
-    url: 'https://news.cctv.com/world/', base: 'https://news.cctv.com/',
-    pattern: String.raw`href="(https?:\/\/news\.cctv\.com\/\d{4}\/\d{2}\/\d{2}\/ARTI[A-Za-z0-9]+\.shtml)"[^>]*>([\s\S]{4,80}?)<\/a>`,
-    maxItems: 20, priority: 2.8, timeoutMs: 25000
-  },
   junwang_81: {
     name: '中国军网', platform: '中国军网', type: 'web_list',
     url: 'https://www.81.cn/', base: 'https://www.81.cn/',
@@ -106,7 +96,7 @@ export const SOURCES = {
   /* ---------- 储能 ---------- */
   bjx_storage: {
     name: '北极星储能网', platform: '北极星储能网', type: 'web_list',
-    url: 'https://chuneng.bjx.com.cn/', base: 'https://chuneng.bjx.com.cn/',
+    url: 'https://chuneng.bjx.com.cn/', base: 'https://news.bjx.com.cn/',
     pattern: String.raw`href="((?:https?:\/\/news\.bjx\.com\.cn)?\/html\/\d{8}\/\d+\.shtml)"[^>]*>([\s\S]{4,90}?)<\/a>`,
     maxItems: 30, priority: 3.5, timeoutMs: 25000
   },
@@ -196,19 +186,19 @@ export const KEY = {
 export const TRACKS = [
   {
     name: '科技', keywords: KEY.tech,
-    sources: ['bili_laoshi', 'gnews_ai', 'ithome', 'qbitai', 'cctv_news', 'leiphone', 'chinanews_scroll', 'chinanews_home']
+    sources: ['bili_laoshi', 'gnews_ai', 'ithome', 'qbitai', 'leiphone', 'chinanews_scroll', 'chinanews_home']
   },
   {
     name: '财经', keywords: KEY.finance,
-    sources: ['bili_xiaolin', 'bili_tuzi', 'bili_jingjing', 'chinanews_finance', 'cctv_news', 'chinanews_scroll', 'chinanews_home']
+    sources: ['bili_xiaolin', 'bili_tuzi', 'bili_jingjing', 'chinanews_finance', 'chinanews_scroll', 'chinanews_home']
   },
   {
     name: '政治', keywords: KEY.politics,
-    sources: ['bili_cctv_news', 'gov_cn', 'cctv_news', 'chinanews_scroll', 'chinanews_home', 'people_home']
+    sources: ['bili_cctv_news', 'cctv_xwlb', 'gov_cn', 'chinanews_scroll', 'chinanews_home', 'people_home']
   },
   {
     name: '军事', keywords: KEY.military,
-    sources: ['bili_cctv_mil', 'junwang_81', 'cctv_mil', 'cctv_world', 'cctv_news', 'chinanews_scroll', 'chinanews_home', 'ifeng_mil']
+    sources: ['bili_cctv_mil', 'junwang_81', 'chinanews_scroll', 'chinanews_home', 'ifeng_mil']
   },
   {
     name: '储能', keywords: KEY.storage,

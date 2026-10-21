@@ -15,7 +15,8 @@ export function extractLinks(html, src, max = 30) {
   let m;
   while ((m = re.exec(String(html || ''))) && out.length < max) {
     let url = m[1] || '';
-    const title = stripTags(m[2]);
+    let title = stripTags(m[2]);
+    if (src.stripPrefix) title = title.replace(new RegExp(src.stripPrefix), '').trim();
     if (!url || !title || title.length < 4) continue;
     if (!/^https?:\/\//i.test(url)) {
       try { url = new URL(url, src.base || src.url).href; } catch { continue; }
