@@ -39,16 +39,31 @@ export function canonicalUrl(raw) {
 export function parseDate(input) {
   const s = String(input || '').trim();
   if (!s) return '';
-  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
 
-  const cn = s.match(/(20\d{2})\s*[年/.-]\s*(\d{1,2})\s*[月/.-]\s*(\d{1,2})/);
-  if (cn) return validDate(cn[1], cn[2], cn[3]);
+  const ymd = s.match(/^(20\d{2})\s*[-/.年]\s*(\d{1,2})\s*[-/.月]\s*(\d{1,2})/);
+  if (ymd) return validDate(ymd[1], ymd[2], ymd[3]);
 
   const t = new Date(s);
   if (isNaN(t.getTime())) return '';
   const y = t.getUTCFullYear();
   if (y < 2000 || y > 2100) return '';
   return new Date(t.getTime() + 8 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
+/** 从原文页 meta 里取发布时间（政府网站常用 firstpublishedtime） */
+export function dateFromHtml(html) {
+  const s = String(html || '');
+  const patterns = [
+    /<meta[^>]+name=["'](?:firstpublishedtime|firstpublished|pubdate|publishdate|publish_date|date)["'][^>]+content=["']([^"']+)["']/i,
+    /<meta[^>]+content=["']([^"']+)["'][^>]+name=["'](?:firstpublishedtime|firstpublished|pubdate|publishdate|publish_date|date)["']/i,
+    /<meta[^>]+property=["']article:published_time["'][^>]+content=["']([^"']+)["']/i
+  ];
+  for (const re of patterns) {
+    const m = s.match(re);
+    const d = m && parseDate(m[1]);
+    if (d) return d;
+  }
+  return '';
 }
 
 /** 从 URL 路径推断发布日期（列表页条目常常没有日期） */

@@ -3,7 +3,7 @@
  * 候选过滤（赛道关键词 / 时效 / 已收录）→ LLM 打分（单门槛 60）→ 视频优先配额 → 正文摘要补全 → 叙事拆解。
  * 视频（B站账号本身即筛选条件）不参与打分门槛，直接按发布时间排序优先占位。
  */
-import { canonicalUrl, isFresh } from './normalize.mjs';
+import { canonicalUrl, isFresh, dateFromHtml } from './normalize.mjs';
 import { getText } from './http.mjs';
 import { llmChat } from './llm.mjs';
 
@@ -104,15 +104,23 @@ export async function scoreItems(cfg, items, limit = 60) {
   for (const x of items.slice(limit)) x.score = SCORE_PASS;
 }
 
-/** 正文摘要补全：列表页条目缺 desc 时取原文页 meta description（不编造） */
+/** 正文摘要补全 + 发布时间回填：列表页缺 desc / 缺日期时取原文页 meta（不编造） */
 export async function enrichDescription(item) {
-  if (item.desc && item.desc.length > 40) return item;
+  const needDesc = !item.desc || item.desc.length <= 40;
+  const needDate = !item.date;
+  if (!needDesc && !needDate) return item;
   try {
     const html = await getText(item.url, { timeoutMs: 12000 });
-    const m = html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']{20,400})["']/i)
-      || html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']{20,400})["']/i)
-      || html.match(/<meta[^>]+content=["']([^"']{20,400})["'][^>]+name=["']description["']/i);
-    if (m) item.desc = m[1].replace(/&quot;|&#34;/g, '"').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    if (needDesc) {
+      const m = html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']{20,400})["']/i)
+        || html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']{20,400})["']/i)
+        || html.match(/<meta[^>]+content=["']([^"']{20,400})["'][^>]+name=["']description["']/i);
+      if (m) item.desc = m[1].replace(/&quot;|&#34;/g, '"').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    }
+    if (needDate) {
+      const d = dateFromHtml(html);
+      if (d) item.date = d;
+    }
   } catch { /* 补全失败不致命 */ }
   return item;
 }

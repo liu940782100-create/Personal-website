@@ -26,7 +26,8 @@ import {
   candidatesForTrack, selectTrack, scoreItems, enrichDescription,
   analyseBatch, fallbackAnalysis, isVideo, SCORE_PASS
 } from './editorial.mjs';
-import { canonicalUrl, today, FRESH_DAYS } from './normalize.mjs';
+import { canonicalUrl, today, FRESH_DAYS, dateFromHtml } from './normalize.mjs';
+import { getText } from './http.mjs';
 import { readStore, writeStore } from './store.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -135,6 +136,18 @@ export async function run(argv = []) {
   const existingTitles = new Set(existing.map(x => String(x.title || '').trim()).filter(Boolean));
   const existingUrls = new Set(existing.map(x => canonicalUrl(x.link)).filter(Boolean));
   const usedIds = new Set(existing.map(x => String(x.id || '')));
+
+  /* 历史条目缺发布时间：从原文页 meta 补一次（政府网站 URL 只有年月，无法可靠推断日） */
+  const missingDates = existing.filter(x => /^a/.test(String(x.id || '')) && !x.published && x.link);
+  if (missingDates.length) {
+    await mapLimit(missingDates, 4, async x => {
+      try {
+        const d = dateFromHtml(await getText(x.link, { timeoutMs: 12000 }));
+        if (d) x.published = d;
+      } catch { /* 补不到保留原样 */ }
+    });
+    console.log(`历史条目补发布时间：${missingDates.filter(x => x.published).length}/${missingDates.length}`);
+  }
 
   /* 1. 采集 */
   const { poolOf, health } = await collectSources({ sourceIds: opts.sourceIds });
