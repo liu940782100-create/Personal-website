@@ -223,6 +223,7 @@ export async function run(argv = []) {
         platform: x.platform, domain: track.name, track: track.name,
         title: x.title, author: String(x.src || x.source || '').replace(/^B站·/, ''), link: x.url,
         published: String(x.date || ''),
+        intl: x.intl ? 1 : undefined, /* 境外源标记：写回排序同日优先用；国内源为 undefined，序列化时不落盘 */
         metrics: { likes: 0, comments: 0, collected: today() },
         contentSummary: a.summary || fallbackAnalysis(x).summary,
         narrativeAnalysis: {
@@ -290,10 +291,13 @@ export async function run(argv = []) {
       return isNaN(t) || (Date.now() - t) / 86400000 <= FRESH_DAYS;
     });
   const pubKey = x => String(x.published || (x.metrics && x.metrics.collected) || '');
+  const intlKey = x => (x.intl ? 0 : 1);
   auto.sort((a, b) => {
     const va = isVideo(a) ? 0 : 1, vb = isVideo(b) ? 0 : 1;
     if (va !== vb) return va - vb;
-    return pubKey(b).localeCompare(pubKey(a));
+    const d = pubKey(b).localeCompare(pubKey(a));
+    if (d !== 0) return d;
+    return intlKey(a) - intlKey(b); /* 同日发布时境外源（intl）排前，国际热点不被同日国内时政挤出 */
   });
 
   /* 赛道视频上限（TRACKS[].maxVideos，未配置则不限）；图文不足时再回填视频，避免赛道留空 */

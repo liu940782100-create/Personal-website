@@ -58,7 +58,8 @@ export async function collectSources({ sourceIds = [], concurrency = DEFAULTS.co
           source: src.name,
           platform: src.platform,
           priority: src.priority || 0,
-          allPass: !!src.allPass
+          allPass: !!src.allPass,
+          intl: !!src.intl
         }));
         health.push({ id, name: src.name, type: src.type, count: poolOf[id].length, ms: Date.now() - started });
         console.log(`[${src.name}] 抓到 ${poolOf[id].length} 条`);

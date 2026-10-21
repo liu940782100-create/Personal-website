@@ -97,17 +97,18 @@ export const SOURCES = {
     pattern: String.raw`href="((?:https?:\/\/world\.people\.com\.cn)?\/n\d+\/\d{4}\/\d{4}\/c\d+-\d+\.html)"[^>]*>([\s\S]{4,90}?)<\/a>`,
     maxItems: 30, priority: 3.1, timeoutMs: 25000
   },
-  /* 境外中文媒体：本地网络不可达，仅线上 Actions 生效（国际热点的主要来源） */
+  /* 境外中文媒体：本地网络不可达，仅线上 Actions 生效（国际热点的主要来源）；
+     intl 标记用于写回排序时「同日境外优先」，避免国际热点被同日国内时政挤出 */
   bbc_zh: {
-    name: 'BBC中文', platform: 'BBC中文', type: 'rss', allPass: true,
+    name: 'BBC中文', platform: 'BBC中文', type: 'rss', allPass: true, intl: true,
     url: 'https://feeds.bbci.co.uk/zhongwen/simp/rss.xml', maxItems: 20, priority: 3.5, timeoutMs: 25000
   },
   rfi_cn: {
-    name: '法广', platform: '法广', type: 'rss', allPass: true,
+    name: '法广', platform: '法广', type: 'rss', allPass: true, intl: true,
     url: 'https://www.rfi.fr/cn/rss', maxItems: 20, priority: 3.5, timeoutMs: 25000
   },
   dw_zh: {
-    name: '德国之声', platform: '德国之声', type: 'rss', allPass: true,
+    name: '德国之声', platform: '德国之声', type: 'rss', allPass: true, intl: true,
     url: 'https://rss.dw.com/rdf/rss-chi-all', maxItems: 20, priority: 3.4, timeoutMs: 25000
   },
   /* 央视新闻/军事文章页只内联 1–3 条（其余靠 JS 渲染），改用新闻联播栏目页：每日 18 条且带日期 */

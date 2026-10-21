@@ -88,7 +88,7 @@ export function selectTrack({ candidates, quota, claimed, maxVideos }) {
   return picked;
 }
 
-/** 批量打分（0-100），只依据标题与摘要，不输出链接 */
+/** 批量打分（0-100），只依据标题与摘要，不输出链接；失败后隔 3s 重试一次，避免瞬时网络抖动让整赛道退回默认分 */
 export async function scoreItems(cfg, items, limit = 60) {
   const batch = items.slice(0, limit);
   if (!batch.length) return;
@@ -99,10 +99,19 @@ export async function scoreItems(cfg, items, limit = 60) {
     '[{"i":0,"score":82}]，不要任何多余文字。',
     '条目：' + JSON.stringify(rows)
   ].join('\n');
-  const text = await llmChat(cfg, [
+  const msgs = [
     { role: 'system', content: '只输出 JSON 数组，不要 markdown 代码块标记。' },
     { role: 'user', content: prompt }
-  ], 120000);
+  ];
+  let text = null, lastErr = null;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try { text = await llmChat(cfg, msgs, 120000); break; }
+    catch (e) {
+      lastErr = e;
+      if (attempt === 0) await new Promise(r => setTimeout(r, 3000));
+    }
+  }
+  if (text == null) throw lastErr;
   const m = text.match(/\[[\s\S]*\]/);
   if (!m) throw new Error('打分输出无 JSON 数组');
   const byIndex = new Map();
