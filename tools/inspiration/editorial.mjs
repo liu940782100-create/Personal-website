@@ -54,7 +54,26 @@ export function selectTrack({ candidates, quota, claimed }) {
   const passed = texts.filter(x => scoreOf(x) >= SCORE_PASS).sort(byScore);
   const rest = texts.filter(x => scoreOf(x) < SCORE_PASS).sort(byScore);
 
-  const picked = [...videos, ...passed, ...rest].slice(0, quota);
+  /* 视频先占名额；图文按「及格优先 → 分数 → 发布日期」补足，并限制单信源条数，保留多源混排 */
+  const perSourceCap = Math.max(2, Math.ceil(quota / 4));
+  const picked = videos.slice(0, quota);
+  const counts = {};
+  const queue = [...passed, ...rest];
+  for (const x of queue) {
+    if (picked.length >= quota) break;
+    const src = x.source || x.platform || '其他';
+    if ((counts[src] || 0) >= perSourceCap) continue;
+    counts[src] = (counts[src] || 0) + 1;
+    picked.push(x);
+  }
+  /* 信源不足时放开限制回填，保证配额尽量打满 */
+  if (picked.length < quota) {
+    for (const x of queue) {
+      if (picked.length >= quota) break;
+      if (!picked.includes(x)) picked.push(x);
+    }
+  }
+
   for (const x of picked) claimed.add(x.title.trim());
   return picked;
 }

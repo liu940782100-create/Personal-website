@@ -158,20 +158,16 @@ export async function run(argv = []) {
     candidates: candidatesForTrack(track, poolOf, { existingTitles, existingUrls })
   }));
 
-  /* 3. LLM 打分（一次调用覆盖全部候选前 60 条；失败则退回按发布时间排序） */
+  /* 3. LLM 打分（逐赛道打分，避免靠后的赛道被挤出前 60 条而全部退回默认分） */
   if (cfg) {
-    const unique = new Map();
-    for (const { candidates } of trackCands) {
-      for (const x of candidates) {
-        const k = canonicalUrl(x.url);
-        if (!unique.has(k)) unique.set(k, x);
+    for (const { track, candidates } of trackCands) {
+      if (!candidates.length) continue;
+      try {
+        await scoreItems(cfg, candidates);
+        console.log(`LLM 打分【${track.name}】：${Math.min(candidates.length, 60)} 条（门槛 ${SCORE_PASS}）`);
+      } catch (e) {
+        console.warn(`LLM 打分【${track.name}】失败，改为按发布时间排序：`, e.message);
       }
-    }
-    try {
-      await scoreItems(cfg, [...unique.values()]);
-      console.log(`\nLLM 打分完成：${Math.min(unique.size, 60)} 条（门槛 ${SCORE_PASS}）`);
-    } catch (e) {
-      console.warn('LLM 打分失败，改为按发布时间排序：', e.message);
     }
   }
 
