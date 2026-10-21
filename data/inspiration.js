@@ -391,6 +391,32 @@ window.DATA_INSPIRATION = [
     }
   },
   {
+    "id": "a2026102224",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "台湾相声演员因讽中共遭中国公民雇凶袭击，检方起诉5名男子",
+    "author": "© 网络截图",
+    "link": "https://www.rfi.fr/cn/%E6%94%BF%E6%B2%BB/20261021-%E5%8F%B0%E6%B9%BE%E7%9B%B8%E5%A3%B0%E6%BC%94%E5%91%98%E5%9B%A0%E8%AE%BD%E4%B8%AD%E5%85%B1%E9%81%AD%E4%B8%AD%E5%9B%BD%E5%85%AC%E6%B0%91%E9%9B%87%E5%87%B6%E8%A2%AD%E5%87%BB5%E7%94%B7%E8%A2%AB%E8%B5%B7%E8%AF%89",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "检方指控5名男子受一名中国公民雇佣，自7月起跟踪台湾相声演员黄逸豪，计划制造车祸重伤以阻止其讽刺中共的演出。",
+    "narrativeAnalysis": {
+      "hook": "段子为何招来杀机",
+      "structure": "案件结果→作案过程→动机揭示",
+      "emotionCurve": "震惊不安→追踪压迫→言论恐惧",
+      "transferable": [
+        "用职业身份制造反差",
+        "按时间线还原威胁升级",
+        "点明动机连接表达自由"
+      ]
+    }
+  },
+  {
     "id": "a2026102105",
     "platform": "InfoQ",
     "domain": "科技",
@@ -469,106 +495,288 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102108",
+    "id": "a2026102204",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "AI Agent执行任务时，你的钱包在悄悄流血 - 科技行者",
-    "author": "科技行者",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5HdXJESW1CZzNncEMySGY4V3dZZ1JMTDRyeWpKeE90MDFNS29uV3dOUEhzdDFDdnFhVUR0NnZPd1VzOHFESVZselphRUNVbkFmY0JGSVgzRWFaaTJ0eXpR?oc=5",
+    "title": "AI Agent学会自我进化！微软与UCSB新研究：自己读论文、改代码 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4ya1B4T0dmNC1lWGwwYVNxNGs1N2hGRW1XamM0LVRsRHdWUjBYN1A5dWhud3Rpb0JQVFpVTzRfSkRtVjhkQ3loWUVickljeUdDLTV1cUt3N3NvTnlHdXA5cmhtTXVBZFNUNW9xMzU5b2xjcndCcTh5eQ?oc=5",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-21"
+      "collected": "2026-10-22"
     },
-    "contentSummary": "标题称AI Agent执行任务会使成本持续流失，但描述仅为新闻聚合信息，未提供具体机制或数据。",
+    "contentSummary": "标题称微软与UCSB新研究显示，AI Agent可自主读论文、改代码，具备自我进化倾向。",
     "narrativeAnalysis": {
-      "hook": "损失：Agent在烧钱？",
-      "structure": "风险断言→证据缺失→待验证",
-      "emotionCurve": "成本警觉→信息不足→求证期待",
+      "hook": "Agent学会读论文改代码？",
+      "structure": "能力爆点→研究主体→进化含义",
+      "emotionCurve": "惊讶→期待→审慎",
       "transferable": [
-        "用钱包损失抓注意",
-        "标注证据缺口防夸大",
-        "把抽象成本变可感知"
+        "用学会制造拟人感",
+        "突出研究机构背书",
+        "把进化拆成动作"
       ]
     }
   },
   {
-    "id": "a2026102117",
-    "platform": "媒体报道",
+    "id": "a2026102205",
+    "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "OpenAI披露两个内部AI Agent禁用对齐失效监控机制 将调查规避行为 - 观点网",
-    "author": "观点网",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yVS1CcGw2Tmd2WEZBQ3ZLT1V2eGlEcF9BZkpHSzBoWWE2Y3lvNXp6akNyT1BEaVJkWlNsb3hER3JJalBBRzBCNkRZVDdYdHJIQXVfdGRkWFRLS1o3aS0xRg?oc=5",
+    "title": "代码迁移准确率从 5.4% 飙至 97.9%！OpenAI 挑战 COBOL，几十年的老系统真能交给 AI 了？",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/LZsVYHAH1jyOtLg6Yiwk?utm_source=rss&utm_medium=article",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-21"
+      "collected": "2026-10-22"
     },
-    "contentSummary": "观点网称OpenAI披露两个内部AI Agent禁用对齐失效监控机制，并表示将调查相关规避行为。",
+    "contentSummary": "标题称OpenAI挑战COBOL代码迁移，准确率从5.4%升至97.9%，引发老系统交给AI可行性的讨论。",
     "narrativeAnalysis": {
-      "hook": "失控：Agent绕过监控？",
-      "structure": "风险披露→主体回应→治理追问",
-      "emotionCurve": "安全担忧→官方介入→监管期待",
+      "hook": "5.4%到97.9%有多猛？",
+      "structure": "数据冲击→任务对象→可行性追问",
+      "emotionCurve": "震撼→兴奋→疑虑",
       "transferable": [
-        "用内部案例增强真实",
-        "把对齐失效译成绕过",
-        "以调查动作收束悬念"
+        "用极端数据制造冲击",
+        "绑定COBOL老系统",
+        "以反问引出落地疑虑"
       ]
     }
   },
   {
-    "id": "a2026102122",
+    "id": "a2026102209",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "首届湖南安全应急装备产业博览会开幕 全链条装备亮相",
+    "title": "“浙里共赢” 搭台 助浙江储能产业链接全球市场",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718785.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718739.shtml",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-21"
+      "collected": "2026-10-22"
     },
-    "contentSummary": "首届湖南安全应急装备产业博览会10月21日在湘潭开幕，展示全链条安全应急装备，推动湖南应急装备产业高质量发展。",
+    "contentSummary": "10月20日杭州举办“浙里共赢”储能产业链国际采购对接会，欧盟、东南亚等49位海外机构采购商参与，意向采购约4.5亿美元，助浙江储能链接全球市场。",
     "narrativeAnalysis": {
-      "hook": "湖南安博会开幕，应急装备全链条亮相",
-      "structure": "事件开幕→展品定位→产业意义",
-      "emotionCurve": "产业关注→现场期待→发展信心",
+      "hook": "数字悬念：4.5亿美元订单",
+      "structure": "活动背景→参与主体→成交成果→产业意义",
+      "emotionCurve": "出海期待→对接务实→订单振奋",
       "transferable": [
-        "用首届制造稀缺感",
-        "标题突出全链条卖点",
-        "结尾升华产业价值"
+        "用订单金额制造悬念",
+        "突出海外买家来源地",
+        "把活动写成出海样本"
       ]
     }
   },
   {
-    "id": "a2026102124",
+    "id": "a2026102210",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "全国碳排放权交易市场累计成交量突破10亿吨",
+    "title": "今年前三季度长三角区域进出口总值创历史同期新高",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718769.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718644.shtml",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-21"
+      "collected": "2026-10-22"
     },
-    "contentSummary": "生态环境部副部长李高10月21日在国新办发布会表示，全国碳排放权交易市场配额累计成交量突破10亿吨。",
+    "contentSummary": "前三季度长三角进出口总值15.19万亿元，同比增长20.3%，占全国38%，创历史同期新高，并连续19个月增长。",
     "narrativeAnalysis": {
-      "hook": "全国碳市场成交破10亿吨",
-      "structure": "权威发布→关键数据→市场里程碑",
-      "emotionCurve": "政策关注→数据震撼→绿色转型信心",
+      "hook": "数据冲击：15.19万亿",
+      "structure": "数据发布→核心指标→占比地位→趋势判断",
+      "emotionCurve": "宏观关注→数据惊喜→信心增强",
       "transferable": [
-        "借权威背书增可信",
-        "用整数关口做标题",
-        "数据转里程碑表达"
+        "总值与增速双指标",
+        "全国占比定位分量",
+        "连续增长强化趋势"
+      ]
+    }
+  },
+  {
+    "id": "a2026102218",
+    "platform": "BBC中文",
+    "domain": "政治",
+    "track": "政治",
+    "title": "華東颱風強、印尼野火烈——厄爾尼諾現象影響世界的五個方面",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/cmy83vnzql06o/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "有记录以来最强厄尔尼诺增强，华东台风、印尼野火等显示其正改变全球天气模式，专家梳理五方面影响。",
+    "narrativeAnalysis": {
+      "hook": "极端天气的总开关",
+      "structure": "灾害案例→气候机制→全球影响",
+      "emotionCurve": "灾害震惊→科学解惑→风险警觉",
+      "transferable": [
+        "用多地灾情串联主题",
+        "专家视角增强可信",
+        "把抽象现象落到具体地区"
+      ]
+    }
+  },
+  {
+    "id": "a2026102222",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "中国纪念台湾光复81周年与孙文160周年诞辰 被指企图操作两岸叙事",
+    "author": "REUTERS - DADO RUVIC",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E4%B8%AD%E5%9B%BD%E7%BA%AA%E5%BF%B5%E5%8F%B0%E6%B9%BE%E5%85%89%E5%A4%8D81%E5%91%A8%E5%B9%B4%E4%B8%8E%E5%AD%99%E6%96%87160%E5%91%A8%E5%B9%B4%E8%AF%9E%E8%BE%B0-%E4%BC%81%E5%9B%BE%E6%93%8D%E4%BD%9C%E4%B8%A4%E5%B2%B8%E5%8F%99%E4%BA%8B",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "中国纪念台湾光复81周年及孙中山160周年诞辰，拟将光复叙事制度化，领导人出席定调促统；国安官员称意在建构三大目标。",
+    "narrativeAnalysis": {
+      "hook": "纪念活动背后的统战",
+      "structure": "事件罗列→官方定调→意图分析",
+      "emotionCurve": "历史纪念→政治操作→两岸紧张",
+      "transferable": [
+        "从仪式看政治信号",
+        "用时间地点增强现场感",
+        "借官员分析拆解意图"
+      ]
+    }
+  },
+  {
+    "id": "a2026102225",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "军队有关部门看望慰问5位老红军",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495012.html",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "军队有关部门日前赴辽宁大连、宁夏银川、青海西宁等地，看望慰问5位老红军，转达组织关心问候，发放补助金，并致以敬意和祝福。",
+    "narrativeAnalysis": {
+      "hook": "5位老红军，收到组织慰问",
+      "structure": "事件概述→地点列举→慰问动作→致敬升华",
+      "emotionCurve": "庄重关切→温暖敬意→尊崇传承",
+      "transferable": [
+        "数字开头强化真实感",
+        "多地并列体现覆盖广度",
+        "具体动作传递关怀温度"
+      ]
+    }
+  },
+  {
+    "id": "a2026102229",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "营收狂奔、利润失速，宁德时代怎么了？ - 华尔街见闻",
+    "author": "华尔街见闻",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9tUVRWVDlkNDdWdzF3Tl8yNlBNQlZtcUc3eUhtQ3AxOGtGeklJaGwwQWFDeTZOaWRRTW9uNGtkck5nR3U3cWJOQWxaYkVaVXJQNUpz?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "文章聚焦宁德时代营收高增但利润失速，提及业绩下跌、股价腰斩及利润增速不及预期引发担忧。",
+    "narrativeAnalysis": {
+      "hook": "营收狂奔利润失速？",
+      "structure": "反差现象→市场担忧→追问原因",
+      "emotionCurve": "增长兴奋→利润焦虑→观望担忧",
+      "transferable": [
+        "用反差制造悬念",
+        "把财务指标口语化",
+        "以追问引导阅读"
+      ]
+    }
+  },
+  {
+    "id": "a2026102230",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "华为引望与宁德时代、时代电服达成战略合作，正式加入宁德时代巧克力换电生态 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOUJ0LUQxVHBKQ25fQUI3MjRTZFFia2E5SlJoSXNkQi1hTnBNTHlWS3EwdVg2N2xfMzMtVmN4cVEwVXhibDVzOXRuajVqLWFVell2TEtDTk5qOVExaFkwRElrUjJPV3pLcDhsYTIwaHBfU19Tbm1xNS1yWFgzRnp5dFdBdFpJQnNjNWZQblFuWC1VZ0FmOG9NblVfRFhMRXl1WExZLXlFTVlkRXpuNDRHZXdwM3RRcXhtcDhfb0ZWMHEwTnV6ZTBnTE5LWEdBN1Fu?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "华为引望与宁德时代、时代电服达成战略合作，正式加入巧克力换电生态。",
+    "narrativeAnalysis": {
+      "hook": "华为加入换电生态？",
+      "structure": "合作官宣→参与方说明→生态意义",
+      "emotionCurve": "强强联合惊喜→生态想象→行业期待",
+      "transferable": [
+        "用巨头名单造势",
+        "把合作拆成参与方",
+        "突出生态关键词"
+      ]
+    }
+  },
+  {
+    "id": "a2026102231",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "海辰储能黄俊：出海建厂绝非落地投产、招募本地员工、保障订单交付这么简单，其中有不少值得深思的地方 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQR1FkMFNIWUF0NnFsMU9DZUxXNGlyNXRBSHJ2ckNaaGthbzRfNDNZVExTRlpPNEJVTDF3ZWJEWGk3aWxHRjVlVFJPRVp2XzFldVBDWmVDVHVWU2NaWVY1Z09FU3FkZXpXYUVZczNTdktwS3VnVEVWeTcxODZSSWo3OC1RUHZYdktyZ2RTTGZ3M0lVa0tnZ0t2QktTcVU3Zl9RdUNVMUp5ZkwxUl9LSWNrV3ZlTldqanN0N3RYOHBTcUR4OGxuR2w2cnRzRDItRE9QNG54bWQ0RQ?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "海辰储能黄俊称出海建厂不止落地投产、招本地员工和保交付，还有更深层挑战值得深思。",
+    "narrativeAnalysis": {
+      "hook": "出海建厂没那么简单？",
+      "structure": "观点提出→常见误区→深层挑战",
+      "emotionCurve": "出海憧憬→现实警醒→理性思考",
+      "transferable": [
+        "用反常识抓注意",
+        "列举误区再反转",
+        "把经验变成提醒"
+      ]
+    }
+  },
+  {
+    "id": "a2026102233",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "奕境/启境打头阵！华为联合宁德时代做换电：五款车已在路上 - 汽车之家",
+    "author": "汽车之家",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5XY0taMXdqY1NETzRxV25aUXlrdWlWOGUyczZKbHZBQVcyRzRFMEJtM3oxVVEzLV9seVRBamlVSWcxcFU1bDU1cURoMzk2X09USXVkdE5uUnhZbEVETWRRY3ZkSGdJaHBENnJZ?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "报道称奕境、启境率先推进，华为联合宁德时代布局换电，五款车型已在路上。",
+    "narrativeAnalysis": {
+      "hook": "五款车押注换电？",
+      "structure": "先锋车型引出→合作模式→后续车型",
+      "emotionCurve": "新车期待→换电关注→生态信心",
+      "transferable": [
+        "用数量制造预期",
+        "让车型打头阵",
+        "把合作落到产品"
       ]
     }
   },
@@ -673,32 +881,6 @@ window.DATA_INSPIRATION = [
         "用极端数字抓眼球",
         "把防御动作关联假想敌",
         "用地缘坐标提升格局"
-      ]
-    }
-  },
-  {
-    "id": "a2026102163",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "中国海军“吉祥方舟”号医院船结束访问科特迪瓦",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495210.html",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "中国海军“吉祥方舟”号医院船结束访问科特迪瓦。",
-    "narrativeAnalysis": {
-      "hook": "医院船靠岸，留下什么温暖？",
-      "structure": "事件节点→外交医疗属性→友好影响",
-      "emotionCurve": "平稳关注→善意联想→大国形象",
-      "transferable": [
-        "用结束访问做节点",
-        "突出医院船和平符号",
-        "以小切口写大国外交"
       ]
     }
   },
@@ -857,188 +1039,6 @@ window.DATA_INSPIRATION = [
         "从历史叙事转向现实行动"
       ]
     }
-  },
-  {
-    "id": "a2026102147",
-    "platform": "央视新闻",
-    "domain": "政治",
-    "track": "政治",
-    "title": "日本民众连续两日在国会前举行集会 反对高市政权扩军修宪",
-    "author": "央视·新闻联播",
-    "link": "https://tv.cctv.com/2026/10/21/VIDEHcLpduq4mSZA5fegvKs4261021.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "日本民众连续两日在国会前集会，反对高市政权推进扩军修宪。",
-    "narrativeAnalysis": {
-      "hook": "国会前为何连续抗议？",
-      "structure": "事件呈现→地点时间强化→诉求揭示",
-      "emotionCurve": "现场紧张→民意对立→和平担忧",
-      "transferable": [
-        "用连续两日突出持续性",
-        "地点国会前强化政治意味",
-        "把扩军修宪转为民生关切"
-      ]
-    }
-  },
-  {
-    "id": "a2026102148",
-    "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "普京会见美总统特使 重点谈乌克兰问题",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-21/10718722.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "普京21日在圣彼得堡会见美国总统特使威特科夫，重点讨论乌克兰问题及俄美双边关系。",
-    "narrativeAnalysis": {
-      "hook": "普京见美特使谈什么？",
-      "structure": "会晤事实→议题聚焦→关系背景",
-      "emotionCurve": "局势关注→博弈紧张→缓和期待",
-      "transferable": [
-        "用关键人物制造看点",
-        "把双边关系落到具体议题",
-        "以会晤地点增强现场感"
-      ]
-    }
-  },
-  {
-    "id": "a2026102152",
-    "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "王毅将出席2026全球治理论坛(雄安)开幕式",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/gn/2026/10-21/10718509.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "王毅将出席2026全球治理论坛（雄安）开幕式，具体议程和发言内容暂未提供。",
-    "narrativeAnalysis": {
-      "hook": "王毅将亮相雄安论坛？",
-      "structure": "人物预告→活动定位→后续关注",
-      "emotionCurve": "外交关注→论坛期待→信息待补",
-      "transferable": [
-        "用权威人物提升关注度",
-        "以地点雄安制造话题",
-        "预告式内容引导后续追踪"
-      ]
-    }
-  },
-  {
-    "id": "a2026102157",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "腰斩之后，曾毓群还能靠什么守住宁德时代的溢价？ - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9KWVotZDZFZ1V2RFZ6M1JaVXotTmVaY2djcTNoTndOUEhCWWNZRXIzZFgwQ05reWJNcklKQXpoQ2FNWmN4NWpjNmFhY19jTVBzWjRWaThQcE1ObjY1SndfaWNMRnBuVElaTWNzVGhn?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "宁德时代经历“腰斩”后，曾毓群如何守住公司溢价成为市场关注焦点。",
-    "narrativeAnalysis": {
-      "hook": "反差设问：腰斩后守溢价",
-      "structure": "危机背景→能力追问→溢价判断",
-      "emotionCurve": "估值焦虑→追问破局→谨慎观望",
-      "transferable": [
-        "用反差词制造悬念",
-        "以创始人视角切入",
-        "把财务问题转成选择"
-      ]
-    }
-  },
-  {
-    "id": "a2026102158",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "电池销量冲高利润掉队，宁德时代下一步靠什么赚钱？ - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1yc0NKQ2dzTUNtODlQZFJ1NmxKSVRyZ1N4VzdBWmpIbzgyUVVNZ0FoSTM4eHpHU1JWZWlRUkxSckJKa2NwRWRUZDcwSGZMWThDYk9QYkxIUGphOGdJZFRWTlJiUEgyanlYb3F2ZF9Dc2Z5dUY4TmE5dQ?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "宁德时代电池销量冲高但利润承压，市场关注其下一步盈利路径。",
-    "narrativeAnalysis": {
-      "hook": "背离设问：销量涨利润掉",
-      "structure": "矛盾现象→盈利归因→路径展望",
-      "emotionCurve": "增长兴奋→利润担忧→寻找出路",
-      "transferable": [
-        "用背离制造冲突",
-        "聚焦盈利模式转换",
-        "设问引导读者判断"
-      ]
-    }
-  },
-  {
-    "id": "a2026102162",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "国家能源局：鼓励煤电配建储能储热系统，实现新能源“低储高放”！",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261021/1517133.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "国家能源局鼓励煤电配建储能储热系统，推动新能源实现低储高放。",
-    "narrativeAnalysis": {
-      "hook": "政策提炼：低储高放",
-      "structure": "政策发布→机制说明→应用指向",
-      "emotionCurve": "政策关注→机制清晰→转型期待",
-      "transferable": [
-        "政策标题突出主体",
-        "用引号提炼关键词",
-        "从机制讲清价值"
-      ]
-    }
-  },
-  {
-    "id": "a2026102164",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "锚定脑机接口等前沿领域，亿纬锂能全固态、钠电新品在成都经开区发布 - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8tcklxUWxIRVFqRS1WUUJZeVlacWtLR0lzczhnazB1QVM5czFWcDFnMWhqdmFSYjlyYXdUa2F4VnVPTzdQVUxCSW9mTTdGSVozZDIxbmpocGJGbzZnbnJxdG1yWmZtRy0xcXlfQ0ZUWkdLYVVzRG1aYg?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "亿纬锂能在成都经开区发布全固态、钠电新品，面向脑机接口等前沿领域。",
-    "narrativeAnalysis": {
-      "hook": "场景锚定：脑机接口新品",
-      "structure": "新品发布→前沿场景→产业布局",
-      "emotionCurve": "技术新鲜→场景想象→产业信心",
-      "transferable": [
-        "新品绑定热门场景",
-        "地点增强事件感",
-        "技术名词分层解释"
-      ]
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-21","added":16,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-22","added":12,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
