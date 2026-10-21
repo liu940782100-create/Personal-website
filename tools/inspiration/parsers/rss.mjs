@@ -5,25 +5,31 @@
 import { getText } from '../http.mjs';
 import { parseDate } from '../normalize.mjs';
 
-const stripTags = s => String(s || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+const decodeEntities = s => String(s || '')
+  .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+  .replace(/&quot;/g, '"').replace(/&#3[49];|&apos;/g, "'").replace(/&nbsp;/g, ' ');
+
+const stripTags = s => decodeEntities(String(s || '')
+  .replace(/<!\[CDATA\[|\]\]>/g, ''))
+  .replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 
 export function parseRss(xml, limit = 40) {
   const items = [];
   const blocks = String(xml || '').match(/<(item|entry)[\s\S]*?<\/\1>/g) || [];
   for (const b of blocks.slice(0, limit)) {
-    const title = (b.match(/<title[^>]*>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/) || [])[1] || '';
+    const title = (b.match(/<title[^>]*>\s*(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?\s*<\/title>/) || [])[1] || '';
     const link = (b.match(/<link[^>]*href="([^"]+)"/) || [])[1]
-      || (b.match(/<link[^>]*>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/link>/) || [])[1] || '';
-    const desc = (b.match(/<description[^>]*>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/)
-      || b.match(/<summary[^>]*>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/summary>/) || [])[1] || '';
+      || (b.match(/<link[^>]*>\s*(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?\s*<\/link>/) || [])[1] || '';
+    const desc = (b.match(/<description[^>]*>\s*(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?\s*<\/description>/)
+      || b.match(/<summary[^>]*>\s*(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?\s*<\/summary>/) || [])[1] || '';
     const pd = (b.match(/<pubDate[^>]*>([\s\S]*?)<\/pubDate>/)
       || b.match(/<updated[^>]*>([\s\S]*?)<\/updated>/) || [])[1] || '';
     /* Google News 等源会在 <source> 里给出真实发布媒体名 */
-    const src = (b.match(/<source[^>]*>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/source>/) || [])[1] || '';
+    const src = (b.match(/<source[^>]*>\s*(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?\s*<\/source>/) || [])[1] || '';
 
     items.push({
       title: stripTags(title),
-      url: String(link).trim(),
+      url: decodeEntities(String(link).trim()).replace(/<!\[CDATA\[|\]\]>/g, ''),
       desc: stripTags(desc).slice(0, 300),
       date: parseDate(pd),
       src: stripTags(src)

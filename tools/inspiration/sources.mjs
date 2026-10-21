@@ -40,6 +40,23 @@ export const SOURCES = {
     urlTemplate: GNEWS, query: 'AI 发布会 OR 大模型 发布',
     maxItems: 12, priority: 3.2
   },
+  gnews_agent: {
+    name: 'AI智能体', platform: '媒体报道', type: 'rss', allPass: true,
+    urlTemplate: GNEWS, query: '"AI Agent" OR 个人智能体 OR 智能助手',
+    maxItems: 15, priority: 3.3
+  },
+  infoq: {
+    name: 'InfoQ中文', platform: 'InfoQ', type: 'rss',
+    url: 'https://www.infoq.cn/feed', maxItems: 30, priority: 3.1, timeoutMs: 20000
+  },
+  ifanr: {
+    name: '爱范儿', platform: '爱范儿', type: 'rss',
+    url: 'https://www.ifanr.com/feed', maxItems: 30, priority: 3.0, timeoutMs: 20000
+  },
+  geekpark: {
+    name: '极客公园', platform: '极客公园', type: 'rss',
+    url: 'https://www.geekpark.net/rss', maxItems: 30, priority: 2.9, timeoutMs: 20000
+  },
 
   /* ---------- 中新网 ---------- */
   chinanews_scroll: {
@@ -56,6 +73,10 @@ export const SOURCES = {
     pattern: String.raw`href="(\/[a-z]+\/\d{4}\/\d{2}-\d{2}\/\d+\.shtml)"[^>]*>([\s\S]{4,90}?)<\/a>`,
     maxItems: 40, priority: 2.6, timeoutMs: 25000
   },
+  chinanews_world: {
+    name: '中新网·国际', platform: '中新网', type: 'rss',
+    url: 'https://www.chinanews.com.cn/rss/world.xml', maxItems: 30, priority: 3.3
+  },
 
   /* ---------- 政治 / 官方媒体 ---------- */
   gov_cn: {
@@ -69,6 +90,25 @@ export const SOURCES = {
     url: 'https://www.people.com.cn/', base: 'https://www.people.com.cn/',
     pattern: String.raw`href="(https?:\/\/(?:politics|world|finance|military|scitech|it)\.people\.com\.cn\/n\d+\/\d{4}\/\d{4}\/c\d+-\d+\.html)"[^>]*>([\s\S]{4,90}?)<\/a>`,
     maxItems: 30, priority: 2.2, timeoutMs: 25000
+  },
+  people_world: {
+    name: '人民网·国际', platform: '人民网', type: 'web_list',
+    url: 'https://world.people.com.cn/', base: 'https://world.people.com.cn/',
+    pattern: String.raw`href="((?:https?:\/\/world\.people\.com\.cn)?\/n\d+\/\d{4}\/\d{4}\/c\d+-\d+\.html)"[^>]*>([\s\S]{4,90}?)<\/a>`,
+    maxItems: 30, priority: 3.1, timeoutMs: 25000
+  },
+  /* 境外中文媒体：本地网络不可达，仅线上 Actions 生效（国际热点的主要来源） */
+  bbc_zh: {
+    name: 'BBC中文', platform: 'BBC中文', type: 'rss', allPass: true,
+    url: 'https://feeds.bbci.co.uk/zhongwen/simp/rss.xml', maxItems: 20, priority: 3.5, timeoutMs: 25000
+  },
+  rfi_cn: {
+    name: '法广', platform: '法广', type: 'rss', allPass: true,
+    url: 'https://www.rfi.fr/cn/rss', maxItems: 20, priority: 3.5, timeoutMs: 25000
+  },
+  dw_zh: {
+    name: '德国之声', platform: '德国之声', type: 'rss', allPass: true,
+    url: 'https://rss.dw.com/rdf/rss-chi-all', maxItems: 20, priority: 3.4, timeoutMs: 25000
   },
   /* 央视新闻/军事文章页只内联 1–3 条（其余靠 JS 渲染），改用新闻联播栏目页：每日 18 条且带日期 */
   cctv_xwlb: {
@@ -156,10 +196,12 @@ export const SOURCES = {
 
 /* ---------- 赛道：关键词 + 信源清单（同一条目只归一个赛道） ---------- */
 export const KEY = {
-  tech: ['科技', 'AI', '人工智能', '大模型', '智能体', '算法', '算力', '芯片', '半导体', '光刻', 'GPU',
-    'CPU', '处理器', '机器人', '人形机器人', '量子', '操作系统', '开源', '软件', '硬件', '数据中心', '云计算',
+  tech: ['科技', 'AI', '人工智能', '人工智慧', '大模型', '模型', '智能体', 'Agent', 'Agentic', '算法', '演算法', '算力', '芯片', '晶片', '半导体', '光刻', 'GPU',
+    'CPU', '处理器', '机器人', '人形机器人', '量子', '操作系统', '开源', '开源模型', '软件', '硬件', '数据中心', '伺服器', '云计算',
     '5G', '6G', '自动驾驶', '智能驾驶', '手机', '电脑', '笔记本', '苹果', '华为', '英伟达', '微软', '谷歌',
-    '字节', '腾讯', '阿里', 'DeepSeek', '智能', '数字化', '空间站', '航天', '卫星', '火箭', '北斗', '元宇宙', 'AR', 'VR'],
+    '字节', '腾讯', '阿里', 'DeepSeek', 'OpenAI', 'Anthropic', 'Claude', 'ChatGPT', 'GPT', 'Gemini', 'Copilot', 'Llama', 'Meta',
+    '豆包', '元宝', 'Kimi', '通义', 'MiniMax', '智谱', '文心', '混元', '多模态', '生成模型', '图像生成', '端侧', '推理',
+    '智能', '数字化', '空间站', '航天', '卫星', '火箭', '北斗', '元宇宙', 'AR', 'VR'],
   finance: ['金融', '财经', '银行', '股市', '股票', '证券', '基金', '保险', '债券', '利率', '汇率', '人民币',
     '财政', '税收', 'GDP', '经济', '央行', '货币政策', 'A股', '港股', '美股', '上市', '融资', 'IPO', '投资',
     '贷款', '信贷', '存款', '外贸', '出口', '进口', '物价', 'CPI', 'PPI', '房地产', '楼市', '消费', '外汇',
@@ -170,7 +212,11 @@ export const KEY = {
     '中央', '国家主席', '总理', '外长', '王毅', '部长', '省委', '市委', '改革', '规划', '十五五', '五年规划',
     '政府工作报告', '反腐', '审查调查', '纪委', '监察', '巡视', '干部', '任命', '免职', '常委', '书记', '座谈',
     '论坛', '峰会', '国际合作', '一带一路', '外交', '条约', '协定',
-    '新闻联播', '主播说联播', '朝闻天下', '早间新闻', '晚间新闻', '时政'],
+    '新闻联播', '主播说联播', '朝闻天下', '早间新闻', '晚间新闻', '时政',
+    /* 国际政治议题（境外中文媒体与中新网国际的主要产出） */
+    '游行', '抗议', '示威', '罢工', '骚乱', '暴动', '宵禁', '大选', '选举', '议会', '国会', '首相', '总统',
+    '执政', '在野', '反对党', '民调', '欧盟', '制裁', '移民', '白宫', '联合国', '国际社会',
+    '法国', '德国', '英国', '美国', '日本', '韩国', '意大利', '乌克兰', '中东', '加沙'],
   military: ['军事', '国防', '军队', '部队', '军演', '演习', '导弹', '战机', '航母', '军舰', '海军',
     '空军', '陆军', '火箭军', '士兵', '军官', '战区', '武器', '装备', '无人机', '防空', '雷达', '坦克', '潜艇',
     '战争', '冲突', '停火', '军费', '国防部', '阅兵', '维和', '作战', '军事基地', '安全构想', '军力', '兵役',
@@ -185,19 +231,19 @@ export const KEY = {
 /** 视频源排在最前，保证「以视频为主」 */
 export const TRACKS = [
   {
-    name: '科技', keywords: KEY.tech,
-    sources: ['bili_laoshi', 'gnews_ai', 'ithome', 'qbitai', 'leiphone', 'chinanews_scroll', 'chinanews_home']
+    name: '科技', keywords: KEY.tech, maxVideos: 3,
+    sources: ['bili_laoshi', 'gnews_agent', 'gnews_ai', 'infoq', 'ifanr', 'geekpark', 'ithome', 'qbitai', 'leiphone', 'chinanews_scroll', 'chinanews_home']
   },
   {
     name: '财经', keywords: KEY.finance,
     sources: ['bili_xiaolin', 'bili_tuzi', 'bili_jingjing', 'chinanews_finance', 'chinanews_scroll', 'chinanews_home']
   },
   {
-    name: '政治', keywords: KEY.politics,
-    sources: ['bili_cctv_news', 'cctv_xwlb', 'gov_cn', 'chinanews_scroll', 'chinanews_home', 'people_home']
+    name: '政治', keywords: KEY.politics, maxVideos: 3,
+    sources: ['bili_cctv_news', 'bbc_zh', 'rfi_cn', 'dw_zh', 'chinanews_world', 'cctv_xwlb', 'gov_cn', 'people_world', 'chinanews_scroll', 'chinanews_home', 'people_home']
   },
   {
-    name: '军事', keywords: KEY.military,
+    name: '军事', keywords: KEY.military, maxVideos: 5,
     sources: ['bili_cctv_mil', 'junwang_81', 'chinanews_scroll', 'chinanews_home', 'ifeng_mil']
   },
   {

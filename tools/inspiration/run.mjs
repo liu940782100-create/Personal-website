@@ -114,7 +114,7 @@ function previewTracks(tracks, poolOf, opts, existingTitles, existingUrls) {
   const claimed = new Set();
   for (const track of tracks) {
     const candidates = candidatesForTrack(track, poolOf, { existingTitles, existingUrls });
-    const picked = selectTrack({ candidates, quota: opts.limit, claimed });
+    const picked = selectTrack({ candidates, quota: opts.limit, claimed, maxVideos: track.maxVideos });
     const videos = picked.filter(isVideo).length;
     console.log(`\n【${track.name}】候选 ${candidates.length} 条 → 预览 ${picked.length} 条（视频 ${videos} / 图文 ${picked.length - videos}）`);
     picked.forEach((x, i) => {
@@ -190,7 +190,7 @@ export async function run(argv = []) {
   const trackStat = {};
 
   for (const { track, candidates } of trackCands) {
-    const picked = selectTrack({ candidates, quota: perTrack, claimed });
+    const picked = selectTrack({ candidates, quota: perTrack, claimed, maxVideos: track.maxVideos });
     console.log(`\n【${track.name}】候选 ${candidates.length} 条 → 取 ${picked.length} 条`
       + `（${picked.map(x => x.source).join('、')}）`);
     if (!picked.length) { trackStat[track.name] = 0; continue; }
@@ -296,9 +296,24 @@ export async function run(argv = []) {
     return pubKey(b).localeCompare(pubKey(a));
   });
 
+  /* 赛道视频上限（TRACKS[].maxVideos，未配置则不限）；图文不足时再回填视频，避免赛道留空 */
+  const capOf = name => {
+    const t = TRACKS.find(x => x.name === name);
+    return Math.min(t && t.maxVideos ? t.maxVideos : perTrack, perTrack);
+  };
   const quota = {};
+  const videoQuota = {};
   const finalPicked = [];
+  const deferredVideos = [];
   for (const x of auto) {
+    const t = x.track || x.domain || '其他';
+    if ((quota[t] || 0) >= perTrack) continue;
+    if (isVideo(x) && (videoQuota[t] || 0) >= capOf(t)) { deferredVideos.push(x); continue; }
+    quota[t] = (quota[t] || 0) + 1;
+    if (isVideo(x)) videoQuota[t] = (videoQuota[t] || 0) + 1;
+    finalPicked.push(x);
+  }
+  for (const x of deferredVideos) {
     const t = x.track || x.domain || '其他';
     if ((quota[t] || 0) >= perTrack) continue;
     quota[t] = (quota[t] || 0) + 1;

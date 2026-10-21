@@ -3,7 +3,7 @@
  * 候选过滤（赛道关键词 / 时效 / 已收录）→ LLM 打分（单门槛 60）→ 视频优先配额 → 正文摘要补全 → 叙事拆解。
  * 视频（B站账号本身即筛选条件）不参与打分门槛，直接按发布时间排序优先占位。
  */
-import { canonicalUrl, isFresh, dateFromHtml } from './normalize.mjs';
+import { canonicalUrl, isFresh, dateFromHtml, toSimp } from './normalize.mjs';
 import { getText } from './http.mjs';
 import { llmChat } from './llm.mjs';
 
@@ -23,7 +23,9 @@ export function candidatesForTrack(track, poolOf, { existingTitles, existingUrls
     for (const x of poolOf[id] || []) {
       if (!x.title || !x.url) continue;
       const title = x.title.trim();
-      if (!x.allPass && !track.keywords.some(w => title.includes(w))) continue;
+      /* 境外源多为繁体，先转简体再匹配关键词；英文关键词忽略大小写 */
+      const norm = toSimp(title).toLowerCase();
+      if (!x.allPass && !track.keywords.some(w => norm.includes(w.toLowerCase()))) continue;
       if (!isFresh(x.date)) continue;
       if (existingTitles.has(title)) continue;
       const u = canonicalUrl(x.url);
@@ -41,7 +43,7 @@ export function candidatesForTrack(track, poolOf, { existingTitles, existingUrls
  * 赛道取稿：视频先占名额，图文按「分数 ≥ 60 → 全量回填」的顺序补足。
  * claimed 为跨赛道共享集合，保证同一条内容只归属一个赛道。
  */
-export function selectTrack({ candidates, quota, claimed }) {
+export function selectTrack({ candidates, quota, claimed, maxVideos }) {
   const fresh = candidates.filter(x => !claimed.has(x.title.trim()));
 
   const videos = fresh.filter(isVideo)
@@ -54,9 +56,10 @@ export function selectTrack({ candidates, quota, claimed }) {
   const passed = texts.filter(x => scoreOf(x) >= SCORE_PASS).sort(byScore);
   const rest = texts.filter(x => scoreOf(x) < SCORE_PASS).sort(byScore);
 
-  /* 视频先占名额；图文按「及格优先 → 分数 → 发布日期」补足，并限制单信源条数，保留多源混排 */
-  const perSourceCap = Math.max(2, Math.ceil(quota / 4));
-  const picked = videos.slice(0, quota);
+  /* 视频先占名额（赛道可用 maxVideos 压低上限，给图文留位置）；图文按「及格优先 → 分数 → 发布日期」补足，并限制单信源条数，保留多源混排 */
+  const perSourceCap = Math.max(3, Math.ceil(quota / 3));
+  const videoCap = Math.min(quota, maxVideos > 0 ? maxVideos : quota);
+  const picked = videos.slice(0, videoCap);
   const counts = {};
   const queue = [...passed, ...rest];
   for (const x of queue) {
@@ -71,6 +74,13 @@ export function selectTrack({ candidates, quota, claimed }) {
     for (const x of queue) {
       if (picked.length >= quota) break;
       if (!picked.includes(x)) picked.push(x);
+    }
+  }
+  /* 图文仍不足时才让视频突破上限，避免赛道留空 */
+  if (picked.length < quota) {
+    for (const x of videos.slice(videoCap)) {
+      if (picked.length >= quota) break;
+      picked.push(x);
     }
   }
 
