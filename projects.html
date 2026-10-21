@@ -31,10 +31,19 @@
       <select id="filterLevel"></select>
       <input type="text" id="searchKw" class="grow" placeholder="搜索：项目名 / 目标…" data-i18n-ph="proj.search.ph">
       <span class="count" id="countInfo"></span>
+      <button type="button" class="btn" id="selectModeBtn"></button>
       <button type="button" class="btn" id="exportLocalBtn"></button>
       <button type="button" class="btn" id="importLocalBtn"></button>
       <input type="file" id="importFile" accept=".json,application/json" style="display:none">
       <button type="button" class="btn btn-primary" id="newProjectBtn"></button>
+    </div>
+
+    <div class="batch-bar" id="batchBar" hidden>
+      <span class="sel-count" id="selCount"></span>
+      <button type="button" class="btn btn-mini" id="selAllBtn"></button>
+      <button type="button" class="btn btn-mini btn-danger-ghost" id="selDeleteBtn"></button>
+      <button type="button" class="btn btn-mini" id="selExportBtn"></button>
+      <button type="button" class="btn btn-mini" id="selImportBtn"></button>
     </div>
 
     <section class="kanban" id="kanban"></section>
@@ -356,7 +365,28 @@
       expLocalEmpty: { zh: '还没有本地项目，暂无可导出的数据', en: 'No local projects to export yet' },
       impLocalOk: { zh: '导入完成（{n} 个项目）', en: 'Imported {n} local project(s)' },
       impLocalBad: { zh: '导入失败：需要本页「导出数据」生成的 JSON 文件', en: 'Import failed: expected the JSON file from Export data' },
-      impConfirm: { zh: '文件中 {n} 个项目与现有项目同 ID，导入会覆盖它们，其余保留。继续？', en: '{n} project(s) share existing IDs and will be overwritten; the rest are kept. Continue?' }
+      impConfirm: { zh: '文件中 {n} 个项目与现有项目同 ID，导入会覆盖它们，其余保留。继续？', en: '{n} project(s) share existing IDs and will be overwritten; the rest are kept. Continue?' },
+      /* 点选与批量操作 */
+      selOn: { zh: '选择', en: 'Select' },
+      selOff: { zh: '取消选择', en: 'Cancel' },
+      selCount: { zh: '已选 {n} 个项目', en: '{n} selected' },
+      selAll: { zh: '全选可见', en: 'Select all' },
+      selClear: { zh: '清空选择', en: 'Clear' },
+      selDelete: { zh: '删除选中', en: 'Delete' },
+      selExport: { zh: '导出选中', en: 'Export' },
+      selNone: { zh: '请先勾选项目', en: 'Select projects first' },
+      selDelConfirm: { zh: '确认删除选中的 {n} 个本地项目？其资料与分析记录一并删除，不可恢复。', en: 'Delete {n} local project(s)? Their files and analysis will be removed permanently.' },
+      selDelDone: { zh: '已删除 {n} 个项目', en: 'Deleted {n} project(s)' },
+      selDelOnlyLocal: { zh: '示例项目来自数据文件，不可删除', en: 'Sample projects come from data files and cannot be deleted' },
+      selReadonly: { zh: '示例项目不可删除，但可以导出', en: 'Sample projects cannot be deleted but can be exported' },
+      selExpOk: { zh: '已导出 {n} 个项目', en: 'Exported {n} project(s)' },
+      /* 单个项目文件 */
+      projExport: { zh: '导出项目文件', en: 'Export project file' },
+      projExportOk: { zh: '项目文件已导出', en: 'Project file exported' },
+      projImport: { zh: '导入项目文件', en: 'Import project file' },
+      projImportHint: { zh: '可导入本页导出的项目文件（.json）；也可作为资料附加到当前项目', en: 'Import a project file (.json) exported from this page, or attach it to this project as a file' },
+      projImportOk: { zh: '项目文件已导入（{n} 个项目）', en: 'Project file imported ({n} project(s))' },
+      projFileAttached: { zh: '文件已附加到当前项目', en: 'File attached to this project' }
     };
 
     /* =========================================================
@@ -474,6 +504,11 @@
       document.getElementById('exportLocalBtn').textContent = L(STR.expLocal);
       document.getElementById('importLocalBtn').textContent = L(STR.impLocal);
       document.getElementById('newProjectBtn').textContent = L(STR.newProject);
+      document.getElementById('selectModeBtn').textContent = L(selectMode ? STR.selOff : STR.selOn);
+      document.getElementById('selAllBtn').textContent = L(STR.selAll);
+      document.getElementById('selDeleteBtn').textContent = L(STR.selDelete);
+      document.getElementById('selExportBtn').textContent = L(STR.selExport);
+      document.getElementById('selImportBtn').textContent = L(STR.projImport);
       ['filterStage', 'filterType', 'filterLevel'].forEach(function (id, i) {
         document.getElementById(id).value = keep[i];
       });
@@ -503,10 +538,19 @@
       var pendingGates = (p.gates || []).filter(function (g) { return g.status === '待审'; }).length;
       var pct = total ? Math.round(done / total * 100) : 0;
       var local = isLocal(p) && !archived;
-      return '<div class="p-card' + (archived ? ' p-archived' : '') + (pendingGates ? ' p-gate-alert' : '') + '"' +
+      var editable = isLocal(p);
+      var isSel = !!selected[p.id];
+      return '<div class="p-card' + (archived ? ' p-archived' : '') + (pendingGates ? ' p-gate-alert' : '') +
+        (isSel ? ' p-selected' : '') + (selectMode && !editable ? ' p-noselect' : '') + '"' +
         ' role="button" tabindex="0"' +
         (pendingGates ? ' title="' + esc(pendingGates + L(STR.gateAlert)) + '"' : '') +
-        ' onclick="openDetail(\'' + esc(p.id) + '\')" onkeydown="pCardKey(event,\'' + esc(p.id) + '\')">' +
+        ' onclick="pCardClick(event,\'' + esc(p.id) + '\')" onkeydown="pCardKey(event,\'' + esc(p.id) + '\')">' +
+        (selectMode
+          ? '<label class="p-check" onclick="event.stopPropagation()">' +
+              '<input type="checkbox"' + (isSel ? ' checked' : '') + (editable ? '' : ' disabled') +
+              ' onchange="toggleSelect(\'' + esc(p.id) + '\')" aria-label="' + esc(L(STR.selOn)) + '">' +
+            '</label>'
+          : '') +
         '<h4>' + esc(p.name) +
           (p.inspSource ? '<span class="insp-badge">♡ ' + esc(L({ zh: '灵感备档', en: 'From Inspiration' })) + '</span>' : '') +
           (archived ? '<span class="arch-badge">' + esc(L(STR.archivedBadge)) + '</span>' : '') +
@@ -570,6 +614,120 @@
       }).join('');
 
       renderArchived(list, all);
+      updateBatchBar();
+    }
+
+    /* =========================================================
+     * 点选模式：勾选 → 删除 / 导出
+     * ========================================================= */
+    var selectMode = false;
+    var selected = {};
+
+    function selectedIds() { return Object.keys(selected).filter(function (id) { return selected[id]; }); }
+
+    function updateBatchBar() {
+      var bar = document.getElementById('batchBar');
+      if (!selectMode) { bar.hidden = true; return; }
+      var locals = loadLocal().map(function (p) { return p.id; });
+      Object.keys(selected).forEach(function (id) { /* 项目已不存在则移除勾选 */
+        if (locals.indexOf(id) < 0) delete selected[id];
+      });
+      bar.hidden = false;
+      document.getElementById('selCount').textContent = L(STR.selCount).replace('{n}', selectedIds().length);
+    }
+
+    function toggleSelectMode() {
+      selectMode = !selectMode;
+      if (!selectMode) selected = {};
+      document.getElementById('selectModeBtn').textContent = L(selectMode ? STR.selOff : STR.selOn);
+      renderBoard();
+    }
+
+    function toggleSelect(id) {
+      if (!isLocal(findProject(id) || {})) { toast(L(STR.selReadonly)); return; }
+      if (selected[id]) delete selected[id]; else selected[id] = true;
+      renderBoard();
+    }
+
+    function selectAllVisible() {
+      var kw = document.getElementById('searchKw').value.trim().toLowerCase();
+      var fs = document.getElementById('filterStage').value;
+      var ft = document.getElementById('filterType').value;
+      var fl = document.getElementById('filterLevel').value;
+      var ids = loadLocal().filter(function (p) {
+        if (fs && p.stage !== fs) return false;
+        if (ft && p.type !== ft) return false;
+        if (fl && p.level !== fl) return false;
+        if (kw) {
+          var text = ((p.name || '') + ' ' + (p.goal || '')).toLowerCase();
+          if (text.indexOf(kw) < 0) return false;
+        }
+        return true;
+      }).map(function (p) { return p.id; });
+      if (ids.every(function (id) { return selected[id]; })) {
+        ids.forEach(function (id) { delete selected[id]; });
+      } else {
+        ids.forEach(function (id) { selected[id] = true; });
+      }
+      renderBoard();
+    }
+
+    function deleteProjects(ids) {
+      var locals = loadLocal();
+      var files = lsGet(LS_FILES, {});
+      var ai = lsGet(LS_AI, {});
+      ids.forEach(function (id) { delete files[id]; delete ai[id]; });
+      saveLocal(locals.filter(function (p) { return ids.indexOf(p.id) < 0; }));
+      lsSet(LS_FILES, files);
+      lsSet(LS_AI, ai);
+      /* 灵感备档项目被删时，同步清掉灵感库的点赞快照，避免出现“已赞但无备档” */
+      var liked = lsGet('rl_insp_liked_v1', []);
+      if (Array.isArray(liked) && liked.length) {
+        var keep = liked.filter(function (x) {
+          return ids.indexOf('local-insp-' + x.id) < 0;
+        });
+        if (keep.length !== liked.length) lsSet('rl_insp_liked_v1', keep);
+      }
+      if (detailId && ids.indexOf(detailId) >= 0) closeDetail();
+    }
+
+    function deleteSelected() {
+      var ids = selectedIds();
+      if (!ids.length) { toast(L(STR.selNone)); return; }
+      if (!window.confirm(L(STR.selDelConfirm).replace('{n}', ids.length))) return;
+      deleteProjects(ids);
+      selected = {};
+      renderBoard();
+      toast(L(STR.selDelDone).replace('{n}', ids.length));
+    }
+
+    function exportSelected() {
+      var ids = selectedIds();
+      if (!ids.length) { toast(L(STR.selNone)); return; }
+      var locals = loadLocal();
+      var projs = locals.filter(function (p) { return ids.indexOf(p.id) >= 0; });
+      if (!projs.length) { toast(L(STR.selNone)); return; }
+      var allFiles = lsGet(LS_FILES, {});
+      var allAi = lsGet(LS_AI, {});
+      var files = {}, analysis = {};
+      projs.forEach(function (p) {
+        if (allFiles[p.id]) files[p.id] = allFiles[p.id];
+        if (allAi[p.id]) analysis[p.id] = allAi[p.id];
+      });
+      downloadText('项目库选中-' + today() + '.json', JSON.stringify({
+        app: 'raphaelliu-projects', version: 1, exportedAt: nowStr(),
+        projects: projs, files: files, analysis: analysis
+      }, null, 2));
+      toast(L(STR.selExpOk).replace('{n}', projs.length));
+    }
+
+    function pCardClick(e, id) {
+      if (selectMode) {
+        e.preventDefault();
+        toggleSelect(id);
+        return;
+      }
+      openDetail(id);
     }
 
     function renderArchived(activeList, all) {
@@ -972,10 +1130,14 @@
             }).join('') + '</div>'
           : '<p class="files-empty">' + esc(L(STR.noFiles)) + '</p>') +
         (local
-          ? '<div class="rv-input" style="margin-top:10px">' +
+          ? '<div class="rv-input" style="margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center">' +
             '<label class="btn upload-label">' + esc(L(STR.uploadBtn)) +
             '<input type="file" id="fileInput" multiple style="display:none"></label>' +
-          '</div>'
+            '<label class="btn upload-label">' + esc(L(STR.projImport)) +
+            '<input type="file" id="projFileInput" accept=".json,application/json" style="display:none"></label>' +
+            '<button type="button" class="btn" onclick="exportOneProject(\'' + esc(p.id) + '\')">' + esc(L(STR.projExport)) + '</button>' +
+            '</div>' +
+            '<p class="files-hint">' + esc(L(STR.projImportHint)) + '</p>'
           : '<p class="files-hint">' + esc(L(STR.archExample)) + '</p>') +
         '</div>';
 
@@ -1055,6 +1217,11 @@
       var fi = document.getElementById('fileInput');
       if (fi) fi.addEventListener('change', function () {
         if (this.files.length) registerFiles(p.id, this.files);
+      });
+      var pfi = document.getElementById('projFileInput');
+      if (pfi) pfi.addEventListener('change', function () {
+        if (this.files.length) importProjectFileInto(p.id, this.files[0]);
+        this.value = '';
       });
       var dvlAdd = document.getElementById('dvlAddBtn');
       if (dvlAdd) dvlAdd.addEventListener('click', function () { addDvlRow(); });
@@ -1308,35 +1475,100 @@
       toast(L(STR.expLocalOk).replace('{n}', locals.length));
     }
 
+    /* 统一导入：支持整库备份（projects 数组）、项目数组、单个项目文件三种格式 */
+    function normalizeImported(data) {
+      var list = [];
+      if (Array.isArray(data)) list = data;
+      else if (data && Array.isArray(data.projects)) list = data.projects;
+      else if (data && (data.id || data.name)) list = [data];
+      var stamp = Date.now().toString(36);
+      var out = [];
+      list.forEach(function (p, i) {
+        if (!p || typeof p !== 'object' || !(p.name || p.id)) return;
+        var q = JSON.parse(JSON.stringify(p));
+        /* 数据文件里的示例项目 ID 不带 local-，导入后必须换成本地 ID，否则会被当作只读示例 */
+        if (!/^local-/.test(String(q.id || ''))) q.id = 'local-imp-' + stamp + '-' + i;
+        q.name = String(q.name || q.id).slice(0, 80);
+        if (STAGES.indexOf(q.stage) < 0) q.stage = '构想';
+        q.archived = !!q.archived;
+        q.updatedAt = q.updatedAt || today();
+        out.push(q);
+      });
+      return out;
+    }
+
+    function mergeImported(incoming, extraFiles, extraAi) {
+      var current = lsGet(LS_PROJ, []);
+      var dup = incoming.filter(function (q) {
+        return current.some(function (p) { return p.id === q.id; });
+      }).length;
+      if (dup && !window.confirm(L(STR.impConfirm).replace('{n}', dup))) return 0;
+      var merged = current.filter(function (p) {
+        return !incoming.some(function (q) { return q.id === p.id; });
+      });
+      lsSet(LS_PROJ, incoming.concat(merged));
+      if (extraFiles && typeof extraFiles === 'object') {
+        var fs2 = lsGet(LS_FILES, {});
+        Object.keys(extraFiles).forEach(function (k) { fs2[k] = extraFiles[k]; });
+        lsSet(LS_FILES, fs2);
+      }
+      if (extraAi && typeof extraAi === 'object') {
+        var ai = lsGet(LS_AI, {});
+        Object.keys(extraAi).forEach(function (k) { ai[k] = extraAi[k]; });
+        lsSet(LS_AI, ai);
+      }
+      renderBoard();
+      return incoming.length;
+    }
+
     function importLocalData(file) {
       var reader = new FileReader();
       reader.onload = function () {
         var data = null;
         try { data = JSON.parse(String(reader.result || '')); } catch (e) {}
-        if (!data || !Array.isArray(data.projects)) { toast(L(STR.impLocalBad)); return; }
-        var incoming = data.projects.filter(function (p) { return p && /^local-/.test(String(p.id || '')); });
+        var incoming = data ? normalizeImported(data) : [];
         if (!incoming.length) { toast(L(STR.impLocalBad)); return; }
-        var current = lsGet(LS_PROJ, []);
-        var dup = incoming.filter(function (q) {
-          return current.some(function (p) { return p.id === q.id; });
-        }).length;
-        if (dup && !window.confirm(L(STR.impConfirm).replace('{n}', dup))) return;
-        var merged = current.filter(function (p) {
-          return !incoming.some(function (q) { return q.id === p.id; });
-        });
-        lsSet(LS_PROJ, incoming.concat(merged));
-        if (data.files && typeof data.files === 'object') {
-          var fs2 = lsGet(LS_FILES, {});
-          Object.keys(data.files).forEach(function (k) { fs2[k] = data.files[k]; });
-          lsSet(LS_FILES, fs2);
+        var n = mergeImported(incoming, data.files, data.analysis);
+        if (n) toast(L(STR.impLocalOk).replace('{n}', n));
+      };
+      reader.readAsText(file);
+    }
+
+    /* 单个项目：导出为独立项目文件（含资料与分析记录） */
+    function exportOneProject(id) {
+      var p = findProject(id);
+      if (!p) return;
+      var files = {}, analysis = {};
+      var f = filesOf(id);
+      var a = analysisOf(id);
+      if (f.length) files[id] = f;
+      if (a.length) analysis[id] = a;
+      downloadText(String(p.name || 'project') + '-项目文件-' + today() + '.json', JSON.stringify({
+        app: 'raphaelliu-projects', version: 1, exportedAt: nowStr(),
+        projects: [p], files: files, analysis: analysis
+      }, null, 2));
+      toast(L(STR.projExportOk));
+    }
+
+    /* 在项目详情里导入项目文件：是项目 JSON 就入库，其他文件当作资料附加 */
+    function importProjectFileInto(pid, file) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var data = null;
+        try { data = JSON.parse(String(reader.result || '')); } catch (e) {}
+        var incoming = data ? normalizeImported(data) : [];
+        if (!incoming.length) {
+          registerFiles(pid, [file]);
+          return;
         }
-        if (data.analysis && typeof data.analysis === 'object') {
-          var ai = lsGet(LS_AI, {});
-          Object.keys(data.analysis).forEach(function (k) { ai[k] = data.analysis[k]; });
-          lsSet(LS_AI, ai);
-        }
-        renderBoard();
-        toast(L(STR.impLocalOk).replace('{n}', incoming.length));
+        var n = mergeImported(
+          incoming,
+          (data.files && typeof data.files === 'object') ? data.files : null,
+          (data.analysis && typeof data.analysis === 'object') ? data.analysis : null
+        );
+        if (!n) return;
+        refreshDetail(pid);
+        toast(L(STR.projImportOk).replace('{n}', n));
       };
       reader.readAsText(file);
     }
@@ -1366,6 +1598,13 @@
       if (this.files.length) importLocalData(this.files[0]);
       this.value = '';
     });
+    document.getElementById('selectModeBtn').addEventListener('click', toggleSelectMode);
+    document.getElementById('selAllBtn').addEventListener('click', selectAllVisible);
+    document.getElementById('selDeleteBtn').addEventListener('click', deleteSelected);
+    document.getElementById('selExportBtn').addEventListener('click', exportSelected);
+    document.getElementById('selImportBtn').addEventListener('click', function () {
+      document.getElementById('importFile').click();
+    });
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') { closeDetail(); closeWizard(); }
     });
@@ -1384,6 +1623,9 @@
     window.gateKey = gateKey;
     window.cycleStepStatus = cycleStepStatus;
     window.copyProjLink = copyProjLink;
+    window.pCardClick = pCardClick;
+    window.toggleSelect = toggleSelect;
+    window.exportOneProject = exportOneProject;
 
     buildFilters();
     renderBoard();

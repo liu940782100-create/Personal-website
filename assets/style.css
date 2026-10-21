@@ -469,6 +469,32 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   white-space: nowrap;
 }
 
+/* 批量操作条（点选模式） */
+.batch-bar {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  margin: -8px 0 18px; padding: 8px 14px;
+  border: 1.2px dashed var(--border);
+  border-radius: var(--wob-b);
+  background: var(--bg-elevated);
+}
+.batch-bar .sel-count {
+  margin-right: auto;
+  font-family: var(--font-hand); font-size: 16px;
+  color: var(--text-dim);
+}
+/* 卡片左上角勾选框 */
+.p-check { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+.p-check input { width: 17px; height: 17px; accent-color: var(--accent); cursor: pointer; }
+.p-card.p-selected { border-color: var(--c-projects); }
+.p-card.p-selected::before {
+  content: ""; position: absolute; inset: -3px -2px;
+  border: 1.8px solid var(--c-projects);
+  border-radius: 55% 45% 60% 40% / 60% 45% 55% 45%;
+  transform: rotate(-1deg); opacity: .6; pointer-events: none;
+}
+.p-card.p-selected { position: relative; }
+.p-card.p-noselect { opacity: .5; }
+
 /* ---------- 知识卡片（墨线框 + 左侧竖线的五栏） ---------- */
 .card-list { display: flex; flex-direction: column; gap: 20px; padding-bottom: 48px; }
 .k-card {
