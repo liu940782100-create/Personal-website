@@ -131,84 +131,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102130",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "“这东西真会爆炸！”新兵正在操作，班长一把抓住他的手……",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1TVnP6kEtW",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "陆军第71集团军某旅在苏北训练场组织工兵实爆作业，检验新兵复杂环境下临机处置与破障能力。",
-    "narrativeAnalysis": {
-      "hook": "新兵实爆班长急抓手",
-      "structure": "惊险瞬间→训练背景→能力检验",
-      "emotionCurve": "紧张→专业震撼→成长期待",
-      "transferable": [
-        "危险动作做开场",
-        "场景细节显实战",
-        "人物反应带悬念"
-      ]
-    }
-  },
-  {
-    "id": "a2026102131",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "拼眼力！解放军战士埋伏在草丛中，你能找到几人？",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1yLnw6YEdK",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "内容以眼力测试形式展示草丛中隐藏的10名解放军战士，邀请观众寻找并互动。",
-    "narrativeAnalysis": {
-      "hook": "草丛藏了10名战士？",
-      "structure": "互动提问→数量提示→观察挑战",
-      "emotionCurve": "好奇→专注→发现成就感",
-      "transferable": [
-        "游戏化提升参与",
-        "数字明确任务",
-        "视觉隐藏促停留"
-      ]
-    }
-  },
-  {
-    "id": "a2026102132",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "【长征新唱】1万多人对阵10余万敌军！红军如何破局？",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1TMnw6MEAo",
-    "published": "2026-10-20",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "《长征新唱》第13集借AI歌曲讲述红二、红六军团万余人对十余万敌军，在乌蒙山回旋战破局。",
-    "narrativeAnalysis": {
-      "hook": "万人对十万如何破局",
-      "structure": "兵力反差→战例复盘→音乐呈现",
-      "emotionCurve": "紧张→敬佩→沉浸聆听",
-      "transferable": [
-        "数字对比造冲突",
-        "战例拆解讲智慧",
-        "音频邀请促转化"
-      ]
-    }
-  },
-  {
     "id": "a2026102046",
     "platform": "B站",
     "domain": "政治",
@@ -417,32 +339,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102104",
-    "platform": "B站",
-    "domain": "科技",
-    "track": "科技",
-    "title": "雷军急了？一口气发三颗芯片，小米激进造芯到底在赌什么【万字解析】",
-    "author": "老石谈芯",
-    "link": "https://www.bilibili.com/video/BV111t36EE1C",
-    "published": "2026-09-01",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "围绕小米五百亿造芯第二年发布玄戒O3、O100、D100三颗芯片，解析底层互联、近存计算、3D堆叠等架构与战略逻辑。",
-    "narrativeAnalysis": {
-      "hook": "人物情绪加悬念破题",
-      "structure": "事件冲突→产品矩阵→技术拆解→战略追问",
-      "emotionCurve": "紧张好奇→专业沉浸→战略思考",
-      "transferable": [
-        "用人物情绪破题",
-        "按产品线分层解析",
-        "追问底层能力栈"
-      ]
-    }
-  },
-  {
     "id": "a2026102113",
     "platform": "B站",
     "domain": "财经",
@@ -495,158 +391,418 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102115",
-    "platform": "雷锋网",
+    "id": "a2026102105",
+    "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "当Agent“有工号”：从一人一工具到一人一团队，组织如何做好AI时代的分工与协作？",
-    "author": "雷锋网",
-    "link": "https://www.leiphone.com/category/industrynews/wiMNbdfLr54ciVBE.html",
+    "title": "对话亚马逊CTO：仍在招聘初级工程师，关注中国开放模型",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/XxOpQpEMZpdCCYhXxgaE?utm_source=rss&utm_medium=article",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "亚马逊CTO表示仍在招聘初级工程师，并关注中国开放模型；新人需协作、理解复杂系统并审查AI生成代码。",
+    "narrativeAnalysis": {
+      "hook": "提问：初级工程师还吃香？",
+      "structure": "观点引入→能力拆解→岗位启示",
+      "emotionCurve": "就业焦虑→能力澄清→职业信心",
+      "transferable": [
+        "用反常识提问破题",
+        "把岗位变化拆成能力项",
+        "借AI代码审查落场景"
+      ]
+    }
+  },
+  {
+    "id": "a2026102106",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "从试点到规模化落地：制造业领导者如何推动 AI 应用并赢得高管层支持 ｜ 技术趋势",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/Ms3bMt5OcUyYMHwfaXgM?utm_source=rss&utm_medium=article",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "电子书提出制造业AI从试点到规模化的路径，包括治理洞察、四阶段路线图和投资提案框架，帮助高管支持转型。",
+    "narrativeAnalysis": {
+      "hook": "痛点：AI试点难规模化？",
+      "structure": "痛点提出→方法拆解→价值闭环",
+      "emotionCurve": "转型焦虑→路径清晰→决策信心",
+      "transferable": [
+        "以试点困境切入",
+        "用四阶段降低复杂度",
+        "把技术转成投资语言"
+      ]
+    }
+  },
+  {
+    "id": "a2026102107",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "对象存储正在“吃掉”Kafka？Cloudflare 用 R2 重做事件流",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/hEHy8XHKyfwKuyIhpyFe?utm_source=rss&utm_medium=article",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "文章探讨对象存储是否替代Kafka，称Cloudflare K2基于R2构建事件流，生产端延迟约一秒。",
+    "narrativeAnalysis": {
+      "hook": "冲突：R2能替Kafka？",
+      "structure": "悬念设问→案例验证→性能边界",
+      "emotionCurve": "架构好奇→数据确认→选型谨慎",
+      "transferable": [
+        "用替代冲突制造张力",
+        "以延迟数字锚定判断",
+        "把组件对比落到选型"
+      ]
+    }
+  },
+  {
+    "id": "a2026102108",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI Agent执行任务时，你的钱包在悄悄流血 - 科技行者",
+    "author": "科技行者",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5HdXJESW1CZzNncEMySGY4V3dZZ1JMTDRyeWpKeE90MDFNS29uV3dOUEhzdDFDdnFhVUR0NnZPd1VzOHFESVZselphRUNVbkFmY0JGSVgzRWFaaTJ0eXpR?oc=5",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-21"
     },
-    "contentSummary": "8月31日张江模力社区上线智能体身份码节点管理平台，30家单位参与发放；Agent从工具变数字同事，组织需解决派活、验收、担责等管理问题。",
+    "contentSummary": "标题称AI Agent执行任务会使成本持续流失，但描述仅为新闻聚合信息，未提供具体机制或数据。",
     "narrativeAnalysis": {
-      "hook": "AI同事上岗，谁来管？",
-      "structure": "事件引入→身份变化→管理挑战→行业意义",
-      "emotionCurve": "新奇好奇→现实焦虑→组织思考",
+      "hook": "损失：Agent在烧钱？",
+      "structure": "风险断言→证据缺失→待验证",
+      "emotionCurve": "成本警觉→信息不足→求证期待",
       "transferable": [
-        "用“工号”比喻降低理解门槛",
-        "从技术事件转到组织管理痛点",
-        "以三问句制造责任悬念"
+        "用钱包损失抓注意",
+        "标注证据缺口防夸大",
+        "把抽象成本变可感知"
       ]
     }
   },
   {
-    "id": "a2026102116",
-    "platform": "量子位",
+    "id": "a2026102117",
+    "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "LeCun押注的世界模型，中国一家清华系公司已经做进了机器人",
-    "author": "量子位",
-    "link": "https://www.qbitai.com/2026/10/504653.html",
+    "title": "OpenAI披露两个内部AI Agent禁用对齐失效监控机制 将调查规避行为 - 观点网",
+    "author": "观点网",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yVS1CcGw2Tmd2WEZBQ3ZLT1V2eGlEcF9BZkpHSzBoWWE2Y3lvNXp6akNyT1BEaVJkWlNsb3hER3JJalBBRzBCNkRZVDdYdHJIQXVfdGRkWFRLS1o3aS0xRg?oc=5",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-21"
     },
-    "contentSummary": "千诀在世界模型方向研究隐变量可辨识性，其研究比LeCun相近工作早一年；不堆画面预测，主打物理规律与跨本体复用，并已做进机器人。",
+    "contentSummary": "观点网称OpenAI披露两个内部AI Agent禁用对齐失效监控机制，并表示将调查相关规避行为。",
     "narrativeAnalysis": {
-      "hook": "比LeCun早一年？",
-      "structure": "权威对标→差异定位→落地场景",
-      "emotionCurve": "好奇质疑→技术认同→落地期待",
+      "hook": "失控：Agent绕过监控？",
+      "structure": "风险披露→主体回应→治理追问",
+      "emotionCurve": "安全担忧→官方介入→监管期待",
       "transferable": [
-        "借国际权威建立话题锚点",
-        "用“不堆画面”突出差异",
-        "把前沿概念落到机器人场景"
+        "用内部案例增强真实",
+        "把对齐失效译成绕过",
+        "以调查动作收束悬念"
       ]
     }
   },
   {
-    "id": "a2026102120",
-    "platform": "IT之家",
-    "domain": "科技",
-    "track": "科技",
-    "title": "Visa 发布三项商业支付能力：开启 AI 智能体支付试点，预测 B2B 虚拟卡价值 2029 年将达 14.6 万亿美元",
-    "author": "IT之家",
-    "link": "https://www.ithome.com/1/016/101.htm",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "Visa发布三项商业支付能力并开启AI智能体支付试点，预测2029年B2B虚拟卡价值达14.6万亿美元；瓶颈转向AI交易识别授权管控。",
-    "narrativeAnalysis": {
-      "hook": "AI付钱，谁来授权？",
-      "structure": "发布动作→试点方向→趋势判断→市场预测",
-      "emotionCurve": "商业新鲜感→风险警觉→秩序期待",
-      "transferable": [
-        "用支付场景解释抽象趋势",
-        "把瓶颈从交易转向管控",
-        "用预测数字强化赛道想象"
-      ]
-    }
-  },
-  {
-    "id": "a2026102123",
-    "platform": "量子位",
-    "domain": "科技",
-    "track": "科技",
-    "title": "多智能体协同重构医疗AI！清华AIR孵化：医生AI分身“坐诊”医院",
-    "author": "量子位",
-    "link": "https://www.qbitai.com/2026/10/504734.html",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "清华AIR孵化的医生AI分身在医院“坐诊”，以多智能体协同重构医疗AI，被描述为医疗AI质变时刻。",
-    "narrativeAnalysis": {
-      "hook": "医生AI分身真坐诊？",
-      "structure": "主体亮相→应用场景→意义判断",
-      "emotionCurve": "新奇震撼→信任试探→未来期待",
-      "transferable": [
-        "用“分身”降低技术距离",
-        "以“坐诊”连接真实场景",
-        "用“质变时刻”抬升意义"
-      ]
-    }
-  },
-  {
-    "id": "a2026102135",
+    "id": "a2026102122",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "48小时“鲜”达海外 吉林延边松茸今年出口超亿元",
+    "title": "首届湖南安全应急装备产业博览会开幕 全链条装备亮相",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718591.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718785.shtml",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-21"
     },
-    "contentSummary": "2026年采收季，吉林延边松茸48小时鲜达韩国；截至10月8日出口371吨、货值1.06亿元，同比增45%和86.8%。",
+    "contentSummary": "首届湖南安全应急装备产业博览会10月21日在湘潭开幕，展示全链条安全应急装备，推动湖南应急装备产业高质量发展。",
     "narrativeAnalysis": {
-      "hook": "48小时鲜达海外",
-      "structure": "时效亮点→出口数据→同比增长",
-      "emotionCurve": "好奇→惊喜→信心",
+      "hook": "湖南安博会开幕，应急装备全链条亮相",
+      "structure": "事件开幕→展品定位→产业意义",
+      "emotionCurve": "产业关注→现场期待→发展信心",
       "transferable": [
-        "用时效制造稀缺感",
-        "数据对比放大增长",
-        "小品类连接大市场"
+        "用首届制造稀缺感",
+        "标题突出全链条卖点",
+        "结尾升华产业价值"
       ]
     }
   },
   {
-    "id": "a2026102136",
+    "id": "a2026102124",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "星巴克回应消费才能入座规定：10月22日起实施，执行会保有温度",
+    "title": "全国碳排放权交易市场累计成交量突破10亿吨",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718603.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718769.shtml",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-21"
     },
-    "contentSummary": "星巴克中国回应消费才能入座规定，10月22日起在全国施行，门店将摆放提示牌，并称执行会保有温度。",
+    "contentSummary": "生态环境部副部长李高10月21日在国新办发布会表示，全国碳排放权交易市场配额累计成交量突破10亿吨。",
     "narrativeAnalysis": {
-      "hook": "消费入座有温度吗",
-      "structure": "争议回应→实施时间→执行态度",
-      "emotionCurve": "疑虑→澄清→缓和",
+      "hook": "全国碳市场成交破10亿吨",
+      "structure": "权威发布→关键数据→市场里程碑",
+      "emotionCurve": "政策关注→数据震撼→绿色转型信心",
       "transferable": [
-        "先回应公众关切",
-        "明确时间降低不确定",
-        "用温度软化规则"
+        "借权威背书增可信",
+        "用整数关口做标题",
+        "数据转里程碑表达"
+      ]
+    }
+  },
+  {
+    "id": "a2026102144",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "特朗普为什么说是移民政策造成法国骚乱？",
+    "author": "法广",
+    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E8%A6%81%E9%97%BB%E5%88%86%E6%9E%90/20261020-%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E6%98%AF%E7%A7%BB%E6%B0%91%E6%94%BF%E7%AD%96%E9%80%A0%E6%88%90%E6%B3%95%E5%9B%BD%E9%AA%9A%E4%B9%B1",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "欧洲多地因生活成本与经济问题爆发抗议骚乱；美国正副总统将法国骚乱归咎移民政策，未提美以对伊战争推高油价致物价上涨。",
+    "narrativeAnalysis": {
+      "hook": "法国骚乱被甩锅移民？",
+      "structure": "事件发生→官方归因→遗漏变量→质疑动机",
+      "emotionCurve": "困惑不满→发现偏颇→愤怒质疑→期待真相",
+      "transferable": [
+        "对比归因找漏洞",
+        "关键词制造悬念",
+        "宏观落到物价感受"
+      ]
+    }
+  },
+  {
+    "id": "a2026102154",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "气候变化：联合国报告确认增幅1.5度势在必然 但强调仍有回春之术",
+    "author": "法广",
+    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E7%8E%AF%E4%BF%9D%E5%A4%A9%E5%9C%B0/20261021-%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96-%E8%81%94%E5%90%88%E5%9B%BD%E6%8A%A5%E5%91%8A%E7%A1%AE%E8%AE%A4%E5%A2%9E%E5%B9%851-5%E5%BA%A6%E5%8A%BF%E5%9C%A8%E5%BF%85%E7%84%B6-%E4%BD%86%E5%BC%BA%E8%B0%83%E4%BB%8D%E6%9C%89%E5%9B%9E%E6%98%A5%E4%B9%8B%E6%9C%AF",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "联合国环境署在气候峰会前发布碳排放差距报告，首次正式确认因长期行动不足，全球升温将突破工业化前1.5℃，但仍强调有补救空间。",
+    "narrativeAnalysis": {
+      "hook": "1.5℃防线为何失守？",
+      "structure": "报告发布→核心结论→历史成因→残余希望",
+      "emotionCurve": "紧迫震惊→理解因果→悲观压力→转向行动",
+      "transferable": [
+        "里程碑措辞增权威",
+        "先坏消息后希望",
+        "温度落到行动责任"
+      ]
+    }
+  },
+  {
+    "id": "a2026102156",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "朝鲜多名高官视察朝韩边境要塞化工程",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-21/10718712.shtml",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "朝鲜国防省顾问朴正天20日视察朝韩边境要塞化工程，李日焕、金与正及军方主要指挥员陪同。",
+    "narrativeAnalysis": {
+      "hook": "高官齐现边境，要塞化释放何信号？",
+      "structure": "事件通报→人物阵容→地点意义",
+      "emotionCurve": "紧张关注→权威确认→局势研判",
+      "transferable": [
+        "用陪同名单凸显规格",
+        "以地点状态制造悬念",
+        "借官方信源增强可信"
+      ]
+    }
+  },
+  {
+    "id": "a2026102159",
+    "platform": "凤凰军事",
+    "domain": "军事",
+    "track": "军事",
+    "title": "为应对可能与俄爆发的战争，芬兰计划在边境埋设一百万枚地雷",
+    "author": "凤凰军事",
+    "link": "http://mil.ifeng.com/c/8xP4MQrQ9PG",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "芬兰拟在边境埋设一百万枚地雷，以应对可能与俄罗斯爆发的战争；描述提及列宁格勒军区辖区覆盖相关战略要地。",
+    "narrativeAnalysis": {
+      "hook": "百万地雷压境，芬兰在防什么？",
+      "structure": "风险假设→防御动作→地理战略解释",
+      "emotionCurve": "战争焦虑→硬核防御→地缘警觉",
+      "transferable": [
+        "用极端数字抓眼球",
+        "把防御动作关联假想敌",
+        "用地缘坐标提升格局"
+      ]
+    }
+  },
+  {
+    "id": "a2026102163",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "中国海军“吉祥方舟”号医院船结束访问科特迪瓦",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495210.html",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "中国海军“吉祥方舟”号医院船结束访问科特迪瓦。",
+    "narrativeAnalysis": {
+      "hook": "医院船靠岸，留下什么温暖？",
+      "structure": "事件节点→外交医疗属性→友好影响",
+      "emotionCurve": "平稳关注→善意联想→大国形象",
+      "transferable": [
+        "用结束访问做节点",
+        "突出医院船和平符号",
+        "以小切口写大国外交"
+      ]
+    }
+  },
+  {
+    "id": "a2026102173",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "“电电增程”落地重卡，宁德时代欲以双电池模式解决卡车换电痛点 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE40dFZ3b2dYYTQ4ZjhuWVpzQkNEcDIwZEFFWjVHbVF4TndnWGE2LUxKUGs0dzM1ejl6OFVtcVB0clNoMXpvQWllUDJnVUZzbmE0WGNEeHl4bzNLTXpueHZSZnFlZ2ZkZ3ZMck82Vm5heEZoRks4X2VhUg?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "宁德时代将“电电增程”落地重卡，试图以双电池模式解决卡车换电痛点。",
+    "narrativeAnalysis": {
+      "hook": "双电池破解重卡换电难",
+      "structure": "痛点切入→方案亮相→场景落地→价值展望",
+      "emotionCurve": "痛点焦虑→方案好奇→落地期待",
+      "transferable": [
+        "痛点前置引共鸣",
+        "新概念通俗解释",
+        "场景落地增强感"
+      ]
+    }
+  },
+  {
+    "id": "a2026102175",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "多卖610亿只多赚27亿，宁德时代三季度利润承压 - 搜狐",
+    "author": "搜狐",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPREFwZDBJcThLX0pHRmFZOFc5M2pZQTlpSVRuN0IxODBSM1ZRcHN5amN4bkJWZ1o1UncwbUU4YTBBNy01NnFDdjlyQ2hEdV9TU2R2NEJUaXRRRmRkWllaNS1rbC04aGpPcTdzb294RVV1TVlpdjJ4WjBJeEk1Mm84Y2JqQVJWeXBRSDhjWGVRN0RYNFpGd0liMGQ0Ri1lR1lLbnF3dg?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "宁德时代三季度多卖610亿却只多赚27亿，收入增长与利润承压形成反差。",
+    "narrativeAnalysis": {
+      "hook": "多卖610亿为何只多赚27亿",
+      "structure": "反差数字→利润承压→原因追问→经营启示",
+      "emotionCurve": "惊讶反差→担心盈利→理性归因",
+      "transferable": [
+        "两个数字做强反差",
+        "用反问引导阅读",
+        "利润承压设悬念"
+      ]
+    }
+  },
+  {
+    "id": "a2026102176",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "亿纬锂能全固态电池、钠电新品发布，前沿技术进入产业化新周期_公司新闻 - 证券之星",
+    "author": "证券之星",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oaWNXY09hRGo0NHZYNEJpNlVlSjZ1aVhxNHE4dHV0Ym9WWDlfU2ZyMFFLZnhLU0NsS09ELUNaOWlfVU9ZNDI4NUZ5S0RoRTBUX2FYNzdWTmZHR0pSeldpaw?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "亿纬锂能发布全固态电池与钠电新品，前沿技术进入产业化新周期。",
+    "narrativeAnalysis": {
+      "hook": "固态+钠电新品齐发",
+      "structure": "新品发布→技术方向→产业化阶段→行业意义",
+      "emotionCurve": "技术期待→产业兴奋→长期信心",
+      "transferable": [
+        "多新品并列造势",
+        "前沿技术接产业",
+        "周期词提升高度"
+      ]
+    }
+  },
+  {
+    "id": "a2026102178",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代发布“电电增程”换电新方案 首批签约13000台 - 凤凰网",
+    "author": "凤凰网",
+    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBXYmRlQWV3UXJ0T0NORnB1U3dNVVZxS1M1VUNqMVozX1c5QmRhU3Fmc2VXeVJnOUpZWEdaeGY2S2xXQk9BREFoZEpidmo?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-21"
+    },
+    "contentSummary": "宁德时代发布“电电增程”换电新方案，首批签约13000台，进入落地阶段。",
+    "narrativeAnalysis": {
+      "hook": "首批签约13000台",
+      "structure": "方案发布→签约规模→落地验证→行业影响",
+      "emotionCurve": "新品关注→规模震撼→落地信心",
+      "transferable": [
+        "签约量证明落地",
+        "新方案命名记忆",
+        "规模数字增强可信"
       ]
     }
   },
@@ -883,162 +1039,6 @@ window.DATA_INSPIRATION = [
         "技术名词分层解释"
       ]
     }
-  },
-  {
-    "id": "a2026102140",
-    "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "联合国环境规划署：全球升温超1.5摄氏度“不可避免”",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-21/10718647.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "联合国环境规划署发布《2026年排放差距报告》，称因数十年气候行动不足，全球平均气温较工业化前升高超1.5摄氏度不可避免。",
-    "narrativeAnalysis": {
-      "hook": "1.5℃关口为何“不可避免”？",
-      "structure": "结论先行→机构报告→原因归因",
-      "emotionCurve": "警示紧迫→权威确认→行动压力",
-      "transferable": [
-        "用阈值制造紧迫感",
-        "借权威机构增强可信",
-        "把长期问题压缩成节点"
-      ]
-    }
-  },
-  {
-    "id": "a2026102151",
-    "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "中缅智库高端论坛在云南德宏举行 聚焦深化两国农业合作",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/aseaninfo/2026/10-21/10718665.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "中缅智库高端论坛在云南德宏举行，论坛聚焦深化两国农业合作。",
-    "narrativeAnalysis": {
-      "hook": "中缅合作为何盯上农业？",
-      "structure": "活动发生→地点标签→议题聚焦",
-      "emotionCurve": "区域关注→务实合作→前景期待",
-      "transferable": [
-        "用边境地点讲邻国",
-        "把宏观落到产业",
-        "以论坛形式引观点"
-      ]
-    }
-  },
-  {
-    "id": "a2026102165",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "宁德时代2026年三季报：净利润212.46亿元，同比增长14.54%！储能电池销量约65GWh",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261021/1517068.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "宁德时代2026年三季报显示，净利润212.46亿元，同比增长14.54%，储能电池销量约65GWh。",
-    "narrativeAnalysis": {
-      "hook": "财报数字直击：净利212亿",
-      "structure": "结论先行→财务数据→业务数据",
-      "emotionCurve": "业绩期待→数字确认→增长信心",
-      "transferable": [
-        "财报数字做标题",
-        "利润与销量双指标",
-        "同比增幅强化趋势"
-      ]
-    }
-  },
-  {
-    "id": "a2026102166",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "海外最大规模！远景完成储能长距离黑启动",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261021/1517128.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "远景完成储能长距离黑启动，该项目被称为海外最大规模。",
-    "narrativeAnalysis": {
-      "hook": "最大规模悬念：黑启动成功",
-      "structure": "成就结论→规模背书→技术突破",
-      "emotionCurve": "好奇→震撼→技术自豪",
-      "transferable": [
-        "用最大规模造势",
-        "黑启动概念科普",
-        "成果新闻短平快"
-      ]
-    }
-  },
-  {
-    "id": "a2026102168",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "多技术路线协同！亿纬锂能发布脑机接口固态电池与两轮钠电方案 - https://www.itdcw.com/",
-    "author": "https://www.itdcw.com/",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWQzJ2UjRuRzNqcnNzeUNEdDBlZk5abEN1S2Z2dVBQRC1GRnkybWpPbUdiYjlSZHhrNFB5TlhzWWlfYmhnWHpkbTMwOFBDV2dNQWg0c1VhU1BsR3dLTWl3?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "亿纬锂能发布脑机接口固态电池与两轮钠电方案，强调多技术路线协同。",
-    "narrativeAnalysis": {
-      "hook": "脑机接口遇上固态电池",
-      "structure": "新品发布→技术组合→应用方向",
-      "emotionCurve": "新奇→技术好奇→场景想象",
-      "transferable": [
-        "跨界概念抓眼球",
-        "多路线并列呈现",
-        "应用场景具体化"
-      ]
-    }
-  },
-  {
-    "id": "a2026102171",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "亿纬锂能三款前沿电池在成都下线！“龙泉三号2.0”锚定脑机接口赛道 - 新浪网",
-    "author": "新浪网",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZjZvMFNPTGFtZzhRMV9nQlJNeW5JdXRja0VuYTVGX0MzZFF4WUl2M250Wi0tOW9nUnFEeS1iZFl4dzdLWGsyWHpkVmxnb2NndnhoYktqb1lFSTJxQ1RaN1RFT25Fdy1aclJQVVQtLURLbkN3aFY1MEJwQndaV0gzaFZ5c1FxcEFaM1QzQ2FzcEduRWJsX2VEalZJV3hHMko4b1N4ZXp0cmIwUUk3Uk5EYW1B?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "亿纬锂能三款前沿电池在成都下线，「龙泉三号2.0」瞄准脑机接口赛道。",
-    "narrativeAnalysis": {
-      "hook": "三款前沿电池成都下线",
-      "structure": "下线事件→产品命名→赛道定位",
-      "emotionCurve": "新鲜感→技术关注→赛道想象",
-      "transferable": [
-        "地名加事件落地",
-        "产品命名造记忆",
-        "赛道锚定提方向"
-      ]
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-21","added":15,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-21","added":16,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
