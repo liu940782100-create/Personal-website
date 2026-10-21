@@ -62,6 +62,11 @@
   </main>
 
   <div id="footer"></div>
+  <!-- 垃圾桶：把项目卡片拖进来即删除（仅本地项目） -->
+  <div class="trash-bin" id="trashBin" ondragover="trashOver(event)" ondragleave="trashLeave(event)" ondrop="trashDrop(event)">
+    <span class="trash-ico" aria-hidden="true">🗑</span>
+    <span id="trashHint"></span>
+  </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <!-- 立项向导弹窗 -->
@@ -344,6 +349,11 @@
       aiStageMap: { zh: '当前处于{st}阶段，进度 {d}/{t} 步。', en: 'Now in {st}, {d}/{t} steps done.' },
       gateNote: { zh: '不可逆动作（开模 / 上线 / 对外发布）前，先过对应门径。', en: 'Before any irreversible action (tooling / go-live / publishing), pass its gate first.' },
       stageMoved: { zh: '阶段已调整为「{s}」', en: 'Stage set to "{s}"' },
+      openDetail: { zh: '查看详情', en: 'Open details' },
+      dragReadonly: { zh: '示例项目不可拖动或删除', en: 'Sample projects cannot be dragged or deleted' },
+      dragDelConfirm: { zh: '把项目「{n}」拖进垃圾桶，确认删除？', en: 'Delete project "{n}"?' },
+      dragDelDone: { zh: '已删除「{n}」', en: 'Deleted "{n}"' },
+      trashHint: { zh: '拖入删除', en: 'Drop to delete' },
       wzStage: { zh: '起始阶段', en: 'Starting stage' },
       gateHint: { zh: '点选门径行可切换状态：通过 → 待审 → 未到', en: 'Click a gate to cycle its status: PASS → HOLD → N/A' },
       gateMoved: { zh: '门径状态已更新', en: 'Gate status updated' },
@@ -404,7 +414,10 @@
         alert(getLang() === 'en' ? 'localStorage quota exceeded' : '浏览器存储已满，请删除部分资料后重试');
       }
     }
-    function loadLocal() { return lsGet(LS_PROJ, []); }
+    function loadLocal() {
+      var v = lsGet(LS_PROJ, []);
+      return Array.isArray(v) ? v : [];
+    }
     function saveLocal(a) { lsSet(LS_PROJ, a); }
     function allProjects() { return getData('projects').concat(loadLocal()); }
     function isLocal(p) { return /^local-/.test(p.id); }
@@ -509,6 +522,7 @@
       document.getElementById('selDeleteBtn').textContent = L(STR.selDelete);
       document.getElementById('selExportBtn').textContent = L(STR.selExport);
       document.getElementById('selImportBtn').textContent = L(STR.projImport);
+      document.getElementById('trashHint').textContent = L(STR.trashHint);
       ['filterStage', 'filterType', 'filterLevel'].forEach(function (id, i) {
         document.getElementById(id).value = keep[i];
       });
@@ -540,42 +554,53 @@
       var local = isLocal(p) && !archived;
       var editable = isLocal(p);
       var isSel = !!selected[p.id];
+      var canDrag = local && !selectMode;
       return '<div class="p-card' + (archived ? ' p-archived' : '') + (pendingGates ? ' p-gate-alert' : '') +
         (isSel ? ' p-selected' : '') + (selectMode && !editable ? ' p-noselect' : '') + '"' +
-        ' role="button" tabindex="0"' +
+        (canDrag ? ' draggable="true"' : '') +
+        ' role="button" tabindex="0" aria-expanded="false"' +
         (pendingGates ? ' title="' + esc(pendingGates + L(STR.gateAlert)) + '"' : '') +
-        ' onclick="pCardClick(event,\'' + esc(p.id) + '\')" onkeydown="pCardKey(event,\'' + esc(p.id) + '\')">' +
+        ' onclick="pCardClick(event,\'' + esc(p.id) + '\')" onkeydown="pCardKey(event,\'' + esc(p.id) + '\')"' +
+        (canDrag ? ' ondragstart="pDragStart(event,\'' + esc(p.id) + '\')" ondragend="pDragEnd(event)"' : '') + '>' +
         (selectMode
           ? '<label class="p-check" onclick="event.stopPropagation()">' +
               '<input type="checkbox"' + (isSel ? ' checked' : '') + (editable ? '' : ' disabled') +
               ' onchange="toggleSelect(\'' + esc(p.id) + '\')" aria-label="' + esc(L(STR.selOn)) + '">' +
             '</label>'
           : '') +
-        '<h4>' + esc(p.name) +
-          (p.inspSource ? '<span class="insp-badge">♡ ' + esc(L({ zh: '灵感备档', en: 'From Inspiration' })) + '</span>' : '') +
-          (archived ? '<span class="arch-badge">' + esc(L(STR.archivedBadge)) + '</span>' : '') +
-        '</h4>' +
-        '<div class="p-tags">' +
-          '<span class="level-badge lvl-' + esc(p.level || 'M') + '">' + esc(L((LEVELS[p.level] || LEVELS.M).name)) + '</span>' +
-          (p.type && TYPES[p.type] ? '<span class="type-badge">' + esc(L(TYPES[p.type].name)) + '</span>' : '') +
-          (p.scale && SCALES[p.scale] ? '<span class="scale-badge">' + esc(L(SCALES[p.scale])) + '</span>' : '') +
+        '<div class="p-head">' +
+          '<h4>' + esc(p.name) +
+            (p.inspSource ? '<span class="insp-badge">♡ ' + esc(L({ zh: '灵感备档', en: 'From Inspiration' })) + '</span>' : '') +
+            (archived ? '<span class="arch-badge">' + esc(L(STR.archivedBadge)) + '</span>' : '') +
+          '</h4>' +
+          (!archived && p.stage ? '<span class="p-state">' + esc(stageLabel(p.stage)) + '</span>' : '') +
+          '<span class="p-caret" aria-hidden="true">⌄</span>' +
         '</div>' +
-        '<div class="p-goal">' + esc(p.goal || L(STR.noGoal)) + '</div>' +
-        (p.link
-          ? '<div class="p-link-row"><a href="' + esc(fileHref(p.link)) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">▤ ' + esc(L(STR.linkOpen)) + '</a></div>'
-          : '') +
-        (local
-          ? '<div class="p-stage-pick" onclick="event.stopPropagation()">' +
-            STAGES.map(function (s) {
-              return '<button type="button" class="st-chip' + (p.stage === s ? ' on' : '') + '" onclick="setProjectStage(\'' + esc(p.id) + '\',\'' + s + '\')">' + esc(stageLabel(s)) + '</button>';
-            }).join('') + '</div>'
-          : '') +
-        (total
-          ? '<div class="p-progress"><i style="width:' + pct + '%"></i></div>' +
-            '<div class="p-progress-text">' + esc(L(STR.wfPrefix)) + done + '/' + total +
-              (gTotal ? esc(L(STR.gatesPassed)) + gDone + '/' + gTotal : '') +
-              ' · ' + esc(L(STR.updated)) + esc(p.updatedAt || '-') + '</div>'
-          : '<div class="p-progress-text">' + esc(L(STR.updated)) + esc(p.updatedAt || '-') + '</div>') +
+        '<div class="p-body">' +
+          '<div class="p-tags">' +
+            '<span class="level-badge lvl-' + esc(p.level || 'M') + '">' + esc(L((LEVELS[p.level] || LEVELS.M).name)) + '</span>' +
+            (p.type && TYPES[p.type] ? '<span class="type-badge">' + esc(L(TYPES[p.type].name)) + '</span>' : '') +
+            (p.scale && SCALES[p.scale] ? '<span class="scale-badge">' + esc(L(SCALES[p.scale])) + '</span>' : '') +
+          '</div>' +
+          '<div class="p-goal">' + esc(p.goal || L(STR.noGoal)) + '</div>' +
+          (p.link
+            ? '<div class="p-link-row"><a href="' + esc(fileHref(p.link)) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">▤ ' + esc(L(STR.linkOpen)) + '</a></div>'
+            : '') +
+          (local
+            ? '<div class="p-stage-pick" onclick="event.stopPropagation()">' +
+              STAGES.map(function (s) {
+                return '<button type="button" class="st-chip' + (p.stage === s ? ' on' : '') + '" onclick="setProjectStage(\'' + esc(p.id) + '\',\'' + s + '\')">' + esc(stageLabel(s)) + '</button>';
+              }).join('') + '</div>'
+            : '') +
+          (total
+            ? '<div class="p-progress"><i style="width:' + pct + '%"></i></div>' +
+              '<div class="p-progress-text">' + esc(L(STR.wfPrefix)) + done + '/' + total +
+                (gTotal ? esc(L(STR.gatesPassed)) + gDone + '/' + gTotal : '') +
+                ' · ' + esc(L(STR.updated)) + esc(p.updatedAt || '-') + '</div>'
+            : '<div class="p-progress-text">' + esc(L(STR.updated)) + esc(p.updatedAt || '-') + '</div>') +
+          '<button type="button" class="p-detail-btn" onclick="event.stopPropagation();openDetail(\'' + esc(p.id) + '\')">' +
+            esc(L(STR.openDetail)) + ' →</button>' +
+        '</div>' +
       '</div>';
     }
 
@@ -604,7 +629,8 @@
       var showStages = fs ? [fs] : STAGES;
       document.getElementById('kanban').innerHTML = showStages.map(function (stage) {
         var col = list.filter(function (p) { return p.stage === stage; });
-        return '<div class="kanban-col">' +
+        return '<div class="kanban-col" ondragover="pColOver(event,this)" ondragleave="pColLeave(event,this)"' +
+          ' ondrop="pColDrop(event,this,\'' + stage + '\')">' +
           '<h3>' + ((STAGE_ICONS[stage] || '') ? '<span class="stage-mark">' + STAGE_ICONS[stage] + '</span>' : '') + stageLabel(stage) +
             '<span class="col-count">' + col.length + '</span></h3>' +
           (col.length
@@ -727,7 +753,108 @@
         toggleSelect(id);
         return;
       }
-      openDetail(id);
+      if (Date.now() - lastDragEnd < 300) { e.preventDefault(); return; }
+      if (e.target.closest('.p-body')) return;
+      toggleCard(e.currentTarget);
+    }
+
+    function toggleCard(card) {
+      if (!card) return;
+      var open = !card.classList.contains('open');
+      card.classList.toggle('open', open);
+      card.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    /* ---------- 拖动：改阶段 / 拖进垃圾桶删除（仅本地项目） ---------- */
+    var draggingId = null;
+    var lastDragEnd = 0;
+
+    function pDragStart(e, id) {
+      var p = findProject(id);
+      if (!p || !isLocal(p) || selectMode) {
+        e.preventDefault();
+        if (!isLocal(p || {})) toast(L(STR.dragReadonly));
+        return;
+      }
+      draggingId = id;
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/plain', id);
+      e.currentTarget.classList.add('p-dragging');
+      document.body.classList.add('p-dragging');
+    }
+
+    function pDragEnd(e) {
+      if (e.currentTarget) e.currentTarget.classList.remove('p-dragging');
+      endDrag();
+    }
+
+    function endDrag() {
+      clearDropHints();
+      document.body.classList.remove('p-dragging');
+      draggingId = null;
+      lastDragEnd = Date.now();
+    }
+
+    function clearDropHints() {
+      Array.prototype.forEach.call(document.querySelectorAll('.kanban-col.drop-hint'), function (el) {
+        el.classList.remove('drop-hint');
+      });
+      var bin = document.getElementById('trashBin');
+      if (bin) bin.classList.remove('over');
+    }
+
+    function pColOver(e, col) {
+      if (!draggingId) return;
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      Array.prototype.forEach.call(document.querySelectorAll('.kanban-col.drop-hint'), function (el) {
+        if (el !== col) el.classList.remove('drop-hint');
+      });
+      col.classList.add('drop-hint');
+    }
+
+    function pColLeave(e, col) {
+      if (e.relatedTarget && col.contains(e.relatedTarget)) return;
+      col.classList.remove('drop-hint');
+    }
+
+    function pColDrop(e, col, stage) {
+      e.preventDefault();
+      var id = draggingId;
+      endDrag();
+      if (!id) return;
+      var p = findProject(id);
+      if (!p || !isLocal(p)) { toast(L(STR.dragReadonly)); return; }
+      if (p.stage === stage) return;
+      setProjectStage(id, stage);
+    }
+
+    function trashOver(e) {
+      if (!draggingId) return;
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      document.getElementById('trashBin').classList.add('over');
+    }
+
+    function trashLeave(e) {
+      var bin = document.getElementById('trashBin');
+      if (e.relatedTarget && bin.contains(e.relatedTarget)) return;
+      bin.classList.remove('over');
+    }
+
+    function trashDrop(e) {
+      e.preventDefault();
+      var id = draggingId;
+      endDrag();
+      if (!id) return;
+      var p = findProject(id);
+      if (!p) return;
+      if (!isLocal(p)) { toast(L(STR.dragReadonly)); return; }
+      if (!window.confirm(L(STR.dragDelConfirm).replace('{n}', p.name))) return;
+      deleteProjects([id]);
+      if (selected[id]) delete selected[id];
+      renderBoard();
+      toast(L(STR.dragDelDone).replace('{n}', p.name));
     }
 
     function renderArchived(activeList, all) {
@@ -1300,7 +1427,7 @@
 
     function pCardKey(e, pid) {
       if (e.target !== e.currentTarget) return;
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openDetail(pid); }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleCard(e.currentTarget); }
     }
     function stepKey(e, pid, idx) {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); cycleStepStatus(pid, idx); }
