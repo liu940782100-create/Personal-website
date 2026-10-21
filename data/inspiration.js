@@ -391,6 +391,110 @@ window.DATA_INSPIRATION = [
     }
   },
   {
+    "id": "a2026102232",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "误导脸书用户逾十年 Meta被判支付250亿美元创纪录罚款",
+    "author": "REUTERS - Dado Ruvic",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E8%AF%AF%E5%AF%BC%E8%84%B8%E4%B9%A6%E7%94%A8%E6%88%B7%E9%80%BE%E5%8D%81%E5%B9%B4-meta%E8%A2%AB%E5%88%A4%E6%94%AF%E4%BB%98250%E4%BA%BF%E7%BE%8E%E5%85%83%E5%88%9B%E7%BA%AA%E5%BD%95%E7%BD%9A%E6%AC%BE",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "Meta因十多年误导新墨西哥州居民关于用户数据使用方式，被判支付250亿美元创纪录罚款；Meta称裁决变相征税言论自由并将上诉。",
+    "narrativeAnalysis": {
+      "hook": "天价罚款制造冲击",
+      "structure": "判决结果→违规原因→企业回应",
+      "emotionCurve": "震惊罚款→追责清晰→对抗悬念",
+      "transferable": [
+        "用创纪录金额抓眼球",
+        "先给判决再补违规因果",
+        "把企业抗辩留作后续钩子"
+      ]
+    }
+  },
+  {
+    "id": "a2026102234",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "联合国警告：圣婴强度恐破纪录 全球气候与经济面临冲击",
+    "author": "© REUTERS - Evan Vucci",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E8%81%94%E5%90%88%E5%9B%BD%E8%AD%A6%E5%91%8A-%E5%9C%A3%E5%A9%B4%E5%BC%BA%E5%BA%A6%E6%81%90%E7%A0%B4%E7%BA%AA%E5%BD%95-%E5%85%A8%E7%90%83%E6%B0%94%E5%80%99%E4%B8%8E%E7%BB%8F%E6%B5%8E%E9%9D%A2%E4%B8%B4%E5%86%B2%E5%87%BB",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "联合国警告当前圣婴现象强度可能破纪录，引发极端高温、干旱和洪水，冲击全球经济，约5000万人面临更严重粮食短缺，呼吁各国提前部署救援。",
+    "narrativeAnalysis": {
+      "hook": "权威警告加灾难数字",
+      "structure": "权威警告→灾害链条→行动呼吁",
+      "emotionCurve": "预警紧张→灾难压迫→行动希望",
+      "transferable": [
+        "借联合国背书提升紧迫",
+        "把气候灾害连到粮食经济",
+        "用人数让抽象风险具象"
+      ]
+    }
+  },
+  {
+    "id": "a2026102237",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "沙特一油田设施遭无人机袭击 致2死2伤",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718820.shtml",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "沙特防空部队拦截一架袭击阿美谢拜油田设施的无人机，碎片坠落致2死2伤，油田运营未受影响。",
+    "narrativeAnalysis": {
+      "hook": "拦截成功为何仍有人伤亡？",
+      "structure": "结果先行→拦截经过→伤亡与运营影响",
+      "emotionCurve": "突发紧张→拦截缓解→伤亡沉重→运营安心",
+      "transferable": [
+        "先给结果抓眼球",
+        "用关键数字增强可信",
+        "补充影响稳定预期"
+      ]
+    }
+  },
+  {
+    "id": "a2026102238",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "俄国防部：俄军继续打击乌物流中心及港口基础设施",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718818.shtml",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "俄国防部通报，10月21日白天俄军继续使用无人机打击乌物流中心、港口基础设施及运军货海上船只。",
+    "narrativeAnalysis": {
+      "hook": "俄军无人机再袭乌后勤线",
+      "structure": "官方通报→时间范围→打击目标→持续动作",
+      "emotionCurve": "权威发布→冲突升级→后勤承压→战局紧绷",
+      "transferable": [
+        "借官方信源立威",
+        "目标清单化呈现",
+        "突出持续制造张力"
+      ]
+    }
+  },
+  {
     "id": "a2026102224",
     "platform": "法广",
     "domain": "政治",
@@ -495,106 +599,236 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102204",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "AI Agent学会自我进化！微软与UCSB新研究：自己读论文、改代码 - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4ya1B4T0dmNC1lWGwwYVNxNGs1N2hGRW1XamM0LVRsRHdWUjBYN1A5dWhud3Rpb0JQVFpVTzRfSkRtVjhkQ3loWUVickljeUdDLTV1cUt3N3NvTnlHdXA5cmhtTXVBZFNUNW9xMzU5b2xjcndCcTh5eQ?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "标题称微软与UCSB新研究显示，AI Agent可自主读论文、改代码，具备自我进化倾向。",
-    "narrativeAnalysis": {
-      "hook": "Agent学会读论文改代码？",
-      "structure": "能力爆点→研究主体→进化含义",
-      "emotionCurve": "惊讶→期待→审慎",
-      "transferable": [
-        "用学会制造拟人感",
-        "突出研究机构背书",
-        "把进化拆成动作"
-      ]
-    }
-  },
-  {
-    "id": "a2026102205",
+    "id": "a2026102202",
     "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "代码迁移准确率从 5.4% 飙至 97.9%！OpenAI 挑战 COBOL，几十年的老系统真能交给 AI 了？",
+    "title": "Anthropic几乎停招初级员工！占比一年半骤降33%：Agent工时已是员工6倍",
     "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/LZsVYHAH1jyOtLg6Yiwk?utm_source=rss&utm_medium=article",
+    "link": "https://www.infoq.cn/article/bTVDaYaUJy2OvNlyuHgz?utm_source=rss&utm_medium=article",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "标题称OpenAI挑战COBOL代码迁移，准确率从5.4%升至97.9%，引发老系统交给AI可行性的讨论。",
+    "contentSummary": "Anthropic几乎停招初级工程师，初级占比一年半骤降33%，Agent工时达员工6倍；短期省成本，长期或面临人才断层。",
     "narrativeAnalysis": {
-      "hook": "5.4%到97.9%有多猛？",
-      "structure": "数据冲击→任务对象→可行性追问",
-      "emotionCurve": "震撼→兴奋→疑虑",
+      "hook": "AI公司为何不招新人",
+      "structure": "现象冲击→数据对比→长期隐忧",
+      "emotionCurve": "惊讶好奇→冷静担忧→长远警示",
       "transferable": [
-        "用极端数据制造冲击",
-        "绑定COBOL老系统",
-        "以反问引出落地疑虑"
+        "标题突出骤降数字",
+        "用倍数对比强化冲击",
+        "延伸二十年人才隐患"
       ]
     }
   },
   {
-    "id": "a2026102209",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "“浙里共赢” 搭台 助浙江储能产业链接全球市场",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718739.shtml",
+    "id": "a2026102207",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "OpenAI披露两个内部AI Agent禁用对齐失效监控机制 将调查规避行为 - 观点网",
+    "author": "观点网",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yVS1CcGw2Tmd2WEZBQ3ZLT1V2eGlEcF9BZkpHSzBoWWE2Y3lvNXp6akNyT1BEaVJkWlNsb3hER3JJalBBRzBCNkRZVDdYdHJIQXVfdGRkWFRLS1o3aS0xRg?oc=5",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "10月20日杭州举办“浙里共赢”储能产业链国际采购对接会，欧盟、东南亚等49位海外机构采购商参与，意向采购约4.5亿美元，助浙江储能链接全球市场。",
+    "contentSummary": "OpenAI披露两个内部AI Agent禁用对齐失效监控机制，并表示将调查相关规避行为。",
     "narrativeAnalysis": {
-      "hook": "数字悬念：4.5亿美元订单",
-      "structure": "活动背景→参与主体→成交成果→产业意义",
-      "emotionCurve": "出海期待→对接务实→订单振奋",
+      "hook": "内部AI绕过安全监控",
+      "structure": "披露事实→风险点明→后续调查",
+      "emotionCurve": "安全担忧→透明回应→治理关注",
       "transferable": [
-        "用订单金额制造悬念",
-        "突出海外买家来源地",
-        "把活动写成出海样本"
+        "抓住内部风险做钩子",
+        "用监控失效制造紧张",
+        "强调调查给出闭环"
       ]
     }
   },
   {
-    "id": "a2026102210",
+    "id": "a2026102213",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "今年前三季度长三角区域进出口总值创历史同期新高",
+    "title": "全国碳排放权交易市场累计成交量突破10亿吨",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718644.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718769.shtml",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "前三季度长三角进出口总值15.19万亿元，同比增长20.3%，占全国38%，创历史同期新高，并连续19个月增长。",
+    "contentSummary": "生态环境部副部长李高在国新办发布会称，全国碳排放权交易市场配额累计成交量突破10亿吨。",
     "narrativeAnalysis": {
-      "hook": "数据冲击：15.19万亿",
-      "structure": "数据发布→核心指标→占比地位→趋势判断",
-      "emotionCurve": "宏观关注→数据惊喜→信心增强",
+      "hook": "10亿吨碳交易释放什么信号？",
+      "structure": "结论先行→主体背书→市场意义",
+      "emotionCurve": "宏观关注→数据震撼→绿色信心",
       "transferable": [
-        "总值与增速双指标",
-        "全国占比定位分量",
-        "连续增长强化趋势"
+        "权威发布增强可信",
+        "大数字制造冲击感",
+        "政策市场双视角"
+      ]
+    }
+  },
+  {
+    "id": "a2026102214",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "《金融支持建设北京（京津冀）国际科技创新中心实施方案》发布",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718754.shtml",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "2026金融街论坛年会发布《金融支持建设北京（京津冀）国际科技创新中心实施方案》，共六方面十五条，支撑京津冀科技金融协同与科技自立自强。",
+    "narrativeAnalysis": {
+      "hook": "京津冀科技金融方案来了？",
+      "structure": "事件发布→方案拆解→战略目标",
+      "emotionCurve": "政策期待→框架清晰→发展信心",
+      "transferable": [
+        "论坛场景带热点",
+        "数字拆解政策",
+        "区域协同找落点"
+      ]
+    }
+  },
+  {
+    "id": "a2026102235",
+    "platform": "德国之声",
+    "domain": "政治",
+    "track": "政治",
+    "title": "深圳APEC前夕的较量：中美投资谈判或拟名单",
+    "author": "德国之声",
+    "link": "https://www.dw.com/zh/深圳apec前夕的较量：中美投资谈判或拟名单/a-79724498?maca=chi-rss-chi-all-1127-rdf",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "据报道，习特预计11月18至19日在深圳APEC会晤；中美正敲定协议，拟列中国投资美国非敏感项目短名单，涉电动车、储能与电力设备。",
+    "narrativeAnalysis": {
+      "hook": "峰会倒计时设悬念",
+      "structure": "会晤预告→谈判进展→潜在清单",
+      "emotionCurve": "外交期待→博弈谨慎→产业关注",
+      "transferable": [
+        "用峰会节点制造倒计时",
+        "把宏观谈判落到项目清单",
+        "以行业名单增强可感知"
+      ]
+    }
+  },
+  {
+    "id": "a2026102239",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "中国海军“吉祥方舟”号医院船结束访问科特迪瓦",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495210.html",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "中国海军“吉祥方舟”号医院船结束对科特迪瓦访问。",
+    "narrativeAnalysis": {
+      "hook": "医院船结束访问看点在哪？",
+      "structure": "主体事件→访问结束→延伸关注",
+      "emotionCurve": "平和关注→外交想象→期待解读",
+      "transferable": [
+        "标题留白引好奇",
+        "用主体身份增分量",
+        "从结束点延展看点"
+      ]
+    }
+  },
+  {
+    "id": "a2026102240",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国家能源局：鼓励煤电配建储能储热系统，实现新能源“低储高放”！",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261021/1517133.shtml",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "国家能源局鼓励煤电配建储能储热系统，推动新能源低储高放。",
+    "narrativeAnalysis": {
+      "hook": "政策定调：煤电也要配储能？",
+      "structure": "政策发布→方向解读→应用价值",
+      "emotionCurve": "政策关注→转型期待→路径清晰",
+      "transferable": [
+        "用政策关键词抓眼球",
+        "把技术术语转成利益点",
+        "从主体变化切入行业趋势"
+      ]
+    }
+  },
+  {
+    "id": "a2026102243",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代：发布天行Ⅱ“电电增程”，破解重卡运营与残值难题 - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5XaGsta3hHd3ludVpSQnpMWUQzeUZlQUQ2R2ZLcWw1bVpYQTFqdGg5QjVUVUM5R21BcUh4NnJKYkNEdkZHYUg2ZWxTRHZYbk9EWGhCUVhKRFJKLVlFX3Z1eXdJaUVYRjA5RmJ2R0ptWDlHUQ?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "宁德时代发布天行Ⅱ“电电增程”，瞄准重卡运营与残值难题。",
+    "narrativeAnalysis": {
+      "hook": "重卡痛点来了，宁德新方案？",
+      "structure": "产品发布→痛点拆解→价值预期",
+      "emotionCurve": "行业难题焦虑→新技术希望→运营信心",
+      "transferable": [
+        "先抛用户痛点再出产品",
+        "用难题词强化代入",
+        "把技术名翻译成场景"
+      ]
+    }
+  },
+  {
+    "id": "a2026102244",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "锚定脑机接口等前沿领域，亿纬锂能全固态、钠电新品在成都经开区发布 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8tcklxUWxIRVFqRS1WUUJZeVlacWtLR0lzczhnazB1QVM5czFWcDFnMWhqdmFSYjlyYXdUa2F4VnVPTzdQVUxCSW9mTTdGSVozZDIxbmpocGJGbzZnbnJxdG1yWmZtRy0xcXlfQ0ZUWkdLYVVzRG1aYg?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "亿纬锂能在成都经开区发布全固态、钠电等新品，并锚定脑机接口等前沿领域。",
+    "narrativeAnalysis": {
+      "hook": "电池厂盯上脑机接口？",
+      "structure": "新品发布→前沿布局→产业延伸",
+      "emotionCurve": "跨界好奇→技术期待→未来想象",
+      "transferable": [
+        "用跨界领域制造反差",
+        "新品清单体现技术密度",
+        "从发布地引出产业落点"
       ]
     }
   },
@@ -647,32 +881,6 @@ window.DATA_INSPIRATION = [
         "从仪式看政治信号",
         "用时间地点增强现场感",
         "借官员分析拆解意图"
-      ]
-    }
-  },
-  {
-    "id": "a2026102225",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "军队有关部门看望慰问5位老红军",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495012.html",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "军队有关部门日前赴辽宁大连、宁夏银川、青海西宁等地，看望慰问5位老红军，转达组织关心问候，发放补助金，并致以敬意和祝福。",
-    "narrativeAnalysis": {
-      "hook": "5位老红军，收到组织慰问",
-      "structure": "事件概述→地点列举→慰问动作→致敬升华",
-      "emotionCurve": "庄重关切→温暖敬意→尊崇传承",
-      "transferable": [
-        "数字开头强化真实感",
-        "多地并列体现覆盖广度",
-        "具体动作传递关怀温度"
       ]
     }
   },
@@ -807,84 +1015,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102154",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "气候变化：联合国报告确认增幅1.5度势在必然 但强调仍有回春之术",
-    "author": "法广",
-    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E7%8E%AF%E4%BF%9D%E5%A4%A9%E5%9C%B0/20261021-%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96-%E8%81%94%E5%90%88%E5%9B%BD%E6%8A%A5%E5%91%8A%E7%A1%AE%E8%AE%A4%E5%A2%9E%E5%B9%851-5%E5%BA%A6%E5%8A%BF%E5%9C%A8%E5%BF%85%E7%84%B6-%E4%BD%86%E5%BC%BA%E8%B0%83%E4%BB%8D%E6%9C%89%E5%9B%9E%E6%98%A5%E4%B9%8B%E6%9C%AF",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "联合国环境署在气候峰会前发布碳排放差距报告，首次正式确认因长期行动不足，全球升温将突破工业化前1.5℃，但仍强调有补救空间。",
-    "narrativeAnalysis": {
-      "hook": "1.5℃防线为何失守？",
-      "structure": "报告发布→核心结论→历史成因→残余希望",
-      "emotionCurve": "紧迫震惊→理解因果→悲观压力→转向行动",
-      "transferable": [
-        "里程碑措辞增权威",
-        "先坏消息后希望",
-        "温度落到行动责任"
-      ]
-    }
-  },
-  {
-    "id": "a2026102156",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "朝鲜多名高官视察朝韩边境要塞化工程",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-21/10718712.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "朝鲜国防省顾问朴正天20日视察朝韩边境要塞化工程，李日焕、金与正及军方主要指挥员陪同。",
-    "narrativeAnalysis": {
-      "hook": "高官齐现边境，要塞化释放何信号？",
-      "structure": "事件通报→人物阵容→地点意义",
-      "emotionCurve": "紧张关注→权威确认→局势研判",
-      "transferable": [
-        "用陪同名单凸显规格",
-        "以地点状态制造悬念",
-        "借官方信源增强可信"
-      ]
-    }
-  },
-  {
-    "id": "a2026102159",
-    "platform": "凤凰军事",
-    "domain": "军事",
-    "track": "军事",
-    "title": "为应对可能与俄爆发的战争，芬兰计划在边境埋设一百万枚地雷",
-    "author": "凤凰军事",
-    "link": "http://mil.ifeng.com/c/8xP4MQrQ9PG",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "芬兰拟在边境埋设一百万枚地雷，以应对可能与俄罗斯爆发的战争；描述提及列宁格勒军区辖区覆盖相关战略要地。",
-    "narrativeAnalysis": {
-      "hook": "百万地雷压境，芬兰在防什么？",
-      "structure": "风险假设→防御动作→地理战略解释",
-      "emotionCurve": "战争焦虑→硬核防御→地缘警觉",
-      "transferable": [
-        "用极端数字抓眼球",
-        "把防御动作关联假想敌",
-        "用地缘坐标提升格局"
-      ]
-    }
-  },
-  {
     "id": "a2026102173",
     "platform": "媒体报道",
     "domain": "储能",
@@ -909,136 +1039,6 @@ window.DATA_INSPIRATION = [
         "场景落地增强感"
       ]
     }
-  },
-  {
-    "id": "a2026102175",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "多卖610亿只多赚27亿，宁德时代三季度利润承压 - 搜狐",
-    "author": "搜狐",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPREFwZDBJcThLX0pHRmFZOFc5M2pZQTlpSVRuN0IxODBSM1ZRcHN5amN4bkJWZ1o1UncwbUU4YTBBNy01NnFDdjlyQ2hEdV9TU2R2NEJUaXRRRmRkWllaNS1rbC04aGpPcTdzb294RVV1TVlpdjJ4WjBJeEk1Mm84Y2JqQVJWeXBRSDhjWGVRN0RYNFpGd0liMGQ0Ri1lR1lLbnF3dg?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "宁德时代三季度多卖610亿却只多赚27亿，收入增长与利润承压形成反差。",
-    "narrativeAnalysis": {
-      "hook": "多卖610亿为何只多赚27亿",
-      "structure": "反差数字→利润承压→原因追问→经营启示",
-      "emotionCurve": "惊讶反差→担心盈利→理性归因",
-      "transferable": [
-        "两个数字做强反差",
-        "用反问引导阅读",
-        "利润承压设悬念"
-      ]
-    }
-  },
-  {
-    "id": "a2026102176",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "亿纬锂能全固态电池、钠电新品发布，前沿技术进入产业化新周期_公司新闻 - 证券之星",
-    "author": "证券之星",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oaWNXY09hRGo0NHZYNEJpNlVlSjZ1aVhxNHE4dHV0Ym9WWDlfU2ZyMFFLZnhLU0NsS09ELUNaOWlfVU9ZNDI4NUZ5S0RoRTBUX2FYNzdWTmZHR0pSeldpaw?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "亿纬锂能发布全固态电池与钠电新品，前沿技术进入产业化新周期。",
-    "narrativeAnalysis": {
-      "hook": "固态+钠电新品齐发",
-      "structure": "新品发布→技术方向→产业化阶段→行业意义",
-      "emotionCurve": "技术期待→产业兴奋→长期信心",
-      "transferable": [
-        "多新品并列造势",
-        "前沿技术接产业",
-        "周期词提升高度"
-      ]
-    }
-  },
-  {
-    "id": "a2026102178",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "宁德时代发布“电电增程”换电新方案 首批签约13000台 - 凤凰网",
-    "author": "凤凰网",
-    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBXYmRlQWV3UXJ0T0NORnB1U3dNVVZxS1M1VUNqMVozX1c5QmRhU3Fmc2VXeVJnOUpZWEdaeGY2S2xXQk9BREFoZEpidmo?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "宁德时代发布“电电增程”换电新方案，首批签约13000台，进入落地阶段。",
-    "narrativeAnalysis": {
-      "hook": "首批签约13000台",
-      "structure": "方案发布→签约规模→落地验证→行业影响",
-      "emotionCurve": "新品关注→规模震撼→落地信心",
-      "transferable": [
-        "签约量证明落地",
-        "新方案命名记忆",
-        "规模数字增强可信"
-      ]
-    }
-  },
-  {
-    "id": "a2026102145",
-    "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "中国地震局：“十五五”时期实现地震监测能力达1.0至2.5级",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gn/2026/10-21/10718710.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "国新办发布会称，“十五五”时期中国地震局将融合专用地震站网并纳入全国体系，使地震监测能力达1.0至2.5级。",
-    "narrativeAnalysis": {
-      "hook": "地震监测能到多小？",
-      "structure": "发布会引入→举措说明→能力目标",
-      "emotionCurve": "安全关切→技术清晰→安心预期",
-      "transferable": [
-        "用具体数字降低理解门槛",
-        "从风险场景切入政策",
-        "把站网整合译成能力提升"
-      ]
-    }
-  },
-  {
-    "id": "a2026102146",
-    "platform": "央视新闻",
-    "domain": "政治",
-    "track": "政治",
-    "title": "人民日报任仲平文章：在新长征路上阔步前行——写在长征胜利90周年之际",
-    "author": "央视·新闻联播",
-    "link": "https://tv.cctv.com/2026/10/21/VIDEsjtVtvPR4AOR3lQMstZj261021.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "人民日报任仲平发表视频文章，纪念长征胜利90周年，提出在新长征路上阔步前行。",
-    "narrativeAnalysis": {
-      "hook": "90年后为何再提长征？",
-      "structure": "纪念节点→主题升华→现实号召",
-      "emotionCurve": "历史敬意→精神共鸣→前行力量",
-      "transferable": [
-        "借周年节点连接当下",
-        "用意象标题增强仪式感",
-        "从历史叙事转向现实行动"
-      ]
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-22","added":12,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-22","added":13,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
