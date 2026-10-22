@@ -1,28 +1,80 @@
 /* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
   {
-    "id": "a2026102221",
+    "id": "a2026102223",
     "platform": "B站",
     "domain": "政治",
     "track": "政治",
-    "title": "【独家视频】纪念中国工农红军长征胜利90周年大会在京隆重举行，习近平出席大会并发表重要讲话",
+    "title": "【独家视频】习近平：在新的长征路上奋力创造新的辉煌",
     "author": "央视新闻",
-    "link": "https://www.bilibili.com/video/BV1e8nC6PEfE",
+    "link": "https://www.bilibili.com/video/BV1F1n26DExy",
     "published": "2026-10-22",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "长征胜利90周年纪念大会在北京举行，习近平出席并发表重要讲话。",
+    "contentSummary": "独家视频呈现习近平讲话，号召在新长征路上奋力创造新辉煌。",
     "narrativeAnalysis": {
-      "hook": "重大仪式+权威讲话",
-      "structure": "事件概述→主体出席→讲话聚焦",
-      "emotionCurve": "庄重纪念→权威聚焦→历史致敬",
+      "hook": "新长征号角再响",
+      "structure": "主题亮相→精神号召→行动愿景",
+      "emotionCurve": "庄重肃穆→振奋激励→前行期待",
       "transferable": [
-        "大事件用地点定调",
-        "权威人物增强分量",
-        "周年节点制造仪式感"
+        "用历史意象拉高格局",
+        "标题突出独家视频",
+        "结尾落到行动号召"
+      ]
+    }
+  },
+  {
+    "id": "a2026102224",
+    "platform": "B站",
+    "domain": "政治",
+    "track": "政治",
+    "title": "习近平提议全体起立 为在长征途中和在各地革命斗争中英勇牺牲的革命烈士默哀",
+    "author": "央视新闻",
+    "link": "https://www.bilibili.com/video/BV128n26fE7T",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "报道习近平提议全体起立，为长征及各地革命斗争牺牲烈士默哀。",
+    "narrativeAnalysis": {
+      "hook": "全体起立，这一刻静默",
+      "structure": "现场动作→默哀对象→缅怀意义",
+      "emotionCurve": "肃穆凝重→悲壮追思→崇敬铭记",
+      "transferable": [
+        "抓现场仪式动作",
+        "用静默制造张力",
+        "明确纪念对象"
+      ]
+    }
+  },
+  {
+    "id": "a2026102225",
+    "platform": "B站",
+    "domain": "政治",
+    "track": "政治",
+    "title": "北京市委常委、副市长夏林茂被查",
+    "author": "央视新闻",
+    "link": "https://www.bilibili.com/video/BV1MQnm6iEn4",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "北京市委常委、副市长夏林茂被查。",
+    "narrativeAnalysis": {
+      "hook": "北京一常委副市长被查",
+      "structure": "通报事实→职务身份→反腐信号",
+      "emotionCurve": "突然震惊→严肃审视→警示反思",
+      "transferable": [
+        "标题直给关键职务",
+        "短句增强权威感",
+        "延伸制度警示"
       ]
     }
   },
@@ -153,32 +205,6 @@ window.DATA_INSPIRATION = [
         "系列命名建预期",
         "主题词制造悬念",
         "短标题聚焦核心"
-      ]
-    }
-  },
-  {
-    "id": "a2026102046",
-    "platform": "B站",
-    "domain": "政治",
-    "track": "政治",
-    "title": "中纪委连打三“虎”！",
-    "author": "央视新闻",
-    "link": "https://www.bilibili.com/video/BV1DLnJ6xEKC",
-    "published": "2026-10-19",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-20"
-    },
-    "contentSummary": "中纪委连续查处三名‘老虎’，传递反腐高压信号。",
-    "narrativeAnalysis": {
-      "hook": "连打三虎，反腐再亮剑",
-      "structure": "事件通报→反腐信号→舆论关注",
-      "emotionCurve": "震惊紧张→正义感→震慑认同",
-      "transferable": [
-        "短句制造紧迫感",
-        "用连打强化节奏",
-        "借反腐主题引共鸣"
       ]
     }
   },
@@ -417,6 +443,113 @@ window.DATA_INSPIRATION = [
     }
   },
   {
+    "id": "a2026102209",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "企业有需求，FDE 团队有能力，为什么 AI 项目仍难落地？",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/Ei2spcFKComKqkPv6osN?utm_source=rss&utm_medium=article",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "文章指出即使企业有需求、FDE团队有能力，AI项目仍难落地；核心卡点不是技术，而是信任与信息。",
+    "narrativeAnalysis": {
+      "hook": "反问制造认知缺口",
+      "structure": "设问冲突→否定常规归因→给出关键变量",
+      "emotionCurve": "落地困惑→反常识冲击→聚焦信任信息",
+      "transferable": [
+        "用反问破题",
+        "先否后立归因",
+        "抽象词具体化"
+      ]
+    }
+  },
+  {
+    "id": "a2026102227",
+    "platform": "BBC中文",
+    "domain": "政治",
+    "track": "政治",
+    "title": "暗影人物：與烏克蘭合作的俄羅斯人",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/watch/c6eq32qzr0x8o/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-22",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "BBC罕见接触称协助乌克兰的俄罗斯人，确认其为乌情报机构工作，但相关行动细节难独立核实。",
+    "narrativeAnalysis": {
+      "hook": "战场之外，谁在暗中出手？",
+      "structure": "战争外延→个案接触→信息可信度边界",
+      "emotionCurve": "悬疑紧张→谨慎求证→复杂震撼",
+      "transferable": [
+        "用暗影营造悬念",
+        "明确已证与未证",
+        "突出调查稀缺性"
+      ]
+    }
+  },
+  {
+    "id": "a2026102230",
+    "platform": "BBC中文",
+    "domain": "政治",
+    "track": "政治",
+    "title": "Google軍事人工智能合約引發辭職潮",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/c620re8ye3e4o/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-22",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "BBC采访多名Google DeepMind前员工与现员工，呈现其对军事AI应用的忧虑，并称合约引发辞职潮。",
+    "narrativeAnalysis": {
+      "hook": "AI上战场，工程师先离场？",
+      "structure": "冲突事件→员工声音→伦理争议",
+      "emotionCurve": "意外关注→担忧焦虑→价值追问",
+      "transferable": [
+        "把技术冲突人格化",
+        "用辞职潮放大矛盾",
+        "引一线者证言"
+      ]
+    }
+  },
+  {
+    "id": "a2026102233",
+    "platform": "德国之声",
+    "domain": "政治",
+    "track": "政治",
+    "title": "中国监管或成最大障碍 特斯拉与SpaceX合并如何出招",
+    "author": "德国之声",
+    "link": "https://www.dw.com/zh/中国监管或成最大障碍-特斯拉与spacex合并如何出招/a-79731764?maca=chi-rss-chi-all-1127-rdf",
+    "published": "2026-10-22",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "马斯克称特斯拉与SpaceX成立委员会研究合并，交易估值3.5万亿美元；因中美业务交织，中国监管或成最大障碍。",
+    "narrativeAnalysis": {
+      "hook": "3.5万亿合并，卡在哪？",
+      "structure": "重磅宣布→交易规模→监管难点",
+      "emotionCurve": "震撼惊叹→理性拆解→悬念观望",
+      "transferable": [
+        "用巨额数字抓眼球",
+        "拆业务找监管痛点",
+        "结尾留悬念"
+      ]
+    }
+  },
+  {
     "id": "a2026102222",
     "platform": "BBC中文",
     "domain": "政治",
@@ -471,186 +604,288 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102228",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "特朗普纵容 普京梦想与中美举行新雅尔塔会议",
-    "author": "REUTERS - Tingshu Wang",
-    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E7%89%B9%E6%9C%97%E6%99%AE%E7%BA%B5%E5%AE%B9-%E6%99%AE%E4%BA%AC%E6%A2%A6%E6%83%B3%E4%B8%8E%E4%B8%AD%E7%BE%8E%E4%B8%BE%E8%A1%8C%E6%96%B0%E9%9B%85%E5%B0%94%E5%A1%94%E4%BC%9A%E8%AE%AE",
+    "id": "a2026102201",
+    "platform": "爱范儿",
+    "domain": "科技",
+    "track": "科技",
+    "title": "OpenAI 发现 PHP「世纪漏洞」，全球 70% 网站都危险了",
+    "author": "爱范儿",
+    "link": "https://www.ifanr.com/1685507?utm_source=rss&utm_medium=rss&utm_campaign=",
     "published": "2026-10-22",
-    "intl": 1,
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "报道称，普京据称在与特朗普通话中提出，与美中领导人在深圳亚太峰会期间绕过乌克兰商讨结束俄乌战争，被比作新雅尔塔式划分。",
+    "contentSummary": "OpenAI发现PHP「世纪漏洞」，标题称全球70%网站面临风险，正文仅提示更大影响在后。",
     "narrativeAnalysis": {
-      "hook": "历史类比：新雅尔塔",
-      "structure": "历史类比→通话细节→峰会设想",
-      "emotionCurve": "震惊猜疑→地缘紧张→小国忧虑",
+      "hook": "用70%数字制造危机",
+      "structure": "悬念标题→风险提示→后续预告",
+      "emotionCurve": "突发警觉→风险担忧→持续观望",
       "transferable": [
-        "历史类比增厚重",
-        "通话细节强可信",
-        "三方峰会显博弈"
+        "数字放大风险",
+        "标题埋悬念",
+        "结尾留钩子"
       ]
     }
   },
   {
-    "id": "a2026102241",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "美智库为何预估中共五中全会出席率低于80%：开除 失踪 被查",
-    "author": "© 网络照片",
-    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E7%BE%8E%E6%99%BA%E5%BA%93%E4%B8%BA%E4%BD%95%E9%A2%84%E4%BC%B0%E4%B8%AD%E5%85%B1%E4%BA%94%E4%B8%AD%E5%85%A8%E4%BC%9A%E5%87%BA%E5%B8%AD%E7%8E%87%E4%BD%8E%E4%BA%8E80-%E5%BC%80%E9%99%A4-%E5%A4%B1%E8%B8%AA-%E8%A2%AB%E6%9F%A5",
+    "id": "a2026102202",
+    "platform": "极客公园",
+    "domain": "科技",
+    "track": "科技",
+    "title": "大模型内卷之后，AI 竞争进入搜索基础设施时代",
+    "author": "极客公园",
+    "link": "http://www.geekpark.net/news/372743",
     "published": "2026-10-22",
-    "intl": 1,
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "美国智库亚洲协会报告预计，中共二十届五中全会376名中央委员及候补中委中仅291人出席，出席率低于80%，或因开除、失踪、被查。",
+    "contentSummary": "文章称大模型内卷后，AI竞争转向搜索基础设施；因Agent需实时权威信息，传统搜索与自建检索均有瓶颈。",
     "narrativeAnalysis": {
-      "hook": "数据悬念：出席率新低",
-      "structure": "会议预告→数据预测→原因列举",
-      "emotionCurve": "政治关注→数据惊讶→权力肃杀",
+      "hook": "内卷之后引新阶段",
+      "structure": "趋势判断→场景需求→痛点拆解→基础设施价值",
+      "emotionCurve": "行业焦虑→认知刷新→方向明确",
       "transferable": [
-        "具体数字建权威",
-        "标题抛问引点击",
-        "原因词组造悬念"
+        "先给趋势结论",
+        "用场景解释必要",
+        "拆解旧方案短板"
       ]
     }
   },
   {
-    "id": "a2026102213",
+    "id": "a2026102205",
+    "platform": "极客公园",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI 到处挖漏洞一整年，终于给人类爆了个大的",
+    "author": "极客公园",
+    "link": "http://www.geekpark.net/news/372731",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "10月21日全球多国政府、港口、医院、媒体等网站预防性下线；文中称未被黑，主动关闭，原因涉及PHP相关问题。",
+    "narrativeAnalysis": {
+      "hook": "反差悬念开场",
+      "structure": "异常现象→案例罗列→澄清非攻击→指向漏洞原因",
+      "emotionCurve": "突发恐慌→事实梳理→悬念未解",
+      "transferable": [
+        "以异常现象开场",
+        "列举权威案例",
+        "先澄清再揭因"
+      ]
+    }
+  },
+  {
+    "id": "a2026102206",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "金融智能分析本体：四大核心要素与五条建设路线",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/Be94YQbRtbWj3pzZ9rSh?utm_source=rss&utm_medium=article",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "文章聚焦金融智能分析本体，讨论其四大核心要素，以及行业五条建设路线与选型方法。",
+    "narrativeAnalysis": {
+      "hook": "数字框架承诺",
+      "structure": "问题提出→要素拆解→路线比较→选型建议",
+      "emotionCurve": "概念陌生→结构清晰→决策可控",
+      "transferable": [
+        "数字标题降门槛",
+        "问题式开篇",
+        "框架化拆解"
+      ]
+    }
+  },
+  {
+    "id": "a2026102211",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "IDC最新报告：阿里云占中国汽车公共云市场份额超45%",
+    "title": "国家发展改革委有关负责同志就《对外投资管理办法》答记者问",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10718989.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10719333.shtml",
     "published": "2026-10-22",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "IDC报告显示，2026上半年中国汽车公共云基础设施市场规模约83.4亿元，阿里云份额45.1%，收入同比增111%，连续11期第一。",
+    "contentSummary": "发改委公布《对外投资管理办法》，2026年12月1日施行，同时废止2017年企业境外投资管理办法，旨在保障对外投资发展与安全。",
     "narrativeAnalysis": {
-      "hook": "阿里云拿下汽车云半壁江山？",
-      "structure": "结论先行→数据佐证→持续领先",
-      "emotionCurve": "行业好奇→数据震撼→龙头确认",
+      "hook": "境外投资将迎新规",
+      "structure": "政策发布→施行时间→新旧衔接→答问解读",
+      "emotionCurve": "政策关注→规则明确→合规预期",
       "transferable": [
-        "用半壁江山强化份额",
-        "连续排名突出长期优势",
-        "规模增速双指标佐证"
+        "突出新旧办法更替",
+        "强调具体施行日期",
+        "用问答拆解政策"
       ]
     }
   },
   {
-    "id": "a2026102215",
+    "id": "a2026102212",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "海南自贸港建设以来最大集装箱船舶靠泊洋浦港",
+    "title": "天津“十五五”聚焦五方面布局能源项目 总投资2000亿元",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10718993.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10719226.shtml",
     "published": "2026-10-22",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "10月22日，超大型集装箱船“中海大西洋”轮靠泊洋浦港，长399.67米、载箱18982标箱，为海南自贸港建设以来最大靠泊集装箱船，刷新纪录。",
+    "contentSummary": "天津“十五五”将围绕油气安全、新型电网、新能源集成、绿色低碳转型和未来能源五方面，谋划总投资2000亿元能源支撑项目。",
     "narrativeAnalysis": {
-      "hook": "海南迎来史上最大货轮",
-      "structure": "事件发生→船舶参数→纪录意义",
-      "emotionCurve": "现场震撼→数据确认→港口升级",
+      "hook": "2000亿投向天津能源",
+      "structure": "规划周期→五大方向→投资规模",
+      "emotionCurve": "区域机遇→产业布局→投资信心",
       "transferable": [
-        "用最大刷新制造看点",
-        "列参数增强真实感",
-        "关联自贸港战略意义"
+        "用总投资额抓眼球",
+        "列明五大能源方向",
+        "关联区域产业机会"
       ]
     }
   },
   {
-    "id": "a2026102236",
+    "id": "a2026102235",
     "platform": "凤凰军事",
     "domain": "军事",
     "track": "军事",
-    "title": "马斯克一道限速令，“星盾”立刻瘫痪乌军无人作战链",
+    "title": "泽连斯基：美国恢复向乌提供导弹预警",
     "author": "凤凰军事",
-    "link": "http://mil.ifeng.com/c/8xQP1z2bBfb",
+    "link": "http://mil.ifeng.com/c/8xOoPl3Ber8",
     "published": "2026-10-22",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "马斯克限速令致星盾瘫痪乌军无人作战链，暴露乌方缺少可独立支撑高速机动平台的备用通信体系。",
+    "contentSummary": "泽连斯基20日在挪威奥斯陆表示，美国已恢复向乌克兰提供俄罗斯导弹袭击预警。",
     "narrativeAnalysis": {
-      "hook": "一道限速令，瘫痪作战链",
-      "structure": "事件冲击→原因揭示→体系短板",
-      "emotionCurve": "突发震惊→技术反思→安全焦虑",
+      "hook": "悬念提问：恢复预警何意",
+      "structure": "核心结论→时间地点→具体事项",
+      "emotionCurve": "突发关注→事实确认→风险警觉",
       "transferable": [
-        "小切口撬动大系统",
-        "用命令制造冲突",
-        "从故障反推体系短板"
+        "首句抛出关键变化",
+        "用时间地点增强可信",
+        "把军事信息转成安全信号"
       ]
     }
   },
   {
-    "id": "a2026102237",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "美副总统万斯：乌克兰不是北约成员，也不应加入北约",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718847.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "美副总统万斯公开表态，乌克兰不是北约成员，也不应加入北约，明确其对乌入约问题的立场。",
-    "narrativeAnalysis": {
-      "hook": "入约大门被明确关上",
-      "structure": "权威表态→身份界定→政策倾向",
-      "emotionCurve": "期待落空→现实冷峻→格局担忧",
-      "transferable": [
-        "借高层表态定调",
-        "用否定句强化边界",
-        "以身份标签制造冲突"
-      ]
-    }
-  },
-  {
-    "id": "a2026102238",
+    "id": "a2026102239",
     "platform": "凤凰军事",
     "domain": "军事",
     "track": "军事",
-    "title": "英国将部署“台风”战机协防沙特，保护关键设施",
+    "title": "伊朗总统会见巴陆军参谋长，强调美必须解除制裁",
     "author": "凤凰军事",
-    "link": "http://mil.ifeng.com/c/8xNuHVdalYY",
+    "link": "http://mil.ifeng.com/c/8xOvk7jecXq",
     "published": "2026-10-22",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "英国20日表示将部署战斗机协防沙特，帮助其抵御也门境内与伊朗结盟的胡塞武装袭击，保护关键设施。",
+    "contentSummary": "伊朗总统佩泽希齐扬20日会见巴基斯坦陆军参谋长穆尼尔时表示，美国须解除对伊制裁，作为伊美谈判前提。",
     "narrativeAnalysis": {
-      "hook": "战机赴沙特护关键设施",
-      "structure": "行动公布→威胁来源→防护目标",
-      "emotionCurve": "紧张升级→同盟响应→安全关切",
+      "hook": "条件前置：制裁不解不谈",
+      "structure": "人物会面→核心表态→谈判前提",
+      "emotionCurve": "外交接触→立场强硬→博弈紧绷",
       "transferable": [
-        "用装备名增强画面",
-        "点明威胁源提升紧迫",
-        "把设施价值前置"
+        "用先决条件制造冲突感",
+        "把外交会谈转成谈判筹码",
+        "突出主体与底线关系"
+      ]
+    }
+  },
+  {
+    "id": "a2026102242",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "陆军某旅组织复杂环境下实战化训练——高原索降砺尖兵",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495277.html",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "陆军某旅在复杂环境下组织实战化训练，标题聚焦高原索降课目与尖兵培养。",
+    "narrativeAnalysis": {
+      "hook": "课目悬念：高原索降怎么练",
+      "structure": "训练主题→险难课目→砺兵指向",
+      "emotionCurve": "环境艰苦→训练紧张→士气振奋",
+      "transferable": [
+        "用险难课目抓眼球",
+        "以小切口展现强军",
+        "标题嵌入动作与场景"
+      ]
+    }
+  },
+  {
+    "id": "a2026102246",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "DeepSeek 融了150 亿美元—— 宁德时代和腾讯领投，目标两次上调- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA",
+    "author": "OSCHINA",
+    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0tSG4wVnUyMFM3ODhFcjdNYUdnN1BlQmhlMVZjZVJudEliYWlCdzd3c3N3WklTbm5URXNFb1YweWtBMzRtb2lUVEFNaw?oc=5",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "DeepSeek获150亿美元融资，宁德时代与腾讯领投，融资目标曾两次上调；报道来自OSCHINA。",
+    "narrativeAnalysis": {
+      "hook": "150亿融资，宁德腾讯押注谁？",
+      "structure": "结论先行→金额与领投方→目标上调细节",
+      "emotionCurve": "资本兴奋→产业联想→关注后续",
+      "transferable": [
+        "用金额做开头钩子",
+        "突出领投方背书",
+        "点出目标两次上调"
+      ]
+    }
+  },
+  {
+    "id": "a2026102259",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "AI 数据中心供电方案推荐与排行：阳光电源全栈供电架构 - 碳索储能网",
+    "author": "碳索储能网",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SaWpvNFU1SmtDcHVINTMzYmdyYnRtNWtwYW5zQmZPY2g2UEpfQmo2NnloR2VrajM2b2d3RTNBNHZwMXFldGNEQ2RzWnRlN3g1QmlNM1Z4OFNxa1VNYW92SA?oc=5",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "内容聚焦AI数据中心供电方案推荐与排行，并提及阳光电源全栈供电架构。",
+    "narrativeAnalysis": {
+      "hook": "AI数据中心供电怎么选",
+      "structure": "需求场景→方案排行→重点架构",
+      "emotionCurve": "选择焦虑→榜单清晰→方案信赖",
+      "transferable": [
+        "蹭AI算力热点",
+        "用排行降低选择成本",
+        "突出全栈供电能力"
       ]
     }
   },
@@ -759,290 +994,56 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102232",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "误导脸书用户逾十年 Meta被判支付250亿美元创纪录罚款",
-    "author": "REUTERS - Dado Ruvic",
-    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E8%AF%AF%E5%AF%BC%E8%84%B8%E4%B9%A6%E7%94%A8%E6%88%B7%E9%80%BE%E5%8D%81%E5%B9%B4-meta%E8%A2%AB%E5%88%A4%E6%94%AF%E4%BB%98250%E4%BA%BF%E7%BE%8E%E5%85%83%E5%88%9B%E7%BA%AA%E5%BD%95%E7%BD%9A%E6%AC%BE",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "Meta因十多年误导新墨西哥州居民关于用户数据使用方式，被判支付250亿美元创纪录罚款；Meta称裁决变相征税言论自由并将上诉。",
-    "narrativeAnalysis": {
-      "hook": "天价罚款制造冲击",
-      "structure": "判决结果→违规原因→企业回应",
-      "emotionCurve": "震惊罚款→追责清晰→对抗悬念",
-      "transferable": [
-        "用创纪录金额抓眼球",
-        "先给判决再补违规因果",
-        "把企业抗辩留作后续钩子"
-      ]
-    }
-  },
-  {
-    "id": "a2026102234",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "联合国警告：圣婴强度恐破纪录 全球气候与经济面临冲击",
-    "author": "© REUTERS - Evan Vucci",
-    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E8%81%94%E5%90%88%E5%9B%BD%E8%AD%A6%E5%91%8A-%E5%9C%A3%E5%A9%B4%E5%BC%BA%E5%BA%A6%E6%81%90%E7%A0%B4%E7%BA%AA%E5%BD%95-%E5%85%A8%E7%90%83%E6%B0%94%E5%80%99%E4%B8%8E%E7%BB%8F%E6%B5%8E%E9%9D%A2%E4%B8%B4%E5%86%B2%E5%87%BB",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "联合国警告当前圣婴现象强度可能破纪录，引发极端高温、干旱和洪水，冲击全球经济，约5000万人面临更严重粮食短缺，呼吁各国提前部署救援。",
-    "narrativeAnalysis": {
-      "hook": "权威警告加灾难数字",
-      "structure": "权威警告→灾害链条→行动呼吁",
-      "emotionCurve": "预警紧张→灾难压迫→行动希望",
-      "transferable": [
-        "借联合国背书提升紧迫",
-        "把气候灾害连到粮食经济",
-        "用人数让抽象风险具象"
-      ]
-    }
-  },
-  {
-    "id": "a2026102105",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "对话亚马逊CTO：仍在招聘初级工程师，关注中国开放模型",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/XxOpQpEMZpdCCYhXxgaE?utm_source=rss&utm_medium=article",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "亚马逊CTO表示仍在招聘初级工程师，并关注中国开放模型；新人需协作、理解复杂系统并审查AI生成代码。",
-    "narrativeAnalysis": {
-      "hook": "提问：初级工程师还吃香？",
-      "structure": "观点引入→能力拆解→岗位启示",
-      "emotionCurve": "就业焦虑→能力澄清→职业信心",
-      "transferable": [
-        "用反常识提问破题",
-        "把岗位变化拆成能力项",
-        "借AI代码审查落场景"
-      ]
-    }
-  },
-  {
-    "id": "a2026102106",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "从试点到规模化落地：制造业领导者如何推动 AI 应用并赢得高管层支持 ｜ 技术趋势",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/Ms3bMt5OcUyYMHwfaXgM?utm_source=rss&utm_medium=article",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "电子书提出制造业AI从试点到规模化的路径，包括治理洞察、四阶段路线图和投资提案框架，帮助高管支持转型。",
-    "narrativeAnalysis": {
-      "hook": "痛点：AI试点难规模化？",
-      "structure": "痛点提出→方法拆解→价值闭环",
-      "emotionCurve": "转型焦虑→路径清晰→决策信心",
-      "transferable": [
-        "以试点困境切入",
-        "用四阶段降低复杂度",
-        "把技术转成投资语言"
-      ]
-    }
-  },
-  {
-    "id": "a2026102107",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "对象存储正在“吃掉”Kafka？Cloudflare 用 R2 重做事件流",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/hEHy8XHKyfwKuyIhpyFe?utm_source=rss&utm_medium=article",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "文章探讨对象存储是否替代Kafka，称Cloudflare K2基于R2构建事件流，生产端延迟约一秒。",
-    "narrativeAnalysis": {
-      "hook": "冲突：R2能替Kafka？",
-      "structure": "悬念设问→案例验证→性能边界",
-      "emotionCurve": "架构好奇→数据确认→选型谨慎",
-      "transferable": [
-        "用替代冲突制造张力",
-        "以延迟数字锚定判断",
-        "把组件对比落到选型"
-      ]
-    }
-  },
-  {
-    "id": "a2026102203",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "Anthropic几乎停招初级员工！占比一年半骤降33%：Agent工时已是员工6倍",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/bTVDaYaUJy2OvNlyuHgz?utm_source=rss&utm_medium=article",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "Anthropic几乎停招初级工程师，初级占比一年半骤降33%，AI Agent工时达员工6倍；文章警示省下的培养成本或致20年后人才断层。",
-    "narrativeAnalysis": {
-      "hook": "反常识+数据骤降",
-      "structure": "现象冲击→数据对比→长期隐忧",
-      "emotionCurve": "惊讶警觉→成本理性→未来焦虑",
-      "transferable": [
-        "用反常现象开篇",
-        "数据对比强化",
-        "延后成本做警示"
-      ]
-    }
-  },
-  {
-    "id": "a2026102204",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "代码迁移准确率从 5.4% 飙至 97.9%！OpenAI 挑战 COBOL，几十年的老系统真能交给 AI 了？",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/LZsVYHAH1jyOtLg6Yiwk?utm_source=rss&utm_medium=article",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "OpenAI挑战COBOL代码迁移，准确率从5.4%升至97.9%，引发几十年老系统能否交给AI改造的讨论。",
-    "narrativeAnalysis": {
-      "hook": "数据跃升+疑问",
-      "structure": "数据突破→场景挑战→可行性追问",
-      "emotionCurve": "惊喜震撼→怀疑审视→期待验证",
-      "transferable": [
-        "用前后数据对比",
-        "把技术落到老系统",
-        "以问句引讨论"
-      ]
-    }
-  },
-  {
-    "id": "a2026102250",
+    "id": "a2026102247",
     "platform": "媒体报道",
     "domain": "储能",
     "track": "储能",
-    "title": "多技术路线协同！亿纬锂能发布脑机接口固态电池与两轮钠电方案 - https://www.itdcw.com/",
-    "author": "https://www.itdcw.com/",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWQzJ2UjRuRzNqcnNzeUNEdDBlZk5abEN1S2Z2dVBQRC1GRnkybWpPbUdiYjlSZHhrNFB5TlhzWWlfYmhnWHpkbTMwOFBDV2dNQWg0c1VhU1BsR3dLTWl3?oc=5",
+    "title": "海辰储能黄俊：出海建厂绝非落地投产、招募本地员工、保障订单交付这么简单，其中有不少值得深思的地方 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MQUh3ZjUxRFNmdlRTTS15TGRfWTdmaGtyYXJlckxweE5UTGR5bG91TWNSWGREWGhIcFAzOE1haHVrN0dGdFhoRTl2RXB6RElhWnM1N09ZODE3WlNYYlgyRFVWeU04MlVCYzQ4ejBETUQ2cnpsRW1BVkUwQXJKbUU?oc=5",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "亿纬锂能发布脑机接口固态电池与两轮钠电方案，强调多技术路线协同，展示前沿电池与新场景布局。",
+    "contentSummary": "海辰储能黄俊称，出海建厂不只是落地投产、招募本地员工、保障订单交付，还有更复杂问题值得深思。",
     "narrativeAnalysis": {
-      "hook": "跨界新品悬念",
-      "structure": "结论先行→新品发布→技术协同",
-      "emotionCurve": "好奇→振奋→期待",
+      "hook": "出海建厂，真没那么简单",
+      "structure": "观点先行→列举常见环节→引出深层挑战",
+      "emotionCurve": "认知纠偏→现实压力→理性思考",
       "transferable": [
-        "用跨界场景抓眼球",
-        "并列新品强化势能",
-        "技术协同收束价值"
+        "先破常见认知",
+        "用绝非这么简单造悬念",
+        "列具体场景增强真实感"
       ]
     }
   },
   {
-    "id": "a2026102253",
+    "id": "a2026102248",
     "platform": "媒体报道",
     "domain": "储能",
     "track": "储能",
-    "title": "宁德时代三季度利润增速放缓 储能业务或撑起新增长极 - 中国青年网",
-    "author": "中国青年网",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9rTmZJOVViN0VQQkJQem9Sc3FQTVl1N3RLaElJMEZ1UndqWEJVTm40MnZLamhkVHQxcEVFaml2eWhWaUVjRFRhWXBMYmhUX0RqRlZhQTkybllaOGF0bnRrZ0VWZ2ROckdxU0wyQlFIWFlpaF9GN3c?oc=5",
+    "title": "锚定脑机接口等前沿领域 亿纬锂能全固态、钠电新品在成都经开区发布 - 人民网-四川频道",
+    "author": "人民网-四川频道",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9wb2d0cFBWVVBpQzFPckJXZGZEVXpjLThBdDVtS19tczJBd1dkOFg2RHBfQjZtS19DNjZoYUtUM0ZEd3lDVkZoZGFkLUJMUlY0ZGp5allzZjJqcXRYaE10NUg2MVhHREtKRnc?oc=5",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "宁德时代Q3营收创新高但利润增速放缓，单位利润新低，市值单日缩水超1460亿，储能业务或成新增长极。",
+    "contentSummary": "亿纬锂能在成都经开区发布全固态、钠电等新品，并锚定脑机接口等前沿应用领域。",
     "narrativeAnalysis": {
-      "hook": "增收不增利反差",
-      "structure": "矛盾开局→数据佐证→储能破局",
-      "emotionCurve": "担忧→追问→希望",
+      "hook": "电池新品瞄准脑机接口",
+      "structure": "事件发布→产品技术→应用场景",
+      "emotionCurve": "技术期待→应用想象→产业信心",
       "transferable": [
-        "增收不增利造张力",
-        "市值波动添紧迫感",
-        "把储能设为答案"
-      ]
-    }
-  },
-  {
-    "id": "a2026102254",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "亿纬锂能三款前沿电池在成都下线！“龙泉三号2.0”锚定脑机接口赛道 - 新浪网",
-    "author": "新浪网",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZjZvMFNPTGFtZzhRMV9nQlJNeW5JdXRja0VuYTVGX0MzZFF4WUl2M250Wi0tOW9nUnFEeS1iZFl4dzdLWGsyWHpkVmxnb2NndnhoYktqb1lFSTJxQ1RaN1RFT25Fdy1aclJQVVQtLURLbkN3aFY1MEJwQndaV0gzaFZ5c1FxcEFaM1QzQ2FzcEduRWJsX2VEalZJV3hHMko4b1N4ZXp0cmIwUUk3Uk5EYW1B?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "亿纬锂能三款前沿电池在成都下线，其中龙泉三号2.0瞄准脑机接口赛道，强化新技术场景卡位。",
-    "narrativeAnalysis": {
-      "hook": "前沿下线加赛道悬念",
-      "structure": "事件落地→产品点名→赛道卡位",
-      "emotionCurve": "好奇→兴奋→期待",
-      "transferable": [
-        "下线节点增强现场感",
-        "产品命名IP化",
-        "脑机接口抬高想象"
-      ]
-    }
-  },
-  {
-    "id": "a2026102240",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "国家能源局：鼓励煤电配建储能储热系统，实现新能源“低储高放”！",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261021/1517133.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "国家能源局鼓励煤电配建储能储热系统，推动新能源低储高放。",
-    "narrativeAnalysis": {
-      "hook": "政策定调：煤电也要配储能？",
-      "structure": "政策发布→方向解读→应用价值",
-      "emotionCurve": "政策关注→转型期待→路径清晰",
-      "transferable": [
-        "用政策关键词抓眼球",
-        "把技术术语转成利益点",
-        "从主体变化切入行业趋势"
+        "用前沿场景抓眼球",
+        "点名技术路线",
+        "绑定区域发布增信"
       ]
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-22","added":14,"total":40,"tracks":{"政治":8,"军事":8,"科技":8,"财经":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-22","added":20,"total":40,"tracks":{"政治":8,"军事":8,"科技":8,"财经":8,"储能":8}};
