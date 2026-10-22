@@ -227,7 +227,9 @@ export async function run(argv = []) {
         metrics: { likes: 0, comments: 0, collected: today() },
         contentSummary: a.summary || fallbackAnalysis(x).summary,
         narrativeAnalysis: {
-          hook: a.hook || String(x.title || '').slice(0, 18), /* LLM 漏 hook 时用标题兜底，避免条目被当占位丢弃 */
+          /* 整批拆解失败时 a 来自 fallbackAnalysis（hook='（待拆解）'），同样用标题兜底：
+             否则 7 天时效下旧条目已淘汰、新增又被占位剔除，赛道会留空 */
+          hook: (a.hook && a.hook !== '（待拆解）') ? a.hook : String(x.title || '').slice(0, 18),
           structure: a.structure || '（待拆解）',
           emotionCurve: a.emotion || '（待拆解）',
           transferable: Array.isArray(a.transferable) ? a.transferable : []
