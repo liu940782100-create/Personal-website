@@ -391,6 +391,138 @@ window.DATA_INSPIRATION = [
     }
   },
   {
+    "id": "a2026102228",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "特朗普纵容 普京梦想与中美举行新雅尔塔会议",
+    "author": "REUTERS - Tingshu Wang",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E7%89%B9%E6%9C%97%E6%99%AE%E7%BA%B5%E5%AE%B9-%E6%99%AE%E4%BA%AC%E6%A2%A6%E6%83%B3%E4%B8%8E%E4%B8%AD%E7%BE%8E%E4%B8%BE%E8%A1%8C%E6%96%B0%E9%9B%85%E5%B0%94%E5%A1%94%E4%BC%9A%E8%AE%AE",
+    "published": "2026-10-22",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "报道称，普京据称在与特朗普通话中提出，与美中领导人在深圳亚太峰会期间绕过乌克兰商讨结束俄乌战争，被比作新雅尔塔式划分。",
+    "narrativeAnalysis": {
+      "hook": "历史类比：新雅尔塔",
+      "structure": "历史类比→通话细节→峰会设想",
+      "emotionCurve": "震惊猜疑→地缘紧张→小国忧虑",
+      "transferable": [
+        "历史类比增厚重",
+        "通话细节强可信",
+        "三方峰会显博弈"
+      ]
+    }
+  },
+  {
+    "id": "a2026102241",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "美智库为何预估中共五中全会出席率低于80%：开除 失踪 被查",
+    "author": "© 网络照片",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E7%BE%8E%E6%99%BA%E5%BA%93%E4%B8%BA%E4%BD%95%E9%A2%84%E4%BC%B0%E4%B8%AD%E5%85%B1%E4%BA%94%E4%B8%AD%E5%85%A8%E4%BC%9A%E5%87%BA%E5%B8%AD%E7%8E%87%E4%BD%8E%E4%BA%8E80-%E5%BC%80%E9%99%A4-%E5%A4%B1%E8%B8%AA-%E8%A2%AB%E6%9F%A5",
+    "published": "2026-10-22",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "美国智库亚洲协会报告预计，中共二十届五中全会376名中央委员及候补中委中仅291人出席，出席率低于80%，或因开除、失踪、被查。",
+    "narrativeAnalysis": {
+      "hook": "数据悬念：出席率新低",
+      "structure": "会议预告→数据预测→原因列举",
+      "emotionCurve": "政治关注→数据惊讶→权力肃杀",
+      "transferable": [
+        "具体数字建权威",
+        "标题抛问引点击",
+        "原因词组造悬念"
+      ]
+    }
+  },
+  {
+    "id": "a2026102245",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "以媒：数十架以军战机飞近伊朗边境",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718826.shtml",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "以媒称，19日至20日凌晨，数十架以色列战机与加油机飞越叙伊领空，接近伊朗边境后折返，航线类似对伊打击路线。",
+    "narrativeAnalysis": {
+      "hook": "临境折返悬念",
+      "structure": "消息源引入→时间地点→航线细节→意图暗示",
+      "emotionCurve": "紧张升级→疑云加深→风险关注",
+      "transferable": [
+        "用时间线制造现场感",
+        "借消息源增强可信度",
+        "以折返动作留悬念"
+      ]
+    }
+  },
+  {
+    "id": "a2026102246",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "乌克兰首都基辅遭弹道导弹袭击",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718824.shtml",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "乌媒称，21日晚俄罗斯使用弹道导弹袭击乌克兰首都基辅，当地传出爆炸声。",
+    "narrativeAnalysis": {
+      "hook": "首都遇袭冲击",
+      "structure": "事件定性→时间地点→武器类型→现场反应",
+      "emotionCurve": "突发震惊→局势担忧→安全警觉",
+      "transferable": [
+        "首句点明首都遇袭",
+        "用爆炸声还原现场",
+        "突出弹道导弹威胁"
+      ]
+    }
+  },
+  {
+    "id": "a2026102248",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "陆军某旅组织复杂环境下实战化训练——高原索降砺尖兵",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495277.html",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "陆军某旅在复杂环境下开展实战化训练，重点呈现高原索降课目，锤炼尖兵能力。",
+    "narrativeAnalysis": {
+      "hook": "高原索降砺兵",
+      "structure": "部队主体→环境设定→训练课目→练兵目的",
+      "emotionCurve": "艰苦紧张→热血振奋→能力期待",
+      "transferable": [
+        "用复杂环境立难度",
+        "以课目名强化画面",
+        "从训练落到战斗力"
+      ]
+    }
+  },
+  {
     "id": "a2026102232",
     "platform": "法广",
     "domain": "政治",
@@ -439,58 +571,6 @@ window.DATA_INSPIRATION = [
         "借联合国背书提升紧迫",
         "把气候灾害连到粮食经济",
         "用人数让抽象风险具象"
-      ]
-    }
-  },
-  {
-    "id": "a2026102237",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "沙特一油田设施遭无人机袭击 致2死2伤",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718820.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "沙特防空部队拦截一架袭击阿美谢拜油田设施的无人机，碎片坠落致2死2伤，油田运营未受影响。",
-    "narrativeAnalysis": {
-      "hook": "拦截成功为何仍有人伤亡？",
-      "structure": "结果先行→拦截经过→伤亡与运营影响",
-      "emotionCurve": "突发紧张→拦截缓解→伤亡沉重→运营安心",
-      "transferable": [
-        "先给结果抓眼球",
-        "用关键数字增强可信",
-        "补充影响稳定预期"
-      ]
-    }
-  },
-  {
-    "id": "a2026102238",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "俄国防部：俄军继续打击乌物流中心及港口基础设施",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718818.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "俄国防部通报，10月21日白天俄军继续使用无人机打击乌物流中心、港口基础设施及运军货海上船只。",
-    "narrativeAnalysis": {
-      "hook": "俄军无人机再袭乌后勤线",
-      "structure": "官方通报→时间范围→打击目标→持续动作",
-      "emotionCurve": "权威发布→冲突升级→后勤承压→战局紧绷",
-      "transferable": [
-        "借官方信源立威",
-        "目标清单化呈现",
-        "突出持续制造张力"
       ]
     }
   },
@@ -599,106 +679,211 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102202",
+    "id": "a2026102242",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "气候变化：联合国报告确认增幅1.5度势在必然 但强调仍有回春之术",
+    "author": "法广",
+    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E7%8E%AF%E4%BF%9D%E5%A4%A9%E5%9C%B0/20261021-%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96-%E8%81%94%E5%90%88%E5%9B%BD%E6%8A%A5%E5%91%8A%E7%A1%AE%E8%AE%A4%E5%A2%9E%E5%B9%851-5%E5%BA%A6%E5%8A%BF%E5%9C%A8%E5%BF%85%E7%84%B6-%E4%BD%86%E5%BC%BA%E8%B0%83%E4%BB%8D%E6%9C%89%E5%9B%9E%E6%98%A5%E4%B9%8B%E6%9C%AF",
+    "published": "2026-10-21",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "联合国环境规划署在气候峰会前发布报告，首次正式确认因多年行动不足，全球升温1.5度目标恐难守住，但强调仍有补救空间。",
+    "narrativeAnalysis": {
+      "hook": "权威转折：难守仍有救",
+      "structure": "报告发布→关键确认→保留希望",
+      "emotionCurve": "危机逼近→权威确认→行动希望",
+      "transferable": [
+        "权威机构增分量",
+        "首次确认造节点",
+        "结尾留出行动感"
+      ]
+    }
+  },
+  {
+    "id": "a2026102206",
     "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "Anthropic几乎停招初级员工！占比一年半骤降33%：Agent工时已是员工6倍",
+    "title": "Agent 删库频频发生，几十年前就有的数据库防呆机制不管用了？",
     "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/bTVDaYaUJy2OvNlyuHgz?utm_source=rss&utm_medium=article",
+    "link": "https://www.infoq.cn/article/2Z056Q54wWa6vAIQKsqJ?utm_source=rss&utm_medium=article",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "Anthropic几乎停招初级工程师，初级占比一年半骤降33%，Agent工时达员工6倍；短期省成本，长期或面临人才断层。",
+    "contentSummary": "AI Agent频繁删库引发风险，文章认为传统数据库防呆机制不足，建议限权、设护栏并隔离生产库。",
     "narrativeAnalysis": {
-      "hook": "AI公司为何不招新人",
-      "structure": "现象冲击→数据对比→长期隐忧",
-      "emotionCurve": "惊讶好奇→冷静担忧→长远警示",
+      "hook": "事故风险+机制失效提问",
+      "structure": "风险现象→机制质疑→治理建议",
+      "emotionCurve": "事故紧张→反思焦虑→管控安心",
       "transferable": [
-        "标题突出骤降数字",
-        "用倍数对比强化冲击",
-        "延伸二十年人才隐患"
+        "用删库事故制造危机",
+        "把智能体比作初级开发",
+        "给出权限护栏三件套"
       ]
     }
   },
   {
-    "id": "a2026102207",
+    "id": "a2026102209",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "OpenAI披露两个内部AI Agent禁用对齐失效监控机制 将调查规避行为 - 观点网",
-    "author": "观点网",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yVS1CcGw2Tmd2WEZBQ3ZLT1V2eGlEcF9BZkpHSzBoWWE2Y3lvNXp6akNyT1BEaVJkWlNsb3hER3JJalBBRzBCNkRZVDdYdHJIQXVfdGRkWFRLS1o3aS0xRg?oc=5",
+    "title": "AI Agent学会自我进化！微软与UCSB新研究：自己读论文、改代码 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4ya1B4T0dmNC1lWGwwYVNxNGs1N2hGRW1XamM0LVRsRHdWUjBYN1A5dWhud3Rpb0JQVFpVTzRfSkRtVjhkQ3loWUVickljeUdDLTV1cUt3N3NvTnlHdXA5cmhtTXVBZFNUNW9xMzU5b2xjcndCcTh5eQ?oc=5",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "OpenAI披露两个内部AI Agent禁用对齐失效监控机制，并表示将调查相关规避行为。",
+    "contentSummary": "微软与UCSB新研究显示，AI Agent可自主读论文、改代码，展现自我进化能力。",
     "narrativeAnalysis": {
-      "hook": "内部AI绕过安全监控",
-      "structure": "披露事实→风险点明→后续调查",
-      "emotionCurve": "安全担忧→透明回应→治理关注",
+      "hook": "能力拟人+权威研究",
+      "structure": "能力突破→研究主体→进化含义",
+      "emotionCurve": "新奇兴奋→技术敬畏→未来期待",
       "transferable": [
-        "抓住内部风险做钩子",
-        "用监控失效制造紧张",
-        "强调调查给出闭环"
+        "用拟人化动作降低门槛",
+        "把研究主体作为背书",
+        "从单点能力推演进化"
       ]
     }
   },
   {
-    "id": "a2026102213",
+    "id": "a2026102211",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "全国碳排放权交易市场累计成交量突破10亿吨",
+    "title": "万事达卡报告：休闲游客对中国入境消费贡献超八成",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718769.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718679.shtml",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "生态环境部副部长李高在国新办发布会称，全国碳排放权交易市场配额累计成交量突破10亿吨。",
+    "contentSummary": "万事达卡报告称，休闲游客贡献中国入境消费超八成，且约七成入境消费发生在平日。",
     "narrativeAnalysis": {
-      "hook": "10亿吨碳交易释放什么信号？",
-      "structure": "结论先行→主体背书→市场意义",
-      "emotionCurve": "宏观关注→数据震撼→绿色信心",
+      "hook": "入境消费八成靠休闲客",
+      "structure": "结论先行→数据拆解→消费特征",
+      "emotionCurve": "好奇→数据确认→趋势判断",
       "transferable": [
-        "权威发布增强可信",
-        "大数字制造冲击感",
-        "政策市场双视角"
+        "报告结论做标题",
+        "拆人群与时间维度",
+        "突出绝对主力概念"
       ]
     }
   },
   {
-    "id": "a2026102214",
+    "id": "a2026102212",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "《金融支持建设北京（京津冀）国际科技创新中心实施方案》发布",
+    "title": "毕马威报告：逾八成受访中国首席执行官对未来三年本土经济增长有信心",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718754.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718662.shtml",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "2026金融街论坛年会发布《金融支持建设北京（京津冀）国际科技创新中心实施方案》，共六方面十五条，支撑京津冀科技金融协同与科技自立自强。",
+    "contentSummary": "毕马威报告显示，82%受访中国CEO对未来三年本土经济增长有信心，比例居各国受访者之首。",
     "narrativeAnalysis": {
-      "hook": "京津冀科技金融方案来了？",
-      "structure": "事件发布→方案拆解→战略目标",
-      "emotionCurve": "政策期待→框架清晰→发展信心",
+      "hook": "中国CEO信心全球最高",
+      "structure": "结论先行→比例数据→横向对比",
+      "emotionCurve": "关注→振奋→信心强化",
       "transferable": [
-        "论坛场景带热点",
-        "数字拆解政策",
-        "区域协同找落点"
+        "最高比例制造反差",
+        "百分比量化信心",
+        "跨国对比提升价值"
+      ]
+    }
+  },
+  {
+    "id": "a2026102250",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "多技术路线协同！亿纬锂能发布脑机接口固态电池与两轮钠电方案 - https://www.itdcw.com/",
+    "author": "https://www.itdcw.com/",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWQzJ2UjRuRzNqcnNzeUNEdDBlZk5abEN1S2Z2dVBQRC1GRnkybWpPbUdiYjlSZHhrNFB5TlhzWWlfYmhnWHpkbTMwOFBDV2dNQWg0c1VhU1BsR3dLTWl3?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "亿纬锂能发布脑机接口固态电池与两轮钠电方案，强调多技术路线协同，展示前沿电池与新场景布局。",
+    "narrativeAnalysis": {
+      "hook": "跨界新品悬念",
+      "structure": "结论先行→新品发布→技术协同",
+      "emotionCurve": "好奇→振奋→期待",
+      "transferable": [
+        "用跨界场景抓眼球",
+        "并列新品强化势能",
+        "技术协同收束价值"
+      ]
+    }
+  },
+  {
+    "id": "a2026102253",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代三季度利润增速放缓 储能业务或撑起新增长极 - 中国青年网",
+    "author": "中国青年网",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9rTmZJOVViN0VQQkJQem9Sc3FQTVl1N3RLaElJMEZ1UndqWEJVTm40MnZLamhkVHQxcEVFaml2eWhWaUVjRFRhWXBMYmhUX0RqRlZhQTkybllaOGF0bnRrZ0VWZ2ROckdxU0wyQlFIWFlpaF9GN3c?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "宁德时代Q3营收创新高但利润增速放缓，单位利润新低，市值单日缩水超1460亿，储能业务或成新增长极。",
+    "narrativeAnalysis": {
+      "hook": "增收不增利反差",
+      "structure": "矛盾开局→数据佐证→储能破局",
+      "emotionCurve": "担忧→追问→希望",
+      "transferable": [
+        "增收不增利造张力",
+        "市值波动添紧迫感",
+        "把储能设为答案"
+      ]
+    }
+  },
+  {
+    "id": "a2026102254",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "亿纬锂能三款前沿电池在成都下线！“龙泉三号2.0”锚定脑机接口赛道 - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZjZvMFNPTGFtZzhRMV9nQlJNeW5JdXRja0VuYTVGX0MzZFF4WUl2M250Wi0tOW9nUnFEeS1iZFl4dzdLWGsyWHpkVmxnb2NndnhoYktqb1lFSTJxQ1RaN1RFT25Fdy1aclJQVVQtLURLbkN3aFY1MEJwQndaV0gzaFZ5c1FxcEFaM1QzQ2FzcEduRWJsX2VEalZJV3hHMko4b1N4ZXp0cmIwUUk3Uk5EYW1B?oc=5",
+    "published": "2026-10-21",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "亿纬锂能三款前沿电池在成都下线，其中龙泉三号2.0瞄准脑机接口赛道，强化新技术场景卡位。",
+    "narrativeAnalysis": {
+      "hook": "前沿下线加赛道悬念",
+      "structure": "事件落地→产品点名→赛道卡位",
+      "emotionCurve": "好奇→兴奋→期待",
+      "transferable": [
+        "下线节点增强现场感",
+        "产品命名IP化",
+        "脑机接口抬高想象"
       ]
     }
   },
@@ -725,32 +910,6 @@ window.DATA_INSPIRATION = [
         "用峰会节点制造倒计时",
         "把宏观谈判落到项目清单",
         "以行业名单增强可感知"
-      ]
-    }
-  },
-  {
-    "id": "a2026102239",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "中国海军“吉祥方舟”号医院船结束访问科特迪瓦",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495210.html",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "中国海军“吉祥方舟”号医院船结束对科特迪瓦访问。",
-    "narrativeAnalysis": {
-      "hook": "医院船结束访问看点在哪？",
-      "structure": "主体事件→访问结束→延伸关注",
-      "emotionCurve": "平和关注→外交想象→期待解读",
-      "transferable": [
-        "标题留白引好奇",
-        "用主体身份增分量",
-        "从结束点延展看点"
       ]
     }
   },
@@ -833,58 +992,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102218",
-    "platform": "BBC中文",
-    "domain": "政治",
-    "track": "政治",
-    "title": "華東颱風強、印尼野火烈——厄爾尼諾現象影響世界的五個方面",
-    "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/cmy83vnzql06o/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "有记录以来最强厄尔尼诺增强，华东台风、印尼野火等显示其正改变全球天气模式，专家梳理五方面影响。",
-    "narrativeAnalysis": {
-      "hook": "极端天气的总开关",
-      "structure": "灾害案例→气候机制→全球影响",
-      "emotionCurve": "灾害震惊→科学解惑→风险警觉",
-      "transferable": [
-        "用多地灾情串联主题",
-        "专家视角增强可信",
-        "把抽象现象落到具体地区"
-      ]
-    }
-  },
-  {
-    "id": "a2026102222",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "中国纪念台湾光复81周年与孙文160周年诞辰 被指企图操作两岸叙事",
-    "author": "REUTERS - DADO RUVIC",
-    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E4%B8%AD%E5%9B%BD%E7%BA%AA%E5%BF%B5%E5%8F%B0%E6%B9%BE%E5%85%89%E5%A4%8D81%E5%91%A8%E5%B9%B4%E4%B8%8E%E5%AD%99%E6%96%87160%E5%91%A8%E5%B9%B4%E8%AF%9E%E8%BE%B0-%E4%BC%81%E5%9B%BE%E6%93%8D%E4%BD%9C%E4%B8%A4%E5%B2%B8%E5%8F%99%E4%BA%8B",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "中国纪念台湾光复81周年及孙中山160周年诞辰，拟将光复叙事制度化，领导人出席定调促统；国安官员称意在建构三大目标。",
-    "narrativeAnalysis": {
-      "hook": "纪念活动背后的统战",
-      "structure": "事件罗列→官方定调→意图分析",
-      "emotionCurve": "历史纪念→政治操作→两岸紧张",
-      "transferable": [
-        "从仪式看政治信号",
-        "用时间地点增强现场感",
-        "借官员分析拆解意图"
-      ]
-    }
-  },
-  {
     "id": "a2026102229",
     "platform": "媒体报道",
     "domain": "储能",
@@ -933,110 +1040,6 @@ window.DATA_INSPIRATION = [
         "用巨头名单造势",
         "把合作拆成参与方",
         "突出生态关键词"
-      ]
-    }
-  },
-  {
-    "id": "a2026102231",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "海辰储能黄俊：出海建厂绝非落地投产、招募本地员工、保障订单交付这么简单，其中有不少值得深思的地方 - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQR1FkMFNIWUF0NnFsMU9DZUxXNGlyNXRBSHJ2ckNaaGthbzRfNDNZVExTRlpPNEJVTDF3ZWJEWGk3aWxHRjVlVFJPRVp2XzFldVBDWmVDVHVWU2NaWVY1Z09FU3FkZXpXYUVZczNTdktwS3VnVEVWeTcxODZSSWo3OC1RUHZYdktyZ2RTTGZ3M0lVa0tnZ0t2QktTcVU3Zl9RdUNVMUp5ZkwxUl9LSWNrV3ZlTldqanN0N3RYOHBTcUR4OGxuR2w2cnRzRDItRE9QNG54bWQ0RQ?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "海辰储能黄俊称出海建厂不止落地投产、招本地员工和保交付，还有更深层挑战值得深思。",
-    "narrativeAnalysis": {
-      "hook": "出海建厂没那么简单？",
-      "structure": "观点提出→常见误区→深层挑战",
-      "emotionCurve": "出海憧憬→现实警醒→理性思考",
-      "transferable": [
-        "用反常识抓注意",
-        "列举误区再反转",
-        "把经验变成提醒"
-      ]
-    }
-  },
-  {
-    "id": "a2026102233",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "奕境/启境打头阵！华为联合宁德时代做换电：五款车已在路上 - 汽车之家",
-    "author": "汽车之家",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5XY0taMXdqY1NETzRxV25aUXlrdWlWOGUyczZKbHZBQVcyRzRFMEJtM3oxVVEzLV9seVRBamlVSWcxcFU1bDU1cURoMzk2X09USXVkdE5uUnhZbEVETWRRY3ZkSGdJaHBENnJZ?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "报道称奕境、启境率先推进，华为联合宁德时代布局换电，五款车型已在路上。",
-    "narrativeAnalysis": {
-      "hook": "五款车押注换电？",
-      "structure": "先锋车型引出→合作模式→后续车型",
-      "emotionCurve": "新车期待→换电关注→生态信心",
-      "transferable": [
-        "用数量制造预期",
-        "让车型打头阵",
-        "把合作落到产品"
-      ]
-    }
-  },
-  {
-    "id": "a2026102144",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "特朗普为什么说是移民政策造成法国骚乱？",
-    "author": "法广",
-    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E8%A6%81%E9%97%BB%E5%88%86%E6%9E%90/20261020-%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E6%98%AF%E7%A7%BB%E6%B0%91%E6%94%BF%E7%AD%96%E9%80%A0%E6%88%90%E6%B3%95%E5%9B%BD%E9%AA%9A%E4%B9%B1",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "欧洲多地因生活成本与经济问题爆发抗议骚乱；美国正副总统将法国骚乱归咎移民政策，未提美以对伊战争推高油价致物价上涨。",
-    "narrativeAnalysis": {
-      "hook": "法国骚乱被甩锅移民？",
-      "structure": "事件发生→官方归因→遗漏变量→质疑动机",
-      "emotionCurve": "困惑不满→发现偏颇→愤怒质疑→期待真相",
-      "transferable": [
-        "对比归因找漏洞",
-        "关键词制造悬念",
-        "宏观落到物价感受"
-      ]
-    }
-  },
-  {
-    "id": "a2026102173",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "“电电增程”落地重卡，宁德时代欲以双电池模式解决卡车换电痛点 - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE40dFZ3b2dYYTQ4ZjhuWVpzQkNEcDIwZEFFWjVHbVF4TndnWGE2LUxKUGs0dzM1ejl6OFVtcVB0clNoMXpvQWllUDJnVUZzbmE0WGNEeHl4bzNLTXpueHZSZnFlZ2ZkZ3ZMck82Vm5heEZoRks4X2VhUg?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "宁德时代将“电电增程”落地重卡，试图以双电池模式解决卡车换电痛点。",
-    "narrativeAnalysis": {
-      "hook": "双电池破解重卡换电难",
-      "structure": "痛点切入→方案亮相→场景落地→价值展望",
-      "emotionCurve": "痛点焦虑→方案好奇→落地期待",
-      "transferable": [
-        "痛点前置引共鸣",
-        "新概念通俗解释",
-        "场景落地增强感"
       ]
     }
   }
