@@ -1,7 +1,7 @@
 /**
  * B站 UP 主投稿（自建 external 信源类型）。
  * wbi 签名直连官方接口；接口易触发 -352 风控，因此：
- *   全局串行链 + 调用间隔 2–3.5s + wbi key 进程内缓存 + 4 次重试（每次重置 cookie/key）
+ *   全局串行链 + 调用间隔 2–3.5s + wbi key 进程内缓存 + 5 次重试（每次重置 cookie/key）
  * 参考：https://socialsisteryi.github.io/bilibili-API-collect/ 的 wbi 签名方案
  */
 import crypto from 'node:crypto';
@@ -52,7 +52,7 @@ async function apiOnce(path, params) {
 
 async function api(path, params) {
   const run = async () => {
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
       if (i > 0) {
         cookie = '';   /* 强制重新拿 buvid */
         wbiKey = '';
@@ -60,7 +60,7 @@ async function api(path, params) {
       }
       try { return await apiOnce(path, params); }
       catch (e) {
-        if (i === 3) throw e;
+        if (i === 4) throw e;
         console.warn(`[B站] 请求失败（第 ${i + 1} 次），重试：${e.message.slice(0, 80)}`);
       }
     }

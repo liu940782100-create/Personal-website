@@ -3,8 +3,8 @@
  * URL 身份判重参考 AIHOT「同一网址只留一份」的做法：去掉锚点与跟踪参数。
  */
 
-/** 时效上限（天）：超过即视为陈旧内容，不入候选、写回时也淘汰 */
-export const FRESH_DAYS = Number(process.env.INSPIRATION_FRESH_DAYS) || 60;
+/** 时效上限（天）：超过即视为陈旧内容，不入候选、写回时也淘汰（用户要求：更新后不旧于 1 周） */
+export const FRESH_DAYS = Number(process.env.INSPIRATION_FRESH_DAYS) || 7;
 
 const TRACKING_PARAMS = new Set([
   'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
