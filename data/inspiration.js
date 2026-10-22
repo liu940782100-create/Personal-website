@@ -1,6 +1,32 @@
 /* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
   {
+    "id": "a2026102221",
+    "platform": "B站",
+    "domain": "政治",
+    "track": "政治",
+    "title": "【独家视频】纪念中国工农红军长征胜利90周年大会在京隆重举行，习近平出席大会并发表重要讲话",
+    "author": "央视新闻",
+    "link": "https://www.bilibili.com/video/BV1e8nC6PEfE",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "长征胜利90周年纪念大会在北京举行，习近平出席并发表重要讲话。",
+    "narrativeAnalysis": {
+      "hook": "重大仪式+权威讲话",
+      "structure": "事件概述→主体出席→讲话聚焦",
+      "emotionCurve": "庄重纪念→权威聚焦→历史致敬",
+      "transferable": [
+        "大事件用地点定调",
+        "权威人物增强分量",
+        "周年节点制造仪式感"
+      ]
+    }
+  },
+  {
     "id": "a2026102125",
     "platform": "B站",
     "domain": "军事",
@@ -391,6 +417,60 @@ window.DATA_INSPIRATION = [
     }
   },
   {
+    "id": "a2026102222",
+    "platform": "BBC中文",
+    "domain": "政治",
+    "track": "政治",
+    "title": "特朗普治下，美國經濟的真實表現如何？",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/cqkgke5j6yego/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-22",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "中期选举前特朗普吹嘘美国经济，BBC核查通胀、就业与增长的真实表现。",
+    "narrativeAnalysis": {
+      "hook": "选举话术VS事实核查",
+      "structure": "争议提出→核查维度→真相判断",
+      "emotionCurve": "政治宣传→质疑审视→理性澄清",
+      "transferable": [
+        "用对立框架开场",
+        "列核查指标",
+        "借权威机构背书"
+      ]
+    }
+  },
+  {
+    "id": "a2026102231",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "法国再迎示威潮 马克龙要求严惩暴力 多地禁集会加强戒备",
+    "author": "REUTERS - Benoit Tessier",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261021-%E6%B3%95%E5%9B%BD%E5%86%8D%E8%BF%8E%E7%A4%BA%E5%A8%81%E6%BD%AE-%E9%A9%AC%E5%85%8B%E9%BE%99%E8%A6%81%E6%B1%82%E4%B8%A5%E6%83%A9%E6%9A%B4%E5%8A%9B-%E5%A4%9A%E5%9C%B0%E7%A6%81%E9%9B%86%E4%BC%9A%E5%8A%A0%E5%BC%BA%E6%88%92%E5%A4%87",
+    "published": "2026-10-22",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "法国多地连续宵禁，马克龙要求严惩暴力并禁集会戒备；黄背心与青年拟24日再抗议，距总统选举六个月，勒庞指政府失控。",
+    "narrativeAnalysis": {
+      "hook": "宵禁后抗议再临",
+      "structure": "现场管控→官方强硬→反对派施压",
+      "emotionCurve": "社会紧张→政府高压→政治博弈",
+      "transferable": [
+        "用时间词制造紧迫",
+        "引多方表态呈现冲突",
+        "关联选举放大影响"
+      ]
+    }
+  },
+  {
     "id": "a2026102228",
     "platform": "法广",
     "domain": "政治",
@@ -445,80 +525,236 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102245",
+    "id": "a2026102213",
     "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "以媒：数十架以军战机飞近伊朗边境",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718826.shtml",
+    "domain": "财经",
+    "track": "财经",
+    "title": "IDC最新报告：阿里云占中国汽车公共云市场份额超45%",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10718989.shtml",
     "published": "2026-10-22",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "以媒称，19日至20日凌晨，数十架以色列战机与加油机飞越叙伊领空，接近伊朗边境后折返，航线类似对伊打击路线。",
+    "contentSummary": "IDC报告显示，2026上半年中国汽车公共云基础设施市场规模约83.4亿元，阿里云份额45.1%，收入同比增111%，连续11期第一。",
     "narrativeAnalysis": {
-      "hook": "临境折返悬念",
-      "structure": "消息源引入→时间地点→航线细节→意图暗示",
-      "emotionCurve": "紧张升级→疑云加深→风险关注",
+      "hook": "阿里云拿下汽车云半壁江山？",
+      "structure": "结论先行→数据佐证→持续领先",
+      "emotionCurve": "行业好奇→数据震撼→龙头确认",
       "transferable": [
-        "用时间线制造现场感",
-        "借消息源增强可信度",
-        "以折返动作留悬念"
+        "用半壁江山强化份额",
+        "连续排名突出长期优势",
+        "规模增速双指标佐证"
       ]
     }
   },
   {
-    "id": "a2026102246",
+    "id": "a2026102215",
     "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "乌克兰首都基辅遭弹道导弹袭击",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718824.shtml",
+    "domain": "财经",
+    "track": "财经",
+    "title": "海南自贸港建设以来最大集装箱船舶靠泊洋浦港",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10718993.shtml",
     "published": "2026-10-22",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "乌媒称，21日晚俄罗斯使用弹道导弹袭击乌克兰首都基辅，当地传出爆炸声。",
+    "contentSummary": "10月22日，超大型集装箱船“中海大西洋”轮靠泊洋浦港，长399.67米、载箱18982标箱，为海南自贸港建设以来最大靠泊集装箱船，刷新纪录。",
     "narrativeAnalysis": {
-      "hook": "首都遇袭冲击",
-      "structure": "事件定性→时间地点→武器类型→现场反应",
-      "emotionCurve": "突发震惊→局势担忧→安全警觉",
+      "hook": "海南迎来史上最大货轮",
+      "structure": "事件发生→船舶参数→纪录意义",
+      "emotionCurve": "现场震撼→数据确认→港口升级",
       "transferable": [
-        "首句点明首都遇袭",
-        "用爆炸声还原现场",
-        "突出弹道导弹威胁"
+        "用最大刷新制造看点",
+        "列参数增强真实感",
+        "关联自贸港战略意义"
       ]
     }
   },
   {
-    "id": "a2026102248",
-    "platform": "中国军网",
+    "id": "a2026102236",
+    "platform": "凤凰军事",
     "domain": "军事",
     "track": "军事",
-    "title": "陆军某旅组织复杂环境下实战化训练——高原索降砺尖兵",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495277.html",
+    "title": "马斯克一道限速令，“星盾”立刻瘫痪乌军无人作战链",
+    "author": "凤凰军事",
+    "link": "http://mil.ifeng.com/c/8xQP1z2bBfb",
     "published": "2026-10-22",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "陆军某旅在复杂环境下开展实战化训练，重点呈现高原索降课目，锤炼尖兵能力。",
+    "contentSummary": "马斯克限速令致星盾瘫痪乌军无人作战链，暴露乌方缺少可独立支撑高速机动平台的备用通信体系。",
     "narrativeAnalysis": {
-      "hook": "高原索降砺兵",
-      "structure": "部队主体→环境设定→训练课目→练兵目的",
-      "emotionCurve": "艰苦紧张→热血振奋→能力期待",
+      "hook": "一道限速令，瘫痪作战链",
+      "structure": "事件冲击→原因揭示→体系短板",
+      "emotionCurve": "突发震惊→技术反思→安全焦虑",
       "transferable": [
-        "用复杂环境立难度",
-        "以课目名强化画面",
-        "从训练落到战斗力"
+        "小切口撬动大系统",
+        "用命令制造冲突",
+        "从故障反推体系短板"
+      ]
+    }
+  },
+  {
+    "id": "a2026102237",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "美副总统万斯：乌克兰不是北约成员，也不应加入北约",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-22/10718847.shtml",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "美副总统万斯公开表态，乌克兰不是北约成员，也不应加入北约，明确其对乌入约问题的立场。",
+    "narrativeAnalysis": {
+      "hook": "入约大门被明确关上",
+      "structure": "权威表态→身份界定→政策倾向",
+      "emotionCurve": "期待落空→现实冷峻→格局担忧",
+      "transferable": [
+        "借高层表态定调",
+        "用否定句强化边界",
+        "以身份标签制造冲突"
+      ]
+    }
+  },
+  {
+    "id": "a2026102238",
+    "platform": "凤凰军事",
+    "domain": "军事",
+    "track": "军事",
+    "title": "英国将部署“台风”战机协防沙特，保护关键设施",
+    "author": "凤凰军事",
+    "link": "http://mil.ifeng.com/c/8xNuHVdalYY",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "英国20日表示将部署战斗机协防沙特，帮助其抵御也门境内与伊朗结盟的胡塞武装袭击，保护关键设施。",
+    "narrativeAnalysis": {
+      "hook": "战机赴沙特护关键设施",
+      "structure": "行动公布→威胁来源→防护目标",
+      "emotionCurve": "紧张升级→同盟响应→安全关切",
+      "transferable": [
+        "用装备名增强画面",
+        "点明威胁源提升紧迫",
+        "把设施价值前置"
+      ]
+    }
+  },
+  {
+    "id": "a2026102252",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "报道：DeepSeek完成1000亿元融资 宁德时代和腾讯参投 - 华尔街见闻",
+    "author": "华尔街见闻",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB3a21jSTBTanJsaWxfSXdkOVZZeXZGTThaZXRqWEdMRC00ZkR2Q1VkRmo0bXZhbUZPUVd5Nl9kejBJZ2dEdG9Ycnl2Tk5QNUZkTHRB?oc=5",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "华尔街见闻报道称DeepSeek完成1000亿元融资，宁德时代、腾讯参投。",
+    "narrativeAnalysis": {
+      "hook": "悬念提问：谁投了DeepSeek？",
+      "structure": "事件结论→金额主体→参投方补充",
+      "emotionCurve": "好奇关注→资本震撼→行业联想",
+      "transferable": [
+        "用金额制造冲击",
+        "点名巨头增强可信",
+        "标注来源降低风险"
+      ]
+    }
+  },
+  {
+    "id": "a2026102255",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "消息称DeepSeek已融资1000亿元：两次上调目标 腾讯、宁德时代投资 - 凤凰网",
+    "author": "凤凰网",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GVFhwVy1YX2hGTlVZNGswTmQ1ZzQwUnE0V0RIbEF5aWlmU2JpZFg0MXctdjg1LXd1RzJTamt4d1F5R2lVN2pqelRDeE5mS0V1Y0E?oc=5",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "凤凰消息称DeepSeek已融资1000亿元，目标曾两次上调，腾讯、宁德时代投资。",
+    "narrativeAnalysis": {
+      "hook": "融资目标为何两度上调？",
+      "structure": "消息引入→金额与过程→投资方落点",
+      "emotionCurve": "传闻好奇→数字升级→资本确认",
+      "transferable": [
+        "用变化讲融资热度",
+        "两次上调制造递进",
+        "投资方名单提升权重"
+      ]
+    }
+  },
+  {
+    "id": "a2026102257",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "换电开放大局已定？蔚来八年只“开花”，宁德两年就“结果” - 凤凰网",
+    "author": "凤凰网",
+    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1nSjFRVzBlaWtfd2pWYi1oVnpyeFdzd0lZdkg0QVBMSzc5QkljbkZLRklwUnRDY1FWb0wyZ0Z6TlhuMGF5Q3RWdkhVNE0?oc=5",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "凤凰网标题以蔚来八年与宁德两年对比，讨论换电开放是否大局已定。",
+    "narrativeAnalysis": {
+      "hook": "换电开放真的定了？",
+      "structure": "设问判断→双主体对比→趋势暗示",
+      "emotionCurve": "疑问观望→对比惊讶→趋势确信",
+      "transferable": [
+        "用问号引发讨论",
+        "时间对比突出差异",
+        "拟物词增强画面"
+      ]
+    }
+  },
+  {
+    "id": "a2026102258",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "脑机接口的电源难题，亿纬全固态出手了 - 电子工程专辑",
+    "author": "电子工程专辑",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1U2dWdVVqUlNrTUlXS0Z5bWk2Um9BY0Fmb1ZFNHN2TGFEMlBTWGc1ZEFlNjZyLW5VbEQzdlJ4eUIwRThaZ2dabVZSaGVCS0FYcVU4?oc=5",
+    "published": "2026-10-22",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-22"
+    },
+    "contentSummary": "电子工程专辑称脑机接口面临电源难题，亿纬以全固态电池切入。",
+    "narrativeAnalysis": {
+      "hook": "脑机接口缺电怎么办？",
+      "structure": "痛点抛出→技术方向→企业动作",
+      "emotionCurve": "技术焦虑→路径期待→破局希望",
+      "transferable": [
+        "先抛行业卡点",
+        "用新技术承接需求",
+        "企业动作落地话题"
       ]
     }
   },
@@ -571,32 +807,6 @@ window.DATA_INSPIRATION = [
         "借联合国背书提升紧迫",
         "把气候灾害连到粮食经济",
         "用人数让抽象风险具象"
-      ]
-    }
-  },
-  {
-    "id": "a2026102224",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "台湾相声演员因讽中共遭中国公民雇凶袭击，检方起诉5名男子",
-    "author": "© 网络截图",
-    "link": "https://www.rfi.fr/cn/%E6%94%BF%E6%B2%BB/20261021-%E5%8F%B0%E6%B9%BE%E7%9B%B8%E5%A3%B0%E6%BC%94%E5%91%98%E5%9B%A0%E8%AE%BD%E4%B8%AD%E5%85%B1%E9%81%AD%E4%B8%AD%E5%9B%BD%E5%85%AC%E6%B0%91%E9%9B%87%E5%87%B6%E8%A2%AD%E5%87%BB5%E7%94%B7%E8%A2%AB%E8%B5%B7%E8%AF%89",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "检方指控5名男子受一名中国公民雇佣，自7月起跟踪台湾相声演员黄逸豪，计划制造车祸重伤以阻止其讽刺中共的演出。",
-    "narrativeAnalysis": {
-      "hook": "段子为何招来杀机",
-      "structure": "案件结果→作案过程→动机揭示",
-      "emotionCurve": "震惊不安→追踪压迫→言论恐惧",
-      "transferable": [
-        "用职业身份制造反差",
-        "按时间线还原威胁升级",
-        "点明动机连接表达自由"
       ]
     }
   },
@@ -679,133 +889,54 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102242",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "气候变化：联合国报告确认增幅1.5度势在必然 但强调仍有回春之术",
-    "author": "法广",
-    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E7%8E%AF%E4%BF%9D%E5%A4%A9%E5%9C%B0/20261021-%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96-%E8%81%94%E5%90%88%E5%9B%BD%E6%8A%A5%E5%91%8A%E7%A1%AE%E8%AE%A4%E5%A2%9E%E5%B9%851-5%E5%BA%A6%E5%8A%BF%E5%9C%A8%E5%BF%85%E7%84%B6-%E4%BD%86%E5%BC%BA%E8%B0%83%E4%BB%8D%E6%9C%89%E5%9B%9E%E6%98%A5%E4%B9%8B%E6%9C%AF",
-    "published": "2026-10-21",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "联合国环境规划署在气候峰会前发布报告，首次正式确认因多年行动不足，全球升温1.5度目标恐难守住，但强调仍有补救空间。",
-    "narrativeAnalysis": {
-      "hook": "权威转折：难守仍有救",
-      "structure": "报告发布→关键确认→保留希望",
-      "emotionCurve": "危机逼近→权威确认→行动希望",
-      "transferable": [
-        "权威机构增分量",
-        "首次确认造节点",
-        "结尾留出行动感"
-      ]
-    }
-  },
-  {
-    "id": "a2026102206",
+    "id": "a2026102203",
     "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "Agent 删库频频发生，几十年前就有的数据库防呆机制不管用了？",
+    "title": "Anthropic几乎停招初级员工！占比一年半骤降33%：Agent工时已是员工6倍",
     "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/2Z056Q54wWa6vAIQKsqJ?utm_source=rss&utm_medium=article",
+    "link": "https://www.infoq.cn/article/bTVDaYaUJy2OvNlyuHgz?utm_source=rss&utm_medium=article",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "AI Agent频繁删库引发风险，文章认为传统数据库防呆机制不足，建议限权、设护栏并隔离生产库。",
+    "contentSummary": "Anthropic几乎停招初级工程师，初级占比一年半骤降33%，AI Agent工时达员工6倍；文章警示省下的培养成本或致20年后人才断层。",
     "narrativeAnalysis": {
-      "hook": "事故风险+机制失效提问",
-      "structure": "风险现象→机制质疑→治理建议",
-      "emotionCurve": "事故紧张→反思焦虑→管控安心",
+      "hook": "反常识+数据骤降",
+      "structure": "现象冲击→数据对比→长期隐忧",
+      "emotionCurve": "惊讶警觉→成本理性→未来焦虑",
       "transferable": [
-        "用删库事故制造危机",
-        "把智能体比作初级开发",
-        "给出权限护栏三件套"
+        "用反常现象开篇",
+        "数据对比强化",
+        "延后成本做警示"
       ]
     }
   },
   {
-    "id": "a2026102209",
-    "platform": "媒体报道",
+    "id": "a2026102204",
+    "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "AI Agent学会自我进化！微软与UCSB新研究：自己读论文、改代码 - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4ya1B4T0dmNC1lWGwwYVNxNGs1N2hGRW1XamM0LVRsRHdWUjBYN1A5dWhud3Rpb0JQVFpVTzRfSkRtVjhkQ3loWUVickljeUdDLTV1cUt3N3NvTnlHdXA5cmhtTXVBZFNUNW9xMzU5b2xjcndCcTh5eQ?oc=5",
+    "title": "代码迁移准确率从 5.4% 飙至 97.9%！OpenAI 挑战 COBOL，几十年的老系统真能交给 AI 了？",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/LZsVYHAH1jyOtLg6Yiwk?utm_source=rss&utm_medium=article",
     "published": "2026-10-21",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-22"
     },
-    "contentSummary": "微软与UCSB新研究显示，AI Agent可自主读论文、改代码，展现自我进化能力。",
+    "contentSummary": "OpenAI挑战COBOL代码迁移，准确率从5.4%升至97.9%，引发几十年老系统能否交给AI改造的讨论。",
     "narrativeAnalysis": {
-      "hook": "能力拟人+权威研究",
-      "structure": "能力突破→研究主体→进化含义",
-      "emotionCurve": "新奇兴奋→技术敬畏→未来期待",
+      "hook": "数据跃升+疑问",
+      "structure": "数据突破→场景挑战→可行性追问",
+      "emotionCurve": "惊喜震撼→怀疑审视→期待验证",
       "transferable": [
-        "用拟人化动作降低门槛",
-        "把研究主体作为背书",
-        "从单点能力推演进化"
-      ]
-    }
-  },
-  {
-    "id": "a2026102211",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "万事达卡报告：休闲游客对中国入境消费贡献超八成",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718679.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "万事达卡报告称，休闲游客贡献中国入境消费超八成，且约七成入境消费发生在平日。",
-    "narrativeAnalysis": {
-      "hook": "入境消费八成靠休闲客",
-      "structure": "结论先行→数据拆解→消费特征",
-      "emotionCurve": "好奇→数据确认→趋势判断",
-      "transferable": [
-        "报告结论做标题",
-        "拆人群与时间维度",
-        "突出绝对主力概念"
-      ]
-    }
-  },
-  {
-    "id": "a2026102212",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "毕马威报告：逾八成受访中国首席执行官对未来三年本土经济增长有信心",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-21/10718662.shtml",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "毕马威报告显示，82%受访中国CEO对未来三年本土经济增长有信心，比例居各国受访者之首。",
-    "narrativeAnalysis": {
-      "hook": "中国CEO信心全球最高",
-      "structure": "结论先行→比例数据→横向对比",
-      "emotionCurve": "关注→振奋→信心强化",
-      "transferable": [
-        "最高比例制造反差",
-        "百分比量化信心",
-        "跨国对比提升价值"
+        "用前后数据对比",
+        "把技术落到老系统",
+        "以问句引讨论"
       ]
     }
   },
@@ -888,32 +1019,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102235",
-    "platform": "德国之声",
-    "domain": "政治",
-    "track": "政治",
-    "title": "深圳APEC前夕的较量：中美投资谈判或拟名单",
-    "author": "德国之声",
-    "link": "https://www.dw.com/zh/深圳apec前夕的较量：中美投资谈判或拟名单/a-79724498?maca=chi-rss-chi-all-1127-rdf",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "据报道，习特预计11月18至19日在深圳APEC会晤；中美正敲定协议，拟列中国投资美国非敏感项目短名单，涉电动车、储能与电力设备。",
-    "narrativeAnalysis": {
-      "hook": "峰会倒计时设悬念",
-      "structure": "会晤预告→谈判进展→潜在清单",
-      "emotionCurve": "外交期待→博弈谨慎→产业关注",
-      "transferable": [
-        "用峰会节点制造倒计时",
-        "把宏观谈判落到项目清单",
-        "以行业名单增强可感知"
-      ]
-    }
-  },
-  {
     "id": "a2026102240",
     "platform": "北极星储能网",
     "domain": "储能",
@@ -938,110 +1043,6 @@ window.DATA_INSPIRATION = [
         "从主体变化切入行业趋势"
       ]
     }
-  },
-  {
-    "id": "a2026102243",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "宁德时代：发布天行Ⅱ“电电增程”，破解重卡运营与残值难题 - 新浪网",
-    "author": "新浪网",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5XaGsta3hHd3ludVpSQnpMWUQzeUZlQUQ2R2ZLcWw1bVpYQTFqdGg5QjVUVUM5R21BcUh4NnJKYkNEdkZHYUg2ZWxTRHZYbk9EWGhCUVhKRFJKLVlFX3Z1eXdJaUVYRjA5RmJ2R0ptWDlHUQ?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "宁德时代发布天行Ⅱ“电电增程”，瞄准重卡运营与残值难题。",
-    "narrativeAnalysis": {
-      "hook": "重卡痛点来了，宁德新方案？",
-      "structure": "产品发布→痛点拆解→价值预期",
-      "emotionCurve": "行业难题焦虑→新技术希望→运营信心",
-      "transferable": [
-        "先抛用户痛点再出产品",
-        "用难题词强化代入",
-        "把技术名翻译成场景"
-      ]
-    }
-  },
-  {
-    "id": "a2026102244",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "锚定脑机接口等前沿领域，亿纬锂能全固态、钠电新品在成都经开区发布 - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8tcklxUWxIRVFqRS1WUUJZeVlacWtLR0lzczhnazB1QVM5czFWcDFnMWhqdmFSYjlyYXdUa2F4VnVPTzdQVUxCSW9mTTdGSVozZDIxbmpocGJGbzZnbnJxdG1yWmZtRy0xcXlfQ0ZUWkdLYVVzRG1aYg?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "亿纬锂能在成都经开区发布全固态、钠电等新品，并锚定脑机接口等前沿领域。",
-    "narrativeAnalysis": {
-      "hook": "电池厂盯上脑机接口？",
-      "structure": "新品发布→前沿布局→产业延伸",
-      "emotionCurve": "跨界好奇→技术期待→未来想象",
-      "transferable": [
-        "用跨界领域制造反差",
-        "新品清单体现技术密度",
-        "从发布地引出产业落点"
-      ]
-    }
-  },
-  {
-    "id": "a2026102229",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "营收狂奔、利润失速，宁德时代怎么了？ - 华尔街见闻",
-    "author": "华尔街见闻",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9tUVRWVDlkNDdWdzF3Tl8yNlBNQlZtcUc3eUhtQ3AxOGtGeklJaGwwQWFDeTZOaWRRTW9uNGtkck5nR3U3cWJOQWxaYkVaVXJQNUpz?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "文章聚焦宁德时代营收高增但利润失速，提及业绩下跌、股价腰斩及利润增速不及预期引发担忧。",
-    "narrativeAnalysis": {
-      "hook": "营收狂奔利润失速？",
-      "structure": "反差现象→市场担忧→追问原因",
-      "emotionCurve": "增长兴奋→利润焦虑→观望担忧",
-      "transferable": [
-        "用反差制造悬念",
-        "把财务指标口语化",
-        "以追问引导阅读"
-      ]
-    }
-  },
-  {
-    "id": "a2026102230",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "华为引望与宁德时代、时代电服达成战略合作，正式加入宁德时代巧克力换电生态 - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOUJ0LUQxVHBKQ25fQUI3MjRTZFFia2E5SlJoSXNkQi1hTnBNTHlWS3EwdVg2N2xfMzMtVmN4cVEwVXhibDVzOXRuajVqLWFVell2TEtDTk5qOVExaFkwRElrUjJPV3pLcDhsYTIwaHBfU19Tbm1xNS1yWFgzRnp5dFdBdFpJQnNjNWZQblFuWC1VZ0FmOG9NblVfRFhMRXl1WExZLXlFTVlkRXpuNDRHZXdwM3RRcXhtcDhfb0ZWMHEwTnV6ZTBnTE5LWEdBN1Fu?oc=5",
-    "published": "2026-10-21",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "华为引望与宁德时代、时代电服达成战略合作，正式加入巧克力换电生态。",
-    "narrativeAnalysis": {
-      "hook": "华为加入换电生态？",
-      "structure": "合作官宣→参与方说明→生态意义",
-      "emotionCurve": "强强联合惊喜→生态想象→行业期待",
-      "transferable": [
-        "用巨头名单造势",
-        "把合作拆成参与方",
-        "突出生态关键词"
-      ]
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-22","added":13,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-22","added":14,"total":40,"tracks":{"政治":8,"军事":8,"科技":8,"财经":8,"储能":8}};
