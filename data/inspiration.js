@@ -209,39 +209,13 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102101",
-    "platform": "B站",
-    "domain": "科技",
-    "track": "科技",
-    "title": "如果3.5亿个智能体同时干活，现在的芯片够用吗？",
-    "author": "老石谈芯",
-    "link": "https://www.bilibili.com/video/BV1umJX6SEPS",
-    "published": "2026-10-16",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-21"
-    },
-    "contentSummary": "以3.5亿智能体并发为假设，指出AI智能体爆发，现有服务器与芯片可能尚未准备好承接算力需求。",
-    "narrativeAnalysis": {
-      "hook": "3.5亿并发反问算力",
-      "structure": "场景提问→趋势揭示→资源矛盾",
-      "emotionCurve": "好奇调侃→紧迫担忧→待解悬念",
-      "transferable": [
-        "用极端并发提问",
-        "借热点梗引入",
-        "把技术落到硬件瓶颈"
-      ]
-    }
-  },
-  {
-    "id": "a2026102350",
-    "platform": "法广",
+    "id": "a2026102331",
+    "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "普京称愿谈最终和平协议 泽连斯基指俄方态度未变",
-    "author": "via REUTERS - Alexei Nikolsky",
-    "link": "https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20261022-%E6%99%AE%E4%BA%AC%E7%A7%B0%E6%84%BF%E8%B0%88%E6%9C%80%E7%BB%88%E5%92%8C%E5%B9%B3%E5%8D%8F%E8%AE%AE-%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA%E6%8C%87%E4%BF%84%E6%96%B9%E6%80%81%E5%BA%A6%E6%9C%AA%E5%8F%98",
+    "title": "中共五中全會前瞻：會前為何密集「打虎」？未來怎樣「從嚴治黨」？",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/ckx2q587wvrqo/trad?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-23",
     "intl": 1,
     "metrics": {
@@ -249,16 +223,654 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-23"
     },
-    "contentSummary": "普京称俄方愿恢复乌美三方谈判，目标为最终和平协议而非短暂停火；泽连斯基因俄军夜袭伤亡指俄方态度未变。",
+    "contentSummary": "中國政壇至今沒有明確的接班人。受訪專家認為，這反映習近平面臨兩難：不指定接班人有助維持權威，指定接班人則可能提前形成新的權力中心。",
     "narrativeAnalysis": {
-      "hook": "普京要终局协议，泽连斯基不信",
-      "structure": "俄方表态→乌方反驳→战场背景",
-      "emotionCurve": "和谈信号→怀疑对立→冲突阴影",
-      "transferable": [
-        "并列双方表态",
-        "用袭击验证不信任",
-        "避免单一叙事"
-      ]
+      "hook": "中共五中全會前瞻：會前為何密集「打虎",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102332",
+    "platform": "BBC中文",
+    "domain": "政治",
+    "track": "政治",
+    "title": "西藏那曲7級地震16死54傷，當局派翼龍無人機進行災情偵察",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/c9zrd1rd3jmyo/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-23",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "地震發生在西藏東北部一個山區且人口稀少的地區。",
+    "narrativeAnalysis": {
+      "hook": "西藏那曲7級地震16死54傷，當局派",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102333",
+    "platform": "BBC中文",
+    "domain": "政治",
+    "track": "政治",
+    "title": "PHP是什麼？為何它引發全球網絡安全危機？",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/c370pr45nelgo/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-23",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "人工智能發現了長期未被察覺的程式漏洞，引發全球罕見的大規模網絡安全應對行動。",
+    "narrativeAnalysis": {
+      "hook": "PHP是什麼？為何它引發全球網絡安全",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102334",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "欧盟祝贺遭美国制裁的国际刑事法院荣获2026萨哈罗夫奖",
+    "author": "© AP Photo / Peter Dejong",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261022-%E6%AC%A7%E7%9B%9F%E7%A5%9D%E8%B4%BA%E9%81%AD%E7%BE%8E%E5%9B%BD%E5%88%B6%E8%A3%81%E7%9A%84%E5%9B%BD%E9%99%85%E5%88%91%E4%BA%8B%E6%B3%95%E9%99%A2%E8%8E%B72026%E8%90%A8%E5%93%88%E7%BD%97%E5%A4%AB%E5%A5%96",
+    "published": "2026-10-23",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "欧洲议会周四宣布授予国际刑事法院（ICC）萨哈罗夫思想自由奖，该法院目前是特朗普瞄准的打击目标，欧盟则表示坚定不移地支持该机构。",
+    "narrativeAnalysis": {
+      "hook": "欧盟祝贺遭美国制裁的国际刑事法院荣获",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102335",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "伊朗战争：中国是伊朗的低调但却重要的支持者",
+    "author": "法广",
+    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E4%B8%96%E7%95%8C%E6%8A%A5/20261022-%E4%BC%8A%E6%9C%97%E6%88%98%E4%BA%89-%E4%B8%AD%E5%9B%BD%E6%98%AF%E4%BC%8A%E6%9C%97%E7%9A%84%E4%BD%8E%E8%B0%83%E4%BD%86%E5%8D%B4%E9%87%8D%E8%A6%81%E7%9A%84%E6%94%AF%E6%8C%81%E8%80%85",
+    "published": "2026-10-23",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "法国世界报周四刊出的文章表示，在伊朗战争中，中国是站在伊朗背后的低调但却重要的支持者。中国支持伊朗的方式主要有三种：继续购买德黑兰的石油，向伊朗提供军民两用物资…",
+    "narrativeAnalysis": {
+      "hook": "伊朗战争：中国是伊朗的低调但却重要的",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102301",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "Anthropic 推出“主动式 AI Agent” Claude Duet——无需等你开口就干活、关键操作先问批准 - OSCHINA",
+    "author": "OSCHINA",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxYmg3WGM3RUVCQkpYVUZDMVNhV1pDakdKQl9VVEhJU0lpbkg3SXlHeC1mR0xYRzNscE4xZTlkY0k2d19idWlFOTNfLUNselg2am1NMndZcGhZLTQ?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "Anthropic 推出“主动式 AI Agent” Claude Duet——无需等你开口就干活、关键操作先问批准 OSCHINA",
+    "narrativeAnalysis": {
+      "hook": "Anthropic 推出“主动式 A",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102302",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "Axios 独家：美国主要银行检测到第三方AI agent 已在客户账户内活动，Morgan Stanley 开始屏蔽 - 智源社区",
+    "author": "智源社区",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9GVi02Wkpib0dSZGZ3d2FvODl6eHNDVXV0UFhMVVFiQlE4UzNGckZOUzE4VnA4amJ4Q3BYTEYxMUdqMmlVaWNaYQ?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "Axios 独家：美国主要银行检测到第三方AI agent 已在客户账户内活动，Morgan Stanley 开始屏蔽 智源社区",
+    "narrativeAnalysis": {
+      "hook": "Axios 独家：美国主要银行检测到",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102303",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "苹果更新iWork套件15.4.1，引入AI智能助理 - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4yd1pCckxBTkF5UUF1UHBGbkNFZ3d1bDdOdUc4cExmdGdfcUpYUUZnY09fb0J5ZUhvQTlHU3NmdWtPSk9oSW85QzQ4RENhbDl6TGQtejR0bFNfZWwweVVodzNpYUhndTFOVHh2S3VsT29scUMtWUlNY1QwNXdvUQ?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "苹果更新iWork套件15.4.1，",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102306",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "科大讯飞发布新一代国产大模型，刘庆峰最新发声 - 证券之星",
+    "author": "证券之星",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SSkFSX3NrdTZaOFNEdkVPSjhuRnJENHF4WkNVLWt1N01ReWZGNEIzVXc2WkEteFFVQVdCNFpfT0xQVi1xYjBqOXh5ZHZhb3h2YWdGYkQzUVgyNU5wcWdZZA?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "科大讯飞发布新一代国产大模型，刘庆峰",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102308",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "Xcode 27.2 推出对智能体友好、有效减少合并冲突的 JSON 项目配置格式",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/7ResdjAZYy8yltOh6drM?utm_source=rss&utm_medium=article",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "苹果推出全新JSON格式Xcode项目配置文件，替代传统plist格式。",
+    "narrativeAnalysis": {
+      "hook": "Xcode 27.2 推出对智能体友",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102311",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "决策模型也有专用推理引擎了：StartLux 开源 Prism，单卡最高提速 5.3 倍",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/reksyo9EBAcP11Ns2GTO?utm_source=rss&utm_medium=article",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "从模型到推理引擎，专用优化正在成为新的竞争方向",
+    "narrativeAnalysis": {
+      "hook": "决策模型也有专用推理引擎了：Star",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102313",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "讯飞发布新一代端到端交互模型：语音大模型调用量暴涨20倍，端侧已实现约70%云端能力",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/Md0kdMxGI6flIbZXH1yg?utm_source=rss&utm_medium=article",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "“未来约60%的应用可以在本地完成，30%通过端云协同解决，剩余约10%的高复杂度任务交给云端大模型。”",
+    "narrativeAnalysis": {
+      "hook": "讯飞发布新一代端到端交互模型：语音大",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102314",
+    "platform": "爱范儿",
+    "domain": "科技",
+    "track": "科技",
+    "title": "早报｜微信回应未适配iPhone Duo/比亚迪：L3有望2028年落地/乐奇彩显AI眼镜意外曝光",
+    "author": "爱范儿",
+    "link": "https://www.ifanr.com/1685530?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "· 奥迪中国换帅，前奇瑞高管张俊将接任总裁 · 特斯拉三季度净利降 43%，管理层仍强调 FSD 技术领先 · 王兴兴：物理 AI 已有突破苗头，难点在模型与机…",
+    "narrativeAnalysis": {
+      "hook": "早报｜微信回应未适配iPhone D",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102315",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "前三季度中国造船三大指标全面增长 国际市场份额保持全球领先",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719624.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "中新社北京10月23日电 记者23日从中国船舶工业行业协会获悉，今年前三季度，中国造船三大指标全面增长。中国造船完工量、新承接船舶订单量、手持船舶订单量分别占世…",
+    "narrativeAnalysis": {
+      "hook": "前三季度中国造船三大指标全面增长 国",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102316",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "A股午评：超4800只个股飘绿，三大指数集体收跌",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719620.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "A股午评：超4800只个股飘绿，三大指数集体收跌；通信设备重挫，CPO概念股大跌；电子元器件、半导体下跌，白酒、保险逆市上涨",
+    "narrativeAnalysis": {
+      "hook": "A股午评：超4800只个股飘绿，三大",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102318",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "（乡村行·看振兴）产业赋能文旅增色 山西柳林推进乡村振兴建设",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719606.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "中新网吕梁10月23日电 题：产业赋能文旅增色 山西柳林推进乡村振兴建设",
+    "narrativeAnalysis": {
+      "hook": "（乡村行·看振兴）产业赋能文旅增色 ",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102321",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "广州商业从“拼招商”到“拼运营”",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/dwq/2026/10-23/10719667.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "供给扩容放量，差异化竞争进入下半场",
+    "narrativeAnalysis": {
+      "hook": "广州商业从“拼招商”到“拼运营”",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102323",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "第二届海峡养老产业博览会在福州开幕",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-23/10719652.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "中新网福州10月23日电 (叶秋云 郑江洛 吴冠标)第二届海峡养老产业博览会(简称“海峡老博会”)23日在福州开幕。",
+    "narrativeAnalysis": {
+      "hook": "第二届海峡养老产业博览会在福州开幕",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102330",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "（活力中国调研行）从叶片到产业链 “海上大风车”加速走向世界",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719591.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "中新网海南东方10月23日电 题：从叶片到产业链 “海上大风车”加速走向世界",
+    "narrativeAnalysis": {
+      "hook": "（活力中国调研行）从叶片到产业链 “",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102343",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "全军官兵认真学习习主席在纪念中国工农红军长征胜利90周年大会上的重要讲话",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495520.html",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "全军官兵认真学习习主席在纪念中国工农红军长征胜利90周年大会上的重要讲话",
+    "narrativeAnalysis": {
+      "hook": "全军官兵认真学习习主席在纪念中国工农",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102347",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "中国海军第48批护航编队完成任务返回青岛",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495552.html",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "中国海军第48批护航编队完成任务返回青岛",
+    "narrativeAnalysis": {
+      "hook": "中国海军第48批护航编队完成任务返回",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102360",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "武警部队官兵连夜奋战在巴青县抗震救灾一线",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495539.html",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "武警部队官兵连夜奋战在巴青县抗震救灾一线",
+    "narrativeAnalysis": {
+      "hook": "武警部队官兵连夜奋战在巴青县抗震救灾",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102363",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "山东电网新型储能装机突破1500万千瓦",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261023/1517337.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "山东电网新型储能装机突破1500万千瓦",
+    "narrativeAnalysis": {
+      "hook": "山东电网新型储能装机突破1500万千",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102364",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "河北省廊坊市独立储能项目投资主体优选评分标准（各市自主明确得分项） (征求意见稿)",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261023/1517362.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "河北省廊坊市独立储能项目投资主体优选评分标准（各市自主明确得分项） (征求意见稿)",
+    "narrativeAnalysis": {
+      "hook": "河北省廊坊市独立储能项目投资主体优选",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102365",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "3kW光储一体机逆变器！广东户用储能柜供应商征集",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261023/1517375.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "3kW光储一体机逆变器！广东户用储能柜供应商征集",
+    "narrativeAnalysis": {
+      "hook": "3kW光储一体机逆变器！广东户用储能",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102366",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "华为数字能源、盛弘股份、特来电、京能新能源、驴充充！2026年9月全国大功率充电设施制造商累计销量TOP5公布 - 国际充换电网",
+    "author": "国际充换电网",
+    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5menRBalBrbXh2cDR2ZzJDaUhqSncxVlE1Z0dObUlPY0U0YkRKNUxsS3ZPbW5ndzVsN3pvX1lMMENzZUdua0NSc1BDMmRGZnAxNGdLd2VmMA?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "华为数字能源、盛弘股份、特来电、京能新能源、驴充充！2026年9月全国大功率充电设施制造商累计销量TOP5公布 国际充换电网",
+    "narrativeAnalysis": {
+      "hook": "华为数字能源、盛弘股份、特来电、京能",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102367",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "阳光电源：10月22日融券卖出3.49万股，融资融券余额72.79亿元 - 搜狐",
+    "author": "搜狐",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcjN5eUY1WHA3ZU9OSE5lOEw4YS1NVDJ3X1JLazRmSFlsbzE1VndJYTRMVEJnc1p6SnBlZm1sZnNBWnBrTElzMWhwWXozcnEyRUdJeHNISEVWaDNtNGlyVU1yNzlQSW1YamZQc3RGWk5BOG9Ua3R1REN5T0FSelhmamhTYnhVSGlH?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "阳光电源：10月22日融券卖出3.4",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102368",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "10月22日光伏ETF国泰基金份额增加400万份，重仓股阳光电源、特变电工、隆基绿能_基金提醒_雷达 - 证券之星",
+    "author": "证券之星",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhQ3BLZDZGUzN3Uk1QMWFuaTdGa2ZFakx2c2pjaEg2bGtiSlJMX0dUckkzU3ctZmZ6dHJLcmdrUFlTTFlCZHNsZ040SjJXXy1pSEhZR0pPQmVJVUxWd0tKalNn?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "10月22日光伏ETF国泰基金份额增加400万份，重仓股阳光电源、特变电工、隆基绿能_基金提醒_雷达 证券之星",
+    "narrativeAnalysis": {
+      "hook": "10月22日光伏ETF国泰基金份额增",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102369",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "#MG4# 530周年限量版，8.48万除了宁德时代电池？还有哪些亮点？ #纯电智趣大两厢# ​ ​ - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1BnbU9YZmM2ZUtfWV9HRUM4cGVRQVBPWDFWRWtvWm8zMzJQWDhVV1RFUjhxZGgzZHJNMWRKMDViQ1prQ2c2X0ZEcS1wZmpoT29QWmpaZndiYVhSemNJMUNTX203czRfRWFSSkstYTJrX3ZpYlUxWGF6OXJSUmpmTg?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "#MG4# 530周年限量版，8.48万除了宁德时代电池？还有哪些亮点？ #纯电智趣大两厢# ​ ​ 新浪网",
+    "narrativeAnalysis": {
+      "hook": "#MG4# 530周年限量版，8.4",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102370",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "【#知情人士回应宁德时代董秘被打##网传小作文投资者需理性辨别#】10月22日，针对网传宁德时代董秘在某基金公司路演时被打，知情人士回应第一财经记者称，该消息不实，董秘并未出席这场路演。网传说法称，事发于景顺长城基金的路演活动，矛盾起因是市场对宁 - 手机新浪网",
+    "author": "手机新浪网",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9FVHkyc00xcVNhMENNY0ZtVnFDTVhNU090cFdPc2VxVnNPcDc3V3ZnTm4wSTdSTXo1S3p1Tm5NN1VHdXdDZ1JlQzkxaFlZUUdiUU1vVnRack5zRzA2cmJBejdvTQ?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-23"
+    },
+    "contentSummary": "【#知情人士回应宁德时代董秘被打##网传小作文投资者需理性辨别#】10月22日，针对网传宁德时代董秘在某基金公司路演时被打，知情人士回应第一财经记者称，该消息不…",
+    "narrativeAnalysis": {
+      "hook": "【#知情人士回应宁德时代董秘被打##",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
     }
   },
   {
@@ -312,738 +924,6 @@ window.DATA_INSPIRATION = [
         "用途明确减少抽象"
       ]
     }
-  },
-  {
-    "id": "a2026102351",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "普京：重启俄美乌三方会谈不是仅为短暂停火",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-23/10719453.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "普京22日表示，俄美就重启俄美乌三方会谈达成一致，且目标不只是短暂停火。",
-    "narrativeAnalysis": {
-      "hook": "普京一句话定调",
-      "structure": "结论先行→背景补充→目标澄清",
-      "emotionCurve": "局势紧张→外交缓和→长期博弈",
-      "transferable": [
-        "用领导人表态开场",
-        "区分短期与长期目标",
-        "以一致达成降低悬念"
-      ]
-    }
-  },
-  {
-    "id": "a2026102352",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "美国或于明年开始扩建格陵兰岛军事设施",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-23/10719455.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "美媒20日称，五角大楼拟明年启动格陵兰岛军事设施扩建，该地为丹麦自治领地。",
-    "narrativeAnalysis": {
-      "hook": "北极军事新动作",
-      "structure": "消息源引入→计划披露→地点说明",
-      "emotionCurve": "突发关注→战略警觉→地缘紧张",
-      "transferable": [
-        "借权威媒体增信",
-        "突出时间地点要素",
-        "以小动作折射大布局"
-      ]
-    }
-  },
-  {
-    "id": "a2026102307",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "企业 AI 越用越复杂，如何用一个 Gateway 管好模型、Agent 和成本？｜ 技术趋势",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/v85ey09UlxhCDH4r3RS3?utm_source=rss&utm_medium=article",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "Snowflake的Cortex AI Gateway以单一端点治理模型推理、路由、MCP工具、观测、安全与成本。",
-    "narrativeAnalysis": {
-      "hook": "复杂问题单点解法",
-      "structure": "痛点提出→产品方案→能力列举",
-      "emotionCurve": "管理焦虑→方案清晰→效率期待",
-      "transferable": [
-        "用复杂度引出控制器",
-        "把功能打包成场景",
-        "列能力但不堆术语"
-      ]
-    }
-  },
-  {
-    "id": "a2026102336",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "宁德时代天行II发布，电电增程版77kWh小电池救场 - 汽车之家",
-    "author": "汽车之家",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1yZ3VoTndDY1Fmc3BFMFhOa3U3T3JQQzNDSjRhOEM4VU5EVUFWSUw0RGpMVWkxSlVJNF9ZSTF1LWVkWllXVElQTmFfald0NjVZT0VYZVkzOGFxVlE?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "宁德时代发布天行II，电电增程版以77kWh小电池承担救场角色。",
-    "narrativeAnalysis": {
-      "hook": "77kWh小电池，天行II怎么救场？",
-      "structure": "新品发布→配置亮点→功能定位",
-      "emotionCurve": "发布关注→参数好奇→场景解法",
-      "transferable": [
-        "救场制造冲突",
-        "小容量反吸睛",
-        "版本场景化"
-      ]
-    }
-  },
-  {
-    "id": "a2026102209",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "企业有需求，FDE 团队有能力，为什么 AI 项目仍难落地？",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/Ei2spcFKComKqkPv6osN?utm_source=rss&utm_medium=article",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-22"
-    },
-    "contentSummary": "文章指出即使企业有需求、FDE团队有能力，AI项目仍难落地；核心卡点不是技术，而是信任与信息。",
-    "narrativeAnalysis": {
-      "hook": "反问制造认知缺口",
-      "structure": "设问冲突→否定常规归因→给出关键变量",
-      "emotionCurve": "落地困惑→反常识冲击→聚焦信任信息",
-      "transferable": [
-        "用反问破题",
-        "先否后立归因",
-        "抽象词具体化"
-      ]
-    }
-  },
-  {
-    "id": "a2026102341",
-    "platform": "德国之声",
-    "domain": "政治",
-    "track": "政治",
-    "title": "AI爆PHP漏洞引发全球网络攻击潮：为何影响如此广泛 ？",
-    "author": "德国之声",
-    "link": "https://www.dw.com/zh/ai爆php漏洞引发全球网络攻击潮：为何影响如此广泛-？/a-79735350?maca=chi-rss-chi-all-1127-rdf",
-    "published": "2026-10-22",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "PHP曝严重漏洞，黑客攻击数百万次，企业与政府紧急修补，欧洲多平台一度下线；漏洞藏多年靠AI发现，工信部促排查升级。",
-    "narrativeAnalysis": {
-      "hook": "AI揪出潜伏多年的PHP漏洞",
-      "structure": "危机爆发→原因揭示→官方应对",
-      "emotionCurve": "突发恐慌→技术警觉→修复行动",
-      "transferable": [
-        "先抛攻击规模",
-        "解释旧漏洞新发现",
-        "落点给行动建议"
-      ]
-    }
-  },
-  {
-    "id": "a2026102344",
-    "platform": "BBC中文",
-    "domain": "政治",
-    "track": "政治",
-    "title": "為甚麼馬斯克要策劃 SpaceX 與特斯拉的超大型合併？",
-    "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/c6eq309002q3o/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-22",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "马斯克称拟合并SpaceX与特斯拉，认为合并将带来诸多好处，或成史上规模最大合并案。",
-    "narrativeAnalysis": {
-      "hook": "马斯克为何想合并两大公司？",
-      "structure": "事件抛出→动机解释→规模定调",
-      "emotionCurve": "商业震惊→利益猜想→格局期待",
-      "transferable": [
-        "用巨头动作抓眼球",
-        "以好处制造悬念",
-        "突出历史级规模"
-      ]
-    }
-  },
-  {
-    "id": "a2026102346",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "中国警方通过两亿部手机反诈程序识别盘问浏览墙外财经网站人员",
-    "author": "AP Photo/Andy Wong - Andy Wong",
-    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261022-%E4%B8%AD%E5%9B%BD%E8%AD%A6%E6%96%B9%E9%80%9A%E8%BF%87%E4%B8%A4%E4%BA%BF%E9%83%A8%E6%89%8B%E6%9C%BA%E6%96%B0%E5%8F%8D%E8%AF%88%E7%A8%8B%E5%BA%8F%E8%AF%86%E5%88%AB%E7%9B%98%E9%97%AE%E6%B5%8F%E8%A7%88%E5%A2%99%E5%A4%96%E8%B4%A2%E7%BB%8F%E7%BD%91%E7%AB%99%E4%BA%BA%E5%91%98",
-    "published": "2026-10-22",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "金融时报称，警方使用装于超2亿手机的反诈App，识别并盘问浏览海外财经网站人员，被传唤者透露相关信息。",
-    "narrativeAnalysis": {
-      "hook": "2亿手机反诈App盯上谁？",
-      "structure": "消息源引入→工具规模→监控对象",
-      "emotionCurve": "隐私担忧→权力审视→信息警觉",
-      "transferable": [
-        "用媒体信源背书",
-        "数字放大覆盖面",
-        "聚焦具体行为对象"
-      ]
-    }
-  },
-  {
-    "id": "a2026102348",
-    "platform": "德国之声",
-    "domain": "政治",
-    "track": "政治",
-    "title": "泽连斯基：愿在冻结前线 保留75%国土基础上启动和谈",
-    "author": "德国之声",
-    "link": "https://www.dw.com/zh/泽连斯基：愿在冻结前线-保留75-国土基础上启动和谈/a-79732266?maca=chi-rss-chi-all-1127-rdf",
-    "published": "2026-10-22",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "泽连斯基称愿在冻结前线、保留75%国土基础上启动和谈，并要求美欧安全保障；美特使见普京，俄愿恢复三方会谈。",
-    "narrativeAnalysis": {
-      "hook": "冻结前线，乌克兰肯让步吗？",
-      "structure": "条件提出→底线说明→外交动向",
-      "emotionCurve": "战局疲惫→谨慎希望→博弈压力",
-      "transferable": [
-        "先亮谈判条件",
-        "再划不可退底线",
-        "同步多方外交动作"
-      ]
-    }
-  },
-  {
-    "id": "a2026102304",
-    "platform": "极客公园",
-    "domain": "科技",
-    "track": "科技",
-    "title": "Token 成本降到每年 1 元，AI 家电这事就能成了 | 对话博联刘宗孺",
-    "author": "极客公园",
-    "link": "http://www.geekpark.net/news/372762",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "对话博联刘宗孺：成熟家电有AI化需求，但供应链、销售和成本约束大；若Token成本降至每年1元，联网存量与OTA管道可推动AI家电落地。",
-    "narrativeAnalysis": {
-      "hook": "Token年1元，AI家电能成？",
-      "structure": "趋势纠偏→痛点拆解→成本阈值→落地路径",
-      "emotionCurve": "概念疲劳→现实压力→算账清晰→落地希望",
-      "transferable": [
-        "反热点切成熟场景",
-        "成本阈值建判断",
-        "拆产业链讲难点"
-      ]
-    }
-  },
-  {
-    "id": "a2026102309",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "李飞飞丈夫、Salesforce首席科学家撰文：「AI agent黎明」之后，我们期待些什么？ - 新浪网",
-    "author": "新浪网",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zY3VvZ2V1R2tnYndpb3BEQU5KdW1KQVB0T2ZnQ2pGX2hBUjdBd3FTRXR5a29HblpabVh0YTk5TkU0NVdQUUIwM3RxSDR3YW5BUjJlMFhOVmJXUkJrYjd4enI5UVkza3JCOGtidE5xNDBmOGtUMWN6eE5LZzEtNEE?oc=5",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "Salesforce首席科学家撰文讨论AI Agent黎明之后的发展方向与期待，借权威身份引发行业前瞻思考。",
-    "narrativeAnalysis": {
-      "hook": "Agent黎明后，下一步看什么",
-      "structure": "权威观点→阶段判断→未来期待",
-      "emotionCurve": "热潮兴奋→冷静前瞻→期待探索",
-      "transferable": [
-        "权威身份增信",
-        "黎明比喻定阶段",
-        "转向未来问题"
-      ]
-    }
-  },
-  {
-    "id": "a2026102310",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "金融智能分析本体：四大核心要素与五条建设路线",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/Be94YQbRtbWj3pzZ9rSh?utm_source=rss&utm_medium=article",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "文章梳理金融智能分析本体的四大核心要素，并给出五条建设路线与选型方法，帮助行业搭建分析体系。",
-    "narrativeAnalysis": {
-      "hook": "金融本体四要素五路线",
-      "structure": "问题导入→要素拆解→路线比较→选型建议",
-      "emotionCurve": "复杂困惑→框架清晰→选型务实",
-      "transferable": [
-        "两问锁定主题",
-        "数字框架降复杂",
-        "路线对比助选型"
-      ]
-    }
-  },
-  {
-    "id": "a2026102312",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "对象存储正在“吃掉”Kafka？Cloudflare 用 R2 重做事件流",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/hEHy8XHKyfwKuyIhpyFe?utm_source=rss&utm_medium=article",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "Cloudflare K2基于R2对象存储构建事件流，生产端延迟约一秒，引发对象存储是否替代Kafka的讨论。",
-    "narrativeAnalysis": {
-      "hook": "R2做事件流，Kafka被吃掉？",
-      "structure": "技术动作→性能指标→替代疑问",
-      "emotionCurve": "新奇冲击→理性评估→架构悬念",
-      "transferable": [
-        "吃掉制造冲突",
-        "绑定延迟数字",
-        "单点看架构替代"
-      ]
-    }
-  },
-  {
-    "id": "a2026102317",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "中国出台新规更好保障对外投资安全",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10719314.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "国家发改委公布《对外投资管理办法》，自2026年12月1日起施行，同时废止2017年《企业境外投资管理办法》，以制度保障对外投资发展与安全。",
-    "narrativeAnalysis": {
-      "hook": "对外投资迎新规",
-      "structure": "政策发布→施行时间→旧规废止→保障目标",
-      "emotionCurve": "关注政策→明确预期→安心布局",
-      "transferable": [
-        "用施行日期制造确定感",
-        "新旧对比突出变化",
-        "政策目标连接主体利益"
-      ]
-    }
-  },
-  {
-    "id": "a2026102319",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "中国央行等多部门发文：金融支持国际科技创新中心建设",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10719396.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "央行会同科技部等10部门印发指导意见，在2026金融街论坛期间发布，聚焦金融支持京津冀、长三角、粤港澳大湾区国际科技创新中心建设。",
-    "narrativeAnalysis": {
-      "hook": "金融活水精准滴灌科创",
-      "structure": "会议背景→多部门联合发文→支持区域与对象",
-      "emotionCurve": "政策期待→资源聚焦→信心增强",
-      "transferable": [
-        "多部门联署强化权威",
-        "区域名单制造覆盖面",
-        "金融活水比喻降门槛"
-      ]
-    }
-  },
-  {
-    "id": "a2026102320",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "黑龙江农产品加速“出海” 前三季度出口86.1亿元",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10719293.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "哈尔滨海关数据显示，黑龙江前三季度货物进出口2574.2亿元、出口795亿元；农产品出口86.1亿元，同比增长8.3%，加速进入国际市场。",
-    "narrativeAnalysis": {
-      "hook": "86.1亿！黑龙江农产品出海提速",
-      "structure": "总体外贸数据→农产品细分→增长意义",
-      "emotionCurve": "宏观平稳→亮点跃出→出海信心",
-      "transferable": [
-        "先总后分突出亮点",
-        "用增速强化趋势",
-        "地域标签增强画面"
-      ]
-    }
-  },
-  {
-    "id": "a2026102326",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "先进制造业引领发展 上海今年前三季度GDP同比增长5.5%",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10718969.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "上海今年前三季度GDP同比增长5.5%，先进制造业被指引领发展。",
-    "narrativeAnalysis": {
-      "hook": "5.5%！上海前三季度GDP出炉",
-      "structure": "结果数据→驱动亮点",
-      "emotionCurve": "数据关注→结构解读→发展信心",
-      "transferable": [
-        "增速数字开门见山",
-        "产业关键词解释增长",
-        "短标题突出因果"
-      ]
-    }
-  },
-  {
-    "id": "a2026102327",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "山西广灵“东方亮”谷子开镰收割 小谷穗串起大产业",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-22/10718983.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "山西广灵“东方亮”谷子进入开镰收割阶段，报道以小谷穗串联当地产业发展。",
-    "narrativeAnalysis": {
-      "hook": "小谷穗如何串起大产业？",
-      "structure": "收割场景→产品品牌→产业延展",
-      "emotionCurve": "田间收获→品牌好奇→产业期待",
-      "transferable": [
-        "场景化开头带画面",
-        "大小对比制造张力",
-        "品牌名增强辨识度"
-      ]
-    }
-  },
-  {
-    "id": "a2026102338",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "香港9月整体消费物价指数同比上升1.9%",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/dwq/2026/10-22/10719309.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "香港9月整体消费物价指数同比上升1.9%。",
-    "narrativeAnalysis": {
-      "hook": "香港9月CPI同比升1.9%",
-      "structure": "指标发布→同比变化",
-      "emotionCurve": "数据关注→物价感知→谨慎观察",
-      "transferable": [
-        "指标名称保持准确",
-        "同比变化突出趋势",
-        "短讯式直给结论"
-      ]
-    }
-  },
-  {
-    "id": "a2026102353",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "第一观察 | 党和人民军队铿锵前进的制胜之道",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495503.html",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "第一观察类标题聚焦党和人民军队铿锵前进的制胜之道，属宏观强军论述。",
-    "narrativeAnalysis": {
-      "hook": "制胜之道引题",
-      "structure": "标题立意→概念阐释→意义升华",
-      "emotionCurve": "庄重认同→信心增强→使命召唤",
-      "transferable": [
-        "用权威栏目建立信任",
-        "以抽象命题提炼价值",
-        "从历史逻辑落到当下"
-      ]
-    }
-  },
-  {
-    "id": "a2026102355",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "特斯拉2026年Q3：储能装机13.7GWh，营收同比下降15.6%、毛利率涨至33%",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261022/1517284.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "特斯拉公布2026年Q3储能业务：装机13.7GWh，营收同比降15.6%，毛利率升至33%。",
-    "narrativeAnalysis": {
-      "hook": "装机高增，营收为何下滑？",
-      "structure": "结论先行→关键数据对比→盈利质量解读",
-      "emotionCurve": "业绩好奇→反差惊讶→盈利信心",
-      "transferable": [
-        "用反差数据制造悬念",
-        "突出量价利三角关系",
-        "把财报指标翻译成业务信号"
-      ]
-    }
-  },
-  {
-    "id": "a2026102356",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "到2032年底累计装机225GW/1TWh！美国报告披露储能系统发展目标",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261022/1517288.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "美国报告提出到2032年底储能累计装机目标225GW/1TWh。",
-    "narrativeAnalysis": {
-      "hook": "2032年美国储能要装多少？",
-      "structure": "目标先行→规模拆解→行业意义",
-      "emotionCurve": "宏观关注→数字震撼→赛道期待",
-      "transferable": [
-        "用远期目标锚定空间",
-        "功率容量双单位解释",
-        "把政策目标转成市场机会"
-      ]
-    }
-  },
-  {
-    "id": "a2026102357",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "四川、重庆：到2027年可再生能源发电装机比重达到75%，推进储能等灵活调节电力项目建设",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261022/1517208.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "川渝提出到2027年可再生能源发电装机比重达75%，并推进储能等灵活调节电源建设。",
-    "narrativeAnalysis": {
-      "hook": "川渝新能源目标带火储能？",
-      "structure": "政策目标→配套措施→储能角色",
-      "emotionCurve": "区域关注→政策确定→产业机会",
-      "transferable": [
-        "区域政策绑定产业机会",
-        "用比例目标凸显转型力度",
-        "强调储能调节价值"
-      ]
-    }
-  },
-  {
-    "id": "a2026102358",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "DeepSeek二轮融资翻倍到1000亿！宁德时 代加码100亿、吉利也入局 - 驱动之家",
-    "author": "驱动之家",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LbVJNTmJ2MTltNzZCdTZfdWZlZzdURTZaR2RBUHVxM2l5WHhoTFRIb0NRNHY1TWhYbk5qUXJzYXNBanhRQ1RnN3p6eWlpX1V0ZnJiTVg4X3I?oc=5",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "DeepSeek二轮融资额翻倍至1000亿，宁德时代追加投资100亿，吉利也参与入局。",
-    "narrativeAnalysis": {
-      "hook": "AI独角兽融资，电池巨头下注？",
-      "structure": "融资结果→投资方阵容→跨界信号",
-      "emotionCurve": "融资惊讶→巨头关注→跨界想象",
-      "transferable": [
-        "用融资额变化抓眼球",
-        "突出产业资本跨界背书",
-        "从AI热点引向能源制造"
-      ]
-    }
-  },
-  {
-    "id": "a2026102361",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "北汽加入宁德时代换电朋友圈，极狐S3租电5.98万起 - 汽车之家",
-    "author": "汽车之家",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBpVGplTU12RFpUWEV1QUg3Mjl0bXVQQkV4YzNjMnNIQUl0dGJSU1dwc3B2Z2FrcTdGN0hhdURfT1RENUpjTGEwWWlTX3BvdlZaUUE2UjdyQUtLR1k?oc=5",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "北汽加入宁德时代换电体系，极狐S3推出租电模式，起售价5.98万元。",
-    "narrativeAnalysis": {
-      "hook": "换电朋友圈又扩容？",
-      "structure": "合作事件→车型价格→换电生态",
-      "emotionCurve": "新车关注→价格吸引→生态想象",
-      "transferable": [
-        "用朋友圈比喻讲生态",
-        "把车价与租电模式关联",
-        "借巨头合作增强可信度"
-      ]
-    }
-  },
-  {
-    "id": "a2026102305",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "李飞飞丈夫、Salesforce首席科学家撰文：「AI agent黎明」之后，我们期待些什么？ - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5UZ3poY0NHRk9SMm1tZ2t0ZjV5NUdEVHJQT1lXTHo5dVJ2UVVQdUJIOWFMbnNldjRBdmtyaW5zMkl4Y2x3WVk1ZExBUHlsZjJkaGhwc2xYZG1jbVV6Ylkwc2RSdEt3R1NFaC1Udkc5SS1FeGxfeGc?oc=5",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "李飞飞丈夫、Salesforce首席科学家撰文，讨论AI Agent黎明后的期待方向。",
-    "narrativeAnalysis": {
-      "hook": "AI Agent黎明后看什么？",
-      "structure": "权威引入→阶段判断→未来展望",
-      "emotionCurve": "概念兴奋→理性观望→前瞻期待",
-      "transferable": [
-        "借身份增强可信度",
-        "用黎明比喻阶段",
-        "以提问牵引预期"
-      ]
-    }
-  },
-  {
-    "id": "a2026102345",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "10家参与、均价0.979元/Wh！山东分布式储能EPC中标候选人公示",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261022/1517179.shtml",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "山东分布式储能EPC中标候选人公示显示，10家参与，中标均价为0.979元/Wh。",
-    "narrativeAnalysis": {
-      "hook": "0.979元/Wh释放信号？",
-      "structure": "结果公示→关键数据→竞争格局→价格信号",
-      "emotionCurve": "结果关注→价格敏感→行业判断",
-      "transferable": [
-        "公示数据直接做钩子",
-        "用均价引出趋势",
-        "列参与数量增强可信"
-      ]
-    }
-  },
-  {
-    "id": "a2026102329",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "DeepSeek拟新融资1000亿元，腾讯和宁德时代为出资最多投资方 - 凤凰网",
-    "author": "凤凰网",
-    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA3RDV6d0ZiU3VjU0htMEVNYXViV1loTGZZS0ZUNzMzUWo2eGJEdnV6NWRvRzdMWFNGbFpjQlBDTk82NGQ1VE80U1U1UGU?oc=5",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "DeepSeek拟新融资1000亿元，腾讯与宁德时代为出资最多投资方。",
-    "narrativeAnalysis": {
-      "hook": "1000亿融资，宁德为何入局？",
-      "structure": "结论先行→资本动作→产业联想",
-      "emotionCurve": "融资震撼→资本好奇→产业联想",
-      "transferable": [
-        "大额数字开场",
-        "突出头部资方",
-        "跨界资本设问"
-      ]
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-23","added":25,"total":40,"tracks":{"政治":8,"军事":8,"科技":8,"财经":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-23","added":30,"total":40,"tracks":{"政治":8,"军事":8,"科技":8,"财经":8,"储能":8}};
