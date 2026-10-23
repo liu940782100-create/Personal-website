@@ -185,6 +185,75 @@ window.DATA_INSPIRATION = [
     }
   },
   {
+    "id": "a2026102445",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "巴黎近郊枪击导致一死五伤 马克龙谴责“种族主义恐怖袭击”",
+    "author": "REUTERS - Hannah McKay",
+    "link": "https://www.rfi.fr/cn/%E6%B3%95%E5%9B%BD/20261023-%E5%B7%B4%E9%BB%8E%E8%BF%91%E9%83%8A%E6%9E%AA%E5%87%BB%E5%AF%BC%E8%87%B4%E4%B8%80%E6%AD%BB%E4%BA%94%E4%BC%A4-%E9%A9%AC%E5%85%8B%E9%BE%99%E8%B0%B4%E8%B4%A3-%E7%A7%8D%E6%97%8F%E4%B8%BB%E4%B9%89%E6%81%90%E6%80%96%E8%A2%AD%E5%87%BB",
+    "published": "2026-10-24",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "法国巴黎近郊周五（10月23日）发生枪击，一名男子从汽车内连续开火，造成一人死亡、五人受伤，其中包括一名12岁女孩。嫌疑人被怀疑有意针对移民背景人士。法国总统马…",
+    "narrativeAnalysis": {
+      "hook": "巴黎近郊枪击导致一死五伤 马克龙谴责",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102446",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "美国特使：美方最快本周末可能打击伊朗",
+    "author": "REUTERS - Umit Bektas",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E4%B8%9C/20261023-%E7%BE%8E%E5%9B%BD%E7%89%B9%E4%BD%BF-%E7%BE%8E%E6%96%B9%E6%9C%80%E5%BF%AB%E6%9C%AC%E5%91%A8%E6%9C%AB%E5%8F%AF%E8%83%BD%E6%89%93%E5%87%BB%E4%BC%8A%E6%9C%97",
+    "published": "2026-10-24",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "美国特使汤姆·巴拉克周五(10月23日）表示，美国最快可能于本周末对伊朗发动打击。此前数日，华盛顿和以色列接连发出对伊朗动武的威胁。",
+    "narrativeAnalysis": {
+      "hook": "美国特使：美方最快本周末可能打击伊朗",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102447",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "特朗普称星链服务已恢复 乌克兰表示仍无法正常使用",
+    "author": "REUTERS - Stringer",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261023-%E7%89%B9%E6%9C%97%E6%99%AE%E7%A7%B0%E6%98%9F%E9%93%BE%E6%9C%8D%E5%8A%A1%E5%B7%B2%E6%81%A2%E5%A4%8D-%E4%B9%8C%E5%85%8B%E5%85%B0%E8%A1%A8%E7%A4%BA%E4%BB%8D%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8",
+    "published": "2026-10-24",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "尽管美国总统特朗普周四称马斯克已恢复乌克兰军队对SpaceX“星盾”（Starshield）军事卫星通信系统的使用权限，基辅周五表示，但该系统仍无法正常使用。英…",
+    "narrativeAnalysis": {
+      "hook": "特朗普称星链服务已恢复 乌克兰表示仍",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
     "id": "a2026102417",
     "platform": "法广",
     "domain": "政治",
@@ -225,6 +294,50 @@ window.DATA_INSPIRATION = [
     "contentSummary": "周五，一场强台风袭击了台湾，当局警告称将出现“破坏性大风”，并敦促民众寻找避难场所以躲避风暴。",
     "narrativeAnalysis": {
       "hook": "蔷琵台风袭击台湾 1人遇难350人受",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102406",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI 赋能开发，Spotify 月代码变更量翻倍",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/rVqEbaXeaJ91UWlQF4F9?utm_source=rss&utm_medium=article",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "Spotify 扩大 AI 辅助开发应用范围，8 月份合并变更量同比增长一倍以上。",
+    "narrativeAnalysis": {
+      "hook": "AI 赋能开发，Spotify 月代",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102454",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "【视频】宁德时代电芯+激光雷达，家越07买这款就对了 - 汽车之家",
+    "author": "汽车之家",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE10TVJGOGtVd2VMSk5oLUdPWFhyV2lqcm9xcEdKZmdUWjRvRHJTM1podnNTMTlUdUpoU0J2cmc1aGlZR0syQ21lTE1MM2t3SU1HMWhheXd0VzBncFk?oc=5",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "【视频】宁德时代电芯+激光雷达，家越",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -297,28 +410,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102419",
-    "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "两名日本登山者在尼泊尔失联多日后遗体被发现",
-    "author": "中新网·国际",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-24/10720160.shtml",
-    "published": "2026-10-24",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "中新社加德满都10月23日电 (记者 崔楠)尼泊尔救援人员23日在该国西北部山区发现两名此前失联的日本登山者遗体。",
-    "narrativeAnalysis": {
-      "hook": "两名日本登山者在尼泊尔失联多日后遗体",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
     "id": "a2026102304",
     "platform": "InfoQ",
     "domain": "科技",
@@ -385,81 +476,299 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102423",
-    "platform": "BBC中文",
-    "domain": "政治",
-    "track": "政治",
-    "title": "西藏那曲7級地震16死54傷，當局派翼龍無人機進行災情偵察",
-    "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/c9zrd1rd3jmyo/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-23",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "地震發生在西藏東北部一個山區且人口稀少的地區。",
-    "narrativeAnalysis": {
-      "hook": "西藏那曲7級地震16死54傷，當局派",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102424",
-    "platform": "BBC中文",
-    "domain": "政治",
-    "track": "政治",
-    "title": "PHP是什麼？為何它引發全球網絡安全危機？",
-    "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/c370pr45nelgo/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-23",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "人工智能發現了長期未被察覺的程式漏洞，引發全球罕見的大規模網絡安全應對行動。",
-    "narrativeAnalysis": {
-      "hook": "PHP是什麼？為何它引發全球網絡安全",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102404",
+    "id": "a2026102407",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "Anthropic 推出“主动式 AI Agent” Claude Duet——无需等你开口就干活、关键操作先问批准 - OSCHINA",
-    "author": "OSCHINA",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxYmg3WGM3RUVCQkpYVUZDMVNhV1pDakdKQl9VVEhJU0lpbkg3SXlHeC1mR0xYRzNscE4xZTlkY0k2d19idWlFOTNfLUNselg2am1NMndZcGhZLTQ?oc=5",
+    "title": "AI Agent 正在改写 CPU 的价值：当 Token 变成行动，算力竞争不再只是拼 GPU - InfoQ-CN",
+    "author": "InfoQ-CN",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9sakFSUGtYVVUwdlZqUjBYOVcwSGhPc1B2aVh1Wk0yLWducFl3bVNHNl9ZM19QWjNiZE1XOGxINExYc0tFQVlBQmg0VFNTb3hkVnZuNVJCWDJmdm5XZlE?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "Anthropic 推出“主动式 AI Agent” Claude Duet——无需等你开口就干活、关键操作先问批准 OSCHINA",
+    "contentSummary": "AI Agent 正在改写 CPU 的价值：当 Token 变成行动，算力竞争不再只是拼 GPU InfoQ-CN",
     "narrativeAnalysis": {
-      "hook": "Anthropic 推出“主动式 A",
+      "hook": "AI Agent 正在改写 CPU ",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102405",
+    "id": "a2026102437",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "从“拼口味”到“拼效率” 火锅产业加速“机器换人”",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720128.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新网重庆10月23日电 题：从“拼口味”到“拼效率” 火锅产业加速“机器换人”",
+    "narrativeAnalysis": {
+      "hook": "从“拼口味”到“拼效率” 火锅产业加",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102438",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "董克用：应对人口老龄化挑战 做好养老金融这篇大文章",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720123.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新网福州10月23日电 (郑江洛)23日，在第二届海峡养老产业博览会上，中国人民大学公共管理学院创院院长、清华大学五道口金融学院保险与养老金融研究中心首席专家…",
+    "narrativeAnalysis": {
+      "hook": "董克用：应对人口老龄化挑战 做好养老",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102439",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "2026“跨国企业天津行”举办 达成多项合作成果",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720120.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新网天津10月23日电 (记者 周亚强)21日至23日，由天津市与中信集团共同主办的2026“跨国企业天津行”活动在天津举办。来自全球30多个国家和地区240…",
+    "narrativeAnalysis": {
+      "hook": "2026“跨国企业天津行”举办 达成",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102440",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "前三季度全国财政收入同比增长5.1%",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719748.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "前三季度全国财政收入同比增长5.1%",
+    "narrativeAnalysis": {
+      "hook": "前三季度全国财政收入同比增长5.1%",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102441",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "在中国光谷，一条产业链如何被“意念”激活",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/jk/2026/10-23/10719685.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "在中国光谷，一条产业链如何被“意念”激活",
+    "narrativeAnalysis": {
+      "hook": "在中国光谷，一条产业链如何被“意念”",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102442",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "从叶片到产业链 “海上大风车”加速走向世界",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719591.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "从叶片到产业链 “海上大风车”加速走向世界",
+    "narrativeAnalysis": {
+      "hook": "从叶片到产业链 “海上大风车”加速走",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102443",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "财政部：农业保险护农惠农成效持续显现",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720118.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新网北京10月23日电 (记者 赵建华)财政部金融司副司长李楠23日在北京举行的新闻发布会上说，农业保险护农惠农成效持续显现。经过多年推进，稻谷、小麦、玉米、…",
+    "narrativeAnalysis": {
+      "hook": "财政部：农业保险护农惠农成效持续显现",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102444",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "粤商走进广东阳春 探寻产业合作机遇",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720117.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新网阳江10月23日电 (孙秋霞 许可)2026年粤商赋能县域经济高质量发展暨光彩事业阳春行活动22日至23日在阳春举行，广东省内重点商协会代表、优质民营企业…",
+    "narrativeAnalysis": {
+      "hook": "粤商走进广东阳春 探寻产业合作机遇",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102453",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "武警部队官兵连夜奋战在巴青县抗震救灾一线",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495539.html",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "武警西藏总队那曲支队第一时间收拢人员、清点救援物资，出动262名官兵，携带生命探测仪、切割机等装备赶赴灾区。",
+    "narrativeAnalysis": {
+      "hook": "武警部队官兵连夜奋战在巴青县抗震救灾",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102455",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "247.5MW/495MWh！安徽涡阳县涡耀电网侧储能EPC招标",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261023/1517366.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "247.5MW/495MWh！安徽涡阳县涡耀电网侧储能EPC招标",
+    "narrativeAnalysis": {
+      "hook": "247.5MW/495MWh！安徽涡",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102456",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "天津：统筹布局2GW新型储能电站，推进长时储能与快速响应协同联动",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261023/1517431.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "天津：统筹布局2GW新型储能电站，推进长时储能与快速响应协同联动",
+    "narrativeAnalysis": {
+      "hook": "天津：统筹布局2GW新型储能电站，推",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102457",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国家电投河北虚拟电厂通过！成省内首家具需求响应市场资格国企运营商",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261023/1517426.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "国家电投河北虚拟电厂通过！成省内首家具需求响应市场资格国企运营商",
+    "narrativeAnalysis": {
+      "hook": "国家电投河北虚拟电厂通过！成省内首家",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102458",
     "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "Cobo Lucas Yang：AI Agent重新定义链上支付安全边界 - 新浪网",
-    "author": "新浪网",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdUFBU0JsaENVc3paRmVkZXp6dW1KYkU5aG1fb3V1eTlfV1A4NlR4R0NDSGNtcTJVdjE5cUdsZURtTGlEQXR1VHE0QUhFYzBGNDBhb2xJb1RveTg0NFFjVWhPSm5Vek5qSFJGMVJXVzB1R3lZTVhBV2pOWVI1aTl3a1QtWGhLRGNPdFV3WWl3?oc=5",
+    "domain": "储能",
+    "track": "储能",
+    "title": "华为签下南非最大民营离网光储项目- 头条文章正文- 新闻 - 国复咨询",
+    "author": "国复咨询",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBZVUJkVVE4TzF1RDV0UFkyY0YwaUp1Qm45eHYtVUt1S0tDdUxzYWVLUGZ6S2d2WHZ2eXNjellodFB3TVF4NnZvemVvSG9tcGdzcDBCZ1F1MGJnTmdpd0lJeF9TWQ?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
@@ -468,183 +777,73 @@ window.DATA_INSPIRATION = [
     },
     "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "Cobo Lucas Yang：AI",
+      "hook": "华为签下南非最大民营离网光储项目- ",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102409",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "山海好物走进上海市民“菜篮子” 603家企业携特产亮相",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720154.shtml",
+    "id": "a2026102459",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "阳光电源等在山西成立科技公司，含航空运营相关业务 - 搜狐",
+    "author": "搜狐",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaEJ0YUhSS1VkUzRuQjRRLVJjVE1YT3djajQ4c0dRTHNKRFNLQWt2ZDVPYTVYT2ZZeTJJVEVrLXNfUWx2LW5nLUdDN1ZxNTEtVTQzVXZoc2RIRFdlQ0FpcHNfd3VfWGRyTVd6Rkl5WWdUM2VwX3VTalJaZ0d6V0JXV2t1dFZtUDBtQ3Y5bQ?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "中新网上海10月23日电 (记者 李姝徵)第九届上海市对口地区特色商品展销会23日开幕，603家企业带着家乡好物来到上海，让市民在家门口选购远方风物，也为产地寻…",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "山海好物走进上海市民“菜篮子” 60",
+      "hook": "阳光电源等在山西成立科技公司，含航空",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102410",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "今年前三季度唐山港京唐港区保税物流中心（B型）进口贸易额居中国首位",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720136.shtml",
+    "id": "a2026102460",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "销量创新高、毛利下台阶：宁德时代的定价权大考 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcmtoQzVRX3hVLVZxMDNRck5sMnVReGxkQXhmNERZand5bDZnUVVRX205VHVlSGRQYzJ2OVFqdFc2ckZXcmRzNUxEcUhoV2laZXpiRndERnE2dkU4OTV4SXRoZFNEc0pGNmNBTmpCaHhDWDdCMWdqNW42R2ZZdmt4STRKdkRVVkk0VzhQN1Y2Ymtselg3UE9IR0c0QWQ5NVVaQ2ZvbXV0THBOVXRvUlFyS1prQ045X181aVJpaXhlX1A0b3M2bi00U2UtZG5jWWJLSjNqeA?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "中新网唐山10月23日电 (王夏菲 刘姿含 李海天)京唐港海关23日消息，今年前三季度，唐山港京唐港区保税物流中心(B型)进出口贸易额突破200.6亿元，同比增…",
+    "contentSummary": "销量创新高、毛利下台阶：宁德时代的定价权大考 新浪财经宁德时代三季报增收不增利，股价创年内新低，动力电池龙头面临估值重构 虎嗅宁德时代发布“三季报”｜动力电池的…",
     "narrativeAnalysis": {
-      "hook": "今年前三季度唐山港京唐港区保税物流中",
+      "hook": "销量创新高、毛利下台阶：宁德时代的定",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102411",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "前9个月云南出口咖啡及其制品4.9亿元 居全国首位",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720131.shtml",
+    "id": "a2026102461",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代等入股广东新型储能国家研究院 - 金融界",
+    "author": "金融界",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFLXYzbmEyN04tRmhmLUtEREVZRVAtSUxjYTI4WWJLcEpia1VRZ2hlMGVnNlZWUGx5ZVhKbFZFTVBIcnJOMFhucFREamFzeGs0dHFKbUZDYkRJUnk2M0NXSXNSWURBbEVDTlI5Q3pyVEZLQnA1?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "中新网昆明10月23日电 (徐雨萌)昆明海关23日消息，2026年前9个月，云南出口咖啡及其制品4.9亿元人民币，居全国首位。产品远销越南、马来西亚、德国等42…",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "前9个月云南出口咖啡及其制品4.9亿",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102412",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "赛事流量如何变产业增量？亦庄构筑电竞生态底座",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/ty/2026/10-23/10720156.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "中新网北京10月23日电 2026北京亦庄·未来游戏电竞科技大会日前在北京智慧电竞赛事中心举办。大会以“问未来·第一场”为主题，汇聚行业协会、企业、科研院校等多…",
-    "narrativeAnalysis": {
-      "hook": "赛事流量如何变产业增量？亦庄构筑电竞",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102413",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "撂荒土地溢菊香 青海民和山村撑起“金”产业",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/sh/2026/10-23/10720151.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "中新网青海民和10月23日电 题：撂荒土地溢菊香 青海民和山村撑起“金”产业",
-    "narrativeAnalysis": {
-      "hook": "撂荒土地溢菊香 青海民和山村撑起“金",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102414",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "优化产业、能源、交通结构 浙江何以打造更高水平生态省？",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/sh/2026/10-23/10720132.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "中新网杭州10月23日电(鲍梦妮)据10月23日在杭州召开的《美丽浙江建设(生态环境保护)“十五五”规划》新闻发布会消息，“十五五”时期，浙江省委、省政府系统谋…",
-    "narrativeAnalysis": {
-      "hook": "优化产业、能源、交通结构 浙江何以打",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102415",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "中国央行将开展7000亿元MLF操作",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720011.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "中国央行将开展7000亿元MLF操作",
-    "narrativeAnalysis": {
-      "hook": "中国央行将开展7000亿元MLF操作",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102416",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "A股周五放量上涨 创业板指收盘涨逾4％",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719891.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "A股周五放量上涨 创业板指收盘涨逾4％",
-    "narrativeAnalysis": {
-      "hook": "A股周五放量上涨 创业板指收盘涨逾4",
+      "hook": "宁德时代等入股广东新型储能国家研究院",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -693,204 +892,6 @@ window.DATA_INSPIRATION = [
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
-  },
-  {
-    "id": "a2026102427",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "河北省廊坊市独立储能项目投资主体优选评分标准（各市自主明确得分项） (征求意见稿)",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261023/1517362.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "河北省廊坊市独立储能项目投资主体优选评分标准（各市自主明确得分项） (征求意见稿)",
-    "narrativeAnalysis": {
-      "hook": "河北省廊坊市独立储能项目投资主体优选",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102428",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "山东电网新型储能装机突破1500万千瓦",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261023/1517337.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "山东电网新型储能装机突破1500万千瓦",
-    "narrativeAnalysis": {
-      "hook": "山东电网新型储能装机突破1500万千",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102429",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "3kW光储一体机逆变器！广东户用储能柜供应商征集",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261023/1517375.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "3kW光储一体机逆变器！广东户用储能柜供应商征集",
-    "narrativeAnalysis": {
-      "hook": "3kW光储一体机逆变器！广东户用储能",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102430",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "华为数字能源、盛弘股份、特来电、京能新能源、驴充充！2026年9月全国大功率充电设施制造商累计销量TOP5公布 - 国际充换电网",
-    "author": "国际充换电网",
-    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5menRBalBrbXh2cDR2ZzJDaUhqSncxVlE1Z0dObUlPY0U0YkRKNUxsS3ZPbW5ndzVsN3pvX1lMMENzZUdua0NSc1BDMmRGZnAxNGdLd2VmMA?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "华为数字能源、盛弘股份、特来电、京能新能源、驴充充！2026年9月全国大功率充电设施制造商累计销量TOP5公布 国际充换电网",
-    "narrativeAnalysis": {
-      "hook": "华为数字能源、盛弘股份、特来电、京能",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102431",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "阳光电源：10月22日融券卖出3.49万股，融资融券余额72.79亿元 - 搜狐",
-    "author": "搜狐",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcjN5eUY1WHA3ZU9OSE5lOEw4YS1NVDJ3X1JLazRmSFlsbzE1VndJYTRMVEJnc1p6SnBlZm1sZnNBWnBrTElzMWhwWXozcnEyRUdJeHNISEVWaDNtNGlyVU1yNzlQSW1YamZQc3RGWk5BOG9Ua3R1REN5T0FSelhmamhTYnhVSGlH?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "阳光电源：10月22日融券卖出3.4",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102432",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "宁王深V反弹宁德时代午后飙涨7% - 新浪新闻",
-    "author": "新浪新闻",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xTEE5ekt2SjdudFRRVWRWN3U5T240SlpEY3picFZBYmNoLTB1dDVkS0ZZS1VtNDBkNkk4ZzJBUGFZZC1oVWdpYU5UZEVUYkpzbkZWTGg3MlhDOFZrSnlQUjBCaF9uSHNyUWhUMThrbkJqODdOdUpuMEV5bG5WeFU?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "宁王深V反弹宁德时代午后飙涨7% -",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102433",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "公示！宁德时代宜春枧下窝锂矿采矿项目生态环境影响报告书拟批准 - 凤凰网",
-    "author": "凤凰网",
-    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1vMkZVTjhadXNvWGVXS3R1LVl5NFpvRVFsak85dDI5ak1QMDItRG5YQ3NZQ01OSjZ4WWh6NHVkUGlVZV9xYzkwQ1VB?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "公示！宁德时代宜春枧下窝锂矿采矿项目",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102434",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "重卡用上了“充电宝”：宁德时代发布天行Ⅱ“电电增程”重卡方案 - 观察者网",
-    "author": "观察者网",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9fYU81S2ZjVXNGQXhPNUVudExxYS1VVGZPRFd1U3Z2TWNER2RxeG03dFBGZXZ2cG9wY3BseFJnSmZaMXMwZ3BzV1BwOHJaY2p3M3ZTcEFVMUtidDcya3J0Y3hR?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "重卡用上了“充电宝”：宁德时代发布天",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102343",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "全军官兵认真学习习主席在纪念中国工农红军长征胜利90周年大会上的重要讲话",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495520.html",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "全军官兵认真学习习主席在纪念中国工农红军长征胜利90周年大会上的重要讲话",
-    "narrativeAnalysis": {
-      "hook": "全军官兵认真学习习主席在纪念中国工农",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-24","added":28,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-24","added":22,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"储能":8,"财经":8}};
