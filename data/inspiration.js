@@ -185,6 +185,140 @@ window.DATA_INSPIRATION = [
     }
   },
   {
+    "id": "a2026102417",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "路透：更严格的纪律和习近平的权威是中共五中全会的关键",
+    "author": "© Reuters",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261023-%E8%B7%AF%E9%80%8F-%E6%9B%B4%E4%B8%A5%E6%A0%BC%E7%9A%84%E7%BA%AA%E5%BE%8B%E5%92%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%9A%84%E6%9D%83%E5%A8%81%E6%98%AF%E4%B8%AD%E5%85%B1%E4%BA%94%E4%B8%AD%E5%85%A8%E4%BC%9A%E7%9A%84%E5%85%B3%E9%94%AE",
+    "published": "2026-10-24",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中国执政的共产党将于下周召集约 300 名最高级别成员，讨论加强党内纪律。分析人士称，这次会议可能是 2027 年领导层改组前的最后一次重要党内会议。",
+    "narrativeAnalysis": {
+      "hook": "路透：更严格的纪律和习近平的权威是中",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102418",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "蔷琵台风袭击台湾 1人遇难350人受伤",
+    "author": "via REUTERS - CSU/CIRA and JMA/JAXA",
+    "link": "https://www.rfi.fr/cn/%E7%94%9F%E6%80%81/20261023-%E8%94%B7%E7%90%B5%E5%8F%B0%E9%A3%8E%E8%A2%AD%E5%87%BB%E5%8F%B0%E6%B9%BE-1%E4%BA%BA%E9%81%87%E9%9A%BE350%E4%BA%BA%E5%8F%97%E4%BC%A4",
+    "published": "2026-10-24",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "周五，一场强台风袭击了台湾，当局警告称将出现“破坏性大风”，并敦促民众寻找避难场所以躲避风暴。",
+    "narrativeAnalysis": {
+      "hook": "蔷琵台风袭击台湾 1人遇难350人受",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102401",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "PostgreSQL 19 发不出来？AI“找茬”太快，人类修Bug的速度跟不上了",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/Q6mgHWCSqV6KeZzee3NT?utm_source=rss&utm_medium=article",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "AI无限发现问题，那人类该修到什么程度？",
+    "narrativeAnalysis": {
+      "hook": "PostgreSQL 19 发不出来",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102402",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "“让Token不空转”，讯飞如何把Agent推进企业核心流程",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/Lo9TLlRdvy4II38yaex0?utm_source=rss&utm_medium=article",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "点击查看原文>",
+    "narrativeAnalysis": {
+      "hook": "“让Token不空转”，讯飞如何把A",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102403",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "奥特曼最新 45 分钟访谈：一年不写代码、压力大到不想起床，还嫌 ChatGPT 太谄媚",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/sI3z2UMCrB5PPVDWTsLo?utm_source=rss&utm_medium=article",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "“我们造出了越来越聪明的 AI，却可能失去解决难题的快乐。”",
+    "narrativeAnalysis": {
+      "hook": "奥特曼最新 45 分钟访谈：一年不写",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102419",
+    "platform": "中新网",
+    "domain": "政治",
+    "track": "政治",
+    "title": "两名日本登山者在尼泊尔失联多日后遗体被发现",
+    "author": "中新网·国际",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-24/10720160.shtml",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新社加德满都10月23日电 (记者 崔楠)尼泊尔救援人员23日在该国西北部山区发现两名此前失联的日本登山者遗体。",
+    "narrativeAnalysis": {
+      "hook": "两名日本登山者在尼泊尔失联多日后遗体",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
     "id": "a2026102304",
     "platform": "InfoQ",
     "domain": "科技",
@@ -251,577 +385,486 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102342",
+    "id": "a2026102423",
     "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "台灣地方選舉倒數一個月：「颱風假」牽動選情？",
+    "title": "西藏那曲7級地震16死54傷，當局派翼龍無人機進行災情偵察",
     "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/c9zrdkn7336yo/trad?at_medium=RSS&at_campaign=rss",
+    "link": "https://www.bbc.com/zhongwen/articles/c9zrd1rd3jmyo/trad?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-23",
     "intl": 1,
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "薔琵颱風來襲之際，台灣各縣市是否宣布停班停課，成為九合一地方選舉前的輿論焦點。有研究指出，選舉年颱風「停班停課」可能性增加。",
+    "contentSummary": "地震發生在西藏東北部一個山區且人口稀少的地區。",
     "narrativeAnalysis": {
-      "hook": "台灣地方選舉倒數一個月：「颱風假」牽",
+      "hook": "西藏那曲7級地震16死54傷，當局派",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102344",
+    "id": "a2026102424",
     "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "巴黎騷亂中的三位華人：「激烈的地方激烈，安靜的地方安靜」",
+    "title": "PHP是什麼？為何它引發全球網絡安全危機？",
     "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/ckq6n02lqz8vo/trad?at_medium=RSS&at_campaign=rss",
+    "link": "https://www.bbc.com/zhongwen/articles/c370pr45nelgo/trad?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-23",
     "intl": 1,
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "三位受訪者表示，暴力事件集中於示威區域，市民日常生活並未受到太大影響。但他們對政府能否平息抗議並不樂觀，甚至有人預計，隨著冬季來臨、生活成本上漲，示威還會陸續出…",
+    "contentSummary": "人工智能發現了長期未被察覺的程式漏洞，引發全球罕見的大規模網絡安全應對行動。",
     "narrativeAnalysis": {
-      "hook": "巴黎騷亂中的三位華人：「激烈的地方激",
+      "hook": "PHP是什麼？為何它引發全球網絡安全",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102345",
-    "platform": "BBC中文",
-    "domain": "政治",
-    "track": "政治",
-    "title": "特朗普訴BBC誹謗案：法官下令總統須宣誓並答問作證",
-    "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/ckx2qdelv0jeo/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-23",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "特朗普的律師表示，總統可以在明年1月11日至22日期間接受問話，並稱英國廣播公司「錯誤地聲稱特朗普總統在本案中逃避庭外宣誓作證」。",
-    "narrativeAnalysis": {
-      "hook": "特朗普訴BBC誹謗案：法官下令總統須",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102346",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "巴黎一间枪械店老板：一周销量“增十倍”，“商户们正武装自己”",
-    "author": "© AFP/Matthieu Rondel",
-    "link": "https://www.rfi.fr/cn/%E6%B3%95%E5%9B%BD/20261023-%E5%B7%B4%E9%BB%8E%E4%B8%80%E9%97%B4%E6%9E%AA%E6%A2%B0%E5%BA%97%E8%80%81%E6%9D%BF-%E4%B8%80%E5%91%A8%E9%94%80%E9%87%8F-%E5%A2%9E%E5%8D%81%E5%80%8D-%EF%BC%8C-%E5%95%86%E6%88%B7%E4%BB%AC%E6%AD%A3%E6%AD%A6%E8%A3%85%E8%87%AA%E5%B7%B1",
-    "published": "2026-10-23",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "据法新社介绍，巴黎一家狩猎枪械店的老板伊夫·戈莱提（Yves Gollety）表示，自上周末抗议期间发生抢劫事件以来，他的销售额“增长了十倍”。",
-    "narrativeAnalysis": {
-      "hook": "巴黎一间枪械店老板：一周销量“增十倍",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102331",
-    "platform": "BBC中文",
-    "domain": "政治",
-    "track": "政治",
-    "title": "中共五中全會前瞻：會前為何密集「打虎」？未來怎樣「從嚴治黨」？",
-    "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/ckx2q587wvrqo/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-23",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "中國政壇至今沒有明確的接班人。受訪專家認為，這反映習近平面臨兩難：不指定接班人有助維持權威，指定接班人則可能提前形成新的權力中心。",
-    "narrativeAnalysis": {
-      "hook": "中共五中全會前瞻：會前為何密集「打虎",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102309",
+    "id": "a2026102404",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "AI Agent 正在改写 CPU 的价值：当 Token 变成行动，算力竞争不再只是拼 GPU - InfoQ-CN",
-    "author": "InfoQ-CN",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9sakFSUGtYVVUwdlZqUjBYOVcwSGhPc1B2aVh1Wk0yLWducFl3bVNHNl9ZM19QWjNiZE1XOGxINExYc0tFQVlBQmg0VFNTb3hkVnZuNVJCWDJmdm5XZlE?oc=5",
+    "title": "Anthropic 推出“主动式 AI Agent” Claude Duet——无需等你开口就干活、关键操作先问批准 - OSCHINA",
+    "author": "OSCHINA",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxYmg3WGM3RUVCQkpYVUZDMVNhV1pDakdKQl9VVEhJU0lpbkg3SXlHeC1mR0xYRzNscE4xZTlkY0k2d19idWlFOTNfLUNselg2am1NMndZcGhZLTQ?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "AI Agent 正在改写 CPU 的价值：当 Token 变成行动，算力竞争不再只是拼 GPU InfoQ-CN",
+    "contentSummary": "Anthropic 推出“主动式 AI Agent” Claude Duet——无需等你开口就干活、关键操作先问批准 OSCHINA",
     "narrativeAnalysis": {
-      "hook": "AI Agent 正在改写 CPU ",
+      "hook": "Anthropic 推出“主动式 A",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102310",
+    "id": "a2026102405",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "Anthropic发布Claude Duet，个人智能体大战升温 - 21财经",
-    "author": "21财经",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQX21RMU1lMWlDM3IyLXBpeFJBM3lWSWdEa0hCY1NzdmFhbF9hUmZvYVFFWVkwTng0RGRfdXF1UEtkMXFlb0pyU0RjTjRVOEJzWHZTd1d0dVNTak5GVFc3dEJRRnNaOHRMdFlBVGdtQkVDRmRONzRwSGZlYkhmSUNyTDlCVXpJZmNIMnBYaTdJWmp2S2V0?oc=5",
+    "title": "Cobo Lucas Yang：AI Agent重新定义链上支付安全边界 - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdUFBU0JsaENVc3paRmVkZXp6dW1KYkU5aG1fb3V1eTlfV1A4NlR4R0NDSGNtcTJVdjE5cUdsZURtTGlEQXR1VHE0QUhFYzBGNDBhb2xJb1RveTg0NFFjVWhPSm5Vek5qSFJGMVJXVzB1R3lZTVhBV2pOWVI1aTl3a1QtWGhLRGNPdFV3WWl3?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
     "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "Anthropic发布Claude ",
+      "hook": "Cobo Lucas Yang：AI",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102312",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "从AI Agent到云端机密计算再到具身智能，安谋科技CGC 2026全栈亮剑 - OFweek",
-    "author": "OFweek",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DekRpZlQ3NjJGOWFvLUZwekpJSlZKS3A1TnlOX0xfRW05aGFxQnVSUWJxdk8xNTNqRE54RUZvT1BzazFPSzE0V0FBS2NRTkJSMHRFTFcydy0waFF5b1Nfa2k2ZmstdUpQTUFXd2Zn?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "从AI Agent到云端机密计算再到具身智能，安谋科技CGC 2026全栈亮剑 OFweek",
-    "narrativeAnalysis": {
-      "hook": "从AI Agent到云端机密计算再到",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102317",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "正式发布！山石网科统一AI网关企业级Token运营平台|AI Agent|新品发布|管理|发布会|策略_手机新浪网 - finance.sina.com.cn",
-    "author": "finance.sina.com.cn",
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0MtZ1lMQnRhN1JOOElWZGVLQjRhUVNDcDJqdDlSZkp0T0RPeTFYVEdqbGRPZW4wUlFvVndzVjF1QWVGYkxPa0ZKeGsxZ0NCNVo1MHY3S2pXYXJjR1U2VU83N195OHAxMElDRVhkeldmb1R3WFkzZ0VGSVpkQV9yb1pyeHl6QQ?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "正式发布！山石网科统一AI网关企业级Token运营平台|AI Agent|新品发布|管理|发布会|策略_手机新浪网 finance.sina.com.cn",
-    "narrativeAnalysis": {
-      "hook": "正式发布！山石网科统一AI网关企业级",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102319",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "讯飞发布新一代端到端交互模型：语音大模型调用量暴涨 20 倍，端侧已实现约 70% 云端能力 - InfoQ-CN",
-    "author": "InfoQ-CN",
-    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5vVk5EZlNSN2NyazhaYkswZkhkTXlkeUE1bUJ4NVVMalpRVlY0N0pYM1R3cUNZbDhOOFNpNEtrSU4yYk1kNGRPU3dxdkdOb1BZaHZpWVJWZFV6UQ?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "讯飞发布新一代端到端交互模型：语音大模型调用量暴涨 20 倍，端侧已实现约 70% 云端能力 InfoQ-CN",
-    "narrativeAnalysis": {
-      "hook": "讯飞发布新一代端到端交互模型：语音大",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102320",
+    "id": "a2026102409",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "东北超2027赛季招商启动 多方力量赋能文体旅融合发展",
+    "title": "山海好物走进上海市民“菜篮子” 603家企业携特产亮相",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719998.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720154.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "中新网沈阳10月23日电 (李晛 郑轶文)10月23日，东北地区城市足球联赛2026赛季回顾暨2027赛季招商启动大会在辽宁沈阳举行。",
+    "contentSummary": "中新网上海10月23日电 (记者 李姝徵)第九届上海市对口地区特色商品展销会23日开幕，603家企业带着家乡好物来到上海，让市民在家门口选购远方风物，也为产地寻…",
     "narrativeAnalysis": {
-      "hook": "东北超2027赛季招商启动 多方力量",
+      "hook": "山海好物走进上海市民“菜篮子” 60",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102325",
+    "id": "a2026102410",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "广东科技贷款余额突破6.7万亿元",
+    "title": "今年前三季度唐山港京唐港区保税物流中心（B型）进口贸易额居中国首位",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719993.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720136.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "中新社广州10月23日电 (记者 方伟彬 王坚)截至2026年9月末，广东省科技贷款余额超6.7万亿元(人民币，下同)，同比增长17%；制造业贷款余额4.2万亿…",
+    "contentSummary": "中新网唐山10月23日电 (王夏菲 刘姿含 李海天)京唐港海关23日消息，今年前三季度，唐山港京唐港区保税物流中心(B型)进出口贸易额突破200.6亿元，同比增…",
     "narrativeAnalysis": {
-      "hook": "广东科技贷款余额突破6.7万亿元",
+      "hook": "今年前三季度唐山港京唐港区保税物流中",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102326",
+    "id": "a2026102411",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "今年前9个月中国完整社区建设改造完成投资额336.1亿元",
+    "title": "前9个月云南出口咖啡及其制品4.9亿元 居全国首位",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719992.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720131.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "中新社北京10月23日电 (记者 庞无忌)记者23日从中国住房和城乡建设部获悉，2026年1至9月，全国累计完工改造城镇老旧小区1.6万个、正在实施改造小区1.…",
+    "contentSummary": "中新网昆明10月23日电 (徐雨萌)昆明海关23日消息，2026年前9个月，云南出口咖啡及其制品4.9亿元人民币，居全国首位。产品远销越南、马来西亚、德国等42…",
     "narrativeAnalysis": {
-      "hook": "今年前9个月中国完整社区建设改造完成",
+      "hook": "前9个月云南出口咖啡及其制品4.9亿",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102327",
+    "id": "a2026102412",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "台湾渔会理事长：渔民需要大陆市场",
+    "title": "赛事流量如何变产业增量？亦庄构筑电竞生态底座",
     "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gn/2026/10-23/10719983.shtml",
+    "link": "https://www.chinanews.com.cn/ty/2026/10-23/10720156.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "中新社厦门10月23日电 (记者 朱贺 刘子衿)一个月前仍忧心台湾渔业进入“加护病房”的台湾渔会理事长谢龙隐，23日在厦门举行的台湾渔产品输入大陆仪式上表达感谢…",
+    "contentSummary": "中新网北京10月23日电 2026北京亦庄·未来游戏电竞科技大会日前在北京智慧电竞赛事中心举办。大会以“问未来·第一场”为主题，汇聚行业协会、企业、科研院校等多…",
     "narrativeAnalysis": {
-      "hook": "台湾渔会理事长：渔民需要大陆市场",
+      "hook": "赛事流量如何变产业增量？亦庄构筑电竞",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102328",
+    "id": "a2026102413",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "前三季度全国财政收入同比增长5.1%",
+    "title": "撂荒土地溢菊香 青海民和山村撑起“金”产业",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/sh/2026/10-23/10720151.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新网青海民和10月23日电 题：撂荒土地溢菊香 青海民和山村撑起“金”产业",
+    "narrativeAnalysis": {
+      "hook": "撂荒土地溢菊香 青海民和山村撑起“金",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102414",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "优化产业、能源、交通结构 浙江何以打造更高水平生态省？",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/sh/2026/10-23/10720132.shtml",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新网杭州10月23日电(鲍梦妮)据10月23日在杭州召开的《美丽浙江建设(生态环境保护)“十五五”规划》新闻发布会消息，“十五五”时期，浙江省委、省政府系统谋…",
+    "narrativeAnalysis": {
+      "hook": "优化产业、能源、交通结构 浙江何以打",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102415",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "中国央行将开展7000亿元MLF操作",
     "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719748.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720011.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "前三季度全国财政收入同比增长5.1%",
+    "contentSummary": "中国央行将开展7000亿元MLF操作",
     "narrativeAnalysis": {
-      "hook": "前三季度全国财政收入同比增长5.1%",
+      "hook": "中国央行将开展7000亿元MLF操作",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102329",
+    "id": "a2026102416",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "在中国光谷，一条产业链如何被“意念”激活",
+    "title": "A股周五放量上涨 创业板指收盘涨逾4％",
     "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/jk/2026/10-23/10719685.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719891.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "在中国光谷，一条产业链如何被“意念”激活",
+    "contentSummary": "A股周五放量上涨 创业板指收盘涨逾4％",
     "narrativeAnalysis": {
-      "hook": "在中国光谷，一条产业链如何被“意念”",
+      "hook": "A股周五放量上涨 创业板指收盘涨逾4",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102336",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "前三季度深圳跨境人民币结算规模达5.9万亿元",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/dwq/2026/10-23/10719835.shtml",
+    "id": "a2026102425",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "人民日报评论员：党和人民军队铿锵前进的制胜之道",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495780.html",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "前三季度深圳跨境人民币结算规模达5.9万亿元",
+    "contentSummary": "人民日报评论员：党和人民军队铿锵前进的制胜之道",
     "narrativeAnalysis": {
-      "hook": "前三季度深圳跨境人民币结算规模达5.",
+      "hook": "人民日报评论员：党和人民军队铿锵前进",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102337",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "中国人民银行定于10月30日发行2027版熊猫贵金属纪念币一套",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719980.shtml",
+    "id": "a2026102426",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "今日霜降，西部战区官兵全力守护受灾群众的冷暖",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16495752.html",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "中新网10月23日电 据中国人民银行微信公众号消息，中国人民银行定于2026年10月30日发行2027版熊猫贵金属纪念币一套。该套贵金属纪念币共15枚，其中熊猫…",
+    "contentSummary": "今日霜降，西部战区官兵全力守护受灾群众的冷暖",
     "narrativeAnalysis": {
-      "hook": "中国人民银行定于10月30日发行20",
+      "hook": "今日霜降，西部战区官兵全力守护受灾群",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102356",
+    "id": "a2026102427",
     "platform": "北极星储能网",
     "domain": "储能",
     "track": "储能",
-    "title": "247.5MW/495MWh！安徽涡阳县涡耀电网侧储能EPC招标",
+    "title": "河北省廊坊市独立储能项目投资主体优选评分标准（各市自主明确得分项） (征求意见稿)",
     "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261023/1517366.shtml",
+    "link": "https://news.bjx.com.cn/html/20261023/1517362.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "247.5MW/495MWh！安徽涡阳县涡耀电网侧储能EPC招标",
+    "contentSummary": "河北省廊坊市独立储能项目投资主体优选评分标准（各市自主明确得分项） (征求意见稿)",
     "narrativeAnalysis": {
-      "hook": "247.5MW/495MWh！安徽涡",
+      "hook": "河北省廊坊市独立储能项目投资主体优选",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102357",
+    "id": "a2026102428",
     "platform": "北极星储能网",
     "domain": "储能",
     "track": "储能",
-    "title": "天津：统筹布局2GW新型储能电站，推进长时储能与快速响应协同联动",
+    "title": "山东电网新型储能装机突破1500万千瓦",
     "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261023/1517431.shtml",
+    "link": "https://news.bjx.com.cn/html/20261023/1517337.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "天津：统筹布局2GW新型储能电站，推进长时储能与快速响应协同联动",
+    "contentSummary": "山东电网新型储能装机突破1500万千瓦",
     "narrativeAnalysis": {
-      "hook": "天津：统筹布局2GW新型储能电站，推",
+      "hook": "山东电网新型储能装机突破1500万千",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102358",
+    "id": "a2026102429",
     "platform": "北极星储能网",
     "domain": "储能",
     "track": "储能",
-    "title": "云南电网首个光储一体化AGC、AVC及一次调频升级改造完成",
+    "title": "3kW光储一体机逆变器！广东户用储能柜供应商征集",
     "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261023/1517423.shtml",
+    "link": "https://news.bjx.com.cn/html/20261023/1517375.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "云南电网首个光储一体化AGC、AVC及一次调频升级改造完成",
+    "contentSummary": "3kW光储一体机逆变器！广东户用储能柜供应商征集",
     "narrativeAnalysis": {
-      "hook": "云南电网首个光储一体化AGC、AVC",
+      "hook": "3kW光储一体机逆变器！广东户用储能",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102359",
+    "id": "a2026102430",
     "platform": "媒体报道",
     "domain": "储能",
     "track": "储能",
-    "title": "阳光电源等在山西成立科技公司，含航空运营相关业务 - 同花顺财经",
-    "author": "同花顺财经",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB4NDVPaVdxd1ZZLUlJeFZWQ1lXWFEwZHlITmt5WmhLYTlEZWQzMlhoUjU2ZUtNTDN5ekZfYklkSGUyeEE3a2UwTWFRcHp1TDNxUVZ6X3hmWGZRbEdKbFE?oc=5",
+    "title": "华为数字能源、盛弘股份、特来电、京能新能源、驴充充！2026年9月全国大功率充电设施制造商累计销量TOP5公布 - 国际充换电网",
+    "author": "国际充换电网",
+    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5menRBalBrbXh2cDR2ZzJDaUhqSncxVlE1Z0dObUlPY0U0YkRKNUxsS3ZPbW5ndzVsN3pvX1lMMENzZUdua0NSc1BDMmRGZnAxNGdLd2VmMA?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "华为数字能源、盛弘股份、特来电、京能新能源、驴充充！2026年9月全国大功率充电设施制造商累计销量TOP5公布 国际充换电网",
+    "narrativeAnalysis": {
+      "hook": "华为数字能源、盛弘股份、特来电、京能",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102431",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "阳光电源：10月22日融券卖出3.49万股，融资融券余额72.79亿元 - 搜狐",
+    "author": "搜狐",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcjN5eUY1WHA3ZU9OSE5lOEw4YS1NVDJ3X1JLazRmSFlsbzE1VndJYTRMVEJnc1p6SnBlZm1sZnNBWnBrTElzMWhwWXozcnEyRUdJeHNISEVWaDNtNGlyVU1yNzlQSW1YamZQc3RGWk5BOG9Ua3R1REN5T0FSelhmamhTYnhVSGlH?oc=5",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
     },
     "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "阳光电源等在山西成立科技公司，含航空",
+      "hook": "阳光电源：10月22日融券卖出3.4",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102361",
+    "id": "a2026102432",
     "platform": "媒体报道",
     "domain": "储能",
     "track": "储能",
-    "title": "宁德时代董秘被打？知情人士回应；怕担责先跑路？娃哈哈集团董事长许思敏离职；DeepSeek完成近1000亿元融资 - 雷峰网",
-    "author": "雷峰网",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAybFNtZUdZQkhkME9yUUlTcS1veGh4ZFVILUFCLU9TT2R0LW1lYXRDWXBGX1hjX25NOHIzb2V2bldscE9XRnlaVlNKVFhUOGU3a3ZzM093TEVmMnhINld3NEY0OVU5cEM1Q0NvbVRFWQ?oc=5",
+    "title": "宁王深V反弹宁德时代午后飙涨7% - 新浪新闻",
+    "author": "新浪新闻",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xTEE5ekt2SjdudFRRVWRWN3U5T240SlpEY3picFZBYmNoLTB1dDVkS0ZZS1VtNDBkNkk4ZzJBUGFZZC1oVWdpYU5UZEVUYkpzbkZWTGg3MlhDOFZrSnlQUjBCaF9uSHNyUWhUMThrbkJqODdOdUpuMEV5bG5WeFU?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "宁德时代董秘被打？知情人士回应；怕担责先跑路？娃哈哈集团董事长许思敏离职；DeepSeek完成近1000亿元融资 雷峰网",
-    "narrativeAnalysis": {
-      "hook": "宁德时代董秘被打？知情人士回应；怕担",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102362",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "DeepSeek被曝二轮融资1000亿元，宁德时代拟再投100亿 - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1aaUhHQkhzX25rVGh1c0R5WHZHaVI0NWFUSHNVdkZ0ejJMV004MFZoTlFfblYzWHRjWGNLekw0eFhCNEpxX3liYXNDOVFRR0R0eFdNWFl0NWx3R2M1bXNyZkN5bm9kOFBJREZrYU10MXo3OHpERGVKSVhqZTM?oc=5",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
     "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "DeepSeek被曝二轮融资1000",
+      "hook": "宁王深V反弹宁德时代午后飙涨7% -",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102371",
+    "id": "a2026102433",
     "platform": "媒体报道",
     "domain": "储能",
     "track": "储能",
-    "title": "北汽集团与宁德时代签署合作协议，共建换电生态 - 新浪财经",
-    "author": "新浪财经",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBNcUp5WjBWaVZTNnJmU2w5UEpUQ1dLUWpkR2l2N3drUWdRZVh2Zk1ONENLMldDdVc3blpBYnJtd0xZUHBkdE1pcmZGLXFqT2ZaZUdwV3lZcnBfbktTMXRWZENJbFFWMzNveVNReWNSeWk2TFVMb0JDVA?oc=5",
+    "title": "公示！宁德时代宜春枧下窝锂矿采矿项目生态环境影响报告书拟批准 - 凤凰网",
+    "author": "凤凰网",
+    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1vMkZVTjhadXNvWGVXS3R1LVl5NFpvRVFsak85dDI5ak1QMDItRG5YQ3NZQ01OSjZ4WWh6NHVkUGlVZV9xYzkwQ1VB?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
     "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "北汽集团与宁德时代签署合作协议，共建",
+      "hook": "公示！宁德时代宜春枧下窝锂矿采矿项目",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102372",
+    "id": "a2026102434",
     "platform": "媒体报道",
     "domain": "储能",
     "track": "储能",
-    "title": "国轩高科、中信证券等入股吉利旗下远程商用车 - https://www.itdcw.com/",
-    "author": "https://www.itdcw.com/",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ORU8yc3JodWhYYkdURW1Kc2s0UV9BblNQbjhtUm10R0E2WVUyNEJnSFJJWTB6YmZ0b0EtSWlscGhKZk0wd1BnTFh1cExMb2FGbGstRUwxeWEzX3J2ckE?oc=5",
+    "title": "重卡用上了“充电宝”：宁德时代发布天行Ⅱ“电电增程”重卡方案 - 观察者网",
+    "author": "观察者网",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9fYU81S2ZjVXNGQXhPNUVudExxYS1VVGZPRFd1U3Z2TWNER2RxeG03dFBGZXZ2cG9wY3BseFJnSmZaMXMwZ3BzV1BwOHJaY2p3M3ZTcEFVMUtidDcya3J0Y3hR?oc=5",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-23"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "国轩高科、中信证券等入股吉利旗下远程商用车 https://www.itdcw.com/",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "国轩高科、中信证券等入股吉利旗下远程",
+      "hook": "重卡用上了“充电宝”：宁德时代发布天",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -848,50 +891,6 @@ window.DATA_INSPIRATION = [
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
-  },
-  {
-    "id": "a2026102347",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "中国海军第48批护航编队完成任务返回青岛",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495552.html",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "中国海军第48批护航编队完成任务返回青岛",
-    "narrativeAnalysis": {
-      "hook": "中国海军第48批护航编队完成任务返回",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102360",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "武警部队官兵连夜奋战在巴青县抗震救灾一线",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495539.html",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "武警部队官兵连夜奋战在巴青县抗震救灾一线",
-    "narrativeAnalysis": {
-      "hook": "武警部队官兵连夜奋战在巴青县抗震救灾",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-23","added":34,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-24","added":28,"total":40,"tracks":{"军事":8,"政治":8,"科技":8,"财经":8,"储能":8}};
