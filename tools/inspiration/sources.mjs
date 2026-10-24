@@ -181,6 +181,14 @@ export const SOURCES = {
     name: 'B站·晶晶博士CASS', platform: 'B站', type: 'bilibili',
     uid: '180549227', allPass: true, maxItems: 15, priority: 3.6
   },
+  bili_wushi: {
+    name: 'B站·巫师财经', platform: 'B站', type: 'bilibili',
+    uid: '472747194', allPass: true, maxItems: 15, priority: 3.7
+  },
+  bili_banfo: {
+    name: 'B站·半佛仙人', platform: 'B站', type: 'bilibili',
+    uid: '37663924', allPass: true, maxItems: 15, priority: 3.5
+  },
   bili_laoshi: {
     name: 'B站·老石谈芯', platform: 'B站', type: 'bilibili',
     uid: '', resolveName: '老石谈芯', allPass: true, maxItems: 15, priority: 3.6
@@ -237,7 +245,7 @@ export const TRACKS = [
   },
   {
     name: '财经', keywords: KEY.finance,
-    sources: ['bili_xiaolin', 'bili_tuzi', 'bili_jingjing', 'chinanews_finance', 'chinanews_scroll', 'chinanews_home']
+    sources: ['bili_wushi', 'bili_xiaolin', 'bili_tuzi', 'bili_jingjing', 'bili_banfo', 'chinanews_finance', 'chinanews_scroll', 'chinanews_home']
   },
   {
     name: '政治', keywords: KEY.politics, maxVideos: 3,
