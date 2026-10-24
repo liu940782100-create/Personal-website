@@ -1,6 +1,116 @@
 /* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
   {
+    "id": "a2026102440",
+    "platform": "B站",
+    "domain": "政治",
+    "track": "政治",
+    "title": "以色列将举行议会选举  一场撕裂国家的“期末大考”",
+    "author": "央视新闻",
+    "link": "https://www.bilibili.com/video/BV1UrHP6jETr",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "以色列将举行议会选举 一场撕裂国家的“期末大考”",
+    "narrativeAnalysis": {
+      "hook": "以色列将举行议会选举  一场撕裂国家",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102450",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "七彩祥云？不，是“火箭云”！",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV19sHw6JEH2",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "10月23日傍晚，我国在太原卫星发射中心使用长征六号改运载火箭成功将遥感五十号03星发射升空，发射任务取得圆满成功。晋冀鲁豫等地许多网友捕捉到了绝美瞬间，一起来…",
+    "narrativeAnalysis": {
+      "hook": "七彩祥云？不，是“火箭云”！",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102451",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "子弟兵现场架起炉灶，西藏地震受灾群众吃上了热乎饭！",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1zLHw64Ejw",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "10月22日，西藏那曲市巴青县发生7.0级地震。今天，西藏军区继续派出那曲军分区救援分队140名官兵、15名民兵奔赴多个点位开展救援行动。上午9点开始，玛如乡扎…",
+    "narrativeAnalysis": {
+      "hook": "子弟兵现场架起炉灶，西藏地震受灾群众",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102452",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "地下设施曝光！伊朗亮出新型无人机：“威力翻倍”",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1rDHw6aEUK",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "伊朗国家电视台22日展示了一处地下设施中的大批军用无人机，称这些无人机比之前的型号“更强大、更先进”。其中，“阿拉什”无人机的新版本据称“配备了100公斤重的弹…",
+    "narrativeAnalysis": {
+      "hook": "地下设施曝光！伊朗亮出新型无人机：“",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102453",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "你没看错，这真的是部队病号饭~",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1nvnh6GESH",
+    "published": "2026-10-23",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "全军海拔最高的医院，炊事班的灶台不是面向训练场，而是面向病房。山药牦牛肉汤、虫草花焖鸡、乌梅糖醋排骨、咸蛋黄焗南瓜、山药薏米排骨汤……精心烹制的病号餐，带着灶台…",
+    "narrativeAnalysis": {
+      "hook": "你没看错，这真的是部队病号饭~",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
     "id": "a2026102424",
     "platform": "B站",
     "domain": "政治",
@@ -45,50 +155,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102349",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "美军公开航母海上补给装弹，想证明什么？",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1aUnb6RErY",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "目前，美军已有两艘航母部署在中东，分别是“布什”号和“华盛顿”号。第三个航母打击群即将于11月抵达。在“华盛顿”号航母上，外媒记者记录了航母物资补给和导弹装载的…",
-    "narrativeAnalysis": {
-      "hook": "美军公开航母海上补给装弹，想证明什么",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102350",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "西藏那曲地震，西部战区官兵连夜救援",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1y7ns68EE4",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "10月22日晚，西藏那曲市巴青县发生7.0级地震，西部战区联指中心迅速启动应急响应机制，救援官兵已抵达受灾严重区域展开救援。（记者：王磊 杨赞祺 黄兴泽 贾纯 …",
-    "narrativeAnalysis": {
-      "hook": "西藏那曲地震，西部战区官兵连夜救援",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
     "id": "a2026102338",
     "platform": "B站",
     "domain": "政治",
@@ -111,73 +177,72 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102351",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "8个弹孔一条线！看不见目标照样“爆头”",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1ZDn26jEnH",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "武警第二机动总队某支队训练场，队员们需要射击的目标是大巴车过道中间模拟“暴恐分子”头部的气球。在车内窗帘遮挡的情况下，队员们如何完成致命一击？（军事纪实）",
-    "narrativeAnalysis": {
-      "hook": "8个弹孔一条线！看不见目标照样“爆头",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102352",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "指令下达！直升机编队海岛起降→",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1xonm6wEVZ",
-    "published": "2026-10-22",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-23"
-    },
-    "contentSummary": "近日，第73集团军某旅组织多机型、多课目混合编组飞行训练。随着指令下达，十多架武装、运输直升机组成混合编队依次升空。直升机低空掠海飞抵某海岛上空，飞行员需自主建…",
-    "narrativeAnalysis": {
-      "hook": "指令下达！直升机编队海岛起降→",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102223",
-    "platform": "B站",
+    "id": "a2026102441",
+    "platform": "法广",
     "domain": "政治",
     "track": "政治",
-    "title": "【独家视频】习近平：在新的长征路上奋力创造新的辉煌",
-    "author": "央视新闻",
-    "link": "https://www.bilibili.com/video/BV1F1n26DExy",
-    "published": "2026-10-22",
+    "title": "特朗普称星链服务已恢复 乌克兰表示仍无法正常使用",
+    "author": "REUTERS - Stringer",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261023-%E7%89%B9%E6%9C%97%E6%99%AE%E7%A7%B0%E6%98%9F%E9%93%BE%E6%9C%8D%E5%8A%A1%E5%B7%B2%E6%81%A2%E5%A4%8D-%E4%B9%8C%E5%85%8B%E5%85%B0%E8%A1%A8%E7%A4%BA%E4%BB%8D%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8",
+    "published": "2026-10-24",
+    "intl": 1,
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-10-22"
+      "collected": "2026-10-24"
     },
-    "contentSummary": "独家视频呈现习近平讲话，号召在新长征路上奋力创造新辉煌。",
+    "contentSummary": "尽管美国总统特朗普周四称马斯克已恢复乌克兰军队对SpaceX“星盾”（Starshield）军事卫星通信系统的使用权限，基辅周五表示，但该系统仍无法正常使用。英…",
     "narrativeAnalysis": {
-      "hook": "新长征号角再响",
-      "structure": "主题亮相→精神号召→行动愿景",
-      "emotionCurve": "庄重肃穆→振奋激励→前行期待",
-      "transferable": [
-        "用历史意象拉高格局",
-        "标题突出独家视频",
-        "结尾落到行动号召"
-      ]
+      "hook": "特朗普称星链服务已恢复 乌克兰表示仍",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102442",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "欧盟拟通过对华谈判应对“中国冲击2.0” 聚焦化工与机械行业",
+    "author": "© REUTERS - Alice Sacco",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261023-%E6%AC%A7%E7%9B%9F%E6%8B%9F%E9%80%9A%E8%BF%87%E5%AF%B9%E5%8D%8E%E8%B0%88%E5%88%A4%E5%BA%94%E5%AF%B9-%E4%B8%AD%E5%9B%BD%E5%86%B2%E5%87%BB2-0-%E8%81%9A%E7%84%A6%E5%8C%96%E5%B7%A5%E4%B8%8E%E6%9C%BA%E6%A2%B0%E8%A1%8C%E4%B8%9A",
+    "published": "2026-10-24",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "欧盟多国部长周五（10月23日）表示，欧盟应着重通过与北京对话，减少化工、机械等产品进口，遏制不断扩大的对华贸易逆差。与此同时，欧盟正考虑对塑料实施进口配额。",
+    "narrativeAnalysis": {
+      "hook": "欧盟拟通过对华谈判应对“中国冲击2.",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102443",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "希音同意支付1亿美元 与美国联邦贸易委员会达成和解",
+    "author": "REUTERS - Sarah Meyssonnier",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261023-%E5%B8%8C%E9%9F%B3%E5%90%8C%E6%84%8F%E6%94%AF%E4%BB%981%E4%BA%BF%E7%BE%8E%E5%85%83-%E4%B8%8E%E7%BE%8E%E5%9B%BD%E8%81%94%E9%82%A6%E8%B4%B8%E6%98%93%E5%A7%94%E5%91%98%E4%BC%9A%E8%BE%BE%E6%88%90%E5%92%8C%E8%A7%A3",
+    "published": "2026-10-24",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "一名直接知情人士周五（10月23日）向路透社透露，中国快时尚巨头希音已同意支付1亿美元，与美国联邦贸易委员会就发货延误及其他消费者投诉展开的调查达成和解。",
+    "narrativeAnalysis": {
+      "hook": "希音同意支付1亿美元 与美国联邦贸易",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
     }
   },
   {
@@ -227,104 +292,13 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102429",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "美驻联合国大使沃尔兹警告伊朗战事恐再持续一年",
-    "author": "REUTERS - David Dee Delgado",
-    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261023-%E7%BE%8E%E9%A9%BB%E8%81%94%E5%90%88%E5%9B%BD%E5%A4%A7%E4%BD%BF%E6%B2%83%E5%B0%94%E5%85%B9%E8%AD%A6%E5%91%8A%E4%BC%8A%E6%9C%97%E6%88%98%E4%BA%8B%E6%81%90%E5%86%8D%E6%8C%81%E7%BB%AD%E4%B8%80%E5%B9%B4",
-    "published": "2026-10-24",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "美国驻联合国大使沃尔兹（Mike Waltz）警告，美国与伊朗的战争可能再持续一年，与总统特朗普（Donald Trump）此前表示，战争将在11月3日美国期中…",
-    "narrativeAnalysis": {
-      "hook": "美驻联合国大使沃尔兹警告伊朗战事恐再",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102445",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "巴黎近郊枪击导致一死五伤 马克龙谴责“种族主义恐怖袭击”",
-    "author": "REUTERS - Hannah McKay",
-    "link": "https://www.rfi.fr/cn/%E6%B3%95%E5%9B%BD/20261023-%E5%B7%B4%E9%BB%8E%E8%BF%91%E9%83%8A%E6%9E%AA%E5%87%BB%E5%AF%BC%E8%87%B4%E4%B8%80%E6%AD%BB%E4%BA%94%E4%BC%A4-%E9%A9%AC%E5%85%8B%E9%BE%99%E8%B0%B4%E8%B4%A3-%E7%A7%8D%E6%97%8F%E4%B8%BB%E4%B9%89%E6%81%90%E6%80%96%E8%A2%AD%E5%87%BB",
-    "published": "2026-10-24",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "法国巴黎近郊周五（10月23日）发生枪击，一名男子从汽车内连续开火，造成一人死亡、五人受伤，其中包括一名12岁女孩。嫌疑人被怀疑有意针对移民背景人士。法国总统马…",
-    "narrativeAnalysis": {
-      "hook": "巴黎近郊枪击导致一死五伤 马克龙谴责",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102446",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "美国特使：美方最快本周末可能打击伊朗",
-    "author": "REUTERS - Umit Bektas",
-    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E4%B8%9C/20261023-%E7%BE%8E%E5%9B%BD%E7%89%B9%E4%BD%BF-%E7%BE%8E%E6%96%B9%E6%9C%80%E5%BF%AB%E6%9C%AC%E5%91%A8%E6%9C%AB%E5%8F%AF%E8%83%BD%E6%89%93%E5%87%BB%E4%BC%8A%E6%9C%97",
-    "published": "2026-10-24",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "美国特使汤姆·巴拉克周五(10月23日）表示，美国最快可能于本周末对伊朗发动打击。此前数日，华盛顿和以色列接连发出对伊朗动武的威胁。",
-    "narrativeAnalysis": {
-      "hook": "美国特使：美方最快本周末可能打击伊朗",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102404",
+    "id": "a2026102401",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "讯飞星火医疗大模型V3.7升级，AI患者管理3.0发布并启动行业标准共建 - 紫荆网",
-    "author": "紫荆网",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUGpZU1JBdHN3ZzZNdG91RGxSeWNYajFUNGR6bGdGTllGcmhnM2I4QU1NTU1oOF9GNnJXSE1ZZWJaVmtBMWFJbTIzZmRrUG1Ib3ZZd1dpTWY0ekJCZWxJNWowb3hObWlqN19MZjliaktwMENOY25mUkFHMGwtZEtyeDBkVzFMR1JjWngtekluQlR5c0NU?oc=5",
-    "published": "2026-10-24",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "讯飞星火医疗大模型V3.7升级，AI",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102405",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "中科创达发布滴水AIOS 3.0，汽车、机器人、AI眼镜都要「自主智能」 - 新浪网",
+    "title": "3万亿级参数规模 全球最大开源AI大模型上新 - 新浪网",
     "author": "新浪网",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1CZkFvQ2dRekxYclFsWC1xREpKdHlHeWpJbjNqS0RMcXRINl9fNHFkd09jQ0k5bllMN1dBamlGZVJNbG9rUGY2S2Q3a0EzRU8wR2JpT2NjSnQ0SzdnZTFYbmw4VG5EUWtKM2ZyNmlhczBXWW1yemhkNWR1QWJTU28?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQT2MzcWdwZm9HWUlHYkZMMjEzRmFTT2JOZXJ5RVNwY0JNVDlCQ0dsQmN1Z0dMU3ZRcm9XclRJbHZDUE1FNzM0elB0Mm52dEdNTHFwZnotRDRzeUl2ZG5SaFVjZEhsMHNBMWd0OXB6WkZCMG1GU2xzRXZrZ010NTJOMFN3?oc=5",
     "published": "2026-10-24",
     "metrics": {
       "likes": 0,
@@ -333,139 +307,359 @@ window.DATA_INSPIRATION = [
     },
     "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "中科创达发布滴水AIOS 3.0，汽",
+      "hook": "3万亿级参数规模 全球最大开源AI大",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102408",
-    "platform": "爱范儿",
+    "id": "a2026102402",
+    "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "突发！iPhone Duo 支持微信平板登录，可与手机、电脑同时在线",
-    "author": "爱范儿",
-    "link": "https://www.ifanr.com/1685714?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "title": "智源众智 FlagOS 2.2 让前沿模型与多元算力协同演进",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/mhdJwMMzYFedMFHKfHWs?utm_source=rss&utm_medium=article",
     "published": "2026-10-24",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "来了来了#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+    "contentSummary": "点击查看原文>",
     "narrativeAnalysis": {
-      "hook": "突发！iPhone Duo 支持微信",
+      "hook": "智源众智 FlagOS 2.2 让前",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102409",
-    "platform": "爱范儿",
+    "id": "a2026102403",
+    "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "实测 Kimi K3.1 Pro，国模终于继续卷旗舰",
-    "author": "爱范儿",
-    "link": "https://www.ifanr.com/1685684?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "title": "刘铁岩、诺奖、图灵奖得主等嘉宾共话AI的下一个十年：Transformer一统天下之后，AI的下一张王牌是什么？",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/UmD4aAerZEts8sZ5t791?utm_source=rss&utm_medium=article",
     "published": "2026-10-24",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "大而美的 Kimi 回来了#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+    "contentSummary": "当所有人都在使用Transformer，多样性为什么仍然重要？",
     "narrativeAnalysis": {
-      "hook": "实测 Kimi K3.1 Pro，国",
+      "hook": "刘铁岩、诺奖、图灵奖得主等嘉宾共话A",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102410",
-    "platform": "爱范儿",
+    "id": "a2026102406",
+    "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "早报｜微信初步适配iPhone Duo，仍不能平板登录/全球PC出货下降21%/何刚出任华为董事",
-    "author": "爱范儿",
-    "link": "https://www.ifanr.com/1685660?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "title": "AI Agent 正在改写 CPU 的价值：当 Token 变成行动，算力竞争不再只是拼 GPU",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/AkDgwN6h72cqUOJ35Zok?utm_source=rss&utm_medium=article",
     "published": "2026-10-24",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "· 黄仁勋：对长鑫合作持开放态度，不认为 2029 年内存会过剩 · 沃尔沃汽车拟全球裁减约 2500 个岗位 · 华为 Pura90 Plus 开启预订#欢迎…",
+    "contentSummary": "智能体 AI 正在改变 CPU 性能的评价逻辑。",
     "narrativeAnalysis": {
-      "hook": "早报｜微信初步适配iPhone Du",
+      "hook": "AI Agent 正在改写 CPU ",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102411",
+    "id": "a2026102407",
     "platform": "IT之家",
     "domain": "科技",
     "track": "科技",
-    "title": "微软 Win11 26H2 发布 26340.9767 预览版：增强实验性功能体验、升级网络测速",
+    "title": "中国联通：已在苹果直营店 / 授权店安排千余名驻店员，协助 iPhone Duo 购机用户现场开通 eSIM",
     "author": "IT之家",
-    "link": "https://www.ithome.com/1/017/367.htm",
+    "link": "https://www.ithome.com/1/017/397.htm",
     "published": "2026-10-24",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "IT之家 10 月 24 日消息，微软昨日（10 月 23 日）发布公告，邀请 Experimental 频道的 Windows Insider 项目成员，测试…",
+    "contentSummary": "IT之家 10 月 24 日消息，中国联通发文，称目前联通已在苹果 Apple Store 直营店、APR 苹果授权店等多家门店安排千余名驻店员，协助用户现场开…",
     "narrativeAnalysis": {
-      "hook": "微软 Win11 26H2 发布 2",
+      "hook": "中国联通：已在苹果直营店 / 授权店",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102412",
+    "id": "a2026102417",
     "platform": "IT之家",
     "domain": "科技",
     "track": "科技",
-    "title": "微软“邮件革命”仅一年就退场：Outlook 收件箱 AI 整理 Prioritize My Inbox 功能下周起停用",
+    "title": "少量账号发送疑似色情引流信息，企业微信安全团队公告确认为某第三方外挂软件服务被攻破所致",
     "author": "IT之家",
-    "link": "https://www.ithome.com/1/017/362.htm",
+    "link": "https://www.ithome.com/1/017/395.htm",
     "published": "2026-10-24",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "IT之家 10 月 24 日消息，科技媒体 Windows Central 昨日（10 月 23 日）发布博文，报道称微软已宣布将于 2026 年 10 月 2…",
+    "contentSummary": "IT之家 10 月 24 日消息，针对少量企业微信账号向客户发送疑似色情引流信息一事，企业微信安全团队今日发布公告，称经安全团队排查，确认为某第三方外挂软件服务…",
     "narrativeAnalysis": {
-      "hook": "微软“邮件革命”仅一年就退场：Out",
+      "hook": "少量账号发送疑似色情引流信息，企业微",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102413",
+    "id": "a2026102418",
     "platform": "IT之家",
     "domain": "科技",
     "track": "科技",
-    "title": "亿万富翁投资人马克 · 库班：抵御失控智能体就像防蟑螂，可以用 AI“喷药”",
+    "title": "父亲突发脑梗后儿子用豆包 AI 抢出救命时间，话题登顶微博热搜",
     "author": "IT之家",
-    "link": "https://www.ithome.com/1/017/347.htm",
+    "link": "https://www.ithome.com/1/017/394.htm",
     "published": "2026-10-24",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "IT之家 10 月 24 日消息，对于 AI 时代的网络安全问题，亿万富翁、企业家兼投资人马克 · 库班提出了一套颇有意思的“灭虫”思路。据《商业内幕》今天（2…",
+    "contentSummary": "IT之家 10 月 24 日消息，今日一则“耳机用 AI 为父亲抢出救命时间”的话题在社交平台引发关注，并且一度登上微博热搜榜第一。据青岛广播电视台《先锋新闻》…",
     "narrativeAnalysis": {
-      "hook": "亿万富翁投资人马克 · 库班：抵御失",
+      "hook": "父亲突发脑梗后儿子用豆包 AI 抢出",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102425",
+    "platform": "极客公园",
+    "domain": "科技",
+    "track": "科技",
+    "title": "iPhone Duo正式交付；Kimi K3.1 Pro 、Seedance 2.5 4K正式发布；红果短剧上线防沉迷｜极客早知道",
+    "author": "极客公园",
+    "link": "http://www.geekpark.net/news/372858",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "苹果首款折叠屏手机 iPhone Duo 正式交付用户 部分订单预计明年 1 月才能送达 苹果首款折叠屏手机 iPhone Duo 于 2026 年 10 月 …",
+    "narrativeAnalysis": {
+      "hook": "iPhone Duo正式交付；Kim",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102426",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "工业互联网操作系统产业联盟在深成立",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-24/10720300.shtml",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新网深圳10月24日电 (记者 王坚)CEIC2026消费电子创新大会22日至24日在深圳举行。其间，工业互联网操作系统产业联盟在2026消费电子创新大会·具…",
+    "narrativeAnalysis": {
+      "hook": "工业互联网操作系统产业联盟在深成立",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102430",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "历史建筑续新韵 长沙老城更新激活消费业态",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/sh/2026/10-24/10720311.shtml",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新社长沙10月24日电 题：历史建筑续新韵 长沙老城更新激活消费业态",
+    "narrativeAnalysis": {
+      "hook": "历史建筑续新韵 长沙老城更新激活消费",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102456",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "菲律宾空军两架教练机相撞 4名空军飞行员死亡",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-24/10720335.shtml",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "中新网10月24日电 据菲律宾《马尼拉公报》报道，当地时间24日，菲律宾空军证实，两架SF-260型教练机23日下午在八打雁省费尔南多空军基地进行训练飞行任务时…",
+    "narrativeAnalysis": {
+      "hook": "菲律宾空军两架教练机相撞 4名空军飞",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102457",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "拜鬼招魂、军演扩武，日方种种消极动向有何图谋？",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-24/10720314.shtml",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "新华网国际看点丨拜鬼招魂、军演扩武，日方种种消极动向有何图谋？",
+    "narrativeAnalysis": {
+      "hook": "拜鬼招魂、军演扩武，日方种种消极动向",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102458",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "重庆：5000架无人机点亮夜空 展现“壮美长江·诗画三峡”",
+    "author": "中新网·滚动",
+    "link": "http://www.chinanews.com.cn/tp/hd2011/2026/10-24/1208721.shtml",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "图为民众拍摄无人机演出。黄建桦 摄 图为民众观看无人机表演。黄建桦 摄 图为民众用手机记录无人机表演。侯本艳 摄 图为民众观看无人机表演。游晓铭 摄 图为500…",
+    "narrativeAnalysis": {
+      "hook": "重庆：5000架无人机点亮夜空 展现",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102459",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代5800万股股权进入解禁期：UBS浮亏25亿 小摩浮亏近18亿 - 华尔街见闻",
+    "author": "华尔街见闻",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfT1NqdFZhbFFYRXJtVmN4dnJPRFJMUjJhTzNpT084cWx1Q3kxcDdRYUt1cEdKSWo5QWhDYWJwLWJ2VS1SVVE3RXhVaUJCLVVya19B?oc=5",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "宁德时代5800万股股权进入解禁期：UBS浮亏25亿 小摩浮亏近18亿 华尔街见闻",
+    "narrativeAnalysis": {
+      "hook": "宁德时代5800万股股权进入解禁期：",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102460",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "【视频】换电吃香？北汽接入宁德时代换电生态 - 汽车之家",
+    "author": "汽车之家",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9QUWprckQ2SlBnQUdEYmNHVG44OFRQRmtuRllaOS1oVmlDdXVmSzZFV09GYnZZWnVYeGp2Y3FHTzBQb2hMSUxxa1hjQ1hISUVFcVRHZ3VGR00zUXc?oc=5",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "【视频】换电吃香？北汽接入宁德时代换",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102461",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代等入股广东新型储能国家研究院 - 搜狐网",
+    "author": "搜狐网",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSFNJWEdMd1ZWb2Q3elJjTC00aWFCM3FpTEdia2xyWUlwRmNCSU1BM1Y4b09PaFRwbXAzaUQ0YmZ4U1VudDlqd05JbmZDWGlFTV9aSnZHODhzVVRfZWF6WlBBa0FVcHlsNkhWa0xWZTI1ajk1WU1ETVF3eXpiTkxfNExVeG00ZFVKRU1ySg?oc=5",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "宁德时代等入股广东新型储能国家研究院",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102469",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "亿纬锂能前三季度营收近734亿元 动力电池出货66.17GWh - www.itdcw.com",
+    "author": "www.itdcw.com",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE83b28yMzYxZHVjTUxWRWI5ZzVlTkJZQzd3ekg4MkRiNjNGbzBUWmdQMldqWGxTQkpUVGRCYUt0Wk1sY1JpcUV1UTVzZVpveWtGaFNBS2NiMnE3Z2w5dmhXSg?oc=5",
+    "published": "2026-10-24",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-24"
+    },
+    "contentSummary": "亿纬锂能前三季度营收近734亿元 动力电池出货66.17GWh www.itdcw.com",
+    "narrativeAnalysis": {
+      "hook": "亿纬锂能前三季度营收近734亿元 动",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -560,72 +754,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102434",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "菲律宾空军两架教练机训练飞行时发生事故",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-24/10720268.shtml",
-    "published": "2026-10-24",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "中新网马尼拉10月24日电 菲律宾空军23日证实，两架SF-260型教练机当天下午在菲律宾八打雁省利帕市费尔南多空军基地附近执行训练飞行任务时发生空中相撞事故。",
-    "narrativeAnalysis": {
-      "hook": "菲律宾空军两架教练机训练飞行时发生事",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102435",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "西藏那曲市巴青县发生7.0级地震 解放军和武警部队官兵、民兵迅速投入救援",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495818.html",
-    "published": "2026-10-24",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "西藏那曲市巴青县发生7.0级地震 解放军和武警部队官兵、民兵迅速投入救援",
-    "narrativeAnalysis": {
-      "hook": "西藏那曲市巴青县发生7.0级地震 解",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102436",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "全军官兵认真学习习主席在纪念中国工农红军长征胜利90周年大会上的重要讲话",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16495815.html",
-    "published": "2026-10-24",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "全军官兵认真学习习主席在纪念中国工农红军长征胜利90周年大会上的重要讲话",
-    "narrativeAnalysis": {
-      "hook": "全军官兵认真学习习主席在纪念中国工农",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
     "id": "a2026102462",
     "platform": "媒体报道",
     "domain": "储能",
@@ -714,180 +842,48 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102466",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "销量创新高、毛利下台阶：宁德时代的定价权大考 - 新浪网",
-    "author": "新浪网",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE50WHlsWEZ5eVB2Vk5SeUktRDFwRjJGd0F2OURBYVNaTjQ4QmZHQTQzZXNKOFdsVnBuLXV0NXo0VVFHeTRkZkZHbmFBd0h4VmdqOXIxSXAwMUVSSDk0WUQtaVdaTWVzVmFrMDJ1aWFmSW9EQQ?oc=5",
-    "published": "2026-10-24",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "销量创新高、毛利下台阶：宁德时代的定",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102454",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "【视频】宁德时代电芯+激光雷达，家越07买这款就对了 - 汽车之家",
-    "author": "汽车之家",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE10TVJGOGtVd2VMSk5oLUdPWFhyV2lqcm9xcEdKZmdUWjRvRHJTM1podnNTMTlUdUpoU0J2cmc1aGlZR0syQ21lTE1MM2t3SU1HMWhheXd0VzBncFk?oc=5",
-    "published": "2026-10-24",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "【视频】宁德时代电芯+激光雷达，家越",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102420",
+    "id": "a2026102431",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "中国央行将开展7000亿元MLF操作",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720011.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "中国央行将开展7000亿元MLF操作",
-    "narrativeAnalysis": {
-      "hook": "中国央行将开展7000亿元MLF操作",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102421",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "A股周五放量上涨 创业板指收盘涨逾4％",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10719891.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "A股周五放量上涨 创业板指收盘涨逾4％",
-    "narrativeAnalysis": {
-      "hook": "A股周五放量上涨 创业板指收盘涨逾4",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102422",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "澳门“政府引导基金”正式运作 首期规模200亿澳门元",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/dwq/2026/10-23/10720054.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "澳门“政府引导基金”正式运作 首期规模200亿澳门元",
-    "narrativeAnalysis": {
-      "hook": "澳门“政府引导基金”正式运作 首期规",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102423",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "山海好物走进上海市民“菜篮子” 603家企业携特产亮相",
+    "title": "今年前三季度唐山港京唐港区保税物流中心（B型）进口贸易额居中国首位",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720154.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720136.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "中新网上海10月23日电 (记者 李姝徵)第九届上海市对口地区特色商品展销会23日开幕，603家企业带着家乡好物来到上海，让市民在家门口选购远方风物，也为产地寻…",
+    "contentSummary": "中新网唐山10月23日电 (王夏菲 刘姿含 李海天)京唐港海关23日消息，今年前三季度，唐山港京唐港区保税物流中心(B型)进出口贸易额突破200.6亿元，同比增…",
     "narrativeAnalysis": {
-      "hook": "山海好物走进上海市民“菜篮子” 60",
+      "hook": "今年前三季度唐山港京唐港区保税物流中",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102467",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "河北省廊坊市独立储能项目投资主体优选评分标准（各市自主明确得分项） (征求意见稿)",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261023/1517362.shtml",
+    "id": "a2026102432",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "前9个月云南出口咖啡及其制品4.9亿元 居全国首位",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-23/10720131.shtml",
     "published": "2026-10-23",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-24"
     },
-    "contentSummary": "河北省廊坊市独立储能项目投资主体优选评分标准（各市自主明确得分项） (征求意见稿)",
+    "contentSummary": "中新网昆明10月23日电 (徐雨萌)昆明海关23日消息，2026年前9个月，云南出口咖啡及其制品4.9亿元人民币，居全国首位。产品远销越南、马来西亚、德国等42…",
     "narrativeAnalysis": {
-      "hook": "河北省廊坊市独立储能项目投资主体优选",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102468",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "山东电网新型储能装机突破1500万千瓦",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261023/1517337.shtml",
-    "published": "2026-10-23",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-24"
-    },
-    "contentSummary": "山东电网新型储能装机突破1500万千瓦",
-    "narrativeAnalysis": {
-      "hook": "山东电网新型储能装机突破1500万千",
+      "hook": "前9个月云南出口咖啡及其制品4.9亿",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-24","added":30,"total":40,"tracks":{"政治":8,"军事":8,"科技":8,"财经":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-24","added":27,"total":40,"tracks":{"政治":8,"军事":8,"科技":8,"财经":8,"储能":8}};
