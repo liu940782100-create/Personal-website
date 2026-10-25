@@ -243,6 +243,97 @@ window.DATA_INSPIRATION = [
     }
   },
   {
+    "id": "a2026102640",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "弗拉维奥·博索纳罗：追随父亲脚步的继承人",
+    "author": "© Ricardo Moraes / Reuters",
+    "link": "https://www.rfi.fr/cn/%E7%BE%8E%E6%B4%B2/20261025-%E5%BC%97%E6%8B%89%E7%BB%B4%E5%A5%A5%C2%B7%E5%8D%9A%E7%B4%A2%E7%BA%B3%E7%BD%97-%E8%BF%BD%E9%9A%8F%E7%88%B6%E4%BA%B2%E8%84%9A%E6%AD%A5%E7%9A%84%E7%BB%A7%E6%89%BF%E4%BA%BA",
+    "published": "2026-10-26",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "弗拉维奥·博索纳罗将自己与父亲相比说：“我或许更沉着，更爱笑，更从容，更温和，但在我的血管里流着博索纳罗的血”。",
+    "narrativeAnalysis": {
+      "hook": "弗拉维奥·博索纳罗：追随父亲脚步的继",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102641",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "[非联杯] 2026/27赛季资格赛收尾",
+    "author": "© wikipedia / archive RFI",
+    "link": "https://www.rfi.fr/cn/%E9%9D%9E%E6%B4%B2/20261025-rfi%E6%B3%95%E5%B9%BF%E4%B8%AD%E6%96%87-%E5%B0%BC%E5%8F%A4%E6%8B%89-%E9%9D%9E%E6%B4%B2-%E8%B6%B3%E7%90%83-%E9%9D%9E%E8%81%94%E6%9D%AF-2026-27%E8%B5%9B%E5%AD%A3%E8%B5%84%E6%A0%BC%E8%B5%9B%E6%94%B6%E5%B0%BE",
+    "published": "2026-10-26",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "简称[非联杯]的[非洲足联联合会杯]（la Coupe de la confédération de la CAF）2026/2027赛季于2026年10月25…",
+    "narrativeAnalysis": {
+      "hook": "[非联杯] 2026/27赛季资格赛",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102642",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "印度阿鲁纳恰尔邦超大型水电项目引爆警民冲突",
+    "author": "AP - Mustafa Quraishi",
+    "link": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261025-%E5%8D%B0%E5%BA%A6%E9%98%BF%E9%B2%81%E7%BA%B3%E6%81%B0%E5%B0%94%E9%82%A6%E8%B6%85%E5%A4%A7%E5%9E%8B%E6%B0%B4%E7%94%B5%E9%A1%B9%E7%9B%AE%E5%BC%95%E7%88%86%E8%AD%A6%E6%B0%91%E5%86%B2%E7%AA%81",
+    "published": "2026-10-26",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "位于印度东北部、靠近中印边境的阿鲁纳恰尔邦23日晚爆发警民冲突。一些民众因反对政府在当地兴建大型多用途水电站的计划而集会抗议，毁坏许多物资。法新社引述阿鲁纳恰尔…",
+    "narrativeAnalysis": {
+      "hook": "印度阿鲁纳恰尔邦超大型水电项目引爆警",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102649",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "【调研快报】亿纬锂能接待与会投资者约223人调研 - 东方财富",
+    "author": "东方财富",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1wRXU2T0ppSVoydEpQbm9tWWVvVl8xU19IQ0dLRU93QWtuLXZZT0JuSzFBUUR5MnBHSjJwMm0ydnJtX1pWYmoyenFhZndnc3BsQlc1UEkzRmh6aHpBZUhWLWhRRQ?oc=5",
+    "published": "2026-10-26",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "【调研快报】亿纬锂能接待与会投资者约",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
     "id": "a2026102626",
     "platform": "媒体报道",
     "domain": "储能",
@@ -265,13 +356,13 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102620",
+    "id": "a2026102646",
     "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "住着一群代孕孩子，美國加州的豪宅如何變成「恐怖之家」？",
+    "title": "法國再爆大規模示威逾1300人被捕，警民衝突致53警受傷",
     "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/c6rmydgej9w8o/trad?at_medium=RSS&at_campaign=rss",
+    "link": "https://www.bbc.com/zhongwen/articles/ckq6nvg7ny1yo/trad?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-25",
     "intl": 1,
     "metrics": {
@@ -279,22 +370,22 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-26"
     },
-    "contentSummary": "美國加州一棟豪宅因男嬰受傷揭發涉嫌虐童案，屋內住着多名透過代孕出生的孩子。涉案男女被控串謀虐待兒童，事件亦引發外界關注美國代孕產業的監管問題。",
+    "contentSummary": "法國當局表示，數十萬民眾周六再次在全國各地參與抗議活動。示威大致和平進行，但部分城市其後爆發警民衝突，全國有超過1,300人被捕，53名警員受傷。",
     "narrativeAnalysis": {
-      "hook": "住着一群代孕孩子，美國加州的豪宅如何",
+      "hook": "法國再爆大規模示威逾1300人被捕，",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102621",
+    "id": "a2026102647",
     "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "日本以舉辦世界級活動聞名，但名古屋亞運卻是一片混亂",
+    "title": "觀鳥如何重塑大腦，延緩認知衰退？",
     "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/cm4g1wr84j9xo/trad?at_medium=RSS&at_campaign=rss",
+    "link": "https://www.bbc.com/zhongwen/articles/cm5ynx99yxzwo/trad?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-25",
     "intl": 1,
     "metrics": {
@@ -302,91 +393,242 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-26"
     },
-    "contentSummary": "飯店混亂、交通事故和外交失誤使組織者和承辦的公司成為焦點。",
+    "contentSummary": "觀鳥近年愈來愈受長者和認知障礙症患者歡迎。研究人員分析這項活動對他們的身心健康有何影響，以及可能帶來哪些益處。",
     "narrativeAnalysis": {
-      "hook": "日本以舉辦世界級活動聞名，但名古屋亞",
+      "hook": "觀鳥如何重塑大腦，延緩認知衰退？",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102622",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "法国10.24示威活动41万人参加 1314人被捕 53名执法人员受伤",
-    "author": "AFP - SYLVAIN THOMAS",
-    "link": "https://www.rfi.fr/cn/%E6%B3%95%E5%9B%BD/20261025-%E6%B3%95%E5%9B%BD10-24%E7%A4%BA%E5%A8%81%E6%B4%BB%E5%8A%A841%E4%B8%87%E4%BA%BA%E5%8F%82%E5%8A%A0-1314%E4%BA%BA%E8%A2%AB%E6%8D%95-53%E5%90%8D%E6%89%A7%E6%B3%95%E4%BA%BA%E5%91%98%E5%8F%97%E4%BC%A4",
-    "published": "2026-10-25",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "据法国内政部周日发布的全国初步统计，周六在法国爆发的抗议活动导致1314人被拘留，消防部门出动75次扑救火灾；此外，53名执法人员受伤，24家商铺遭抢劫。",
-    "narrativeAnalysis": {
-      "hook": "法国10.24示威活动41万人参加 ",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102623",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "中共五中全会前夕任命一批新省级领导人",
-    "author": "AP - Vincent Thian",
-    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261025-%E4%B8%AD%E5%85%B1%E4%BA%94%E4%B8%AD%E5%85%A8%E4%BC%9A%E5%89%8D%E5%A4%95%E4%BB%BB%E5%91%BD%E4%B8%80%E6%89%B9%E6%96%B0%E7%9C%81%E7%BA%A7%E9%A2%86%E5%AF%BC%E4%BA%BA",
-    "published": "2026-10-25",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "中国执政的共产党周六宣布了六个省份的关键人事变动，包括两名新任省委书记和六名即将出任省长的官员，此举是在该党将于10月26日至29日在北京举行闭门会议之前做出的…",
-    "narrativeAnalysis": {
-      "hook": "中共五中全会前夕任命一批新省级领导人",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102624",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "法国大选热门极右翼候选人勒庞将发表首次竞选演讲 左翼集会抗议",
-    "author": "AFP - NICOLAS TUCAT",
-    "link": "https://www.rfi.fr/cn/%E6%B3%95%E5%9B%BD/20261025-%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%80%89%E7%83%AD%E9%97%A8%E6%9E%81%E5%8F%B3%E7%BF%BC%E5%80%99%E9%80%89%E4%BA%BA%E5%8B%92%E5%BA%9E%E5%B0%86%E5%8F%91%E8%A1%A8%E9%A6%96%E6%AC%A1%E7%AB%9E%E9%80%89%E6%BC%94%E8%AE%B2-%E5%B7%A6%E7%BF%BC%E9%9B%86%E4%BC%9A%E6%8A%97%E8%AE%AE",
-    "published": "2026-10-25",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "法国极右翼候选人玛丽娜·勒庞周日下午将在奥尔良发表其首场大型竞选演讲，目前距离总统大选还有六个月。在当前社会和经济紧张局势加剧的背景下，她被视为此次大选的最大热…",
-    "narrativeAnalysis": {
-      "hook": "法国大选热门极右翼候选人勒庞将发表首",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102601",
+    "id": "a2026102608",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "百度健康致敬医者盛典暨AI新品发布会在京举办 - 搜狐网",
-    "author": "搜狐网",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPamxual90QzVaSTh5TmNyaGNXbTlraW9VX2JOQzZxTElzZjlvaDR5cWVtczlBYkM5QUZadWdjM2V6RmtlWFlGNHRlM0U3cXdrOWx4end1UDFaSGxmeXROS3AxRGY1VC0tT09RMDBFblJ3S3ZvVjJDZFR4bWFJMXY5VzVHQVVGX19l?oc=5",
+    "title": "讯飞星火医疗大模型V3.7升级，AI患者管理3.0发布并启动行业标准共建 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9RT1NDanp6d1Vxd2xvM1pxRDJ3Zm5yZW9qeVZMYml6NHduVk8wcnFUWFBVUDQ1TGRUVEwzbkFWdTdCTy13OHFwSTdQZGQ1clJteHZEb19WLTl5djBNdzBWazhSNVgwS2hpaGQyTEtSblBMQ1RuTGE0dWV6dkI?oc=5",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "讯飞星火医疗大模型V3.7升级，AI患者管理3.0发布并启动行业标准共建 新浪财经",
+    "narrativeAnalysis": {
+      "hook": "讯飞星火医疗大模型V3.7升级，AI",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102613",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "Cloudflare 的 OHTTP 网关拒绝解密通过 Cloudflare 传入的请求",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/4647jBOxmf3Ut0i1aVbx?utm_source=rss&utm_medium=article",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "Cloudflare 启动 Cloudflare OHTTP Gateway 的封闭测试。这是一个托管端点，可以代表源服务器对 Oblivious HTTP 请…",
+    "narrativeAnalysis": {
+      "hook": "Cloudflare 的 OHTTP",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102614",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "苹果硬件技术部门再迎人事调整：两名显示技术高管退休临近，转任顾问角色",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/017/714.htm",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "IT之家 10 月 25 日消息，彭博社记者马克・古尔曼发文，透露今年早些时候，苹果对硬件工程和硬件技术部门进行了大规模调整，将团队交由新任首席硬件官 John…",
+    "narrativeAnalysis": {
+      "hook": "苹果硬件技术部门再迎人事调整：两名显",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102615",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "古尔曼：苹果正为 iPhone Duo 开发全新“便捷访问”模式，方便左撇子用户根据持机习惯调整界面",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/017/713.htm",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "IT之家 10 月 25 日消息，彭博社记者马克・古尔曼发文，透露苹果正在为 iPhone Duo 开发新的“便捷访问”（Reachability）模式，可以将…",
+    "narrativeAnalysis": {
+      "hook": "古尔曼：苹果正为 iPhone Du",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102616",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "遏制退货欺诈：苹果开发新型检测设备，可帮助 Apple Store 员工扫描密封包装盒内 iPhone 完整性",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/017/712.htm",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "IT之家 10 月 25 日消息，彭博社记者马克・古尔曼发文，透露苹果 Apple Store 零售门店近年来面临一种棘手问题：部分顾客购买 iPhone 或其…",
+    "narrativeAnalysis": {
+      "hook": "遏制退货欺诈：苹果开发新型检测设备，",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102617",
+    "platform": "中新网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "湖北宜昌：长江之畔“长”出绿色算力科创高地",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-25/10720841.shtml",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "中新网宜昌10月25日电 题：湖北宜昌：长江之畔“长”出绿色算力科创高地",
+    "narrativeAnalysis": {
+      "hook": "湖北宜昌：长江之畔“长”出绿色算力科",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102618",
+    "platform": "中新网",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI赋能、丝弦入药：上海推动音乐疗愈纳入临床多学科治疗",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/jk/2026/10-25/10720814.shtml",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "中新网上海10月25日电 (记者 陈静)长期以来，音乐与艺术在医疗场景中的角色多被视为“锦上添花”的心理慰藉。",
+    "narrativeAnalysis": {
+      "hook": "AI赋能、丝弦入药：上海推动音乐疗愈",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102625",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "从单品到成套供给 广交会家居外贸跑出增长新曲线",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-25/10720648.shtml",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "今天是第140届广交会第二期线下展的第三天。第140届广交会二期聚焦“品质家居”，针对海外市场家居产品场景化需求提升、项目落地配套弱的共性痛点，参展企业以集成式…",
+    "narrativeAnalysis": {
+      "hook": "从单品到成套供给 广交会家居外贸跑出",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102633",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "河南将以“三新”行动打造万亿级产业链群",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-25/10720616.shtml",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "中新网郑州10月25日电 (张楠)河南将统筹实施传统产业焕新、新兴产业创新、未来产业育新“三新”行动，推动形成“万亿立柱、千亿提升、百亿成势”的产业链群发展格局…",
+    "narrativeAnalysis": {
+      "hook": "河南将以“三新”行动打造万亿级产业链",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102634",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "三载深耕，向产业出发：相干科技的量子求索之路",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-25/10720608.shtml",
+    "published": "2026-10-25",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-26"
+    },
+    "contentSummary": "2026年10月25日，相干(北京)科技有限公司迎来成立三周年。公司由北京量子信息科学研究院超导量子计算团队孵化而来，聚焦超导量子计算方向，主打实用型超导量子整…",
+    "narrativeAnalysis": {
+      "hook": "三载深耕，向产业出发：相干科技的量子",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102650",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代三季报业绩高增 机构看好盈利拐点显现 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5hNFZGX3pEQ01BMkVVWXBCUzVnWkY2UE0tekx2NUdTYUd4eWVSczQ2d1ZpUzdIYVBhSEcyWVEzOGdCSE1iY1JNejFyVEFpeUV0VGRUcV9STHdlOWlEblVvS3R6Qjd5MmpHWWZZZi13ZVhxdVdmT3Vv?oc=5",
     "published": "2026-10-25",
     "metrics": {
       "likes": 0,
@@ -395,139 +637,95 @@ window.DATA_INSPIRATION = [
     },
     "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "百度健康致敬医者盛典暨AI新品发布会",
+      "hook": "宁德时代三季报业绩高增 机构看好盈利",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102602",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "四分之一PR是“AI垃圾”！Linux基金会发布新报告：AI写代码快了52%，开源维护者却更累了",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/9TSuUDxrUSGS26XTA2yB?utm_source=rss&utm_medium=article",
+    "id": "a2026102651",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "芯报丨宁德时代等入股广东新型储能国家研究院 - 电子工程专辑",
+    "author": "电子工程专辑",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12b0laQ3ZqQjhiQzJreVY3QjBtUDU2bjhsRFRQR2lNR2djNUo3UDZhclNTMnpQeTBCNTRFTW9VOHhCMFRNWnpLUGU5cDJWQ2dTVTRF?oc=5",
     "published": "2026-10-25",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-26"
     },
-    "contentSummary": "AI 编程工具正在大幅缩短开发者写代码的时间，但开源社区可能正在为这种效率提升付出另一种代价。",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "四分之一PR是“AI垃圾”！Linu",
+      "hook": "芯报丨宁德时代等入股广东新型储能国家",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102603",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "Java 近期新闻：Grails 8、Open Liberty、GlassFish、Infinispan、LangChain4j、Spock",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/BHWP4JJDeExZZWsifFlg?utm_source=rss&utm_medium=article",
+    "id": "a2026102652",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "大众在欧洲的电池战略：拉国轩入伙，西班牙工厂占股49%；同时卖掉5.3%的国轩股份 - 搜狐网",
+    "author": "搜狐网",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNHo1ZWxVblhpQjBBZ0wtSWM5RTJMZmR6a3VXSFplSHhUalZXclZfMVpIdnVDNFM0aWhJMjdQd2ZZTFVNVnZ3aDlxZG9VVFRXdWJnZkNTazVhdTVsNkdtZ3EzdFhYVXJIZVh0VzcxRlN4VnJwRlMyY1JkakgxNmJsalRpaS1SZjRE?oc=5",
     "published": "2026-10-25",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-26"
     },
-    "contentSummary": "本文是Java 近期新闻，内容涉及：Grails 8、Open Liberty、GlassFish、Infinispan、LangChain4j、Spock。",
+    "contentSummary": "大众在欧洲的电池战略：拉国轩入伙，西班牙工厂占股49%；同时卖掉5.3%的国轩股份 搜狐网",
     "narrativeAnalysis": {
-      "hook": "Java 近期新闻：Grails 8",
+      "hook": "大众在欧洲的电池战略：拉国轩入伙，西",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102604",
-    "platform": "IT之家",
-    "domain": "科技",
-    "track": "科技",
-    "title": "国内首部 AI 院线长片《三星堆：未来往事》，票房过百万",
-    "author": "IT之家",
-    "link": "https://www.ithome.com/1/017/719.htm",
+    "id": "a2026102653",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "国金证券：给予亿纬锂能买入评级_券商研报_数据解析 - 证券之星",
+    "author": "证券之星",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA4OE1ZM3pxcVFZMlBPZW9JSTQzeGR6QTFScjNTSEZRR2RrNWRnODRDNGJmaXRERDNQSklFbS04QWdueDZjczlnZnl4ZmFuUTY3NkE2QWZzcUFsZkc3bWlocS1R?oc=5",
     "published": "2026-10-25",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-26"
     },
-    "contentSummary": "IT之家 10 月 25 日消息，猫眼专业版数据显示，《三星堆：未来往事》电影票房已达到 116.2 万。据IT之家了解，《三星堆：未来往事》是国内首部获得国家…",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "国内首部 AI 院线长片《三星堆：未",
+      "hook": "国金证券：给予亿纬锂能买入评级_券商",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102605",
-    "platform": "IT之家",
-    "domain": "科技",
-    "track": "科技",
-    "title": "古尔曼：苹果正测试配备 OLED 屏幕的 iMac 和 MacBook Air",
-    "author": "IT之家",
-    "link": "https://www.ithome.com/1/017/717.htm",
+    "id": "a2026102654",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "200多位投资者聚焦，亿纬锂能详解206GWh储能大单合作安排！公司今年四季度产能已订满，储能业务海外占比将大增 - 搜狐网",
+    "author": "搜狐网",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbkxUOUpDTWZHd3RrMEo5ck9TeTcxeUktZTlBTkJqR0FiYW45SWlSRV92XzRBQmJ5UWJtZU9PNGFhUjctTm1RUFJJdmUwelFGSTVQX194d2p6aDBsNjEyeDVMWERCc0tJdkRQSFMxNVF4V3QtSHJKVmVja1VBM1JudS1wbTlvOXBBdHFObA?oc=5",
     "published": "2026-10-25",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-26"
     },
-    "contentSummary": "IT之家 10 月 25 日消息，彭博社记者马克 · 古尔曼今天在最新一期《Power On》通讯中提到，苹果正在测试新款 iMac 和 MacBook Pro…",
+    "contentSummary": "200多位投资者聚焦，亿纬锂能详解206GWh储能大单合作安排！公司今年四季度产能已订满，储能业务海外占比将大增 搜狐网",
     "narrativeAnalysis": {
-      "hook": "古尔曼：苹果正测试配备 OLED 屏",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102606",
-    "platform": "IT之家",
-    "domain": "科技",
-    "track": "科技",
-    "title": "国产武侠游戏《影之刃零》10 月 27 日 10:00 开启预下载，游戏本体约 145G",
-    "author": "IT之家",
-    "link": "https://www.ithome.com/1/017/716.htm",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "IT之家 10 月 25 日消息，国产武侠游戏《影之刃零》今晚宣布将于 10 月 27 日 10:00 开启预下载，并公布官方配置要求。官方提醒，为保障良好的游…",
-    "narrativeAnalysis": {
-      "hook": "国产武侠游戏《影之刃零》10 月 2",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102607",
-    "platform": "极客公园",
-    "domain": "科技",
-    "track": "科技",
-    "title": "苹果首批折叠屏遭集中投诉；英国宣布超过 6 亿英镑 AI 投资计划；刘慈欣监制《三体·大史》年内开机",
-    "author": "极客公园",
-    "link": "http://www.geekpark.net/news/372860",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "​到手 6 小时、开合不到 20 次屏幕就裂：苹果首批折叠屏遭集中投诉 苹果首款折叠屏手机 iPhone Duo 刚开售就遇上了麻烦：据海外论坛和小红书多人反馈…",
-    "narrativeAnalysis": {
-      "hook": "苹果首批折叠屏遭集中投诉；英国宣布超",
+      "hook": "200多位投资者聚焦，亿纬锂能详解2",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -600,28 +798,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102612",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "探访广交会进口展：从印度锅到越南篮 外国企业组团觅商机",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/ydyl/2026/10-25/10720829.shtml",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "中新社广州10月25日电 题：探访广交会进口展：从印度锅到越南篮 外国企业组团觅商机",
-    "narrativeAnalysis": {
-      "hook": "探访广交会进口展：从印度锅到越南篮 ",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
     "id": "a2026102627",
     "platform": "媒体报道",
     "domain": "储能",
@@ -638,160 +814,6 @@ window.DATA_INSPIRATION = [
     "contentSummary": "阳光电源：中国国际金融股份有限公司关于《阳光电源股份有限公司2023年限制性股票激励计划》预留授予部分第二个归属期归属条件成就及相关事项之独立财务顾问报告 Mo…",
     "narrativeAnalysis": {
       "hook": "阳光电源：中国国际金融股份有限公司关",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102628",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "上海氢能企业A轮融资亿元，宁德时代此前战投 - 电子工程专辑",
-    "author": "电子工程专辑",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAyYkd0OGZQQnVEU1lGZGpvbWpEOGphaHdUTlljbDlOaHlJZGdpdjVYb0VSa0dDN1dfM0tSVUJtY2dBRWlwTnRuaWFrWHRUdnNGUEdz?oc=5",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "上海氢能企业A轮融资亿元，宁德时代此",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102629",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "机构：短期扰动不改龙头底色 宁德时代中长期配置价值凸显-证券之星 - 证券之星",
-    "author": "证券之星",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9iWWNjMW5weVpROWV2bmkyQ1RCT1FxNHRPN2ZVZFVqbG1FTDRPaVNVYi1WWlM1SEwwTzlBS1Q4QTRSa1VDemttNDhydlhCWE1KVUI4NVJYNWpQQzcwZkE?oc=5",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "机构：短期扰动不改龙头底色 宁德时代",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102630",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "亿纬锂能：大圆柱电池已量产工厂均满产 税改方案获多数客户共识 - 观点网",
-    "author": "观点网",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9XTGNOdWM2VXMwM0xPRkJKLTVkYXBPWlQxNU5IcUZQajBScFN2SU9yREh5NkF5TXY0VFpBS2RHbURfM01GZk8xWEltem5kY0swNGEtYXdrSFJieS1xQUI5VGVB?oc=5",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "亿纬锂能：大圆柱电池已量产工厂均满产",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102631",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "亿纬锂能：公司大圆柱电池已量产工厂均处于满产状态 - 东方财富",
-    "author": "东方财富",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYZmNXbUxkU1hlNTZUbFN2VmJuOU02aFJTYU5VcTFyMllPSF9JUEtKbDBBdU9raE9SVDdqdkZOV1pnLVJ5T0pwd0xfbi0tZ2p5MmQ4VTVZNWRJM3dXUFVJZQ?oc=5",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "亿纬锂能：公司大圆柱电池已量产工厂均",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102632",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "$亿纬锂能(SZ300014)$ 梅赛德斯奔驰AMG发布了性能纯电GT SUV，明年一季度上市,电池技术源自F1,不知道... - 雪球",
-    "author": "雪球",
-    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9HbjBPU3puY1dHSk5BenI0VmtBRHMzV0YxOE1uOEh5elM1RzVDOV8yOUJKLTh6b0pPVHgyQk1RMjQ2RFBXcmRKNEE3OGp4b1g0?oc=5",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "$亿纬锂能(SZ300014)$ 梅赛德斯奔驰AMG发布了性能纯电GT SUV，明年一季度上市,电池技术源自F1,不知道... 雪球",
-    "narrativeAnalysis": {
-      "hook": "$亿纬锂能(SZ300014)$ 梅",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102519",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "中外企业绿色发展与全球贡献国际传播研讨会举行，平安集团盛瑞生发表主题演讲",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-25/10720724.shtml",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-25"
-    },
-    "contentSummary": "由中国公共关系协会主办的中外企业绿色发展与全球贡献国际传播研讨会10月23日在深圳平安金融中心举行。活动旨在贯彻落实国家生态文明战略，紧扣APEC开放创新合作、…",
-    "narrativeAnalysis": {
-      "hook": "中外企业绿色发展与全球贡献国际传播研",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102520",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "上海举办首届“人工智能+消费”创新大赛",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-25/10720663.shtml",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-25"
-    },
-    "contentSummary": "中新网上海10月25日电 (记者 姜煜)首届上海“人工智能+消费”创新大赛颁奖仪式25日在上海西岸举办。上海市副市长卢山，上海市商务委主任申卫华，徐汇区委书记曹…",
-    "narrativeAnalysis": {
-      "hook": "上海举办首届“人工智能+消费”创新大",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -842,28 +864,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102554",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "【视频】电池不是宁德时代，这车你会买？ - 汽车之家",
-    "author": "汽车之家",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBpTGY3VVdSVTRkTC1NMUNkSlRjeER6RkcwRnJobTRmZHFzdF9hak1XNEJUX2Jrb0JMSXoxcmI2S1FfTm9QcWpTX2RfVmY3VTRkZ25kdlNTZnc2VXdDMTZjYk9OREFiQ3lBb0hj?oc=5",
-    "published": "2026-10-25",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-25"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "【视频】电池不是宁德时代，这车你会买",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
     "id": "a2026102560",
     "platform": "中国军网",
     "domain": "军事",
@@ -886,4 +886,4 @@ window.DATA_INSPIRATION = [
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-26","added":23,"total":40,"tracks":{"军事":8,"政治":8,"财经":8,"科技":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-26","added":21,"total":40,"tracks":{"军事":8,"政治":8,"财经":8,"科技":8,"储能":8}};
