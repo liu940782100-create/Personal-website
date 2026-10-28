@@ -1,6 +1,72 @@
 /* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
   {
+    "id": "a2026102853",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "美国代表怒吼古巴外长：“退后，离远点，这里是美国……”",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1iqx56vEnB",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "10月27日，第81届联合国大会审议“必须终止美国对古巴的经济、商业和金融封锁”决议草案。美国常驻联合国代表华尔兹在发言时辩称“美国没有封锁古巴”，并一再指责古…",
+    "narrativeAnalysis": {
+      "hook": "美国代表怒吼古巴外长：“退后，离远点",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102854",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "从894公里到覆盖全球！网友：热泪滚滚~",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1Zxxg6xEpz",
+    "published": "2026-10-27",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "1966年10月27日，东风二号甲导弹托举着核弹头直冲云霄，中国第一枚导弹核武器飞行了894公里后爆炸成功。60年过去，如今，东风-5C“打击范围覆盖全球”已家…",
+    "narrativeAnalysis": {
+      "hook": "从894公里到覆盖全球！网友：热泪滚",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102855",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "用于指挥战略核潜艇！美军改装新型“末日飞机”靠谱吗？",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1nvxT6XEV1",
+    "published": "2026-10-27",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "近日，美国海军接收了首架C-130J-30“超级大力神”运输机，后续将改装为美国海军新一代空中核指挥通信飞机平台，将承担美军战略核指挥通信任务，保障美国国家指挥…",
+    "narrativeAnalysis": {
+      "hook": "用于指挥战略核潜艇！美军改装新型“末",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
     "id": "a2026102752",
     "platform": "B站",
     "domain": "军事",
@@ -39,72 +105,6 @@ window.DATA_INSPIRATION = [
     "contentSummary": "据美国《空军与太空军杂志》报道，美国空军近期对外披露2035年战斗机机队的结构规划，隐身战机约占六成。除了机队构成的调整，战斗机总规模也将扩大。但这份蓝图落地阻…",
     "narrativeAnalysis": {
       "hook": "F-35扛四成，F-22和F-47凑",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102647",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "温馨提示：小心别崩着~",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1kind6mESw",
-    "published": "2026-10-26",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "“预备，放！”新疆军区某部火力分队对目标实施精准打击，纯原声超震撼！（记者：尚硕 吉饯 刘相廷 谭鑫 龙博炜 周意涛）",
-    "narrativeAnalysis": {
-      "hook": "温馨提示：小心别崩着~",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102648",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "距中国台湾仅110公里！日美架起导弹想干啥？",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1DLn96WEXP",
-    "published": "2026-10-26",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "10月19日至29日，日本和美国在日本多地开展“利剑27”大规模联合军演，演练内容涉及陆海空天电网等多个领域，包括防空、反舰、伞降、两栖作战和电磁对抗等课目。此…",
-    "narrativeAnalysis": {
-      "hook": "距中国台湾仅110公里！日美架起导弹",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102649",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "武契奇承认败选！这段讲话信息量很大",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1Z6nQ6bEKz",
-    "published": "2026-10-26",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-26"
-    },
-    "contentSummary": "塞尔维亚前总统武契奇当地时间25日承认，由塞尔维亚前进党主导的“亚历山大·武契奇-团结的塞尔维亚”选举联盟在当天举行的议会选举中败选。（国际时讯）",
-    "narrativeAnalysis": {
-      "hook": "武契奇承认败选！这段讲话信息量很大",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -243,13 +243,13 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026102817",
-    "platform": "法广",
+    "id": "a2026102845",
+    "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "美国期中选举倒数一周 民主党有望夺回国会两院",
-    "author": "© Seth Herald / Reuters",
-    "link": "https://www.rfi.fr/cn/%E6%94%BF%E6%B2%BB/20261027-%E7%BE%8E%E5%9B%BD%E6%9C%9F%E4%B8%AD%E9%80%89%E4%B8%BE%E5%80%92%E6%95%B0%E4%B8%80%E5%91%A8-%E6%B0%91%E4%B8%BB%E5%85%9A%E6%9C%89%E6%9C%9B%E5%A4%BA%E5%9B%9E%E5%9B%BD%E4%BC%9A%E4%B8%A4%E9%99%A2",
+    "title": "姆巴佩就「中國獨裁者」迷因道歉 背後的資訊真空與「毛澤東熱」",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/c6x2v4p284ylo/trad?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-28",
     "intl": 1,
     "metrics": {
@@ -257,22 +257,68 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-28"
     },
-    "contentSummary": "美国期中选举11月3日登场，距投票日仅剩一周。最新民调及预测市场显示，民主党有望夺回众议院，并有机会翻转参议院，重新掌握国会两院。",
+    "contentSummary": "因在節目中以「獨裁者」形容已故中國領導人毛澤東，法國足球明星基利安·姆巴佩（麥巴比）近日在中國引發爭議，多家中國大型品牌先後宣佈終止與其合作。姆巴佩發表道歉聲明…",
     "narrativeAnalysis": {
-      "hook": "美国期中选举倒数一周 民主党有望夺回",
+      "hook": "姆巴佩就「中國獨裁者」迷因道歉 背後",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102818",
+    "id": "a2026102846",
+    "platform": "BBC中文",
+    "domain": "政治",
+    "track": "政治",
+    "title": "台灣地方選舉五大看點：「洋流」能否撼動台北？誰在卡位2028？",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/cm8xzrg40dq1o/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-28",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "中共是否介入台灣選舉？ 這次選舉將如何影響賴清德與國民黨主席鄭麗文的政治能量？捲土重來、希望藉著地方議員選舉有所斬獲的小黨，此次結盟能否在主流政黨夾殺中突圍而出…",
+    "narrativeAnalysis": {
+      "hook": "台灣地方選舉五大看點：「洋流」能否撼",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102847",
+    "platform": "BBC中文",
+    "domain": "政治",
+    "track": "政治",
+    "title": "美國中期選舉：選舉有何影響、為何重要？七個關鍵問題解析",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/cmx2qg1nn1wlo/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-10-28",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "美國選民將於11月3日投票，這場選舉的結果可能對總統特朗普餘下任期產生重大影響。",
+    "narrativeAnalysis": {
+      "hook": "美國中期選舉：選舉有何影響、為何重要",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102848",
     "platform": "法广",
     "domain": "政治",
     "track": "政治",
-    "title": "为俄乌停战芬兰总统与挪威首相首次与普京通话",
+    "title": "姆巴佩关于毛泽东是“独裁者”的言论，经济代价高昂！",
     "author": "法广",
-    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E8%A6%81%E9%97%BB%E5%88%86%E6%9E%90/20261027-%E4%B8%BA%E4%BF%84%E4%B9%8C%E5%81%9C%E6%88%98%E8%8A%AC%E5%85%B0%E6%80%BB%E7%BB%9F%E4%B8%8E%E6%8C%AA%E5%A8%81%E9%A6%96%E7%9B%B8%E9%A6%96%E6%AC%A1%E4%B8%8E%E6%99%AE%E4%BA%AC%E9%80%9A%E8%AF%9D",
+    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E4%B8%96%E7%95%8C%E6%8A%A5/20261027-%E5%A7%86%E5%B7%B4%E4%BD%A9%E5%85%B3%E4%BA%8E%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%98%AF-%E7%8B%AC%E8%A3%81%E8%80%85-%E7%9A%84%E8%A8%80%E8%AE%BA%EF%BC%8C%E7%BB%8F%E6%B5%8E%E4%BB%A3%E4%BB%B7%E9%AB%98%E6%98%82",
     "published": "2026-10-28",
     "intl": 1,
     "metrics": {
@@ -280,22 +326,22 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-28"
     },
-    "contentSummary": "芬兰总统与挪威首相周二（10月27日）致电俄罗斯总统普京，敦促其结束乌克兰战争。这是自2022年2月俄乌全面开战以来，欧洲领导人与克里姆林宫首次进行直接接触。也…",
+    "contentSummary": "法国世界报周二就法国足球明星姆巴佩有关毛泽东的言论发表了文章。该报写道，在中国，姆巴佩关于毛泽东是“独裁者”的言论，经济代价高昂。",
     "narrativeAnalysis": {
-      "hook": "为俄乌停战芬兰总统与挪威首相首次与普",
+      "hook": "姆巴佩关于毛泽东是“独裁者”的言论，",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102819",
+    "id": "a2026102849",
     "platform": "法广",
     "domain": "政治",
     "track": "政治",
-    "title": "美国欧盟等30国联合声明警告苏丹冲突恶化引发饥荒",
-    "author": "© AP25352531372855",
-    "link": "https://www.rfi.fr/cn/%E9%9D%9E%E6%B4%B2/20261027-%E7%BE%8E%E5%9B%BD%E6%AC%A7%E7%9B%9F%E7%AD%8930%E5%9B%BD%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E%E8%AD%A6%E5%91%8A%E8%8B%8F%E4%B8%B9%E5%86%B2%E7%AA%81%E6%81%B6%E5%8C%96%E5%BC%95%E5%8F%91%E9%A5%A5%E8%8D%92",
+    "title": "中国国际进口博览会开幕在即，能否有助减少贸易顺差？",
+    "author": "AFP - -",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261027-%E4%B8%AD%E5%9B%BD%E5%9B%BD%E9%99%85%E8%BF%9B%E5%8F%A3%E5%8D%9A%E8%A7%88%E4%BC%9A%E5%BC%80%E5%B9%95%E5%9C%A8%E5%8D%B3%EF%BC%8C%E8%83%BD%E5%90%A6%E6%9C%89%E5%8A%A9%E5%87%8F%E5%B0%91%E8%B4%B8%E6%98%93%E9%A1%BA%E5%B7%AE",
     "published": "2026-10-28",
     "intl": 1,
     "metrics": {
@@ -303,141 +349,515 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-28"
     },
-    "contentSummary": "美国国务院发布与另外30个国家共同签署的联合声明，警告苏丹粮食安全因冲突持续不休而恶化，情况令人担忧，必须采取紧急行动应对。",
+    "contentSummary": "第九届中国国际进口博览会（简称“进博会”）将于2026年11月5日至11月10日在上海国家会展中心登场。它是否能减少中国贸易顺差，缓和贸易战的隐忧呢？",
     "narrativeAnalysis": {
-      "hook": "美国欧盟等30国联合声明警告苏丹冲突",
+      "hook": "中国国际进口博览会开幕在即，能否有助",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102801",
+    "id": "a2026102807",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "掌握企业AI Agent落地关键 纬谦以Oracle技术整合数据、AI与网安 - DIGITIMES",
-    "author": "DIGITIMES",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMDdoTHpEdWpyQ0ptOTNXb1JmaGRNOVVyMTk0Q0ZjZU45bmRVQW9IRjAwMi1tX1ZYQjQ2TFRhS2tRc0ZNTi02TXNKUm03U2JxZWVmVDc1eUVQdmp5X2dBU21OS0tJTDhFWUZTYUJYejBCMHhjdUtvRGF2c2ZtUTVzeTJOZ3ZkNlJsRV9rSTlJeFRkck92eS1GT2tHM3JTZw?oc=5",
+    "title": "AgentSpy：如何让AI Agent的真实行为变得可观测 - 安全内参",
+    "author": "安全内参",
+    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1PVktZZWlIVEY3MGw0NzdYQzBGMXhFUHRaUTY5TExhYW5DelpfclBZd05iLXc0Sm9EeUxNcVhkUmNwN2ZYZnNMbTk3QVNYQQ?oc=5",
     "published": "2026-10-28",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-28"
     },
-    "contentSummary": "掌握企业AI Agent落地关键 纬谦以Oracle技术整合数据、AI与网安 DIGITIMES",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "掌握企业AI Agent落地关键 纬",
+      "hook": "AgentSpy：如何让AI Age",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102802",
-    "platform": "爱范儿",
+    "id": "a2026102808",
+    "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "刚刚，谷歌 Genie 4 发布，120 秒的世界却让我看见 AI 的未来",
-    "author": "爱范儿",
-    "link": "https://www.ifanr.com/1686234?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "title": "当用户说\"算了，换个方案\"时，AI agent到底在听谁的话 - 科技行者",
+    "author": "科技行者",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBUUUZkazJWU3BRMEhzNFEtejJhX21pMTJ3QVBjVlhqS2tUelJINFJvQUxyTGtCVEV3SFEzeVpDM2plQU1LLTR6blVYb21KS3BENVVjX3hHenY4UEptXzBn?oc=5",
     "published": "2026-10-28",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-28"
     },
-    "contentSummary": "AI 的下一个目标是模拟现实#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "刚刚，谷歌 Genie 4 发布，1",
+      "hook": "当用户说\"算了，换个方案\"时，AI ",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102803",
-    "platform": "IT之家",
+    "id": "a2026102815",
+    "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "别学编程了！Anthropic CEO 直言：代码工作快速消失，人类应该学弹钢琴",
-    "author": "IT之家",
-    "link": "https://www.ithome.com/1/018/708.htm",
+    "title": "Warp 披露第三方供应商遭入侵：AI agent 决策日志与遥测数据暴露，约 1% 用户或受影响 - 智源社区",
+    "author": "智源社区",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9BUDRhUEpfTG1VUmNURFdocUFJZkpLekR4TGw2aS05X0xva1NwbG5xc2NDaW11T0tvT1JGMFBCanAwem5vME1rbQ?oc=5",
     "published": "2026-10-28",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-28"
     },
-    "contentSummary": "如果说，当今世界有人能看清人类未来十年的走向，Dario Amodei 绝对是其中之一。他曾接受了一场非常深入的访谈。在这场对话中，他坦诚分享了自己对未来的预测…",
+    "contentSummary": "Warp 披露第三方供应商遭入侵：AI agent 决策日志与遥测数据暴露，约 1% 用户或受影响 智源社区",
     "narrativeAnalysis": {
-      "hook": "别学编程了！Anthropic CE",
+      "hook": "Warp 披露第三方供应商遭入侵：A",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102809",
+    "id": "a2026102816",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "乐奇发布全彩AI眼镜Rokid Color，祝铭明称行业迎来“iPhone 1时刻” - 搜狐网",
+    "author": "搜狐网",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWXhlMjJVZnJfaHZVRnJia2hXYnNGeUpYejBmZnJZLUFjeUxDUVpTSzV0RU5iM05IQmV6cGhSWGlYT2FLaDJ2aEQwVlBMWENmSlR2emU4Qm9mYzhxMFBXaVhfU0RUWWw3SDF2VThLdkxlRTlCRVkwM3ZWb1lrXzR6YzlNRzN5LXlEUFFJLQ?oc=5",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "乐奇发布全彩AI眼镜Rokid Color，祝铭明称行业迎来“iPhone 1时刻” 搜狐网",
+    "narrativeAnalysis": {
+      "hook": "乐奇发布全彩AI眼镜Rokid Co",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102821",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "智能指数得分创新高！蚂蚁百灵开源Ling-3.1-flash-1019：让Personal Agent走向真实业务",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/wIuu0NSaLSaqJJpXVExD?utm_source=rss&utm_medium=article",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "点击查看原文>",
+    "narrativeAnalysis": {
+      "hook": "智能指数得分创新高！蚂蚁百灵开源Li",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102822",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "轻量化异构双臂 × VLA/世界模型：家庭服务具身机器人的落地实践",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/7yOK6Ri9Dt4VfITmA7Vb?utm_source=rss&utm_medium=article",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "点击查看原文>",
+    "narrativeAnalysis": {
+      "hook": "轻量化异构双臂 × VLA/世界模型",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102823",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "GPT-6.1 Terra 发布：比旗舰快 3 倍，价格仅1/10！事实错误率暴降近 70%",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/28VVsANi9FBYRKfUz8vA?utm_source=rss&utm_medium=article",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "根据 OpenAI 公布的标准 API 价格，新模型每百万输入 Token 收费 1 美元，每百万输出 Token 收费 5 美元。",
+    "narrativeAnalysis": {
+      "hook": "GPT-6.1 Terra 发布：比",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102827",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "出口民调显示两大阵营席位均未过半 利库德集团仍为以议会最大党",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/10-28/10721964.shtml",
+    "title": "港珠澳大桥珠海公路口岸开通以来对APEC经济体进出口突破万亿元",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-28/10722167.shtml",
     "published": "2026-10-28",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-28"
     },
-    "contentSummary": "当地时间27日晚10时，以色列第26届议会选举投票正式结束。随后多家以色列媒体公布的出口民调数据表明，内塔尼亚胡领导的执政阵营与反对党阵营选情极其胶着。多数民调…",
+    "contentSummary": "据拱北海关统计，港珠澳大桥珠海公路口岸开通以来，经大桥口岸对APEC经济体进出口总值达10927.4亿元。今年前三季度，对APEC经济体进出口2263.3亿元，…",
     "narrativeAnalysis": {
-      "hook": "出口民调显示两大阵营席位均未过半 利",
+      "hook": "港珠澳大桥珠海公路口岸开通以来对AP",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102810",
+    "id": "a2026102830",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "天然气出口国论坛第八次峰会发表《莫斯科宣言》",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/sh/2026/10-28/10721961.shtml",
+    "title": "“村超”当“红娘” 贵州榕江香杉牵手南康家具产业",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-28/10722147.shtml",
     "published": "2026-10-28",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-28"
     },
-    "contentSummary": "天然气出口国论坛第八次峰会27日在莫斯科国际贸易中心举行。峰会于当天闭幕并发表《莫斯科宣言》，重申天然气出口国对本国自然资源拥有绝对、不可动摇的主权权利。",
+    "contentSummary": "中新网贵阳10月28日电 (记者 袁超)10月26日至28日，贵州“村超”团队赴江西省赣州市南康区进行交流。作为盛产香杉的榕江县，此行以足球为纽带，在素有“中国…",
     "narrativeAnalysis": {
-      "hook": "天然气出口国论坛第八次峰会发表《莫斯",
+      "hook": "“村超”当“红娘” 贵州榕江香杉牵手",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026102820",
+    "id": "a2026102831",
     "platform": "中新网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "民政部部署“寒冬送温暖”专项救助行动",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gn/2026/10-28/10721963.shtml",
+    "domain": "财经",
+    "track": "财经",
+    "title": "全国首单水利设施发电REITs在深交所上市",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-28/10722139.shtml",
     "published": "2026-10-28",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-28"
     },
-    "contentSummary": "本报北京10月27日电 (记者吴储岐)民政部办公厅近日印发通知，部署开展“寒冬送温暖”专项救助行动，行动自即日起至2027年3月15日(东北、西北地区可视情延长…",
+    "contentSummary": "中新网深圳10月28日电 (记者 王坚)银华粤海水务水利封闭式基础设施证券投资基金(简称“银华粤海水务水利REIT”)28日在深圳证券交易所上市。",
     "narrativeAnalysis": {
-      "hook": "民政部部署“寒冬送温暖”专项救助行动",
+      "hook": "全国首单水利设施发电REITs在深交",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102832",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "（粤港澳大湾区）2026粤港澳大湾区全球招商大会11月3日在广州开幕",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/aseaninfo/2026/10-28/10722156.shtml",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "中新社广州10月28日电 (记者 许青青)广东省官方28日公布，广东省政府与香港特区政府、澳门特区政府定于11月3日在广州联合举办2026粤港澳大湾区全球招商大…",
+    "narrativeAnalysis": {
+      "hook": "（粤港澳大湾区）2026粤港澳大湾区",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102841",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "（走进中国乡村）从“土特产”到大产业 张家口小杂粮“香飘”海外",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/sh/2026/10-28/10722151.shtml",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "中新社河北张家口10月28日电 (记者 陈林)阳原“鹦哥绿豆”远销海外，康保荞麦米走上日本、韩国客户餐桌，蔚县小米出口美国、韩国等国家……在中国塞外山城张家口，…",
+    "narrativeAnalysis": {
+      "hook": "（走进中国乡村）从“土特产”到大产业",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102842",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "印度自卡塔尔进口液化天然气量创近八个月新高",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-28/10722137.shtml",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "中新网北京10月28日电 新德里消息：据印度媒体当地时间28日报道，随着卡塔尔增加经霍尔木兹海峡运输的液化天然气(LNG)运输量，印度10月从卡塔尔进口的液化天…",
+    "narrativeAnalysis": {
+      "hook": "印度自卡塔尔进口液化天然气量创近八个",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102858",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "特朗普夫人：俄乌奥列什基停火提前生效，范围已扩大",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gj/2026/10-28/10721974.shtml",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "特朗普夫人：俄乌奥列什基停火提前生效，范围已扩大",
+    "narrativeAnalysis": {
+      "hook": "特朗普夫人：俄乌奥列什基停火提前生效",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102859",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "国台办回应民进党花钱请美方看所谓“汉光演习”",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-28/10722046.shtml",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "国台办回应民进党花钱请美方看所谓“汉光演习”",
+    "narrativeAnalysis": {
+      "hook": "国台办回应民进党花钱请美方看所谓“汉",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102861",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "突破2000万千瓦！内蒙古电网新型储能装机规模稳居全国省级电网前列",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261028/1517867.shtml",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "突破2000万千瓦！内蒙古电网新型储能装机规模稳居全国省级电网前列",
+    "narrativeAnalysis": {
+      "hook": "突破2000万千瓦！内蒙古电网新型储",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102862",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "注资1亿元！中国雅江集团储能项目公司成立！",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261028/1517917.shtml",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "注资1亿元！中国雅江集团储能项目公司成立！",
+    "narrativeAnalysis": {
+      "hook": "注资1亿元！中国雅江集团储能项目公司",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102863",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "0.899元/Wh！中铁十五局预中标青海2GWh独立储能项目EPC",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261028/1517902.shtml",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "0.899元/Wh！中铁十五局预中标青海2GWh独立储能项目EPC",
+    "narrativeAnalysis": {
+      "hook": "0.899元/Wh！中铁十五局预中标",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102864",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "创业板新能源ETF鹏华（159261）开盘涨0.19%，重仓股宁德时代涨0.15%，阳光电源涨0.97% - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNE5rd3lDQUhvWXR4VFNKWDFlOE0ybUpNMTJxbEJPZERTZVlvSkFGZ0djWjhKYkJXcFhpYWVnUFU2Y1FNcjIxbjljSUxYLUpVNG1SaVZhajRqSjRBLXk0TENYVDFNdVJIU0lQeF9DRXBlOUh4V1QteGswS21ic3ZIeUxVaUxSaWRRSXZHQTZMSWpGMWFBd0tLSQ?oc=5",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "创业板新能源ETF鹏华（159261）开盘涨0.19%，重仓股宁德时代涨0.15%，阳光电源涨0.97% 新浪财经",
+    "narrativeAnalysis": {
+      "hook": "创业板新能源ETF鹏华（159261",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102865",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "10月27日光伏ETF浦银基金份额增加100万份，重仓股特变电工、隆基绿能、阳光电源_基金提醒_雷达 - 证券之星",
+    "author": "证券之星",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1aQkJqZU9QLUVhaG9NQkxUY1FQSzU4dWlsa0JwSnRwN3ZvWlIySFZzby1kdmh3cnhKMDFXQlZWZWtuci1nMDdCekNMUzhnaVg1MFd6LS1tV2Z1Y1M0a3NCR2pn?oc=5",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "10月27日光伏ETF浦银基金份额增加100万份，重仓股特变电工、隆基绿能、阳光电源_基金提醒_雷达 证券之星",
+    "narrativeAnalysis": {
+      "hook": "10月27日光伏ETF浦银基金份额增",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102866",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代成立储能科技公司 注册资本50亿 - 东方财富网",
+    "author": "东方财富网",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA4SnZkYVRaZVZISFlaSjhRT0ZNLXMxOE1PS1pmZGtLeWRiMHhVWXRmWEROSHFPQ1JEQzlMUmc1N281dVJrUDNJeTZkd0dwbzlxdk5tMnh0eFQyV25MZzRLSXh4U0hOUQ?oc=5",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "宁德时代成立储能科技公司 注册资本5",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102867",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代 - 财富号",
+    "author": "财富号",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JVEFleVhXNXZKWWgyYkllQnROSjRzNlpWbXZnd3QwWml4bHlSQzlxUmNKUXZsNERuU29jQmNfbldxUlhxUkl3UWhUU2l5cGxONWFPeTlCZlRMV29xeEZMT0pla0U0aXRiUWk0?oc=5",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "宁德时代 - 财富号",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026102868",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "主力资金监控：宁德时代净卖出超9亿 - 东方财富",
+    "author": "东方财富",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9SMFR2aGtKWDVlZDc3ZjhKMG9PQXVUVXIxVDdwdWJ0SUNKMmNsNHFRUDZzWXRxS2RhTksxNEMzVGNDMlVxMXJ2R0dMSGtQUnZNQlphTEpQY2hLS3lyOWxLYVI0aw?oc=5",
+    "published": "2026-10-28",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-28"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "主力资金监控：宁德时代净卖出超9亿 ",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -464,425 +884,6 @@ window.DATA_INSPIRATION = [
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
-  },
-  {
-    "id": "a2026102828",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "海军某基地深入学习贯彻习近平强军思想——从严管党治党 凝聚胜战力量",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16496565.html",
-    "published": "2026-10-28",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "海军某基地深入学习贯彻习近平强军思想——从严管党治党 凝聚胜战力量",
-    "narrativeAnalysis": {
-      "hook": "海军某基地深入学习贯彻习近平强军思想",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102829",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "信息支援部队某部打造信息服务平台畅通民主渠道",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16496558.html",
-    "published": "2026-10-28",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "信息支援部队某部打造信息服务平台畅通民主渠道",
-    "narrativeAnalysis": {
-      "hook": "信息支援部队某部打造信息服务平台畅通",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102833",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "阳光电源：关于控股子公司与专业投资机构共同投资设立合伙企业的进展公告 - Moomoo",
-    "author": "Moomoo",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWGl6UHRaOHVobnNMUlZ6QnFzTEUzRTRmcDVtWV9vOUpaU0J6TS1MQ1A2d2VvZGJvbGNJemxBLWUyb1prcEVmT0lDZkVJeEpIWDVFYXZhZkdONC16dFNmczJTQzgwbENzVlN0WFZya2t0dVB6bDVsdWJPc2ZNcG93SndnTDdiUENrNnJ0TWMzY1pET2pZZFdZaG5oZnhoWnpvb1lXc3RXSTJILV9kMjBrTklTc0VJZUdzakpVRG92S3QzRXM?oc=5",
-    "published": "2026-10-28",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "阳光电源：关于控股子公司与专业投资机构共同投资设立合伙企业的进展公告 Moomoo",
-    "narrativeAnalysis": {
-      "hook": "阳光电源：关于控股子公司与专业投资机",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102701",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "Azure Container Apps Express在新的通用沙箱层上正式发布",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/ChONW7EYk5Vuj0VF7AkZ?utm_source=rss&utm_medium=article",
-    "published": "2026-10-28",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-27"
-    },
-    "contentSummary": "微软已经将Azure Container Apps Express与其运行所基于的Container Apps Sandboxes（microVM计算层）一同正…",
-    "narrativeAnalysis": {
-      "hook": "Azure Container Ap",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102824",
-    "platform": "BBC中文",
-    "domain": "政治",
-    "track": "政治",
-    "title": "「盧拉軍團」的WhatsApp聊天群如何扭轉巴西選情",
-    "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/c680zjdvk7kgo/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-10-27",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "雖然民調顯示敗局已定，但數百萬巴西人加入了「盧拉軍團」頻道，後者被認為幫助將線上熱情轉化為現實世界的動員。",
-    "narrativeAnalysis": {
-      "hook": "「盧拉軍團」的WhatsApp聊天群",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102804",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "全球个人智能体爆发前夜，蚂蚁灵光2.0抢下国内第一棒 - 雷科技",
-    "author": "雷科技",
-    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBidnFvQl9LRWsta3ZOZ1ZRcGNrS0F6MGlpemQxQ25CNTJnc0t4V3NOX3I5Z2FpYXhZMmVOMGZpVU0tTzIyM0d0TzNSTzhMUQ?oc=5",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "全面、及时的新闻报道，Google 新闻为您汇集来自世界各地的新闻来源。",
-    "narrativeAnalysis": {
-      "hook": "全球个人智能体爆发前夜，蚂蚁灵光2.",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102805",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "AI Agent时代的海外网红营销：哪些环节交给机器，哪些必须留给人？ - 雨果跨境",
-    "author": "雨果跨境",
-    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE8tMjFGc1VnNVE0Q2JWaEtYdjdZWVVrejhzQXlua2w3aE5mcEFaU25xS0IxWE0wYlVvRHFrcWV0elpPOWNHYlpPY1RLWFU?oc=5",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "全面、及时的新闻报道，Google 新闻为您汇集来自世界各地的新闻来源。",
-    "narrativeAnalysis": {
-      "hook": "AI Agent时代的海外网红营销：",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102806",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "当AI大模型被重新定价：云知声发布U2，迎来「DeepSeek时刻」 - 手机新浪网",
-    "author": "手机新浪网",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hU1Y0eEROX21icXd1endXRzNiSjV1Y0RFc3F0ei1CRjBibWdzU2k2azhTVUI4ajVjLXN2LWxZVkhLNnlzVWtGVEtiUm9wMjhyaFY0WDZmSHB2M21ZSFY1eFVUdHVvbF9vV3JtSmQ0RXc?oc=5",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "全面、及时的新闻报道，Google 新闻为您汇集来自世界各地的新闻来源。",
-    "narrativeAnalysis": {
-      "hook": "当AI大模型被重新定价：云知声发布U",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102811",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "首届“飞阅中国”低空经济应用场景大赛决赛在重庆梁平举行",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-27/10721955.shtml",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "中新网重庆10月27日电(记者 肖江川)27日，首届“飞阅中国”低空经济应用场景大赛决赛启动仪式在“西部低空之城”重庆梁平举行。大赛以“构建协同生态 筑梦西部低…",
-    "narrativeAnalysis": {
-      "hook": "首届“飞阅中国”低空经济应用场景大赛",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102812",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "2026中欧企业家青岛论坛在青岛西海岸新区举办",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-27/10721952.shtml",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "中新网青岛10月27日电 (张孝鹏)2026中欧企业家青岛论坛27日在山东省青岛西海岸新区举办。本届论坛以“央地国企民企外企协同创新与高质量发展”为主题，首次聚…",
-    "narrativeAnalysis": {
-      "hook": "2026中欧企业家青岛论坛在青岛西海",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102813",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "以质量强链赋能产业升级 多省区齐聚宁夏共探煤化工绿色转型之路",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-27/10721946.shtml",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "中新网银川10月27日电(记者 于晶)10月27日，宁夏现代煤化工产业链质量强链技术交流活动在宁东能源化工基地举办。活动汇聚国家市场监管总局及山西、山东、陕西、…",
-    "narrativeAnalysis": {
-      "hook": "以质量强链赋能产业升级 多省区齐聚宁",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102814",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "欧洲华文媒体走进湖南湘江新区 探访机器人产业“出海”之路",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/tp/2026/10-27/10721913.shtml",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "10月27日，参加“2026欧洲华文媒体长沙行”活动的华媒代表走进湖南湘江新区，实地考察湖南机器人产业及其“出海”情况。据了解，湖南已聚集机器人上下游企业300…",
-    "narrativeAnalysis": {
-      "hook": "欧洲华文媒体走进湖南湘江新区 探访机",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102834",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "国能日新拟投资不超3.5亿元建设100MW/400MWh独立储能项目",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261027/1517720.shtml",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "国能日新拟投资不超3.5亿元建设100MW/400MWh独立储能项目",
-    "narrativeAnalysis": {
-      "hook": "国能日新拟投资不超3.5亿元建设10",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102835",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "华北：通过完善市场机储能、虚拟电厂等新型主体参与市场，统筹做好新能源外送交易组织",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261027/1517714.shtml",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "华北：通过完善市场机储能、虚拟电厂等新型主体参与市场，统筹做好新能源外送交易组织",
-    "narrativeAnalysis": {
-      "hook": "华北：通过完善市场机储能、虚拟电厂等",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102836",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "林洋能源2026年前三季度营收与净利双增长 储能发展势能充足",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261027/1517713.shtml",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "林洋能源2026年前三季度营收与净利双增长 储能发展势能充足",
-    "narrativeAnalysis": {
-      "hook": "林洋能源2026年前三季度营收与净利",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102837",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "阳光电源：目前没有生产半固态电池的计划 - 东方财富",
-    "author": "东方财富",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9JVHZ6NTJ2S01sM2pveTlaSHh2TEs3NjZCQklhaVZjYUZwSmRwcmlobUZPclhDeGY3M1MzRHEtOFp1cTk3eS0yWUxZWUZyUk1Zd3lscm1zdllMbGVoR3R5ZlV1QnF5dw?oc=5",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "全面、及时的新闻报道，Google 新闻为您汇集来自世界各地的新闻来源。",
-    "narrativeAnalysis": {
-      "hook": "阳光电源：目前没有生产半固态电池的计",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102838",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "阳光电源：FCC政策针对未来新产品现有产品可正常销售_股市直击 - 证券之星",
-    "author": "证券之星",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0zX0lObW93Yy02em41eUhDYXZqa0luWE5sWkxhUUVkcXZrZXRSRWd2VEZVaElDelpQWVdHRXFpWHduWW80YktIcGdmZ3p5UHJ6UTFMXzhyLVRjT1lxZm9YTndB?oc=5",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "全面、及时的新闻报道，Google 新闻为您汇集来自世界各地的新闻来源。",
-    "narrativeAnalysis": {
-      "hook": "阳光电源：FCC政策针对未来新产品现",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102839",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "宁德时代，正在被车企定价 - finance.sina.com.cn",
-    "author": "finance.sina.com.cn",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80RktwR3d0RGZjUU9MWGhNM2JIdE1lMTN6bVNqNTRLVjJPQXJIWTZpNHpjRk12R21VZTlNSkY1a19GaW00bGlBbTN6WG5ZNm1GLU1qRWF0ZmN6aFU5d2tOYVZCRm9VZm9GdzdPOC1R?oc=5",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "全面、及时的新闻报道，Google 新闻为您汇集来自世界各地的新闻来源。",
-    "narrativeAnalysis": {
-      "hook": "宁德时代，正在被车企定价 - fin",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026102840",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "全球仅两家AAA！宁德时代储能可融资性评级“登顶”，储能竞争逻辑变了 - 手机新浪网",
-    "author": "手机新浪网",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE91TTl6U0Vmb1F1V0paaXBQbmxyaEZmcS1FRDBMVVA1NXRLOGhoZmFrOGVhMVV3d1NCZ25wakxMZElISE0wbXc3TDdjbGdEU1pDcWdZUGx3SXlzRTh6SHhMSnpVV0VpS0YtYlVxTXJfM0R2UQ?oc=5",
-    "published": "2026-10-27",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-28"
-    },
-    "contentSummary": "全面、及时的新闻报道，Google 新闻为您汇集来自世界各地的新闻来源。",
-    "narrativeAnalysis": {
-      "hook": "全球仅两家AAA！宁德时代储能可融资",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-28","added":28,"total":40,"tracks":{"军事":8,"政治":8,"财经":8,"科技":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-28","added":31,"total":40,"tracks":{"军事":8,"政治":8,"财经":8,"科技":8,"储能":8}};
