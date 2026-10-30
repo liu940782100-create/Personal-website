@@ -221,13 +221,57 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026103047",
+    "id": "a2026103001",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI+垂类Agent：任务跑得久、工具用得熟，撑不起Agent公司长期竞争力｜贝联珠贯创始人兼CEO 毕玄分享",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/sCKczimP9lSEl0rgJ7VY?utm_source=rss&utm_medium=article",
+    "published": "2026-10-31",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "点击查看原文>",
+    "narrativeAnalysis": {
+      "hook": "AI+垂类Agent：任务跑得久、工",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103002",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI+社区：「模力工场」连接AI供需，补上信任缺口｜极客邦科技创始人兼CEO 霍太稳分享",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/f3FdeDczctAdHMhvBdKw?utm_source=rss&utm_medium=article",
+    "published": "2026-10-31",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "点击查看原文>",
+    "narrativeAnalysis": {
+      "hook": "AI+社区：「模力工场」连接AI供需",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103026",
     "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "「我不希望它成為我的身份」：Hyrox失禁選手復出比賽前接受BBC專訪",
+    "title": "中共五中全會「空椅子」背後：常態化高壓反腐如何改變中國官場？",
     "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/cmy932qe3wx3o/trad?at_medium=RSS&at_campaign=rss",
+    "link": "https://www.bbc.com/zhongwen/articles/c3j47p5gwj5lo/trad?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-30",
     "intl": 1,
     "metrics": {
@@ -235,22 +279,22 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "這位澳洲運動員承認責任，但表示輿論反彈令她「創傷」。",
+    "contentSummary": "「這次全會進一步表明，習近平的反腐運動沒有終點。」專家說，「持續施加紀律壓力不應只是階段性運動，而必須成為中共運作方式中永久存在的一部分。」",
     "narrativeAnalysis": {
-      "hook": "「我不希望它成為我的身份」：Hyro",
+      "hook": "中共五中全會「空椅子」背後：常態化高",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103048",
+    "id": "a2026103029",
     "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "為什麼歐洲各國年輕人走上街頭？背後的共同訴求和暴力隱憂",
+    "title": "台灣新北市長選戰：「政二代」蘇巧慧對決「專業副手」李四川，誰能拿下藍綠關鍵一城？",
     "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/cv8ez8w9edzxo/trad?at_medium=RSS&at_campaign=rss",
+    "link": "https://www.bbc.com/zhongwen/articles/cm9wzeg8ql22o/trad?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-30",
     "intl": 1,
     "metrics": {
@@ -258,22 +302,22 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "過去一個月，歐洲各地爆發了由青年主導的示威遊行。這些遊行活動有何共同點？",
+    "contentSummary": "作為全台人口最多的直轄市，新北市被視為「最關鍵戰場」，將判定藍綠整體勝負，並可能牽動2028年總統大選。",
     "narrativeAnalysis": {
-      "hook": "為什麼歐洲各國年輕人走上街頭？背後的",
+      "hook": "台灣新北市長選戰：「政二代」蘇巧慧對",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103049",
+    "id": "a2026103030",
     "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "中國施壓下姆巴佩道歉，但許多人仍不知道他究竟說了什麼",
+    "title": "幣安遭黑客攻擊：涉63億美元 或為史上最大規模 朝鮮黑客組織被指涉案",
     "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/ck4g18ql0vj9o/trad?at_medium=RSS&at_campaign=rss",
+    "link": "https://www.bbc.com/zhongwen/articles/cw0k023x733lo/trad?at_medium=RSS&at_campaign=rss",
     "published": "2026-10-30",
     "intl": 1,
     "metrics": {
@@ -281,22 +325,45 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "姆巴佩有關一名「中國領導人」的言論引發眾怒，但網絡審查令許多人仍不清楚事件究竟是怎麼回事。",
+    "contentSummary": "兩家分析公司已將事件歸咎於「TraderTraitor」。人工智能調查公司TRM Labs在一份報告中稱，幣安攻擊事件的多個要素與早前和朝鮮有關的事件相似，包括…",
     "narrativeAnalysis": {
-      "hook": "中國施壓下姆巴佩道歉，但許多人仍不知",
+      "hook": "幣安遭黑客攻擊：涉63億美元 或為史",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103050",
+    "id": "a2026103031",
     "platform": "法广",
     "domain": "政治",
     "track": "政治",
-    "title": "12年后，中朝鸭绿江大桥终于不再是“哪也去不了的桥”",
+    "title": "俄罗斯独立报纸《新报》宣布在当局压力下停刊",
+    "author": "AFP - GINTS IVUSKANS",
+    "link": "https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20261030-%E4%BF%84%E7%BD%97%E6%96%AF%E7%8B%AC%E7%AB%8B%E6%8A%A5%E7%BA%B8-%E6%96%B0%E6%8A%A5-%E5%AE%A3%E5%B8%83%E5%9C%A8%E5%BD%93%E5%B1%80%E5%8E%8B%E5%8A%9B%E4%B8%8B%E5%81%9C%E5%88%8A",
+    "published": "2026-10-30",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "以反战和调查高层腐败著称的俄罗斯独立媒体《新报》在运营30年后被当局扼杀。该媒体已有6名记者殉职。",
+    "narrativeAnalysis": {
+      "hook": "俄罗斯独立报纸《新报》宣布在当局压力",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103032",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "民主党若夺国会控制权 对华政策料转重风险管控与关税检讨",
     "author": "法广",
-    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E4%B8%96%E7%95%8C%E6%8A%A5/20261029-12%E5%B9%B4%E5%90%8E%EF%BC%8C%E4%B8%AD%E6%9C%9D%E9%B8%AD%E7%BB%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5%E7%BB%88%E4%BA%8E%E4%B8%8D%E5%86%8D%E6%98%AF-%E5%93%AA%E4%B9%9F%E5%8E%BB%E4%B8%8D%E4%BA%86%E7%9A%84%E6%A1%A5",
+    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E7%BE%8E%E5%9B%BD%E4%B8%93%E6%A0%8F/20261030-%E6%B0%91%E4%B8%BB%E5%85%9A%E8%8B%A5%E5%A4%BA%E5%9B%BD%E4%BC%9A%E6%8E%A7%E5%88%B6%E6%9D%83-%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E6%96%99%E8%BD%AC%E9%87%8D%E9%A3%8E%E9%99%A9%E7%AE%A1%E6%8E%A7%E4%B8%8E%E5%85%B3%E7%A8%8E%E6%A3%80%E8%AE%A8",
     "published": "2026-10-30",
     "intl": 1,
     "metrics": {
@@ -304,89 +371,44 @@ window.DATA_INSPIRATION = [
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "法国世界报周四的关注之一，是一座连接中国与朝鲜的桥梁早在十二年前就已经建成，但直到最近才终于正式通车。 这座桥就是连接中国辽宁丹东与朝鲜新义州的新鸭绿江大桥。这…",
+    "contentSummary": "美国期中选举将于11月3日举行，总统特朗普（Donald Trump）支持度偏低，共和党可能失去国会众议院控制权，甚至连参议院多数地位也面临挑战。",
     "narrativeAnalysis": {
-      "hook": "12年后，中朝鸭绿江大桥终于不再是“",
+      "hook": "民主党若夺国会控制权 对华政策料转重",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103051",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "俄喷射无人机击中乌第聂伯罗火车站一月台至少13死5伤",
-    "author": "via REUTERS - STATE EMERGENCY SERVICE OF UKRAI",
-    "link": "https://www.rfi.fr/cn/%E6%AC%A7%E6%B4%B2/20261029-%E4%BF%84%E5%96%B7%E5%B0%84%E6%97%A0%E4%BA%BA%E6%9C%BA%E5%87%BB%E4%B8%AD%E4%B9%8C%E7%AC%AC%E8%81%82%E4%BC%AF%E7%BD%97%E7%81%AB%E8%BD%A6%E7%AB%99%E4%B8%80%E6%9C%88%E5%8F%B0%E8%87%B3%E5%B0%9113%E6%AD%BB5%E4%BC%A4",
-    "published": "2026-10-30",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "乌克兰东南部大城第聂伯罗（Dnipro）火车站的1个月台在10月29日遭到1架俄罗斯无人机击中，当时有1列火车停靠月台旁，造成至少13人死亡，另有至少5人受伤。",
-    "narrativeAnalysis": {
-      "hook": "俄喷射无人机击中乌第聂伯罗火车站一月",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103008",
+    "id": "a2026103003",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "智能边界驱动AI＋IIoT创新 智造、企业维运与AI Agent应用落地 - DIGITIMES",
-    "author": "DIGITIMES",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOM2tqMDhRUERtOGx6NU4wVWg3UE5fNllSWmdSSGRvaE0zbk1MSVJzUnNKLTBVYjVVbGVTc05rOElfak9UTk1vX2N5dVoycDFudmVGMjRKWkxFenRhR0k0TC1melR6Q0lYazdfek01N2k2SlY3ZUszY3BKZzdjMm9MMk1yMTNYeFRQc0pFX2ltRXNGQWFzdk4wWndNelFZQQ?oc=5",
+    "title": "从AI Agent到全球供应链协同，开思推动新能源汽车后市场数智化升级_车市动态 - 中金在线",
+    "author": "中金在线",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2d0NxWHhCMVhyRGhxajd3NXE5bEZQWW1JTW1NRDRVcEZ6eE9pN25ZZ1lKZmgxVkdEZFAzeEdJbDBreGV2U0IxOUtSU0dIVk5PdFNSdklwT1Y0dEo4WnRRZ2kxSU5OeFZpM3VF?oc=5",
     "published": "2026-10-30",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "智能边界驱动AI＋IIoT创新 智造、企业维运与AI Agent应用落地 DIGITIMES",
+    "contentSummary": "从AI Agent到全球供应链协同，开思推动新能源汽车后市场数智化升级_车市动态 中金在线",
     "narrativeAnalysis": {
-      "hook": "智能边界驱动AI＋IIoT创新 智造",
+      "hook": "从AI Agent到全球供应链协同，",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103015",
+    "id": "a2026103004",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "深兰科技联合华为，发布全球首款大模型智能体工作手机 Wowoker - 时代在线",
-    "author": "时代在线",
-    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBhdjNOSzBZeEJmblpkOVlFUHgtalJqWGlPYU5teWp0LUlPTDV6SzRMRWV0ZFpLamd3OVpZc2YzUnozN0loWnZYRGlRUQ?oc=5",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "深兰科技联合华为，发布全球首款大模型",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103016",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "记者发布会现场实探｜全彩AI眼镜来了，乐奇Rokid Color登场！ - 搜狐网",
+    "title": "腾讯健康发布「医疗AI Agent工具箱」 - 搜狐网",
     "author": "搜狐网",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUHI2cTdoT01VS1JZVjJ2Q0E2bmVxR2ljeEN6V19sU3lkb3diM05rQVRXWmVHeVhNQThKZzJ6dkU0VEpWQ0VnMThLWndGLXZtT1ItUFFwUGFQWGMzVVFfMU1Qenc4Z3Q4a0lFLWs5MWppWE1yRjBxNEdxOGF4SkotNDBFQnNyUjJjZmd3cGNOaw?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNkp2VEdCSHI0bk9tUnZWYXdaalItYm45bVh3TmJQckdGMGZ0ZDVnWEd2eVhnbkR6V21VdlBQc3V1dUFvbDd3azVWb2hCbHRKbmZOU04wRHlIMGNieUxDZnpQdFdNVENZb2RXU1d0dU4yTHNfT0Itd25sN2YxUDhXeHY5S2RDZUZDRVVyaQ?oc=5",
     "published": "2026-10-30",
     "metrics": {
       "likes": 0,
@@ -395,249 +417,447 @@ window.DATA_INSPIRATION = [
     },
     "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "记者发布会现场实探｜全彩AI眼镜来了",
+      "hook": "腾讯健康发布「医疗AI Agent工",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103022",
+    "id": "a2026103005",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "从科学到落地：兴智|家庭成长树AI时代家庭系统成长课战略发布会成功举行 - 中国日报网",
+    "author": "中国日报网",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9GWG05aFV0M2ZMeWYyWTRpaXBjcXJKR3dmSVRwVUFnYlBuSDROVXFDdXNTbTFRMGhNY2ZIcEoxc1c3emJWV2dzT1k5YWlpaWY4bDEtRjVFQkF0TTBoMkFCZjdTQlJna1JBbUFweGdlWmU1Y282cUhjWDNXdVg?oc=5",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "从科学到落地：兴智|家庭成长树AI时代家庭系统成长课战略发布会成功举行 中国日报网",
+    "narrativeAnalysis": {
+      "hook": "从科学到落地：兴智|家庭成长树AI时",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103006",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "创维2026秋季全场景新品发布会：绘制AI“走进”家庭生活新图景 - 品玩",
+    "author": "品玩",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBiVkF3ZGZrdmY3TGxiR0EzVEFkZFBqMHhwYUh2VGJtUW9rTmVMN1NNSHA3N0xHaGVjZVFzZC1oY29xb3BWaFBwSw?oc=5",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "创维2026秋季全场景新品发布会：绘",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103007",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "电科金仓发布AI数据库，大模型也能看懂私有数据 - 手机新浪网",
+    "author": "手机新浪网",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DOXlLa3kxZS1xTXFPV2djOEpTcHk1N08xU2JLNHZLS1BxSC11OWRNTER1VUpKTHpEaURPaTQ5M0k3bW9kV042UGg4ZWxDeXNYUnUtbV9tZDRKU2FLMWc4LWtJUHJQWE9WMTM1Q1d2Vm1oRVNRRVY0X29SN3JSU0k?oc=5",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "电科金仓发布AI数据库，大模型也能看",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103009",
     "platform": "InfoQ",
     "domain": "科技",
     "track": "科技",
-    "title": "2026年AI技术演进与2027年趋势前瞻报告",
+    "title": "超节点火了一年后，“算力不够就加机器”的扩张逻辑正在被改写",
     "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/minibook/lmVM6XjSDMpMb6QTbK0l?utm_source=rss&utm_medium=article",
+    "link": "https://www.infoq.cn/article/ZolBIJdvK5Icdqg6FB0X?utm_source=rss&utm_medium=article",
     "published": "2026-10-30",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "2026年AI技术演进与2027年趋势前瞻报告2026 年，AI 产业从“能力展示”进入“价值兑现”。这一年，Agent 工程化取代模型接入成为主战场，智能体规…",
+    "contentSummary": "超节点真正试图解决的，恰恰是过去那种依靠增加机器数量扩充算力的方式所暴露的问题。",
     "narrativeAnalysis": {
-      "hook": "2026年AI技术演进与2027年趋",
+      "hook": "超节点火了一年后，“算力不够就加机器",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103023",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "谷歌推出 EnvHarness，支持自进化智能体动态环境学习",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/FJqN3mFVyN1lMqHOiegs?utm_source=rss&utm_medium=article",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "谷歌研究人员开源 EnvHarness 框架，它可依据智能体短板动态调整训练环境，且不用改动智能体、环境与评估系统。",
-    "narrativeAnalysis": {
-      "hook": "谷歌推出 EnvHarness，支持",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103024",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "腾讯 AI Lab 又一核心骨干去向确认！“王者绝悟”前技术负责人叶德珩加入字节 Seed",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/u23wUVUDcFqL7hLBWXuW?utm_source=rss&utm_medium=article",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "腾讯 AI Lab 在今年3月成为历史，原有研究骨干的去向正陆续浮出水面。",
-    "narrativeAnalysis": {
-      "hook": "腾讯 AI Lab 又一核心骨干去向",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103028",
-    "platform": "爱范儿",
-    "domain": "科技",
-    "track": "科技",
-    "title": "卓驭发布商用车智能辅助驾驶解决方案「磐行」，一年可以让重卡省下 2-3 万元油钱",
-    "author": "爱范儿",
-    "link": "https://www.ifanr.com/1686855?utm_source=rss&utm_medium=rss&utm_campaign=",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "省钱才是硬道理。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-    "narrativeAnalysis": {
-      "hook": "卓驭发布商用车智能辅助驾驶解决方案「",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103037",
-    "platform": "爱范儿",
-    "domain": "科技",
-    "track": "科技",
-    "title": "刚刚，ChatGPT Pro 额度官宣翻倍，但免费重置可能要没了",
-    "author": "爱范儿",
-    "link": "https://www.ifanr.com/1686830?utm_source=rss&utm_medium=rss&utm_campaign=",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "Plus 用户：为我发声#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-    "narrativeAnalysis": {
-      "hook": "刚刚，ChatGPT Pro 额度官",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103038",
+    "id": "a2026103010",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "温暖同行，徐福记携手中国妇女发展基金会驰援西藏那曲市巴青地震灾区",
+    "title": "证监会：全力稳市场稳预期，深化投融资综合改革",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-30/10723274.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-30/10723649.shtml",
     "published": "2026-10-30",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "10月22日，西藏那曲市巴青县发生7.0级地震。灾情牵动人心，受灾群众的生活保障与物资补给需求迫切。",
+    "contentSummary": "中新网北京10月30日电 (记者 陈康亮)中国证监会党委书记、主席吴清30日主持召开党委(扩大)会议。会议要求，牢固树立大局意识、系统观念，全力稳市场稳预期，深…",
     "narrativeAnalysis": {
-      "hook": "温暖同行，徐福记携手中国妇女发展基金",
+      "hook": "证监会：全力稳市场稳预期，深化投融资",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103039",
+    "id": "a2026103011",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "“闽南文化·科技·基金”创新会在福建晋江举行",
+    "title": "《2026年贵金属蓝皮书》：五年间全球贵金属市场规模增长近80%",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-30/10723254.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-30/10723640.shtml",
     "published": "2026-10-30",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "中新网福建晋江10月30日电 (记者 孙虹)为传承弘扬、创新发展“晋江经验”，发挥晋江作为民营经济强市和闽南文化重要承载地的独特优势，打造“闽南文化·科技·基金…",
+    "contentSummary": "中新网昆明10月30日电 (记者 陈静)2026年中国贵金属论坛29日至30日在云南昆明举行。论坛发布的《2026年贵金属蓝皮书》(下称《蓝皮书》)指出，受贵金…",
     "narrativeAnalysis": {
-      "hook": "“闽南文化·科技·基金”创新会在福建",
+      "hook": "《2026年贵金属蓝皮书》：五年间全",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103040",
+    "id": "a2026103012",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "《非居民企业机构、场所企业所得税管理办法（征求意见稿）》公布",
+    "title": "从明代窑火到广交会展台 唐山“老瓷区”闯出“新市场”",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/10-30/10723227.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-30/10723641.shtml",
     "published": "2026-10-30",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "中新网北京10月30日电 (记者 赵建华)《非居民企业机构、场所企业所得税管理办法(征求意见稿)》(以下简称《征求意见稿》)，10月30日起向社会公开征求意见。",
+    "contentSummary": "中新网唐山10月30日电 题：从明代窑火到广交会展台 唐山“老瓷区”闯出“新市场”",
     "narrativeAnalysis": {
-      "hook": "《非居民企业机构、场所企业所得税管理",
+      "hook": "从明代窑火到广交会展台 唐山“老瓷区",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103041",
+    "id": "a2026103013",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "黑龙江省肉制品生产企业全面实行“互联网+AI监管”",
+    "title": "文脉共续、产业共兴、邻里共融：探访云南民族团结的生动实践",
     "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/sh/2026/10-30/10723298.shtml",
+    "link": "https://www.chinanews.com.cn/mz/2026/10-30/10723646.shtml",
     "published": "2026-10-30",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "中新网哈尔滨10月30日电(记者 刘璐)近日，黑龙江省市场监督管理局聚焦肉制品领域突出食品安全隐患，采取靶向治理、从严办案、规范经营等多项举措，推动全省肉制品生…",
+    "contentSummary": "中新网昆明10月30日电 题：文脉共续、产业共兴、邻里共融：探访云南民族团结的生动实践",
     "narrativeAnalysis": {
-      "hook": "黑龙江省肉制品生产企业全面实行“互联",
+      "hook": "文脉共续、产业共兴、邻里共融：探访云",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103042",
+    "id": "a2026103014",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "2026年9月份厦门市进出口情况",
+    "title": "西藏持续加大民生财政投入 筑牢各族群众幸福底线",
     "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/aseaninfo/2026/10-30/10723310.shtml",
+    "link": "https://www.chinanews.com.cn/gn/2026/10-30/10723645.shtml",
     "published": "2026-10-30",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "据海关统计，2026年前三季度，厦门市外贸进出口7904亿元，比去年同期(下同)增长10.7%；其中，出口4170.8亿元、增长3.7%，进口3733.2亿元、…",
+    "contentSummary": "中新网拉萨10月30日电 (贡嘎来松)30日，西藏自治区财政厅召开民生保障工作新闻发布会，亮出“十四五”民生投入成绩单，公布2026年民生实事资金安排，并就民生…",
     "narrativeAnalysis": {
-      "hook": "2026年9月份厦门市进出口情况",
+      "hook": "西藏持续加大民生财政投入 筑牢各族群",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026103043",
+    "id": "a2026103017",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "【光明论坛】以创新开创经济高质量发展新局面",
+    "title": "党建+业务，激发新经济组织活力",
     "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/ll/2026/10-30/10723198.shtml",
+    "link": "https://www.chinanews.com.cn/cj/2026/10-30/10723180.shtml",
     "published": "2026-10-30",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-10-30"
     },
-    "contentSummary": "【光明论坛】以创新开创经济高质量发展新局面",
+    "contentSummary": "党建+业务，激发新经济组织活力",
     "narrativeAnalysis": {
-      "hook": "【光明论坛】以创新开创经济高质量发展",
+      "hook": "党建+业务，激发新经济组织活力",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103034",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "我军首型舰载察打一体隐身无人机在四川舰成功起降",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16497156.html",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "我军首型舰载察打一体隐身无人机在四川舰成功起降",
+    "narrativeAnalysis": {
+      "hook": "我军首型舰载察打一体隐身无人机在四川",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103035",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "中国人民解放军南部战区位中国黄岩岛领海领空及周边区域组织战备警巡",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16497094.html",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "中国人民解放军南部战区位中国黄岩岛领海领空及周边区域组织战备警巡",
+    "narrativeAnalysis": {
+      "hook": "中国人民解放军南部战区位中国黄岩岛领",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103056",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "八部门：推进机场、铁路客站等配置分布式可再生能源与储能",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261030/1518386.shtml",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "八部门：推进机场、铁路客站等配置分布式可再生能源与储能",
+    "narrativeAnalysis": {
+      "hook": "八部门：推进机场、铁路客站等配置分布",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103057",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "0.881-0.91元/Wh！宁夏200MW/800MWh储能电站中标候选人公示",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261030/1518304.shtml",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "0.881-0.91元/Wh！宁夏200MW/800MWh储能电站中标候选人公示",
+    "narrativeAnalysis": {
+      "hook": "0.881-0.91元/Wh！宁夏2",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103058",
+    "platform": "北极星储能网",
+    "domain": "储能",
+    "track": "储能",
+    "title": "TENER+储能系统全球首发，宁德时代储能系统解决方案亮相澳洲",
+    "author": "北极星储能网",
+    "link": "https://news.bjx.com.cn/html/20261030/1518362.shtml",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "TENER+储能系统全球首发，宁德时代储能系统解决方案亮相澳洲",
+    "narrativeAnalysis": {
+      "hook": "TENER+储能系统全球首发，宁德时",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103061",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "阳光电源：前三季度净利润65.99亿元，同比下降44.46% - 搜狐网",
+    "author": "搜狐网",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcndQa1Q0NVlIMjhSaEphdWdud1NGa0lkbFRhZlFVY2Y5VGRkTFA5UkkyWW10UzFLUzlpRDJXcVlIbWhxRWJDTWFiRC1uR2hxYUpZUWJiQTdnb2tseVVHbUNtV3lIajBabExNVk9zbEh0dzE1eWI5NDhQdnA1NU1fX0N1OUZYWkdv?oc=5",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "阳光电源：前三季度净利润65.99亿",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103070",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "千亿元储能龙头阳光电源，Q3净利同比下降68%、环比下降54%，股价年内下跌逾六成 - 东方财富",
+    "author": "东方财富",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9UaUJIaVFSbE9TOWZrU0staFpTY3laM2p5R3JSdHZDdVJoT0NjcGtuVzVaT3JtSk5VS2FZbmM4Vy1BUzRPQWEwLU85QmF2dEtBWjRRNlNrbXBaU1BWNWo2R1Fwdm14UQ?oc=5",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "千亿元储能龙头阳光电源，Q3净利同比下降68%、环比下降54%，股价年内下跌逾六成 东方财富",
+    "narrativeAnalysis": {
+      "hook": "千亿元储能龙头阳光电源，Q3净利同比",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103071",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "前三季度营收488亿，阳光电源最新业绩公布 - 电子工程专辑",
+    "author": "电子工程专辑",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9DUnRzNHhqVjF5SGU0T0R3cG5fQ0preVJvYjc2Y2xsUUlNNVFsSnB5RjEwc05uM0M3QTVfRWlQd3NoOGg3NFI0X1l6Vy01dXZQc0Q0?oc=5",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "前三季度营收488亿，阳光电源最新业",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103072",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "与宁德时代“百万辆级”换电联姻，为什么北汽先跑通“样板间”？ - 凤凰网汽车",
+    "author": "凤凰网汽车",
+    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9IQUtHbjcycjJyUi1OZDVBOXNRRXM4R2VyS29sZEZXQ3RIZGQyWGVvbVZ3LVRoSkJ4SU8yTnl3M0tWNjFjb0d5QzFrbzA?oc=5",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "与宁德时代“百万辆级”换电联姻，为什",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026103073",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "“原告失去资格”，匈牙利地方法院驳回针对宁德时代工厂的诉讼 - 观察者网",
+    "author": "观察者网",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE41N3ZjOV9Pekx1dHBoTFRlWVo4a2xfa09YQ2Q0RmVuUXZraHVSczhtZDBZbnZYbUd2cm81R2FXdTZzWDB2QkgyTXFDSHFsR0tBT3R6QkVaYUpyR1B3MlVpU3R3?oc=5",
+    "published": "2026-10-30",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-10-30"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "“原告失去资格”，匈牙利地方法院驳回",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -664,226 +884,6 @@ window.DATA_INSPIRATION = [
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
-  },
-  {
-    "id": "a2026103062",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "华为官宣涨价！构网型储能上调5~10%！",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261030/1518270.shtml",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "华为官宣涨价！构网型储能上调5~10%！",
-    "narrativeAnalysis": {
-      "hook": "华为官宣涨价！构网型储能上调5~10",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103063",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "宁夏：分布式储能交易均价执行独立储能实时市场月度加权平均价",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261030/1518285.shtml",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "宁夏：分布式储能交易均价执行独立储能实时市场月度加权平均价",
-    "narrativeAnalysis": {
-      "hook": "宁夏：分布式储能交易均价执行独立储能",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103064",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "户用储能、工商业储能收入显著提升！德业2026前三季度营收达171.8亿元！",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261030/1518329.shtml",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "户用储能、工商业储能收入显著提升！德业2026前三季度营收达171.8亿元！",
-    "narrativeAnalysis": {
-      "hook": "户用储能、工商业储能收入显著提升！德",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103065",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "新浪网· - 新浪网",
-    "author": "新浪网",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5TLU1MVmkwS1lVb0lsX29pN2RZUW1qZEZtTFkycTkyQlhrWVNtLWNFSnVXSmFqMldjSlhHVGRVTzZhWHdTYVExby04X24zWDZZaldSTmdZbG12NzFtbWxlX0tqdw?oc=5",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "新浪网· - 新浪网",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103066",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "宁德时代电池全系标配，奔腾小马五门版正式上市 - 手机新浪网",
-    "author": "手机新浪网",
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9paGdHaXVsbTBGRUJZOW1IeHFhcWV5M3dObHdqVWpQcHZ0V1ZNSGxvSW9MTlN3c25RZ1kzcG55RFVhLXppQmJiMTNWS1hnZEZvQTN3S0dnRlR4YlNwRHR4TF9heFRoRTM4alJkUkhJeTJ3ZnhnX2syOF9aaUFqTVE?oc=5",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "宁德时代电池全系标配，奔腾小马五门版",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103067",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "宁德时代高焕：智己25万公里实车回厂验证，证明整车与电池绝非速成#电池安全#汽车 - 财富号",
-    "author": "财富号",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Ka1lvZWNMSFFWMXU2SW5RTTZhQUZnSGN5a1VSME9MaVpMSDFJanJXYUpLWkVMQ01qbkE4YUt5dUdSTUxTRW1hbWRpa1pVZUJmOUxNU1UwTEE4QkNFbW91ZnVqWWhETEdJUGs0?oc=5",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "宁德时代高焕：智己25万公里实车回厂验证，证明整车与电池绝非速成#电池安全#汽车 财富号",
-    "narrativeAnalysis": {
-      "hook": "宁德时代高焕：智己25万公里实车回厂",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103068",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "国轩高科三季度营收增74%却亏损5.37亿，“炒股”亏8.9亿拖累利润 - 搜狐网",
-    "author": "搜狐网",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS0J1djZncUpCR2NvMHRpWmFOTHhGRkNwZWw1YXRELVBmRGU1QVNfRTIwT2owRVctVHRMbmRWZ0hxYi1ELVZoaXIwLWF0d2tUX1c0YVlnQVRXbjZGYmNiaHFRb085eWhyVThTdFE2aVZFWi1udkIwZV9NblN3ZWZiYkk0aVpFNjZHSUNBWg?oc=5",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "国轩高科三季度营收增74%却亏损5.",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103069",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "携手国轩高科 | 1.8GWh埃及三期储能项目正式签约 - 碳索储能网",
-    "author": "碳索储能网",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE91Q0xxWXEwbWlpY1V5X3FIY2lsRk9xcVVrQW1waFZ5Y2NoRlFwYUtaVzd6WkFUSTVhNkxYcnZ3dDJucFVQLWttMm9pRU1SaGRMVzYydVJHRFM4X2dUX2VCeA?oc=5",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "携手国轩高科 | 1.8GWh埃及三",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103027",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "火箭军创排《永恒的红飘带》：长征薪火映照导弹阵地",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16497002.html",
-    "published": "2026-10-30",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "火箭军创排《永恒的红飘带》：长征薪火映照导弹阵地",
-    "narrativeAnalysis": {
-      "hook": "火箭军创排《永恒的红飘带》：长征薪火",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026103060",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "外交部：中国发展军力从不针对任何国家也不搞军事扩张",
-    "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/gn/2026/10-29/10722757.shtml",
-    "published": "2026-10-29",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-10-30"
-    },
-    "contentSummary": "外交部：中国发展军力从不针对任何国家也不搞军事扩张",
-    "narrativeAnalysis": {
-      "hook": "外交部：中国发展军力从不针对任何国家",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-30","added":32,"total":40,"tracks":{"政治":8,"军事":8,"财经":8,"科技":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-10-30","added":29,"total":40,"tracks":{"政治":8,"军事":8,"财经":8,"科技":8,"储能":8}};
