@@ -1,6 +1,94 @@
 /* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
   {
+    "id": "a2026110751",
+    "platform": "B站",
+    "domain": "政治",
+    "track": "政治",
+    "title": "2026年美国中期选举落幕，但这部党争“连续剧”才刚进入新一季……",
+    "author": "央视新闻",
+    "link": "https://www.bilibili.com/video/BV1oU4762Epv",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "2026年美国中期选举落幕，但这部党争“连续剧”才刚进入新一季……",
+    "narrativeAnalysis": {
+      "hook": "2026年美国中期选举落幕，但这部党",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110752",
+    "platform": "B站",
+    "domain": "政治",
+    "track": "政治",
+    "title": "利用“夫妻漫才”兜售安保政策 日本复刻二战前对民众洗脑套路",
+    "author": "央视新闻",
+    "link": "https://www.bilibili.com/video/BV1JF4L6kEw3",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "利用“夫妻漫才”兜售安保政策 日本复刻二战前对民众洗脑套路",
+    "narrativeAnalysis": {
+      "hook": "利用“夫妻漫才”兜售安保政策 日本复",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110759",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "中国海军首批舰载机女飞，离上舰不远了……",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1aq4j6KEDE",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "近日，海军首批舰载机女飞行学员顺利结业，标志着海军舰载机飞行人才培养体系进一步完善。结业典礼结束后，她们按计划奔赴一线战位，迎接新的挑战。（正午国防军事）",
+    "narrativeAnalysis": {
+      "hook": "中国海军首批舰载机女飞，离上舰不远了",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110760",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "巴铁航天员，欢迎！",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1Pv4764Eho",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "据中国载人航天工程办公室消息，神舟二十四号载人飞行任务将有1名巴基斯坦航天员以载荷专家身份参加，在完成短期在轨飞行后，随神舟二十三号载人飞船返回。这是中国载人航…",
+    "narrativeAnalysis": {
+      "hook": "巴铁航天员，欢迎！",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
     "id": "a2026110709",
     "platform": "B站",
     "domain": "财经",
@@ -111,28 +199,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026110728",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "遥遥领先！相关技术可支撑人类星际航行",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV13R4i6xEpz",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "经过 16 年攻关，中国科学家依托中国空间站超冷原子物理实验柜，成功制备出9.7皮开尔文的铷原子云，可观测时间达到7秒，刷新了人造低温世界纪录。相关技术可应用于…",
-    "narrativeAnalysis": {
-      "hook": "遥遥领先！相关技术可支撑人类星际航行",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
     "id": "a2026110601",
     "platform": "B站",
     "domain": "科技",
@@ -149,28 +215,6 @@ window.DATA_INSPIRATION = [
     "contentSummary": "当英伟达、台积电等国际巨头都在布局光互连赛道，中国大陆的前沿光互连技术究竟走到了哪一步？这期“造芯者说”，我深度访谈了四位资深从业者，帮你从底层物理原理到工程量…",
     "narrativeAnalysis": {
       "hook": "你相信光吗：把几万个GPU用光连起来",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110625",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "天冷了，上硬菜！",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1284b6bEim",
-    "published": "2026-11-05",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-06"
-    },
-    "contentSummary": "陆军某旅，战士们正在进行爬绳训练，不断锤炼核心爆发力；炊事班里，各类配菜陆续切配完毕，炊事员动作利落有条不紊。红烧猪蹄、油焖大虾、油淋牛百叶……一道道硬菜端上来…",
-    "narrativeAnalysis": {
-      "hook": "天冷了，上硬菜！",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -199,44 +243,69 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026110417",
-    "platform": "B站",
+    "id": "a2026110753",
+    "platform": "法广",
     "domain": "政治",
     "track": "政治",
-    "title": "刘延东同志遗体在京火化，习近平等到八宝山革命公墓送别",
-    "author": "央视新闻",
-    "link": "https://www.bilibili.com/video/BV1xk4G6jEiP",
-    "published": "2026-11-03",
+    "title": "中国首次邀请外籍航天员进入空间站：巴基斯坦宇航员将搭乘神舟二十四号飞船执行任务",
+    "author": "AP Photo/Ng Han Guan - Ng Han Guan",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261107-%E4%B8%AD%E5%9B%BD%E9%A6%96%E6%AC%A1%E9%82%80%E8%AF%B7%E5%A4%96%E7%B1%8D%E8%88%AA%E5%A4%A9%E5%91%98%E8%BF%9B%E5%85%A5%E7%A9%BA%E9%97%B4%E7%AB%99-%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E5%AE%87%E8%88%AA%E5%91%98%E5%B0%86%E6%90%AD%E4%B9%98%E7%A5%9E%E8%88%9F%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%8F%B7%E9%A3%9E%E8%88%B9%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1",
+    "published": "2026-11-07",
+    "intl": 1,
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-11-04"
+      "collected": "2026-11-07"
     },
-    "contentSummary": "刘延东同志遗体在京火化，习近平等到八宝山革命公墓送别",
+    "contentSummary": "据中国官方媒体周六（11月7日）报道，一名巴基斯坦宇航员将加入中国神舟二十四号载人飞船乘组执行任务。如果任务顺利完成，他将成为首位进入中国空间站的外国籍人士。而…",
     "narrativeAnalysis": {
-      "hook": "刘延东同志遗体在京火化，习近平等到八",
+      "hook": "中国首次邀请外籍航天员进入空间站：巴",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026110243",
-    "platform": "B站",
+    "id": "a2026110754",
+    "platform": "法广",
     "domain": "政治",
     "track": "政治",
-    "title": "【世界周刊】美国“攻防战”",
-    "author": "央视新闻",
-    "link": "https://www.bilibili.com/video/BV1iWxb66EjM",
-    "published": "2026-11-01",
+    "title": "台湾：台积电股价飙升掀股市热，部分普通民众甚至每天都买卖股票",
+    "author": "法广",
+    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E4%B8%96%E7%95%8C%E6%8A%A5/20261106-%E5%8F%B0%E6%B9%BE-%E5%8F%B0%E7%A7%AF%E7%94%B5%E8%82%A1%E4%BB%B7%E9%A3%99%E5%8D%87%E6%8E%80%E8%82%A1%E5%B8%82%E7%83%AD%EF%BC%8C%E9%83%A8%E5%88%86%E6%99%AE%E9%80%9A%E6%B0%91%E4%BC%97%E7%94%9A%E8%87%B3%E6%AF%8F%E5%A4%A9%E9%83%BD%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8",
+    "published": "2026-11-07",
+    "intl": 1,
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-11-02"
+      "collected": "2026-11-07"
     },
-    "contentSummary": "【世界周刊】美国“攻防战”",
+    "contentSummary": "法国世界报周五刊出的一篇文章表示，在台湾，台积电股价飙升带动台湾人的投资热潮，并带来财富增长，但是，财富增长的背后隐藏着社会不平等。",
     "narrativeAnalysis": {
-      "hook": "【世界周刊】美国“攻防战”",
+      "hook": "台湾：台积电股价飙升掀股市热，部分普",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110755",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "中国解放军四少将被终止全国人大代表资格",
+    "author": "© 图取自Pixabay图库",
+    "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261106-%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E5%9B%9B%E5%B0%91%E5%B0%86%E8%A2%AB%E7%BB%88%E6%AD%A2%E5%85%A8%E5%9B%BD%E4%BA%BA%E5%A4%A7%E4%BB%A3%E8%A1%A8%E8%B5%84%E6%A0%BC",
+    "published": "2026-11-07",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "中国全国人大常委会会议11月6日在北京闭幕，决定终止九名全国人大代表的资格，其中四人来自解放军和武警部队，分别是少将张弓、郭建军、吴育红和孟庆斌。根据全国人大常…",
+    "narrativeAnalysis": {
+      "hook": "中国解放军四少将被终止全国人大代表资",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -289,45 +358,462 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026110720",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "法国一辆校车开至马路对面 两名学生死亡 3人重伤",
-    "author": "© La Voix de l'Ain",
-    "link": "https://www.rfi.fr/cn/%E6%B3%95%E5%9B%BD/20261106-%E6%B3%95%E5%9B%BD%E4%B8%80%E8%BE%86%E6%A0%A1%E8%BD%A6%E5%BC%80%E8%87%B3%E9%A9%AC%E8%B7%AF%E5%AF%B9%E9%9D%A2-%E4%B8%A4%E5%90%8D%E5%AD%A6%E7%94%9F%E6%AD%BB%E4%BA%A1-3%E4%BA%BA%E9%87%8D%E4%BC%A4",
+    "id": "a2026110707",
+    "platform": "媒体报道",
+    "domain": "科技",
+    "track": "科技",
+    "title": "移卡集团高级副总裁朱楚中：AI Agent极大提升了跨境支付的风控能力 - 每日经济新闻",
+    "author": "每日经济新闻",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ZczducDUzUG9fX3R6R210ZW1ETEd0a1FaemotWmlyekN5LVJab1ZtS2ptak1WTDd4Wnc1MTZpYldlMTJKTlBmZXVld25hakpFNXlSM0VBOExGYmd6bldQdmJyRnRzZw?oc=5",
     "published": "2026-11-07",
-    "intl": 1,
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-07"
     },
-    "contentSummary": "周五上午法国东部安省（Ain）发生的巴士冲出公路事故中，司机已被警方拘留。布雷斯地区布尔格检察官在新闻发布会上宣布，司机告诉调查人员，他当时开车时睡着了。司机的…",
+    "contentSummary": "移卡集团高级副总裁朱楚中：AI Agent极大提升了跨境支付的风控能力 每日经济新闻",
     "narrativeAnalysis": {
-      "hook": "法国一辆校车开至马路对面 两名学生死",
+      "hook": "移卡集团高级副总裁朱楚中：AI Ag",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026110701",
-    "platform": "InfoQ",
+    "id": "a2026110708",
+    "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "Cloudflare 与 VoidZero 联合推出 tsrs：由 AI 生成的 TypeScript 编译器 Rust 移植版",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/lGoA1ZSw6ojeh68GVlBl?utm_source=rss&utm_medium=article",
+    "title": "曹操出行成为中国移动首个打车生态合作伙伴，12580一句话AI叫车 - 手机新浪网",
+    "author": "手机新浪网",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBPT2UwOEZaTF9TbkpfeHVGODBDelNZYWJ0QXFiSTVpTmNXdjFJZ2Y2Z3I4Q1VGeVZKY1JHcnZDR05tMUFoX041QzRVb1hub1E3MkZQM3o5Mk9XVndyZTJYbkc3OVAyNGg1dER1M2YyVEVCVjB0aWsyWHNMOW1IUTg?oc=5",
     "published": "2026-11-07",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-07"
     },
-    "contentSummary": "tsrs 是 TypeScript 编译器的 Rust 移植版，由 Cloudflare 宣布推出，并与 VoidZero 及 Owner.com 的 Max …",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "Cloudflare 与 VoidZ",
+      "hook": "曹操出行成为中国移动首个打车生态合作",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110721",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "CyberwIIOS：如何驾驭大模型在 OT 侧跨越“幻觉”与“失控”｜AICon北京",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/K1bCIbHxeu3wLIjdusgr?utm_source=rss&utm_medium=article",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "工业OT场景具备高实时性、高可靠性、强物理约束、低容错率的核心特性，通用大模型天然存在的内容幻觉、逻辑不可控、执行失控等问题，成为其规模化落地工业现场的核心技术…",
+    "narrativeAnalysis": {
+      "hook": "CyberwIIOS：如何驾驭大模型",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110722",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "线上 Worker 变慢，本地却复现不了？Cloudflare 让开发者直接看生产环境火焰图",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/pMNGPheLLJ8hkfikmjUU?utm_source=rss&utm_medium=article",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "Cloudflare 为生产环境中的 Workers 引入按需 CPU 和内存性能剖析。",
+    "narrativeAnalysis": {
+      "hook": "线上 Worker 变慢，本地却复现",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110723",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "谷歌给安卓版 Chrome 浏览器设置页“上色”，焕新引入 iOS 版彩色风格图标",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/023/688.htm",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "IT之家 11 月 7 日消息，科技媒体 Android Authority 昨日（11 月 6 日）发布博文，报道称谷歌酝酿升级安卓版 Chrome 浏览器的…",
+    "narrativeAnalysis": {
+      "hook": "谷歌给安卓版 Chrome 浏览器设",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110729",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "“全球最大 GPU 盗窃案”：价值 1140 万美元的英伟达硬件不翼而飞",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/023/684.htm",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "IT之家 11 月 7 日消息，美国 ABC7 News 等媒体本月报道，美国加州发生一起高价值科技货物盗窃案：一批价值约 1,140 万美元（IT之家注：现汇…",
+    "narrativeAnalysis": {
+      "hook": "“全球最大 GPU 盗窃案”：价值 ",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110743",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "10月末中国外汇储备规模为34052亿美元",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/11-07/10727874.shtml",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "中新社北京11月7日电 10月末中国外汇储备规模环比小幅增加。中国国家外汇管理局7日发布的统计数据显示，截至2026年10月末，中国外汇储备规模为34052亿美…",
+    "narrativeAnalysis": {
+      "hook": "10月末中国外汇储备规模为34052",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110744",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "专家建言多领域加快海南自贸港与东盟蓝色经济合作",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/11-07/10727851.shtml",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "中新网三亚11月7日电 (记者 王子谦)“海南自贸港的开放，不仅在于贸易层面，更将中国的海洋经济与东盟的丰富资源连接在一起。”正在此间举办的第七届“海洋合作与治…",
+    "narrativeAnalysis": {
+      "hook": "专家建言多领域加快海南自贸港与东盟蓝",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110745",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "国家外汇管理局：截至10月末，我国外汇储备规模为34052亿美元",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/11-07/10727832.shtml",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "中新网11月7日电 据国家外汇管理局微信公众号消息，国家外汇管理局统计数据显示，截至2026年10月末，我国外汇储备规模为34052亿美元，较9月末上升49亿美…",
+    "narrativeAnalysis": {
+      "hook": "国家外汇管理局：截至10月末，我国外",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110746",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "（机遇香港）资金持续涌入 香港财管市场规模与业界信心齐升",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/dwq/2026/11-07/10727875.shtml",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "中新社香港11月7日电 (记者 戴小橦)香港私人财富管理公会(PWMA)联合毕马威中国近日发布的《香港私人财富管理年度报告2026》显示，香港私人财富管理业绩稳…",
+    "narrativeAnalysis": {
+      "hook": "（机遇香港）资金持续涌入 香港财管市",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110750",
+    "platform": "中新网",
+    "domain": "财经",
+    "track": "财经",
+    "title": "“广西梧州—平陆运河—越南胡志明”外贸航线开通",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/11-07/10727831.shtml",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "中新网广西梧州11月7日电 (记者 杨陈)11月6日，“华航900”轮从北港西江港口梧州赤水港启航，标志着广西梧州市首票经平陆运河外贸货物顺利完成报关发运。“广…",
+    "narrativeAnalysis": {
+      "hook": "“广西梧州—平陆运河—越南胡志明”外",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110764",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "数字化保护中的权利边界与文化延续——读《非物质文化遗产的数字化保护及其与知识产权保护的冲突与协调》",
+    "author": "中新网·滚动",
+    "link": "https://www.chinanews.com.cn/sh/2026/11-07/10727860.shtml",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "数字化正在改变非遗被保存、传播和利用的方式。当传统技艺、民间艺术和仪式活动进入数据库、网络平台与商业开发的流程，文化的传播范围随之扩大，围绕它们的权利关系也变得…",
+    "narrativeAnalysis": {
+      "hook": "数字化保护中的权利边界与文化延续——",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110766",
+    "platform": "中国军网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "空军八一飞行表演队飞越黄崖关长城庆祝人民空军成立77周年",
+    "author": "中国军网",
+    "link": "http://www.81.cn/yw_208727/16498549.html",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "飞越长城，不仅是一场观赏性极强的空中展示，更是一次精神洗礼。",
+    "narrativeAnalysis": {
+      "hook": "空军八一飞行表演队飞越黄崖关长城庆祝",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110767",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "11月6日光伏ETF鹏华基金份额增加900万份，重仓股特变电工、隆基绿能、阳光电源_基金提醒_雷达 - 证券之星",
+    "author": "证券之星",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBsNFlkaGpPYlk4WmRvVndjX3VfNHpvRkhJUWsya3VlZzcwM0VMUXkxamtkWnAwRFJJSk5jTjVsN0tIWXhaUGVucU5wS1QzWHlMQXNmd3hXbWhDdE94UnlzYThB?oc=5",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "11月6日光伏ETF鹏华基金份额增加900万份，重仓股特变电工、隆基绿能、阳光电源_基金提醒_雷达 证券之星",
+    "narrativeAnalysis": {
+      "hook": "11月6日光伏ETF鹏华基金份额增加",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110768",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "11月6日光伏ETF招商基金份额增加200万份，重仓股特变电工、隆基绿能、阳光电源_基金提醒_雷达 - 证券之星",
+    "author": "证券之星",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIVGpDYzVLTlZRNUxCTUJDNnF6aVpvVWU4Q1hBcU9Ibk9ib2pZd0lzLVB1ZEp2Vm9pOS1JbFJtcEQ5VWlrUnlfU2k0YlZXZ2FLNGp5emhvRkVxT2p4QWJ4MDlB?oc=5",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "11月6日光伏ETF招商基金份额增加200万份，重仓股特变电工、隆基绿能、阳光电源_基金提醒_雷达 证券之星",
+    "narrativeAnalysis": {
+      "hook": "11月6日光伏ETF招商基金份额增加",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110769",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "11月6日光伏ETF博时基金份额增加300万份，重仓股特变电工、隆基绿能、阳光电源_基金提醒_雷达 - 证券之星",
+    "author": "证券之星",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9BQUk4SV9xWVdSY3BwX21ncGVYal95bGRUZkI2TEVDQUlPRlhXV1REeUJSRFBpa1FiZEo0b3UzdW4yal9kOHZqcHR6OXozM0dDWHNkTDI1OG53Qi1wQ3FsRjNB?oc=5",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "11月6日光伏ETF博时基金份额增加300万份，重仓股特变电工、隆基绿能、阳光电源_基金提醒_雷达 证券之星",
+    "narrativeAnalysis": {
+      "hook": "11月6日光伏ETF博时基金份额增加",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110770",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "宁德时代入股智能传感器研发商灵动佳芯 - 汽车之家",
+    "author": "汽车之家",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE00VHVxNUgza1F4b0ZYbmc2dV9rNXZnc3dvOGE3RTdLMFVvcHFRUTdwVzlmS1BWc3ZMSXNLdUM1T09mNW5PSXpyMzJ0R3JIRWRreGlydC1NVENwQkE?oc=5",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "宁德时代入股智能传感器研发商灵动佳芯",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110771",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "注册资本1.2亿元 宁德时代成立新材料公司 - https://www.itdcw.com/",
+    "author": "https://www.itdcw.com/",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5mY1RKT2xhclJTTktwekxDa3dqR1ZpMUNfRlRPU2xlSWswNkhfMHRBUU1QWjNWV01RdHo2X2htcXowZ1dxRVN0eHlub3VmQ0R5R1lrRFBkZVNBbldac1E?oc=5",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "注册资本1.2亿元 宁德时代成立新材料公司 https://www.itdcw.com/",
+    "narrativeAnalysis": {
+      "hook": "注册资本1.2亿元 宁德时代成立新材",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110772",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "白云峰赴福建及长三角地区开展招商考察 参加进博会相关活动 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQMWVfRG5WR2M0X1hPU2NXOXNVSkxoR04tYVlidWowMHFsVzdOaXo2d3lrNGh2NEExa0h4c3JVdVNBeGdDejdmT0lLeDVNdGNxcTVGQ3JHcVZUX2pseEpBcTlhbjZBTnFRWXhSNGFaWmRURVhKSmJvUFJSOVY4N1E4UUtONEZJTDBwbm5Tb2k1c1Jrc3pNUzJFWWV2VmVia25OSjNBblIxUmllOUVCM0hWcWlaMnFpczFId21IUVpmUTl5V1FpNERjcFZUSVVEN1AzcW1ieHc0Zw?oc=5",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "白云峰赴福建及长三角地区开展招商考察",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110773",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "23.17亿元交易获批 大众中国转让国轩高科5.3%股权 - 搜狐网",
+    "author": "搜狐网",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPb1U1ck1YelU4LU1YczFlV01PWG5jc2dpWXBOVm96VXZ1czRfRHVVTk1BUWpDZXhfbkU0SG5JamFCQ1BkdVJfVm9DVmpmc0FMc0NTc1JJX0tsbTc1T2gySXdrVVBORnJpS3Z6M0NqOHhrZE5iVTlMV0toUEgwTHZUcHhRZ3k0Rk9LLXZtVw?oc=5",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "23.17亿元交易获批 大众中国转让",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026110774",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "三季度储能电池企业业绩分化 2027年市场有望保持增长 - 手机新浪网",
+    "author": "手机新浪网",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLS1hbUYwbV9sNXo1cE9LalBmZkpwQWpPOURXbFJDaUk1TFhCVHFDdkRhMG5rSm9JTGZDVWVBTlh1Qnk4SlMwaml5QXBXUXhpVmNqWVJ2NmtXTld6WFlBNlBhUDRQaXJmMm5ZWDJXM2FLT3A2eURJbUpqM0dEUmFHSVlR?oc=5",
+    "published": "2026-11-07",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-07"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "三季度储能电池企业业绩分化 2027",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -356,534 +842,48 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026110724",
-    "platform": "BBC中文",
-    "domain": "政治",
-    "track": "政治",
-    "title": "美國中期選舉：共和黨失去兩院，對華政策與對台軍售會轉向嗎？",
-    "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/cqr7ydkrnpxno/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-11-06",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "美國期中選舉民主黨取得兩院多數後，專家普遍認為，特朗普（川普）以個人外交主導的中國政策與對台軍售節奏將面臨國會更多監督與拉鋸，但總統仍掌握主要決策權。",
-    "narrativeAnalysis": {
-      "hook": "美國中期選舉：共和黨失去兩院，對華政",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110648",
-    "platform": "BBC中文",
-    "domain": "政治",
-    "track": "政治",
-    "title": "澳門國安首案宣判：區錦新囚12年半，妻子斥「莫須有迫害」",
-    "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/cw62yyejjrlro/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-11-06",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-06"
-    },
-    "contentSummary": "這是澳門首宗國安案，案件過程並不公開，區錦新由「指派律師」辯護，審理法官及律師身份不明。從預審、開審到宣判，外界只能從政府新聞稿得知消息。",
-    "narrativeAnalysis": {
-      "hook": "澳門國安首案宣判：區錦新囚12年半，",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110702",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "曹操出行AI打车服务接入中国移动12580个人智能助理 - 观点网",
-    "author": "观点网",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBJOGxkS1ZGbnN5dE5JVmhOY1RHOUhKMVZPR3lma0szVUVjOHItclk0cjhrZU0xakxEY3JWbFBERTlGUjk2MWpwUjYzRWhPcVBuSDY2ZEpVenNxeU5YWlk4WlpB?oc=5",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "曹操出行AI打车服务接入中国移动12",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110703",
-    "platform": "媒体报道",
-    "domain": "科技",
-    "track": "科技",
-    "title": "海外网红营销别再“投完就散”：AI Agent如何把一次性合作变成关系资产 - 雨果跨境",
-    "author": "雨果跨境",
-    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9rUlZheTBuTHdBX2lqQk1mMFlpbGdRdXdoaWlYdGF1RC11VGZsc3phazRWNlNRbVI4MS10ak1tUVFqWExMZThVUms1UjY?oc=5",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "海外网红营销别再“投完就散”：AI Agent如何把一次性合作变成关系资产 雨果跨境",
-    "narrativeAnalysis": {
-      "hook": "海外网红营销别再“投完就散”：AI ",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110704",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "从混元研发体系重构到 MaaS 推理优化，模型能力如何走向真实业务？",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/azhgYaRTIjsSSVfA8AaU?utm_source=rss&utm_medium=article",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "模型能力持续增强，百万 Token 调用成本从“元”降至“角”甚至“分”，Agent 也从对话接口逐渐发展为能够规划和执行任务的智能主体。",
-    "narrativeAnalysis": {
-      "hook": "从混元研发体系重构到 MaaS 推理",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110705",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "NgRx 22 发布：引入 Resource Extensions 和动态 DeepSignal，增强 Angular 状态管理能力",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/zJmwNj2Erc0Ol10eSIIY?utm_source=rss&utm_medium=article",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "面向 Angular 的响应式状态管理框架 NgRx 发布了 22 版本，新增用于定制 Angular Resource API 的工具、支持联合类型的动态 D…",
-    "narrativeAnalysis": {
-      "hook": "NgRx 22 发布：引入 Reso",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110706",
-    "platform": "爱范儿",
-    "domain": "科技",
-    "track": "科技",
-    "title": "早报｜首款触屏MacBook Pro开卖/2027年放假安排公布，调休减少/GPT-6 Cyber发布，复现1724项漏洞",
-    "author": "爱范儿",
-    "link": "https://www.ifanr.com/1688032?utm_source=rss&utm_medium=rss&utm_campaign=",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "· 丰田将设立直属机器人部门，由首席生产官兼任负责人 · 三季度全球 DRAM 营收逼近 2000 亿美元，价格上涨是主因 · 鸿蒙电脑累计发货破百万，华为带来…",
-    "narrativeAnalysis": {
-      "hook": "早报｜首款触屏MacBook Pro",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110711",
+    "id": "a2026110747",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "（第九届进博会）拓展合作、深耕中国 跨国企业进博会上签约忙",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/11-06/10727712.shtml",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "中新网上海11月6日电 (记者 姜煜)跨国医药公司赛诺菲与上药控股有限公司6日在第九届进博会现场举行深化战略合作签约仪式，双方将在长期合作基础上，进一步发挥各自…",
-    "narrativeAnalysis": {
-      "hook": "（第九届进博会）拓展合作、深耕中国 ",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110712",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "AI电商合规治理与消费环境共建行动在浙江启动",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/11-06/10727699.shtml",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "中新网杭州11月6日电(蓝伊旎 郑静)11月6日，由全国电子商务质量管理标准化技术委员会(SAC/TC563)、浙江省消保委联合主办的“提升消费品质 智护电商新…",
-    "narrativeAnalysis": {
-      "hook": "AI电商合规治理与消费环境共建行动在",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110713",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "白皮书：数字化平台与AI成汽车消费服务业升级关键变量",
-    "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/11-06/10727693.shtml",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "中新网天津11月6日电 (薛淳月)懂车帝、中国汽车流通协会、中汽信科6日联合发布《2026中国汽车消费服务业白皮书》。白皮书首次明确“汽车消费服务业”产业边界，…",
-    "narrativeAnalysis": {
-      "hook": "白皮书：数字化平台与AI成汽车消费服",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110714",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "“中国南大门”广西凭祥：从边陲要塞变身热门跨境旅游打卡地",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/sh/2026/11-06/10727705.shtml",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "中新网广西凭祥11月6日电 题：“中国南大门”广西凭祥：从边陲要塞变身热门跨境旅游打卡地",
-    "narrativeAnalysis": {
-      "hook": "“中国南大门”广西凭祥：从边陲要塞变",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110715",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "微改革微创新破局 广西防城港现代化临港产业提速突破",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/aseaninfo/2026/11-06/10727701.shtml",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "中新网南宁11月6日电 (记者 冯抒敏)广西防城港市通过打出机制赋能“闭环联动”攻坚拳、要素保障“靠前服务”突破拳两套改革“组合拳”，以“小而美”微改革微创新破…",
-    "narrativeAnalysis": {
-      "hook": "微改革微创新破局 广西防城港现代化临",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110716",
-    "platform": "中新网",
-    "domain": "财经",
-    "track": "财经",
-    "title": "六部门联合发文促进适老用品产品消费",
+    "title": "特朗普回应美股大跌：是民主党人造成的",
     "author": "中新网·首页",
-    "link": "https://www.chinanews.com.cn/cj/2026/11-06/10727258.shtml",
+    "link": "https://www.chinanews.com.cn/gj/2026/11-06/10727100.shtml",
     "published": "2026-11-06",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-07"
     },
-    "contentSummary": "六部门联合发文促进适老用品产品消费",
+    "contentSummary": "特朗普回应美股大跌：是民主党人造成的",
     "narrativeAnalysis": {
-      "hook": "六部门联合发文促进适老用品产品消费",
+      "hook": "特朗普回应美股大跌：是民主党人造成的",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026110730",
+    "id": "a2026110765",
     "platform": "中新网",
     "domain": "军事",
     "track": "军事",
-    "title": "粤港澳24支代表队比拼无人机应用技术职业技能",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/dwq/2026/11-06/10727700.shtml",
+    "title": "射程超100公里，巴基斯坦自研空对空导弹可打隐身飞机？",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gj/2026/11-06/10727229.shtml",
     "published": "2026-11-06",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-07"
     },
-    "contentSummary": "中新网珠海11月6日电 (记者 程景伟)2026年粤港澳大湾区无人机应用技术职业技能大赛总决赛6日在珠海开幕，吸引来自广东21个地级以上市以及香港、澳门、横琴的…",
+    "contentSummary": "射程超100公里，巴基斯坦自研空对空导弹可打隐身飞机？",
     "narrativeAnalysis": {
-      "hook": "粤港澳24支代表队比拼无人机应用技术",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110731",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "2026年11月上旬国防部例行新闻发布",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16498388.html",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "11月6日下午，国防部新闻发言人陈曦大校就近期涉军问题发布消息。",
-    "narrativeAnalysis": {
-      "hook": "2026年11月上旬国防部例行新闻发",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110732",
-    "platform": "中国军网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "国防部介绍军队学习贯彻党的二十届五中全会精神情况",
-    "author": "中国军网",
-    "link": "http://www.81.cn/yw_208727/16498380.html",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "学习好贯彻好全会精神是当前和今后一个时期全党全国全军的一项重大政治任务。",
-    "narrativeAnalysis": {
-      "hook": "国防部介绍军队学习贯彻党的二十届五中",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110733",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "广东：鼓励建设零碳算力、合理配置储能！加快突破固态变压器等技术！",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261106/1519235.shtml",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "广东：鼓励建设零碳算力、合理配置储能！加快突破固态变压器等技术！",
-    "narrativeAnalysis": {
-      "hook": "广东：鼓励建设零碳算力、合理配置储能",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110734",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "户储出货量同比增长152%，瑞浦兰钧份额居全球首位",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261106/1519232.shtml",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "户储出货量同比增长152%，瑞浦兰钧份额居全球首位",
-    "narrativeAnalysis": {
-      "hook": "户储出货量同比增长152%，瑞浦兰钧",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110735",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "思格/东高/艾罗等6家首次上榜！2026年Q4 Tier1储能厂商数量锐减！",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261106/1519230.shtml",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "思格/东高/艾罗等6家首次上榜！2026年Q4 Tier1储能厂商数量锐减！",
-    "narrativeAnalysis": {
-      "hook": "思格/东高/艾罗等6家首次上榜！20",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110736",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "阳光电源股价冲高后回调，美国中期选举影响几何？ - 新京报",
-    "author": "新京报",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBOcVRKdVJCeEJySXRLSUY2T2VGcmtDT2t4TkowQU9JeHdsOXFxRndwWEl0MC03a1lNem5SSGhNZnh1UU9HSk5wVWU1a19IVVU2NzR2c0RJbjZ0V3RqRFF1Um12cnA?oc=5",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "阳光电源股价冲高后回调，美国中期选举",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110737",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "阳光电源吓了市场一大跳 - 维科号",
-    "author": "维科号",
-    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1qZVFfUWo2YU9fSlYyY0NSUEtERVdIZlJOMlZic2NMZ1FZc2V2RWdxNUlhNXlNSzFtVFZKM0hJVGg5bmVxSlBXNEhpUWphcWNnWWV0ZjZPMA?oc=5",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "阳光电源吓了市场一大跳 - 维科号",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110738",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "研报掘金丨中邮证券：维持阳光电源“买入”评级，有望随储能后续交付修复_股市直播_市场 - 中金在线",
-    "author": "中金在线",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wc1dFTzZqejdES3dDT3c5bGxlU3FvRlNSMUxMZHRSZzVUY2J3elVyaTh2aVc0M0w5SkYzb0M1cGxiRzNvU0trRDZRUjg5WElwcHdZSkZPQVk0RzVKQ3htcTFHMDlpYnZfcmU5QQ?oc=5",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "研报掘金丨中邮证券：维持阳光电源“买入”评级，有望随储能后续交付修复_股市直播_市场 中金在线",
-    "narrativeAnalysis": {
-      "hook": "研报掘金丨中邮证券：维持阳光电源“买",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110739",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "标配宁德时代电芯！限时15.98万起，东风奕派M8天元激光版上市 - 汽车之家",
-    "author": "汽车之家",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xc1pjYnFlS2RyeUprcV8tcWdrZi1qQ3BIUEJXV0RsUEplUFJ4NTR1TWdzZ25OZ1pGZ0JDaWVtMWlxVXZ5dGwyRWpuc0tKeEVHTVg3SW8xWm9yYkE5Sk1EbU1WMUY0aHJ5VHFv?oc=5",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "标配宁德时代电芯！限时15.98万起",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026110740",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "锂电产业链周记 | 宁德时代累计斥资53.6亿元回购股份 天赐材料与亿纬锂能签下45万吨电解液长协 - 搜狐网",
-    "author": "搜狐网",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOR0prRHNLREhWYjgyUWw4VnpUZDdxU3pLUUFqNDlqa3hNa0hWOXMzNEdRNDB6Wmcyd1Mza3NzWlNZNWJMRW1IV2ZVNjVPUl9McW5nd1NzWXg3d2UxOVBMVGRZbkdFV2J0VjJZbElhOXdwWW9sVlFvdjRJQXp1Um5vcmJkX3BZN1dC?oc=5",
-    "published": "2026-11-06",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-07"
-    },
-    "contentSummary": "锂电产业链周记 | 宁德时代累计斥资53.6亿元回购股份 天赐材料与亿纬锂能签下45万吨电解液长协 搜狐网",
-    "narrativeAnalysis": {
-      "hook": "锂电产业链周记 | 宁德时代累计斥资",
+      "hook": "射程超100公里，巴基斯坦自研空对空",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-11-07","added":34,"total":40,"tracks":{"财经":8,"政治":8,"军事":8,"科技":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-11-07","added":30,"total":40,"tracks":{"政治":8,"军事":8,"财经":8,"科技":8,"储能":8}};
