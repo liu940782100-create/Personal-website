@@ -1,6 +1,50 @@
 /* 本文件由 tools/fetch_inspiration.mjs 维护（定时 + 手动触发）；a* 为采集条目，i* 为人工示例 */
 window.DATA_INSPIRATION = [
   {
+    "id": "a2026111457",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "伊朗指挥官：旧导弹还没打完……",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1hRsG6nEB9",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "11月12日，伊朗国家电视台播出一段在“导弹城”对伊朗伊斯兰革命卫队导弹发射指挥官的采访。这名指挥官透露称，在一些被敌军“钻地弹”击中的地方，敌人留下了大量未引…",
+    "narrativeAnalysis": {
+      "hook": "伊朗指挥官：旧导弹还没打完……",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111458",
+    "platform": "B站",
+    "domain": "军事",
+    "track": "军事",
+    "title": "述职报告来了！四川舰说四川话没毛病吧~",
+    "author": "央视军事",
+    "link": "https://www.bilibili.com/video/BV1PoWC64E6c",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "2025年11月14日，四川舰开展首次航行试验，1年来，四川舰按计划稳步开展各项海上试验，顺利完成各类装设备调试和整体运行稳定性测试。076型两栖攻击舰有哪些独…",
+    "narrativeAnalysis": {
+      "hook": "述职报告来了！四川舰说四川话没毛病吧",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
     "id": "a2026111417",
     "platform": "B站",
     "domain": "政治",
@@ -83,50 +127,6 @@ window.DATA_INSPIRATION = [
     "contentSummary": "“当我走进机库时，顿时觉得自己很渺小。当我站到攻击-11面前时，浑身麻了一下，一个激灵的感觉，我就嘀咕：这得多隐身！那一刻，内心的自豪感非常充盈。”还记得看到攻…",
     "narrativeAnalysis": {
       "hook": "见到攻击-11啥感觉？记者：你说这得",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111428",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "北斗定位、惯导定向、能“洗地”能“点名”……还叫火箭炮合适吗？",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1JgWv6dEw3",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "122毫米自行火箭炮，是我国自主研发的新一代模块化中程压制武器，可通过运-9等中型战术运输机实施快速空运部署，实现跨战区战略机动。火控系统数字化，北斗定位、惯导…",
-    "narrativeAnalysis": {
-      "hook": "北斗定位、惯导定向、能“洗地”能“点",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111429",
-    "platform": "B站",
-    "domain": "军事",
-    "track": "军事",
-    "title": "数千名新兵夜间紧急集合！网友：小黄盆大型带货现场~",
-    "author": "央视军事",
-    "link": "https://www.bilibili.com/video/BV1mUWR6hE2T",
-    "published": "2026-11-12",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "近日，新疆军区某综合训练基地组织数千名新兵开展夜间紧急集合拉动考核，重点检验新训初期基础军事技能掌握情况和新兵应急反应、快速集结能力，进一步锤炼随时能动的战备意…",
-    "narrativeAnalysis": {
-      "hook": "数千名新兵夜间紧急集合！网友：小黄盆",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -243,400 +243,599 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026111418",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "Anthropic IPO传拒中国投资者认购",
-    "author": "REUTERS - Dado Ruvic",
-    "link": "https://www.rfi.fr/cn/%E6%94%BF%E6%B2%BB/20261113-anthropic-ipo%E4%BC%A0%E6%8B%92%E4%B8%AD%E5%9B%BD%E6%8A%95%E8%B5%84%E8%80%85%E8%AE%A4%E8%B4%AD",
-    "published": "2026-11-14",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "美国人工智能公司Anthropic计划以高达1.4万亿美元估值上市，惟据报多家承销银行拒绝接受中国及香港机构投资者的认购指示，部分银行认为相关投资者即使提交订单…",
-    "narrativeAnalysis": {
-      "hook": "Anthropic IPO传拒中国投",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111419",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "德总理默茨喊话特朗普：下周在中国与普京会晤时“勿搞意外”",
-    "author": "© 路透社图片",
-    "link": "https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20261113-%E5%BE%B7%E6%80%BB%E7%90%86%E9%BB%98%E8%8C%A8%E5%96%8A%E8%AF%9D%E7%89%B9%E6%9C%97%E6%99%AE-%E4%B8%8B%E5%91%A8%E5%9C%A8%E5%8D%8E%E4%B8%8E%E6%99%AE%E4%BA%AC%E4%BC%9A%E6%99%A4%E6%97%B6%E5%8B%BF%E6%90%9E%E6%84%8F%E5%A4%96",
-    "published": "2026-11-14",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "德国总理默茨（Friedrich Merz）周五敦促美国总统特朗普（Donald Trump）在下周与俄罗斯总统普京于中国举行的、预计会涉及乌克兰问题的会晤中，…",
-    "narrativeAnalysis": {
-      "hook": "德总理默茨喊话特朗普：下周在中国与普",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111420",
-    "platform": "法广",
-    "domain": "政治",
-    "track": "政治",
-    "title": "伊朗黑客用中国AI攻击法国超市冷藏系统 背后还藏着谁？",
-    "author": "法广",
-    "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E8%A6%81%E9%97%BB%E5%88%86%E6%9E%90/20261113-%E4%BC%8A%E6%9C%97%E9%BB%91%E5%AE%A2%E7%94%A8%E4%B8%AD%E5%9B%BDai%E6%94%BB%E5%87%BB%E6%B3%95%E5%9B%BD%E8%B6%85%E5%B8%82%E5%86%B7%E8%97%8F%E7%B3%BB%E7%BB%9F-%E8%83%8C%E5%90%8E%E8%BF%98%E8%97%8F%E7%9D%80%E8%B0%81",
-    "published": "2026-11-14",
-    "intl": 1,
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "法国政府本周公布调查结果，将10月发生的波及约700个零售超市的冷藏系统网攻，归因于伊朗伊斯兰革命卫队。美国财长贝森特（Scott Bessent）则在周四（1…",
-    "narrativeAnalysis": {
-      "hook": "伊朗黑客用中国AI攻击法国超市冷藏系",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111401",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "从快速部署到记忆共享，数据库如何支撑 Agent 应用？",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/video/FwbOyyfoAmkQPMTItMDN?utm_source=rss&utm_medium=article",
-    "published": "2026-11-14",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "从快速部署到记忆共享，数据库如何支撑 Agent 应用？",
-    "narrativeAnalysis": {
-      "hook": "从快速部署到记忆共享，数据库如何支撑",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111402",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "智能互动 Agent 在快手商业场景的落地实践",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/e0aglHW78pZuik3CWqdo?utm_source=rss&utm_medium=article",
-    "published": "2026-11-14",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "围绕智能互动 Agent 在互动业务场景下的真实落地实践，系统阐述商业 Agent 在效果、时延与成本三重约束下的工程选择，以及动态知识库构建、用户模拟器训练、…",
-    "narrativeAnalysis": {
-      "hook": "智能互动 Agent 在快手商业场景",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111403",
-    "platform": "InfoQ",
-    "domain": "科技",
-    "track": "科技",
-    "title": "容器隔离还不够：Edera 从虚拟机监控器层限制 AI 智能体",
-    "author": "InfoQ中文",
-    "link": "https://www.infoq.cn/article/MU0txcPXXuGdGKBNa6a2?utm_source=rss&utm_medium=article",
-    "published": "2026-11-14",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "Edera 推出基于对象能力的受限权限模型，承诺将凭证与 AI 智能体工作负载隔离。",
-    "narrativeAnalysis": {
-      "hook": "容器隔离还不够：Edera 从虚拟机",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111404",
-    "platform": "爱范儿",
-    "domain": "科技",
-    "track": "科技",
-    "title": "余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
-    "author": "爱范儿",
-    "link": "https://www.ifanr.com/1689432?utm_source=rss&utm_medium=rss&utm_campaign=",
-    "published": "2026-11-14",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "新 M8 的升级，主打「实用主义」。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-    "narrativeAnalysis": {
-      "hook": "余承东公布华为问界新合作模式！新 M",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111405",
-    "platform": "雷锋网",
-    "domain": "科技",
-    "track": "科技",
-    "title": "浙大彭思达：从元宇宙到具身智能，一个三维视觉研究者的八年 | 世界模型50人",
-    "author": "雷锋网",
-    "link": "https://www.leiphone.com/category/ai/lpK3LQWqmpZP8jcG.html",
-    "published": "2026-11-14",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "八年研究，两个落地系统，超六万GitHub Stars。 作者丨李秋悦 编辑丨吴 彤 一支女团跳舞，镜头不必再听导演安排，观众甚至能看到拍摄时不存在的机位。传统…",
-    "narrativeAnalysis": {
-      "hook": "浙大彭思达：从元宇宙到具身智能，一个",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111421",
-    "platform": "人民网",
-    "domain": "政治",
-    "track": "政治",
-    "title": "王毅分别同韩国外长、出席2026中美政党对话美方代表会谈会见",
-    "author": "人民网·首页",
-    "link": "http://politics.people.com.cn/n1/2026/1114/c1001-40833624.html",
-    "published": "2026-11-14",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "新华社北京11月13日电（记者董雪、邵艺博）11月13日，中共中央政治局委员、外交部长王毅在北京同韩国外长赵显举行会谈。王毅表示，去年底以来，习近平主席同李在明…",
-    "narrativeAnalysis": {
-      "hook": "王毅分别同韩国外长、出席2026中美",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111346",
+    "id": "a2026111449",
     "platform": "BBC中文",
     "domain": "政治",
     "track": "政治",
-    "title": "深陷醜聞的黃仁勳辭職，AI芯片巨頭Nvidia陷入動盪",
+    "title": "黃仁勳辭職風波：從「中國間諜」熱議到資本市場「冷熱分化」",
     "author": "BBC中文",
-    "link": "https://www.bbc.com/zhongwen/articles/cmn80j4vnj1jo/trad?at_medium=RSS&at_campaign=rss",
-    "published": "2026-11-13",
+    "link": "https://www.bbc.com/zhongwen/articles/cjn50zq2n7v1o/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-11-14",
     "intl": 1,
     "metrics": {
       "likes": 0,
       "comments": 0,
-      "collected": "2026-11-13"
+      "collected": "2026-11-14"
     },
-    "contentSummary": "美國議員現在想就他被指控的其中一段關係是否與中國間諜有關對他進行質詢。",
+    "contentSummary": "中國官方否認相關指控，批評所謂「中國間諜」的論調純屬污衊，但並未全面封殺討論，相關詞條仍頻頻登上微博熱搜和小紅書熱帖。而在互聯網防火牆的內外，輿論正朝著截然不同…",
     "narrativeAnalysis": {
-      "hook": "深陷醜聞的黃仁勳辭職，AI芯片巨頭N",
+      "hook": "黃仁勳辭職風波：從「中國間諜」熱議到",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026111406",
+    "id": "a2026111450",
+    "platform": "BBC中文",
+    "domain": "政治",
+    "track": "政治",
+    "title": "台灣村里長：最基層的民選公職，如何牽動選舉動員與兩岸關係？",
+    "author": "BBC中文",
+    "link": "https://www.bbc.com/zhongwen/articles/c6kg7mdzj12no/trad?at_medium=RSS&at_campaign=rss",
+    "published": "2026-11-14",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "村里長是台灣最基層的民選公職，因為掌握地方人脈，在社區服務與選舉動員中扮演重要角色。近年部分里長赴中國交流，引發北京透過基層網絡影響台灣政治的疑慮。BBC中文走…",
+    "narrativeAnalysis": {
+      "hook": "台灣村里長：最基層的民選公職，如何牽",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111451",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "特朗普、习近平和普京可能于下周四在深圳会晤",
+    "author": "REUTERS - Tingshu Wang",
+    "link": "https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20261113-%E7%89%B9%E6%9C%97%E6%99%AE-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%92%8C%E6%99%AE%E4%BA%AC%E5%8F%AF%E8%83%BD%E4%BA%8E%E4%B8%8B%E5%91%A8%E5%9B%9B%E5%9C%A8%E6%B7%B1%E5%9C%B3%E4%BC%9A%E6%99%A4",
+    "published": "2026-11-14",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "据《纽约邮报》周五报道，美国总统唐纳德·特朗普将于下周在亚太经合组织（APEC）峰会期间会见中国国家主席习近平和俄罗斯总统弗拉基米尔·普京。",
+    "narrativeAnalysis": {
+      "hook": "特朗普、习近平和普京可能于下周四在深",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111452",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "中国决定不争取主办2028年的联合国气候峰会",
+    "author": "AP Photo/Khalil Hamra - Khalil Hamra",
+    "link": "https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20261113-%E4%B8%AD%E5%9B%BD%E5%86%B3%E5%AE%9A%E4%B8%8D%E4%BA%89%E5%8F%96%E4%B8%BB%E5%8A%9E2028%E5%B9%B4%E7%9A%84%E8%81%94%E5%90%88%E5%9B%BD%E6%B0%94%E5%80%99%E5%B3%B0%E4%BC%9A",
+    "published": "2026-11-14",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "法新社引述知情人士报道，中国过去数个月在评估相关可能性后，已决定不争取主办2028年的第33届联合国气候峰会（COP33）。",
+    "narrativeAnalysis": {
+      "hook": "中国决定不争取主办2028年的联合国",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111453",
+    "platform": "法广",
+    "domain": "政治",
+    "track": "政治",
+    "title": "英伟达丑闻正在撕破特朗普政府表面上的团结",
+    "author": "© Nathan Howard / Reuters",
+    "link": "https://www.rfi.fr/cn/%E7%BE%8E%E6%B4%B2/20261113-%E8%8B%B1%E4%BC%9F%E8%BE%BE%E4%B8%91%E9%97%BB%E6%AD%A3%E5%9C%A8%E6%92%95%E7%A0%B4%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E8%A1%A8%E9%9D%A2%E4%B8%8A%E7%9A%84%E5%9B%A2%E7%BB%93",
+    "published": "2026-11-14",
+    "intl": 1,
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "美国财政部长贝森特周五公开与美国商务部长卢特尼克划清界限，打破此前特朗普政府表面上的团结。",
+    "narrativeAnalysis": {
+      "hook": "英伟达丑闻正在撕破特朗普政府表面上的",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111414",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "用“物理隔离”破局：STONE BUDDY AIO 切入AI Agent办公市场的底层逻辑 - Sohu",
+    "title": "断网也能跑满血大模型？本地AI界最火的“基石神器”终于发布1.0正式版 - Sohu",
     "author": "Sohu",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUEN0SjAyX09HSk9TY3lmT1lUMkxaajdlaWswRzB2UUZIdE4zcTdmNEJ0TUF1RDlTTVJ3YjJacmwxTDJId1FGbzhNNEtzX2d4akZLNjRFZF9tNWRnQTBkYjFvSWoxa3REdlItT1R0Z18yOGJUZXBqNEJjRDVxY0NCWmNzcEV1WDlU?oc=5",
-    "published": "2026-11-13",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQTd5NVlIckdmb0ZHZXlHS3JjR3R1cXI2a0FTak1SVXBSNjFBRUFSSEx4ZzViWWV0MDdxZmNaaVZCTGNpTGR6SXFYY25pTEh2SXFVR2NycFB4MVIzcVRCQlpaSmdrVXlOWnRnckxQNXcxd0xhZTJEbG5kV0RrUEJWX0xYbTdMSmp0?oc=5",
+    "published": "2026-11-14",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-14"
     },
-    "contentSummary": "用“物理隔离”破局：STONE BUDDY AIO 切入AI Agent办公市场的底层逻辑 Sohu",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "用“物理隔离”破局：STONE BU",
+      "hook": "断网也能跑满血大模型？本地AI界最火",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026111407",
+    "id": "a2026111415",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "Lightning Labs 推出 pi402，AI Agent 可使用比特币支付大模型推理费用 - 富途牛牛",
-    "author": "富途牛牛",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTDVRWkNRTWU2bk9EYklkbkxvblE2ejFsbWxRaFlHQzRpTndUZl9scmpDN1BBRmZuaUFTazhsc0hSb1RmUDh0dDF4MnFSaFcxR1BSTzNlNzA3RTRKRVBWS2Q1YTdMcTc0bkM1YWtEUnFLd3ViVlhxbE9FVnhUQmF2cEpzZU9mc1ZCZ2wzMUthYjVTdk8xX1Q0Z3NERXdvMHJjUjNiRDl2NA?oc=5",
-    "published": "2026-11-13",
+    "title": "国内首款面向科创园区的定制化移动AI手机亮相张江 - 上观新闻",
+    "author": "上观新闻",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZekNfS0xBV0FkWnN1SlVONF8zSHhVTkNxd1RxUDZVTFRTOHlSWnltNTJJeHhLMWR2NFQwM0xsOHp5ZzA0LVhvYXJtbUxrZUZSVm5PaHR4cmp0b1BSbmc?oc=5",
+    "published": "2026-11-14",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-14"
     },
-    "contentSummary": "Lightning Labs 推出 pi402，AI Agent 可使用比特币支付大模型推理费用 富途牛牛",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "Lightning Labs 推出 ",
+      "hook": "国内首款面向科创园区的定制化移动AI",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026111408",
+    "id": "a2026111416",
     "platform": "媒体报道",
     "domain": "科技",
     "track": "科技",
-    "title": "【每日瞰AI】谷歌发布Gemini 4 Hydrogen，接入搜索和免费开发工具； 百度推出大模型交易平台「词元所」，首月日均调用超7000 亿词元 - 电子工程专辑EE Times China",
-    "author": "电子工程专辑EE Times China",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAyM055Q1pWTld2Z0EyNkdOTFhXdmtIcTlkOGFHa1NZYkNHTXpnR3FPdTN0OTczbWlmMDhqdXZad3NzbzBoSDFrRHhlWGhwNnZYTUpB?oc=5",
-    "published": "2026-11-13",
+    "title": "新浪网· - 新浪网",
+    "author": "新浪网",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHaWMxWm95N01pUGtLNzh3YjVPX0NFOTZOOThucWpfa3lhaHMxZEIwbHdCcUJzMC1id1l0Yzl3WmYyOHhiNmZRYzFyWV9ILWFDOTR1VlJsRGRSd2NLU3hMWm1VRQ?oc=5",
+    "published": "2026-11-14",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-14"
     },
-    "contentSummary": "【每日瞰AI】谷歌发布Gemini 4 Hydrogen，接入搜索和免费开发工具； 百度推出大模型交易平台「词元所」，首月日均调用超7000 亿词元 电子工程专…",
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
     "narrativeAnalysis": {
-      "hook": "【每日瞰AI】谷歌发布Gemini ",
+      "hook": "新浪网· - 新浪网",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026111409",
+    "id": "a2026111422",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "AI 自动写 PR，模型反而最简单：Inkitt 如何应对 Webhook 重复、CI 失败与合并冲突",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/YRXscVHsTh0g6CVCJJ0D?utm_source=rss&utm_medium=article",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "Inkitt 构建可恢复的智能体编排系统，一次性生成 PR。",
+    "narrativeAnalysis": {
+      "hook": "AI 自动写 PR，模型反而最简单：",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111423",
+    "platform": "InfoQ",
+    "domain": "科技",
+    "track": "科技",
+    "title": "从提效到扩能：AI 驱动小团队的能力突破与组织演进｜AICon北京",
+    "author": "InfoQ中文",
+    "link": "https://www.infoq.cn/article/eTz8pt2LoALMvzvxj4aa?utm_source=rss&utm_medium=article",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "在早期的多智能体探索中，高梓耕团队先通过提示词与程序编排串联任务规划、Agent 选择和执行，随后通过工具调用建立主智能体向子智能体委派任务的机制。",
+    "narrativeAnalysis": {
+      "hook": "从提效到扩能：AI 驱动小团队的能力",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111424",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "谷歌 Gemini 个人智能功能接入 Google Wallet 钱包应用：可为用户消费习惯提供个性化分析建议",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/027/141.htm",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "IT之家 11 月 14 日消息，谷歌宣布 Gemini 的 Personal Intelligence（个人智能）功能已正式支持 Google Wallet …",
+    "narrativeAnalysis": {
+      "hook": "谷歌 Gemini 个人智能功能接入",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111431",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "谷歌利用多个专业 AI 智能体打造 Teamwork 系统，成功验证多项复杂数学证明",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/027/140.htm",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "IT之家 11 月 14 日消息，谷歌宣布进一步扩展旗下 Antigravity 多智能体系统，利用多个由 Gemini 模型驱动的专业智能体组成 Teamwo…",
+    "narrativeAnalysis": {
+      "hook": "谷歌利用多个专业 AI 智能体打造 ",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111432",
+    "platform": "IT之家",
+    "domain": "科技",
+    "track": "科技",
+    "title": "堪比蓝屏“灭霸”事件：微软 2026 最严重宕机重创全球金融业，交易员被迫改用传真",
+    "author": "IT之家",
+    "link": "https://www.ithome.com/1/027/138.htm",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "IT之家 11 月 14 日消息，据新加坡《商业时报》昨日（11 月 13 日）报道，受微软多项软件服务全球性故障影响，全球金融业务遭受重创，部分交易员被迫改用…",
+    "narrativeAnalysis": {
+      "hook": "堪比蓝屏“灭霸”事件：微软 2026",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111441",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "《颠覆性技术产业化指数报告（2026）》在天津发布",
+    "title": "A股新经济公司数量、营收、市值占比均超一半",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/11-13/10731808.shtml",
-    "published": "2026-11-13",
+    "link": "https://www.chinanews.com.cn/cj/2026/11-14/10732010.shtml",
+    "published": "2026-11-14",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-14"
     },
-    "contentSummary": "中新网天津11月13日电 (薛淳月 孙翼飞)13日，《颠覆性技术产业化指数报告(2026)》在天津举行的2026企业科技创新发展论坛上发布。报告认为，全球颠覆性…",
+    "contentSummary": "中新社北京11月14日电 (记者 陈康亮)中国证监会主席吴清在首届中国资本市场学术年会开幕式上表示，目前，A股5500多家上市公司中，新经济领域公司数量、营收、…",
     "narrativeAnalysis": {
-      "hook": "《颠覆性技术产业化指数报告（2026",
+      "hook": "A股新经济公司数量、营收、市值占比均",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026111410",
+    "id": "a2026111442",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "湖南推进海峡两岸产业合作区建设",
+    "title": "“南京—东南亚”滚装外贸新通道开通",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/11-13/10731820.shtml",
-    "published": "2026-11-13",
+    "link": "https://www.chinanews.com.cn/cj/2026/11-14/10731985.shtml",
+    "published": "2026-11-14",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-14"
     },
-    "contentSummary": "中新社长沙11月13日电 (付敬懿) 到2030年，海峡两岸产业合作区(湖南)台资企业增资扩产、产业集聚成效明显，将吸引台资及关联企业超100家，培育省级以上产…",
+    "contentSummary": "中新社南京11月14日电 (记者 朱晓颖)装载1191台中国商品车的远洋滚装船“安吉11”轮14日从南京港驶离，奔赴菲律宾，标志着“南京—东南亚”滚装外贸新通道…",
     "narrativeAnalysis": {
-      "hook": "湖南推进海峡两岸产业合作区建设",
+      "hook": "“南京—东南亚”滚装外贸新通道开通",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026111411",
+    "id": "a2026111443",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "“十五五”时期 浙江旅游业如何激发消费活力？",
+    "title": "今年前10个月社会融资规模新增28.61万亿元",
     "author": "中新网·财经",
-    "link": "https://www.chinanews.com.cn/cj/2026/11-13/10731747.shtml",
-    "published": "2026-11-13",
+    "link": "https://www.chinanews.com.cn/cj/2026/11-14/10731982.shtml",
+    "published": "2026-11-14",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-14"
     },
-    "contentSummary": "中新网杭州11月13日电(林波 孙琳茹)“旅游业已从‘看风景’转向‘品生活’。”11月13日，浙江省文化广电和旅游厅党组书记、厅长陈广胜在浙江省“十五五”旅游业…",
+    "contentSummary": "央视网消息(新闻联播)：中国人民银行11月13日公布的数据显示，10月末，广义货币(M2)余额359.06万亿元，同比增长7.1%；社会融资规模存量469.16…",
     "narrativeAnalysis": {
-      "hook": "“十五五”时期 浙江旅游业如何激发消",
+      "hook": "今年前10个月社会融资规模新增28.",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026111412",
+    "id": "a2026111444",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "“投资中国”比荷卢企业圆桌会在布鲁塞尔举行",
+    "title": "中国多地探索“戏剧+古建” 古戏台焕新激活“夜经济”",
     "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/11-13/10731866.shtml",
-    "published": "2026-11-13",
+    "link": "https://www.chinanews.com.cn/sh/2026/11-14/10731983.shtml",
+    "published": "2026-11-14",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-14"
     },
-    "contentSummary": "中新社布鲁塞尔11月13日电 (记者 德永健)“投资中国”比利时、荷兰、卢森堡企业圆桌会13日在布鲁塞尔举行，中国商务部副部长兼国际贸易谈判副代表凌激主持会议，…",
+    "contentSummary": "中新网太原11月14日电 (记者 胡健)在一座始建于明代的古戏台上，一部取材自中国传统戏曲的沉浸式戏剧《戏台·诡事录之霸王别介》每周上演。台上是一出由观众决定剧…",
     "narrativeAnalysis": {
-      "hook": "“投资中国”比荷卢企业圆桌会在布鲁塞",
+      "hook": "中国多地探索“戏剧+古建” 古戏台焕",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
   },
   {
-    "id": "a2026111413",
+    "id": "a2026111448",
     "platform": "中新网",
     "domain": "财经",
     "track": "财经",
-    "title": "韩国财政经济部：韩国经济总体保持“稳健增长”",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/gj/2026/11-13/10731855.shtml",
+    "title": "从卖产品到卖解决方案 机器人成湖南外贸的“新名片”",
+    "author": "中新网·财经",
+    "link": "https://www.chinanews.com.cn/cj/2026/11-14/10731975.shtml",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "中新网长沙11月14日电 (冯军)进入11月，优龙机器人创始人熊军计划前往欧洲考察市场；超能机器人创始人肖湘江连着接待了新加坡和沙特的客户；视比特机器人则忙着给…",
+    "narrativeAnalysis": {
+      "hook": "从卖产品到卖解决方案 机器人成湖南外",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111465",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "传华为数字能源将出售给比亚迪？双方均暂无回应 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9wb2w4UFk2T0NuSXI3WmF2Rm5wZmNELV82ZC1pY29CY3IwcnBmMFV1VU1lcWNBWmt1WnlwQ0c0bFlHNmVrcDVIemJ0Q2JmZGRCdS13T3lOZGRObTRDMk5XNnlIUkluOG82ZFYwU0luNUZfeW9ianhSLQ?oc=5",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "传华为数字能源将出售给比亚迪？双方均",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111466",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "比亚迪辟谣华为数字能源出售传闻： 无任何事实依据，属于虚假信息，将保留追责权利 - Sohu",
+    "author": "Sohu",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSFhndVRhdUtKNDVydnBQSDN0VzE1RlhrTWJtUXQ5OFdTV1lFT1ZVMlR3Nml2NnpOQmdwVUFMa0xSRVZBbFFtZndBbTI0THJDQUlIUnZXQW9Zd3NYdjd0N2s5RnBiSU9WaUZhYUh6MFRLNXNSS1Jzc0tkd2hKVnFYdGx2eW1ZTU9MUWxPOA?oc=5",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "比亚迪辟谣华为数字能源出售传闻： 无任何事实依据，属于虚假信息，将保留追责权利 Sohu",
+    "narrativeAnalysis": {
+      "hook": "比亚迪辟谣华为数字能源出售传闻： 无",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111467",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "华为数字能源将出售给比亚迪？比亚迪声明：无任何事实依据，属于虚假信息 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE41eEFuRm5wUHQyOEZicUlYN0JqSi04UDZoZGJYYTUySERQcmdhQVoyNy0yUWFFNjdYQmdUS2o3UTNSVTV6bW5HQXloSUhBaWlyWmdXY2dxQjVzS0lnYmVnX2NtV3VGcUw4eElPWEtfQjJlaldWWDRTVA?oc=5",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "华为数字能源将出售给比亚迪？比亚迪声",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111468",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "新能源龙头的新机会 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1IT2V0WTdaY0VIVGRJbUhBYlFDazAwSTdMYXIwS1htbWJHRDFpRTY1dlF1QllPbDQxU3FVNzB0enl0R0lpUUpZdDlXUlg2ZDlfSmtMeDQ1OVlCRVFQTlhnT3J1a0xlWDM4OGtxY0VBd1hUdnpKZUtlOA?oc=5",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "新能源龙头的新机会 - 新浪财经",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111469",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "192线激光雷达+99秒换电，极狐贝塔双子星5.2万起 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1nLUhveVd2QnpsQU1yTmNCVFJTTVVmRVpEcHUtOERja0JSMDgtQ1JiVVlrVGpaeXF0eGI0Y2duUG1UUjlnN3FnV3FPV3N0WVpSbU5qZS0xOW5hWm4zdURzNkJRWU5JX3o5emdFZ01aaWstVlVYVUlxR0lqelI3Ync?oc=5",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "192线激光雷达+99秒换电，极狐贝",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111470",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "上汽大通27款大拿M1上市：83度宁德时代天行电池，19.28万元起 - 凤凰网",
+    "author": "凤凰网",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1kbFB1T0hhZm5xTWpPR0Viem10cEVtV09ORkVIaXdrc00ydXZ1UUdKeWNJaU5ETllrV1Y1Y3BVb1lDSGtHOUNQTg?oc=5",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "上汽大通27款大拿M1上市：83度宁",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111471",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "北汽携手宁德时代换电合作落地，巧克力换电生态扩容 - 汽车之家",
+    "author": "汽车之家",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84b096S0w4N0VMWXdQMnZLdGo1OXZFMnFvNTVWWnpJbEl4bWVra09pSHB3YldySGJJbE1yd09xTnRaaHFaZXdrUkVvT1dUZ1ppWlJFbEJrdlZWQVk?oc=5",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
+    "narrativeAnalysis": {
+      "hook": "北汽携手宁德时代换电合作落地，巧克力",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111472",
+    "platform": "媒体报道",
+    "domain": "储能",
+    "track": "储能",
+    "title": "良率可达90%，固态电池新进展！中信证券：锂电板块投资价值凸显，关注三条主线 - 新浪财经",
+    "author": "新浪财经",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQclN0R3hweGIzSzJCX1EtYUw5Z3dYeXpJLWJGdmU0elg2Y3pJTTQ1NmRPNTlaZUY4WXZ1aUNlMmxrcXV3cHV6dEkyMUo1Y3BDTmVNZ1lYOXhmZjFWMEVTdjFVbUJOQkNiYkRlckQyUEUtd0tReGxjVk9HMlVubnl5NVE4YkE?oc=5",
+    "published": "2026-11-14",
+    "metrics": {
+      "likes": 0,
+      "comments": 0,
+      "collected": "2026-11-14"
+    },
+    "contentSummary": "良率可达90%，固态电池新进展！中信证券：锂电板块投资价值凸显，关注三条主线 新浪财经",
+    "narrativeAnalysis": {
+      "hook": "良率可达90%，固态电池新进展！中信",
+      "structure": "（待拆解）",
+      "emotionCurve": "（待拆解）",
+      "transferable": []
+    }
+  },
+  {
+    "id": "a2026111462",
+    "platform": "中新网",
+    "domain": "军事",
+    "track": "军事",
+    "title": "国防部：日本右翼势力种种行径是对战后国际秩序的公然挑衅",
+    "author": "中新网·首页",
+    "link": "https://www.chinanews.com.cn/gn/2026/11-13/10731490.shtml",
     "published": "2026-11-13",
     "metrics": {
       "likes": 0,
       "comments": 0,
       "collected": "2026-11-14"
     },
-    "contentSummary": "中新社首尔11月13日电 (金旭 陈艺玲)韩国财政经济部当地时间13日发布一项报告称，得益于出口大幅增长、主要经济指标改善，韩国经济总体保持稳健增长。",
+    "contentSummary": "国防部：日本右翼势力种种行径是对战后国际秩序的公然挑衅",
     "narrativeAnalysis": {
-      "hook": "韩国财政经济部：韩国经济总体保持“稳",
+      "hook": "国防部：日本右翼势力种种行径是对战后",
       "structure": "（待拆解）",
       "emotionCurve": "（待拆解）",
       "transferable": []
@@ -665,182 +864,6 @@ window.DATA_INSPIRATION = [
     }
   },
   {
-    "id": "a2026111433",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "“十五五”新型储能实施方案印发 到2030年顶峰保供电网侧独立新型储能规模约1.4亿千瓦",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261113/1520107.shtml",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "“十五五”新型储能实施方案印发 到2030年顶峰保供电网侧独立新型储能规模约1.4亿千瓦",
-    "narrativeAnalysis": {
-      "hook": "“十五五”新型储能实施方案印发 到2",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111434",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "0.855-0.862元/Wh！山东聊城100MW/200MWh储能项目EPC中标候选人公示",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261113/1520043.shtml",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "0.855-0.862元/Wh！山东聊城100MW/200MWh储能项目EPC中标候选人公示",
-    "narrativeAnalysis": {
-      "hook": "0.855-0.862元/Wh！山东",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111435",
-    "platform": "北极星储能网",
-    "domain": "储能",
-    "track": "储能",
-    "title": "0.545-0.669元/Wh！山西100MW/140.4MWh混合储能项目磷酸铁锂储能系统采购开标",
-    "author": "北极星储能网",
-    "link": "https://news.bjx.com.cn/html/20261113/1520025.shtml",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "0.545-0.669元/Wh！山西100MW/140.4MWh混合储能项目磷酸铁锂储能系统采购开标",
-    "narrativeAnalysis": {
-      "hook": "0.545-0.669元/Wh！山西",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111436",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "传华为数字能源将出售给比亚迪 双方均暂无回应 - Sohu",
-    "author": "Sohu",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNN2NFeXlhaUwyZWRnS3J0R1lCUFEtc190MnBkVWQwcTdoVlNsRHpOdFdUWlpISkVJLXhneTN2SDdmeThva2UxM0JwRVlGamNzWFpUTExCQW5IZk5PYlF4dlo3ZW84Y1hBY244cGhUMWluNmdMRmFJRUVqdVpfLVAzaFlSYV83SEF1ZjJV?oc=5",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "传华为数字能源将出售给比亚迪 双方均",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111437",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "传华为数字能源将出售给比亚迪？双方均暂无回应 - 新浪网",
-    "author": "新浪网",
-    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE13R2Q0SE55ZG94ejFhVWlRNG9nU2tLeXlqS2oxMmdpUTJ2aTBBWU93UHdhdmtvc3otcHF1NnB0VWZrZENhNDVZclphNA?oc=5",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "传华为数字能源将出售给比亚迪？双方均",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111438",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "传华为数字能源将出售给比亚迪 双方均暂无回应 - Moomoo",
-    "author": "Moomoo",
-    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB5NWJLSkVtVWpoMXE2MFhfWUs0a19CeS13ZE0zLXhmU3ZocTlqeEp0emZFQjVGMVlxUkoxOHoyRVZ2ck9EVlRfdDRoSTZCdE5Wand4dkFXLTF6TjZR?oc=5",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "传华为数字能源将出售给比亚迪 双方均",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111439",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "阳光电源的场景超市 - 碳索储能网",
-    "author": "碳索储能网",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBTcGVZUy1SQ0hwRy1ZUTRWRkl5MFd2cHhnd1BBQU9xRDF3b3NxV1FBUnl4aFlJN0R4WHJWQ3BJd0hydUd6ZUhuWF8xRlV2SDdlOFBBa3lJdXAySGdYME90bQ?oc=5",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "阳光电源的场景超市 - 碳索储能网",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
-    "id": "a2026111440",
-    "platform": "媒体报道",
-    "domain": "储能",
-    "track": "储能",
-    "title": "阳光电源发布PowerStack 3.0工商储新品 - 集邦新能源网",
-    "author": "集邦新能源网",
-    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1DS1ZXdlBDU29xVXA0WXJ2c1k1NE1QY1lEaU4zZU8zTWhPdmM1TEJ1OUZlN0d6dVVBMWcwOVJpSVlkam0zcVNmdWdaZ0w3VUhjSElkZWx0eHdCNGxESTBoNVRB?oc=5",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-14"
-    },
-    "contentSummary": "Comprehensive up-to-date news coverage, aggregated from sources all over the wor…",
-    "narrativeAnalysis": {
-      "hook": "阳光电源发布PowerStack 3",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
-  },
-  {
     "id": "a2026111354",
     "platform": "中新网",
     "domain": "军事",
@@ -861,28 +884,6 @@ window.DATA_INSPIRATION = [
       "emotionCurve": "（待拆解）",
       "transferable": []
     }
-  },
-  {
-    "id": "a2026111355",
-    "platform": "中新网",
-    "domain": "军事",
-    "track": "军事",
-    "title": "全球百名飞手报名2026年世界无人机竞速锦标赛",
-    "author": "中新网·滚动",
-    "link": "https://www.chinanews.com.cn/cj/2026/11-13/10731493.shtml",
-    "published": "2026-11-13",
-    "metrics": {
-      "likes": 0,
-      "comments": 0,
-      "collected": "2026-11-13"
-    },
-    "contentSummary": "中新网广州11月13日电 (记者 王坚)2026年世界无人机竞速锦标赛推介会13日在广州举行。会上公布，该赛事定于12月9日至12日在广州举行，目前，来自超30…",
-    "narrativeAnalysis": {
-      "hook": "全球百名飞手报名2026年世界无人机",
-      "structure": "（待拆解）",
-      "emotionCurve": "（待拆解）",
-      "transferable": []
-    }
   }
 ];
-window.DATA_INSPIRATION_META = {"updatedAt":"2026-11-14","added":32,"total":40,"tracks":{"政治":8,"军事":8,"财经":8,"科技":8,"储能":8}};
+window.DATA_INSPIRATION_META = {"updatedAt":"2026-11-14","added":29,"total":40,"tracks":{"军事":8,"政治":8,"财经":8,"科技":8,"储能":8}};
